@@ -1,0 +1,113 @@
+{
+ "case_id": "T1_16",
+ "case_type": "T1",
+ "method": "v3_full",
+ "model": "qwen3-32b",
+ "config_hash": "6db5b2365786e711",
+ "seed": 20261103,
+ "propagation_type": "fact",
+ "edits": [
+  {
+   "site": "[MDSR | 3.4 일반적 제한 | 본문#p7]",
+   "doc": "MDSR",
+   "item": "3.4 일반적 제한",
+   "field": "본문#p7",
+   "new_text": "시스템 데이터는 24 시간마다 자동 백업되며, 백업 데이터는 별도의 보안 저장소에 보관됩니다. 개인정보는 사용자 탈퇴 시 180 일 이내에 파기되며, 이는 개인정보 보호 규정을 준수하기 위한 조치입니다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 7 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 7",
+   "field": "설명",
+   "new_text": "시스템은 24시간 간격으로 사용자 데이터를 백업하여야 하며, 백업 데이터는 180일 경과한 경우 자동으로 파기하여야 한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 7 | 기준#p2]",
+   "doc": "MDSR",
+   "item": "Req. 7",
+   "field": "기준#p2",
+   "new_text": "180 일 경과 후 백업 데이터가 자동으로 파기됨을 확인함",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | UC-05 | 시험방법#p2]",
+   "doc": "XXCS",
+   "item": "UC-05",
+   "field": "시험방법#p2",
+   "new_text": "개인정보가 180 일 이내에 적절히 파기되는지 확인한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | DC-01 | 시험방법#p2]",
+   "doc": "XXCS",
+   "item": "DC-01",
+   "field": "시험방법#p2",
+   "new_text": "개인정보는 180일 동안 보관된 후 자동으로 파기하도록 설정한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | DC-01 | 확인결과#p2]",
+   "doc": "XXCS",
+   "item": "DC-01",
+   "field": "확인결과#p2",
+   "new_text": "180 일 동안 개인정보가 보관된 후 자동 파기됨을 확인함",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | UC-05 | 확인결과#p2]",
+   "doc": "XXCS",
+   "item": "UC-05",
+   "field": "확인결과#p2",
+   "new_text": "개인정보가 180 일 이내에 파기됨을 확인함.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | TRE-01 | 확인결과#p3]",
+   "doc": "XXCS",
+   "item": "TRE-01",
+   "field": "확인결과#p3",
+   "new_text": "처방 변경 이력 및 의료진 접속 기록은 각각 180일 및 6개월 동안 보관되며, 접근 권한이 제한됨을 확인함.",
+   "op": "modify",
+   "source": "llm"
+  }
+ ],
+ "parse_ok": true,
+ "truncated": false,
+ "error": null,
+ "stop_reason": "no_change",
+ "complexity": {
+  "n_docs": 3,
+  "n_cells": 975,
+  "doc_chars": 24729,
+  "doc_tokens": 12364,
+  "n_candidates": 18,
+  "n_relevant": 7,
+  "n_retrieved": 0,
+  "context_tokens": 5273,
+  "llm_calls": 4,
+  "rounds": 3,
+  "tokens_in": 14334,
+  "tokens_out": 2390,
+  "cost_usd": 0.0,
+  "seconds": 216.76
+ },
+ "n_pred": 8,
+ "input_tokens": 14334,
+ "output_tokens": 2390,
+ "n_calls": 4,
+ "exec_errors": 0,
+ "cost_usd": 0.0,
+ "seconds": 216.76,
+ "log_path": "results/v03/cascade/logs/v3_full/T1_16.json",
+ "rounds": 3,
+ "format_retry": false
+}

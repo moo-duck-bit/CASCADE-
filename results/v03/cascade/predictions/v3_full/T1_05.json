@@ -1,0 +1,221 @@
+{
+ "case_id": "T1_05",
+ "case_type": "T1",
+ "method": "v3_full",
+ "model": "qwen3-32b",
+ "config_hash": "31fb367887edac80",
+ "seed": 20261103,
+ "propagation_type": "fact",
+ "edits": [
+  {
+   "site": "[MDSR | 3.4 일반적 제한 | 본문#p2]",
+   "doc": "MDSR",
+   "item": "3.4 일반적 제한",
+   "field": "본문#p2",
+   "new_text": "사용자 세션은 오 분 동안 활동이 없을 경우 자동으로 종료됩니다. 의료진이 사용하는 대시보드의 경우 오 분 동안 비활동 시 세션이 종료되며, 보다 엄격한 보안이 적용됩니다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 3 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 3",
+   "field": "설명",
+   "new_text": "사용자 및 의료진의 세션은 5분 경과 시 자동으로 종료되도록 하여 보안성을 유지하여야 한다. 의료진 대시보드의 세션 종료 시간은 5분으로 설정하여야 하며, 세션 종료 5분 전에 사용자에게 잠금 해제 안내를 제공하여야 한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 3 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 3",
+   "field": "기준#p1",
+   "new_text": "사용자 세션은 5 분 경과 후 자동 종료되며, 의료진 대시보드 세션은 5 분 경과 후 자동 종료됨을 확인함.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 3 | 기준#p2]",
+   "doc": "MDSR",
+   "item": "Req. 3",
+   "field": "기준#p2",
+   "new_text": "세션 종료 5 분 전에 사용자에게 잠금 해제 안내가 표시됨을 확인함.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 3 | 설계#p1]",
+   "doc": "MDDR",
+   "item": "Req. 3",
+   "field": "설계#p1",
+   "new_text": "• 사용자 세션은 5분 동안 활동이 없을 경우 자동으로 종료되도록 구현한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 3 | 설계#p2]",
+   "doc": "MDDR",
+   "item": "Req. 3",
+   "field": "설계#p2",
+   "new_text": "• 의료진 대시보드 세션은 5분 동안 활동이 없을 경우 자동으로 종료되도록 구현한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 3 | 설계#p3]",
+   "doc": "MDDR",
+   "item": "Req. 3",
+   "field": "설계#p3",
+   "new_text": "• 세션 잠금 상태에서 5분 전에 사용자에게 잠금 해제 안내를 제공하도록 구현한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | UC-03 | 시험방법#p1]",
+   "doc": "XXCS",
+   "item": "UC-03",
+   "field": "시험방법#p1",
+   "new_text": "사용자가 5 분 동안 활동이 없을 경우 세션이 자동으로 종료되는지 확인한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | UC-03 | 시험방법#p2]",
+   "doc": "XXCS",
+   "item": "UC-03",
+   "field": "시험방법#p2",
+   "new_text": "의료진이 5 분 동안 대시보드에 활동이 없을 경우 세션이 자동으로 종료되는지 확인한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | UC-03 | 확인결과#p1]",
+   "doc": "XXCS",
+   "item": "UC-03",
+   "field": "확인결과#p1",
+   "new_text": "일반 사용자 세션이 오 분 경과 후 자동 종료되는 것을 확인함.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | UC-03 | 확인결과#p2]",
+   "doc": "XXCS",
+   "item": "UC-03",
+   "field": "확인결과#p2",
+   "new_text": "의료진 대시보드 세션이 오 분 경과 후 자동 종료되는 것을 확인함.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | UC-06 | 시험방법#p1]",
+   "doc": "XXCS",
+   "item": "UC-06",
+   "field": "시험방법#p1",
+   "new_text": "시스템 내 타임스탬프가 5분을 기준으로 세션 종료 시점을 정확히 기록하는지 확인한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | UC-06 | 시험방법#p2]",
+   "doc": "XXCS",
+   "item": "UC-06",
+   "field": "시험방법#p2",
+   "new_text": "사용자 잠금 해제 안내가 5분 전에 정확히 전달되는지 확인한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | UC-06 | 시험방법#p3]",
+   "doc": "XXCS",
+   "item": "UC-06",
+   "field": "시험방법#p3",
+   "new_text": "의료진 대시보드의 세션 종료 시간이 5분에 따라 정확히 반영되는지 확인한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | UC-06 | 확인결과#p1]",
+   "doc": "XXCS",
+   "item": "UC-06",
+   "field": "확인결과#p1",
+   "new_text": "타임스탬프 기반 세션 종료 시점이 5 분에 정확히 반영됨을 확인함.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | UC-06 | 확인결과#p2]",
+   "doc": "XXCS",
+   "item": "UC-06",
+   "field": "확인결과#p2",
+   "new_text": "잠금 해제 안내가 5 분 전에 사용자에게 전달됨을 확인함.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | UC-06 | 확인결과#p3]",
+   "doc": "XXCS",
+   "item": "UC-06",
+   "field": "확인결과#p3",
+   "new_text": "의료진 대시보드의 세션 종료 시간이 5 분에 따라 정확히 동작됨을 확인함.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | IA-06 | 시험방법#p2]",
+   "doc": "XXCS",
+   "item": "IA-06",
+   "field": "시험방법#p2",
+   "new_text": "계정이 잠금된 상태에서 5 분 경과 후 잠금 해제 가능 여부를 확인한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | IA-06 | 확인결과#p2]",
+   "doc": "XXCS",
+   "item": "IA-06",
+   "field": "확인결과#p2",
+   "new_text": "계정 잠금 후 5 분 동안 로그인 시도가 차단됨을 확인함.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | IA-06 | 확인결과#p3]",
+   "doc": "XXCS",
+   "item": "IA-06",
+   "field": "확인결과#p3",
+   "new_text": "잠금 해제가 오 분 경과 후 가능하며, 사용자에게 해당 시각에 대한 피드백이 제공됨을 확인함.",
+   "op": "modify",
+   "source": "llm"
+  }
+ ],
+ "parse_ok": true,
+ "truncated": false,
+ "error": null,
+ "stop_reason": "no_change",
+ "complexity": {
+  "n_docs": 3,
+  "n_cells": 975,
+  "doc_chars": 24729,
+  "doc_tokens": 12364,
+  "n_candidates": 29,
+  "n_relevant": 17,
+  "n_retrieved": 0,
+  "context_tokens": 7280,
+  "llm_calls": 4,
+  "rounds": 3,
+  "tokens_in": 18893,
+  "tokens_out": 5137,
+  "cost_usd": 0.0,
+  "seconds": 503.57
+ },
+ "n_pred": 20,
+ "input_tokens": 18893,
+ "output_tokens": 5137,
+ "n_calls": 4,
+ "exec_errors": 0,
+ "cost_usd": 0.0,
+ "seconds": 503.57,
+ "log_path": "results/v03/cascade/logs/v3_full/T1_05.json",
+ "rounds": 3,
+ "format_retry": false
+}

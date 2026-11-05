@@ -1,0 +1,140 @@
+{
+ "case_id": "T3_49",
+ "case_type": "T3",
+ "method": "v3_full",
+ "model": "qwen3-32b",
+ "config_hash": "31fb367887edac80",
+ "seed": 20261103,
+ "propagation_type": "structural_add",
+ "edits": [
+  {
+   "site": "[MDSR | Req. 19 | 번호]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "번호",
+   "new_text": "Req. 19",
+   "op": "insert",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 제목]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "제목",
+   "new_text": "아침 점검",
+   "op": "insert",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | SI-06 | 소프트웨어 기능 요구사항 번호]",
+   "doc": "MDSR",
+   "item": "SI-06",
+   "field": "소프트웨어 기능 요구사항 번호",
+   "new_text": "Req. 15, Req. 19, Req. 108",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[XXCS | SI-06 | 해당 요구사항]",
+   "doc": "XXCS",
+   "item": "SI-06",
+   "field": "해당 요구사항",
+   "new_text": "Req. 15, Req. 19, Req. 108",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "설명",
+   "new_text": "앱은 사용자가 기상 후 수면 만족도 점검 문항에 응답하도록 하여야 하며, 응답 저장에 실패하면 직전에 저장된 상태를 유지하여야 한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 목적]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "목적",
+   "new_text": "사용자의 수면 상태를 모니터링하여 건강 관리의 일관성을 유지하고, 저장 실패 시 데이터 손실을 방지한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "기준#p1",
+   "new_text": "사용자가 수면 만족도 점검 문항에 응답할 수 있음을 확인함",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 기준#p2]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "기준#p2",
+   "new_text": "응답 저장에 실패했을 때 직전에 저장된 상태가 유지되었음을 확인함",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 19 | 설계#p1]",
+   "doc": "MDDR",
+   "item": "Req. 19",
+   "field": "설계#p1",
+   "new_text": "• 수면 만족도 점검 문항은 사용자 기상 시 자동으로 표시되도록 구현한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 19 | 설계#p2]",
+   "doc": "MDDR",
+   "item": "Req. 19",
+   "field": "설계#p2",
+   "new_text": "• 응답 저장 시 데이터베이스 또는 로컬 저장소에 저장되며, 실패 시 직전 상태를 복원한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 19 | 설계#p3]",
+   "doc": "MDDR",
+   "item": "Req. 19",
+   "field": "설계#p3",
+   "new_text": "• 저장 실패 시 사용자에게 알림을 제공하여 문제를 인지할 수 있도록 한다.",
+   "op": "insert",
+   "source": "llm"
+  }
+ ],
+ "parse_ok": true,
+ "truncated": false,
+ "error": null,
+ "stop_reason": "no_issues",
+ "complexity": {
+  "n_docs": 3,
+  "n_cells": 975,
+  "doc_chars": 24729,
+  "doc_tokens": 12364,
+  "n_candidates": 64,
+  "n_relevant": 12,
+  "n_retrieved": 10,
+  "context_tokens": 10023,
+  "llm_calls": 2,
+  "rounds": 1,
+  "tokens_in": 10023,
+  "tokens_out": 1339,
+  "cost_usd": 0.0,
+  "seconds": 153.99
+ },
+ "n_pred": 11,
+ "input_tokens": 10023,
+ "output_tokens": 1339,
+ "n_calls": 2,
+ "exec_errors": 0,
+ "cost_usd": 0.0,
+ "seconds": 153.99,
+ "log_path": "results/v03/cascade/logs/v3_full/T3_49.json",
+ "rounds": 1,
+ "format_retry": false
+}

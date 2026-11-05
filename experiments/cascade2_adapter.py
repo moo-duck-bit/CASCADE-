@@ -21,7 +21,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 # CASCADE_SRC: 평가 중 코드 편집의 영향을 막으려고 특정 커밋의 src 사본을 쓸 때(git archive로 만든 폴더)
-sys.path.insert(0, os.environ.get("CASCADE_SRC") or str(ROOT.parent / "pilot_base" / "src"))
+sys.path.insert(0, os.environ.get("CASCADE_SRC") or str(ROOT / "src" if (ROOT / "src").is_dir() else ROOT.parent / "pilot_base" / "src"))
 
 from document_ai.cascade import config as cfg  # noqa: E402
 from document_ai.cascade.run import run_case  # noqa: E402

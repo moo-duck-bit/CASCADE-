@@ -1,0 +1,104 @@
+{
+ "case_id": "T3_37",
+ "case_type": "T3",
+ "method": "v3_full",
+ "model": "qwen3-32b",
+ "config_hash": "31fb367887edac80",
+ "seed": 20261103,
+ "propagation_type": "structural_add",
+ "edits": [
+  {
+   "site": "[MDSR | Req. 19 | 번호]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "번호",
+   "new_text": "Req. 19",
+   "op": "insert",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 제목]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "제목",
+   "new_text": "주말 기상 안내",
+   "op": "insert",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | SI-05 | 소프트웨어 기능 요구사항 번호]",
+   "doc": "MDSR",
+   "item": "SI-05",
+   "field": "소프트웨어 기능 요구사항 번호",
+   "new_text": "Req. 1, Req. 8, Req. 10, Req. 13, Req. 14, Req. 19, Req. 106",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "설명",
+   "new_text": "사용자는 주말 기상 시각을 따로 설정할 수 있어야 하며, 앱은 입력값의 허용 범위를 검증하고 평일 기상 시각과의 차이를 안내하여야 한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 목적]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "목적",
+   "new_text": "사용자의 주말 기상 시간 설정을 지원하고, 입력값의 유효성을 검증하여 시스템 오류를 방지하며, 사용자에게 일관된 알림을 제공한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "기준#p1",
+   "new_text": "입력값의 허용 범위가 정의되어 있으며, 범위를 벗어난 값이 입력되었을 때 오류 메시지가 표시되었음을 확인함",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 기준#p2]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "기준#p2",
+   "new_text": "주말 기상 시각과 평일 기상 시각의 차이가 사용자에게 안내되었음을 확인함",
+   "op": "insert",
+   "source": "llm"
+  }
+ ],
+ "parse_ok": true,
+ "truncated": false,
+ "error": null,
+ "stop_reason": "no_issues",
+ "complexity": {
+  "n_docs": 1,
+  "n_cells": 384,
+  "doc_chars": 10788,
+  "doc_tokens": 5394,
+  "n_candidates": 33,
+  "n_relevant": 7,
+  "n_retrieved": 10,
+  "context_tokens": 10457,
+  "llm_calls": 2,
+  "rounds": 1,
+  "tokens_in": 10457,
+  "tokens_out": 1561,
+  "cost_usd": 0.0,
+  "seconds": 191.39
+ },
+ "n_pred": 7,
+ "input_tokens": 10457,
+ "output_tokens": 1561,
+ "n_calls": 2,
+ "exec_errors": 0,
+ "cost_usd": 0.0,
+ "seconds": 191.39,
+ "log_path": "results/v03/cascade/logs/v3_full/T3_37.json",
+ "rounds": 1,
+ "format_retry": false
+}

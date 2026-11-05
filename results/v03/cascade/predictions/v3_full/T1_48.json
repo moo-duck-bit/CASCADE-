@@ -1,0 +1,122 @@
+{
+ "case_id": "T1_48",
+ "case_type": "T1",
+ "method": "v3_full",
+ "model": "qwen3-32b",
+ "config_hash": "6db5b2365786e711",
+ "seed": 20261103,
+ "propagation_type": "fact",
+ "edits": [
+  {
+   "site": "[MDSR | Req. 8 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 8",
+   "field": "설명",
+   "new_text": "사용자는 24시간 이내에 수면일기를 기록하여야 한다. 수면일기에는 22:00과 6:30을 기본값으로 포함하여야 한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 8 | 기준#p2]",
+   "doc": "MDSR",
+   "item": "Req. 8",
+   "field": "기준#p2",
+   "new_text": "밤 10시와 아침 6시 30분이 수면일기 기록 화면에 기본값으로 설정되어 있는 경우 기능 정상 동작으로 확인함.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 10 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 10",
+   "field": "설명",
+   "new_text": "수면 제한 요법 기본 시간은 22시에 취침하고 6시 30분에 기상을 하도록 설정하여야 한다. 사용자의 수면 습관에 맞는 기본 시간을 제공하여야 한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 10 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 10",
+   "field": "기준#p1",
+   "new_text": "시스템이 22:00을 취침 시간으로, 6:30을 기상 시간으로 기본 설정하여 제공함을 확인함",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 10 | 기준#p2]",
+   "doc": "MDSR",
+   "item": "Req. 10",
+   "field": "기준#p2",
+   "new_text": "사용자가 설정을 변경하지 않은 상태에서 수면 제한 요법 시작 시 밤 10시와 아침 6시 30분이 적용됨을 확인함",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 8 | 설계#p3]",
+   "doc": "MDDR",
+   "item": "Req. 8",
+   "field": "설계#p3",
+   "new_text": "• 수면 제한 요법의 기본 기상 시간은 6시 30분으로 설정되며, 일기 기록 시 반영한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 10 | 설계#p1]",
+   "doc": "MDDR",
+   "item": "Req. 10",
+   "field": "설계#p1",
+   "new_text": "• 사용자에게 수면 제한 요법 기본 시간을 설정하도록 하며, 기본 취침 시간은 22:00을, 기상 시간은 6:30을 각각 적용한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 10 | 설계#p2]",
+   "doc": "MDDR",
+   "item": "Req. 10",
+   "field": "설계#p2",
+   "new_text": "• 수면 제한 요법 기본 시간은 사용자 개입 없이 애플리케이션 내에서 밤 10시와 아침 6시 30분을 초기값으로 설정하도록 구현한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 10 | 설계#p3]",
+   "doc": "MDDR",
+   "item": "Req. 10",
+   "field": "설계#p3",
+   "new_text": "• 사용자가 수면 제한 요법 시간을 변경하지 않은 경우, 시스템은 22시에서 6시 30분까지의 시간 범위를 수면 시간으로 자동 계산한다.",
+   "op": "modify",
+   "source": "llm"
+  }
+ ],
+ "parse_ok": true,
+ "truncated": false,
+ "error": null,
+ "stop_reason": "no_issues",
+ "complexity": {
+  "n_docs": 2,
+  "n_cells": 547,
+  "doc_chars": 15802,
+  "doc_tokens": 7901,
+  "n_candidates": 9,
+  "n_relevant": 9,
+  "n_retrieved": 0,
+  "context_tokens": 3500,
+  "llm_calls": 2,
+  "rounds": 1,
+  "tokens_in": 3500,
+  "tokens_out": 1190,
+  "cost_usd": 0.0,
+  "seconds": 98.8
+ },
+ "n_pred": 9,
+ "input_tokens": 3500,
+ "output_tokens": 1190,
+ "n_calls": 2,
+ "exec_errors": 0,
+ "cost_usd": 0.0,
+ "seconds": 98.8,
+ "log_path": "results/v03/cascade/logs/v3_full/T1_48.json",
+ "rounds": 1,
+ "format_retry": false
+}

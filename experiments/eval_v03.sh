@@ -6,7 +6,7 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 export V03_CASES=${V03_CASES:-$PWD/v03/cases}
 PY=${PY:-python}
-BASE=$PWD/../pilot_base
+BASE=$PWD
 export CASCADE_CORPUS_DIR=$PWD/corpus
 
 # 1) 고정 상태 확인: 설정·프롬프트·규칙 표·검사 명세·도메인 팩·연산 스키마·검색 설정·코퍼스 해시

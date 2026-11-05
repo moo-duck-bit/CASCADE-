@@ -1,0 +1,104 @@
+{
+ "case_id": "T1_30",
+ "case_type": "T1",
+ "method": "v3_full",
+ "model": "qwen3-32b",
+ "config_hash": "6db5b2365786e711",
+ "seed": 20261103,
+ "propagation_type": "fact",
+ "edits": [
+  {
+   "site": "[MDSR | 3.4 일반적 제한 | 본문#p3]",
+   "doc": "MDSR",
+   "item": "3.4 일반적 제한",
+   "field": "본문#p3",
+   "new_text": "비밀번호는 10글자 이상의 길이를 가지며, 대소문자+숫자+특수문자를 만족하여야 생성됩니다. 또한, 사용자는 3개월마다 비밀번호를 변경하여야 하며, 이는 보안 위험을 최소화하기 위한 조치입니다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 1 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 1",
+   "field": "설명",
+   "new_text": "사용자는 10자 이상의 길이를 가지며 대문자, 소문자, 숫자, 특수문자 조합을 만족하는 비밀번호를 입력하여 로그인하여야 한다. 5회 이상 로그인 시도에 실패한 경우 추가 인증 절차를 수행하여야 한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 1 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 1",
+   "field": "기준#p1",
+   "new_text": "비밀번호가 10 자 이상이며 대/소문자, 숫자, 특수기호 포함을 만족하는 경우 로그인이 허용됨을 확인함",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | IA-05 | 시험방법#p1]",
+   "doc": "XXCS",
+   "item": "IA-05",
+   "field": "시험방법#p1",
+   "new_text": "사용자가 10 자 이상의 길이를 가지며, 대/소문자, 숫자, 특수기호 포함을 만족하는 비밀번호를 설정할 수 있도록 강제하는 기능을 확인한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | IA-05 | 확인결과#p1]",
+   "doc": "XXCS",
+   "item": "IA-05",
+   "field": "확인결과#p1",
+   "new_text": "사용자가 10글자 이상의 길이를 가지며, 대소문자+숫자+특수문자를 만족하는 비밀번호를 입력하지 않으면 등록이 거부되는 것을 확인함.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | IA-05 | 확인결과#p3]",
+   "doc": "XXCS",
+   "item": "IA-05",
+   "field": "확인결과#p3",
+   "new_text": "의료진 계정의 비밀번호 정책도 일반 사용자와 동일한 대문자, 소문자, 숫자, 특수문자 조합 및 10자 기준이 적용됨을 확인함.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | SI-05 | 확인결과#p1]",
+   "doc": "XXCS",
+   "item": "SI-05",
+   "field": "확인결과#p1",
+   "new_text": "비밀번호 입력 시 10 자 이상 대/소문자, 숫자, 특수기호 포함을 만족하지 않으면 등록이 거부되는 것을 확인함",
+   "op": "modify",
+   "source": "llm"
+  }
+ ],
+ "parse_ok": true,
+ "truncated": false,
+ "error": null,
+ "stop_reason": "no_issues",
+ "complexity": {
+  "n_docs": 2,
+  "n_cells": 812,
+  "doc_chars": 19715,
+  "doc_tokens": 9857,
+  "n_candidates": 7,
+  "n_relevant": 7,
+  "n_retrieved": 0,
+  "context_tokens": 4240,
+  "llm_calls": 2,
+  "rounds": 1,
+  "tokens_in": 4240,
+  "tokens_out": 1021,
+  "cost_usd": 0.0,
+  "seconds": 91.11
+ },
+ "n_pred": 7,
+ "input_tokens": 4240,
+ "output_tokens": 1021,
+ "n_calls": 2,
+ "exec_errors": 0,
+ "cost_usd": 0.0,
+ "seconds": 91.11,
+ "log_path": "results/v03/cascade/logs/v3_full/T1_30.json",
+ "rounds": 1,
+ "format_retry": false
+}

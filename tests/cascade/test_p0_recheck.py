@@ -1,5 +1,6 @@
 """P0: 필수 항목을 테스트로 다시 확인한다. 기능 추가 없이 빠진 것만 보완한다."""
 
+import os
 import json
 import shutil
 import subprocess
@@ -19,7 +20,7 @@ from document_ai.cascade.verifier import fake_issues
 from .fixture_docs import build_case
 from .test_m8_loop_gate import GOOD, STALE, T1, scripted
 
-PILOT = Path("/home/jkpark/workspace/pilot_data")
+PILOT = Path(__file__).resolve().parents[2]
 CASES = PILOT / "v02" / "cases"
 REG = Path(__file__).resolve().parent / "data" / "regression"
 FREE = cfg.from_dict({"edit_mode": "free_json"})  # 모의 Editor 응답이 칸마다 글 형식
@@ -73,7 +74,9 @@ def test_guard_denies_v03_product_dirs():
 
 
 def test_default_corpus_dir_is_pilot_data_corpus():
-    assert guard_mod.default_corpus_dir().parts[-2:] == ("pilot_data", "corpus")
+    env = os.environ.get("CASCADE_CORPUS_DIR")  # 공개 저장소에서는 코퍼스 위치를 환경변수로 준다
+    assert (guard_mod.default_corpus_dir() == Path(env).resolve()) if env else \
+        guard_mod.default_corpus_dir().parts[-2:] == ("pilot_data", "corpus")
 
 
 def test_run_log_lists_files_read(tmp_path):

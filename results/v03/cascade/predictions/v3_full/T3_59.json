@@ -1,0 +1,189 @@
+{
+ "case_id": "T3_59",
+ "case_type": "T3",
+ "method": "v3_full",
+ "model": "qwen3-32b",
+ "config_hash": "31fb367887edac80",
+ "seed": 20261103,
+ "propagation_type": "structural_add+fact",
+ "edits": [
+  {
+   "site": "[MDSR | Req. 19 | 번호]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "번호",
+   "new_text": "Req. 19",
+   "op": "insert",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 제목]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "제목",
+   "new_text": "기록 내보내기",
+   "op": "insert",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | DC-01 | 소프트웨어 기능 요구사항 번호]",
+   "doc": "MDSR",
+   "item": "DC-01",
+   "field": "소프트웨어 기능 요구사항 번호",
+   "new_text": "Req. 5, Req. 7, Req. 8, Req. 19, Req. 106",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | DC-03 | 소프트웨어 기능 요구사항 번호]",
+   "doc": "MDSR",
+   "item": "DC-03",
+   "field": "소프트웨어 기능 요구사항 번호",
+   "new_text": "Req. 4, Req. 10, Req. 19, Req. 102, Req. 103",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "설명",
+   "new_text": "사용자는 자신의 수면 기록을 파일로 내보낼 수 있어야 하며, 내보내는 파일은 안전한 암호 방식으로 암호화되어야 한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 목적]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "목적",
+   "new_text": "사용자의 수면 데이터를 안전하게 백업하고 공유할 수 있도록 하여 데이터 무결성과 기밀성을 보장한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "기준#p1",
+   "new_text": "사용자가 수면 기록을 파일로 내보내는 기능이 정상 동작함",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 기준#p2]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "기준#p2",
+   "new_text": "내보내는 파일이 안전한 암호 방식으로 암호화되어 있음을 확인함",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 19 | 설계#p1]",
+   "doc": "MDDR",
+   "item": "Req. 19",
+   "field": "설계#p1",
+   "new_text": "• 사용자가 수면 기록을 내보내는 기능은 모바일 애플리케이션 내에서 선택 가능한 메뉴로 구현한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 19 | 설계#p2]",
+   "doc": "MDDR",
+   "item": "Req. 19",
+   "field": "설계#p2",
+   "new_text": "• 내보내는 파일 형식은 CSV 또는 JSON이며, 암호화는 AES-256 알고리즘을 사용한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 19 | 설계#p3]",
+   "doc": "MDDR",
+   "item": "Req. 19",
+   "field": "설계#p3",
+   "new_text": "• 암호화된 파일은 사용자의 기기 내 저장소에 저장되며, 암호화 키는 시스템 내부에서 안전하게 관리한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 9 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 9",
+   "field": "설명",
+   "new_text": "사용자는 알림 설정을 통해 알림 시각을 설정할 수 있어야 하며, 기본 CBT 회기 알림 시각은 20:00으로 설정되어야 한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 9 | 기준#p2]",
+   "doc": "MDSR",
+   "item": "Req. 9",
+   "field": "기준#p2",
+   "new_text": "CBT 회기 알림이 오후 8시에 자동으로 설정되어 전달됨을 확인함",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 14 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 14",
+   "field": "기준#p1",
+   "new_text": "CBT 회기 알림의 기본 설정 시간이 20시를 기준으로 설정됨을 확인함",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 9 | 설계#p2]",
+   "doc": "MDDR",
+   "item": "Req. 9",
+   "field": "설계#p2",
+   "new_text": "• CBT 회기 시작 전 알림은 20:00에 자동으로 발송되도록 기본값을 설정한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 14 | 설계#p1]",
+   "doc": "MDDR",
+   "item": "Req. 14",
+   "field": "설계#p1",
+   "new_text": "• CBT 회기 알림은 사용자가 설정하지 않은 경우 기본 시각 오후 8시에 알림을 발생시키도록 구현한다.",
+   "op": "modify",
+   "source": "llm"
+  }
+ ],
+ "parse_ok": true,
+ "truncated": false,
+ "error": null,
+ "stop_reason": "no_issues",
+ "changes": [
+  "T3_add",
+  "T1"
+ ],
+ "complexity": {
+  "n_docs": 2,
+  "n_cells": 547,
+  "doc_chars": 15802,
+  "doc_tokens": 7901,
+  "n_candidates": 42,
+  "n_relevant": 17,
+  "n_retrieved": 10,
+  "context_tokens": 13628,
+  "llm_calls": 4,
+  "rounds": 2,
+  "tokens_in": 13628,
+  "tokens_out": 2188,
+  "cost_usd": 0.0,
+  "seconds": 219.62
+ },
+ "n_pred": 16,
+ "input_tokens": 13628,
+ "output_tokens": 2188,
+ "n_calls": 4,
+ "exec_errors": 0,
+ "cost_usd": 0.0,
+ "seconds": 219.62,
+ "log_path": "results/v03/cascade/logs/v3_full/T3_59.json",
+ "rounds": 2,
+ "format_retry": false
+}

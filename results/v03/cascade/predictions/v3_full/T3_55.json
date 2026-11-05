@@ -1,0 +1,153 @@
+{
+ "case_id": "T3_55",
+ "case_type": "T3",
+ "method": "v3_full",
+ "model": "qwen3-32b",
+ "config_hash": "31fb367887edac80",
+ "seed": 20261103,
+ "propagation_type": "structural_add+fact",
+ "edits": [
+  {
+   "site": "[MDSR | Req. 109 | 번호]",
+   "doc": "MDSR",
+   "item": "Req. 109",
+   "field": "번호",
+   "new_text": "Req. 109",
+   "op": "insert",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 109 | 제목]",
+   "doc": "MDSR",
+   "item": "Req. 109",
+   "field": "제목",
+   "new_text": "이완 전 준비",
+   "op": "insert",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | SI-04 | 소프트웨어 기능 요구사항 번호]",
+   "doc": "MDSR",
+   "item": "SI-04",
+   "field": "소프트웨어 기능 요구사항 번호",
+   "new_text": "Req. 13, Req. 18, Req. 109",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 109 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 109",
+   "field": "설명",
+   "new_text": "서버는 이완 훈련 전에 볼 준비 안내 콘텐츠를 앱에 배포할 수 있어야 하며, 배포 전에 콘텐츠의 무결성을 점검하여야 한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 109 | 목적]",
+   "doc": "MDSR",
+   "item": "Req. 109",
+   "field": "목적",
+   "new_text": "이완 훈련 전 볼 준비 안내 콘텐츠의 무결성을 보장하여 사용자에게 안전하고 신뢰할 수 있는 정보를 제공함으로써 시스템의 신뢰성과 사용자 안전을 확보한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 109 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 109",
+   "field": "기준#p1",
+   "new_text": "이완 훈련 전 볼 준비 안내 콘텐츠가 앱에 정상적으로 배포되는지 확인함",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 109 | 기준#p2]",
+   "doc": "MDSR",
+   "item": "Req. 109",
+   "field": "기준#p2",
+   "new_text": "이완 훈련 전 볼 준비 안내 콘텐츠의 무결성이 점검되어 이상이 없는지 확인함",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 10 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 10",
+   "field": "설명",
+   "new_text": "수면 제한 요법 기본 시간은 22시에 취침하고 8시에 기상을 하도록 설정하여야 한다. 사용자의 수면 습관에 맞는 기본 시간을 제공하여야 한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 10 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 10",
+   "field": "기준#p1",
+   "new_text": "시스템이 22:00을 취침 시간으로, 8:00을 기상 시간으로 기본 설정하여 제공함을 확인함",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 10 | 기준#p2]",
+   "doc": "MDSR",
+   "item": "Req. 10",
+   "field": "기준#p2",
+   "new_text": "사용자가 설정을 변경하지 않은 상태에서 수면 제한 요법 시작 시 밤 10시와 아침 8시가 적용됨을 확인함",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 8 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 8",
+   "field": "설명",
+   "new_text": "사용자는 24시간 이내에 수면일기를 기록하여야 한다. 수면일기에는 22:00과 8:00을 기본값으로 포함하여야 한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 8 | 기준#p2]",
+   "doc": "MDSR",
+   "item": "Req. 8",
+   "field": "기준#p2",
+   "new_text": "밤 10시와 아침 8시가 수면일기 기록 화면에 기본값으로 설정되어 있는 경우 기능 정상 동작으로 확인함.",
+   "op": "modify",
+   "source": "llm"
+  }
+ ],
+ "parse_ok": true,
+ "truncated": false,
+ "error": null,
+ "stop_reason": "no_issues",
+ "changes": [
+  "T3_add",
+  "T1"
+ ],
+ "complexity": {
+  "n_docs": 1,
+  "n_cells": 384,
+  "doc_chars": 10788,
+  "doc_tokens": 5394,
+  "n_candidates": 38,
+  "n_relevant": 10,
+  "n_retrieved": 10,
+  "context_tokens": 11799,
+  "llm_calls": 5,
+  "rounds": 3,
+  "tokens_in": 13413,
+  "tokens_out": 2506,
+  "cost_usd": 0.0,
+  "seconds": 265.45
+ },
+ "n_pred": 12,
+ "input_tokens": 13413,
+ "output_tokens": 2506,
+ "n_calls": 5,
+ "exec_errors": 0,
+ "cost_usd": 0.0,
+ "seconds": 265.45,
+ "log_path": "results/v03/cascade/logs/v3_full/T3_55.json",
+ "rounds": 3,
+ "format_retry": false
+}

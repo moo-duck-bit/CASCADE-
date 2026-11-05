@@ -1,0 +1,68 @@
+{
+ "case_id": "T1_62",
+ "case_type": "T1",
+ "method": "v3_full",
+ "model": "qwen3-32b",
+ "config_hash": "6db5b2365786e711",
+ "seed": 20261103,
+ "propagation_type": "fact",
+ "edits": [
+  {
+   "site": "[MDSR | Req. 106 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 106",
+   "field": "설명",
+   "new_text": "수면코치는 4회를 제공하여야 한다. 사용자는 설정된 치료 회기 수에 따라 프로그램을 완료하여야 한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 106 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 106",
+   "field": "기준#p1",
+   "new_text": "시스템은 4 회를 정확히 제공하고 완료 여부를 기록하여야 한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 106 | 기준#p2]",
+   "doc": "MDSR",
+   "item": "Req. 106",
+   "field": "기준#p2",
+   "new_text": "사용자가 4번 모두를 완료한 경우, 치료 완료 상태를 확인하여야 한다.",
+   "op": "modify",
+   "source": "llm"
+  }
+ ],
+ "parse_ok": true,
+ "truncated": false,
+ "error": null,
+ "stop_reason": "no_issues",
+ "complexity": {
+  "n_docs": 1,
+  "n_cells": 384,
+  "doc_chars": 10788,
+  "doc_tokens": 5394,
+  "n_candidates": 3,
+  "n_relevant": 3,
+  "n_retrieved": 0,
+  "context_tokens": 2010,
+  "llm_calls": 2,
+  "rounds": 1,
+  "tokens_in": 2010,
+  "tokens_out": 409,
+  "cost_usd": 0.0,
+  "seconds": 37.72
+ },
+ "n_pred": 3,
+ "input_tokens": 2010,
+ "output_tokens": 409,
+ "n_calls": 2,
+ "exec_errors": 0,
+ "cost_usd": 0.0,
+ "seconds": 37.72,
+ "log_path": "results/v03/cascade/logs/v3_full/T1_62.json",
+ "rounds": 1,
+ "format_retry": false
+}

@@ -1,0 +1,203 @@
+{
+ "case_id": "T3_27",
+ "case_type": "T3",
+ "method": "v3_full",
+ "model": "qwen3-32b",
+ "config_hash": "31fb367887edac80",
+ "seed": 20261103,
+ "propagation_type": "structural_delete",
+ "edits": [
+  {
+   "site": "[MDSR | Req. 101 | 제목]",
+   "doc": "MDSR",
+   "item": "Req. 101",
+   "field": "제목",
+   "new_text": "삭제",
+   "op": "mark_deleted",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 101 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 101",
+   "field": "설명",
+   "new_text": "삭제",
+   "op": "mark_deleted",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 101 | 목적]",
+   "doc": "MDSR",
+   "item": "Req. 101",
+   "field": "목적",
+   "new_text": "삭제",
+   "op": "mark_deleted",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 101 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 101",
+   "field": "기준#p1",
+   "new_text": "삭제",
+   "op": "mark_deleted",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 101 | 기준#p2]",
+   "doc": "MDSR",
+   "item": "Req. 101",
+   "field": "기준#p2",
+   "new_text": "삭제",
+   "op": "mark_deleted",
+   "source": "rule"
+  },
+  {
+   "site": "[MDDR | Req. 101 | 설계#p1]",
+   "doc": "MDDR",
+   "item": "Req. 101",
+   "field": "설계#p1",
+   "new_text": "삭제",
+   "op": "mark_deleted",
+   "source": "rule"
+  },
+  {
+   "site": "[MDDR | Req. 101 | 설계#p2]",
+   "doc": "MDDR",
+   "item": "Req. 101",
+   "field": "설계#p2",
+   "new_text": "삭제",
+   "op": "mark_deleted",
+   "source": "rule"
+  },
+  {
+   "site": "[MDDR | Req. 101 | 설계#p3]",
+   "doc": "MDDR",
+   "item": "Req. 101",
+   "field": "설계#p3",
+   "new_text": "삭제",
+   "op": "mark_deleted",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | IA-01 | 소프트웨어 기능 요구사항 번호]",
+   "doc": "MDSR",
+   "item": "IA-01",
+   "field": "소프트웨어 기능 요구사항 번호",
+   "new_text": "Req. 8",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | UC-01 | 소프트웨어 기능 요구사항 번호]",
+   "doc": "MDSR",
+   "item": "UC-01",
+   "field": "소프트웨어 기능 요구사항 번호",
+   "new_text": "Req. 16, Req. 102, Req. 108",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | UC-03 | 소프트웨어 기능 요구사항 번호]",
+   "doc": "MDSR",
+   "item": "UC-03",
+   "field": "소프트웨어 기능 요구사항 번호",
+   "new_text": "Req. 3, Req. 100, Req. 102",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | UC-04 | 소프트웨어 기능 요구사항 번호]",
+   "doc": "MDSR",
+   "item": "UC-04",
+   "field": "소프트웨어 기능 요구사항 번호",
+   "new_text": "Req. 2, Req. 6, Req. 18, Req. 102, Req. 103",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | SI-02 | 소프트웨어 기능 요구사항 번호]",
+   "doc": "MDSR",
+   "item": "SI-02",
+   "field": "소프트웨어 기능 요구사항 번호",
+   "new_text": "Req. 11",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[XXCS | IA-01 | 해당 요구사항]",
+   "doc": "XXCS",
+   "item": "IA-01",
+   "field": "해당 요구사항",
+   "new_text": "Req. 8",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[XXCS | UC-01 | 해당 요구사항]",
+   "doc": "XXCS",
+   "item": "UC-01",
+   "field": "해당 요구사항",
+   "new_text": "Req. 16, Req. 102, Req. 108",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[XXCS | UC-03 | 해당 요구사항]",
+   "doc": "XXCS",
+   "item": "UC-03",
+   "field": "해당 요구사항",
+   "new_text": "Req. 3, Req. 100, Req. 102",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[XXCS | UC-04 | 해당 요구사항]",
+   "doc": "XXCS",
+   "item": "UC-04",
+   "field": "해당 요구사항",
+   "new_text": "Req. 2, Req. 6, Req. 18, Req. 102, Req. 103",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[XXCS | SI-02 | 해당 요구사항]",
+   "doc": "XXCS",
+   "item": "SI-02",
+   "field": "해당 요구사항",
+   "new_text": "Req. 11",
+   "op": "modify",
+   "source": "rule"
+  }
+ ],
+ "parse_ok": true,
+ "truncated": false,
+ "error": null,
+ "stop_reason": "no_issues",
+ "complexity": {
+  "n_docs": 3,
+  "n_cells": 975,
+  "doc_chars": 24729,
+  "doc_tokens": 12364,
+  "n_candidates": 18,
+  "n_relevant": 18,
+  "n_retrieved": 0,
+  "context_tokens": 0,
+  "llm_calls": 0,
+  "rounds": 1,
+  "tokens_in": 0,
+  "tokens_out": 0,
+  "cost_usd": 0,
+  "seconds": 1.14
+ },
+ "n_pred": 18,
+ "input_tokens": 0,
+ "output_tokens": 0,
+ "n_calls": 0,
+ "exec_errors": 0,
+ "cost_usd": 0,
+ "seconds": 1.14,
+ "log_path": "results/v03/cascade/logs/v3_full/T3_27.json",
+ "rounds": 1,
+ "format_retry": false
+}

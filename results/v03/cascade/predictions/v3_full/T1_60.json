@@ -1,0 +1,59 @@
+{
+ "case_id": "T1_60",
+ "case_type": "T1",
+ "method": "v3_full",
+ "model": "qwen3-32b",
+ "config_hash": "6db5b2365786e711",
+ "seed": 20261103,
+ "propagation_type": "fact",
+ "edits": [
+  {
+   "site": "[MDSR | Req. 8 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 8",
+   "field": "설명",
+   "new_text": "사용자는 12시간 이내에 수면일기를 기록하여야 한다. 수면일기에 22:00과 7:00을 기본값으로 포함하여야 한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 8 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 8",
+   "field": "기준#p1",
+   "new_text": "사용자가 12 시간 이내에 수면일기를 완료한 경우 정상 기록으로 판정한다.",
+   "op": "modify",
+   "source": "llm"
+  }
+ ],
+ "parse_ok": true,
+ "truncated": false,
+ "error": null,
+ "stop_reason": "no_change",
+ "complexity": {
+  "n_docs": 1,
+  "n_cells": 384,
+  "doc_chars": 10788,
+  "doc_tokens": 5394,
+  "n_candidates": 7,
+  "n_relevant": 2,
+  "n_retrieved": 0,
+  "context_tokens": 2556,
+  "llm_calls": 3,
+  "rounds": 2,
+  "tokens_in": 4949,
+  "tokens_out": 570,
+  "cost_usd": 0.0,
+  "seconds": 50.84
+ },
+ "n_pred": 2,
+ "input_tokens": 4949,
+ "output_tokens": 570,
+ "n_calls": 3,
+ "exec_errors": 0,
+ "cost_usd": 0.0,
+ "seconds": 50.84,
+ "log_path": "results/v03/cascade/logs/v3_full/T1_60.json",
+ "rounds": 2,
+ "format_retry": false
+}

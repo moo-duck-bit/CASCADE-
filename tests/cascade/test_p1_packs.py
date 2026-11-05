@@ -1,5 +1,6 @@
 """P1: 도메인 팩 분리. EC-SW 팩으로 돈 결과는 회귀 기준과 같고, 팩 설정만 바꾼 미니 도메인에서도 그래프·후보가 만들어진다."""
 
+import os
 import ast
 import json
 import re
@@ -30,7 +31,8 @@ def test_ec_sw_pack_loads_from_config_file():
     assert p.sec_full_re.match("IA-05") and not p.sec_full_re.match("Req. 1")
     assert ("MDSR", "소프트웨어 기능 요구사항 번호") in p.link_cells
     assert p.rules_doc()["rules"] and p.values.key_of("15분") == "15|min"
-    assert p.corpus_dir().parts[-2:] == ("pilot_data", "corpus")
+    env = os.environ.get("CASCADE_CORPUS_DIR")  # 공개 저장소에서는 코퍼스 위치를 환경변수로 준다
+    assert (p.corpus_dir() == Path(env).resolve()) if env else p.corpus_dir().parts[-2:] == ("pilot_data", "corpus")
 
 
 def test_no_ec_sw_names_hardcoded_in_code():

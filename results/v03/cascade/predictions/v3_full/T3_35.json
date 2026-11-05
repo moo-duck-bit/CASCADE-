@@ -1,0 +1,104 @@
+{
+ "case_id": "T3_35",
+ "case_type": "T3",
+ "method": "v3_full",
+ "model": "qwen3-32b",
+ "config_hash": "31fb367887edac80",
+ "seed": 20261103,
+ "propagation_type": "structural_add",
+ "edits": [
+  {
+   "site": "[MDSR | Req. 109 | 번호]",
+   "doc": "MDSR",
+   "item": "Req. 109",
+   "field": "번호",
+   "new_text": "Req. 109",
+   "op": "insert",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 109 | 제목]",
+   "doc": "MDSR",
+   "item": "Req. 109",
+   "field": "제목",
+   "new_text": "취침 루틴 점검",
+   "op": "insert",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | UC-04 | 소프트웨어 기능 요구사항 번호]",
+   "doc": "MDSR",
+   "item": "UC-04",
+   "field": "소프트웨어 기능 요구사항 번호",
+   "new_text": "Req. 2, Req. 6, Req. 18, Req. 101, Req. 102, Req. 103, Req. 109",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 109 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 109",
+   "field": "설명",
+   "new_text": "서버는 사용자가 제출한 취침 루틴 점검 결과를 보관하여야 하며, 의료진이 점검 결과를 수정하면 수정자와 수정 내용을 감사기록으로 생성하여야 한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 109 | 목적]",
+   "doc": "MDSR",
+   "item": "Req. 109",
+   "field": "목적",
+   "new_text": "취침 루틴 점검 결과의 보관 및 수정 내역을 기록하여 의료진의 활동을 추적하고, 시스템의 보안성과 투명성을 확보한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 109 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 109",
+   "field": "기준#p1",
+   "new_text": "사용자가 제출한 취침 루틴 점검 결과가 서버에 정확히 보관되는지 확인함",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 109 | 기준#p2]",
+   "doc": "MDSR",
+   "item": "Req. 109",
+   "field": "기준#p2",
+   "new_text": "의료진이 점검 결과를 수정할 때 수정자와 수정 내용이 감사기록에 정확히 기록되는지 확인함",
+   "op": "insert",
+   "source": "llm"
+  }
+ ],
+ "parse_ok": true,
+ "truncated": false,
+ "error": null,
+ "stop_reason": "no_issues",
+ "complexity": {
+  "n_docs": 1,
+  "n_cells": 384,
+  "doc_chars": 10788,
+  "doc_tokens": 5394,
+  "n_candidates": 33,
+  "n_relevant": 7,
+  "n_retrieved": 10,
+  "context_tokens": 9711,
+  "llm_calls": 2,
+  "rounds": 1,
+  "tokens_in": 9711,
+  "tokens_out": 1210,
+  "cost_usd": 0.0,
+  "seconds": 140.13
+ },
+ "n_pred": 7,
+ "input_tokens": 9711,
+ "output_tokens": 1210,
+ "n_calls": 2,
+ "exec_errors": 0,
+ "cost_usd": 0.0,
+ "seconds": 140.13,
+ "log_path": "results/v03/cascade/logs/v3_full/T3_35.json",
+ "rounds": 1,
+ "format_retry": false
+}

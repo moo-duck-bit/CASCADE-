@@ -1,5 +1,6 @@
 """P6: 고정 코퍼스 규정 검색. 코퍼스 해시, 청크 필드, 검색기 3종 인터페이스, retrieval off면 호출 0, 가드 허용, 사용처."""
 
+import os
 import csv
 import hashlib
 import json
@@ -16,7 +17,7 @@ from document_ai.cascade.run import run_case
 
 from .fixture_docs import build_case
 
-CORPUS = Path("/home/jkpark/workspace/pilot_data/corpus")
+CORPUS = Path(os.environ.get("CASCADE_CORPUS_DIR", str(Path(__file__).resolve().parents[2] / "corpus")))
 need_corpus = pytest.mark.skipif(not (CORPUS / "regs.jsonl").exists(), reason="corpus not built")
 T2 = "제품 사이버보안 속성 '개인식별정보 저장'(stores_pii)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다."
 T2_UNKNOWN = "제품 사이버보안 속성 '블루투스 연결 사용'(bluetooth_link)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다."

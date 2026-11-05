@@ -78,7 +78,7 @@
   "embed_revision": "5617a9f61b028005a4858fdac845db406aefb181"
  },
  "corpus": {
-  "dir": "/home/jkpark/workspace/pilot_data/corpus",
+  "dir": "corpus",
   "sha256": "b591b760d35ee0a7f7c1a114218ee1214319859da993652555e4752513889c94",
   "fixed": "b591b760d35ee0a7f7c1a114218ee1214319859da993652555e4752513889c94"
  }

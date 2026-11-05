@@ -5,7 +5,7 @@ cascade_dev_v1 full 실행(Qwen3-32B-FP8, pilot_data/results/cascade)의 케이�
 - editor 응답: 예측 edits 가운데 source=llm인 편집(site, new_text). 고리를 한 바퀴만 돈 케이스만 고른다.
 기대 출력은 같은 실행의 예측 edits다. 정답(gold)은 읽지 않는다.
 
-사용: python tests/cascade/data/regression/make_fixture.py /home/jkpark/workspace/pilot_data
+사용: python tests/cascade/data/regression/make_fixture.py <pilot_data 경로>
 """
 import json
 import sys

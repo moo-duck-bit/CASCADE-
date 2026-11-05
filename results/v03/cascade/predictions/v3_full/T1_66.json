@@ -1,0 +1,122 @@
+{
+ "case_id": "T1_66",
+ "case_type": "T1",
+ "method": "v3_full",
+ "model": "qwen3-32b",
+ "config_hash": "6db5b2365786e711",
+ "seed": 20261103,
+ "propagation_type": "fact",
+ "edits": [
+  {
+   "site": "[MDSR | Req. 13 | 기준#p2]",
+   "doc": "MDSR",
+   "item": "Req. 13",
+   "field": "기준#p2",
+   "new_text": "CBT 회기 기본 간격 5일을 설정하였을 때, 다음 회기 시작까지의 간격이 해당 기간 동안 유지됨을 확인함",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 11 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 11",
+   "field": "설명",
+   "new_text": "사용자는 자극 조절 교육을 5일 동안 수행하여야 한다. 교육 내용은 수면 환경 개선 및 자극 제거 방법을 포함하여야 한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 11 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 11",
+   "field": "기준#p1",
+   "new_text": "사용자가 5 일 동안 자극 조절 교육을 완료한 기록을 확인함",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 12 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 12",
+   "field": "설명",
+   "new_text": "사용자는 수면 위생 교육 콘텐츠를 제공받아 수면 습관 개선을 지원받아야 한다. 수면 위생 교육은 5일 동안 기본적으로 제공되어야 한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 12 | 기준#p2]",
+   "doc": "MDSR",
+   "item": "Req. 12",
+   "field": "기준#p2",
+   "new_text": "수면 위생 교육이 5 일 동안 지속되었음을 확인함",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 16 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 16",
+   "field": "설명",
+   "new_text": "수면 효율 리포트는 5일 간격으로 생성되어 사용자의 수면 패턴을 분석하고 피드백을 제공하여야 한다. 리포트는 사용자의 수면 시간, 수면 시작 시간, 수면 지속 시간 등을 기반으로 생성하여야 한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 16 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 16",
+   "field": "기준#p1",
+   "new_text": "수면 효율 리포트는 5 일 단위로 정확하게 생성됨을 확인함",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 17 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 17",
+   "field": "설명",
+   "new_text": "의료진 메시지는 5일 동안 사용자에게 표시되어야 하며, 이후 자동으로 숨겨지거나 삭제되어야 한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 17 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 17",
+   "field": "기준#p1",
+   "new_text": "의료진 메시지가 5 일 경과 후 더 이상 사용자 인터페이스에 표시되지 않음을 확인함",
+   "op": "modify",
+   "source": "llm"
+  }
+ ],
+ "parse_ok": true,
+ "truncated": false,
+ "error": null,
+ "stop_reason": "no_issues",
+ "complexity": {
+  "n_docs": 1,
+  "n_cells": 384,
+  "doc_chars": 10788,
+  "doc_tokens": 5394,
+  "n_candidates": 10,
+  "n_relevant": 1,
+  "n_retrieved": 0,
+  "context_tokens": 2977,
+  "llm_calls": 3,
+  "rounds": 2,
+  "tokens_in": 5337,
+  "tokens_out": 1276,
+  "cost_usd": 0.0,
+  "seconds": 128.49
+ },
+ "n_pred": 9,
+ "input_tokens": 5337,
+ "output_tokens": 1276,
+ "n_calls": 3,
+ "exec_errors": 0,
+ "cost_usd": 0.0,
+ "seconds": 128.49,
+ "log_path": "results/v03/cascade/logs/v3_full/T1_66.json",
+ "rounds": 2,
+ "format_retry": false
+}

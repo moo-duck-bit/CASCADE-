@@ -1,0 +1,261 @@
+{
+ "case_id": "T3_62",
+ "case_type": "T3",
+ "method": "v3_full",
+ "model": "qwen3-32b",
+ "config_hash": "6db5b2365786e711",
+ "seed": 20261103,
+ "propagation_type": "structural_add+fact",
+ "edits": [
+  {
+   "site": "[MDSR | Req. 19 | 번호]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "번호",
+   "new_text": "Req. 19",
+   "op": "insert",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 제목]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "제목",
+   "new_text": "위젯 표시",
+   "op": "insert",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | DC-01 | 소프트웨어 기능 요구사항 번호]",
+   "doc": "MDSR",
+   "item": "DC-01",
+   "field": "소프트웨어 기능 요구사항 번호",
+   "new_text": "Req. 5, Req. 7, Req. 8, Req. 19, Req. 106",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[XXCS | DC-01 | 해당 요구사항]",
+   "doc": "XXCS",
+   "item": "DC-01",
+   "field": "해당 요구사항",
+   "new_text": "Req. 5, Req. 7, Req. 8, Req. 19, Req. 106",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "설명",
+   "new_text": "앱은 홈 화면 위젯으로 오늘의 수면 목표를 보여 줄 수 있어야 하며, 기기가 잠긴 상태에서는 위젯에 민감한 수면 기록을 표시하지 않아야 한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 목적]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "목적",
+   "new_text": "사용자가 수면 목표를 쉽게 확인할 수 있도록 하며, 기기가 잠긴 상태에서 민감 정보가 노출되는 것을 방지하여 개인정보 보호를 강화한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "기준#p1",
+   "new_text": "홈 화면 위젯에 오늘의 수면 목표가 정확히 표시되었음을 확인함",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 기준#p2]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "기준#p2",
+   "new_text": "기기가 잠긴 상태에서 민감한 수면 기록이 표시되지 않음을 확인함",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 19 | 설계#p1]",
+   "doc": "MDDR",
+   "item": "Req. 19",
+   "field": "설계#p1",
+   "new_text": "• 홈 화면 위젯에 오늘의 수면 목표를 표시하는 기능을 구현한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 19 | 설계#p2]",
+   "doc": "MDDR",
+   "item": "Req. 19",
+   "field": "설계#p2",
+   "new_text": "• 기기가 잠긴 상태에서는 민감한 수면 기록을 표시하지 않도록 보안 정책을 적용한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 19 | 설계#p3]",
+   "doc": "MDDR",
+   "item": "Req. 19",
+   "field": "설계#p3",
+   "new_text": "• 위젯 표시 기능은 사용자의 수면 데이터 접근 권한을 기반으로 동적으로 정보를 제한한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | 3.4 일반적 제한 | 본문#p1]",
+   "doc": "MDSR",
+   "item": "3.4 일반적 제한",
+   "field": "본문#p1",
+   "new_text": "시스템은 4 회 이상의 로그인 실패 시 사용자 계정을 잠급니다. 잠긴 계정은 십오 분 동안 자동으로 잠금 해제되며, 잠금 해제 시 십오 분 전에 사용자에게 안내 메시지를 전달합니다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 1 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 1",
+   "field": "설명",
+   "new_text": "사용자는 8자 이상의 길이를 가지며 대문자, 소문자, 숫자, 특수문자 조합을 만족하는 비밀번호를 입력하여 로그인하여야 한다. 4회 이상 로그인 시도에 실패한 경우 추가 인증 절차를 수행하여야 한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 1 | 기준#p2]",
+   "doc": "MDSR",
+   "item": "Req. 1",
+   "field": "기준#p2",
+   "new_text": "4 회 이상 로그인 시도에 실패한 경우 추가 인증 절차가 실행됨을 확인함",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 2 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 2",
+   "field": "설명",
+   "new_text": "사용자가 4번 동안 로그인 실패 시 15분 동안 계정이 잠금 상태가 되어야 하며, 90일 동안 활동이 없으면 계정이 자동으로 잠금 상태가 되어야 한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 2 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 2",
+   "field": "기준#p1",
+   "new_text": "사용자가 4회 이상 로그인에 실패하면 15 분 동안 계정이 자동으로 잠금 상태가 되는 것을 확인함",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 1 | 설계#p2]",
+   "doc": "MDDR",
+   "item": "Req. 1",
+   "field": "설계#p2",
+   "new_text": "• 사용자의 로그인 시도가 4번을 초과할 경우 추가 로그인 시도를 차단하도록 구현한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 2 | 설계#p1]",
+   "doc": "MDDR",
+   "item": "Req. 2",
+   "field": "설계#p1",
+   "new_text": "• 사용자가 4회 이상 로그인을 실패할 경우, 해당 계정은 15분 동안 잠금되도록 구현한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 2 | 설계#p2]",
+   "doc": "MDDR",
+   "item": "Req. 2",
+   "field": "설계#p2",
+   "new_text": "• 잠금 해제 후에도 동일 사용자가 4 회 이상 다시 로그인을 실패하면, 잠금 시간은 15 분으로 동일하게 적용한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | IA-06 | 시험방법#p1]",
+   "doc": "XXCS",
+   "item": "IA-06",
+   "field": "시험방법#p1",
+   "new_text": "사용자가 4번 동안 로그인 시도를 실패하면 계정이 잠금되는 동작을 확인한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | IA-06 | 확인결과#p1]",
+   "doc": "XXCS",
+   "item": "IA-06",
+   "field": "확인결과#p1",
+   "new_text": "로그인 실패 횟수가 4회를 초과하면 계정 잠금 기능이 정상적으로 동작함을 확인함.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | IA-07 | 시험방법#p1]",
+   "doc": "XXCS",
+   "item": "IA-07",
+   "field": "시험방법#p1",
+   "new_text": "사용자가 4 회 동안 로그인 실패 시도를 수행한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | IA-07 | 시험방법#p2]",
+   "doc": "XXCS",
+   "item": "IA-07",
+   "field": "시험방법#p2",
+   "new_text": "사용자가 4번 이후 로그인 시도를 하면 계정 잠금 기능이 동작하는지 확인한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | IA-07 | 확인결과#p1]",
+   "doc": "XXCS",
+   "item": "IA-07",
+   "field": "확인결과#p1",
+   "new_text": "사용자가 4회 로그인 실패 후 추가 로그인 시도 시 계정 잠금 상태를 확인함",
+   "op": "modify",
+   "source": "llm"
+  }
+ ],
+ "parse_ok": true,
+ "truncated": false,
+ "error": null,
+ "stop_reason": "no_issues",
+ "changes": [
+  "T3_add",
+  "T1"
+ ],
+ "complexity": {
+  "n_docs": 3,
+  "n_cells": 975,
+  "doc_chars": 24729,
+  "doc_tokens": 12364,
+  "n_candidates": 77,
+  "n_relevant": 25,
+  "n_retrieved": 10,
+  "context_tokens": 15561,
+  "llm_calls": 4,
+  "rounds": 2,
+  "tokens_in": 15561,
+  "tokens_out": 3758,
+  "cost_usd": 0.0,
+  "seconds": 306.1
+ },
+ "n_pred": 24,
+ "input_tokens": 15561,
+ "output_tokens": 3758,
+ "n_calls": 4,
+ "exec_errors": 0,
+ "cost_usd": 0.0,
+ "seconds": 306.1,
+ "log_path": "results/v03/cascade/logs/v3_full/T3_62.json",
+ "rounds": 2,
+ "format_retry": false
+}

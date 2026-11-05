@@ -1,0 +1,140 @@
+{
+ "case_id": "T3_19",
+ "case_type": "T3",
+ "method": "v3_full",
+ "model": "qwen3-32b",
+ "config_hash": "31fb367887edac80",
+ "seed": 20261103,
+ "propagation_type": "structural_delete",
+ "edits": [
+  {
+   "site": "[MDSR | Req. 11 | 제목]",
+   "doc": "MDSR",
+   "item": "Req. 11",
+   "field": "제목",
+   "new_text": "삭제",
+   "op": "mark_deleted",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 11 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 11",
+   "field": "설명",
+   "new_text": "삭제",
+   "op": "mark_deleted",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 11 | 목적]",
+   "doc": "MDSR",
+   "item": "Req. 11",
+   "field": "목적",
+   "new_text": "삭제",
+   "op": "mark_deleted",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 11 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 11",
+   "field": "기준#p1",
+   "new_text": "삭제",
+   "op": "mark_deleted",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 11 | 기준#p2]",
+   "doc": "MDSR",
+   "item": "Req. 11",
+   "field": "기준#p2",
+   "new_text": "삭제",
+   "op": "mark_deleted",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | IA-04 | 소프트웨어 기능 요구사항 번호]",
+   "doc": "MDSR",
+   "item": "IA-04",
+   "field": "소프트웨어 기능 요구사항 번호",
+   "new_text": "Req. 2, Req. 10, Req. 108",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | SI-02 | 소프트웨어 기능 요구사항 번호]",
+   "doc": "MDSR",
+   "item": "SI-02",
+   "field": "소프트웨어 기능 요구사항 번호",
+   "new_text": "Req. 101",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | TRE-01 | 소프트웨어 기능 요구사항 번호]",
+   "doc": "MDSR",
+   "item": "TRE-01",
+   "field": "소프트웨어 기능 요구사항 번호",
+   "new_text": "Req. 6, Req. 18, Req. 102",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[XXCS | IA-04 | 해당 요구사항]",
+   "doc": "XXCS",
+   "item": "IA-04",
+   "field": "해당 요구사항",
+   "new_text": "Req. 2, Req. 10, Req. 108",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[XXCS | SI-02 | 해당 요구사항]",
+   "doc": "XXCS",
+   "item": "SI-02",
+   "field": "해당 요구사항",
+   "new_text": "Req. 101",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[XXCS | TRE-01 | 해당 요구사항]",
+   "doc": "XXCS",
+   "item": "TRE-01",
+   "field": "해당 요구사항",
+   "new_text": "Req. 6, Req. 18, Req. 102",
+   "op": "modify",
+   "source": "rule"
+  }
+ ],
+ "parse_ok": true,
+ "truncated": false,
+ "error": null,
+ "stop_reason": "no_issues",
+ "complexity": {
+  "n_docs": 2,
+  "n_cells": 812,
+  "doc_chars": 19715,
+  "doc_tokens": 9857,
+  "n_candidates": 11,
+  "n_relevant": 11,
+  "n_retrieved": 0,
+  "context_tokens": 0,
+  "llm_calls": 0,
+  "rounds": 1,
+  "tokens_in": 0,
+  "tokens_out": 0,
+  "cost_usd": 0,
+  "seconds": 1.02
+ },
+ "n_pred": 11,
+ "input_tokens": 0,
+ "output_tokens": 0,
+ "n_calls": 0,
+ "exec_errors": 0,
+ "cost_usd": 0,
+ "seconds": 1.02,
+ "log_path": "results/v03/cascade/logs/v3_full/T3_19.json",
+ "rounds": 1,
+ "format_retry": false
+}

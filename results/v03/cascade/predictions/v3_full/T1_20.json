@@ -1,0 +1,167 @@
+{
+ "case_id": "T1_20",
+ "case_type": "T1",
+ "method": "v3_full",
+ "model": "qwen3-32b",
+ "config_hash": "6db5b2365786e711",
+ "seed": 20261103,
+ "propagation_type": "fact",
+ "edits": [
+  {
+   "site": "[MDSR | Req. 100 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 100",
+   "field": "설명",
+   "new_text": "서버와 사용자 기기 간의 데이터 동기화를 120분 간격으로 수행하여야 한다. 동기화 과정에서 데이터 손실 또는 중복이 발생하지 않도록 보장하여야 한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 100 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 100",
+   "field": "기준#p1",
+   "new_text": "동기화 주기 120 분 동안 데이터가 정상적으로 전송되었음을 확인함",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 101 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 101",
+   "field": "기준#p1",
+   "new_text": "의료진 대시보드는 120분 주기로 사용자 수면 데이터를 자동으로 업데이트하여 최신 정보를 제공한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 101 | 기준#p2]",
+   "doc": "MDSR",
+   "item": "Req. 101",
+   "field": "기준#p2",
+   "new_text": "의료진이 수동으로 데이터를 조회할 경우, 120 분 이내의 최신 데이터가 화면에 반영되어야 한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 100 | 설계#p3]",
+   "doc": "MDDR",
+   "item": "Req. 100",
+   "field": "설계#p3",
+   "new_text": "• 동기화 실패 시 120분 이후 재시도를 자동으로 수행한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 101 | 설계#p1]",
+   "doc": "MDDR",
+   "item": "Req. 101",
+   "field": "설계#p1",
+   "new_text": "• 의료진 대시보드는 사용자 데이터를 120 분동안 주기적으로 서버에서 동기화하도록 구현한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 101 | 설계#p3]",
+   "doc": "MDDR",
+   "item": "Req. 101",
+   "field": "설계#p3",
+   "new_text": "• 의료진 대시보드는 120분이 경과할 경우 자동으로 데이터를 새로 고침을 수행한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | SI-01 | 시험방법#p2]",
+   "doc": "XXCS",
+   "item": "SI-01",
+   "field": "시험방법#p2",
+   "new_text": "서버와 클라이언트 간의 데이터 전송 시 AES-256 방식으로 저장된 데이터를 보호하며, 120 분 주기로 동기화를 수행한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | RA-02 | 시험방법#p2]",
+   "doc": "XXCS",
+   "item": "RA-02",
+   "field": "시험방법#p2",
+   "new_text": "서버와의 데이터 동기화 주기 120분 동안 백업 데이터가 정상적으로 전송되는 것을 확인한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | RA-02 | 확인결과#p2]",
+   "doc": "XXCS",
+   "item": "RA-02",
+   "field": "확인결과#p2",
+   "new_text": "동기화 주기 120 분 동안 서버와의 데이터 전송이 정상적으로 이루어졌음을 확인함.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 101 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 101",
+   "field": "설명",
+   "new_text": "의료진은 대시보드를 통해 사용자의 수면 데이터를 2시간 동안 최신 정보로 조회하여야 한다. 의료진은 사용자의 진단 및 치료 상태를 실시간으로 확인할 수 있도록 대시보드가 제공되어야 한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 100 | 설계#p1]",
+   "doc": "MDDR",
+   "item": "Req. 100",
+   "field": "설계#p1",
+   "new_text": "• 서버는 2시간 간격으로 클라이언트와 데이터를 동기화하도록 구현한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 101 | 설계#p2]",
+   "doc": "MDDR",
+   "item": "Req. 101",
+   "field": "설계#p2",
+   "new_text": "• 의료진 대시보드는 사용자별 수면 데이터 조회 시 2시간 이내의 최신 데이터만 표시하도록 필터링한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | SI-01 | 확인결과#p3]",
+   "doc": "XXCS",
+   "item": "SI-01",
+   "field": "확인결과#p3",
+   "new_text": "2시간 주기의 동기화와 24시간 간격의 백업이 무결성 보장을 지원함을 확인함.",
+   "op": "modify",
+   "source": "llm"
+  }
+ ],
+ "parse_ok": true,
+ "truncated": false,
+ "error": null,
+ "stop_reason": "no_change",
+ "complexity": {
+  "n_docs": 3,
+  "n_cells": 975,
+  "doc_chars": 24729,
+  "doc_tokens": 12364,
+  "n_candidates": 14,
+  "n_relevant": 14,
+  "n_retrieved": 0,
+  "context_tokens": 4851,
+  "llm_calls": 3,
+  "rounds": 2,
+  "tokens_in": 8401,
+  "tokens_out": 2625,
+  "cost_usd": 0.0,
+  "seconds": 238.39
+ },
+ "n_pred": 14,
+ "input_tokens": 8401,
+ "output_tokens": 2625,
+ "n_calls": 3,
+ "exec_errors": 0,
+ "cost_usd": 0.0,
+ "seconds": 238.39,
+ "log_path": "results/v03/cascade/logs/v3_full/T1_20.json",
+ "rounds": 2,
+ "format_retry": false
+}

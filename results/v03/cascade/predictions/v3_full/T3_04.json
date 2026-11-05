@@ -1,0 +1,131 @@
+{
+ "case_id": "T3_04",
+ "case_type": "T3",
+ "method": "v3_full",
+ "model": "qwen3-32b",
+ "config_hash": "6db5b2365786e711",
+ "seed": 20261103,
+ "propagation_type": "structural_delete",
+ "edits": [
+  {
+   "site": "[MDSR | Req. 106 | 제목]",
+   "doc": "MDSR",
+   "item": "Req. 106",
+   "field": "제목",
+   "new_text": "삭제",
+   "op": "mark_deleted",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 106 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 106",
+   "field": "설명",
+   "new_text": "삭제",
+   "op": "mark_deleted",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 106 | 목적]",
+   "doc": "MDSR",
+   "item": "Req. 106",
+   "field": "목적",
+   "new_text": "삭제",
+   "op": "mark_deleted",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 106 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 106",
+   "field": "기준#p1",
+   "new_text": "삭제",
+   "op": "mark_deleted",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 106 | 기준#p2]",
+   "doc": "MDSR",
+   "item": "Req. 106",
+   "field": "기준#p2",
+   "new_text": "삭제",
+   "op": "mark_deleted",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | IA-06 | 소프트웨어 기능 요구사항 번호]",
+   "doc": "MDSR",
+   "item": "IA-06",
+   "field": "소프트웨어 기능 요구사항 번호",
+   "new_text": "Req. 2, Req. 3, Req. 13",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | UC-05 | 소프트웨어 기능 요구사항 번호]",
+   "doc": "MDSR",
+   "item": "UC-05",
+   "field": "소프트웨어 기능 요구사항 번호",
+   "new_text": "Req. 6, Req. 7, Req. 108",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | UC-06 | 소프트웨어 기능 요구사항 번호]",
+   "doc": "MDSR",
+   "item": "UC-06",
+   "field": "소프트웨어 기능 요구사항 번호",
+   "new_text": "Req. 3, Req. 6, Req. 8",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | SI-05 | 소프트웨어 기능 요구사항 번호]",
+   "doc": "MDSR",
+   "item": "SI-05",
+   "field": "소프트웨어 기능 요구사항 번호",
+   "new_text": "Req. 1, Req. 8, Req. 10, Req. 13, Req. 14",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | DC-01 | 소프트웨어 기능 요구사항 번호]",
+   "doc": "MDSR",
+   "item": "DC-01",
+   "field": "소프트웨어 기능 요구사항 번호",
+   "new_text": "Req. 5, Req. 7, Req. 8",
+   "op": "modify",
+   "source": "rule"
+  }
+ ],
+ "parse_ok": true,
+ "truncated": false,
+ "error": null,
+ "stop_reason": "no_issues",
+ "complexity": {
+  "n_docs": 1,
+  "n_cells": 384,
+  "doc_chars": 10788,
+  "doc_tokens": 5394,
+  "n_candidates": 10,
+  "n_relevant": 10,
+  "n_retrieved": 0,
+  "context_tokens": 0,
+  "llm_calls": 0,
+  "rounds": 1,
+  "tokens_in": 0,
+  "tokens_out": 0,
+  "cost_usd": 0,
+  "seconds": 0.45
+ },
+ "n_pred": 10,
+ "input_tokens": 0,
+ "output_tokens": 0,
+ "n_calls": 0,
+ "exec_errors": 0,
+ "cost_usd": 0,
+ "seconds": 0.45,
+ "log_path": "results/v03/cascade/logs/v3_full/T3_04.json",
+ "rounds": 1,
+ "format_retry": false
+}

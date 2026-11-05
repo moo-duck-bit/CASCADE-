@@ -1,0 +1,167 @@
+{
+ "case_id": "T3_22",
+ "case_type": "T3",
+ "method": "v3_full",
+ "model": "qwen3-32b",
+ "config_hash": "6db5b2365786e711",
+ "seed": 20261103,
+ "propagation_type": "structural_delete",
+ "edits": [
+  {
+   "site": "[MDSR | Req. 15 | 제목]",
+   "doc": "MDSR",
+   "item": "Req. 15",
+   "field": "제목",
+   "new_text": "삭제",
+   "op": "mark_deleted",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 15 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 15",
+   "field": "설명",
+   "new_text": "삭제",
+   "op": "mark_deleted",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 15 | 목적]",
+   "doc": "MDSR",
+   "item": "Req. 15",
+   "field": "목적",
+   "new_text": "삭제",
+   "op": "mark_deleted",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 15 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 15",
+   "field": "기준#p1",
+   "new_text": "삭제",
+   "op": "mark_deleted",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 15 | 기준#p2]",
+   "doc": "MDSR",
+   "item": "Req. 15",
+   "field": "기준#p2",
+   "new_text": "삭제",
+   "op": "mark_deleted",
+   "source": "rule"
+  },
+  {
+   "site": "[MDDR | Req. 15 | 설계#p1]",
+   "doc": "MDDR",
+   "item": "Req. 15",
+   "field": "설계#p1",
+   "new_text": "삭제",
+   "op": "mark_deleted",
+   "source": "rule"
+  },
+  {
+   "site": "[MDDR | Req. 15 | 설계#p2]",
+   "doc": "MDDR",
+   "item": "Req. 15",
+   "field": "설계#p2",
+   "new_text": "삭제",
+   "op": "mark_deleted",
+   "source": "rule"
+  },
+  {
+   "site": "[MDDR | Req. 15 | 설계#p3]",
+   "doc": "MDDR",
+   "item": "Req. 15",
+   "field": "설계#p3",
+   "new_text": "삭제",
+   "op": "mark_deleted",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | IA-08 | 소프트웨어 기능 요구사항 번호]",
+   "doc": "MDSR",
+   "item": "IA-08",
+   "field": "소프트웨어 기능 요구사항 번호",
+   "new_text": "Req. 18",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | SI-06 | 소프트웨어 기능 요구사항 번호]",
+   "doc": "MDSR",
+   "item": "SI-06",
+   "field": "소프트웨어 기능 요구사항 번호",
+   "new_text": "Req. 108",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | RA-04 | 소프트웨어 기능 요구사항 번호]",
+   "doc": "MDSR",
+   "item": "RA-04",
+   "field": "소프트웨어 기능 요구사항 번호",
+   "new_text": "Req. 108",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[XXCS | IA-08 | 해당 요구사항]",
+   "doc": "XXCS",
+   "item": "IA-08",
+   "field": "해당 요구사항",
+   "new_text": "Req. 18",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[XXCS | SI-06 | 해당 요구사항]",
+   "doc": "XXCS",
+   "item": "SI-06",
+   "field": "해당 요구사항",
+   "new_text": "Req. 108",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[XXCS | RA-04 | 해당 요구사항]",
+   "doc": "XXCS",
+   "item": "RA-04",
+   "field": "해당 요구사항",
+   "new_text": "Req. 108",
+   "op": "modify",
+   "source": "rule"
+  }
+ ],
+ "parse_ok": true,
+ "truncated": false,
+ "error": null,
+ "stop_reason": "no_issues",
+ "complexity": {
+  "n_docs": 3,
+  "n_cells": 975,
+  "doc_chars": 24729,
+  "doc_tokens": 12364,
+  "n_candidates": 14,
+  "n_relevant": 14,
+  "n_retrieved": 0,
+  "context_tokens": 0,
+  "llm_calls": 0,
+  "rounds": 1,
+  "tokens_in": 0,
+  "tokens_out": 0,
+  "cost_usd": 0,
+  "seconds": 3.81
+ },
+ "n_pred": 14,
+ "input_tokens": 0,
+ "output_tokens": 0,
+ "n_calls": 0,
+ "exec_errors": 0,
+ "cost_usd": 0,
+ "seconds": 3.81,
+ "log_path": "results/v03/cascade/logs/v3_full/T3_22.json",
+ "rounds": 1,
+ "format_retry": false
+}

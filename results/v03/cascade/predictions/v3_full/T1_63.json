@@ -1,0 +1,59 @@
+{
+ "case_id": "T1_63",
+ "case_type": "T1",
+ "method": "v3_full",
+ "model": "qwen3-32b",
+ "config_hash": "31fb367887edac80",
+ "seed": 20261103,
+ "propagation_type": "fact",
+ "edits": [
+  {
+   "site": "[MDSR | Req. 11 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 11",
+   "field": "설명",
+   "new_text": "사용자는 자극 조절 교육을 5일 동안 수행하여야 한다. 교육 내용은 수면 환경 개선 및 자극 제거 방법을 포함하여야 한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 11 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 11",
+   "field": "기준#p1",
+   "new_text": "사용자가 5 일 동안 자극 조절 교육을 완료한 기록을 확인함",
+   "op": "modify",
+   "source": "llm"
+  }
+ ],
+ "parse_ok": true,
+ "truncated": false,
+ "error": null,
+ "stop_reason": "no_change",
+ "complexity": {
+  "n_docs": 1,
+  "n_cells": 384,
+  "doc_chars": 10788,
+  "doc_tokens": 5394,
+  "n_candidates": 10,
+  "n_relevant": 2,
+  "n_retrieved": 0,
+  "context_tokens": 2930,
+  "llm_calls": 3,
+  "rounds": 2,
+  "tokens_in": 5310,
+  "tokens_out": 820,
+  "cost_usd": 0.0,
+  "seconds": 100.07
+ },
+ "n_pred": 2,
+ "input_tokens": 5310,
+ "output_tokens": 820,
+ "n_calls": 3,
+ "exec_errors": 0,
+ "cost_usd": 0.0,
+ "seconds": 100.07,
+ "log_path": "results/v03/cascade/logs/v3_full/T1_63.json",
+ "rounds": 2,
+ "format_retry": false
+}

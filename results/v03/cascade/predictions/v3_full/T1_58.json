@@ -1,0 +1,68 @@
+{
+ "case_id": "T1_58",
+ "case_type": "T1",
+ "method": "v3_full",
+ "model": "qwen3-32b",
+ "config_hash": "6db5b2365786e711",
+ "seed": 20261103,
+ "propagation_type": "fact",
+ "edits": [
+  {
+   "site": "[MDSR | Req. 9 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 9",
+   "field": "설명",
+   "new_text": "사용자는 알림 설정을 통해 알림 시각을 설정할 수 있어야 하며, 기본 CBT 회기 알림 시각은 17:00으로 설정되어야 한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 9 | 기준#p2]",
+   "doc": "MDSR",
+   "item": "Req. 9",
+   "field": "기준#p2",
+   "new_text": "CBT 회기 알림이 오후 5시에 자동으로 설정되어 전달됨을 확인함",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 14 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 14",
+   "field": "기준#p1",
+   "new_text": "CBT 회기 알림의 기본 설정 시간이 17시를 기준으로 설정됨을 확인함",
+   "op": "modify",
+   "source": "llm"
+  }
+ ],
+ "parse_ok": true,
+ "truncated": false,
+ "error": null,
+ "stop_reason": "no_issues",
+ "complexity": {
+  "n_docs": 1,
+  "n_cells": 384,
+  "doc_chars": 10788,
+  "doc_tokens": 5394,
+  "n_candidates": 3,
+  "n_relevant": 3,
+  "n_retrieved": 0,
+  "context_tokens": 2206,
+  "llm_calls": 2,
+  "rounds": 1,
+  "tokens_in": 2206,
+  "tokens_out": 370,
+  "cost_usd": 0.0,
+  "seconds": 31.7
+ },
+ "n_pred": 3,
+ "input_tokens": 2206,
+ "output_tokens": 370,
+ "n_calls": 2,
+ "exec_errors": 0,
+ "cost_usd": 0.0,
+ "seconds": 31.7,
+ "log_path": "results/v03/cascade/logs/v3_full/T1_58.json",
+ "rounds": 1,
+ "format_retry": false
+}

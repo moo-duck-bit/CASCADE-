@@ -6,7 +6,7 @@ import pytest
 from document_ai.cascade import pack as pack_mod
 from document_ai.cascade.cells import index_lines, parse_case, parse_doc
 
-PILOT = Path(os.environ.get("PILOT_DATA", "/home/jkpark/workspace/pilot_data"))
+PILOT = Path(os.environ.get("PILOT_DATA", str(Path(__file__).resolve().parents[2])))
 CASES = PILOT / "v02" / "cases"
 pytestmark = pytest.mark.skipif(not CASES.exists(), reason="pilot_data v0.2 cases not found")
 

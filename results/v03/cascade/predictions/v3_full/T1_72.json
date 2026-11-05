@@ -1,0 +1,59 @@
+{
+ "case_id": "T1_72",
+ "case_type": "T1",
+ "method": "v3_full",
+ "model": "qwen3-32b",
+ "config_hash": "6db5b2365786e711",
+ "seed": 20261103,
+ "propagation_type": "fact",
+ "edits": [
+  {
+   "site": "[MDSR | Req. 16 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 16",
+   "field": "설명",
+   "new_text": "수면 효율 리포트는 14일 간격으로 생성되어 사용자의 수면 패턴을 분석하고 피드백을 제공하여야 한다. 리포트는 사용자의 수면 시간, 수면 시작 시간, 수면 지속 시간 등을 기반으로 생성하여야 한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 16 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 16",
+   "field": "기준#p1",
+   "new_text": "수면 효율 리포트는 14 일 단위로 정확하게 생성됨을 확인함",
+   "op": "modify",
+   "source": "llm"
+  }
+ ],
+ "parse_ok": true,
+ "truncated": false,
+ "error": null,
+ "stop_reason": "no_change",
+ "complexity": {
+  "n_docs": 1,
+  "n_cells": 384,
+  "doc_chars": 10788,
+  "doc_tokens": 5394,
+  "n_candidates": 10,
+  "n_relevant": 2,
+  "n_retrieved": 0,
+  "context_tokens": 3008,
+  "llm_calls": 3,
+  "rounds": 2,
+  "tokens_in": 5418,
+  "tokens_out": 806,
+  "cost_usd": 0.0,
+  "seconds": 83.05
+ },
+ "n_pred": 2,
+ "input_tokens": 5418,
+ "output_tokens": 806,
+ "n_calls": 3,
+ "exec_errors": 0,
+ "cost_usd": 0.0,
+ "seconds": 83.05,
+ "log_path": "results/v03/cascade/logs/v3_full/T1_72.json",
+ "rounds": 2,
+ "format_retry": false
+}

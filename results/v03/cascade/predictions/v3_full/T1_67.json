@@ -1,0 +1,50 @@
+{
+ "case_id": "T1_67",
+ "case_type": "T1",
+ "method": "v3_full",
+ "model": "qwen3-32b",
+ "config_hash": "31fb367887edac80",
+ "seed": 20261103,
+ "propagation_type": "fact",
+ "edits": [
+  {
+   "site": "[MDSR | Req. 14 | 기준#p2]",
+   "doc": "MDSR",
+   "item": "Req. 14",
+   "field": "기준#p2",
+   "new_text": "알림 반복 간격이 20분을 기준으로 설정되며, 소리는 벨 소리 정책에 따라 재생됨을 확인함",
+   "op": "modify",
+   "source": "llm"
+  }
+ ],
+ "parse_ok": true,
+ "truncated": false,
+ "error": null,
+ "stop_reason": "no_change",
+ "complexity": {
+  "n_docs": 1,
+  "n_cells": 384,
+  "doc_chars": 10788,
+  "doc_tokens": 5394,
+  "n_candidates": 8,
+  "n_relevant": 1,
+  "n_retrieved": 0,
+  "context_tokens": 2860,
+  "llm_calls": 3,
+  "rounds": 2,
+  "tokens_in": 5437,
+  "tokens_out": 548,
+  "cost_usd": 0.0,
+  "seconds": 70.16
+ },
+ "n_pred": 1,
+ "input_tokens": 5437,
+ "output_tokens": 548,
+ "n_calls": 3,
+ "exec_errors": 0,
+ "cost_usd": 0.0,
+ "seconds": 70.16,
+ "log_path": "results/v03/cascade/logs/v3_full/T1_67.json",
+ "rounds": 2,
+ "format_retry": false
+}

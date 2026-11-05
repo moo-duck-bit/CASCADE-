@@ -1,0 +1,95 @@
+{
+ "case_id": "T1_46",
+ "case_type": "T1",
+ "method": "v3_full",
+ "model": "qwen3-32b",
+ "config_hash": "6db5b2365786e711",
+ "seed": 20261103,
+ "propagation_type": "fact",
+ "edits": [
+  {
+   "site": "[MDSR | Req. 104 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 104",
+   "field": "설명",
+   "new_text": "감사로그는 6개월 동안 보관하여야 하며, 의료진 접속 기록은 6개월 동안 보관하고 30일마다 감사가 이루어져야 한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 104 | 기준#p2]",
+   "doc": "MDSR",
+   "item": "Req. 104",
+   "field": "기준#p2",
+   "new_text": "의료진 접속 기록이 30일마다 검토되었음을 확인함",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 6 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 6",
+   "field": "설명",
+   "new_text": "시스템은 사용자 및 의료진의 모든 접근 및 조작 행위에 대한 감사로그를 생성하고, 180일 동안 보관하여야 하며, 의료진의 접속 기록은 180일 동안 보관하고 30일마다 검토하여야 한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 6 | 기준#p2]",
+   "doc": "MDSR",
+   "item": "Req. 6",
+   "field": "기준#p2",
+   "new_text": "의료진 접속 기록의 감사 주기가 30 일마다 수행됨을 확인함",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 6 | 설계#p2]",
+   "doc": "MDDR",
+   "item": "Req. 6",
+   "field": "설계#p2",
+   "new_text": "• 의료진 접속 기록은 180 일 동안 보관하며, 30일마다 감사 수행을 통해 무결성을 확인한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 104 | 설계#p2]",
+   "doc": "MDDR",
+   "item": "Req. 104",
+   "field": "설계#p2",
+   "new_text": "• 의료진 접속 기록은 6개월 동안 보관되며, 30 일 주기로 감사가 수행되도록 구현한다.",
+   "op": "modify",
+   "source": "llm"
+  }
+ ],
+ "parse_ok": true,
+ "truncated": false,
+ "error": null,
+ "stop_reason": "no_issues",
+ "complexity": {
+  "n_docs": 2,
+  "n_cells": 547,
+  "doc_chars": 15802,
+  "doc_tokens": 7901,
+  "n_candidates": 8,
+  "n_relevant": 6,
+  "n_retrieved": 0,
+  "context_tokens": 3318,
+  "llm_calls": 3,
+  "rounds": 2,
+  "tokens_in": 5462,
+  "tokens_out": 1040,
+  "cost_usd": 0.0,
+  "seconds": 87.33
+ },
+ "n_pred": 6,
+ "input_tokens": 5462,
+ "output_tokens": 1040,
+ "n_calls": 3,
+ "exec_errors": 0,
+ "cost_usd": 0.0,
+ "seconds": 87.33,
+ "log_path": "results/v03/cascade/logs/v3_full/T1_46.json",
+ "rounds": 2,
+ "format_retry": false
+}

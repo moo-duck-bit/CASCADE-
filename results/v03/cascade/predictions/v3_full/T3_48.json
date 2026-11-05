@@ -1,0 +1,158 @@
+{
+ "case_id": "T3_48",
+ "case_type": "T3",
+ "method": "v3_full",
+ "model": "qwen3-32b",
+ "config_hash": "6db5b2365786e711",
+ "seed": 20261103,
+ "propagation_type": "structural_add",
+ "edits": [
+  {
+   "site": "[MDSR | Req. 19 | 번호]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "번호",
+   "new_text": "Req. 19",
+   "op": "insert",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 제목]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "제목",
+   "new_text": "각성 횟수 기록",
+   "op": "insert",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | UC-04 | 소프트웨어 기능 요구사항 번호]",
+   "doc": "MDSR",
+   "item": "UC-04",
+   "field": "소프트웨어 기능 요구사항 번호",
+   "new_text": "Req. 2, Req. 6, Req. 18, Req. 19, Req. 101, Req. 102, Req. 103",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[XXCS | UC-04 | 해당 요구사항]",
+   "doc": "XXCS",
+   "item": "UC-04",
+   "field": "해당 요구사항",
+   "new_text": "Req. 2, Req. 6, Req. 18, Req. 19, Req. 101, Req. 102, Req. 103",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | UC-06 | 소프트웨어 기능 요구사항 번호]",
+   "doc": "MDSR",
+   "item": "UC-06",
+   "field": "소프트웨어 기능 요구사항 번호",
+   "new_text": "Req. 3, Req. 6, Req. 8, Req. 19, Req. 106",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[XXCS | UC-06 | 해당 요구사항]",
+   "doc": "XXCS",
+   "item": "UC-06",
+   "field": "해당 요구사항",
+   "new_text": "Req. 3, Req. 6, Req. 8, Req. 19, Req. 106",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "설명",
+   "new_text": "사용자는 밤중에 깬 횟수를 기록할 수 있어야 하며, 앱은 깬 시점마다 기기 시각 기준의 타임스탬프를 저장하여야 한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 목적]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "목적",
+   "new_text": "사용자의 수면 패턴을 정확히 추적하여 의료적 분석과 개선에 기반을 제공한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "기준#p1",
+   "new_text": "각성 횟수가 기기 시각 기준으로 정확히 기록되었음을 확인함",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 기준#p2]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "기준#p2",
+   "new_text": "각각의 각성 이벤트에 타임스탬프가 포함되어 기록되었음을 확인함",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 19 | 설계#p1]",
+   "doc": "MDDR",
+   "item": "Req. 19",
+   "field": "설계#p1",
+   "new_text": "• 사용자의 각성 이력을 기기 시각 기준으로 저장하도록 구현한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 19 | 설계#p2]",
+   "doc": "MDDR",
+   "item": "Req. 19",
+   "field": "설계#p2",
+   "new_text": "• 각각의 각성 이벤트에 대해 타임스탬프를 생성하여 저장한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 19 | 설계#p3]",
+   "doc": "MDDR",
+   "item": "Req. 19",
+   "field": "설계#p3",
+   "new_text": "• 사용자는 각성 이력을 확인할 수 있도록 기능을 제공한다.",
+   "op": "insert",
+   "source": "llm"
+  }
+ ],
+ "parse_ok": true,
+ "truncated": false,
+ "error": null,
+ "stop_reason": "no_issues",
+ "complexity": {
+  "n_docs": 3,
+  "n_cells": 975,
+  "doc_chars": 24729,
+  "doc_tokens": 12364,
+  "n_candidates": 64,
+  "n_relevant": 14,
+  "n_retrieved": 10,
+  "context_tokens": 10113,
+  "llm_calls": 2,
+  "rounds": 1,
+  "tokens_in": 10113,
+  "tokens_out": 1802,
+  "cost_usd": 0.0,
+  "seconds": 186.61
+ },
+ "n_pred": 13,
+ "input_tokens": 10113,
+ "output_tokens": 1802,
+ "n_calls": 2,
+ "exec_errors": 0,
+ "cost_usd": 0.0,
+ "seconds": 186.61,
+ "log_path": "results/v03/cascade/logs/v3_full/T3_48.json",
+ "rounds": 1,
+ "format_retry": false
+}

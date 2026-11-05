@@ -10,7 +10,7 @@ from document_ai.cascade.editor import make_edit
 
 from .fixture_docs import build_case
 
-PILOT = Path(os.environ.get("PILOT_DATA", "/home/jkpark/workspace/pilot_data"))
+PILOT = Path(os.environ.get("PILOT_DATA", str(Path(__file__).resolve().parents[2])))
 
 
 def snapshot(input_dir):

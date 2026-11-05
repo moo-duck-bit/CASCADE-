@@ -1,0 +1,158 @@
+{
+ "case_id": "T1_04",
+ "case_type": "T1",
+ "method": "v3_full",
+ "model": "qwen3-32b",
+ "config_hash": "6db5b2365786e711",
+ "seed": 20261103,
+ "propagation_type": "fact",
+ "edits": [
+  {
+   "site": "[MDSR | 3.4 일반적 제한 | 본문#p1]",
+   "doc": "MDSR",
+   "item": "3.4 일반적 제한",
+   "field": "본문#p1",
+   "new_text": "시스템은 4 회 이상의 로그인 실패 시 사용자 계정을 잠급니다. 잠긴 계정은 십오 분 동안 자동으로 잠금 해제되며, 잠금 해제 시 십오 분 전에 사용자에게 안내 메시지를 전달합니다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 1 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 1",
+   "field": "설명",
+   "new_text": "사용자는 8자 이상의 길이를 가지며 대문자, 소문자, 숫자, 특수문자 조합을 만족하는 비밀번호를 입력하여 로그인하여야 한다. 4회 이상 로그인 시도에 실패한 경우 추가 인증 절차를 수행하여야 한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 1 | 기준#p2]",
+   "doc": "MDSR",
+   "item": "Req. 1",
+   "field": "기준#p2",
+   "new_text": "4 회 이상 로그인 시도에 실패한 경우 추가 인증 절차가 실행됨을 확인함",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 2 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 2",
+   "field": "설명",
+   "new_text": "사용자가 4번 동안 로그인 실패 시 15분 동안 계정이 잠금 상태가 되어야 하며, 90일 동안 활동이 없으면 계정이 자동으로 잠금 상태가 되어야 한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 2 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 2",
+   "field": "기준#p1",
+   "new_text": "사용자가 4회 이상 로그인에 실패하면 15 분 동안 계정이 자동으로 잠금 상태가 되는 것을 확인함",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 1 | 설계#p2]",
+   "doc": "MDDR",
+   "item": "Req. 1",
+   "field": "설계#p2",
+   "new_text": "• 사용자의 로그인 시도가 4번을 초과할 경우 추가 로그인 시도를 차단하도록 구현한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 2 | 설계#p1]",
+   "doc": "MDDR",
+   "item": "Req. 2",
+   "field": "설계#p1",
+   "new_text": "• 사용자가 4회 이상 로그인을 실패할 경우, 해당 계정은 15분 동안 잠금되도록 구현한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 2 | 설계#p2]",
+   "doc": "MDDR",
+   "item": "Req. 2",
+   "field": "설계#p2",
+   "new_text": "• 잠금 해제 후에도 동일 사용자가 4 회 이상 다시 로그인을 실패하면, 잠금 시간은 15 분으로 동일하게 적용한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | IA-06 | 시험방법#p1]",
+   "doc": "XXCS",
+   "item": "IA-06",
+   "field": "시험방법#p1",
+   "new_text": "사용자가 4번 동안 로그인 시도를 실패하면 계정이 잠금되는 동작을 확인한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | IA-06 | 확인결과#p1]",
+   "doc": "XXCS",
+   "item": "IA-06",
+   "field": "확인결과#p1",
+   "new_text": "로그인 실패 횟수가 4회를 초과하면 계정 잠금 기능이 정상적으로 동작함을 확인함.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | IA-07 | 시험방법#p1]",
+   "doc": "XXCS",
+   "item": "IA-07",
+   "field": "시험방법#p1",
+   "new_text": "사용자가 4 회 동안 로그인 실패 시도를 수행한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | IA-07 | 시험방법#p2]",
+   "doc": "XXCS",
+   "item": "IA-07",
+   "field": "시험방법#p2",
+   "new_text": "사용자가 4번 이후 로그인 시도를 하면 계정 잠금 기능이 동작하는지 확인한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | IA-07 | 확인결과#p1]",
+   "doc": "XXCS",
+   "item": "IA-07",
+   "field": "확인결과#p1",
+   "new_text": "사용자가 4회 로그인 실패 후 추가 로그인 시도 시 계정 잠금 상태를 확인함",
+   "op": "modify",
+   "source": "llm"
+  }
+ ],
+ "parse_ok": true,
+ "truncated": false,
+ "error": null,
+ "stop_reason": "no_issues",
+ "complexity": {
+  "n_docs": 3,
+  "n_cells": 975,
+  "doc_chars": 24729,
+  "doc_tokens": 12364,
+  "n_candidates": 13,
+  "n_relevant": 13,
+  "n_retrieved": 0,
+  "context_tokens": 5526,
+  "llm_calls": 2,
+  "rounds": 1,
+  "tokens_in": 5526,
+  "tokens_out": 1681,
+  "cost_usd": 0.0,
+  "seconds": 159.77
+ },
+ "n_pred": 13,
+ "input_tokens": 5526,
+ "output_tokens": 1681,
+ "n_calls": 2,
+ "exec_errors": 0,
+ "cost_usd": 0.0,
+ "seconds": 159.77,
+ "log_path": "results/v03/cascade/logs/v3_full/T1_04.json",
+ "rounds": 1,
+ "format_retry": false
+}

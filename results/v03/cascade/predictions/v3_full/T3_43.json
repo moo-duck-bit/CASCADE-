@@ -1,0 +1,113 @@
+{
+ "case_id": "T3_43",
+ "case_type": "T3",
+ "method": "v3_full",
+ "model": "qwen3-32b",
+ "config_hash": "31fb367887edac80",
+ "seed": 20261103,
+ "propagation_type": "structural_add",
+ "edits": [
+  {
+   "site": "[MDSR | Req. 19 | 번호]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "번호",
+   "new_text": "Req. 19",
+   "op": "insert",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 제목]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "제목",
+   "new_text": "카페인 중단 안내",
+   "op": "insert",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | SI-07 | 소프트웨어 기능 요구사항 번호]",
+   "doc": "MDSR",
+   "item": "SI-07",
+   "field": "소프트웨어 기능 요구사항 번호",
+   "new_text": "Req. 16, Req. 18, Req. 19",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[XXCS | SI-07 | 해당 요구사항]",
+   "doc": "XXCS",
+   "item": "SI-07",
+   "field": "해당 요구사항",
+   "new_text": "Req. 16, Req. 18, Req. 19",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "설명",
+   "new_text": "앱은 사용자의 취침 시각을 기준으로 카페인 섭취를 멈출 시점을 안내하여야 하며, 안내 시점을 계산하지 못하면 내부 정보가 드러나지 않는 오류 메시지를 표시하여야 한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 목적]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "목적",
+   "new_text": "사용자의 건강을 보호하기 위해 카페인 섭취 시점을 적절히 안내하고, 시스템 오류 시 사용자에게 혼란을 주지 않는 메시지를 제공한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "기준#p1",
+   "new_text": "사용자의 취침 시각을 기준으로 카페인 섭취 중단 시점이 정확히 안내되었음을 확인함",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 기준#p2]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "기준#p2",
+   "new_text": "안내 시점을 계산하지 못한 경우, 내부 정보가 드러나지 않는 오류 메시지가 표시되었음을 확인함",
+   "op": "insert",
+   "source": "llm"
+  }
+ ],
+ "parse_ok": true,
+ "truncated": false,
+ "error": null,
+ "stop_reason": "no_issues",
+ "complexity": {
+  "n_docs": 2,
+  "n_cells": 812,
+  "doc_chars": 19715,
+  "doc_tokens": 9857,
+  "n_candidates": 60,
+  "n_relevant": 8,
+  "n_retrieved": 10,
+  "context_tokens": 10140,
+  "llm_calls": 2,
+  "rounds": 1,
+  "tokens_in": 10140,
+  "tokens_out": 1306,
+  "cost_usd": 0.0,
+  "seconds": 159.64
+ },
+ "n_pred": 8,
+ "input_tokens": 10140,
+ "output_tokens": 1306,
+ "n_calls": 2,
+ "exec_errors": 0,
+ "cost_usd": 0.0,
+ "seconds": 159.64,
+ "log_path": "results/v03/cascade/logs/v3_full/T3_43.json",
+ "rounds": 1,
+ "format_retry": false
+}

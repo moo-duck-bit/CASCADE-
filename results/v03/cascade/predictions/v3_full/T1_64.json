@@ -1,0 +1,59 @@
+{
+ "case_id": "T1_64",
+ "case_type": "T1",
+ "method": "v3_full",
+ "model": "qwen3-32b",
+ "config_hash": "6db5b2365786e711",
+ "seed": 20261103,
+ "propagation_type": "fact",
+ "edits": [
+  {
+   "site": "[MDSR | Req. 12 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 12",
+   "field": "설명",
+   "new_text": "사용자는 수면 위생 교육 콘텐츠를 제공받아 수면 습관 개선을 지원받아야 한다. 수면 위생 교육은 5일 동안 기본적으로 제공되어야 한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 12 | 기준#p2]",
+   "doc": "MDSR",
+   "item": "Req. 12",
+   "field": "기준#p2",
+   "new_text": "수면 위생 교육이 5 일 동안 지속되었음을 확인함",
+   "op": "modify",
+   "source": "llm"
+  }
+ ],
+ "parse_ok": true,
+ "truncated": false,
+ "error": null,
+ "stop_reason": "no_change",
+ "complexity": {
+  "n_docs": 1,
+  "n_cells": 384,
+  "doc_chars": 10788,
+  "doc_tokens": 5394,
+  "n_candidates": 10,
+  "n_relevant": 2,
+  "n_retrieved": 0,
+  "context_tokens": 2946,
+  "llm_calls": 3,
+  "rounds": 2,
+  "tokens_in": 5330,
+  "tokens_out": 913,
+  "cost_usd": 0.0,
+  "seconds": 90.81
+ },
+ "n_pred": 2,
+ "input_tokens": 5330,
+ "output_tokens": 913,
+ "n_calls": 3,
+ "exec_errors": 0,
+ "cost_usd": 0.0,
+ "seconds": 90.81,
+ "log_path": "results/v03/cascade/logs/v3_full/T1_64.json",
+ "rounds": 2,
+ "format_retry": false
+}

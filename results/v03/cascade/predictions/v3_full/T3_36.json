@@ -1,0 +1,104 @@
+{
+ "case_id": "T3_36",
+ "case_type": "T3",
+ "method": "v3_full",
+ "model": "qwen3-32b",
+ "config_hash": "6db5b2365786e711",
+ "seed": 20261103,
+ "propagation_type": "structural_add",
+ "edits": [
+  {
+   "site": "[MDSR | Req. 19 | 번호]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "번호",
+   "new_text": "Req. 19",
+   "op": "insert",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 제목]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "제목",
+   "new_text": "기상 후 빛 노출",
+   "op": "insert",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | SI-06 | 소프트웨어 기능 요구사항 번호]",
+   "doc": "MDSR",
+   "item": "SI-06",
+   "field": "소프트웨어 기능 요구사항 번호",
+   "new_text": "Req. 15, Req. 19, Req. 108",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "설명",
+   "new_text": "앱은 사용자가 기상 직후 빛 노출을 권장하는 안내를 제공하며, 기기의 조도 센서 값을 읽지 못하는 경우 사전에 정의된 기본 안내 상태로 전환한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 목적]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "목적",
+   "new_text": "사용자의 생체 리듬을 개선하고, 조도 센서 오류 시에도 안정적인 사용자 경험을 보장한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "기준#p1",
+   "new_text": "기상 직후 빛 노출 권장 안내가 사용자에게 제공되었음을 확인함",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 기준#p2]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "기준#p2",
+   "new_text": "조도 센서 오류 시 사전에 정의된 기본 안내 상태로 전환되었음을 확인함",
+   "op": "insert",
+   "source": "llm"
+  }
+ ],
+ "parse_ok": true,
+ "truncated": false,
+ "error": null,
+ "stop_reason": "no_issues",
+ "complexity": {
+  "n_docs": 1,
+  "n_cells": 384,
+  "doc_chars": 10788,
+  "doc_tokens": 5394,
+  "n_candidates": 33,
+  "n_relevant": 7,
+  "n_retrieved": 10,
+  "context_tokens": 10263,
+  "llm_calls": 2,
+  "rounds": 1,
+  "tokens_in": 10263,
+  "tokens_out": 1155,
+  "cost_usd": 0.0,
+  "seconds": 123.49
+ },
+ "n_pred": 7,
+ "input_tokens": 10263,
+ "output_tokens": 1155,
+ "n_calls": 2,
+ "exec_errors": 0,
+ "cost_usd": 0.0,
+ "seconds": 123.49,
+ "log_path": "results/v03/cascade/logs/v3_full/T3_36.json",
+ "rounds": 1,
+ "format_retry": false
+}

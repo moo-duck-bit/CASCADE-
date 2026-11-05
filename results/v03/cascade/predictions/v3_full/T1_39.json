@@ -1,0 +1,95 @@
+{
+ "case_id": "T1_39",
+ "case_type": "T1",
+ "method": "v3_full",
+ "model": "qwen3-32b",
+ "config_hash": "31fb367887edac80",
+ "seed": 20261103,
+ "propagation_type": "fact",
+ "edits": [
+  {
+   "site": "[MDSR | Req. 18 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 18",
+   "field": "설명",
+   "new_text": "시스템은 사용자의 처방 변경 이력을 기록하고 730일 동안 보관하여야 한다. 변경 이력에는 변경 일시, 변경 내용, 변경자 정보가 포함되어야 한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 18 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 18",
+   "field": "기준#p1",
+   "new_text": "처방 변경 이력이 730 일 동안 보관되었음을 확인함",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | UC-04 | 시험방법#p2]",
+   "doc": "XXCS",
+   "item": "UC-04",
+   "field": "시험방법#p2",
+   "new_text": "감사로그, 의료진 접속 기록, 처방 변경 이력의 보관 기간이 각각 180일, 180일, 730 일 동안 유지되는지 확인한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | TRE-01 | 확인결과#p3]",
+   "doc": "XXCS",
+   "item": "TRE-01",
+   "field": "확인결과#p3",
+   "new_text": "처방 변경 이력 및 의료진 접속 기록은 각각 730일 및 6개월 동안 보관되며, 접근 권한이 제한됨을 확인함.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | 3.4 일반적 제한 | 본문#p6]",
+   "doc": "MDSR",
+   "item": "3.4 일반적 제한",
+   "field": "본문#p6",
+   "new_text": "처방 변경 이력은 2년 동안 보관되며, 변경 내역은 추후 감사 및 이력 추적에 사용됩니다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | UC-04 | 확인결과#p2]",
+   "doc": "XXCS",
+   "item": "UC-04",
+   "field": "확인결과#p2",
+   "new_text": "감사로그, 의료진 접속 기록, 처방 변경 이력의 보관 기간이 각각 180 일, 180 일, 2년 동안 유지됨을 확인함.",
+   "op": "modify",
+   "source": "llm"
+  }
+ ],
+ "parse_ok": true,
+ "truncated": false,
+ "error": null,
+ "stop_reason": "no_change",
+ "complexity": {
+  "n_docs": 2,
+  "n_cells": 812,
+  "doc_chars": 19715,
+  "doc_tokens": 9857,
+  "n_candidates": 15,
+  "n_relevant": 6,
+  "n_retrieved": 0,
+  "context_tokens": 5225,
+  "llm_calls": 3,
+  "rounds": 2,
+  "tokens_in": 9758,
+  "tokens_out": 1657,
+  "cost_usd": 0.0,
+  "seconds": 159.61
+ },
+ "n_pred": 6,
+ "input_tokens": 9758,
+ "output_tokens": 1657,
+ "n_calls": 3,
+ "exec_errors": 0,
+ "cost_usd": 0.0,
+ "seconds": 159.61,
+ "log_path": "results/v03/cascade/logs/v3_full/T1_39.json",
+ "rounds": 2,
+ "format_retry": false
+}

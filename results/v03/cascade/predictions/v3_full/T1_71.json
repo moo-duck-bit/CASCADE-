@@ -1,0 +1,59 @@
+{
+ "case_id": "T1_71",
+ "case_type": "T1",
+ "method": "v3_full",
+ "model": "qwen3-32b",
+ "config_hash": "31fb367887edac80",
+ "seed": 20261103,
+ "propagation_type": "fact",
+ "edits": [
+  {
+   "site": "[MDSR | Req. 15 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 15",
+   "field": "설명",
+   "new_text": "이완 훈련 세션을 사용자에게 제공하여야 하며, 세션 지속 시간은 20분을 유지하여야 한다. 사용자에게 세션 시작 알림이 3회까지 반복되어 전달되어야 한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 15 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 15",
+   "field": "기준#p1",
+   "new_text": "이완 훈련 세션이 20 분 동안 정상적으로 실행됨을 확인함",
+   "op": "modify",
+   "source": "llm"
+  }
+ ],
+ "parse_ok": true,
+ "truncated": false,
+ "error": null,
+ "stop_reason": "no_issues",
+ "complexity": {
+  "n_docs": 1,
+  "n_cells": 384,
+  "doc_chars": 10788,
+  "doc_tokens": 5394,
+  "n_candidates": 2,
+  "n_relevant": 2,
+  "n_retrieved": 0,
+  "context_tokens": 1909,
+  "llm_calls": 2,
+  "rounds": 1,
+  "tokens_in": 1909,
+  "tokens_out": 273,
+  "cost_usd": 0.0,
+  "seconds": 38.03
+ },
+ "n_pred": 2,
+ "input_tokens": 1909,
+ "output_tokens": 273,
+ "n_calls": 2,
+ "exec_errors": 0,
+ "cost_usd": 0.0,
+ "seconds": 38.03,
+ "log_path": "results/v03/cascade/logs/v3_full/T1_71.json",
+ "rounds": 1,
+ "format_retry": false
+}

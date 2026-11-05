@@ -1,0 +1,113 @@
+{
+ "case_id": "T3_39",
+ "case_type": "T3",
+ "method": "v3_full",
+ "model": "qwen3-32b",
+ "config_hash": "31fb367887edac80",
+ "seed": 20261103,
+ "propagation_type": "structural_add",
+ "edits": [
+  {
+   "site": "[MDSR | Req. 19 | 번호]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "번호",
+   "new_text": "Req. 19",
+   "op": "insert",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 제목]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "제목",
+   "new_text": "보호자 열람 동의",
+   "op": "insert",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | IA-02 | 소프트웨어 기능 요구사항 번호]",
+   "doc": "MDSR",
+   "item": "IA-02",
+   "field": "소프트웨어 기능 요구사항 번호",
+   "new_text": "Req. 2, Req. 9, Req. 19, Req. 100, Req. 108",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | UC-01 | 소프트웨어 기능 요구사항 번호]",
+   "doc": "MDSR",
+   "item": "UC-01",
+   "field": "소프트웨어 기능 요구사항 번호",
+   "new_text": "Req. 16, Req. 19, Req. 101, Req. 102, Req. 108",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "설명",
+   "new_text": "사용자는 보호자의 치료 진행 요약 열람에 동의하거나 동의를 철회할 수 있어야 하며, 앱은 동의한 보호자에게만 열람 권한을 부여하여야 한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 목적]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "목적",
+   "new_text": "보호자의 치료 정보 접근 권한을 사용자의 동의에 따라 관리하여 정보 기밀성과 사용자 권한을 보장한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "기준#p1",
+   "new_text": "보호자의 치료 진행 요약 열람 동의 여부가 정확히 기록되었음을 확인함",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 기준#p2]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "기준#p2",
+   "new_text": "동의한 보호자에게만 치료 진행 요약 열람 권한이 부여되었음을 확인함",
+   "op": "insert",
+   "source": "llm"
+  }
+ ],
+ "parse_ok": true,
+ "truncated": false,
+ "error": null,
+ "stop_reason": "no_issues",
+ "complexity": {
+  "n_docs": 1,
+  "n_cells": 384,
+  "doc_chars": 10788,
+  "doc_tokens": 5394,
+  "n_candidates": 33,
+  "n_relevant": 8,
+  "n_retrieved": 10,
+  "context_tokens": 9701,
+  "llm_calls": 2,
+  "rounds": 1,
+  "tokens_in": 9701,
+  "tokens_out": 1271,
+  "cost_usd": 0.0,
+  "seconds": 151.75
+ },
+ "n_pred": 8,
+ "input_tokens": 9701,
+ "output_tokens": 1271,
+ "n_calls": 2,
+ "exec_errors": 0,
+ "cost_usd": 0.0,
+ "seconds": 151.75,
+ "log_path": "results/v03/cascade/logs/v3_full/T3_39.json",
+ "rounds": 1,
+ "format_retry": false
+}

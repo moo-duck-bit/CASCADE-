@@ -1,0 +1,135 @@
+{
+ "case_id": "T3_56",
+ "case_type": "T3",
+ "method": "v3_full",
+ "model": "qwen3-32b",
+ "config_hash": "6db5b2365786e711",
+ "seed": 20261103,
+ "propagation_type": "structural_add+fact",
+ "edits": [
+  {
+   "site": "[MDSR | Req. 19 | 번호]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "번호",
+   "new_text": "Req. 19",
+   "op": "insert",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 제목]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "제목",
+   "new_text": "회기 전 설문",
+   "op": "insert",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | SI-05 | 소프트웨어 기능 요구사항 번호]",
+   "doc": "MDSR",
+   "item": "SI-05",
+   "field": "소프트웨어 기능 요구사항 번호",
+   "new_text": "Req. 1, Req. 8, Req. 10, Req. 13, Req. 14, Req. 19, Req. 106",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "설명",
+   "new_text": "앱은 CBT 회기 시작 전에 짧은 설문에 응답하도록 하여야 하며, 응답 값이 정해진 선택지와 형식에 맞는지 검증하여야 한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 목적]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "목적",
+   "new_text": "회기 전 사용자의 심리적 상태나 준비 상황을 파악하여 CBT의 효과성을 높이고, 응답 형식의 일관성을 보장한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "기준#p1",
+   "new_text": "회기 전 설문 응답이 정해진 선택지와 형식에 맞는지 검증되었음을 확인함",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 기준#p2]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "기준#p2",
+   "new_text": "설문 응답 데이터가 시스템에 정확히 기록되었음을 확인함",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 9 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 9",
+   "field": "설명",
+   "new_text": "사용자는 알림 설정을 통해 알림 시각을 설정할 수 있어야 하며, 기본 CBT 회기 알림 시각은 19:00으로 설정되어야 한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 9 | 기준#p2]",
+   "doc": "MDSR",
+   "item": "Req. 9",
+   "field": "기준#p2",
+   "new_text": "CBT 회기 알림이 오후 7시에 자동으로 설정되어 전달됨을 확인함",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 14 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 14",
+   "field": "기준#p1",
+   "new_text": "CBT 회기 알림의 기본 설정 시간이 19시를 기준으로 설정됨을 확인함",
+   "op": "modify",
+   "source": "llm"
+  }
+ ],
+ "parse_ok": true,
+ "truncated": false,
+ "error": null,
+ "stop_reason": "no_issues",
+ "changes": [
+  "T3_add",
+  "T1"
+ ],
+ "complexity": {
+  "n_docs": 1,
+  "n_cells": 384,
+  "doc_chars": 10788,
+  "doc_tokens": 5394,
+  "n_candidates": 36,
+  "n_relevant": 10,
+  "n_retrieved": 10,
+  "context_tokens": 12212,
+  "llm_calls": 4,
+  "rounds": 2,
+  "tokens_in": 12212,
+  "tokens_out": 1623,
+  "cost_usd": 0.0,
+  "seconds": 161.96
+ },
+ "n_pred": 10,
+ "input_tokens": 12212,
+ "output_tokens": 1623,
+ "n_calls": 4,
+ "exec_errors": 0,
+ "cost_usd": 0.0,
+ "seconds": 161.96,
+ "log_path": "results/v03/cascade/logs/v3_full/T3_56.json",
+ "rounds": 2,
+ "format_retry": false
+}

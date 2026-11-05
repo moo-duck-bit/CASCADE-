@@ -1,0 +1,140 @@
+{
+ "case_id": "T3_54",
+ "case_type": "T3",
+ "method": "v3_full",
+ "model": "qwen3-32b",
+ "config_hash": "6db5b2365786e711",
+ "seed": 20261103,
+ "propagation_type": "structural_add",
+ "edits": [
+  {
+   "site": "[MDSR | Req. 19 | 번호]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "번호",
+   "new_text": "Req. 19",
+   "op": "insert",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 제목]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "제목",
+   "new_text": "화면 사용 기록",
+   "op": "insert",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | UC-01 | 소프트웨어 기능 요구사항 번호]",
+   "doc": "MDSR",
+   "item": "UC-01",
+   "field": "소프트웨어 기능 요구사항 번호",
+   "new_text": "Req. 16, Req. 19, Req. 101, Req. 102, Req. 108",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[XXCS | UC-01 | 해당 요구사항]",
+   "doc": "XXCS",
+   "item": "UC-01",
+   "field": "해당 요구사항",
+   "new_text": "Req. 16, Req. 19, Req. 101, Req. 102, Req. 108",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "설명",
+   "new_text": "앱은 잠들기 전 화면 사용 시간을 수집하여 보여 줄 수 있어야 하며, 수집 전에 사용자가 사용 기록 접근 권한을 허용하도록 하여야 한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 목적]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "목적",
+   "new_text": "사용자의 화면 사용 패턴을 추적하여 사용자 행동 분석 및 의료적 관리에 활용한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "기준#p1",
+   "new_text": "화면 사용 시간이 잠들기 전에 정확히 수집되었음을 확인함",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 기준#p2]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "기준#p2",
+   "new_text": "사용자가 사용 기록 접근 권한을 허용한 후에만 데이터 수집이 이루어졌음을 확인함",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 19 | 설계#p1]",
+   "doc": "MDDR",
+   "item": "Req. 19",
+   "field": "설계#p1",
+   "new_text": "• 사용자의 화면 사용 시간을 15분 단위로 기록하도록 구현한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 19 | 설계#p2]",
+   "doc": "MDDR",
+   "item": "Req. 19",
+   "field": "설계#p2",
+   "new_text": "• 사용자가 앱 권한을 허용하기 전에는 화면 사용 데이터 수집이 이루어지지 않도록 한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 19 | 설계#p3]",
+   "doc": "MDDR",
+   "item": "Req. 19",
+   "field": "설계#p3",
+   "new_text": "• 수집된 화면 사용 시간은 사용자 인터페이스에서 일일/주간 보고서 형태로 제공한다.",
+   "op": "insert",
+   "source": "llm"
+  }
+ ],
+ "parse_ok": true,
+ "truncated": false,
+ "error": null,
+ "stop_reason": "no_issues",
+ "complexity": {
+  "n_docs": 3,
+  "n_cells": 975,
+  "doc_chars": 24729,
+  "doc_tokens": 12364,
+  "n_candidates": 64,
+  "n_relevant": 12,
+  "n_retrieved": 10,
+  "context_tokens": 10172,
+  "llm_calls": 2,
+  "rounds": 1,
+  "tokens_in": 10172,
+  "tokens_out": 1900,
+  "cost_usd": 0.0,
+  "seconds": 188.8
+ },
+ "n_pred": 11,
+ "input_tokens": 10172,
+ "output_tokens": 1900,
+ "n_calls": 2,
+ "exec_errors": 0,
+ "cost_usd": 0.0,
+ "seconds": 188.8,
+ "log_path": "results/v03/cascade/logs/v3_full/T3_54.json",
+ "rounds": 1,
+ "format_retry": false
+}

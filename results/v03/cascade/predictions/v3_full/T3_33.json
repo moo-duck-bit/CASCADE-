@@ -1,0 +1,104 @@
+{
+ "case_id": "T3_33",
+ "case_type": "T3",
+ "method": "v3_full",
+ "model": "qwen3-32b",
+ "config_hash": "31fb367887edac80",
+ "seed": 20261103,
+ "propagation_type": "structural_add",
+ "edits": [
+  {
+   "site": "[MDSR | Req. 19 | 번호]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "번호",
+   "new_text": "Req. 19",
+   "op": "insert",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 제목]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "제목",
+   "new_text": "낮잠 기록",
+   "op": "insert",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | UC-06 | 소프트웨어 기능 요구사항 번호]",
+   "doc": "MDSR",
+   "item": "UC-06",
+   "field": "소프트웨어 기능 요구사항 번호",
+   "new_text": "Req. 3, Req. 6, Req. 8, Req. 19, Req. 106",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "설명",
+   "new_text": "사용자는 낮잠의 시작과 종료를 기록할 수 있어야 하며, 앱은 각 시점을 기기 시각 기준의 타임스탬프로 저장하여야 한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 목적]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "목적",
+   "new_text": "사용자의 낮잠 기록을 정확히 추적하여 사용자 활동 패턴 분석 및 건강 관리에 활용한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "기준#p1",
+   "new_text": "낮잠 시작 및 종료 시점이 기기 시각 기준의 타임스탬프로 정확히 저장되었음을 확인함",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 기준#p2]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "기준#p2",
+   "new_text": "타임스탬프는 날짜와 시간을 포함하며, 감사기록 생성 기능에 적합한 형식을 사용함",
+   "op": "insert",
+   "source": "llm"
+  }
+ ],
+ "parse_ok": true,
+ "truncated": false,
+ "error": null,
+ "stop_reason": "no_issues",
+ "complexity": {
+  "n_docs": 1,
+  "n_cells": 384,
+  "doc_chars": 10788,
+  "doc_tokens": 5394,
+  "n_candidates": 33,
+  "n_relevant": 7,
+  "n_retrieved": 10,
+  "context_tokens": 9595,
+  "llm_calls": 2,
+  "rounds": 1,
+  "tokens_in": 9595,
+  "tokens_out": 1415,
+  "cost_usd": 0.0,
+  "seconds": 179.96
+ },
+ "n_pred": 7,
+ "input_tokens": 9595,
+ "output_tokens": 1415,
+ "n_calls": 2,
+ "exec_errors": 0,
+ "cost_usd": 0.0,
+ "seconds": 179.96,
+ "log_path": "results/v03/cascade/logs/v3_full/T3_33.json",
+ "rounds": 1,
+ "format_retry": false
+}

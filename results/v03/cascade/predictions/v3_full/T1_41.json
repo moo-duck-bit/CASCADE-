@@ -1,0 +1,113 @@
+{
+ "case_id": "T1_41",
+ "case_type": "T1",
+ "method": "v3_full",
+ "model": "qwen3-32b",
+ "config_hash": "31fb367887edac80",
+ "seed": 20261103,
+ "propagation_type": "fact",
+ "edits": [
+  {
+   "site": "[MDSR | 3.4 일반적 제한 | 본문#p7]",
+   "doc": "MDSR",
+   "item": "3.4 일반적 제한",
+   "field": "본문#p7",
+   "new_text": "시스템 데이터는 12 시간마다 자동 백업되며, 백업 데이터는 별도의 보안 저장소에 보관됩니다. 개인정보는 사용자 탈퇴 시 365 일 이내에 파기되며, 이는 개인정보 보호 규정을 준수하기 위한 조치입니다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 7 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 7",
+   "field": "설명",
+   "new_text": "시스템은 12시간 간격으로 사용자 데이터를 백업하여야 하며, 백업 데이터는 365일경과한 경우 자동으로 파기하여야 한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 7 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 7",
+   "field": "기준#p1",
+   "new_text": "백업 간격이 12 시간이내로 설정되어 정상적으로 수행됨을 확인함",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 105 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 105",
+   "field": "기준#p1",
+   "new_text": "백업 주기 12시간 동안 데이터가 누락되지 않음을 확인함",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 105 | 설계#p1]",
+   "doc": "MDDR",
+   "item": "Req. 105",
+   "field": "설계#p1",
+   "new_text": "• 서버는 12시간 간격으로 데이터를 자동 백업하도록 구현한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 105 | 설계#p2]",
+   "doc": "MDDR",
+   "item": "Req. 105",
+   "field": "설계#p2",
+   "new_text": "• 백업된 데이터는 12 시간 동안 보존되며, 필요 시 복원이 가능하도록 저장한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 105 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 105",
+   "field": "설명",
+   "new_text": "시스템은 12시간 간격으로 사용자 데이터를 자동 백업하여야 한다. 백업된 데이터는 손상되지 않도록 보호되어야 한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 7 | 설계#p1]",
+   "doc": "MDDR",
+   "item": "Req. 7",
+   "field": "설계#p1",
+   "new_text": "• 사용자 데이터는 12시간 간격으로 서버에 자동 백업되도록 구현한다.",
+   "op": "modify",
+   "source": "llm"
+  }
+ ],
+ "parse_ok": true,
+ "truncated": false,
+ "error": null,
+ "stop_reason": "no_change",
+ "complexity": {
+  "n_docs": 2,
+  "n_cells": 547,
+  "doc_chars": 15802,
+  "doc_tokens": 7901,
+  "n_candidates": 11,
+  "n_relevant": 8,
+  "n_retrieved": 0,
+  "context_tokens": 4104,
+  "llm_calls": 4,
+  "rounds": 3,
+  "tokens_in": 10149,
+  "tokens_out": 1735,
+  "cost_usd": 0.0,
+  "seconds": 164.04
+ },
+ "n_pred": 8,
+ "input_tokens": 10149,
+ "output_tokens": 1735,
+ "n_calls": 4,
+ "exec_errors": 0,
+ "cost_usd": 0.0,
+ "seconds": 164.04,
+ "log_path": "results/v03/cascade/logs/v3_full/T1_41.json",
+ "rounds": 3,
+ "format_retry": false
+}

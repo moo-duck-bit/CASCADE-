@@ -1,0 +1,131 @@
+{
+ "case_id": "T3_45",
+ "case_type": "T3",
+ "method": "v3_full",
+ "model": "qwen3-32b",
+ "config_hash": "31fb367887edac80",
+ "seed": 20261103,
+ "propagation_type": "structural_add",
+ "edits": [
+  {
+   "site": "[MDSR | Req. 109 | 번호]",
+   "doc": "MDSR",
+   "item": "Req. 109",
+   "field": "번호",
+   "new_text": "Req. 109",
+   "op": "insert",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 109 | 제목]",
+   "doc": "MDSR",
+   "item": "Req. 109",
+   "field": "제목",
+   "new_text": "수면 효율 메모",
+   "op": "insert",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | UC-04 | 소프트웨어 기능 요구사항 번호]",
+   "doc": "MDSR",
+   "item": "UC-04",
+   "field": "소프트웨어 기능 요구사항 번호",
+   "new_text": "Req. 2, Req. 6, Req. 18, Req. 101, Req. 102, Req. 103, Req. 109",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 109 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 109",
+   "field": "설명",
+   "new_text": "의료진은 사용자의 수면 효율 결과에 메모를 작성할 수 있으며, 메모 작성 및 수정 시 감사기록이 생성되어야 한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 109 | 목적]",
+   "doc": "MDSR",
+   "item": "Req. 109",
+   "field": "목적",
+   "new_text": "의료진이 사용자의 수면 효율 결과에 대한 추가 정보를 기록할 수 있도록 하여 진단의 정확성을 높이고, 메모 변경 내역을 추적하여 시스템 보안을 강화한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 109 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 109",
+   "field": "기준#p1",
+   "new_text": "의료진이 사용자의 수면 효율 결과에 메모를 작성할 수 있는 기능이 구현되어 있는지 확인함",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 109 | 기준#p2]",
+   "doc": "MDSR",
+   "item": "Req. 109",
+   "field": "기준#p2",
+   "new_text": "메모 작성 및 수정 시 감사기록이 생성되는지 확인함",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 109 | 설계#p1]",
+   "doc": "MDDR",
+   "item": "Req. 109",
+   "field": "설계#p1",
+   "new_text": "• 의료진은 사용자의 수면 효율 결과에 메모를 작성할 수 있는 인터페이스를 제공한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 109 | 설계#p2]",
+   "doc": "MDDR",
+   "item": "Req. 109",
+   "field": "설계#p2",
+   "new_text": "• 메모 작성 및 수정 시 감사 이벤트가 발생하며, 감사기록에 사용자 ID, 타임스탬프, 이벤트 유형, 이벤트 결과가 포함된다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 109 | 설계#p3]",
+   "doc": "MDDR",
+   "item": "Req. 109",
+   "field": "설계#p3",
+   "new_text": "• 감사기록은 시스템 내 보안 저장소에 저장되며, 접근 권한이 제한된 사용자만 확인할 수 있다.",
+   "op": "insert",
+   "source": "llm"
+  }
+ ],
+ "parse_ok": true,
+ "truncated": false,
+ "error": null,
+ "stop_reason": "no_issues",
+ "complexity": {
+  "n_docs": 2,
+  "n_cells": 547,
+  "doc_chars": 15802,
+  "doc_tokens": 7901,
+  "n_candidates": 37,
+  "n_relevant": 11,
+  "n_retrieved": 10,
+  "context_tokens": 9675,
+  "llm_calls": 2,
+  "rounds": 1,
+  "tokens_in": 9675,
+  "tokens_out": 1771,
+  "cost_usd": 0.0,
+  "seconds": 209.23
+ },
+ "n_pred": 10,
+ "input_tokens": 9675,
+ "output_tokens": 1771,
+ "n_calls": 2,
+ "exec_errors": 0,
+ "cost_usd": 0.0,
+ "seconds": 209.23,
+ "log_path": "results/v03/cascade/logs/v3_full/T3_45.json",
+ "rounds": 1,
+ "format_retry": false
+}

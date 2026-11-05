@@ -1,0 +1,122 @@
+{
+ "case_id": "T1_40",
+ "case_type": "T1",
+ "method": "v3_full",
+ "model": "qwen3-32b",
+ "config_hash": "6db5b2365786e711",
+ "seed": 20261103,
+ "propagation_type": "fact",
+ "edits": [
+  {
+   "site": "[MDSR | 3.4 일반적 제한 | 본문#p5]",
+   "doc": "MDSR",
+   "item": "3.4 일반적 제한",
+   "field": "본문#p5",
+   "new_text": "시스템은 사용자 활동 및 시스템 변경 내역을 기록하여 감사로그를 생성합니다. 감사로그는 180일 동안 보관되며, 의료진의 접속 기록은 별도로 365일 동안 보관됩니다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 6 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 6",
+   "field": "설명",
+   "new_text": "시스템은 사용자 및 의료진의 모든 접근 및 조작 행위에 대한 감사로그를 생성하고, 180일 동안 보관하여야 하며, 의료진의 접속 기록은 365일 동안 보관하고 45일마다 검토하여야 한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 6 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 6",
+   "field": "기준#p1",
+   "new_text": "감사로그와 의료진 접속 기록의 보관 기간이 각각 180 일 및 365 일 이상 유지됨을 확인함",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | UC-04 | 시험방법#p2]",
+   "doc": "XXCS",
+   "item": "UC-04",
+   "field": "시험방법#p2",
+   "new_text": "감사로그, 의료진 접속 기록, 처방 변경 이력의 보관 기간이 각각 180일, 365일, 365 일 동안 유지되는지 확인한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | UC-04 | 확인결과#p2]",
+   "doc": "XXCS",
+   "item": "UC-04",
+   "field": "확인결과#p2",
+   "new_text": "감사로그, 의료진 접속 기록, 처방 변경 이력의 보관 기간이 각각 180 일, 365 일, 1년 동안 유지됨을 확인함.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 104 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 104",
+   "field": "설명",
+   "new_text": "감사로그는 6개월 동안 보관하여야 하며, 의료진 접속 기록은 1년 동안 보관하고 1개월 반마다 감사가 이루어져야 한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | UC-05 | 시험방법#p1]",
+   "doc": "XXCS",
+   "item": "UC-05",
+   "field": "시험방법#p1",
+   "new_text": "감사 처리 실패 시 감사로그가 365일 동안 보관되는지 확인한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | UC-05 | 확인결과#p1]",
+   "doc": "XXCS",
+   "item": "UC-05",
+   "field": "확인결과#p1",
+   "new_text": "감사 처리 실패 시 감사로그가 365일 동안 보관됨을 확인함.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | TRE-01 | 확인결과#p2]",
+   "doc": "XXCS",
+   "item": "TRE-01",
+   "field": "확인결과#p2",
+   "new_text": "365 일 동안 보관된 감사로그가 의료진만 접근 가능함을 확인함.",
+   "op": "modify",
+   "source": "llm"
+  }
+ ],
+ "parse_ok": true,
+ "truncated": false,
+ "error": null,
+ "stop_reason": "max_rounds",
+ "complexity": {
+  "n_docs": 2,
+  "n_cells": 812,
+  "doc_chars": 19715,
+  "doc_tokens": 9857,
+  "n_candidates": 10,
+  "n_relevant": 8,
+  "n_retrieved": 0,
+  "context_tokens": 5326,
+  "llm_calls": 4,
+  "rounds": 3,
+  "tokens_in": 13753,
+  "tokens_out": 2389,
+  "cost_usd": 0.0,
+  "seconds": 214.13
+ },
+ "n_pred": 9,
+ "input_tokens": 13753,
+ "output_tokens": 2389,
+ "n_calls": 4,
+ "exec_errors": 0,
+ "cost_usd": 0.0,
+ "seconds": 214.13,
+ "log_path": "results/v03/cascade/logs/v3_full/T1_40.json",
+ "rounds": 3,
+ "format_retry": false
+}

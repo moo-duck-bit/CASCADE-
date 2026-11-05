@@ -1,0 +1,50 @@
+{
+ "case_id": "T1_70",
+ "case_type": "T1",
+ "method": "v3_full",
+ "model": "qwen3-32b",
+ "config_hash": "6db5b2365786e711",
+ "seed": 20261103,
+ "propagation_type": "fact",
+ "edits": [
+  {
+   "site": "[MDSR | Req. 12 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 12",
+   "field": "기준#p1",
+   "new_text": "사용자가 10개의 수면 위생 교육 콘텐츠를 모두 제공받았음을 확인함",
+   "op": "modify",
+   "source": "llm"
+  }
+ ],
+ "parse_ok": true,
+ "truncated": false,
+ "error": null,
+ "stop_reason": "no_issues",
+ "complexity": {
+  "n_docs": 1,
+  "n_cells": 384,
+  "doc_chars": 10788,
+  "doc_tokens": 5394,
+  "n_candidates": 1,
+  "n_relevant": 1,
+  "n_retrieved": 0,
+  "context_tokens": 1764,
+  "llm_calls": 2,
+  "rounds": 1,
+  "tokens_in": 1764,
+  "tokens_out": 138,
+  "cost_usd": 0.0,
+  "seconds": 13.59
+ },
+ "n_pred": 1,
+ "input_tokens": 1764,
+ "output_tokens": 138,
+ "n_calls": 2,
+ "exec_errors": 0,
+ "cost_usd": 0.0,
+ "seconds": 13.59,
+ "log_path": "results/v03/cascade/logs/v3_full/T1_70.json",
+ "rounds": 1,
+ "format_retry": false
+}

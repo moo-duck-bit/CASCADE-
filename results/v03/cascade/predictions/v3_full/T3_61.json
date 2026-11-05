@@ -1,0 +1,216 @@
+{
+ "case_id": "T3_61",
+ "case_type": "T3",
+ "method": "v3_full",
+ "model": "qwen3-32b",
+ "config_hash": "31fb367887edac80",
+ "seed": 20261103,
+ "propagation_type": "structural_add+fact",
+ "edits": [
+  {
+   "site": "[MDSR | Req. 19 | 번호]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "번호",
+   "new_text": "Req. 19",
+   "op": "insert",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 제목]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "제목",
+   "new_text": "어두운 화면 안내",
+   "op": "insert",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "설명",
+   "new_text": "앱은 취침 전 시간대에 어두운 화면 모드를 사용자에게 안내하고, 기기의 화면 설정을 읽지 못하는 경우 사전에 정의된 기본 화면 상태로 전환해야 한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 목적]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "목적",
+   "new_text": "사용자의 시력 보호와 수면 질 향상을 위해 취침 전 시간대에 적절한 화면 밝기 설정을 유도하고, 시스템 오류 시에도 안정적인 사용 환경을 제공한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "기준#p1",
+   "new_text": "취침 전 시간대에 어두운 화면 모드가 사용자에게 안내되었음을 확인함",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 19 | 기준#p2]",
+   "doc": "MDSR",
+   "item": "Req. 19",
+   "field": "기준#p2",
+   "new_text": "기기의 화면 설정을 읽지 못하는 경우 사전에 정의된 기본 화면 상태로 전환되었음을 확인함",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 19 | 설계#p1]",
+   "doc": "MDDR",
+   "item": "Req. 19",
+   "field": "설계#p1",
+   "new_text": "• 취침 전 시간대를 기준으로 어두운 화면 모드를 자동으로 제안하는 기능을 구현한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 19 | 설계#p2]",
+   "doc": "MDDR",
+   "item": "Req. 19",
+   "field": "설계#p2",
+   "new_text": "• 기기의 화면 설정을 읽는 API가 실패할 경우, 사전에 정의된 기본 화면 상태를 사용하도록 처리한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 19 | 설계#p3]",
+   "doc": "MDDR",
+   "item": "Req. 19",
+   "field": "설계#p3",
+   "new_text": "• 사용자 설정을 통해 어두운 화면 모드의 활성화 시간대를 조정할 수 있도록 한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 100 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 100",
+   "field": "설명",
+   "new_text": "서버와 사용자 기기 간의 데이터 동기화를 120분 간격으로 수행하여야 한다. 동기화 과정에서 데이터 손실 또는 중복이 발생하지 않도록 보장하여야 한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 100 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 100",
+   "field": "기준#p1",
+   "new_text": "동기화 주기 120 분 동안 데이터가 정상적으로 전송되었음을 확인함",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 101 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 101",
+   "field": "기준#p1",
+   "new_text": "의료진 대시보드는 120분 주기로 사용자 수면 데이터를 자동으로 업데이트하여 최신 정보를 제공한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 101 | 기준#p2]",
+   "doc": "MDSR",
+   "item": "Req. 101",
+   "field": "기준#p2",
+   "new_text": "의료진이 수동으로 데이터를 조회할 경우, 120 분 이내의 최신 데이터가 화면에 반영되어야 한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 100 | 설계#p3]",
+   "doc": "MDDR",
+   "item": "Req. 100",
+   "field": "설계#p3",
+   "new_text": "• 동기화 실패 시 120분 이후 재시도를 자동으로 수행한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 101 | 설계#p1]",
+   "doc": "MDDR",
+   "item": "Req. 101",
+   "field": "설계#p1",
+   "new_text": "• 의료진 대시보드는 사용자 데이터를 120 분동안 주기적으로 서버에서 동기화하도록 구현한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 101 | 설계#p3]",
+   "doc": "MDDR",
+   "item": "Req. 101",
+   "field": "설계#p3",
+   "new_text": "• 의료진 대시보드는 120분이 경과할 경우 자동으로 데이터를 새로 고침을 수행한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 101 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 101",
+   "field": "설명",
+   "new_text": "의료진은 대시보드를 통해 사용자의 수면 데이터를 2시간 동안 최신 정보로 조회하여야 한다. 의료진은 사용자의 진단 및 치료 상태를 실시간으로 확인할 수 있도록 대시보드가 제공되어야 한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 100 | 설계#p1]",
+   "doc": "MDDR",
+   "item": "Req. 100",
+   "field": "설계#p1",
+   "new_text": "• 서버는 2시간 간격으로 클라이언트와 데이터를 동기화하도록 구현한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 101 | 설계#p2]",
+   "doc": "MDDR",
+   "item": "Req. 101",
+   "field": "설계#p2",
+   "new_text": "• 의료진 대시보드는 사용자별 수면 데이터 조회 시 2시간 이내의 최신 데이터만 표시하도록 필터링한다.",
+   "op": "modify",
+   "source": "llm"
+  }
+ ],
+ "parse_ok": true,
+ "truncated": false,
+ "error": null,
+ "stop_reason": "no_change",
+ "changes": [
+  "T3_add",
+  "T1"
+ ],
+ "complexity": {
+  "n_docs": 2,
+  "n_cells": 547,
+  "doc_chars": 15802,
+  "doc_tokens": 7901,
+  "n_candidates": 47,
+  "n_relevant": 20,
+  "n_retrieved": 10,
+  "context_tokens": 14188,
+  "llm_calls": 6,
+  "rounds": 4,
+  "tokens_in": 20513,
+  "tokens_out": 3423,
+  "cost_usd": 0.0,
+  "seconds": 311.2
+ },
+ "n_pred": 19,
+ "input_tokens": 20513,
+ "output_tokens": 3423,
+ "n_calls": 6,
+ "exec_errors": 0,
+ "cost_usd": 0.0,
+ "seconds": 311.2,
+ "log_path": "results/v03/cascade/logs/v3_full/T3_61.json",
+ "rounds": 4,
+ "format_retry": false
+}
