@@ -1,0 +1,28 @@
+{
+  "case_id": "T1_09",
+  "case_type": "T1",
+  "subtype": "value_change",
+  "n_docs": 3,
+  "docs": [
+    "MDSR",
+    "MDDR",
+    "XXCS"
+  ],
+  "paths": {
+    "same_value": 1,
+    "origin": 2,
+    "same_id": 1,
+    "trace": 4
+  },
+  "trap_paths": {
+    "same_value": 9
+  },
+  "n_impact": 8,
+  "n_traps": 9,
+  "n_neutral": 0,
+  "request_structured": "Req. 2 '계정 잠금'의 비활성 계정 자동 잠금 기간을 90일에서 60일로 변경한다.",
+  "request_nl": "계정 잠금 기능에서 비활성 계정 자동 잠금 기간을 60일로 바꿔 주세요.",
+  "sheet_type": "T1",
+  "sheet_paths": "origin, same_id, trace, same_value",
+  "seed": 20261102
+}

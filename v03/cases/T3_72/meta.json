@@ -1,0 +1,29 @@
+{
+  "case_id": "T3_72",
+  "case_type": "T3",
+  "subtype": "add_with_attr_change",
+  "n_docs": 3,
+  "docs": [
+    "MDSR",
+    "MDDR",
+    "XXCS"
+  ],
+  "paths": {
+    "origin": 6,
+    "same_id": 4,
+    "trace": 2,
+    "rule": 4
+  },
+  "trap_paths": {
+    "trace": 4,
+    "rule": 6
+  },
+  "n_impact": 16,
+  "n_traps": 10,
+  "n_neutral": 5,
+  "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '침구 점검'을(를) 신규 추가한다. 내용: 앱은 베개와 매트리스 등 침구 상태에 관한 점검 문항에 응답하도록 하여야 하며, 응답 값이 정해진 선택지와 형식에 맞는지 검증하여야 한다. 또한 제품 사이버보안 속성 '모바일 코드(외부 스크립트 콘텐츠) 실행'(mobile_code)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+  "request_nl": "앱에 새 기능을 넣어 주세요. 베개와 매트리스 등 침구 점검 문항에 답하게 하고 응답 값을 검사하는 기능이 필요합니다. 그리고 수면코치를 교육 콘텐츠를 웹 기반 스크립트로 내려받아 실행하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+  "sheet_type": "T3-추가복합",
+  "sheet_paths": "origin, same_id, trace, rule",
+  "seed": 20261102
+}

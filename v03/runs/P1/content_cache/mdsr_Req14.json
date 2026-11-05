@@ -1,0 +1,8 @@
+{
+  "설명": "CBT 회기 알림의 기본 설정 시간, 반복 간격 및 소리 정책을 사용자에게 제공하여야 한다. 사용자는 기본 설정을 변경할 수 있도록 하여야 한다.",
+  "목적": "사용자가 CBT 회기 일정을 정확히 인지하고 참여할 수 있도록 알림을 지원하는 것",
+  "기준": [
+    "CBT 회기 알림의 기본 설정 시간이 {{F_DEFAULT_CBT_SESSION_REMINDER}}을 기준으로 설정됨을 확인함",
+    "알림 반복 간격이 {{F_DEFAULT_CBT_SESSION_REMINDER_INTERVAL}}을 기준으로 설정되며, 소리는 {{F_DEFAULT_CBT_SESSION_REMINDER_SOUND}} 정책에 따라 재생됨을 확인함"
+  ]
+}

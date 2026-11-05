@@ -1,0 +1,32 @@
+{
+  "case_id": "T1_27",
+  "items": [
+    {
+      "site": "[MDSR | Req. 8 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 8",
+      "cell": "설명",
+      "path": "same_value",
+      "fact": "F_SLEEP_DIARY_DEADLINE",
+      "reason": "같은 값(24시간)이지만 다른 사실"
+    },
+    {
+      "site": "[MDSR | Req. 8 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 8",
+      "cell": "기준#p1",
+      "path": "same_value",
+      "fact": "F_SLEEP_DIARY_DEADLINE",
+      "reason": "같은 값(24 시간)이지만 다른 사실"
+    },
+    {
+      "site": "[XXCS | SI-05 | 확인결과#p2]",
+      "doc": "XXCS",
+      "item": "SI-05",
+      "cell": "확인결과#p2",
+      "path": "same_value",
+      "fact": "F_SLEEP_DIARY_DEADLINE",
+      "reason": "같은 값(24시간)이지만 다른 사실"
+    }
+  ]
+}

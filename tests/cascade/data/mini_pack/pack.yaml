@@ -1,0 +1,31 @@
+# 테스트용 가짜 미니 도메인: 기능 명세(SPEC), 사용 설명서(MAN), 시험 기록(TEST). 팩 설정만 바꿔 CASCADE가 도는지 본다.
+{
+  "pack_id": "mini",
+  "docs": ["SPEC", "MAN", "TEST"],
+  "prompt_domain": "장치 문서 세트(SPEC 기능 명세, MAN 사용 설명서, TEST 시험 기록)",
+  "req": {"pattern": "^FR-(\\d+)$", "ref": "FR-(\\d+)", "token": "FR-\\d+", "format": "FR-{n}", "noun": "기능"},
+  "sec": {"pattern": "^(TC-\\d{2})\\b", "full": "^TC-\\d{2}$"},
+  "req_doc": "SPEC",
+  "req_docs": ["SPEC", "MAN"],
+  "sec_docs": ["TEST"],
+  "status_doc": "TEST",
+  "number_cell": "번호",
+  "title_cell": "제목",
+  "desc_cell": "설명",
+  "sec_title_cells": [["TEST", "시험 내용"]],
+  "component_split": 0,
+  "link_cells": [["TEST", "대상 기능"]],
+  "link_na_text": "없음",
+  "status_cells": [],
+  "decision_cells": [],
+  "layouts": {
+    "SPEC": {"item_table": true},
+    "MAN": {"item_paragraph": {"body": "안내"}},
+    "TEST": {"id_tables": [{"marker": "시험 번호", "id_col": 0, "min_cols": 3,
+                            "cols": {"1": "시험 내용", "2": "대상 기능"}}]}
+  },
+  "insert_style": "설명, 기준",
+  "rules_table": "",
+  "units": [["초", "sec"], ["분", "min"], ["회", "count"], ["%", "pct"]],
+  "corpus": null
+}

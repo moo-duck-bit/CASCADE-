@@ -1,0 +1,124 @@
+{
+  "case_id": "T3_23",
+  "case_type": "T3",
+  "subtype": "delete",
+  "change": {
+    "deleted_req": "Req. 16",
+    "title": "수면 효율 리포트"
+  },
+  "items": [
+    {
+      "site": "[MDSR | Req. 16 | 제목]",
+      "doc": "MDSR",
+      "item": "Req. 16",
+      "cell": "제목",
+      "path": "origin",
+      "op": "modify",
+      "new_value": "삭제"
+    },
+    {
+      "site": "[MDSR | Req. 16 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 16",
+      "cell": "설명",
+      "path": "origin",
+      "op": "modify",
+      "new_value": "삭제"
+    },
+    {
+      "site": "[MDSR | Req. 16 | 목적]",
+      "doc": "MDSR",
+      "item": "Req. 16",
+      "cell": "목적",
+      "path": "origin",
+      "op": "modify",
+      "new_value": "삭제"
+    },
+    {
+      "site": "[MDSR | Req. 16 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 16",
+      "cell": "기준#p1",
+      "path": "origin",
+      "op": "modify",
+      "new_value": "삭제"
+    },
+    {
+      "site": "[MDSR | Req. 16 | 기준#p2]",
+      "doc": "MDSR",
+      "item": "Req. 16",
+      "cell": "기준#p2",
+      "path": "origin",
+      "op": "modify",
+      "new_value": "삭제"
+    },
+    {
+      "site": "[MDDR | Req. 16 | 설계#p1]",
+      "doc": "MDDR",
+      "item": "Req. 16",
+      "cell": "설계#p1",
+      "path": "same_id",
+      "op": "modify",
+      "new_value": "삭제"
+    },
+    {
+      "site": "[MDDR | Req. 16 | 설계#p2]",
+      "doc": "MDDR",
+      "item": "Req. 16",
+      "cell": "설계#p2",
+      "path": "same_id",
+      "op": "modify",
+      "new_value": "삭제"
+    },
+    {
+      "site": "[MDDR | Req. 16 | 설계#p3]",
+      "doc": "MDDR",
+      "item": "Req. 16",
+      "cell": "설계#p3",
+      "path": "same_id",
+      "op": "modify",
+      "new_value": "삭제"
+    },
+    {
+      "site": "[MDSR | SI-07 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "SI-07",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "trace",
+      "op": "modify",
+      "new_value": "Req. 18",
+      "note": "연결 Req 칸에서 Req. 16 제거"
+    },
+    {
+      "site": "[XXCS | SI-07 | 해당 요구사항]",
+      "doc": "XXCS",
+      "item": "SI-07",
+      "cell": "해당 요구사항",
+      "path": "trace",
+      "op": "modify",
+      "new_value": "Req. 18",
+      "note": "연결 Req 칸에서 Req. 16 제거"
+    },
+    {
+      "site": "[MDSR | UC-01 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "UC-01",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "trace",
+      "op": "modify",
+      "new_value": "Req. 101, Req. 102, Req. 108",
+      "note": "연결 Req 칸에서 Req. 16 제거"
+    },
+    {
+      "site": "[XXCS | UC-01 | 해당 요구사항]",
+      "doc": "XXCS",
+      "item": "UC-01",
+      "cell": "해당 요구사항",
+      "path": "trace",
+      "op": "modify",
+      "new_value": "Req. 101, Req. 102, Req. 108",
+      "note": "연결 Req 칸에서 Req. 16 제거"
+    }
+  ],
+  "neutral": []
+}

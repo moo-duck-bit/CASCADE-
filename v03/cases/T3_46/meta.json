@@ -1,0 +1,26 @@
+{
+  "case_id": "T3_46",
+  "case_type": "T3",
+  "subtype": "add",
+  "n_docs": 2,
+  "docs": [
+    "MDSR",
+    "MDDR"
+  ],
+  "paths": {
+    "origin": 6,
+    "same_id": 4,
+    "trace": 1
+  },
+  "trap_paths": {
+    "trace": 1
+  },
+  "n_impact": 11,
+  "n_traps": 1,
+  "n_neutral": 0,
+  "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '복용 기록'을(를) 신규 추가한다. 내용: 사용자는 복용한 수면 관련 약과 복용 시각을 기록할 수 있어야 하며, 복용 기록은 기기 내부에 암호화된 형태로 저장되어야 한다.",
+  "request_nl": "앱에 새 기능을 넣어 주세요. 사용자가 복용한 약과 복용 시각을 기록하고 기록을 기기에 암호화하여 저장하는 기능이 필요합니다.",
+  "sheet_type": "T3-추가",
+  "sheet_paths": "origin, same_id, trace",
+  "seed": 20261102
+}

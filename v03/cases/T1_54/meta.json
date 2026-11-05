@@ -1,0 +1,22 @@
+{
+  "case_id": "T1_54",
+  "case_type": "T1",
+  "subtype": "value_change",
+  "n_docs": 1,
+  "docs": [
+    "MDSR"
+  ],
+  "paths": {
+    "same_value": 2,
+    "origin": 1
+  },
+  "trap_paths": {},
+  "n_impact": 3,
+  "n_traps": 0,
+  "n_neutral": 0,
+  "request_structured": "Req. 104 '감사로그 보관'의 의료진 접속 기록 감사 주기를 45일에서 30일로 변경한다.",
+  "request_nl": "감사로그 보관 기능에서 의료진 접속 기록 감사 주기를 30일로 바꿔 주세요.",
+  "sheet_type": "T1",
+  "sheet_paths": "origin, same_value",
+  "seed": 20261102
+}

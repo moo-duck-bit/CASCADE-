@@ -1,0 +1,24 @@
+{
+  "case_id": "T3_34",
+  "case_type": "T3",
+  "subtype": "add",
+  "n_docs": 1,
+  "docs": [
+    "MDSR"
+  ],
+  "paths": {
+    "origin": 6,
+    "trace": 1
+  },
+  "trap_paths": {
+    "trace": 1
+  },
+  "n_impact": 7,
+  "n_traps": 1,
+  "n_neutral": 0,
+  "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '주간 리포트 공유'을(를) 신규 추가한다. 내용: 사용자는 주간 수면 리포트를 담당 의료진에게 보낼 수 있어야 하며, 리포트는 암호화된 전송 구간을 통해서만 전송되어야 한다.",
+  "request_nl": "앱에 새 기능을 넣어 주세요. 사용자가 주간 수면 리포트를 의료진에게 보내며 전송 구간을 암호화하는 기능이 필요합니다.",
+  "sheet_type": "T3-추가",
+  "sheet_paths": "origin, trace",
+  "seed": 20261102
+}

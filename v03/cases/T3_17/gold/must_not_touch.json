@@ -1,0 +1,21 @@
+{
+  "case_id": "T3_17",
+  "items": [
+    {
+      "site": "[MDSR | Req. 9 | 번호]",
+      "doc": "MDSR",
+      "item": "Req. 9",
+      "cell": "번호",
+      "path": "same_id",
+      "reason": "삭제 후 번호 재정렬 금지"
+    },
+    {
+      "site": "[MDSR | Req. 10 | 번호]",
+      "doc": "MDSR",
+      "item": "Req. 10",
+      "cell": "번호",
+      "path": "same_id",
+      "reason": "삭제 후 번호 재정렬 금지"
+    }
+  ]
+}

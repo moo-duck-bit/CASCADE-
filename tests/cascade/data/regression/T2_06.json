@@ -1,0 +1,129 @@
+{
+ "case_id": "T2_06",
+ "source": "cascade_dev_v1 results/cascade/cascade_full",
+ "calls": [
+  "locator",
+  "editor"
+ ],
+ "config_hash": "b806efd935a421a5",
+ "responses": [
+  {
+   "judgments": [
+    {
+     "id": 0,
+     "relevant": false,
+     "reason": "칸 내용이 '해당 없음'으로 명시되어 있으며, 변경 요청과 관련된 내용이 포함되어 있지 않다."
+    },
+    {
+     "id": 1,
+     "relevant": false,
+     "reason": "칸 내용이 '해당 없음'으로 명시되어 있으며, 변경 요청과 관련된 내용이 포함되어 있지 않다."
+    },
+    {
+     "id": 2,
+     "relevant": false,
+     "reason": "칸 내용이 '해당 없음'으로 명시되어 있으며, 변경 요청과 관련된 내용이 포함되어 있지 않다."
+    },
+    {
+     "id": 3,
+     "relevant": false,
+     "reason": "칸 내용이 '해당 없음'으로 명시되어 있으며, 변경 요청과 관련된 내용이 포함되어 있지 않다."
+    }
+   ]
+  },
+  {
+   "edits": [
+    {
+     "site": "[XXCS | SI-10 | 체크리스트 입증 방법]",
+     "new_text": "SI-10 요구사항이 적용되므로, 물리적 변조 방지를 위한 보안 조치가 구현되었는지 확인한다."
+    },
+    {
+     "site": "[XXCS | SI-10 | 판정]",
+     "new_text": "시험 예정"
+    },
+    {
+     "site": "[XXCS | SI-11 | 체크리스트 입증 방법]",
+     "new_text": "SI-11 요구사항이 적용되므로, 부트 프로세스 무결성 검증이 구현되었는지 확인한다."
+    },
+    {
+     "site": "[XXCS | SI-11 | 판정]",
+     "new_text": "시험 예정"
+    }
+   ]
+  }
+ ],
+ "expected_edits": [
+  {
+   "site": "[XXCS | SI-10 | 체크리스트 적용 여부]",
+   "doc": "XXCS",
+   "item": "SI-10",
+   "field": "체크리스트 적용 여부",
+   "new_text": "적용",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[XXCS | SI-10 | 적용 여부]",
+   "doc": "XXCS",
+   "item": "SI-10",
+   "field": "적용 여부",
+   "new_text": "적용",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[XXCS | SI-11 | 체크리스트 적용 여부]",
+   "doc": "XXCS",
+   "item": "SI-11",
+   "field": "체크리스트 적용 여부",
+   "new_text": "적용",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[XXCS | SI-11 | 적용 여부]",
+   "doc": "XXCS",
+   "item": "SI-11",
+   "field": "적용 여부",
+   "new_text": "적용",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[XXCS | SI-10 | 체크리스트 입증 방법]",
+   "doc": "XXCS",
+   "item": "SI-10",
+   "field": "체크리스트 입증 방법",
+   "new_text": "SI-10 요구사항이 적용되므로, 물리적 변조 방지를 위한 보안 조치가 구현되었는지 확인한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | SI-10 | 판정]",
+   "doc": "XXCS",
+   "item": "SI-10",
+   "field": "판정",
+   "new_text": "시험 예정",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | SI-11 | 체크리스트 입증 방법]",
+   "doc": "XXCS",
+   "item": "SI-11",
+   "field": "체크리스트 입증 방법",
+   "new_text": "SI-11 요구사항이 적용되므로, 부트 프로세스 무결성 검증이 구현되었는지 확인한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | SI-11 | 판정]",
+   "doc": "XXCS",
+   "item": "SI-11",
+   "field": "판정",
+   "new_text": "시험 예정",
+   "op": "modify",
+   "source": "llm"
+  }
+ ]
+}

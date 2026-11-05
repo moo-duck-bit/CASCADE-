@@ -1,0 +1,26 @@
+{
+  "case_id": "T1_41",
+  "case_type": "T1",
+  "subtype": "value_change",
+  "n_docs": 2,
+  "docs": [
+    "MDSR",
+    "MDDR"
+  ],
+  "paths": {
+    "same_value": 4,
+    "origin": 2,
+    "same_id": 2
+  },
+  "trap_paths": {
+    "same_value": 3
+  },
+  "n_impact": 8,
+  "n_traps": 3,
+  "n_neutral": 0,
+  "request_structured": "Req. 105 '데이터 백업'의 백업 주기를 24시간에서 12시간으로 변경한다.",
+  "request_nl": "데이터 백업 기능에서 백업 주기를 12시간으로 바꿔 주세요.",
+  "sheet_type": "T1",
+  "sheet_paths": "origin, same_id, same_value",
+  "seed": 20261102
+}

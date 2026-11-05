@@ -1,0 +1,336 @@
+{
+  "case_id": "T3_71",
+  "case_type": "T3",
+  "subtype": "add_with_attr_change",
+  "change": {
+    "new_req": "Req. 19",
+    "component": "앱",
+    "title": "동거인 방해 기록",
+    "related_secs": [
+      "DC-01"
+    ],
+    "draft": {
+      "설명": "사용자는 동거인 때문에 잠을 깬 경우를 기록할 수 있어야 하며, 타인 정보가 담길 수 있는 이 기록은 기기 내부에 암호화된 형태로 저장되어야 한다.",
+      "목적": "수면 방해 요인을 파악하여 상담에 활용하고, 사용자와 타인의 정보가 노출되지 않도록 하기 위함이다.",
+      "기준": [
+        "동거인 방해 기록이 수면일기와 함께 조회됨을 확인함",
+        "기기에 저장된 방해 기록이 암호화되어 있어 앱 밖에서 내용을 읽을 수 없음을 확인함"
+      ],
+      "설계": [
+        "• 수면일기 화면에 동거인 방해 여부와 메모를 입력하는 항목을 추가하도록 구현한다.",
+        "• 방해 기록은 기기 내부 저장소에 암호화하여 저장한다.",
+        "• 방해 기록은 사용자가 공유를 선택한 경우에만 의료진 대시보드에 표시하도록 한다."
+      ]
+    },
+    "attr_change": {
+      "attr": "samd",
+      "old": true,
+      "new": false,
+      "direction": "true->false",
+      "rules": [
+        "R05",
+        "R06"
+      ]
+    }
+  },
+  "items": [
+    {
+      "site": "[MDSR | Req. 19 | 번호]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "번호",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "Req. 19"
+    },
+    {
+      "site": "[MDSR | Req. 19 | 제목]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "제목",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "동거인 방해 기록"
+    },
+    {
+      "site": "[MDSR | Req. 19 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "설명",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "사용자는 동거인 때문에 잠을 깬 경우를 기록할 수 있어야 하며, 타인 정보가 담길 수 있는 이 기록은 기기 내부에 암호화된 형태로 저장되어야 한다."
+    },
+    {
+      "site": "[MDSR | Req. 19 | 목적]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "목적",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "수면 방해 요인을 파악하여 상담에 활용하고, 사용자와 타인의 정보가 노출되지 않도록 하기 위함이다."
+    },
+    {
+      "site": "[MDSR | Req. 19 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "기준#p1",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "동거인 방해 기록이 수면일기와 함께 조회됨을 확인함"
+    },
+    {
+      "site": "[MDSR | Req. 19 | 기준#p2]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "기준#p2",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "기기에 저장된 방해 기록이 암호화되어 있어 앱 밖에서 내용을 읽을 수 없음을 확인함"
+    },
+    {
+      "site": "[MDDR | Req. 19 | 번호]",
+      "doc": "MDDR",
+      "item": "Req. 19",
+      "cell": "번호",
+      "path": "same_id",
+      "op": "insert",
+      "anchor": "[MDDR | Req. 18 | 설계#p3]",
+      "new_value": "Req. 19"
+    },
+    {
+      "site": "[MDDR | Req. 19 | 설계#p1]",
+      "doc": "MDDR",
+      "item": "Req. 19",
+      "cell": "설계#p1",
+      "path": "same_id",
+      "op": "insert",
+      "anchor": "[MDDR | Req. 18 | 설계#p3]",
+      "new_value": "• 수면일기 화면에 동거인 방해 여부와 메모를 입력하는 항목을 추가하도록 구현한다."
+    },
+    {
+      "site": "[MDDR | Req. 19 | 설계#p2]",
+      "doc": "MDDR",
+      "item": "Req. 19",
+      "cell": "설계#p2",
+      "path": "same_id",
+      "op": "insert",
+      "anchor": "[MDDR | Req. 18 | 설계#p3]",
+      "new_value": "• 방해 기록은 기기 내부 저장소에 암호화하여 저장한다."
+    },
+    {
+      "site": "[MDDR | Req. 19 | 설계#p3]",
+      "doc": "MDDR",
+      "item": "Req. 19",
+      "cell": "설계#p3",
+      "path": "same_id",
+      "op": "insert",
+      "anchor": "[MDDR | Req. 18 | 설계#p3]",
+      "new_value": "• 방해 기록은 사용자가 공유를 선택한 경우에만 의료진 대시보드에 표시하도록 한다."
+    },
+    {
+      "site": "[MDSR | DC-01 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "DC-01",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "trace",
+      "op": "modify",
+      "new_value": "Req. 5, Req. 7, Req. 8, Req. 19, Req. 106",
+      "note": "연결 Req 칸에 Req. 19 추가"
+    },
+    {
+      "site": "[XXCS | DC-01 | 해당 요구사항]",
+      "doc": "XXCS",
+      "item": "DC-01",
+      "cell": "해당 요구사항",
+      "path": "trace",
+      "op": "modify",
+      "new_value": "Req. 5, Req. 7, Req. 8, Req. 19, Req. 106",
+      "note": "연결 Req 칸에 Req. 19 추가"
+    },
+    {
+      "site": "[XXCS | SI-10 | 체크리스트 적용 여부]",
+      "doc": "XXCS",
+      "item": "SI-10",
+      "cell": "체크리스트 적용 여부",
+      "path": "rule",
+      "op": "modify",
+      "rule_source": "R05: 첨부3 SI-10 적용 예외: 물리적 하드웨어가 없는 소프트웨어 기반 의료기기",
+      "applicability_before": "N/A",
+      "applicability_after": "적용",
+      "new_value": "적용"
+    },
+    {
+      "site": "[XXCS | SI-10 | 체크리스트 입증 방법]",
+      "doc": "XXCS",
+      "item": "SI-10",
+      "cell": "체크리스트 입증 방법",
+      "path": "rule",
+      "op": "modify",
+      "rule_source": "R05: 첨부3 SI-10 적용 예외: 물리적 하드웨어가 없는 소프트웨어 기반 의료기기",
+      "applicability_before": "N/A",
+      "applicability_after": "적용",
+      "new_value": null
+    },
+    {
+      "site": "[XXCS | SI-10 | 적용 여부]",
+      "doc": "XXCS",
+      "item": "SI-10",
+      "cell": "적용 여부",
+      "path": "rule",
+      "op": "modify",
+      "rule_source": "R05: 첨부3 SI-10 적용 예외: 물리적 하드웨어가 없는 소프트웨어 기반 의료기기",
+      "applicability_before": "N/A",
+      "applicability_after": "적용",
+      "new_value": "적용"
+    },
+    {
+      "site": "[XXCS | SI-10 | 판정]",
+      "doc": "XXCS",
+      "item": "SI-10",
+      "cell": "판정",
+      "path": "rule",
+      "op": "modify",
+      "rule_source": "R05: 첨부3 SI-10 적용 예외: 물리적 하드웨어가 없는 소프트웨어 기반 의료기기",
+      "applicability_before": "N/A",
+      "applicability_after": "적용",
+      "new_value": null
+    },
+    {
+      "site": "[XXCS | SI-11 | 체크리스트 적용 여부]",
+      "doc": "XXCS",
+      "item": "SI-11",
+      "cell": "체크리스트 적용 여부",
+      "path": "rule",
+      "op": "modify",
+      "rule_source": "R06: 첨부3 SI-11 적용 예외: 부트 프로세스를 갖지 않는 소프트웨어 기반 의료기기",
+      "applicability_before": "N/A",
+      "applicability_after": "적용",
+      "new_value": "적용"
+    },
+    {
+      "site": "[XXCS | SI-11 | 체크리스트 입증 방법]",
+      "doc": "XXCS",
+      "item": "SI-11",
+      "cell": "체크리스트 입증 방법",
+      "path": "rule",
+      "op": "modify",
+      "rule_source": "R06: 첨부3 SI-11 적용 예외: 부트 프로세스를 갖지 않는 소프트웨어 기반 의료기기",
+      "applicability_before": "N/A",
+      "applicability_after": "적용",
+      "new_value": null
+    },
+    {
+      "site": "[XXCS | SI-11 | 적용 여부]",
+      "doc": "XXCS",
+      "item": "SI-11",
+      "cell": "적용 여부",
+      "path": "rule",
+      "op": "modify",
+      "rule_source": "R06: 첨부3 SI-11 적용 예외: 부트 프로세스를 갖지 않는 소프트웨어 기반 의료기기",
+      "applicability_before": "N/A",
+      "applicability_after": "적용",
+      "new_value": "적용"
+    },
+    {
+      "site": "[XXCS | SI-11 | 판정]",
+      "doc": "XXCS",
+      "item": "SI-11",
+      "cell": "판정",
+      "path": "rule",
+      "op": "modify",
+      "rule_source": "R06: 첨부3 SI-11 적용 예외: 부트 프로세스를 갖지 않는 소프트웨어 기반 의료기기",
+      "applicability_before": "N/A",
+      "applicability_after": "적용",
+      "new_value": null
+    }
+  ],
+  "neutral": [
+    {
+      "site": "[XXCS | SI-10 | 비고]",
+      "doc": "XXCS",
+      "item": "SI-10",
+      "cell": "비고",
+      "path": "rule",
+      "reason": "같은 행의 부수 칸(채점 제외)"
+    },
+    {
+      "site": "[XXCS | SI-10 | 해당 요구사항]",
+      "doc": "XXCS",
+      "item": "SI-10",
+      "cell": "해당 요구사항",
+      "path": "rule",
+      "reason": "같은 행의 부수 칸(채점 제외)"
+    },
+    {
+      "site": "[XXCS | SI-10 | 시험방법]",
+      "doc": "XXCS",
+      "item": "SI-10",
+      "cell": "시험방법",
+      "path": "rule",
+      "reason": "같은 행의 부수 칸(채점 제외)"
+    },
+    {
+      "site": "[XXCS | SI-10 | 확인결과]",
+      "doc": "XXCS",
+      "item": "SI-10",
+      "cell": "확인결과",
+      "path": "rule",
+      "reason": "같은 행의 부수 칸(채점 제외)"
+    },
+    {
+      "site": "[MDSR | SI-10 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "SI-10",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "rule",
+      "reason": "6절 연결 칸(채점 제외)"
+    },
+    {
+      "site": "[XXCS | SI-11 | 비고]",
+      "doc": "XXCS",
+      "item": "SI-11",
+      "cell": "비고",
+      "path": "rule",
+      "reason": "같은 행의 부수 칸(채점 제외)"
+    },
+    {
+      "site": "[XXCS | SI-11 | 해당 요구사항]",
+      "doc": "XXCS",
+      "item": "SI-11",
+      "cell": "해당 요구사항",
+      "path": "rule",
+      "reason": "같은 행의 부수 칸(채점 제외)"
+    },
+    {
+      "site": "[XXCS | SI-11 | 시험방법]",
+      "doc": "XXCS",
+      "item": "SI-11",
+      "cell": "시험방법",
+      "path": "rule",
+      "reason": "같은 행의 부수 칸(채점 제외)"
+    },
+    {
+      "site": "[XXCS | SI-11 | 확인결과]",
+      "doc": "XXCS",
+      "item": "SI-11",
+      "cell": "확인결과",
+      "path": "rule",
+      "reason": "같은 행의 부수 칸(채점 제외)"
+    },
+    {
+      "site": "[MDSR | SI-11 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "SI-11",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "rule",
+      "reason": "6절 연결 칸(채점 제외)"
+    }
+  ]
+}

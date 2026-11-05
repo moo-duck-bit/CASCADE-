@@ -1,0 +1,135 @@
+{
+  "case_id": "T1_15",
+  "case_type": "T1",
+  "subtype": "value_change",
+  "change": {
+    "fact": "F_AUDIT_LOG_RETENTION",
+    "origin_req": "Req. 6",
+    "old_value": "180",
+    "new_value": "365"
+  },
+  "items": [
+    {
+      "site": "[MDSR | 3.4 일반적 제한 | 본문#p5]",
+      "doc": "MDSR",
+      "item": "3.4 일반적 제한",
+      "cell": "본문#p5",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_AUDIT_LOG_RETENTION",
+      "old_surface": "180일",
+      "new_value": "365일"
+    },
+    {
+      "site": "[MDSR | Req. 6 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 6",
+      "cell": "설명",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_AUDIT_LOG_RETENTION",
+      "old_surface": "180일",
+      "new_value": "365일"
+    },
+    {
+      "site": "[MDSR | Req. 6 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 6",
+      "cell": "기준#p1",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_AUDIT_LOG_RETENTION",
+      "old_surface": "180 일",
+      "new_value": "365일"
+    },
+    {
+      "site": "[MDSR | Req. 104 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 104",
+      "cell": "설명",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_AUDIT_LOG_RETENTION",
+      "old_surface": "6개월",
+      "new_value": "365일"
+    },
+    {
+      "site": "[MDDR | Req. 6 | 설계#p1]",
+      "doc": "MDDR",
+      "item": "Req. 6",
+      "cell": "설계#p1",
+      "path": "same_id",
+      "op": "modify",
+      "fact": "F_AUDIT_LOG_RETENTION",
+      "old_surface": "180 일",
+      "new_value": "365일"
+    },
+    {
+      "site": "[MDDR | Req. 104 | 설계#p1]",
+      "doc": "MDDR",
+      "item": "Req. 104",
+      "cell": "설계#p1",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_AUDIT_LOG_RETENTION",
+      "old_surface": "6개월",
+      "new_value": "365일"
+    },
+    {
+      "site": "[XXCS | UC-04 | 시험방법#p2]",
+      "doc": "XXCS",
+      "item": "UC-04",
+      "cell": "시험방법#p2",
+      "path": "trace",
+      "op": "modify",
+      "fact": "F_AUDIT_LOG_RETENTION",
+      "old_surface": "180일",
+      "new_value": "365일"
+    },
+    {
+      "site": "[XXCS | UC-04 | 확인결과#p2]",
+      "doc": "XXCS",
+      "item": "UC-04",
+      "cell": "확인결과#p2",
+      "path": "trace",
+      "op": "modify",
+      "fact": "F_AUDIT_LOG_RETENTION",
+      "old_surface": "180 일",
+      "new_value": "365일"
+    },
+    {
+      "site": "[XXCS | UC-05 | 시험방법#p1]",
+      "doc": "XXCS",
+      "item": "UC-05",
+      "cell": "시험방법#p1",
+      "path": "trace",
+      "op": "modify",
+      "fact": "F_AUDIT_LOG_RETENTION",
+      "old_surface": "6개월",
+      "new_value": "365일"
+    },
+    {
+      "site": "[XXCS | UC-05 | 확인결과#p1]",
+      "doc": "XXCS",
+      "item": "UC-05",
+      "cell": "확인결과#p1",
+      "path": "trace",
+      "op": "modify",
+      "fact": "F_AUDIT_LOG_RETENTION",
+      "old_surface": "180일",
+      "new_value": "365일"
+    },
+    {
+      "site": "[XXCS | TRE-01 | 확인결과#p2]",
+      "doc": "XXCS",
+      "item": "TRE-01",
+      "cell": "확인결과#p2",
+      "path": "trace",
+      "op": "modify",
+      "fact": "F_AUDIT_LOG_RETENTION",
+      "old_surface": "180 일",
+      "new_value": "365일"
+    }
+  ],
+  "neutral": []
+}

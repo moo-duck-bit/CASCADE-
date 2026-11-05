@@ -1,0 +1,37 @@
+{
+  "case_id": "T1_20",
+  "items": [
+    {
+      "site": "[XXCS | UC-04 | 확인결과#p1]",
+      "doc": "XXCS",
+      "item": "UC-04",
+      "cell": "확인결과#p1",
+      "path": "trace",
+      "reason": "Req. 101와 연결됐지만 relevant=false"
+    },
+    {
+      "site": "[XXCS | UC-04 | 확인결과#p2]",
+      "doc": "XXCS",
+      "item": "UC-04",
+      "cell": "확인결과#p2",
+      "path": "trace",
+      "reason": "Req. 101와 연결됐지만 relevant=false"
+    },
+    {
+      "site": "[XXCS | UC-04 | 확인결과#p3]",
+      "doc": "XXCS",
+      "item": "UC-04",
+      "cell": "확인결과#p3",
+      "path": "trace",
+      "reason": "Req. 101와 연결됐지만 relevant=false"
+    },
+    {
+      "site": "[XXCS | UC-04 | 확인결과#p4]",
+      "doc": "XXCS",
+      "item": "UC-04",
+      "cell": "확인결과#p4",
+      "path": "trace",
+      "reason": "Req. 101와 연결됐지만 relevant=false"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+results/v03/*/predictions/
+results/v03/*/logs/
+experiments/work/
+corpus/cache/
+server/*.log

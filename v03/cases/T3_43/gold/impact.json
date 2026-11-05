@@ -1,0 +1,109 @@
+{
+  "case_id": "T3_43",
+  "case_type": "T3",
+  "subtype": "add",
+  "change": {
+    "new_req": "Req. 19",
+    "component": "앱",
+    "title": "카페인 중단 안내",
+    "related_secs": [
+      "SI-07"
+    ],
+    "draft": {
+      "설명": "앱은 사용자의 취침 시각을 기준으로 카페인 섭취를 멈출 시점을 안내하여야 하며, 안내 시점을 계산하지 못하면 내부 정보가 드러나지 않는 오류 메시지를 표시하여야 한다.",
+      "목적": "늦은 시간의 카페인 섭취를 줄여 수면을 개선하고, 오류가 나도 시스템 정보가 사용자에게 노출되지 않도록 하기 위함이다.",
+      "기준": [
+        "취침 시각이 설정되어 있으면 카페인 중단 안내가 정해진 시점에 표시됨을 확인함",
+        "안내 시점을 계산하지 못하면 내부 정보가 없는 오류 메시지가 표시됨을 확인함"
+      ],
+      "설계": [
+        "• 취침 시각 설정값을 읽어 카페인 중단 안내 시점을 계산하도록 구현한다.",
+        "• 계산된 시점에 알림으로 카페인 중단 안내를 보낸다.",
+        "• 계산에 실패하면 오류 내용을 내부 로그에만 남기고 사용자에게는 일반 오류 메시지를 표시하도록 한다."
+      ]
+    }
+  },
+  "items": [
+    {
+      "site": "[MDSR | Req. 19 | 번호]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "번호",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "Req. 19"
+    },
+    {
+      "site": "[MDSR | Req. 19 | 제목]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "제목",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "카페인 중단 안내"
+    },
+    {
+      "site": "[MDSR | Req. 19 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "설명",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "앱은 사용자의 취침 시각을 기준으로 카페인 섭취를 멈출 시점을 안내하여야 하며, 안내 시점을 계산하지 못하면 내부 정보가 드러나지 않는 오류 메시지를 표시하여야 한다."
+    },
+    {
+      "site": "[MDSR | Req. 19 | 목적]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "목적",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "늦은 시간의 카페인 섭취를 줄여 수면을 개선하고, 오류가 나도 시스템 정보가 사용자에게 노출되지 않도록 하기 위함이다."
+    },
+    {
+      "site": "[MDSR | Req. 19 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "기준#p1",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "취침 시각이 설정되어 있으면 카페인 중단 안내가 정해진 시점에 표시됨을 확인함"
+    },
+    {
+      "site": "[MDSR | Req. 19 | 기준#p2]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "기준#p2",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "안내 시점을 계산하지 못하면 내부 정보가 없는 오류 메시지가 표시됨을 확인함"
+    },
+    {
+      "site": "[MDSR | SI-07 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "SI-07",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "trace",
+      "op": "modify",
+      "new_value": "Req. 16, Req. 18, Req. 19",
+      "note": "연결 Req 칸에 Req. 19 추가"
+    },
+    {
+      "site": "[XXCS | SI-07 | 해당 요구사항]",
+      "doc": "XXCS",
+      "item": "SI-07",
+      "cell": "해당 요구사항",
+      "path": "trace",
+      "op": "modify",
+      "new_value": "Req. 16, Req. 18, Req. 19",
+      "note": "연결 Req 칸에 Req. 19 추가"
+    }
+  ],
+  "neutral": []
+}

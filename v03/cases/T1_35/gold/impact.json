@@ -1,0 +1,102 @@
+{
+  "case_id": "T1_35",
+  "case_type": "T1",
+  "subtype": "value_change",
+  "change": {
+    "fact": "F_PASSWORD_CHANGE_INTERVAL",
+    "origin_req": "Req. 108",
+    "old_value": "90",
+    "new_value": "30"
+  },
+  "items": [
+    {
+      "site": "[MDSR | 3.4 일반적 제한 | 본문#p3]",
+      "doc": "MDSR",
+      "item": "3.4 일반적 제한",
+      "cell": "본문#p3",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_PASSWORD_CHANGE_INTERVAL",
+      "old_surface": "3개월",
+      "new_value": "30일"
+    },
+    {
+      "site": "[MDSR | Req. 108 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 108",
+      "cell": "설명",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_PASSWORD_CHANGE_INTERVAL",
+      "old_surface": "90일",
+      "new_value": "30일"
+    },
+    {
+      "site": "[MDSR | Req. 108 | 기준#p2]",
+      "doc": "MDSR",
+      "item": "Req. 108",
+      "cell": "기준#p2",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_PASSWORD_CHANGE_INTERVAL",
+      "old_surface": "90 일",
+      "new_value": "30일"
+    },
+    {
+      "site": "[XXCS | IA-04 | 시험방법#p2]",
+      "doc": "XXCS",
+      "item": "IA-04",
+      "cell": "시험방법#p2",
+      "path": "trace",
+      "op": "modify",
+      "fact": "F_PASSWORD_CHANGE_INTERVAL",
+      "old_surface": "90 일",
+      "new_value": "30일"
+    },
+    {
+      "site": "[XXCS | IA-04 | 확인결과#p1]",
+      "doc": "XXCS",
+      "item": "IA-04",
+      "cell": "확인결과#p1",
+      "path": "trace",
+      "op": "modify",
+      "fact": "F_PASSWORD_CHANGE_INTERVAL",
+      "old_surface": "3개월",
+      "new_value": "30일"
+    },
+    {
+      "site": "[XXCS | IA-04 | 확인결과#p2]",
+      "doc": "XXCS",
+      "item": "IA-04",
+      "cell": "확인결과#p2",
+      "path": "trace",
+      "op": "modify",
+      "fact": "F_PASSWORD_CHANGE_INTERVAL",
+      "old_surface": "90일",
+      "new_value": "30일"
+    },
+    {
+      "site": "[XXCS | IA-05 | 시험방법#p2]",
+      "doc": "XXCS",
+      "item": "IA-05",
+      "cell": "시험방법#p2",
+      "path": "trace",
+      "op": "modify",
+      "fact": "F_PASSWORD_CHANGE_INTERVAL",
+      "old_surface": "90 일",
+      "new_value": "30일"
+    },
+    {
+      "site": "[XXCS | IA-05 | 확인결과#p2]",
+      "doc": "XXCS",
+      "item": "IA-05",
+      "cell": "확인결과#p2",
+      "path": "trace",
+      "op": "modify",
+      "fact": "F_PASSWORD_CHANGE_INTERVAL",
+      "old_surface": "3개월",
+      "new_value": "30일"
+    }
+  ],
+  "neutral": []
+}

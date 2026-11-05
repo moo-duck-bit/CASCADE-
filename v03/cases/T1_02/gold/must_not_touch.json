@@ -1,0 +1,53 @@
+{
+  "case_id": "T1_02",
+  "items": [
+    {
+      "site": "[XXCS | IA-02 | 확인결과#p1]",
+      "doc": "XXCS",
+      "item": "IA-02",
+      "cell": "확인결과#p1",
+      "path": "trace",
+      "reason": "Req. 100와 연결됐지만 relevant=false"
+    },
+    {
+      "site": "[XXCS | IA-02 | 확인결과#p2]",
+      "doc": "XXCS",
+      "item": "IA-02",
+      "cell": "확인결과#p2",
+      "path": "trace",
+      "reason": "Req. 100와 연결됐지만 relevant=false"
+    },
+    {
+      "site": "[XXCS | IA-02 | 확인결과#p3]",
+      "doc": "XXCS",
+      "item": "IA-02",
+      "cell": "확인결과#p3",
+      "path": "trace",
+      "reason": "Req. 100와 연결됐지만 relevant=false"
+    },
+    {
+      "site": "[XXCS | UC-03 | 확인결과#p1]",
+      "doc": "XXCS",
+      "item": "UC-03",
+      "cell": "확인결과#p1",
+      "path": "trace",
+      "reason": "Req. 100와 연결됐지만 relevant=false"
+    },
+    {
+      "site": "[XXCS | UC-03 | 확인결과#p2]",
+      "doc": "XXCS",
+      "item": "UC-03",
+      "cell": "확인결과#p2",
+      "path": "trace",
+      "reason": "Req. 100와 연결됐지만 relevant=false"
+    },
+    {
+      "site": "[XXCS | UC-03 | 확인결과#p3]",
+      "doc": "XXCS",
+      "item": "UC-03",
+      "cell": "확인결과#p3",
+      "path": "trace",
+      "reason": "Req. 100와 연결됐지만 relevant=false"
+    }
+  ]
+}

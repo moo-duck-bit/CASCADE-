@@ -1,0 +1,172 @@
+# 자동 추출 규칙 표(rule_extract.py, 사람 검수 전). 근거: 코퍼스 적용 예외 청크.
+# 판단 칸·N/A 문구 같은 문서 양식 필드는 curated 표에서 복사했다(규정 내용이 아님).
+{
+ "version": "rules_table_extracted",
+ "corpus_sha256": "b591b760d35ee0a7f7c1a114218ee1214319859da993652555e4752513889c94",
+ "model": "qwen3-32b",
+ "rules": [
+  {
+   "id": "X01",
+   "attr": "user_interface",
+   "attr_ko": "사용자 인터페이스",
+   "equals": false,
+   "secs": [
+    "IA-01",
+    "UC-07"
+   ],
+   "result": "N/A",
+   "clause_ids": [
+    "첨부3-IA-01-예외",
+    "첨부3-UC-07-예외"
+   ],
+   "aliases": [
+    "사용자 인터페이스"
+   ],
+   "source": "의료기기에 사용자가 접근 가능한 인터페이스가 없는 경우에는 적용하지 않는다. 의료기기에 사용자(사람) 인터페이스가 없는 경우 적용하지 않는다."
+  },
+  {
+   "id": "X02",
+   "attr": "admin_account_fixed",
+   "attr_ko": "고정된 관리자 계정",
+   "equals": true,
+   "secs": [
+    "IA-02",
+    "UC-01"
+   ],
+   "result": "N/A",
+   "clause_ids": [
+    "첨부3-IA-02-예외",
+    "첨부3-UC-01-예외"
+   ],
+   "aliases": [
+    "고정된 관리자 계정"
+   ],
+   "source": "의료기기에 고정된 관리자 계정이 하나만 구현되어 다른 계정을 추가할 수 없는 경우에는 적용하지 않는다. 의료기기에 고정된 관리자 계정이 하나만 구현되어 다른 계정을 추가할 수 없는 경우에는 적용하지 않는다."
+  },
+  {
+   "id": "X03",
+   "attr": "password_auth",
+   "attr_ko": "비밀번호 기반 인증",
+   "equals": false,
+   "secs": [
+    "IA-05",
+    "IA-06",
+    "IA-07"
+   ],
+   "result": "N/A",
+   "clause_ids": [
+    "첨부3-IA-05-예외",
+    "첨부3-IA-06-예외",
+    "첨부3-IA-07-예외"
+   ],
+   "aliases": [
+    "비밀번호 기반 인증"
+   ],
+   "source": "비밀번호 기반 인증 기능이 없는 의료기기의 경우 적용하지 않는다. 의료기기의 인증 기능이 없는 경우 적용하지 않는다. 의료기기의 인증 기능이 없는 경우 적용하지 않는다."
+  },
+  {
+   "id": "X04",
+   "attr": "mobile_code_execution",
+   "attr_ko": "모바일 코드 실행",
+   "equals": false,
+   "secs": [
+    "UC-02"
+   ],
+   "result": "N/A",
+   "clause_ids": [
+    "첨부3-UC-02-예외"
+   ],
+   "aliases": [
+    "모바일 코드 실행"
+   ],
+   "source": "의료기기가 모바일 코드 실행을 허용하지 않는 경우 적용하지 않는다."
+  },
+  {
+   "id": "X05",
+   "attr": "access_connection",
+   "attr_ko": "접속 기능",
+   "equals": false,
+   "secs": [
+    "UC-03"
+   ],
+   "result": "N/A",
+   "clause_ids": [
+    "첨부3-UC-03-예외"
+   ],
+   "aliases": [
+    "접속 기능"
+   ],
+   "source": "- 로컬 또는 네트워크를 통해 의료기기에 대한 접속 기능을 제공하지 않는 경우 적용하지 않는다. - 세션 종료 기능이 있는 경우 세션 잠금 기능을 만족하는 것으로 한다."
+  },
+  {
+   "id": "X06",
+   "attr": "automated_process_connection",
+   "attr_ko": "자동화 프로세스 연결",
+   "equals": false,
+   "secs": [
+    "SI-06"
+   ],
+   "result": "N/A",
+   "clause_ids": [
+    "첨부3-SI-06-예외"
+   ],
+   "aliases": [
+    "자동화 프로세스 연결"
+   ],
+   "source": "의료기기가 자동화 프로세스와 연결되지 않는 경우 적용하지 않는다."
+  },
+  {
+   "id": "X07",
+   "attr": "software_type",
+   "attr_ko": "의료기기 유형",
+   "equals": true,
+   "secs": [
+    "SI-10",
+    "SI-11"
+   ],
+   "result": "N/A",
+   "clause_ids": [
+    "첨부3-SI-10-예외",
+    "첨부3-SI-11-예외"
+   ],
+   "aliases": [
+    "의료기기 유형"
+   ],
+   "source": "소프트웨어 의료기기(SaMD)에는 적용하지 않는다. 소프트웨어 의료기기(SaMD)에는 적용하지 않는다."
+  },
+  {
+   "id": "X08",
+   "attr": "personal_info_storage",
+   "attr_ko": "개인식별정보 저장",
+   "equals": false,
+   "secs": [
+    "DC-02"
+   ],
+   "result": "N/A",
+   "clause_ids": [
+    "첨부3-DC-02-예외"
+   ],
+   "aliases": [
+    "개인식별정보 저장"
+   ],
+   "source": "의료기기가 개인식별정보를 저장하지 않는 경우 적용하지 않는다."
+  }
+ ],
+ "notes": [],
+ "decision_cells": [
+  "체크리스트 적용 여부",
+  "체크리스트 입증 방법",
+  "적용 여부",
+  "판정"
+ ],
+ "na_texts": {
+  "체크리스트 적용 여부": "N/A",
+  "적용 여부": "N/A",
+  "체크리스트 입증 방법": "해당 없음",
+  "판정": "해당 없음"
+ },
+ "applied_texts": {
+  "체크리스트 적용 여부": "적용",
+  "적용 여부": "적용"
+ }
+}

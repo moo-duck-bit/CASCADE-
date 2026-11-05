@@ -1,0 +1,4536 @@
+[
+  {
+    "case_id": "T1_01",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "same_value": 6,
+      "origin": 2,
+      "same_id": 2,
+      "trace": 5
+    },
+    "trap_paths": {
+      "same_value": 14
+    },
+    "n_impact": 15,
+    "n_traps": 14,
+    "n_neutral": 0,
+    "request_structured": "Req. 2 '계정 잠금'의 계정 잠금 시간을 15분에서 20분으로 변경한다.",
+    "request_nl": "계정 잠금 기능에서 계정 잠금 시간을 20분으로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, same_id, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_02",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "origin": 2,
+      "same_value": 6,
+      "same_id": 2,
+      "trace": 4
+    },
+    "trap_paths": {
+      "trace": 6
+    },
+    "n_impact": 14,
+    "n_traps": 6,
+    "n_neutral": 0,
+    "request_structured": "Req. 100 '서버 데이터 동기화'의 동기화 주기를 60분에서 120분으로 변경한다.",
+    "request_nl": "서버 데이터 동기화 기능에서 동기화 주기를 120분으로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, same_id, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_03",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "same_value": 5,
+      "origin": 2,
+      "same_id": 1,
+      "trace": 4
+    },
+    "trap_paths": {
+      "same_value": 4
+    },
+    "n_impact": 12,
+    "n_traps": 4,
+    "n_neutral": 0,
+    "request_structured": "Req. 7 '데이터 백업'의 백업 주기를 24시간에서 12시간으로 변경한다.",
+    "request_nl": "데이터 백업 기능에서 백업 주기를 12시간으로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, same_id, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_04",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "same_value": 4,
+      "origin": 2,
+      "same_id": 2,
+      "trace": 5
+    },
+    "trap_paths": {},
+    "n_impact": 13,
+    "n_traps": 0,
+    "n_neutral": 0,
+    "request_structured": "Req. 2 '계정 잠금'의 로그인 실패 허용 횟수를 5회에서 4회로 변경한다.",
+    "request_nl": "계정 잠금 기능에서 로그인 실패 허용 횟수를 4회로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, same_id, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_05",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "same_value": 1,
+      "origin": 2,
+      "same_id": 1,
+      "trace": 4
+    },
+    "trap_paths": {
+      "same_value": 21,
+      "trace": 3
+    },
+    "n_impact": 8,
+    "n_traps": 24,
+    "n_neutral": 0,
+    "request_structured": "Req. 3 '세션 관리'의 세션 종료 시간을 15분에서 5분으로 변경한다.",
+    "request_nl": "세션 관리 기능에서 세션 종료 시간을 5분으로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, same_id, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_06",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "same_value": 1,
+      "origin": 2,
+      "same_id": 1,
+      "trace": 4
+    },
+    "trap_paths": {
+      "trace": 3
+    },
+    "n_impact": 8,
+    "n_traps": 3,
+    "n_neutral": 0,
+    "request_structured": "Req. 1 '사용자 로그인'의 비밀번호 최소 길이를 8자에서 10자로 변경한다.",
+    "request_nl": "사용자 로그인 기능에서 비밀번호 최소 길이를 10자로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, same_id, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_07",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "same_value": 6,
+      "origin": 2,
+      "same_id": 2,
+      "trace": 5
+    },
+    "trap_paths": {
+      "same_value": 14
+    },
+    "n_impact": 15,
+    "n_traps": 14,
+    "n_neutral": 0,
+    "request_structured": "Req. 2 '계정 잠금'의 계정 잠금 시간을 15분에서 45분으로 변경한다.",
+    "request_nl": "계정 잠금 기능에서 계정 잠금 시간을 45분으로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, same_id, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_08",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "same_value": 1,
+      "origin": 2,
+      "same_id": 1,
+      "trace": 4
+    },
+    "trap_paths": {
+      "same_value": 21,
+      "trace": 3
+    },
+    "n_impact": 8,
+    "n_traps": 24,
+    "n_neutral": 0,
+    "request_structured": "Req. 3 '세션 관리'의 의료진 대시보드 세션 종료 시간을 15분에서 5분으로 변경한다.",
+    "request_nl": "세션 관리 기능에서 의료진 대시보드 세션 종료 시간을 5분으로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, same_id, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_09",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "same_value": 1,
+      "origin": 2,
+      "same_id": 1,
+      "trace": 4
+    },
+    "trap_paths": {
+      "same_value": 9
+    },
+    "n_impact": 8,
+    "n_traps": 9,
+    "n_neutral": 0,
+    "request_structured": "Req. 2 '계정 잠금'의 비활성 계정 자동 잠금 기간을 90일에서 60일로 변경한다.",
+    "request_nl": "계정 잠금 기능에서 비활성 계정 자동 잠금 기간을 60일로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, same_id, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_10",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "same_value": 1,
+      "origin": 2,
+      "same_id": 1,
+      "trace": 5
+    },
+    "trap_paths": {
+      "same_value": 8,
+      "trace": 9
+    },
+    "n_impact": 9,
+    "n_traps": 17,
+    "n_neutral": 0,
+    "request_structured": "Req. 108 '의료진 계정·권한 관리'의 비밀번호 변경 주기를 90일에서 60일로 변경한다.",
+    "request_nl": "의료진 계정·권한 관리 기능에서 비밀번호 변경 주기를 60일로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, same_id, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_11",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "same_value": 1,
+      "origin": 2,
+      "same_id": 1,
+      "trace": 4
+    },
+    "trap_paths": {
+      "trace": 3
+    },
+    "n_impact": 8,
+    "n_traps": 3,
+    "n_neutral": 0,
+    "request_structured": "Req. 1 '사용자 로그인'의 비밀번호 최소 길이를 8자에서 12자로 변경한다.",
+    "request_nl": "사용자 로그인 기능에서 비밀번호 최소 길이를 12자로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, same_id, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_12",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "same_value": 1,
+      "origin": 2,
+      "same_id": 1,
+      "trace": 4
+    },
+    "trap_paths": {
+      "same_value": 9
+    },
+    "n_impact": 8,
+    "n_traps": 9,
+    "n_neutral": 0,
+    "request_structured": "Req. 2 '계정 잠금'의 비활성 계정 자동 잠금 기간을 90일에서 30일로 변경한다.",
+    "request_nl": "계정 잠금 기능에서 비활성 계정 자동 잠금 기간을 30일로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, same_id, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_13",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "same_value": 1,
+      "origin": 2,
+      "same_id": 1,
+      "trace": 5
+    },
+    "trap_paths": {
+      "same_value": 8,
+      "trace": 9
+    },
+    "n_impact": 9,
+    "n_traps": 17,
+    "n_neutral": 0,
+    "request_structured": "Req. 108 '의료진 계정·권한 관리'의 비밀번호 변경 주기를 90일에서 30일로 변경한다.",
+    "request_nl": "의료진 계정·권한 관리 기능에서 비밀번호 변경 주기를 30일로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, same_id, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_14",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "same_value": 5,
+      "origin": 2,
+      "same_id": 1,
+      "trace": 4
+    },
+    "trap_paths": {
+      "same_value": 4
+    },
+    "n_impact": 12,
+    "n_traps": 4,
+    "n_neutral": 0,
+    "request_structured": "Req. 7 '데이터 백업'의 백업 주기를 24시간에서 6시간으로 변경한다.",
+    "request_nl": "데이터 백업 기능에서 백업 주기를 6시간으로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, same_id, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_15",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "same_value": 3,
+      "origin": 2,
+      "same_id": 1,
+      "trace": 5
+    },
+    "trap_paths": {
+      "same_value": 3
+    },
+    "n_impact": 11,
+    "n_traps": 3,
+    "n_neutral": 0,
+    "request_structured": "Req. 6 '감사로그 관리'의 감사로그 보관 기간을 180일에서 365일로 변경한다.",
+    "request_nl": "감사로그 관리 기능에서 감사로그 보관 기간을 365일로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, same_id, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_16",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "same_value": 4,
+      "origin": 2,
+      "same_id": 1,
+      "trace": 4
+    },
+    "trap_paths": {
+      "same_value": 7
+    },
+    "n_impact": 11,
+    "n_traps": 7,
+    "n_neutral": 0,
+    "request_structured": "Req. 7 '데이터 백업'의 개인정보 파기 기한을 365일에서 180일로 변경한다.",
+    "request_nl": "데이터 백업 기능에서 개인정보 파기 기한을 180일로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, same_id, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_17",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "same_value": 1,
+      "origin": 2,
+      "same_id": 1,
+      "trace": 3
+    },
+    "trap_paths": {
+      "same_value": 11
+    },
+    "n_impact": 7,
+    "n_traps": 11,
+    "n_neutral": 0,
+    "request_structured": "Req. 18 '처방 변경 이력'의 처방 변경 이력 보관 기간을 365일에서 730일로 변경한다.",
+    "request_nl": "처방 변경 이력 기능에서 처방 변경 이력 보관 기간을 730일로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, same_id, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_18",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "same_value": 3,
+      "origin": 2,
+      "same_id": 1,
+      "trace": 3
+    },
+    "trap_paths": {
+      "same_value": 5
+    },
+    "n_impact": 9,
+    "n_traps": 5,
+    "n_neutral": 0,
+    "request_structured": "Req. 6 '감사로그 관리'의 의료진 접속 기록 보관 기간을 180일에서 365일로 변경한다.",
+    "request_nl": "감사로그 관리 기능에서 의료진 접속 기록 보관 기간을 365일로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, same_id, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_19",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "same_value": 8,
+      "origin": 2,
+      "same_id": 2
+    },
+    "trap_paths": {
+      "same_value": 4
+    },
+    "n_impact": 12,
+    "n_traps": 4,
+    "n_neutral": 0,
+    "request_structured": "Req. 105 '데이터 백업'의 백업 주기를 24시간에서 12시간으로 변경한다.",
+    "request_nl": "데이터 백업 기능에서 백업 주기를 12시간으로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, same_id, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_20",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "same_value": 8,
+      "origin": 3,
+      "same_id": 3
+    },
+    "trap_paths": {
+      "trace": 4
+    },
+    "n_impact": 14,
+    "n_traps": 4,
+    "n_neutral": 0,
+    "request_structured": "Req. 101 '의료진 대시보드 조회'의 동기화 주기를 60분에서 120분으로 변경한다.",
+    "request_nl": "의료진 대시보드 조회 기능에서 동기화 주기를 120분으로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, same_id, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_21",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "same_value": 7,
+      "origin": 2,
+      "same_id": 1,
+      "trace": 3
+    },
+    "trap_paths": {
+      "trace": 3
+    },
+    "n_impact": 13,
+    "n_traps": 3,
+    "n_neutral": 0,
+    "request_structured": "Req. 1 '사용자 로그인'의 로그인 실패 허용 횟수를 5회에서 4회로 변경한다.",
+    "request_nl": "사용자 로그인 기능에서 로그인 실패 허용 횟수를 4회로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, same_id, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_22",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "same_value": 5,
+      "origin": 1,
+      "same_id": 1
+    },
+    "trap_paths": {},
+    "n_impact": 7,
+    "n_traps": 0,
+    "n_neutral": 0,
+    "request_structured": "Req. 104 '감사로그 보관'의 의료진 접속 기록 감사 주기를 45일에서 30일로 변경한다.",
+    "request_nl": "감사로그 보관 기능에서 의료진 접속 기록 감사 주기를 30일로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, same_id, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_23",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "XXCS"
+    ],
+    "paths": {
+      "same_value": 5,
+      "origin": 2,
+      "trace": 5
+    },
+    "trap_paths": {
+      "same_value": 11
+    },
+    "n_impact": 12,
+    "n_traps": 11,
+    "n_neutral": 0,
+    "request_structured": "Req. 2 '계정 잠금'의 계정 잠금 시간을 15분에서 45분으로 변경한다.",
+    "request_nl": "계정 잠금 기능에서 계정 잠금 시간을 45분으로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_24",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "XXCS"
+    ],
+    "paths": {
+      "same_value": 1,
+      "origin": 2,
+      "trace": 4
+    },
+    "trap_paths": {
+      "trace": 3
+    },
+    "n_impact": 7,
+    "n_traps": 3,
+    "n_neutral": 0,
+    "request_structured": "Req. 1 '사용자 로그인'의 비밀번호 최소 길이를 8자에서 12자로 변경한다.",
+    "request_nl": "사용자 로그인 기능에서 비밀번호 최소 길이를 12자로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_25",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "XXCS"
+    ],
+    "paths": {
+      "same_value": 5,
+      "origin": 2,
+      "trace": 5
+    },
+    "trap_paths": {
+      "same_value": 11
+    },
+    "n_impact": 12,
+    "n_traps": 11,
+    "n_neutral": 0,
+    "request_structured": "Req. 2 '계정 잠금'의 계정 잠금 시간을 15분에서 20분으로 변경한다.",
+    "request_nl": "계정 잠금 기능에서 계정 잠금 시간을 20분으로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_26",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "XXCS"
+    ],
+    "paths": {
+      "origin": 2,
+      "same_value": 3,
+      "trace": 4
+    },
+    "trap_paths": {
+      "trace": 6
+    },
+    "n_impact": 9,
+    "n_traps": 6,
+    "n_neutral": 0,
+    "request_structured": "Req. 100 '서버 데이터 동기화'의 동기화 주기를 60분에서 120분으로 변경한다.",
+    "request_nl": "서버 데이터 동기화 기능에서 동기화 주기를 120분으로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_27",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "XXCS"
+    ],
+    "paths": {
+      "same_value": 3,
+      "origin": 2,
+      "trace": 4
+    },
+    "trap_paths": {
+      "same_value": 3
+    },
+    "n_impact": 9,
+    "n_traps": 3,
+    "n_neutral": 0,
+    "request_structured": "Req. 7 '데이터 백업'의 백업 주기를 24시간에서 12시간으로 변경한다.",
+    "request_nl": "데이터 백업 기능에서 백업 주기를 12시간으로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_28",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "XXCS"
+    ],
+    "paths": {
+      "same_value": 3,
+      "origin": 2,
+      "trace": 5
+    },
+    "trap_paths": {},
+    "n_impact": 10,
+    "n_traps": 0,
+    "n_neutral": 0,
+    "request_structured": "Req. 2 '계정 잠금'의 로그인 실패 허용 횟수를 5회에서 4회로 변경한다.",
+    "request_nl": "계정 잠금 기능에서 로그인 실패 허용 횟수를 4회로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_29",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "XXCS"
+    ],
+    "paths": {
+      "same_value": 1,
+      "origin": 2,
+      "trace": 4
+    },
+    "trap_paths": {
+      "same_value": 16,
+      "trace": 3
+    },
+    "n_impact": 7,
+    "n_traps": 19,
+    "n_neutral": 0,
+    "request_structured": "Req. 3 '세션 관리'의 세션 종료 시간을 15분에서 5분으로 변경한다.",
+    "request_nl": "세션 관리 기능에서 세션 종료 시간을 5분으로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_30",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "XXCS"
+    ],
+    "paths": {
+      "same_value": 1,
+      "origin": 2,
+      "trace": 4
+    },
+    "trap_paths": {
+      "trace": 3
+    },
+    "n_impact": 7,
+    "n_traps": 3,
+    "n_neutral": 0,
+    "request_structured": "Req. 1 '사용자 로그인'의 비밀번호 최소 길이를 8자에서 10자로 변경한다.",
+    "request_nl": "사용자 로그인 기능에서 비밀번호 최소 길이를 10자로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_31",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "XXCS"
+    ],
+    "paths": {
+      "same_value": 1,
+      "origin": 2,
+      "trace": 4
+    },
+    "trap_paths": {
+      "same_value": 8
+    },
+    "n_impact": 7,
+    "n_traps": 8,
+    "n_neutral": 0,
+    "request_structured": "Req. 2 '계정 잠금'의 비활성 계정 자동 잠금 기간을 90일에서 30일로 변경한다.",
+    "request_nl": "계정 잠금 기능에서 비활성 계정 자동 잠금 기간을 30일로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_32",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "XXCS"
+    ],
+    "paths": {
+      "same_value": 1,
+      "origin": 2,
+      "trace": 4
+    },
+    "trap_paths": {
+      "same_value": 16,
+      "trace": 3
+    },
+    "n_impact": 7,
+    "n_traps": 19,
+    "n_neutral": 0,
+    "request_structured": "Req. 3 '세션 관리'의 의료진 대시보드 세션 종료 시간을 15분에서 5분으로 변경한다.",
+    "request_nl": "세션 관리 기능에서 의료진 대시보드 세션 종료 시간을 5분으로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_33",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "XXCS"
+    ],
+    "paths": {
+      "same_value": 1,
+      "origin": 2,
+      "trace": 4
+    },
+    "trap_paths": {
+      "same_value": 8
+    },
+    "n_impact": 7,
+    "n_traps": 8,
+    "n_neutral": 0,
+    "request_structured": "Req. 2 '계정 잠금'의 비활성 계정 자동 잠금 기간을 90일에서 60일로 변경한다.",
+    "request_nl": "계정 잠금 기능에서 비활성 계정 자동 잠금 기간을 60일로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_34",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "XXCS"
+    ],
+    "paths": {
+      "same_value": 1,
+      "origin": 2,
+      "trace": 5
+    },
+    "trap_paths": {
+      "same_value": 7,
+      "trace": 9
+    },
+    "n_impact": 8,
+    "n_traps": 16,
+    "n_neutral": 0,
+    "request_structured": "Req. 108 '의료진 계정·권한 관리'의 비밀번호 변경 주기를 90일에서 60일로 변경한다.",
+    "request_nl": "의료진 계정·권한 관리 기능에서 비밀번호 변경 주기를 60일로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_35",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "XXCS"
+    ],
+    "paths": {
+      "same_value": 1,
+      "origin": 2,
+      "trace": 5
+    },
+    "trap_paths": {
+      "same_value": 7,
+      "trace": 9
+    },
+    "n_impact": 8,
+    "n_traps": 16,
+    "n_neutral": 0,
+    "request_structured": "Req. 108 '의료진 계정·권한 관리'의 비밀번호 변경 주기를 90일에서 30일로 변경한다.",
+    "request_nl": "의료진 계정·권한 관리 기능에서 비밀번호 변경 주기를 30일로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_36",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "XXCS"
+    ],
+    "paths": {
+      "same_value": 3,
+      "origin": 2,
+      "trace": 4
+    },
+    "trap_paths": {
+      "same_value": 3
+    },
+    "n_impact": 9,
+    "n_traps": 3,
+    "n_neutral": 0,
+    "request_structured": "Req. 7 '데이터 백업'의 백업 주기를 24시간에서 6시간으로 변경한다.",
+    "request_nl": "데이터 백업 기능에서 백업 주기를 6시간으로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_37",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "XXCS"
+    ],
+    "paths": {
+      "same_value": 2,
+      "origin": 2,
+      "trace": 5
+    },
+    "trap_paths": {
+      "same_value": 1
+    },
+    "n_impact": 9,
+    "n_traps": 1,
+    "n_neutral": 0,
+    "request_structured": "Req. 6 '감사로그 관리'의 감사로그 보관 기간을 180일에서 365일로 변경한다.",
+    "request_nl": "감사로그 관리 기능에서 감사로그 보관 기간을 365일로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_38",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "XXCS"
+    ],
+    "paths": {
+      "same_value": 3,
+      "origin": 2,
+      "trace": 4
+    },
+    "trap_paths": {
+      "same_value": 6
+    },
+    "n_impact": 9,
+    "n_traps": 6,
+    "n_neutral": 0,
+    "request_structured": "Req. 7 '데이터 백업'의 개인정보 파기 기한을 365일에서 180일로 변경한다.",
+    "request_nl": "데이터 백업 기능에서 개인정보 파기 기한을 180일로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_39",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "XXCS"
+    ],
+    "paths": {
+      "same_value": 1,
+      "origin": 2,
+      "trace": 3
+    },
+    "trap_paths": {
+      "same_value": 9
+    },
+    "n_impact": 6,
+    "n_traps": 9,
+    "n_neutral": 0,
+    "request_structured": "Req. 18 '처방 변경 이력'의 처방 변경 이력 보관 기간을 365일에서 730일로 변경한다.",
+    "request_nl": "처방 변경 이력 기능에서 처방 변경 이력 보관 기간을 730일로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_40",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "XXCS"
+    ],
+    "paths": {
+      "same_value": 2,
+      "origin": 2,
+      "trace": 3
+    },
+    "trap_paths": {
+      "same_value": 3
+    },
+    "n_impact": 7,
+    "n_traps": 3,
+    "n_neutral": 0,
+    "request_structured": "Req. 6 '감사로그 관리'의 의료진 접속 기록 보관 기간을 180일에서 365일로 변경한다.",
+    "request_nl": "감사로그 관리 기능에서 의료진 접속 기록 보관 기간을 365일로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_41",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "MDDR"
+    ],
+    "paths": {
+      "same_value": 4,
+      "origin": 2,
+      "same_id": 2
+    },
+    "trap_paths": {
+      "same_value": 3
+    },
+    "n_impact": 8,
+    "n_traps": 3,
+    "n_neutral": 0,
+    "request_structured": "Req. 105 '데이터 백업'의 백업 주기를 24시간에서 12시간으로 변경한다.",
+    "request_nl": "데이터 백업 기능에서 백업 주기를 12시간으로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, same_id, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_42",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "MDDR"
+    ],
+    "paths": {
+      "same_value": 4,
+      "origin": 3,
+      "same_id": 3
+    },
+    "trap_paths": {},
+    "n_impact": 10,
+    "n_traps": 0,
+    "n_neutral": 0,
+    "request_structured": "Req. 101 '의료진 대시보드 조회'의 동기화 주기를 60분에서 120분으로 변경한다.",
+    "request_nl": "의료진 대시보드 조회 기능에서 동기화 주기를 120분으로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, same_id, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_43",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "MDDR"
+    ],
+    "paths": {
+      "same_value": 5,
+      "origin": 2,
+      "same_id": 1
+    },
+    "trap_paths": {},
+    "n_impact": 8,
+    "n_traps": 0,
+    "n_neutral": 0,
+    "request_structured": "Req. 1 '사용자 로그인'의 로그인 실패 허용 횟수를 5회에서 4회로 변경한다.",
+    "request_nl": "사용자 로그인 기능에서 로그인 실패 허용 횟수를 4회로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, same_id, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_44",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "MDDR"
+    ],
+    "paths": {
+      "origin": 2,
+      "same_value": 6,
+      "same_id": 1
+    },
+    "trap_paths": {},
+    "n_impact": 9,
+    "n_traps": 0,
+    "n_neutral": 0,
+    "request_structured": "Req. 8 '수면일기 기록'의 수면 제한 요법 기본 취침 시간을 22:00에서 21:30으로 변경한다.",
+    "request_nl": "수면일기 기록 기능에서 수면 제한 요법 기본 취침 시간을 21:30으로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, same_id, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_45",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "MDDR"
+    ],
+    "paths": {
+      "origin": 2,
+      "same_value": 6,
+      "same_id": 1
+    },
+    "trap_paths": {},
+    "n_impact": 9,
+    "n_traps": 0,
+    "n_neutral": 0,
+    "request_structured": "Req. 8 '수면일기 기록'의 수면 제한 요법 기본 기상 시간을 7:00에서 6:30으로 변경한다.",
+    "request_nl": "수면일기 기록 기능에서 수면 제한 요법 기본 기상 시간을 6:30으로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, same_id, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_46",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "MDDR"
+    ],
+    "paths": {
+      "same_value": 3,
+      "origin": 1,
+      "same_id": 1
+    },
+    "trap_paths": {},
+    "n_impact": 5,
+    "n_traps": 0,
+    "n_neutral": 0,
+    "request_structured": "Req. 104 '감사로그 보관'의 의료진 접속 기록 감사 주기를 45일에서 30일로 변경한다.",
+    "request_nl": "감사로그 보관 기능에서 의료진 접속 기록 감사 주기를 30일로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, same_id, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_47",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "MDDR"
+    ],
+    "paths": {
+      "same_value": 3,
+      "origin": 3,
+      "same_id": 3
+    },
+    "trap_paths": {},
+    "n_impact": 9,
+    "n_traps": 0,
+    "n_neutral": 0,
+    "request_structured": "Req. 10 '수면 제한 요법 기본 시간'의 수면 제한 요법 기본 취침 시간을 22:00에서 21:30으로 변경한다.",
+    "request_nl": "수면 제한 요법 기본 시간 기능에서 수면 제한 요법 기본 취침 시간을 21:30으로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, same_id, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_48",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "MDDR"
+    ],
+    "paths": {
+      "same_value": 3,
+      "origin": 3,
+      "same_id": 3
+    },
+    "trap_paths": {},
+    "n_impact": 9,
+    "n_traps": 0,
+    "n_neutral": 0,
+    "request_structured": "Req. 10 '수면 제한 요법 기본 시간'의 수면 제한 요법 기본 기상 시간을 7:00에서 6:30으로 변경한다.",
+    "request_nl": "수면 제한 요법 기본 시간 기능에서 수면 제한 요법 기본 기상 시간을 6:30으로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, same_id, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_49",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "same_value": 3,
+      "origin": 2
+    },
+    "trap_paths": {
+      "same_value": 2
+    },
+    "n_impact": 5,
+    "n_traps": 2,
+    "n_neutral": 0,
+    "request_structured": "Req. 105 '데이터 백업'의 백업 주기를 24시간에서 12시간으로 변경한다.",
+    "request_nl": "데이터 백업 기능에서 백업 주기를 12시간으로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_50",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "same_value": 2,
+      "origin": 3
+    },
+    "trap_paths": {},
+    "n_impact": 5,
+    "n_traps": 0,
+    "n_neutral": 0,
+    "request_structured": "Req. 101 '의료진 대시보드 조회'의 동기화 주기를 60분에서 120분으로 변경한다.",
+    "request_nl": "의료진 대시보드 조회 기능에서 동기화 주기를 120분으로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_51",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "same_value": 3,
+      "origin": 2
+    },
+    "trap_paths": {},
+    "n_impact": 5,
+    "n_traps": 0,
+    "n_neutral": 0,
+    "request_structured": "Req. 1 '사용자 로그인'의 로그인 실패 허용 횟수를 5회에서 4회로 변경한다.",
+    "request_nl": "사용자 로그인 기능에서 로그인 실패 허용 횟수를 4회로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_52",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "origin": 2,
+      "same_value": 3
+    },
+    "trap_paths": {},
+    "n_impact": 5,
+    "n_traps": 0,
+    "n_neutral": 0,
+    "request_structured": "Req. 8 '수면일기 기록'의 수면 제한 요법 기본 취침 시간을 22:00에서 21:30으로 변경한다.",
+    "request_nl": "수면일기 기록 기능에서 수면 제한 요법 기본 취침 시간을 21:30으로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_53",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "origin": 2,
+      "same_value": 3
+    },
+    "trap_paths": {},
+    "n_impact": 5,
+    "n_traps": 0,
+    "n_neutral": 0,
+    "request_structured": "Req. 8 '수면일기 기록'의 수면 제한 요법 기본 기상 시간을 7:00에서 6:30으로 변경한다.",
+    "request_nl": "수면일기 기록 기능에서 수면 제한 요법 기본 기상 시간을 6:30으로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_54",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "same_value": 2,
+      "origin": 1
+    },
+    "trap_paths": {},
+    "n_impact": 3,
+    "n_traps": 0,
+    "n_neutral": 0,
+    "request_structured": "Req. 104 '감사로그 보관'의 의료진 접속 기록 감사 주기를 45일에서 30일로 변경한다.",
+    "request_nl": "감사로그 보관 기능에서 의료진 접속 기록 감사 주기를 30일로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_55",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "same_value": 2,
+      "origin": 3
+    },
+    "trap_paths": {},
+    "n_impact": 5,
+    "n_traps": 0,
+    "n_neutral": 0,
+    "request_structured": "Req. 10 '수면 제한 요법 기본 시간'의 수면 제한 요법 기본 취침 시간을 22:00에서 21:30으로 변경한다.",
+    "request_nl": "수면 제한 요법 기본 시간 기능에서 수면 제한 요법 기본 취침 시간을 21:30으로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_56",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "same_value": 2,
+      "origin": 3
+    },
+    "trap_paths": {},
+    "n_impact": 5,
+    "n_traps": 0,
+    "n_neutral": 0,
+    "request_structured": "Req. 10 '수면 제한 요법 기본 시간'의 수면 제한 요법 기본 기상 시간을 7:00에서 6:30으로 변경한다.",
+    "request_nl": "수면 제한 요법 기본 시간 기능에서 수면 제한 요법 기본 기상 시간을 6:30으로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_57",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "same_value": 2,
+      "origin": 1
+    },
+    "trap_paths": {},
+    "n_impact": 3,
+    "n_traps": 0,
+    "n_neutral": 0,
+    "request_structured": "Req. 14 'CBT 알림 설정'의 CBT 회기 알림 시각을 18:00에서 17:00으로 변경한다.",
+    "request_nl": "CBT 알림 설정 기능에서 CBT 회기 알림 시각을 17:00으로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_58",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "origin": 2,
+      "same_value": 1
+    },
+    "trap_paths": {},
+    "n_impact": 3,
+    "n_traps": 0,
+    "n_neutral": 0,
+    "request_structured": "Req. 9 '알림 설정'의 CBT 회기 알림 시각을 18:00에서 17:00으로 변경한다.",
+    "request_nl": "알림 설정 기능에서 CBT 회기 알림 시각을 17:00으로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_59",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "origin": 2,
+      "same_value": 1
+    },
+    "trap_paths": {},
+    "n_impact": 3,
+    "n_traps": 0,
+    "n_neutral": 0,
+    "request_structured": "Req. 6 '감사로그 관리'의 의료진 접속 기록 감사 주기를 45일에서 30일로 변경한다.",
+    "request_nl": "감사로그 관리 기능에서 의료진 접속 기록 감사 주기를 30일로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_60",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "origin": 2
+    },
+    "trap_paths": {
+      "same_value": 5
+    },
+    "n_impact": 2,
+    "n_traps": 5,
+    "n_neutral": 0,
+    "request_structured": "Req. 8 '수면일기 기록'의 수면일기 입력 기한을 24시간에서 12시간으로 변경한다.",
+    "request_nl": "수면일기 기록 기능에서 수면일기 입력 기한을 12시간으로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_61",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "origin": 1
+    },
+    "trap_paths": {},
+    "n_impact": 1,
+    "n_traps": 0,
+    "n_neutral": 0,
+    "request_structured": "Req. 9 '알림 설정'의 알림 시각을 21:00에서 20:30으로 변경한다.",
+    "request_nl": "알림 설정 기능에서 알림 시각을 20:30으로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_62",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "origin": 3
+    },
+    "trap_paths": {},
+    "n_impact": 3,
+    "n_traps": 0,
+    "n_neutral": 0,
+    "request_structured": "Req. 106 '총 치료 회기 수'의 CBT-I 총 치료 회기 수를 6회에서 4회로 변경한다.",
+    "request_nl": "총 치료 회기 수 기능에서 CBT-I 총 치료 회기 수를 4회로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_63",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "origin": 2
+    },
+    "trap_paths": {
+      "same_value": 8
+    },
+    "n_impact": 2,
+    "n_traps": 8,
+    "n_neutral": 0,
+    "request_structured": "Req. 11 '자극 조절 교육'의 자극 조절 교육 기본 기간을 7일에서 5일로 변경한다.",
+    "request_nl": "자극 조절 교육 기능에서 자극 조절 교육 기본 기간을 5일로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_64",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "origin": 2
+    },
+    "trap_paths": {
+      "same_value": 8
+    },
+    "n_impact": 2,
+    "n_traps": 8,
+    "n_neutral": 0,
+    "request_structured": "Req. 12 '수면 위생 교육'의 수면 위생 교육 기본 기간을 7일에서 5일로 변경한다.",
+    "request_nl": "수면 위생 교육 기능에서 수면 위생 교육 기본 기간을 5일로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_65",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "origin": 1
+    },
+    "trap_paths": {},
+    "n_impact": 1,
+    "n_traps": 0,
+    "n_neutral": 0,
+    "request_structured": "Req. 13 'CBT 회기 기본 설정'의 CBT 회기 기본 지속 시간을 30분에서 20분으로 변경한다.",
+    "request_nl": "CBT 회기 기본 설정 기능에서 CBT 회기 기본 지속 시간을 20분으로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_66",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "origin": 1
+    },
+    "trap_paths": {
+      "same_value": 9
+    },
+    "n_impact": 1,
+    "n_traps": 9,
+    "n_neutral": 0,
+    "request_structured": "Req. 13 'CBT 회기 기본 설정'의 CBT 회기 기본 간격을 7일에서 5일로 변경한다.",
+    "request_nl": "CBT 회기 기본 설정 기능에서 CBT 회기 기본 간격을 5일로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_67",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "origin": 1
+    },
+    "trap_paths": {
+      "same_value": 7
+    },
+    "n_impact": 1,
+    "n_traps": 7,
+    "n_neutral": 0,
+    "request_structured": "Req. 14 'CBT 알림 설정'의 CBT 회기 알림 반복 간격을 15분에서 20분으로 변경한다.",
+    "request_nl": "CBT 알림 설정 기능에서 CBT 회기 알림 반복 간격을 20분으로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_68",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "origin": 2
+    },
+    "trap_paths": {},
+    "n_impact": 2,
+    "n_traps": 0,
+    "n_neutral": 0,
+    "request_structured": "Req. 15 '이완 훈련'의 CBT 회기 알림 최대 반복 횟수를 3회에서 2회로 변경한다.",
+    "request_nl": "이완 훈련 기능에서 CBT 회기 알림 최대 반복 횟수를 2회로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_69",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "origin": 1
+    },
+    "trap_paths": {},
+    "n_impact": 1,
+    "n_traps": 0,
+    "n_neutral": 0,
+    "request_structured": "Req. 14 'CBT 알림 설정'의 CBT 회기 알림 소리를 벨 소리에서 진동으로 변경한다.",
+    "request_nl": "CBT 알림 설정 기능에서 CBT 회기 알림 소리를 진동으로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_70",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "origin": 1
+    },
+    "trap_paths": {},
+    "n_impact": 1,
+    "n_traps": 0,
+    "n_neutral": 0,
+    "request_structured": "Req. 12 '수면 위생 교육'의 수면 위생 교육 콘텐츠 수를 12개에서 10개로 변경한다.",
+    "request_nl": "수면 위생 교육 기능에서 수면 위생 교육 콘텐츠 수를 10개로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_71",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "origin": 2
+    },
+    "trap_paths": {},
+    "n_impact": 2,
+    "n_traps": 0,
+    "n_neutral": 0,
+    "request_structured": "Req. 15 '이완 훈련'의 이완 훈련 세션 지속 시간을 10분에서 20분으로 변경한다.",
+    "request_nl": "이완 훈련 기능에서 이완 훈련 세션 지속 시간을 20분으로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T1_72",
+    "case_type": "T1",
+    "subtype": "value_change",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "origin": 2
+    },
+    "trap_paths": {
+      "same_value": 8
+    },
+    "n_impact": 2,
+    "n_traps": 8,
+    "n_neutral": 0,
+    "request_structured": "Req. 16 '수면 효율 리포트'의 수면 효율 리포트 생성 주기를 7일에서 14일로 변경한다.",
+    "request_nl": "수면 효율 리포트 기능에서 수면 효율 리포트 생성 주기를 14일로 바꿔 주세요.",
+    "sheet_type": "T1",
+    "sheet_paths": "origin",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T2_01",
+    "case_type": "T2",
+    "subtype": "rule_flip",
+    "n_docs": 1,
+    "docs": [
+      "XXCS"
+    ],
+    "paths": {
+      "rule": 4
+    },
+    "trap_paths": {
+      "rule": 6
+    },
+    "n_impact": 4,
+    "n_traps": 6,
+    "n_neutral": 4,
+    "request_structured": "제품 사이버보안 속성 '개인식별정보 저장'(stores_pii)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+    "request_nl": "수면코치를 환자 이름·연락처 같은 개인식별정보를 서버에 저장하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+    "sheet_type": "T2",
+    "sheet_paths": "rule",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T2_02",
+    "case_type": "T2",
+    "subtype": "rule_flip",
+    "n_docs": 1,
+    "docs": [
+      "XXCS"
+    ],
+    "paths": {
+      "rule": 8
+    },
+    "trap_paths": {
+      "rule": 6
+    },
+    "n_impact": 8,
+    "n_traps": 6,
+    "n_neutral": 8,
+    "request_structured": "제품 사이버보안 속성 '독립형 소프트웨어 의료기기(SaMD)'(samd)을 true에서 false로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+    "request_nl": "수면코치를 전용 하드웨어 기기와 함께 공급하는 형태로 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+    "sheet_type": "T2",
+    "sheet_paths": "rule",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T2_03",
+    "case_type": "T2",
+    "subtype": "rule_flip",
+    "n_docs": 1,
+    "docs": [
+      "XXCS"
+    ],
+    "paths": {
+      "rule": 4
+    },
+    "trap_paths": {
+      "rule": 6
+    },
+    "n_impact": 4,
+    "n_traps": 6,
+    "n_neutral": 4,
+    "request_structured": "제품 사이버보안 속성 '모바일 코드(외부 스크립트 콘텐츠) 실행'(mobile_code)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+    "request_nl": "수면코치를 교육 콘텐츠를 웹 기반 스크립트로 내려받아 실행하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+    "sheet_type": "T2",
+    "sheet_paths": "rule",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T2_04",
+    "case_type": "T2",
+    "subtype": "rule_flip",
+    "n_docs": 1,
+    "docs": [
+      "XXCS"
+    ],
+    "paths": {
+      "rule": 4
+    },
+    "trap_paths": {
+      "rule": 6
+    },
+    "n_impact": 4,
+    "n_traps": 6,
+    "n_neutral": 4,
+    "request_structured": "제품 사이버보안 속성 '전자서명 기반 처방 기능'(e_signature)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+    "request_nl": "수면코치를 의료진이 처방 변경에 전자서명을 하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+    "sheet_type": "T2",
+    "sheet_paths": "rule",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T2_05",
+    "case_type": "T2",
+    "subtype": "rule_flip",
+    "n_docs": 1,
+    "docs": [
+      "XXCS"
+    ],
+    "paths": {
+      "rule": 8
+    },
+    "trap_paths": {
+      "rule": 6
+    },
+    "n_impact": 8,
+    "n_traps": 6,
+    "n_neutral": 8,
+    "request_structured": "제품 사이버보안 속성 '제조사 원격 업데이트 기능'(remote_update)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+    "request_nl": "수면코치를 제조사가 서버에서 소프트웨어 업데이트를 원격 배포하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+    "sheet_type": "T2",
+    "sheet_paths": "rule",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T2_06",
+    "case_type": "T2",
+    "subtype": "rule_flip",
+    "n_docs": 1,
+    "docs": [
+      "XXCS"
+    ],
+    "paths": {
+      "rule": 12
+    },
+    "trap_paths": {
+      "rule": 6
+    },
+    "n_impact": 12,
+    "n_traps": 6,
+    "n_neutral": 12,
+    "request_structured": "제품 사이버보안 속성 '개인식별정보 저장'(stores_pii)을 false에서 true로, '독립형 소프트웨어 의료기기(SaMD)'(samd)을 true에서 false로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+    "request_nl": "수면코치를 환자 이름·연락처 같은 개인식별정보를 서버에 저장하도록 바꾸고, 전용 하드웨어 기기와 함께 공급하는 형태로 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+    "sheet_type": "T2",
+    "sheet_paths": "rule",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T2_07",
+    "case_type": "T2",
+    "subtype": "rule_flip",
+    "n_docs": 1,
+    "docs": [
+      "XXCS"
+    ],
+    "paths": {
+      "rule": 12
+    },
+    "trap_paths": {
+      "rule": 6
+    },
+    "n_impact": 12,
+    "n_traps": 6,
+    "n_neutral": 12,
+    "request_structured": "제품 사이버보안 속성 '독립형 소프트웨어 의료기기(SaMD)'(samd)을 true에서 false로, '모바일 코드(외부 스크립트 콘텐츠) 실행'(mobile_code)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+    "request_nl": "수면코치를 전용 하드웨어 기기와 함께 공급하는 형태로 바꾸고, 교육 콘텐츠를 웹 기반 스크립트로 내려받아 실행하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+    "sheet_type": "T2",
+    "sheet_paths": "rule",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T2_08",
+    "case_type": "T2",
+    "subtype": "rule_flip",
+    "n_docs": 1,
+    "docs": [
+      "XXCS"
+    ],
+    "paths": {
+      "rule": 8
+    },
+    "trap_paths": {
+      "rule": 6
+    },
+    "n_impact": 8,
+    "n_traps": 6,
+    "n_neutral": 8,
+    "request_structured": "제품 사이버보안 속성 '모바일 코드(외부 스크립트 콘텐츠) 실행'(mobile_code)을 false에서 true로, '전자서명 기반 처방 기능'(e_signature)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+    "request_nl": "수면코치를 교육 콘텐츠를 웹 기반 스크립트로 내려받아 실행하도록 바꾸고, 의료진이 처방 변경에 전자서명을 하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+    "sheet_type": "T2",
+    "sheet_paths": "rule",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T2_09",
+    "case_type": "T2",
+    "subtype": "rule_flip",
+    "n_docs": 1,
+    "docs": [
+      "XXCS"
+    ],
+    "paths": {
+      "rule": 12
+    },
+    "trap_paths": {
+      "rule": 6
+    },
+    "n_impact": 12,
+    "n_traps": 6,
+    "n_neutral": 12,
+    "request_structured": "제품 사이버보안 속성 '전자서명 기반 처방 기능'(e_signature)을 false에서 true로, '제조사 원격 업데이트 기능'(remote_update)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+    "request_nl": "수면코치를 의료진이 처방 변경에 전자서명을 하도록 바꾸고, 제조사가 서버에서 소프트웨어 업데이트를 원격 배포하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+    "sheet_type": "T2",
+    "sheet_paths": "rule",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T2_10",
+    "case_type": "T2",
+    "subtype": "rule_flip",
+    "n_docs": 1,
+    "docs": [
+      "XXCS"
+    ],
+    "paths": {
+      "rule": 8
+    },
+    "trap_paths": {
+      "rule": 6
+    },
+    "n_impact": 8,
+    "n_traps": 6,
+    "n_neutral": 8,
+    "request_structured": "제품 사이버보안 속성 '개인식별정보 저장'(stores_pii)을 false에서 true로, '전자서명 기반 처방 기능'(e_signature)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+    "request_nl": "수면코치를 환자 이름·연락처 같은 개인식별정보를 서버에 저장하도록 바꾸고, 의료진이 처방 변경에 전자서명을 하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+    "sheet_type": "T2",
+    "sheet_paths": "rule",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T2_11",
+    "case_type": "T2",
+    "subtype": "rule_flip",
+    "n_docs": 1,
+    "docs": [
+      "XXCS"
+    ],
+    "paths": {
+      "rule": 16
+    },
+    "trap_paths": {
+      "rule": 6
+    },
+    "n_impact": 16,
+    "n_traps": 6,
+    "n_neutral": 16,
+    "request_structured": "제품 사이버보안 속성 '독립형 소프트웨어 의료기기(SaMD)'(samd)을 true에서 false로, '제조사 원격 업데이트 기능'(remote_update)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+    "request_nl": "수면코치를 전용 하드웨어 기기와 함께 공급하는 형태로 바꾸고, 제조사가 서버에서 소프트웨어 업데이트를 원격 배포하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+    "sheet_type": "T2",
+    "sheet_paths": "rule",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T2_12",
+    "case_type": "T2",
+    "subtype": "rule_flip",
+    "n_docs": 1,
+    "docs": [
+      "XXCS"
+    ],
+    "paths": {
+      "rule": 12
+    },
+    "trap_paths": {
+      "rule": 6
+    },
+    "n_impact": 12,
+    "n_traps": 6,
+    "n_neutral": 12,
+    "request_structured": "제품 사이버보안 속성 '모바일 코드(외부 스크립트 콘텐츠) 실행'(mobile_code)을 false에서 true로, '제조사 원격 업데이트 기능'(remote_update)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+    "request_nl": "수면코치를 교육 콘텐츠를 웹 기반 스크립트로 내려받아 실행하도록 바꾸고, 제조사가 서버에서 소프트웨어 업데이트를 원격 배포하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+    "sheet_type": "T2",
+    "sheet_paths": "rule",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T2_13",
+    "case_type": "T2",
+    "subtype": "rule_flip",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "XXCS"
+    ],
+    "paths": {
+      "rule": 4
+    },
+    "trap_paths": {
+      "rule": 6
+    },
+    "n_impact": 4,
+    "n_traps": 6,
+    "n_neutral": 5,
+    "request_structured": "제품 사이버보안 속성 '모바일 코드(외부 스크립트 콘텐츠) 실행'(mobile_code)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+    "request_nl": "수면코치를 교육 콘텐츠를 웹 기반 스크립트로 내려받아 실행하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+    "sheet_type": "T2",
+    "sheet_paths": "rule",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T2_14",
+    "case_type": "T2",
+    "subtype": "rule_flip",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "XXCS"
+    ],
+    "paths": {
+      "rule": 4
+    },
+    "trap_paths": {
+      "rule": 6
+    },
+    "n_impact": 4,
+    "n_traps": 6,
+    "n_neutral": 5,
+    "request_structured": "제품 사이버보안 속성 '전자서명 기반 처방 기능'(e_signature)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+    "request_nl": "수면코치를 의료진이 처방 변경에 전자서명을 하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+    "sheet_type": "T2",
+    "sheet_paths": "rule",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T2_15",
+    "case_type": "T2",
+    "subtype": "rule_flip",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "XXCS"
+    ],
+    "paths": {
+      "rule": 8
+    },
+    "trap_paths": {
+      "rule": 6
+    },
+    "n_impact": 8,
+    "n_traps": 6,
+    "n_neutral": 10,
+    "request_structured": "제품 사이버보안 속성 '제조사 원격 업데이트 기능'(remote_update)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+    "request_nl": "수면코치를 제조사가 서버에서 소프트웨어 업데이트를 원격 배포하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+    "sheet_type": "T2",
+    "sheet_paths": "rule",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T2_16",
+    "case_type": "T2",
+    "subtype": "rule_flip",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "XXCS"
+    ],
+    "paths": {
+      "rule": 4
+    },
+    "trap_paths": {
+      "rule": 6
+    },
+    "n_impact": 4,
+    "n_traps": 6,
+    "n_neutral": 5,
+    "request_structured": "제품 사이버보안 속성 '개인식별정보 저장'(stores_pii)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+    "request_nl": "수면코치를 환자 이름·연락처 같은 개인식별정보를 서버에 저장하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+    "sheet_type": "T2",
+    "sheet_paths": "rule",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T2_17",
+    "case_type": "T2",
+    "subtype": "rule_flip",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "XXCS"
+    ],
+    "paths": {
+      "rule": 8
+    },
+    "trap_paths": {
+      "rule": 6
+    },
+    "n_impact": 8,
+    "n_traps": 6,
+    "n_neutral": 10,
+    "request_structured": "제품 사이버보안 속성 '독립형 소프트웨어 의료기기(SaMD)'(samd)을 true에서 false로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+    "request_nl": "수면코치를 전용 하드웨어 기기와 함께 공급하는 형태로 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+    "sheet_type": "T2",
+    "sheet_paths": "rule",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T2_18",
+    "case_type": "T2",
+    "subtype": "rule_flip",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "XXCS"
+    ],
+    "paths": {
+      "rule": 12
+    },
+    "trap_paths": {
+      "rule": 6
+    },
+    "n_impact": 12,
+    "n_traps": 6,
+    "n_neutral": 15,
+    "request_structured": "제품 사이버보안 속성 '독립형 소프트웨어 의료기기(SaMD)'(samd)을 true에서 false로, '전자서명 기반 처방 기능'(e_signature)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+    "request_nl": "수면코치를 전용 하드웨어 기기와 함께 공급하는 형태로 바꾸고, 의료진이 처방 변경에 전자서명을 하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+    "sheet_type": "T2",
+    "sheet_paths": "rule",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T2_19",
+    "case_type": "T2",
+    "subtype": "rule_flip",
+    "n_docs": 2,
+    "docs": [
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "rule": 4
+    },
+    "trap_paths": {
+      "rule": 6
+    },
+    "n_impact": 4,
+    "n_traps": 6,
+    "n_neutral": 4,
+    "request_structured": "제품 사이버보안 속성 '전자서명 기반 처방 기능'(e_signature)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+    "request_nl": "수면코치를 의료진이 처방 변경에 전자서명을 하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+    "sheet_type": "T2",
+    "sheet_paths": "rule",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T2_20",
+    "case_type": "T2",
+    "subtype": "rule_flip",
+    "n_docs": 2,
+    "docs": [
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "rule": 8
+    },
+    "trap_paths": {
+      "rule": 6
+    },
+    "n_impact": 8,
+    "n_traps": 6,
+    "n_neutral": 8,
+    "request_structured": "제품 사이버보안 속성 '제조사 원격 업데이트 기능'(remote_update)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+    "request_nl": "수면코치를 제조사가 서버에서 소프트웨어 업데이트를 원격 배포하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+    "sheet_type": "T2",
+    "sheet_paths": "rule",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T2_21",
+    "case_type": "T2",
+    "subtype": "rule_flip",
+    "n_docs": 2,
+    "docs": [
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "rule": 4
+    },
+    "trap_paths": {
+      "rule": 6
+    },
+    "n_impact": 4,
+    "n_traps": 6,
+    "n_neutral": 4,
+    "request_structured": "제품 사이버보안 속성 '개인식별정보 저장'(stores_pii)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+    "request_nl": "수면코치를 환자 이름·연락처 같은 개인식별정보를 서버에 저장하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+    "sheet_type": "T2",
+    "sheet_paths": "rule",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T2_22",
+    "case_type": "T2",
+    "subtype": "rule_flip",
+    "n_docs": 2,
+    "docs": [
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "rule": 8
+    },
+    "trap_paths": {
+      "rule": 6
+    },
+    "n_impact": 8,
+    "n_traps": 6,
+    "n_neutral": 8,
+    "request_structured": "제품 사이버보안 속성 '독립형 소프트웨어 의료기기(SaMD)'(samd)을 true에서 false로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+    "request_nl": "수면코치를 전용 하드웨어 기기와 함께 공급하는 형태로 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+    "sheet_type": "T2",
+    "sheet_paths": "rule",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T2_23",
+    "case_type": "T2",
+    "subtype": "rule_flip",
+    "n_docs": 2,
+    "docs": [
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "rule": 4
+    },
+    "trap_paths": {
+      "rule": 6
+    },
+    "n_impact": 4,
+    "n_traps": 6,
+    "n_neutral": 4,
+    "request_structured": "제품 사이버보안 속성 '모바일 코드(외부 스크립트 콘텐츠) 실행'(mobile_code)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+    "request_nl": "수면코치를 교육 콘텐츠를 웹 기반 스크립트로 내려받아 실행하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+    "sheet_type": "T2",
+    "sheet_paths": "rule",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T2_24",
+    "case_type": "T2",
+    "subtype": "rule_flip",
+    "n_docs": 2,
+    "docs": [
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "rule": 12
+    },
+    "trap_paths": {
+      "rule": 6
+    },
+    "n_impact": 12,
+    "n_traps": 6,
+    "n_neutral": 12,
+    "request_structured": "제품 사이버보안 속성 '개인식별정보 저장'(stores_pii)을 false에서 true로, '제조사 원격 업데이트 기능'(remote_update)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+    "request_nl": "수면코치를 환자 이름·연락처 같은 개인식별정보를 서버에 저장하도록 바꾸고, 제조사가 서버에서 소프트웨어 업데이트를 원격 배포하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+    "sheet_type": "T2",
+    "sheet_paths": "rule",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T2_25",
+    "case_type": "T2",
+    "subtype": "rule_flip",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "rule": 8
+    },
+    "trap_paths": {
+      "rule": 6
+    },
+    "n_impact": 8,
+    "n_traps": 6,
+    "n_neutral": 10,
+    "request_structured": "제품 사이버보안 속성 '제조사 원격 업데이트 기능'(remote_update)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+    "request_nl": "수면코치를 제조사가 서버에서 소프트웨어 업데이트를 원격 배포하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+    "sheet_type": "T2",
+    "sheet_paths": "rule",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T2_26",
+    "case_type": "T2",
+    "subtype": "rule_flip",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "rule": 4
+    },
+    "trap_paths": {
+      "rule": 6
+    },
+    "n_impact": 4,
+    "n_traps": 6,
+    "n_neutral": 5,
+    "request_structured": "제품 사이버보안 속성 '개인식별정보 저장'(stores_pii)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+    "request_nl": "수면코치를 환자 이름·연락처 같은 개인식별정보를 서버에 저장하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+    "sheet_type": "T2",
+    "sheet_paths": "rule",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T2_27",
+    "case_type": "T2",
+    "subtype": "rule_flip",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "rule": 8
+    },
+    "trap_paths": {
+      "rule": 6
+    },
+    "n_impact": 8,
+    "n_traps": 6,
+    "n_neutral": 10,
+    "request_structured": "제품 사이버보안 속성 '독립형 소프트웨어 의료기기(SaMD)'(samd)을 true에서 false로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+    "request_nl": "수면코치를 전용 하드웨어 기기와 함께 공급하는 형태로 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+    "sheet_type": "T2",
+    "sheet_paths": "rule",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T2_28",
+    "case_type": "T2",
+    "subtype": "rule_flip",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "rule": 4
+    },
+    "trap_paths": {
+      "rule": 6
+    },
+    "n_impact": 4,
+    "n_traps": 6,
+    "n_neutral": 5,
+    "request_structured": "제품 사이버보안 속성 '모바일 코드(외부 스크립트 콘텐츠) 실행'(mobile_code)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+    "request_nl": "수면코치를 교육 콘텐츠를 웹 기반 스크립트로 내려받아 실행하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+    "sheet_type": "T2",
+    "sheet_paths": "rule",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T2_29",
+    "case_type": "T2",
+    "subtype": "rule_flip",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "rule": 4
+    },
+    "trap_paths": {
+      "rule": 6
+    },
+    "n_impact": 4,
+    "n_traps": 6,
+    "n_neutral": 5,
+    "request_structured": "제품 사이버보안 속성 '전자서명 기반 처방 기능'(e_signature)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+    "request_nl": "수면코치를 의료진이 처방 변경에 전자서명을 하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+    "sheet_type": "T2",
+    "sheet_paths": "rule",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T2_30",
+    "case_type": "T2",
+    "subtype": "rule_flip",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "rule": 12
+    },
+    "trap_paths": {
+      "rule": 6
+    },
+    "n_impact": 12,
+    "n_traps": 6,
+    "n_neutral": 15,
+    "request_structured": "제품 사이버보안 속성 '개인식별정보 저장'(stores_pii)을 false에서 true로, '독립형 소프트웨어 의료기기(SaMD)'(samd)을 true에서 false로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+    "request_nl": "수면코치를 환자 이름·연락처 같은 개인식별정보를 서버에 저장하도록 바꾸고, 전용 하드웨어 기기와 함께 공급하는 형태로 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+    "sheet_type": "T2",
+    "sheet_paths": "rule",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T2_31",
+    "case_type": "T2",
+    "subtype": "rule_flip",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "rule": 8
+    },
+    "trap_paths": {
+      "rule": 6
+    },
+    "n_impact": 8,
+    "n_traps": 6,
+    "n_neutral": 10,
+    "request_structured": "제품 사이버보안 속성 '개인식별정보 저장'(stores_pii)을 false에서 true로, '모바일 코드(외부 스크립트 콘텐츠) 실행'(mobile_code)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+    "request_nl": "수면코치를 환자 이름·연락처 같은 개인식별정보를 서버에 저장하도록 바꾸고, 교육 콘텐츠를 웹 기반 스크립트로 내려받아 실행하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+    "sheet_type": "T2",
+    "sheet_paths": "rule",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T2_32",
+    "case_type": "T2",
+    "subtype": "rule_flip",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "rule": 12
+    },
+    "trap_paths": {
+      "rule": 6
+    },
+    "n_impact": 12,
+    "n_traps": 6,
+    "n_neutral": 15,
+    "request_structured": "제품 사이버보안 속성 '개인식별정보 저장'(stores_pii)을 false에서 true로, '제조사 원격 업데이트 기능'(remote_update)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+    "request_nl": "수면코치를 환자 이름·연락처 같은 개인식별정보를 서버에 저장하도록 바꾸고, 제조사가 서버에서 소프트웨어 업데이트를 원격 배포하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+    "sheet_type": "T2",
+    "sheet_paths": "rule",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T2_33",
+    "case_type": "T2",
+    "subtype": "rule_flip",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "rule": 12
+    },
+    "trap_paths": {
+      "rule": 6
+    },
+    "n_impact": 12,
+    "n_traps": 6,
+    "n_neutral": 15,
+    "request_structured": "제품 사이버보안 속성 '독립형 소프트웨어 의료기기(SaMD)'(samd)을 true에서 false로, '전자서명 기반 처방 기능'(e_signature)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+    "request_nl": "수면코치를 전용 하드웨어 기기와 함께 공급하는 형태로 바꾸고, 의료진이 처방 변경에 전자서명을 하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+    "sheet_type": "T2",
+    "sheet_paths": "rule",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T2_34",
+    "case_type": "T2",
+    "subtype": "rule_flip",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "rule": 8
+    },
+    "trap_paths": {
+      "rule": 6
+    },
+    "n_impact": 8,
+    "n_traps": 6,
+    "n_neutral": 10,
+    "request_structured": "제품 사이버보안 속성 '모바일 코드(외부 스크립트 콘텐츠) 실행'(mobile_code)을 false에서 true로, '전자서명 기반 처방 기능'(e_signature)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+    "request_nl": "수면코치를 교육 콘텐츠를 웹 기반 스크립트로 내려받아 실행하도록 바꾸고, 의료진이 처방 변경에 전자서명을 하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+    "sheet_type": "T2",
+    "sheet_paths": "rule",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T2_35",
+    "case_type": "T2",
+    "subtype": "rule_flip",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "rule": 12
+    },
+    "trap_paths": {
+      "rule": 6
+    },
+    "n_impact": 12,
+    "n_traps": 6,
+    "n_neutral": 15,
+    "request_structured": "제품 사이버보안 속성 '모바일 코드(외부 스크립트 콘텐츠) 실행'(mobile_code)을 false에서 true로, '제조사 원격 업데이트 기능'(remote_update)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+    "request_nl": "수면코치를 교육 콘텐츠를 웹 기반 스크립트로 내려받아 실행하도록 바꾸고, 제조사가 서버에서 소프트웨어 업데이트를 원격 배포하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+    "sheet_type": "T2",
+    "sheet_paths": "rule",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T2_36",
+    "case_type": "T2",
+    "subtype": "rule_flip",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "rule": 12
+    },
+    "trap_paths": {
+      "rule": 6
+    },
+    "n_impact": 12,
+    "n_traps": 6,
+    "n_neutral": 15,
+    "request_structured": "제품 사이버보안 속성 '전자서명 기반 처방 기능'(e_signature)을 false에서 true로, '제조사 원격 업데이트 기능'(remote_update)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+    "request_nl": "수면코치를 의료진이 처방 변경에 전자서명을 하도록 바꾸고, 제조사가 서버에서 소프트웨어 업데이트를 원격 배포하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+    "sheet_type": "T2",
+    "sheet_paths": "rule",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_01",
+    "case_type": "T3",
+    "subtype": "delete",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "origin": 5,
+      "trace": 5
+    },
+    "trap_paths": {
+      "same_id": 2
+    },
+    "n_impact": 10,
+    "n_traps": 2,
+    "n_neutral": 0,
+    "request_structured": "Req. 10 '수면 제한 요법 기본 시간' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.",
+    "request_nl": "수면 제한 요법 기본 시간 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.",
+    "sheet_type": "T3-삭제",
+    "sheet_paths": "origin, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_02",
+    "case_type": "T3",
+    "subtype": "delete",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "origin": 5,
+      "trace": 5
+    },
+    "trap_paths": {
+      "same_id": 2
+    },
+    "n_impact": 10,
+    "n_traps": 2,
+    "n_neutral": 0,
+    "request_structured": "Req. 100 '서버 데이터 동기화' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.",
+    "request_nl": "서버 데이터 동기화 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.",
+    "sheet_type": "T3-삭제",
+    "sheet_paths": "origin, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_03",
+    "case_type": "T3",
+    "subtype": "delete",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "origin": 5,
+      "trace": 5
+    },
+    "trap_paths": {
+      "same_id": 2
+    },
+    "n_impact": 10,
+    "n_traps": 2,
+    "n_neutral": 0,
+    "request_structured": "Req. 101 '의료진 대시보드 조회' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.",
+    "request_nl": "의료진 대시보드 조회 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.",
+    "sheet_type": "T3-삭제",
+    "sheet_paths": "origin, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_04",
+    "case_type": "T3",
+    "subtype": "delete",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "origin": 5,
+      "trace": 5
+    },
+    "trap_paths": {
+      "same_id": 2
+    },
+    "n_impact": 10,
+    "n_traps": 2,
+    "n_neutral": 0,
+    "request_structured": "Req. 106 '총 치료 회기 수' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.",
+    "request_nl": "총 치료 회기 수 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.",
+    "sheet_type": "T3-삭제",
+    "sheet_paths": "origin, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_05",
+    "case_type": "T3",
+    "subtype": "delete",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "origin": 5,
+      "trace": 4
+    },
+    "trap_paths": {
+      "same_id": 2
+    },
+    "n_impact": 9,
+    "n_traps": 2,
+    "n_neutral": 0,
+    "request_structured": "Req. 8 '수면일기 기록' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.",
+    "request_nl": "수면일기 기록 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.",
+    "sheet_type": "T3-삭제",
+    "sheet_paths": "origin, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_06",
+    "case_type": "T3",
+    "subtype": "delete",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "origin": 5,
+      "trace": 4
+    },
+    "trap_paths": {
+      "same_id": 2
+    },
+    "n_impact": 9,
+    "n_traps": 2,
+    "n_neutral": 0,
+    "request_structured": "Req. 13 'CBT 회기 기본 설정' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.",
+    "request_nl": "CBT 회기 기본 설정 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.",
+    "sheet_type": "T3-삭제",
+    "sheet_paths": "origin, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_07",
+    "case_type": "T3",
+    "subtype": "delete",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "origin": 5,
+      "trace": 3
+    },
+    "trap_paths": {
+      "same_id": 2
+    },
+    "n_impact": 8,
+    "n_traps": 2,
+    "n_neutral": 0,
+    "request_structured": "Req. 11 '자극 조절 교육' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.",
+    "request_nl": "자극 조절 교육 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.",
+    "sheet_type": "T3-삭제",
+    "sheet_paths": "origin, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_08",
+    "case_type": "T3",
+    "subtype": "delete",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "origin": 5,
+      "trace": 3
+    },
+    "trap_paths": {
+      "same_id": 2
+    },
+    "n_impact": 8,
+    "n_traps": 2,
+    "n_neutral": 0,
+    "request_structured": "Req. 12 '수면 위생 교육' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.",
+    "request_nl": "수면 위생 교육 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.",
+    "sheet_type": "T3-삭제",
+    "sheet_paths": "origin, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_09",
+    "case_type": "T3",
+    "subtype": "delete",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "origin": 5,
+      "trace": 3
+    },
+    "trap_paths": {
+      "same_id": 2
+    },
+    "n_impact": 8,
+    "n_traps": 2,
+    "n_neutral": 0,
+    "request_structured": "Req. 14 'CBT 알림 설정' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.",
+    "request_nl": "CBT 알림 설정 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.",
+    "sheet_type": "T3-삭제",
+    "sheet_paths": "origin, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_10",
+    "case_type": "T3",
+    "subtype": "delete",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "origin": 5,
+      "trace": 3
+    },
+    "trap_paths": {
+      "same_id": 2
+    },
+    "n_impact": 8,
+    "n_traps": 2,
+    "n_neutral": 0,
+    "request_structured": "Req. 15 '이완 훈련' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.",
+    "request_nl": "이완 훈련 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.",
+    "sheet_type": "T3-삭제",
+    "sheet_paths": "origin, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_11",
+    "case_type": "T3",
+    "subtype": "delete",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "MDDR"
+    ],
+    "paths": {
+      "origin": 5,
+      "same_id": 3,
+      "trace": 2
+    },
+    "trap_paths": {
+      "same_id": 4
+    },
+    "n_impact": 10,
+    "n_traps": 4,
+    "n_neutral": 0,
+    "request_structured": "Req. 16 '수면 효율 리포트' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.",
+    "request_nl": "수면 효율 리포트 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.",
+    "sheet_type": "T3-삭제",
+    "sheet_paths": "origin, same_id, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_12",
+    "case_type": "T3",
+    "subtype": "delete",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "MDDR"
+    ],
+    "paths": {
+      "origin": 5,
+      "same_id": 3,
+      "trace": 1
+    },
+    "trap_paths": {
+      "same_id": 4
+    },
+    "n_impact": 9,
+    "n_traps": 4,
+    "n_neutral": 0,
+    "request_structured": "Req. 9 '알림 설정' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.",
+    "request_nl": "알림 설정 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.",
+    "sheet_type": "T3-삭제",
+    "sheet_paths": "origin, same_id, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_13",
+    "case_type": "T3",
+    "subtype": "delete",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "MDDR"
+    ],
+    "paths": {
+      "origin": 5,
+      "same_id": 3,
+      "trace": 5
+    },
+    "trap_paths": {
+      "same_id": 4
+    },
+    "n_impact": 13,
+    "n_traps": 4,
+    "n_neutral": 0,
+    "request_structured": "Req. 10 '수면 제한 요법 기본 시간' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.",
+    "request_nl": "수면 제한 요법 기본 시간 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.",
+    "sheet_type": "T3-삭제",
+    "sheet_paths": "origin, same_id, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_14",
+    "case_type": "T3",
+    "subtype": "delete",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "MDDR"
+    ],
+    "paths": {
+      "origin": 5,
+      "same_id": 3,
+      "trace": 5
+    },
+    "trap_paths": {
+      "same_id": 4
+    },
+    "n_impact": 13,
+    "n_traps": 4,
+    "n_neutral": 0,
+    "request_structured": "Req. 100 '서버 데이터 동기화' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.",
+    "request_nl": "서버 데이터 동기화 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.",
+    "sheet_type": "T3-삭제",
+    "sheet_paths": "origin, same_id, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_15",
+    "case_type": "T3",
+    "subtype": "delete",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "MDDR"
+    ],
+    "paths": {
+      "origin": 5,
+      "same_id": 3,
+      "trace": 5
+    },
+    "trap_paths": {
+      "same_id": 4
+    },
+    "n_impact": 13,
+    "n_traps": 4,
+    "n_neutral": 0,
+    "request_structured": "Req. 101 '의료진 대시보드 조회' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.",
+    "request_nl": "의료진 대시보드 조회 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.",
+    "sheet_type": "T3-삭제",
+    "sheet_paths": "origin, same_id, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_16",
+    "case_type": "T3",
+    "subtype": "delete",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "XXCS"
+    ],
+    "paths": {
+      "origin": 5,
+      "trace": 10
+    },
+    "trap_paths": {
+      "same_id": 2
+    },
+    "n_impact": 15,
+    "n_traps": 2,
+    "n_neutral": 0,
+    "request_structured": "Req. 106 '총 치료 회기 수' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.",
+    "request_nl": "총 치료 회기 수 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.",
+    "sheet_type": "T3-삭제",
+    "sheet_paths": "origin, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_17",
+    "case_type": "T3",
+    "subtype": "delete",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "XXCS"
+    ],
+    "paths": {
+      "origin": 5,
+      "trace": 8
+    },
+    "trap_paths": {
+      "same_id": 2
+    },
+    "n_impact": 13,
+    "n_traps": 2,
+    "n_neutral": 0,
+    "request_structured": "Req. 8 '수면일기 기록' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.",
+    "request_nl": "수면일기 기록 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.",
+    "sheet_type": "T3-삭제",
+    "sheet_paths": "origin, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_18",
+    "case_type": "T3",
+    "subtype": "delete",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "XXCS"
+    ],
+    "paths": {
+      "origin": 5,
+      "trace": 8
+    },
+    "trap_paths": {
+      "same_id": 2
+    },
+    "n_impact": 13,
+    "n_traps": 2,
+    "n_neutral": 0,
+    "request_structured": "Req. 13 'CBT 회기 기본 설정' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.",
+    "request_nl": "CBT 회기 기본 설정 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.",
+    "sheet_type": "T3-삭제",
+    "sheet_paths": "origin, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_19",
+    "case_type": "T3",
+    "subtype": "delete",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "XXCS"
+    ],
+    "paths": {
+      "origin": 5,
+      "trace": 6
+    },
+    "trap_paths": {
+      "same_id": 2
+    },
+    "n_impact": 11,
+    "n_traps": 2,
+    "n_neutral": 0,
+    "request_structured": "Req. 11 '자극 조절 교육' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.",
+    "request_nl": "자극 조절 교육 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.",
+    "sheet_type": "T3-삭제",
+    "sheet_paths": "origin, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_20",
+    "case_type": "T3",
+    "subtype": "delete",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "XXCS"
+    ],
+    "paths": {
+      "origin": 5,
+      "trace": 6
+    },
+    "trap_paths": {
+      "same_id": 2
+    },
+    "n_impact": 11,
+    "n_traps": 2,
+    "n_neutral": 0,
+    "request_structured": "Req. 12 '수면 위생 교육' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.",
+    "request_nl": "수면 위생 교육 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.",
+    "sheet_type": "T3-삭제",
+    "sheet_paths": "origin, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_21",
+    "case_type": "T3",
+    "subtype": "delete",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "origin": 5,
+      "same_id": 3,
+      "trace": 6
+    },
+    "trap_paths": {
+      "same_id": 4
+    },
+    "n_impact": 14,
+    "n_traps": 4,
+    "n_neutral": 0,
+    "request_structured": "Req. 14 'CBT 알림 설정' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.",
+    "request_nl": "CBT 알림 설정 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.",
+    "sheet_type": "T3-삭제",
+    "sheet_paths": "origin, same_id, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_22",
+    "case_type": "T3",
+    "subtype": "delete",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "origin": 5,
+      "same_id": 3,
+      "trace": 6
+    },
+    "trap_paths": {
+      "same_id": 4
+    },
+    "n_impact": 14,
+    "n_traps": 4,
+    "n_neutral": 0,
+    "request_structured": "Req. 15 '이완 훈련' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.",
+    "request_nl": "이완 훈련 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.",
+    "sheet_type": "T3-삭제",
+    "sheet_paths": "origin, same_id, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_23",
+    "case_type": "T3",
+    "subtype": "delete",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "origin": 5,
+      "same_id": 3,
+      "trace": 4
+    },
+    "trap_paths": {
+      "same_id": 4
+    },
+    "n_impact": 12,
+    "n_traps": 4,
+    "n_neutral": 0,
+    "request_structured": "Req. 16 '수면 효율 리포트' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.",
+    "request_nl": "수면 효율 리포트 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.",
+    "sheet_type": "T3-삭제",
+    "sheet_paths": "origin, same_id, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_24",
+    "case_type": "T3",
+    "subtype": "delete",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "origin": 5,
+      "same_id": 3,
+      "trace": 2
+    },
+    "trap_paths": {
+      "same_id": 4
+    },
+    "n_impact": 10,
+    "n_traps": 4,
+    "n_neutral": 0,
+    "request_structured": "Req. 9 '알림 설정' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.",
+    "request_nl": "알림 설정 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.",
+    "sheet_type": "T3-삭제",
+    "sheet_paths": "origin, same_id, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_25",
+    "case_type": "T3",
+    "subtype": "delete",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "origin": 5,
+      "same_id": 3,
+      "trace": 10
+    },
+    "trap_paths": {
+      "same_id": 4
+    },
+    "n_impact": 18,
+    "n_traps": 4,
+    "n_neutral": 0,
+    "request_structured": "Req. 10 '수면 제한 요법 기본 시간' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.",
+    "request_nl": "수면 제한 요법 기본 시간 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.",
+    "sheet_type": "T3-삭제",
+    "sheet_paths": "origin, same_id, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_26",
+    "case_type": "T3",
+    "subtype": "delete",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "origin": 5,
+      "same_id": 3,
+      "trace": 10
+    },
+    "trap_paths": {
+      "same_id": 4
+    },
+    "n_impact": 18,
+    "n_traps": 4,
+    "n_neutral": 0,
+    "request_structured": "Req. 100 '서버 데이터 동기화' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.",
+    "request_nl": "서버 데이터 동기화 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.",
+    "sheet_type": "T3-삭제",
+    "sheet_paths": "origin, same_id, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_27",
+    "case_type": "T3",
+    "subtype": "delete",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "origin": 5,
+      "same_id": 3,
+      "trace": 10
+    },
+    "trap_paths": {
+      "same_id": 4
+    },
+    "n_impact": 18,
+    "n_traps": 4,
+    "n_neutral": 0,
+    "request_structured": "Req. 101 '의료진 대시보드 조회' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.",
+    "request_nl": "의료진 대시보드 조회 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.",
+    "sheet_type": "T3-삭제",
+    "sheet_paths": "origin, same_id, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_28",
+    "case_type": "T3",
+    "subtype": "delete",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "origin": 5,
+      "same_id": 3,
+      "trace": 10
+    },
+    "trap_paths": {
+      "same_id": 4
+    },
+    "n_impact": 18,
+    "n_traps": 4,
+    "n_neutral": 0,
+    "request_structured": "Req. 106 '총 치료 회기 수' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.",
+    "request_nl": "총 치료 회기 수 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.",
+    "sheet_type": "T3-삭제",
+    "sheet_paths": "origin, same_id, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_29",
+    "case_type": "T3",
+    "subtype": "delete",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "origin": 5,
+      "same_id": 3,
+      "trace": 8
+    },
+    "trap_paths": {
+      "same_id": 4
+    },
+    "n_impact": 16,
+    "n_traps": 4,
+    "n_neutral": 0,
+    "request_structured": "Req. 8 '수면일기 기록' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.",
+    "request_nl": "수면일기 기록 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.",
+    "sheet_type": "T3-삭제",
+    "sheet_paths": "origin, same_id, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_30",
+    "case_type": "T3",
+    "subtype": "delete",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "origin": 5,
+      "same_id": 3,
+      "trace": 8
+    },
+    "trap_paths": {
+      "same_id": 4
+    },
+    "n_impact": 16,
+    "n_traps": 4,
+    "n_neutral": 0,
+    "request_structured": "Req. 13 'CBT 회기 기본 설정' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.",
+    "request_nl": "CBT 회기 기본 설정 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.",
+    "sheet_type": "T3-삭제",
+    "sheet_paths": "origin, same_id, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_31",
+    "case_type": "T3",
+    "subtype": "add",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "origin": 6,
+      "trace": 1
+    },
+    "trap_paths": {
+      "trace": 2
+    },
+    "n_impact": 7,
+    "n_traps": 2,
+    "n_neutral": 0,
+    "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '수면 목표 설정'을(를) 신규 추가한다. 내용: 사용자는 목표 취침 시각과 목표 기상 시각을 설정할 수 있어야 하며, 앱은 입력된 시각이 허용 범위 안에 있는지 검증한 뒤 저장하여야 한다.",
+    "request_nl": "앱에 새 기능을 넣어 주세요. 사용자가 목표 취침 시각과 기상 시각을 정하고 앱이 입력값의 허용 범위를 검사하는 기능이 필요합니다.",
+    "sheet_type": "T3-추가",
+    "sheet_paths": "origin, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_32",
+    "case_type": "T3",
+    "subtype": "add",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "origin": 6,
+      "trace": 1
+    },
+    "trap_paths": {
+      "trace": 1
+    },
+    "n_impact": 7,
+    "n_traps": 1,
+    "n_neutral": 0,
+    "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '카페인 섭취 기록'을(를) 신규 추가한다. 내용: 사용자는 카페인 음료의 섭취 시각과 섭취량을 기록할 수 있어야 하며, 기록은 기기 내부에 암호화된 형태로 저장되어야 한다.",
+    "request_nl": "앱에 새 기능을 넣어 주세요. 사용자가 카페인 섭취 시각과 양을 기록하고 기록을 기기에 암호화하여 저장하는 기능이 필요합니다.",
+    "sheet_type": "T3-추가",
+    "sheet_paths": "origin, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_33",
+    "case_type": "T3",
+    "subtype": "add",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "origin": 6,
+      "trace": 1
+    },
+    "trap_paths": {
+      "trace": 2
+    },
+    "n_impact": 7,
+    "n_traps": 2,
+    "n_neutral": 0,
+    "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '낮잠 기록'을(를) 신규 추가한다. 내용: 사용자는 낮잠의 시작과 종료를 기록할 수 있어야 하며, 앱은 각 시점을 기기 시각 기준의 타임스탬프로 저장하여야 한다.",
+    "request_nl": "앱에 새 기능을 넣어 주세요. 사용자가 낮잠 시작과 종료를 기록하면 각 시점을 타임스탬프로 남기는 기능이 필요합니다.",
+    "sheet_type": "T3-추가",
+    "sheet_paths": "origin, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_34",
+    "case_type": "T3",
+    "subtype": "add",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "origin": 6,
+      "trace": 1
+    },
+    "trap_paths": {
+      "trace": 1
+    },
+    "n_impact": 7,
+    "n_traps": 1,
+    "n_neutral": 0,
+    "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '주간 리포트 공유'을(를) 신규 추가한다. 내용: 사용자는 주간 수면 리포트를 담당 의료진에게 보낼 수 있어야 하며, 리포트는 암호화된 전송 구간을 통해서만 전송되어야 한다.",
+    "request_nl": "앱에 새 기능을 넣어 주세요. 사용자가 주간 수면 리포트를 의료진에게 보내며 전송 구간을 암호화하는 기능이 필요합니다.",
+    "sheet_type": "T3-추가",
+    "sheet_paths": "origin, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_35",
+    "case_type": "T3",
+    "subtype": "add",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "origin": 6,
+      "trace": 1
+    },
+    "trap_paths": {
+      "trace": 2
+    },
+    "n_impact": 7,
+    "n_traps": 2,
+    "n_neutral": 0,
+    "request_structured": "서버 요구사항 Req. 109 '취침 루틴 점검'을(를) 신규 추가한다. 내용: 서버는 사용자가 제출한 취침 루틴 점검 결과를 보관하여야 하며, 의료진이 점검 결과를 수정하면 수정자와 수정 내용을 감사기록으로 생성하여야 한다.",
+    "request_nl": "서버에 새 기능을 넣어 주세요. 서버가 사용자의 취침 루틴 점검 결과를 보관하고 의료진이 결과를 수정하면 감사기록을 남기는 기능이 필요합니다.",
+    "sheet_type": "T3-추가",
+    "sheet_paths": "origin, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_36",
+    "case_type": "T3",
+    "subtype": "add",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "origin": 6,
+      "trace": 1
+    },
+    "trap_paths": {
+      "trace": 2
+    },
+    "n_impact": 7,
+    "n_traps": 2,
+    "n_neutral": 0,
+    "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '기상 후 빛 노출'을(를) 신규 추가한다. 내용: 앱은 기상 직후 빛 노출을 권장하는 안내를 제공하여야 하며, 기기의 조도 센서 값을 읽지 못하면 미리 정한 기본 안내 상태로 전환하여야 한다.",
+    "request_nl": "앱에 새 기능을 넣어 주세요. 기상 직후 빛 노출을 안내하고 조도 센서 값을 읽지 못하면 미리 정한 기본 안내로 전환하는 기능이 필요합니다.",
+    "sheet_type": "T3-추가",
+    "sheet_paths": "origin, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_37",
+    "case_type": "T3",
+    "subtype": "add",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "origin": 6,
+      "trace": 1
+    },
+    "trap_paths": {
+      "trace": 2
+    },
+    "n_impact": 7,
+    "n_traps": 2,
+    "n_neutral": 0,
+    "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '주말 기상 안내'을(를) 신규 추가한다. 내용: 사용자는 주말 기상 시각을 따로 설정할 수 있어야 하며, 앱은 입력값의 허용 범위를 검증하고 평일 기상 시각과의 차이를 안내하여야 한다.",
+    "request_nl": "앱에 새 기능을 넣어 주세요. 사용자가 주말 기상 시각을 정하면 평일 기상 시각과의 차이를 안내하고 입력값의 허용 범위를 검사하는 기능이 필요합니다.",
+    "sheet_type": "T3-추가",
+    "sheet_paths": "origin, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_38",
+    "case_type": "T3",
+    "subtype": "add",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "origin": 6,
+      "trace": 1
+    },
+    "trap_paths": {
+      "trace": 2
+    },
+    "n_impact": 7,
+    "n_traps": 2,
+    "n_neutral": 0,
+    "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '오프라인 기록 보관'을(를) 신규 추가한다. 내용: 앱은 네트워크에 연결되지 않은 동안 작성된 기록을 기기에 보관하여야 하며, 연결이 회복되면 기록을 서버로 전송하고 전송 데이터의 무결성을 확인하여야 한다.",
+    "request_nl": "앱에 새 기능을 넣어 주세요. 네트워크가 없을 때 기록을 기기에 보관했다가 연결되면 서버로 보내고 전송 데이터의 무결성을 확인하는 기능이 필요합니다.",
+    "sheet_type": "T3-추가",
+    "sheet_paths": "origin, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_39",
+    "case_type": "T3",
+    "subtype": "add",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "origin": 6,
+      "trace": 1
+    },
+    "trap_paths": {
+      "trace": 2
+    },
+    "n_impact": 7,
+    "n_traps": 2,
+    "n_neutral": 0,
+    "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '보호자 열람 동의'을(를) 신규 추가한다. 내용: 사용자는 보호자의 치료 진행 요약 열람에 동의하거나 동의를 철회할 수 있어야 하며, 앱은 동의한 보호자에게만 열람 권한을 부여하여야 한다.",
+    "request_nl": "앱에 새 기능을 넣어 주세요. 사용자가 동의한 보호자에게만 치료 진행 요약을 열람할 권한을 주는 기능이 필요합니다.",
+    "sheet_type": "T3-추가",
+    "sheet_paths": "origin, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_40",
+    "case_type": "T3",
+    "subtype": "add",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "origin": 6,
+      "trace": 1
+    },
+    "trap_paths": {
+      "trace": 2
+    },
+    "n_impact": 7,
+    "n_traps": 2,
+    "n_neutral": 0,
+    "request_structured": "서버 요구사항 Req. 109 '웨어러블 연동'을(를) 신규 추가한다. 내용: 서버는 사용자가 연동한 웨어러블 기기의 수면 측정값을 받아 저장할 수 있어야 하며, 저장 전에 받은 데이터의 형식과 값의 범위를 검증하여야 한다.",
+    "request_nl": "서버에 새 기능을 넣어 주세요. 서버가 웨어러블 기기의 수면 측정값을 받아 저장하고 받은 데이터의 형식과 범위를 검사하는 기능이 필요합니다.",
+    "sheet_type": "T3-추가",
+    "sheet_paths": "origin, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_41",
+    "case_type": "T3",
+    "subtype": "add",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "XXCS"
+    ],
+    "paths": {
+      "origin": 6,
+      "trace": 2
+    },
+    "trap_paths": {
+      "trace": 4
+    },
+    "n_impact": 8,
+    "n_traps": 4,
+    "n_neutral": 0,
+    "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '기기 변경 시 기록 이전'을(를) 신규 추가한다. 내용: 사용자는 새 기기에서 이전 기기의 기록을 옮겨 받을 수 있어야 하며, 기록을 옮기기 전에 본인 인증을 완료하여야 한다.",
+    "request_nl": "앱에 새 기능을 넣어 주세요. 사용자가 새 기기로 바꿀 때 본인 인증을 거친 뒤 이전 기기의 기록을 옮기는 기능이 필요합니다.",
+    "sheet_type": "T3-추가",
+    "sheet_paths": "origin, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_42",
+    "case_type": "T3",
+    "subtype": "add",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "XXCS"
+    ],
+    "paths": {
+      "origin": 6,
+      "trace": 2
+    },
+    "trap_paths": {
+      "trace": 4
+    },
+    "n_impact": 8,
+    "n_traps": 4,
+    "n_neutral": 0,
+    "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '호흡 안내'을(를) 신규 추가한다. 내용: 앱은 잠들기 전 호흡 안내 콘텐츠를 재생할 수 있어야 하며, 재생 전에 콘텐츠 파일의 무결성을 점검하여야 한다.",
+    "request_nl": "앱에 새 기능을 넣어 주세요. 잠들기 전 호흡 안내 콘텐츠를 재생하고 재생 전에 콘텐츠 파일의 무결성을 점검하는 기능이 필요합니다.",
+    "sheet_type": "T3-추가",
+    "sheet_paths": "origin, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_43",
+    "case_type": "T3",
+    "subtype": "add",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "XXCS"
+    ],
+    "paths": {
+      "origin": 6,
+      "trace": 2
+    },
+    "trap_paths": {
+      "trace": 4
+    },
+    "n_impact": 8,
+    "n_traps": 4,
+    "n_neutral": 0,
+    "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '카페인 중단 안내'을(를) 신규 추가한다. 내용: 앱은 사용자의 취침 시각을 기준으로 카페인 섭취를 멈출 시점을 안내하여야 하며, 안내 시점을 계산하지 못하면 내부 정보가 드러나지 않는 오류 메시지를 표시하여야 한다.",
+    "request_nl": "앱에 새 기능을 넣어 주세요. 취침 시각에 맞춰 카페인 섭취를 멈출 시점을 안내하고 안내 시점을 계산하지 못하면 내부 정보가 없는 오류 메시지를 보여 주는 기능이 필요합니다.",
+    "sheet_type": "T3-추가",
+    "sheet_paths": "origin, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_44",
+    "case_type": "T3",
+    "subtype": "add",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "XXCS"
+    ],
+    "paths": {
+      "origin": 6,
+      "trace": 2
+    },
+    "trap_paths": {
+      "trace": 4
+    },
+    "n_impact": 8,
+    "n_traps": 4,
+    "n_neutral": 0,
+    "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '침실 환경 점검'을(를) 신규 추가한다. 내용: 사용자는 침실의 빛, 소음, 온도에 관한 점검 항목에 응답할 수 있어야 하며, 앱은 응답 값이 정해진 선택지와 형식에 맞는지 검증하여야 한다.",
+    "request_nl": "앱에 새 기능을 넣어 주세요. 사용자가 침실의 빛과 소음, 온도 점검 항목에 답하고 앱이 응답 값을 검사하는 기능이 필요합니다.",
+    "sheet_type": "T3-추가",
+    "sheet_paths": "origin, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_45",
+    "case_type": "T3",
+    "subtype": "add",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "MDDR"
+    ],
+    "paths": {
+      "origin": 6,
+      "same_id": 4,
+      "trace": 1
+    },
+    "trap_paths": {
+      "trace": 2
+    },
+    "n_impact": 11,
+    "n_traps": 2,
+    "n_neutral": 0,
+    "request_structured": "서버 요구사항 Req. 109 '수면 효율 메모'을(를) 신규 추가한다. 내용: 서버는 의료진이 사용자의 수면 효율 결과에 메모를 작성할 수 있도록 하여야 하며, 메모를 작성하거나 수정할 때마다 감사기록을 생성하여야 한다.",
+    "request_nl": "서버에 새 기능을 넣어 주세요. 의료진이 사용자의 수면 효율 결과에 메모를 남기고 메모를 작성하거나 고칠 때 감사기록을 남기는 기능이 필요합니다.",
+    "sheet_type": "T3-추가",
+    "sheet_paths": "origin, same_id, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_46",
+    "case_type": "T3",
+    "subtype": "add",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "MDDR"
+    ],
+    "paths": {
+      "origin": 6,
+      "same_id": 4,
+      "trace": 1
+    },
+    "trap_paths": {
+      "trace": 1
+    },
+    "n_impact": 11,
+    "n_traps": 1,
+    "n_neutral": 0,
+    "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '복용 기록'을(를) 신규 추가한다. 내용: 사용자는 복용한 수면 관련 약과 복용 시각을 기록할 수 있어야 하며, 복용 기록은 기기 내부에 암호화된 형태로 저장되어야 한다.",
+    "request_nl": "앱에 새 기능을 넣어 주세요. 사용자가 복용한 약과 복용 시각을 기록하고 기록을 기기에 암호화하여 저장하는 기능이 필요합니다.",
+    "sheet_type": "T3-추가",
+    "sheet_paths": "origin, same_id, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_47",
+    "case_type": "T3",
+    "subtype": "add",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "MDDR"
+    ],
+    "paths": {
+      "origin": 6,
+      "same_id": 4,
+      "trace": 1
+    },
+    "trap_paths": {
+      "trace": 2
+    },
+    "n_impact": 11,
+    "n_traps": 2,
+    "n_neutral": 0,
+    "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '코골이 메모'을(를) 신규 추가한다. 내용: 사용자는 코골이에 관한 메모를 수면일기에 남길 수 있어야 하며, 앱은 메모의 길이와 허용 문자를 검증한 뒤 저장하여야 한다.",
+    "request_nl": "앱에 새 기능을 넣어 주세요. 사용자가 코골이에 관한 메모를 남기고 앱이 메모의 길이와 허용 문자를 검사하는 기능이 필요합니다.",
+    "sheet_type": "T3-추가",
+    "sheet_paths": "origin, same_id, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_48",
+    "case_type": "T3",
+    "subtype": "add",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "origin": 6,
+      "same_id": 4,
+      "trace": 2
+    },
+    "trap_paths": {
+      "trace": 4
+    },
+    "n_impact": 12,
+    "n_traps": 4,
+    "n_neutral": 0,
+    "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '각성 횟수 기록'을(를) 신규 추가한다. 내용: 사용자는 밤중에 깬 횟수를 기록할 수 있어야 하며, 앱은 깬 시점마다 기기 시각 기준의 타임스탬프를 저장하여야 한다.",
+    "request_nl": "앱에 새 기능을 넣어 주세요. 사용자가 밤중에 깬 횟수를 기록하고 깬 시점마다 타임스탬프를 남기는 기능이 필요합니다.",
+    "sheet_type": "T3-추가",
+    "sheet_paths": "origin, same_id, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_49",
+    "case_type": "T3",
+    "subtype": "add",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "origin": 6,
+      "same_id": 4,
+      "trace": 2
+    },
+    "trap_paths": {
+      "trace": 4
+    },
+    "n_impact": 12,
+    "n_traps": 4,
+    "n_neutral": 0,
+    "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '아침 점검'을(를) 신규 추가한다. 내용: 앱은 기상 후 수면 만족도 점검 문항에 응답하도록 하여야 하며, 응답 저장에 실패하면 직전에 저장된 상태를 유지하여야 한다.",
+    "request_nl": "앱에 새 기능을 넣어 주세요. 기상 후 수면 만족도 점검 문항에 답하게 하고 응답 저장에 실패하면 직전에 저장된 상태를 유지하는 기능이 필요합니다.",
+    "sheet_type": "T3-추가",
+    "sheet_paths": "origin, same_id, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_50",
+    "case_type": "T3",
+    "subtype": "add",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "origin": 6,
+      "same_id": 4,
+      "trace": 2
+    },
+    "trap_paths": {
+      "trace": 4
+    },
+    "n_impact": 12,
+    "n_traps": 4,
+    "n_neutral": 0,
+    "request_structured": "서버 요구사항 Req. 109 '저녁 점검'을(를) 신규 추가한다. 내용: 서버는 사용자가 제출한 저녁 점검 응답을 보관하여야 하며, 저녁 점검 기록을 정기 백업 대상에 포함하여야 한다.",
+    "request_nl": "서버에 새 기능을 넣어 주세요. 서버가 사용자의 저녁 점검 응답을 보관하고 이 기록을 정기 백업 대상에 포함하는 기능이 필요합니다.",
+    "sheet_type": "T3-추가",
+    "sheet_paths": "origin, same_id, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_51",
+    "case_type": "T3",
+    "subtype": "add",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "origin": 6,
+      "same_id": 4,
+      "trace": 2
+    },
+    "trap_paths": {
+      "trace": 2
+    },
+    "n_impact": 12,
+    "n_traps": 2,
+    "n_neutral": 0,
+    "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '낮 활동 기록'을(를) 신규 추가한다. 내용: 앱은 사용자의 낮 활동량을 기록할 수 있어야 하며, 활동 기록은 기기 내부에 암호화된 형태로 저장되어야 한다.",
+    "request_nl": "앱에 새 기능을 넣어 주세요. 사용자의 낮 활동량을 기록하고 기록을 기기에 암호화하여 저장하는 기능이 필요합니다.",
+    "sheet_type": "T3-추가",
+    "sheet_paths": "origin, same_id, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_52",
+    "case_type": "T3",
+    "subtype": "add",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "origin": 6,
+      "same_id": 4,
+      "trace": 2
+    },
+    "trap_paths": {
+      "trace": 4
+    },
+    "n_impact": 12,
+    "n_traps": 4,
+    "n_neutral": 0,
+    "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '운동 기록'을(를) 신규 추가한다. 내용: 사용자는 운동 종류와 운동 시간을 기록할 수 있어야 하며, 앱은 입력값이 허용 범위와 형식에 맞는지 검증한 뒤 저장하여야 한다.",
+    "request_nl": "앱에 새 기능을 넣어 주세요. 사용자가 운동 종류와 시간을 기록하고 앱이 입력값의 허용 범위를 검사하는 기능이 필요합니다.",
+    "sheet_type": "T3-추가",
+    "sheet_paths": "origin, same_id, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_53",
+    "case_type": "T3",
+    "subtype": "add",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "origin": 6,
+      "same_id": 4,
+      "trace": 2
+    },
+    "trap_paths": {
+      "trace": 4
+    },
+    "n_impact": 12,
+    "n_traps": 4,
+    "n_neutral": 0,
+    "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '식사 시각 기록'을(를) 신규 추가한다. 내용: 사용자는 저녁 식사 시각을 기록할 수 있어야 하며, 앱은 기록마다 기기 시각 기준의 타임스탬프를 저장하여야 한다.",
+    "request_nl": "앱에 새 기능을 넣어 주세요. 사용자가 저녁 식사 시각을 기록하고 기록 시점을 타임스탬프로 남기는 기능이 필요합니다.",
+    "sheet_type": "T3-추가",
+    "sheet_paths": "origin, same_id, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_54",
+    "case_type": "T3",
+    "subtype": "add",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "origin": 6,
+      "same_id": 4,
+      "trace": 2
+    },
+    "trap_paths": {
+      "trace": 4
+    },
+    "n_impact": 12,
+    "n_traps": 4,
+    "n_neutral": 0,
+    "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '화면 사용 기록'을(를) 신규 추가한다. 내용: 앱은 잠들기 전 화면 사용 시간을 수집하여 보여 줄 수 있어야 하며, 수집 전에 사용자가 사용 기록 접근 권한을 허용하도록 하여야 한다.",
+    "request_nl": "앱에 새 기능을 넣어 주세요. 잠들기 전 화면 사용 시간을 수집해 보여 주며 수집 전에 사용자가 접근 권한을 허용하게 하는 기능이 필요합니다.",
+    "sheet_type": "T3-추가",
+    "sheet_paths": "origin, same_id, trace",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_55",
+    "case_type": "T3",
+    "subtype": "add_with_value_change",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "origin": 9,
+      "trace": 1,
+      "same_value": 2
+    },
+    "trap_paths": {
+      "trace": 2
+    },
+    "n_impact": 12,
+    "n_traps": 2,
+    "n_neutral": 0,
+    "request_structured": "서버 요구사항 Req. 109 '이완 전 준비'을(를) 신규 추가한다. 내용: 서버는 이완 훈련 전에 볼 준비 안내 콘텐츠를 앱에 배포할 수 있어야 하며, 배포 전에 콘텐츠의 무결성을 점검하여야 한다. 또한 Req. 10 '수면 제한 요법 기본 시간'의 수면 제한 요법 기본 기상 시간을 7:00에서 8:00으로 변경한다.",
+    "request_nl": "서버에 새 기능을 넣어 주세요. 서버가 이완 훈련 전에 볼 준비 안내 콘텐츠를 배포하고 배포 전에 콘텐츠의 무결성을 점검하는 기능이 필요합니다. 그리고 수면 제한 요법 기본 시간 기능에서 수면 제한 요법 기본 기상 시간을 8:00으로 바꿔 주세요.",
+    "sheet_type": "T3-추가복합",
+    "sheet_paths": "origin, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_56",
+    "case_type": "T3",
+    "subtype": "add_with_value_change",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "origin": 7,
+      "trace": 1,
+      "same_value": 2
+    },
+    "trap_paths": {
+      "trace": 2
+    },
+    "n_impact": 10,
+    "n_traps": 2,
+    "n_neutral": 0,
+    "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '회기 전 설문'을(를) 신규 추가한다. 내용: 앱은 CBT 회기 시작 전에 짧은 설문에 응답하도록 하여야 하며, 응답 값이 정해진 선택지와 형식에 맞는지 검증하여야 한다. 또한 Req. 14 'CBT 알림 설정'의 CBT 회기 알림 시각을 18:00에서 19:00으로 변경한다.",
+    "request_nl": "앱에 새 기능을 넣어 주세요. CBT 회기 시작 전 짧은 설문에 답하게 하고 응답 값을 검사하는 기능이 필요합니다. 그리고 CBT 알림 설정 기능에서 CBT 회기 알림 시각을 19:00으로 바꿔 주세요.",
+    "sheet_type": "T3-추가복합",
+    "sheet_paths": "origin, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_57",
+    "case_type": "T3",
+    "subtype": "add_with_value_change",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "origin": 8,
+      "trace": 1,
+      "same_value": 3
+    },
+    "trap_paths": {
+      "trace": 2
+    },
+    "n_impact": 12,
+    "n_traps": 2,
+    "n_neutral": 0,
+    "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '보호자 메시지'을(를) 신규 추가한다. 내용: 앱은 사용자가 등록하고 수신에 동의한 보호자에게만 치료 관련 메시지를 받을 권한을 부여하여야 한다. 또한 Req. 8 '수면일기 기록'의 수면 제한 요법 기본 기상 시간을 7:00에서 7:30으로 변경한다.",
+    "request_nl": "앱에 새 기능을 넣어 주세요. 사용자가 등록하고 동의한 보호자에게만 치료 관련 메시지를 보내는 기능이 필요합니다. 그리고 수면일기 기록 기능에서 수면 제한 요법 기본 기상 시간을 7:30으로 바꿔 주세요.",
+    "sheet_type": "T3-추가복합",
+    "sheet_paths": "origin, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_58",
+    "case_type": "T3",
+    "subtype": "add_with_value_change",
+    "n_docs": 1,
+    "docs": [
+      "MDSR"
+    ],
+    "paths": {
+      "origin": 8,
+      "trace": 1,
+      "same_value": 3
+    },
+    "trap_paths": {
+      "trace": 2
+    },
+    "n_impact": 12,
+    "n_traps": 2,
+    "n_neutral": 0,
+    "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '의료진 메모 확인'을(를) 신규 추가한다. 내용: 사용자는 의료진이 남긴 메모를 앱에서 확인할 수 있어야 하며, 메모를 열람할 때마다 열람자와 열람 시각을 감사기록으로 생성하여야 한다. 또한 Req. 8 '수면일기 기록'의 수면 제한 요법 기본 취침 시간을 22:00에서 23:00으로 변경한다.",
+    "request_nl": "앱에 새 기능을 넣어 주세요. 사용자가 의료진이 남긴 메모를 확인하고 메모를 열람할 때 감사기록을 남기는 기능이 필요합니다. 그리고 수면일기 기록 기능에서 수면 제한 요법 기본 취침 시간을 23:00으로 바꿔 주세요.",
+    "sheet_type": "T3-추가복합",
+    "sheet_paths": "origin, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_59",
+    "case_type": "T3",
+    "subtype": "add_with_value_change",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "MDDR"
+    ],
+    "paths": {
+      "origin": 8,
+      "same_id": 5,
+      "trace": 1,
+      "same_value": 2
+    },
+    "trap_paths": {
+      "trace": 1
+    },
+    "n_impact": 16,
+    "n_traps": 1,
+    "n_neutral": 0,
+    "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '기록 내보내기'을(를) 신규 추가한다. 내용: 사용자는 자신의 수면 기록을 파일로 내보낼 수 있어야 하며, 내보내는 파일은 안전한 암호 방식으로 암호화되어야 한다. 또한 Req. 9 '알림 설정'의 CBT 회기 알림 시각을 18:00에서 20:00으로 변경한다.",
+    "request_nl": "앱에 새 기능을 넣어 주세요. 사용자가 자신의 수면 기록을 파일로 내보내고 내보내는 파일을 암호화하는 기능이 필요합니다. 그리고 알림 설정 기능에서 CBT 회기 알림 시각을 20:00으로 바꿔 주세요.",
+    "sheet_type": "T3-추가복합",
+    "sheet_paths": "origin, same_id, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_60",
+    "case_type": "T3",
+    "subtype": "add_with_value_change",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "MDDR"
+    ],
+    "paths": {
+      "origin": 8,
+      "same_id": 6,
+      "trace": 1,
+      "same_value": 4
+    },
+    "trap_paths": {
+      "trace": 2,
+      "same_value": 3
+    },
+    "n_impact": 19,
+    "n_traps": 5,
+    "n_neutral": 0,
+    "request_structured": "서버 요구사항 Req. 109 '알림 음량 설정'을(를) 신규 추가한다. 내용: 서버는 사용자가 정한 알림 음량 설정을 저장하여 여러 기기에서 같은 설정을 쓰도록 하여야 하며, 저장 전에 설정값의 허용 범위를 검증하여야 한다. 또한 Req. 105 '데이터 백업'의 백업 주기를 24시간에서 12시간으로 변경한다.",
+    "request_nl": "서버에 새 기능을 넣어 주세요. 사용자가 정한 알림 음량을 서버에 저장하고 설정값의 허용 범위를 검사하는 기능이 필요합니다. 그리고 데이터 백업 기능에서 백업 주기를 12시간으로 바꿔 주세요.",
+    "sheet_type": "T3-추가복합",
+    "sheet_paths": "origin, same_id, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_61",
+    "case_type": "T3",
+    "subtype": "add_with_value_change",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "MDDR"
+    ],
+    "paths": {
+      "origin": 9,
+      "same_id": 7,
+      "trace": 1,
+      "same_value": 4
+    },
+    "trap_paths": {
+      "trace": 2
+    },
+    "n_impact": 21,
+    "n_traps": 2,
+    "n_neutral": 0,
+    "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '어두운 화면 안내'을(를) 신규 추가한다. 내용: 앱은 취침 전 시간대에 어두운 화면 모드를 안내하여야 하며, 기기의 화면 설정을 읽지 못하면 미리 정한 기본 화면 상태로 표시하여야 한다. 또한 Req. 101 '의료진 대시보드 조회'의 동기화 주기를 60분에서 120분으로 변경한다.",
+    "request_nl": "앱에 새 기능을 넣어 주세요. 잠들기 전 어두운 화면 모드를 안내하고 화면 설정을 읽지 못하면 미리 정한 기본 화면으로 표시하는 기능이 필요합니다. 그리고 의료진 대시보드 조회 기능에서 동기화 주기를 120분으로 바꿔 주세요.",
+    "sheet_type": "T3-추가복합",
+    "sheet_paths": "origin, same_id, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_62",
+    "case_type": "T3",
+    "subtype": "add_with_value_change",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "origin": 8,
+      "same_id": 5,
+      "trace": 5,
+      "same_value": 7
+    },
+    "trap_paths": {
+      "trace": 5
+    },
+    "n_impact": 25,
+    "n_traps": 5,
+    "n_neutral": 0,
+    "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '위젯 표시'을(를) 신규 추가한다. 내용: 앱은 홈 화면 위젯으로 오늘의 수면 목표를 보여 줄 수 있어야 하며, 기기가 잠긴 상태에서는 위젯에 민감한 수면 기록을 표시하지 않아야 한다. 또한 Req. 1 '사용자 로그인'의 로그인 실패 허용 횟수를 5회에서 4회로 변경한다.",
+    "request_nl": "앱에 새 기능을 넣어 주세요. 홈 화면 위젯으로 오늘의 수면 목표를 보여 주되 기기가 잠긴 상태에서는 민감한 수면 기록을 가리는 기능이 필요합니다. 그리고 사용자 로그인 기능에서 로그인 실패 허용 횟수를 4회로 바꿔 주세요.",
+    "sheet_type": "T3-추가복합",
+    "sheet_paths": "origin, same_id, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_63",
+    "case_type": "T3",
+    "subtype": "add_with_value_change",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "origin": 8,
+      "same_id": 6,
+      "trace": 7,
+      "same_value": 6
+    },
+    "trap_paths": {
+      "trace": 4,
+      "same_value": 14
+    },
+    "n_impact": 27,
+    "n_traps": 18,
+    "n_neutral": 0,
+    "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '백업 안내 확인'을(를) 신규 추가한다. 내용: 사용자는 자신의 기록이 마지막으로 백업된 상태를 앱에서 확인할 수 있어야 하며, 백업이 완료되지 않았으면 앱이 이를 안내하여야 한다. 또한 Req. 2 '계정 잠금'의 계정 잠금 시간을 15분에서 20분으로 변경한다.",
+    "request_nl": "앱에 새 기능을 넣어 주세요. 사용자가 마지막 기록 백업 상태를 확인하고 백업이 끝나지 않았으면 안내하는 기능이 필요합니다. 그리고 계정 잠금 기능에서 계정 잠금 시간을 20분으로 바꿔 주세요.",
+    "sheet_type": "T3-추가복합",
+    "sheet_paths": "origin, same_id, trace, same_value",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_64",
+    "case_type": "T3",
+    "subtype": "add_with_attr_change",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "XXCS"
+    ],
+    "paths": {
+      "origin": 6,
+      "trace": 2,
+      "rule": 8
+    },
+    "trap_paths": {
+      "trace": 4,
+      "rule": 6
+    },
+    "n_impact": 16,
+    "n_traps": 10,
+    "n_neutral": 10,
+    "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '동기화 상태 표시'을(를) 신규 추가한다. 내용: 앱은 서버와의 동기화 상태를 화면에 표시하여야 하며, 전송 데이터의 무결성 확인에 실패하면 사용자에게 이를 알려야 한다. 또한 제품 사이버보안 속성 '제조사 원격 업데이트 기능'(remote_update)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+    "request_nl": "앱에 새 기능을 넣어 주세요. 서버와의 동기화 상태를 보여 주고 전송 데이터의 무결성 확인에 실패하면 이를 알리는 기능이 필요합니다. 그리고 수면코치를 제조사가 서버에서 소프트웨어 업데이트를 원격 배포하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+    "sheet_type": "T3-추가복합",
+    "sheet_paths": "origin, trace, rule",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_65",
+    "case_type": "T3",
+    "subtype": "add_with_attr_change",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "XXCS"
+    ],
+    "paths": {
+      "origin": 6,
+      "trace": 2,
+      "rule": 4
+    },
+    "trap_paths": {
+      "trace": 4,
+      "rule": 6
+    },
+    "n_impact": 12,
+    "n_traps": 10,
+    "n_neutral": 5,
+    "request_structured": "서버 요구사항 Req. 109 '오류 신고'을(를) 신규 추가한다. 내용: 서버는 사용자가 보낸 앱 오류 신고를 접수하여 보관하여야 하며, 신고 처리 중 오류가 나도 응답에 내부 시스템 정보를 포함하지 않아야 한다. 또한 제품 사이버보안 속성 '개인식별정보 저장'(stores_pii)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+    "request_nl": "서버에 새 기능을 넣어 주세요. 사용자가 앱 오류를 신고하면 서버가 접수하고 처리 중 오류가 나도 응답에 내부 정보를 담지 않는 기능이 필요합니다. 그리고 수면코치를 환자 이름·연락처 같은 개인식별정보를 서버에 저장하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+    "sheet_type": "T3-추가복합",
+    "sheet_paths": "origin, trace, rule",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_66",
+    "case_type": "T3",
+    "subtype": "add_with_attr_change",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "XXCS"
+    ],
+    "paths": {
+      "origin": 6,
+      "trace": 2,
+      "rule": 8
+    },
+    "trap_paths": {
+      "trace": 4,
+      "rule": 6
+    },
+    "n_impact": 16,
+    "n_traps": 10,
+    "n_neutral": 10,
+    "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '사용 안내 열람'을(를) 신규 추가한다. 내용: 앱은 로그인하기 전에 시스템 사용 안내 문구를 표시하여야 하며, 사용자가 안내를 확인한 뒤에 로그인할 수 있도록 하여야 한다. 또한 제품 사이버보안 속성 '독립형 소프트웨어 의료기기(SaMD)'(samd)을 true에서 false로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+    "request_nl": "앱에 새 기능을 넣어 주세요. 로그인하기 전에 시스템 사용 안내 문구를 보여 주고 사용자가 확인하게 하는 기능이 필요합니다. 그리고 수면코치를 전용 하드웨어 기기와 함께 공급하는 형태로 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+    "sheet_type": "T3-추가복합",
+    "sheet_paths": "origin, trace, rule",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_67",
+    "case_type": "T3",
+    "subtype": "add_with_attr_change",
+    "n_docs": 2,
+    "docs": [
+      "MDSR",
+      "XXCS"
+    ],
+    "paths": {
+      "origin": 6,
+      "trace": 2,
+      "rule": 4
+    },
+    "trap_paths": {
+      "trace": 4,
+      "rule": 6
+    },
+    "n_impact": 12,
+    "n_traps": 10,
+    "n_neutral": 5,
+    "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '목표 달성 표시'을(를) 신규 추가한다. 내용: 앱은 사용자가 수면 목표를 달성한 날을 표시하여야 하며, 달성 일시를 기기 시각 기준의 타임스탬프로 저장하여야 한다. 또한 제품 사이버보안 속성 '모바일 코드(외부 스크립트 콘텐츠) 실행'(mobile_code)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+    "request_nl": "앱에 새 기능을 넣어 주세요. 수면 목표를 달성한 날을 표시하고 달성 일시를 타임스탬프로 남기는 기능이 필요합니다. 그리고 수면코치를 교육 콘텐츠를 웹 기반 스크립트로 내려받아 실행하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+    "sheet_type": "T3-추가복합",
+    "sheet_paths": "origin, trace, rule",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_68",
+    "case_type": "T3",
+    "subtype": "add_with_attr_change",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "origin": 6,
+      "same_id": 4,
+      "trace": 2,
+      "rule": 4
+    },
+    "trap_paths": {
+      "trace": 4,
+      "rule": 6
+    },
+    "n_impact": 16,
+    "n_traps": 10,
+    "n_neutral": 5,
+    "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '연속 기록 표시'을(를) 신규 추가한다. 내용: 앱은 사용자가 수면일기를 연속으로 기록한 일수를 표시하여야 하며, 연속 일수는 각 기록에 저장된 타임스탬프를 기준으로 계산하여야 한다. 또한 제품 사이버보안 속성 '전자서명 기반 처방 기능'(e_signature)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+    "request_nl": "앱에 새 기능을 넣어 주세요. 수면일기를 연속으로 기록한 일수를 보여 주며 연속 일수는 각 기록의 타임스탬프로 계산하는 기능이 필요합니다. 그리고 수면코치를 의료진이 처방 변경에 전자서명을 하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+    "sheet_type": "T3-추가복합",
+    "sheet_paths": "origin, same_id, trace, rule",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_69",
+    "case_type": "T3",
+    "subtype": "add_with_attr_change",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "origin": 6,
+      "same_id": 4,
+      "trace": 2,
+      "rule": 8
+    },
+    "trap_paths": {
+      "trace": 4,
+      "rule": 6
+    },
+    "n_impact": 20,
+    "n_traps": 10,
+    "n_neutral": 10,
+    "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '휴일 일정 안내'을(를) 신규 추가한다. 내용: 사용자는 휴일 일정을 입력할 수 있어야 하며, 앱은 입력값의 형식과 범위를 검증한 뒤 해당 날짜의 취침·기상 안내를 조정하여야 한다. 또한 제품 사이버보안 속성 '제조사 원격 업데이트 기능'(remote_update)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+    "request_nl": "앱에 새 기능을 넣어 주세요. 사용자가 휴일 일정을 입력하면 그날의 취침·기상 안내를 조정하고 입력값을 검사하는 기능이 필요합니다. 그리고 수면코치를 제조사가 서버에서 소프트웨어 업데이트를 원격 배포하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+    "sheet_type": "T3-추가복합",
+    "sheet_paths": "origin, same_id, trace, rule",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_70",
+    "case_type": "T3",
+    "subtype": "add_with_attr_change",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "origin": 6,
+      "same_id": 4,
+      "trace": 2,
+      "rule": 4
+    },
+    "trap_paths": {
+      "trace": 4,
+      "rule": 6
+    },
+    "n_impact": 16,
+    "n_traps": 10,
+    "n_neutral": 5,
+    "request_structured": "서버 요구사항 Req. 109 '여행 일정 안내'을(를) 신규 추가한다. 내용: 서버는 사용자가 등록한 여행 일정에 맞춰 수면 안내를 보낼 수 있어야 하며, 시간대가 바뀌어도 기록의 타임스탬프를 같은 기준 시각으로 저장하여야 한다. 또한 제품 사이버보안 속성 '개인식별정보 저장'(stores_pii)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+    "request_nl": "서버에 새 기능을 넣어 주세요. 서버가 사용자의 여행 일정에 맞춰 안내를 보내고 시간대가 바뀌어도 기록의 타임스탬프 기준을 유지하는 기능이 필요합니다. 그리고 수면코치를 환자 이름·연락처 같은 개인식별정보를 서버에 저장하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+    "sheet_type": "T3-추가복합",
+    "sheet_paths": "origin, same_id, trace, rule",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_71",
+    "case_type": "T3",
+    "subtype": "add_with_attr_change",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "origin": 6,
+      "same_id": 4,
+      "trace": 2,
+      "rule": 8
+    },
+    "trap_paths": {
+      "trace": 2,
+      "rule": 6
+    },
+    "n_impact": 20,
+    "n_traps": 8,
+    "n_neutral": 10,
+    "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '동거인 방해 기록'을(를) 신규 추가한다. 내용: 사용자는 동거인 때문에 잠을 깬 경우를 기록할 수 있어야 하며, 타인 정보가 담길 수 있는 이 기록은 기기 내부에 암호화된 형태로 저장되어야 한다. 또한 제품 사이버보안 속성 '독립형 소프트웨어 의료기기(SaMD)'(samd)을 true에서 false로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+    "request_nl": "앱에 새 기능을 넣어 주세요. 동거인 때문에 잠을 깬 경우를 기록하고 타인 정보가 담길 수 있는 기록을 기기에 암호화하여 저장하는 기능이 필요합니다. 그리고 수면코치를 전용 하드웨어 기기와 함께 공급하는 형태로 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+    "sheet_type": "T3-추가복합",
+    "sheet_paths": "origin, same_id, trace, rule",
+    "seed": 20261102
+  },
+  {
+    "case_id": "T3_72",
+    "case_type": "T3",
+    "subtype": "add_with_attr_change",
+    "n_docs": 3,
+    "docs": [
+      "MDSR",
+      "MDDR",
+      "XXCS"
+    ],
+    "paths": {
+      "origin": 6,
+      "same_id": 4,
+      "trace": 2,
+      "rule": 4
+    },
+    "trap_paths": {
+      "trace": 4,
+      "rule": 6
+    },
+    "n_impact": 16,
+    "n_traps": 10,
+    "n_neutral": 5,
+    "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '침구 점검'을(를) 신규 추가한다. 내용: 앱은 베개와 매트리스 등 침구 상태에 관한 점검 문항에 응답하도록 하여야 하며, 응답 값이 정해진 선택지와 형식에 맞는지 검증하여야 한다. 또한 제품 사이버보안 속성 '모바일 코드(외부 스크립트 콘텐츠) 실행'(mobile_code)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+    "request_nl": "앱에 새 기능을 넣어 주세요. 베개와 매트리스 등 침구 점검 문항에 답하게 하고 응답 값을 검사하는 기능이 필요합니다. 그리고 수면코치를 교육 콘텐츠를 웹 기반 스크립트로 내려받아 실행하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+    "sheet_type": "T3-추가복합",
+    "sheet_paths": "origin, same_id, trace, rule",
+    "seed": 20261102
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "case_id": "T3_54",
+  "items": [
+    {
+      "site": "[MDSR | UC-03 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "UC-03",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "trace",
+      "reason": "같은 분류(UC)지만 새 기능과 무관"
+    },
+    {
+      "site": "[XXCS | UC-03 | 해당 요구사항]",
+      "doc": "XXCS",
+      "item": "UC-03",
+      "cell": "해당 요구사항",
+      "path": "trace",
+      "reason": "같은 분류(UC)지만 새 기능과 무관"
+    },
+    {
+      "site": "[MDSR | UC-04 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "UC-04",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "trace",
+      "reason": "같은 분류(UC)지만 새 기능과 무관"
+    },
+    {
+      "site": "[XXCS | UC-04 | 해당 요구사항]",
+      "doc": "XXCS",
+      "item": "UC-04",
+      "cell": "해당 요구사항",
+      "path": "trace",
+      "reason": "같은 분류(UC)지만 새 기능과 무관"
+    }
+  ]
+}

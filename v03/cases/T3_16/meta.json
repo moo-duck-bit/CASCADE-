@@ -1,0 +1,25 @@
+{
+  "case_id": "T3_16",
+  "case_type": "T3",
+  "subtype": "delete",
+  "n_docs": 2,
+  "docs": [
+    "MDSR",
+    "XXCS"
+  ],
+  "paths": {
+    "origin": 5,
+    "trace": 10
+  },
+  "trap_paths": {
+    "same_id": 2
+  },
+  "n_impact": 15,
+  "n_traps": 2,
+  "n_neutral": 0,
+  "request_structured": "Req. 106 '총 치료 회기 수' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.",
+  "request_nl": "총 치료 회기 수 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.",
+  "sheet_type": "T3-삭제",
+  "sheet_paths": "origin, trace",
+  "seed": 20261102
+}

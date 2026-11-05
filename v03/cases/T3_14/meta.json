@@ -1,0 +1,26 @@
+{
+  "case_id": "T3_14",
+  "case_type": "T3",
+  "subtype": "delete",
+  "n_docs": 2,
+  "docs": [
+    "MDSR",
+    "MDDR"
+  ],
+  "paths": {
+    "origin": 5,
+    "same_id": 3,
+    "trace": 5
+  },
+  "trap_paths": {
+    "same_id": 4
+  },
+  "n_impact": 13,
+  "n_traps": 4,
+  "n_neutral": 0,
+  "request_structured": "Req. 100 '서버 데이터 동기화' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.",
+  "request_nl": "서버 데이터 동기화 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.",
+  "sheet_type": "T3-삭제",
+  "sheet_paths": "origin, same_id, trace",
+  "seed": 20261102
+}

@@ -1,0 +1,21 @@
+{
+  "case_id": "T3_33",
+  "items": [
+    {
+      "site": "[MDSR | UC-01 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "UC-01",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "trace",
+      "reason": "같은 분류(UC)지만 새 기능과 무관"
+    },
+    {
+      "site": "[MDSR | UC-03 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "UC-03",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "trace",
+      "reason": "같은 분류(UC)지만 새 기능과 무관"
+    }
+  ]
+}

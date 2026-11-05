@@ -1,0 +1,23 @@
+{
+  "case_id": "T1_60",
+  "case_type": "T1",
+  "subtype": "value_change",
+  "n_docs": 1,
+  "docs": [
+    "MDSR"
+  ],
+  "paths": {
+    "origin": 2
+  },
+  "trap_paths": {
+    "same_value": 5
+  },
+  "n_impact": 2,
+  "n_traps": 5,
+  "n_neutral": 0,
+  "request_structured": "Req. 8 '수면일기 기록'의 수면일기 입력 기한을 24시간에서 12시간으로 변경한다.",
+  "request_nl": "수면일기 기록 기능에서 수면일기 입력 기한을 12시간으로 바꿔 주세요.",
+  "sheet_type": "T1",
+  "sheet_paths": "origin",
+  "seed": 20261102
+}

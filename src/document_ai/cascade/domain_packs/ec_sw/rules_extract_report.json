@@ -1,0 +1,61 @@
+{
+ "report": {
+  "n_chunks": 14,
+  "n_rules": 8,
+  "dropped": [
+   {
+    "attr": "access_function",
+    "reason": "코퍼스에 없는 조항 ID: ['첨부3-UC-08-예외']"
+   }
+  ],
+  "usage": {
+   "calls": 1,
+   "tokens_in": 1038,
+   "tokens_out": 761,
+   "seconds": 71.396315574646,
+   "format_retry": false,
+   "truncated": false,
+   "cost_usd": 0.0
+  }
+ },
+ "compare_to_curated": {
+  "sec_level": {
+   "precision": 0.8462,
+   "recall": 0.7857,
+   "n_curated": 14,
+   "n_extracted": 13
+  },
+  "exact_rules": 5,
+  "n_curated_rules": 9,
+  "n_extracted_rules": 8,
+  "missing": [
+   [
+    "IA-02",
+    false,
+    "N/A"
+   ],
+   [
+    "IA-08",
+    false,
+    "N/A"
+   ],
+   [
+    "UC-01",
+    false,
+    "N/A"
+   ]
+  ],
+  "extra": [
+   [
+    "IA-02",
+    true,
+    "N/A"
+   ],
+   [
+    "UC-01",
+    true,
+    "N/A"
+   ]
+  ]
+ }
+}

@@ -1,0 +1,22 @@
+{
+  "case_id": "T1_58",
+  "case_type": "T1",
+  "subtype": "value_change",
+  "n_docs": 1,
+  "docs": [
+    "MDSR"
+  ],
+  "paths": {
+    "origin": 2,
+    "same_value": 1
+  },
+  "trap_paths": {},
+  "n_impact": 3,
+  "n_traps": 0,
+  "n_neutral": 0,
+  "request_structured": "Req. 9 '알림 설정'의 CBT 회기 알림 시각을 18:00에서 17:00으로 변경한다.",
+  "request_nl": "알림 설정 기능에서 CBT 회기 알림 시각을 17:00으로 바꿔 주세요.",
+  "sheet_type": "T1",
+  "sheet_paths": "origin, same_value",
+  "seed": 20261102
+}

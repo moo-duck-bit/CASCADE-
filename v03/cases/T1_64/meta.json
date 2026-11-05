@@ -1,0 +1,23 @@
+{
+  "case_id": "T1_64",
+  "case_type": "T1",
+  "subtype": "value_change",
+  "n_docs": 1,
+  "docs": [
+    "MDSR"
+  ],
+  "paths": {
+    "origin": 2
+  },
+  "trap_paths": {
+    "same_value": 8
+  },
+  "n_impact": 2,
+  "n_traps": 8,
+  "n_neutral": 0,
+  "request_structured": "Req. 12 '수면 위생 교육'의 수면 위생 교육 기본 기간을 7일에서 5일로 변경한다.",
+  "request_nl": "수면 위생 교육 기능에서 수면 위생 교육 기본 기간을 5일로 바꿔 주세요.",
+  "sheet_type": "T1",
+  "sheet_paths": "origin",
+  "seed": 20261102
+}

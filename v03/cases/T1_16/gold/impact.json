@@ -1,0 +1,135 @@
+{
+  "case_id": "T1_16",
+  "case_type": "T1",
+  "subtype": "value_change",
+  "change": {
+    "fact": "F_PII_DELETION_DEADLINE",
+    "origin_req": "Req. 7",
+    "old_value": "365",
+    "new_value": "180"
+  },
+  "items": [
+    {
+      "site": "[MDSR | 3.4 일반적 제한 | 본문#p7]",
+      "doc": "MDSR",
+      "item": "3.4 일반적 제한",
+      "cell": "본문#p7",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_PII_DELETION_DEADLINE",
+      "old_surface": "365 일",
+      "new_value": "180일"
+    },
+    {
+      "site": "[MDSR | Req. 7 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 7",
+      "cell": "설명",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_PII_DELETION_DEADLINE",
+      "old_surface": "365일",
+      "new_value": "180일"
+    },
+    {
+      "site": "[MDSR | Req. 7 | 기준#p2]",
+      "doc": "MDSR",
+      "item": "Req. 7",
+      "cell": "기준#p2",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_PII_DELETION_DEADLINE",
+      "old_surface": "365 일",
+      "new_value": "180일"
+    },
+    {
+      "site": "[MDSR | Req. 107 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 107",
+      "cell": "설명",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_PII_DELETION_DEADLINE",
+      "old_surface": "1년",
+      "new_value": "180일"
+    },
+    {
+      "site": "[MDSR | Req. 107 | 기준#p2]",
+      "doc": "MDSR",
+      "item": "Req. 107",
+      "cell": "기준#p2",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_PII_DELETION_DEADLINE",
+      "old_surface": "365일",
+      "new_value": "180일"
+    },
+    {
+      "site": "[MDDR | Req. 7 | 설계#p2]",
+      "doc": "MDDR",
+      "item": "Req. 7",
+      "cell": "설계#p2",
+      "path": "same_id",
+      "op": "modify",
+      "fact": "F_PII_DELETION_DEADLINE",
+      "old_surface": "1년",
+      "new_value": "180일"
+    },
+    {
+      "site": "[MDDR | Req. 107 | 설계#p2]",
+      "doc": "MDDR",
+      "item": "Req. 107",
+      "cell": "설계#p2",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_PII_DELETION_DEADLINE",
+      "old_surface": "365일",
+      "new_value": "180일"
+    },
+    {
+      "site": "[XXCS | UC-05 | 시험방법#p2]",
+      "doc": "XXCS",
+      "item": "UC-05",
+      "cell": "시험방법#p2",
+      "path": "trace",
+      "op": "modify",
+      "fact": "F_PII_DELETION_DEADLINE",
+      "old_surface": "365 일",
+      "new_value": "180일"
+    },
+    {
+      "site": "[XXCS | UC-05 | 확인결과#p2]",
+      "doc": "XXCS",
+      "item": "UC-05",
+      "cell": "확인결과#p2",
+      "path": "trace",
+      "op": "modify",
+      "fact": "F_PII_DELETION_DEADLINE",
+      "old_surface": "1년",
+      "new_value": "180일"
+    },
+    {
+      "site": "[XXCS | DC-01 | 시험방법#p2]",
+      "doc": "XXCS",
+      "item": "DC-01",
+      "cell": "시험방법#p2",
+      "path": "trace",
+      "op": "modify",
+      "fact": "F_PII_DELETION_DEADLINE",
+      "old_surface": "365일",
+      "new_value": "180일"
+    },
+    {
+      "site": "[XXCS | DC-01 | 확인결과#p2]",
+      "doc": "XXCS",
+      "item": "DC-01",
+      "cell": "확인결과#p2",
+      "path": "trace",
+      "op": "modify",
+      "fact": "F_PII_DELETION_DEADLINE",
+      "old_surface": "365 일",
+      "new_value": "180일"
+    }
+  ],
+  "neutral": []
+}

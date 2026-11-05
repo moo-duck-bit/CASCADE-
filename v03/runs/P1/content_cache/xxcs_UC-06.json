@@ -1,0 +1,15 @@
+{
+  "시험방법": [
+    "시스템 내 타임스탬프가 {{F_SESSION_TIMEOUT}}을 기준으로 세션 종료 시점을 정확히 기록하는지 확인한다.",
+    "사용자 잠금 해제 안내가 {{F_UNLOCK_NOTIFICATION_TIME}} 전에 정확히 전달되는지 확인한다.",
+    "의료진 대시보드의 세션 종료 시간이 {{F_MEDICAL_STAFF_SESSION_TIMEOUT}}에 따라 정확히 반영되는지 확인한다.",
+    "의료진의 접속 기록이 {{F_MEDICAL_STAFF_ACCESS_LOG_AUDIT_INTERVAL}} 주기로 감사 로그에 기록되는지 확인한다."
+  ],
+  "확인결과": [
+    "타임스탬프 기반 세션 종료 시점이 {{F_SESSION_TIMEOUT}}에 정확히 반영됨을 확인함.",
+    "잠금 해제 안내가 {{F_UNLOCK_NOTIFICATION_TIME}} 전에 사용자에게 전달됨을 확인함.",
+    "의료진 대시보드의 세션 종료 시간이 {{F_MEDICAL_STAFF_SESSION_TIMEOUT}}에 따라 정확히 동작됨을 확인함.",
+    "의료진 접속 기록이 {{F_MEDICAL_STAFF_ACCESS_LOG_AUDIT_INTERVAL}} 주기로 감사 로그에 기록됨을 확인함."
+  ],
+  "비고": ""
+}

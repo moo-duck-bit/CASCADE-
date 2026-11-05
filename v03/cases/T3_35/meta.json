@@ -1,0 +1,24 @@
+{
+  "case_id": "T3_35",
+  "case_type": "T3",
+  "subtype": "add",
+  "n_docs": 1,
+  "docs": [
+    "MDSR"
+  ],
+  "paths": {
+    "origin": 6,
+    "trace": 1
+  },
+  "trap_paths": {
+    "trace": 2
+  },
+  "n_impact": 7,
+  "n_traps": 2,
+  "n_neutral": 0,
+  "request_structured": "서버 요구사항 Req. 109 '취침 루틴 점검'을(를) 신규 추가한다. 내용: 서버는 사용자가 제출한 취침 루틴 점검 결과를 보관하여야 하며, 의료진이 점검 결과를 수정하면 수정자와 수정 내용을 감사기록으로 생성하여야 한다.",
+  "request_nl": "서버에 새 기능을 넣어 주세요. 서버가 사용자의 취침 루틴 점검 결과를 보관하고 의료진이 결과를 수정하면 감사기록을 남기는 기능이 필요합니다.",
+  "sheet_type": "T3-추가",
+  "sheet_paths": "origin, trace",
+  "seed": 20261102
+}

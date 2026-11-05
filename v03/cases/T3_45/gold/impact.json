@@ -1,0 +1,139 @@
+{
+  "case_id": "T3_45",
+  "case_type": "T3",
+  "subtype": "add",
+  "change": {
+    "new_req": "Req. 109",
+    "component": "서버",
+    "title": "수면 효율 메모",
+    "related_secs": [
+      "UC-04"
+    ],
+    "draft": {
+      "설명": "서버는 의료진이 사용자의 수면 효율 결과에 메모를 작성할 수 있도록 하여야 하며, 메모를 작성하거나 수정할 때마다 감사기록을 생성하여야 한다.",
+      "목적": "의료진의 판단 근거를 기록으로 남기고, 메모 변경 이력을 추적할 수 있도록 하기 위함이다.",
+      "기준": [
+        "의료진이 작성한 메모가 해당 사용자의 수면 효율 결과와 함께 조회됨을 확인함",
+        "메모를 작성하거나 수정하면 작성자와 시각이 감사기록에 남음을 확인함"
+      ],
+      "설계": [
+        "• 의료진 대시보드의 수면 효율 화면에 메모 작성 기능을 추가하도록 구현한다.",
+        "• 서버는 메모를 사용자와 수면 효율 결과에 연결하여 저장한다.",
+        "• 메모의 작성과 수정 시 작성자, 시각, 변경 내용을 감사기록으로 생성한다."
+      ]
+    }
+  },
+  "items": [
+    {
+      "site": "[MDSR | Req. 109 | 번호]",
+      "doc": "MDSR",
+      "item": "Req. 109",
+      "cell": "번호",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 108 | 기준#p2]",
+      "new_value": "Req. 109"
+    },
+    {
+      "site": "[MDSR | Req. 109 | 제목]",
+      "doc": "MDSR",
+      "item": "Req. 109",
+      "cell": "제목",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 108 | 기준#p2]",
+      "new_value": "수면 효율 메모"
+    },
+    {
+      "site": "[MDSR | Req. 109 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 109",
+      "cell": "설명",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 108 | 기준#p2]",
+      "new_value": "서버는 의료진이 사용자의 수면 효율 결과에 메모를 작성할 수 있도록 하여야 하며, 메모를 작성하거나 수정할 때마다 감사기록을 생성하여야 한다."
+    },
+    {
+      "site": "[MDSR | Req. 109 | 목적]",
+      "doc": "MDSR",
+      "item": "Req. 109",
+      "cell": "목적",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 108 | 기준#p2]",
+      "new_value": "의료진의 판단 근거를 기록으로 남기고, 메모 변경 이력을 추적할 수 있도록 하기 위함이다."
+    },
+    {
+      "site": "[MDSR | Req. 109 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 109",
+      "cell": "기준#p1",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 108 | 기준#p2]",
+      "new_value": "의료진이 작성한 메모가 해당 사용자의 수면 효율 결과와 함께 조회됨을 확인함"
+    },
+    {
+      "site": "[MDSR | Req. 109 | 기준#p2]",
+      "doc": "MDSR",
+      "item": "Req. 109",
+      "cell": "기준#p2",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 108 | 기준#p2]",
+      "new_value": "메모를 작성하거나 수정하면 작성자와 시각이 감사기록에 남음을 확인함"
+    },
+    {
+      "site": "[MDDR | Req. 109 | 번호]",
+      "doc": "MDDR",
+      "item": "Req. 109",
+      "cell": "번호",
+      "path": "same_id",
+      "op": "insert",
+      "anchor": "[MDDR | Req. 108 | 설계#p3]",
+      "new_value": "Req. 109"
+    },
+    {
+      "site": "[MDDR | Req. 109 | 설계#p1]",
+      "doc": "MDDR",
+      "item": "Req. 109",
+      "cell": "설계#p1",
+      "path": "same_id",
+      "op": "insert",
+      "anchor": "[MDDR | Req. 108 | 설계#p3]",
+      "new_value": "• 의료진 대시보드의 수면 효율 화면에 메모 작성 기능을 추가하도록 구현한다."
+    },
+    {
+      "site": "[MDDR | Req. 109 | 설계#p2]",
+      "doc": "MDDR",
+      "item": "Req. 109",
+      "cell": "설계#p2",
+      "path": "same_id",
+      "op": "insert",
+      "anchor": "[MDDR | Req. 108 | 설계#p3]",
+      "new_value": "• 서버는 메모를 사용자와 수면 효율 결과에 연결하여 저장한다."
+    },
+    {
+      "site": "[MDDR | Req. 109 | 설계#p3]",
+      "doc": "MDDR",
+      "item": "Req. 109",
+      "cell": "설계#p3",
+      "path": "same_id",
+      "op": "insert",
+      "anchor": "[MDDR | Req. 108 | 설계#p3]",
+      "new_value": "• 메모의 작성과 수정 시 작성자, 시각, 변경 내용을 감사기록으로 생성한다."
+    },
+    {
+      "site": "[MDSR | UC-04 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "UC-04",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "trace",
+      "op": "modify",
+      "new_value": "Req. 2, Req. 6, Req. 18, Req. 101, Req. 102, Req. 103, Req. 109",
+      "note": "연결 Req 칸에 Req. 109 추가"
+    }
+  ],
+  "neutral": []
+}

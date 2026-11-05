@@ -1,0 +1,36 @@
+{
+  "case_id": "T1_64",
+  "case_type": "T1",
+  "subtype": "value_change",
+  "change": {
+    "fact": "F_DEFAULT_SLEEP_HYGIENE_DURATION",
+    "origin_req": "Req. 12",
+    "old_value": "7",
+    "new_value": "5"
+  },
+  "items": [
+    {
+      "site": "[MDSR | Req. 12 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 12",
+      "cell": "설명",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_DEFAULT_SLEEP_HYGIENE_DURATION",
+      "old_surface": "7일",
+      "new_value": "5일"
+    },
+    {
+      "site": "[MDSR | Req. 12 | 기준#p2]",
+      "doc": "MDSR",
+      "item": "Req. 12",
+      "cell": "기준#p2",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_DEFAULT_SLEEP_HYGIENE_DURATION",
+      "old_surface": "7 일",
+      "new_value": "5일"
+    }
+  ],
+  "neutral": []
+}

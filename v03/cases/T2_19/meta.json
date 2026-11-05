@@ -1,0 +1,24 @@
+{
+  "case_id": "T2_19",
+  "case_type": "T2",
+  "subtype": "rule_flip",
+  "n_docs": 2,
+  "docs": [
+    "MDDR",
+    "XXCS"
+  ],
+  "paths": {
+    "rule": 4
+  },
+  "trap_paths": {
+    "rule": 6
+  },
+  "n_impact": 4,
+  "n_traps": 6,
+  "n_neutral": 4,
+  "request_structured": "제품 사이버보안 속성 '전자서명 기반 처방 기능'(e_signature)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+  "request_nl": "수면코치를 의료진이 처방 변경에 전자서명을 하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+  "sheet_type": "T2",
+  "sheet_paths": "rule",
+  "seed": 20261102
+}

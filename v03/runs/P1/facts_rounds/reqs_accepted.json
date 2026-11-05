@@ -1,0 +1,242 @@
+{
+  "reqs": [
+    {
+      "id": "Req. 1",
+      "title": "사용자 로그인",
+      "security": true,
+      "uses": [
+        "F_LOGIN_FAILURE_LIMIT",
+        "F_PASSWORD_MIN_LENGTH",
+        "F_PASSWORD_COMPLEXITY"
+      ]
+    },
+    {
+      "id": "Req. 2",
+      "title": "계정 잠금",
+      "security": true,
+      "uses": [
+        "F_LOGIN_FAILURE_LIMIT",
+        "F_ACCOUNT_LOCK_DURATION",
+        "F_INACTIVE_ACCOUNT_LOCK_DURATION"
+      ]
+    },
+    {
+      "id": "Req. 3",
+      "title": "세션 관리",
+      "security": true,
+      "uses": [
+        "F_SESSION_TIMEOUT",
+        "F_MEDICAL_STAFF_SESSION_TIMEOUT",
+        "F_UNLOCK_NOTIFICATION_TIME"
+      ]
+    },
+    {
+      "id": "Req. 4",
+      "title": "전송 암호화",
+      "security": true,
+      "uses": [
+        "F_TRANSPORT_ENCRYPTION"
+      ]
+    },
+    {
+      "id": "Req. 5",
+      "title": "데이터 저장 암호화",
+      "security": true,
+      "uses": [
+        "F_STORAGE_ENCRYPTION"
+      ]
+    },
+    {
+      "id": "Req. 6",
+      "title": "감사로그 관리",
+      "security": true,
+      "uses": [
+        "F_AUDIT_LOG_RETENTION",
+        "F_MEDICAL_STAFF_ACCESS_LOG_RETENTION",
+        "F_MEDICAL_STAFF_ACCESS_LOG_AUDIT_INTERVAL"
+      ]
+    },
+    {
+      "id": "Req. 7",
+      "title": "데이터 백업",
+      "security": true,
+      "uses": [
+        "F_BACKUP_INTERVAL",
+        "F_PII_DELETION_DEADLINE"
+      ]
+    },
+    {
+      "id": "Req. 8",
+      "title": "수면일기 기록",
+      "security": false,
+      "uses": [
+        "F_SLEEP_DIARY_DEADLINE",
+        "F_DEFAULT_SLEEP_LIMIT",
+        "F_DEFAULT_WAKE_TIME"
+      ]
+    },
+    {
+      "id": "Req. 9",
+      "title": "알림 설정",
+      "security": false,
+      "uses": [
+        "F_NOTIFICATION_TIME",
+        "F_DEFAULT_CBT_SESSION_REMINDER"
+      ]
+    },
+    {
+      "id": "Req. 10",
+      "title": "수면 제한 요법 기본 시간",
+      "security": false,
+      "uses": [
+        "F_DEFAULT_SLEEP_LIMIT",
+        "F_DEFAULT_WAKE_TIME"
+      ]
+    },
+    {
+      "id": "Req. 11",
+      "title": "자극 조절 교육",
+      "security": false,
+      "uses": [
+        "F_DEFAULT_STIMULUS_CONTROL_DURATION"
+      ]
+    },
+    {
+      "id": "Req. 12",
+      "title": "수면 위생 교육",
+      "security": false,
+      "uses": [
+        "F_DEFAULT_SLEEP_HYGIENE_DURATION",
+        "F_SLEEP_HYGIENE_CONTENT_COUNT"
+      ]
+    },
+    {
+      "id": "Req. 13",
+      "title": "CBT 회기 기본 설정",
+      "security": false,
+      "uses": [
+        "F_DEFAULT_CBT_SESSION_DURATION",
+        "F_DEFAULT_CBT_SESSION_INTERVAL"
+      ]
+    },
+    {
+      "id": "Req. 14",
+      "title": "CBT 알림 설정",
+      "security": false,
+      "uses": [
+        "F_DEFAULT_CBT_SESSION_REMINDER",
+        "F_DEFAULT_CBT_SESSION_REMINDER_INTERVAL",
+        "F_DEFAULT_CBT_SESSION_REMINDER_SOUND"
+      ]
+    },
+    {
+      "id": "Req. 15",
+      "title": "이완 훈련",
+      "security": false,
+      "uses": [
+        "F_RELAXATION_SESSION_DURATION",
+        "F_DEFAULT_CBT_SESSION_REMINDER_COUNT"
+      ]
+    },
+    {
+      "id": "Req. 16",
+      "title": "수면 효율 리포트",
+      "security": false,
+      "uses": [
+        "F_SLEEP_EFFICIENCY_REPORT_INTERVAL"
+      ]
+    },
+    {
+      "id": "Req. 17",
+      "title": "의료진 메시지",
+      "security": false,
+      "uses": [
+        "F_MEDICAL_MESSAGE_EXPIRATION"
+      ]
+    },
+    {
+      "id": "Req. 18",
+      "title": "처방 변경 이력",
+      "security": false,
+      "uses": [
+        "F_PRESCRIPTION_CHANGE_LOG_RETENTION"
+      ]
+    },
+    {
+      "id": "Req. 100",
+      "title": "서버 데이터 동기화",
+      "security": false,
+      "uses": [
+        "F_SYNC_INTERVAL"
+      ]
+    },
+    {
+      "id": "Req. 101",
+      "title": "의료진 대시보드 조회",
+      "security": false,
+      "uses": [
+        "F_SYNC_INTERVAL"
+      ]
+    },
+    {
+      "id": "Req. 102",
+      "title": "전송 암호화",
+      "security": true,
+      "uses": [
+        "F_TRANSPORT_ENCRYPTION"
+      ]
+    },
+    {
+      "id": "Req. 103",
+      "title": "저장 암호화",
+      "security": true,
+      "uses": [
+        "F_STORAGE_ENCRYPTION"
+      ]
+    },
+    {
+      "id": "Req. 104",
+      "title": "감사로그 보관",
+      "security": true,
+      "uses": [
+        "F_AUDIT_LOG_RETENTION",
+        "F_MEDICAL_STAFF_ACCESS_LOG_RETENTION",
+        "F_MEDICAL_STAFF_ACCESS_LOG_AUDIT_INTERVAL"
+      ]
+    },
+    {
+      "id": "Req. 105",
+      "title": "데이터 백업",
+      "security": true,
+      "uses": [
+        "F_BACKUP_INTERVAL"
+      ]
+    },
+    {
+      "id": "Req. 106",
+      "title": "총 치료 회기 수",
+      "security": false,
+      "uses": [
+        "F_TREATMENT_SESSIONS"
+      ]
+    },
+    {
+      "id": "Req. 107",
+      "title": "데이터 보존·파기",
+      "security": false,
+      "uses": [
+        "F_DATA_PRESERVATION_DURATION",
+        "F_PII_DELETION_DEADLINE"
+      ]
+    },
+    {
+      "id": "Req. 108",
+      "title": "의료진 계정·권한 관리",
+      "security": false,
+      "uses": [
+        "F_MEDICAL_STAFF_ROLE_ASSIGNMENT",
+        "F_PASSWORD_CHANGE_INTERVAL"
+      ]
+    }
+  ]
+}

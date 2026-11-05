@@ -1,0 +1,25 @@
+{
+  "case_id": "T3_44",
+  "case_type": "T3",
+  "subtype": "add",
+  "n_docs": 2,
+  "docs": [
+    "MDSR",
+    "XXCS"
+  ],
+  "paths": {
+    "origin": 6,
+    "trace": 2
+  },
+  "trap_paths": {
+    "trace": 4
+  },
+  "n_impact": 8,
+  "n_traps": 4,
+  "n_neutral": 0,
+  "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '침실 환경 점검'을(를) 신규 추가한다. 내용: 사용자는 침실의 빛, 소음, 온도에 관한 점검 항목에 응답할 수 있어야 하며, 앱은 응답 값이 정해진 선택지와 형식에 맞는지 검증하여야 한다.",
+  "request_nl": "앱에 새 기능을 넣어 주세요. 사용자가 침실의 빛과 소음, 온도 점검 항목에 답하고 앱이 응답 값을 검사하는 기능이 필요합니다.",
+  "sheet_type": "T3-추가",
+  "sheet_paths": "origin, trace",
+  "seed": 20261102
+}

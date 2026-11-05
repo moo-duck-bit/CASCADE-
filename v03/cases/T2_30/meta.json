@@ -1,0 +1,25 @@
+{
+  "case_id": "T2_30",
+  "case_type": "T2",
+  "subtype": "rule_flip",
+  "n_docs": 3,
+  "docs": [
+    "MDSR",
+    "MDDR",
+    "XXCS"
+  ],
+  "paths": {
+    "rule": 12
+  },
+  "trap_paths": {
+    "rule": 6
+  },
+  "n_impact": 12,
+  "n_traps": 6,
+  "n_neutral": 15,
+  "request_structured": "제품 사이버보안 속성 '개인식별정보 저장'(stores_pii)을 false에서 true로, '독립형 소프트웨어 의료기기(SaMD)'(samd)을 true에서 false로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+  "request_nl": "수면코치를 환자 이름·연락처 같은 개인식별정보를 서버에 저장하도록 바꾸고, 전용 하드웨어 기기와 함께 공급하는 형태로 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+  "sheet_type": "T2",
+  "sheet_paths": "rule",
+  "seed": 20261102
+}

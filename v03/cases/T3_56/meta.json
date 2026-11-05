@@ -1,0 +1,25 @@
+{
+  "case_id": "T3_56",
+  "case_type": "T3",
+  "subtype": "add_with_value_change",
+  "n_docs": 1,
+  "docs": [
+    "MDSR"
+  ],
+  "paths": {
+    "origin": 7,
+    "trace": 1,
+    "same_value": 2
+  },
+  "trap_paths": {
+    "trace": 2
+  },
+  "n_impact": 10,
+  "n_traps": 2,
+  "n_neutral": 0,
+  "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '회기 전 설문'을(를) 신규 추가한다. 내용: 앱은 CBT 회기 시작 전에 짧은 설문에 응답하도록 하여야 하며, 응답 값이 정해진 선택지와 형식에 맞는지 검증하여야 한다. 또한 Req. 14 'CBT 알림 설정'의 CBT 회기 알림 시각을 18:00에서 19:00으로 변경한다.",
+  "request_nl": "앱에 새 기능을 넣어 주세요. CBT 회기 시작 전 짧은 설문에 답하게 하고 응답 값을 검사하는 기능이 필요합니다. 그리고 CBT 알림 설정 기능에서 CBT 회기 알림 시각을 19:00으로 바꿔 주세요.",
+  "sheet_type": "T3-추가복합",
+  "sheet_paths": "origin, trace, same_value",
+  "seed": 20261102
+}

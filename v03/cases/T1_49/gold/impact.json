@@ -1,0 +1,69 @@
+{
+  "case_id": "T1_49",
+  "case_type": "T1",
+  "subtype": "value_change",
+  "change": {
+    "fact": "F_BACKUP_INTERVAL",
+    "origin_req": "Req. 105",
+    "old_value": "24",
+    "new_value": "12"
+  },
+  "items": [
+    {
+      "site": "[MDSR | 3.4 일반적 제한 | 본문#p7]",
+      "doc": "MDSR",
+      "item": "3.4 일반적 제한",
+      "cell": "본문#p7",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_BACKUP_INTERVAL",
+      "old_surface": "24 시간",
+      "new_value": "12시간"
+    },
+    {
+      "site": "[MDSR | Req. 7 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 7",
+      "cell": "설명",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_BACKUP_INTERVAL",
+      "old_surface": "24시간",
+      "new_value": "12시간"
+    },
+    {
+      "site": "[MDSR | Req. 7 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 7",
+      "cell": "기준#p1",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_BACKUP_INTERVAL",
+      "old_surface": "24 시간",
+      "new_value": "12시간"
+    },
+    {
+      "site": "[MDSR | Req. 105 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 105",
+      "cell": "설명",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_BACKUP_INTERVAL",
+      "old_surface": "매일",
+      "new_value": "12시간"
+    },
+    {
+      "site": "[MDSR | Req. 105 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 105",
+      "cell": "기준#p1",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_BACKUP_INTERVAL",
+      "old_surface": "24시간",
+      "new_value": "12시간"
+    }
+  ],
+  "neutral": []
+}

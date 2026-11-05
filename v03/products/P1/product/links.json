@@ -1,0 +1,687 @@
+{
+  "links": [
+    {
+      "req": "Req. 101",
+      "sec": "IA-01",
+      "relevant": true
+    },
+    {
+      "req": "Req. 8",
+      "sec": "IA-01",
+      "relevant": false
+    },
+    {
+      "req": "Req. 2",
+      "sec": "IA-02",
+      "relevant": true
+    },
+    {
+      "req": "Req. 108",
+      "sec": "IA-02",
+      "relevant": true
+    },
+    {
+      "req": "Req. 9",
+      "sec": "IA-02",
+      "relevant": false
+    },
+    {
+      "req": "Req. 100",
+      "sec": "IA-02",
+      "relevant": false
+    },
+    {
+      "req": "Req. 18",
+      "sec": "IA-03",
+      "relevant": true
+    },
+    {
+      "req": "Req. 10",
+      "sec": "IA-03",
+      "relevant": false
+    },
+    {
+      "req": "Req. 108",
+      "sec": "IA-04",
+      "relevant": true
+    },
+    {
+      "req": "Req. 2",
+      "sec": "IA-04",
+      "relevant": true
+    },
+    {
+      "req": "Req. 11",
+      "sec": "IA-04",
+      "relevant": false
+    },
+    {
+      "req": "Req. 10",
+      "sec": "IA-04",
+      "relevant": false
+    },
+    {
+      "req": "Req. 1",
+      "sec": "IA-05",
+      "relevant": true
+    },
+    {
+      "req": "Req. 108",
+      "sec": "IA-05",
+      "relevant": true
+    },
+    {
+      "req": "Req. 12",
+      "sec": "IA-05",
+      "relevant": false
+    },
+    {
+      "req": "Req. 102",
+      "sec": "IA-05",
+      "relevant": false
+    },
+    {
+      "req": "Req. 2",
+      "sec": "IA-06",
+      "relevant": true
+    },
+    {
+      "req": "Req. 3",
+      "sec": "IA-06",
+      "relevant": true
+    },
+    {
+      "req": "Req. 13",
+      "sec": "IA-06",
+      "relevant": false
+    },
+    {
+      "req": "Req. 106",
+      "sec": "IA-06",
+      "relevant": false
+    },
+    {
+      "req": "Req. 1",
+      "sec": "IA-07",
+      "relevant": true
+    },
+    {
+      "req": "Req. 2",
+      "sec": "IA-07",
+      "relevant": true
+    },
+    {
+      "req": "Req. 14",
+      "sec": "IA-07",
+      "relevant": false
+    },
+    {
+      "req": "Req. 108",
+      "sec": "IA-07",
+      "relevant": false
+    },
+    {
+      "req": "Req. 18",
+      "sec": "IA-08",
+      "relevant": true
+    },
+    {
+      "req": "Req. 15",
+      "sec": "IA-08",
+      "relevant": false
+    },
+    {
+      "req": "Req. 108",
+      "sec": "UC-01",
+      "relevant": true
+    },
+    {
+      "req": "Req. 101",
+      "sec": "UC-01",
+      "relevant": true
+    },
+    {
+      "req": "Req. 16",
+      "sec": "UC-01",
+      "relevant": false
+    },
+    {
+      "req": "Req. 102",
+      "sec": "UC-01",
+      "relevant": false
+    },
+    {
+      "req": "Req. 100",
+      "sec": "UC-02",
+      "relevant": true
+    },
+    {
+      "req": "Req. 17",
+      "sec": "UC-02",
+      "relevant": false
+    },
+    {
+      "req": "Req. 3",
+      "sec": "UC-03",
+      "relevant": true
+    },
+    {
+      "req": "Req. 101",
+      "sec": "UC-03",
+      "relevant": true
+    },
+    {
+      "req": "Req. 100",
+      "sec": "UC-03",
+      "relevant": false
+    },
+    {
+      "req": "Req. 102",
+      "sec": "UC-03",
+      "relevant": false
+    },
+    {
+      "req": "Req. 6",
+      "sec": "UC-04",
+      "relevant": true
+    },
+    {
+      "req": "Req. 2",
+      "sec": "UC-04",
+      "relevant": true
+    },
+    {
+      "req": "Req. 18",
+      "sec": "UC-04",
+      "relevant": true
+    },
+    {
+      "req": "Req. 101",
+      "sec": "UC-04",
+      "relevant": false
+    },
+    {
+      "req": "Req. 102",
+      "sec": "UC-04",
+      "relevant": false
+    },
+    {
+      "req": "Req. 103",
+      "sec": "UC-04",
+      "relevant": false
+    },
+    {
+      "req": "Req. 6",
+      "sec": "UC-05",
+      "relevant": true
+    },
+    {
+      "req": "Req. 7",
+      "sec": "UC-05",
+      "relevant": true
+    },
+    {
+      "req": "Req. 106",
+      "sec": "UC-05",
+      "relevant": false
+    },
+    {
+      "req": "Req. 108",
+      "sec": "UC-05",
+      "relevant": false
+    },
+    {
+      "req": "Req. 3",
+      "sec": "UC-06",
+      "relevant": true
+    },
+    {
+      "req": "Req. 6",
+      "sec": "UC-06",
+      "relevant": true
+    },
+    {
+      "req": "Req. 8",
+      "sec": "UC-06",
+      "relevant": false
+    },
+    {
+      "req": "Req. 106",
+      "sec": "UC-06",
+      "relevant": false
+    },
+    {
+      "req": "Req. 18",
+      "sec": "UC-07",
+      "relevant": true
+    },
+    {
+      "req": "Req. 9",
+      "sec": "UC-07",
+      "relevant": false
+    },
+    {
+      "req": "Req. 4",
+      "sec": "SI-01",
+      "relevant": true
+    },
+    {
+      "req": "Req. 5",
+      "sec": "SI-01",
+      "relevant": true
+    },
+    {
+      "req": "Req. 7",
+      "sec": "SI-01",
+      "relevant": true
+    },
+    {
+      "req": "Req. 100",
+      "sec": "SI-01",
+      "relevant": true
+    },
+    {
+      "req": "Req. 10",
+      "sec": "SI-01",
+      "relevant": false
+    },
+    {
+      "req": "Req. 1",
+      "sec": "SI-01",
+      "relevant": false
+    },
+    {
+      "req": "Req. 3",
+      "sec": "SI-01",
+      "relevant": false
+    },
+    {
+      "req": "Req. 108",
+      "sec": "SI-01",
+      "relevant": false
+    },
+    {
+      "req": "Req. 101",
+      "sec": "SI-02",
+      "relevant": true
+    },
+    {
+      "req": "Req. 11",
+      "sec": "SI-02",
+      "relevant": false
+    },
+    {
+      "req": "Req. 18",
+      "sec": "SI-03",
+      "relevant": true
+    },
+    {
+      "req": "Req. 12",
+      "sec": "SI-03",
+      "relevant": false
+    },
+    {
+      "req": "Req. 18",
+      "sec": "SI-04",
+      "relevant": true
+    },
+    {
+      "req": "Req. 13",
+      "sec": "SI-04",
+      "relevant": false
+    },
+    {
+      "req": "Req. 1",
+      "sec": "SI-05",
+      "relevant": true
+    },
+    {
+      "req": "Req. 8",
+      "sec": "SI-05",
+      "relevant": true
+    },
+    {
+      "req": "Req. 106",
+      "sec": "SI-05",
+      "relevant": true
+    },
+    {
+      "req": "Req. 14",
+      "sec": "SI-05",
+      "relevant": false
+    },
+    {
+      "req": "Req. 10",
+      "sec": "SI-05",
+      "relevant": false
+    },
+    {
+      "req": "Req. 13",
+      "sec": "SI-05",
+      "relevant": false
+    },
+    {
+      "req": "Req. 108",
+      "sec": "SI-06",
+      "relevant": true
+    },
+    {
+      "req": "Req. 15",
+      "sec": "SI-06",
+      "relevant": false
+    },
+    {
+      "req": "Req. 18",
+      "sec": "SI-07",
+      "relevant": true
+    },
+    {
+      "req": "Req. 16",
+      "sec": "SI-07",
+      "relevant": false
+    },
+    {
+      "req": "Req. 100",
+      "sec": "SI-08",
+      "relevant": true
+    },
+    {
+      "req": "Req. 17",
+      "sec": "SI-08",
+      "relevant": false
+    },
+    {
+      "req": "Req. 107",
+      "sec": "SI-09",
+      "relevant": true
+    },
+    {
+      "req": "Req. 100",
+      "sec": "SI-09",
+      "relevant": false
+    },
+    {
+      "req": "Req. 107",
+      "sec": "SI-10",
+      "relevant": true
+    },
+    {
+      "req": "Req. 101",
+      "sec": "SI-10",
+      "relevant": false
+    },
+    {
+      "req": "Req. 100",
+      "sec": "SI-11",
+      "relevant": true
+    },
+    {
+      "req": "Req. 106",
+      "sec": "SI-11",
+      "relevant": false
+    },
+    {
+      "req": "Req. 5",
+      "sec": "DC-01",
+      "relevant": true
+    },
+    {
+      "req": "Req. 7",
+      "sec": "DC-01",
+      "relevant": true
+    },
+    {
+      "req": "Req. 8",
+      "sec": "DC-01",
+      "relevant": false
+    },
+    {
+      "req": "Req. 106",
+      "sec": "DC-01",
+      "relevant": false
+    },
+    {
+      "req": "Req. 107",
+      "sec": "DC-02",
+      "relevant": true
+    },
+    {
+      "req": "Req. 9",
+      "sec": "DC-02",
+      "relevant": false
+    },
+    {
+      "req": "Req. 4",
+      "sec": "DC-03",
+      "relevant": true
+    },
+    {
+      "req": "Req. 102",
+      "sec": "DC-03",
+      "relevant": true
+    },
+    {
+      "req": "Req. 10",
+      "sec": "DC-03",
+      "relevant": false
+    },
+    {
+      "req": "Req. 103",
+      "sec": "DC-03",
+      "relevant": false
+    },
+    {
+      "req": "Req. 6",
+      "sec": "TRE-01",
+      "relevant": true
+    },
+    {
+      "req": "Req. 18",
+      "sec": "TRE-01",
+      "relevant": true
+    },
+    {
+      "req": "Req. 11",
+      "sec": "TRE-01",
+      "relevant": false
+    },
+    {
+      "req": "Req. 102",
+      "sec": "TRE-01",
+      "relevant": false
+    },
+    {
+      "req": "Req. 100",
+      "sec": "RA-01",
+      "relevant": true
+    },
+    {
+      "req": "Req. 12",
+      "sec": "RA-01",
+      "relevant": false
+    },
+    {
+      "req": "Req. 7",
+      "sec": "RA-02",
+      "relevant": true
+    },
+    {
+      "req": "Req. 100",
+      "sec": "RA-02",
+      "relevant": true
+    },
+    {
+      "req": "Req. 13",
+      "sec": "RA-02",
+      "relevant": false
+    },
+    {
+      "req": "Req. 102",
+      "sec": "RA-02",
+      "relevant": false
+    },
+    {
+      "req": "Req. 107",
+      "sec": "RA-03",
+      "relevant": true
+    },
+    {
+      "req": "Req. 14",
+      "sec": "RA-03",
+      "relevant": false
+    },
+    {
+      "req": "Req. 108",
+      "sec": "RA-04",
+      "relevant": true
+    },
+    {
+      "req": "Req. 15",
+      "sec": "RA-04",
+      "relevant": false
+    }
+  ],
+  "rules": [
+    {
+      "id": "R01",
+      "if": {
+        "attr": "password_auth",
+        "equals": true
+      },
+      "then": {
+        "secs": [
+          "IA-05"
+        ],
+        "applicability": "적용"
+      },
+      "source": "첨부3 IA-05 적용 예외: 비밀번호 인증을 사용하지 않는 기기"
+    },
+    {
+      "id": "R02",
+      "if": {
+        "attr": "password_auth",
+        "equals": true
+      },
+      "then": {
+        "secs": [
+          "IA-06"
+        ],
+        "applicability": "적용"
+      },
+      "source": "첨부3 IA-06 적용 예외: 비밀번호 등 입력형 인증정보를 사용하지 않는 기기"
+    },
+    {
+      "id": "R03",
+      "if": {
+        "attr": "stores_pii",
+        "equals": false
+      },
+      "then": {
+        "secs": [
+          "DC-02"
+        ],
+        "applicability": "N/A"
+      },
+      "source": "첨부3 DC-02 적용 예외: 보건의료정보를 저장하지 않는 기기"
+    },
+    {
+      "id": "R04",
+      "if": {
+        "attr": "session_termination",
+        "equals": true
+      },
+      "then": {
+        "secs": [
+          "UC-03"
+        ],
+        "applicability": "적용"
+      },
+      "source": "첨부3 UC-03 적용 예외: 세션 종료 기능이 없는 기기"
+    },
+    {
+      "id": "R05",
+      "if": {
+        "attr": "samd",
+        "equals": true
+      },
+      "then": {
+        "secs": [
+          "SI-10"
+        ],
+        "applicability": "N/A"
+      },
+      "source": "첨부3 SI-10 적용 예외: 물리적 하드웨어가 없는 소프트웨어 기반 의료기기"
+    },
+    {
+      "id": "R06",
+      "if": {
+        "attr": "samd",
+        "equals": true
+      },
+      "then": {
+        "secs": [
+          "SI-11"
+        ],
+        "applicability": "N/A"
+      },
+      "source": "첨부3 SI-11 적용 예외: 부트 프로세스를 갖지 않는 소프트웨어 기반 의료기기"
+    },
+    {
+      "id": "R07",
+      "if": {
+        "attr": "mobile_code",
+        "equals": false
+      },
+      "then": {
+        "secs": [
+          "UC-02"
+        ],
+        "applicability": "N/A"
+      },
+      "source": "첨부3 UC-02 적용 예외: 모바일 코드를 사용하지 않는 기기"
+    },
+    {
+      "id": "R08",
+      "if": {
+        "attr": "e_signature",
+        "equals": false
+      },
+      "then": {
+        "secs": [
+          "UC-07"
+        ],
+        "applicability": "N/A"
+      },
+      "source": "첨부3 UC-07 적용 예외: 부인 방지가 필요한 전자서명·거래 기능이 없는 기기"
+    },
+    {
+      "id": "R09",
+      "if": {
+        "attr": "remote_update",
+        "equals": false
+      },
+      "then": {
+        "secs": [
+          "SI-08"
+        ],
+        "applicability": "N/A"
+      },
+      "source": "첨부3 SI-08 적용 예외: 제조사 원격 업데이트 기능이 없는 기기"
+    },
+    {
+      "id": "R10",
+      "if": {
+        "attr": "remote_update",
+        "equals": false
+      },
+      "then": {
+        "secs": [
+          "SI-09"
+        ],
+        "applicability": "N/A"
+      },
+      "source": "첨부3 SI-09 적용 예외: 업데이트 파일을 배포하지 않는 기기"
+    }
+  ],
+  "overlink_note": "relevant=false 비율 0.5는 실제 문서 판정 결과가 없어 정한 값(미보정)"
+}

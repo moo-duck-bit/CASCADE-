@@ -1,0 +1,32 @@
+{
+  "case_id": "T1_15",
+  "items": [
+    {
+      "site": "[MDDR | Req. 6 | 설계#p2]",
+      "doc": "MDDR",
+      "item": "Req. 6",
+      "cell": "설계#p2",
+      "path": "same_value",
+      "fact": "F_MEDICAL_STAFF_ACCESS_LOG_RETENTION",
+      "reason": "같은 값(180 일)이지만 다른 사실"
+    },
+    {
+      "site": "[MDDR | Req. 104 | 설계#p2]",
+      "doc": "MDDR",
+      "item": "Req. 104",
+      "cell": "설계#p2",
+      "path": "same_value",
+      "fact": "F_MEDICAL_STAFF_ACCESS_LOG_RETENTION",
+      "reason": "같은 값(6개월)이지만 다른 사실"
+    },
+    {
+      "site": "[XXCS | TRE-01 | 확인결과#p3]",
+      "doc": "XXCS",
+      "item": "TRE-01",
+      "cell": "확인결과#p3",
+      "path": "same_value",
+      "fact": "F_MEDICAL_STAFF_ACCESS_LOG_RETENTION",
+      "reason": "같은 값(6개월)이지만 다른 사실"
+    }
+  ]
+}

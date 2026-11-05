@@ -1,0 +1,29 @@
+{
+  "case_id": "T3_70",
+  "case_type": "T3",
+  "subtype": "add_with_attr_change",
+  "n_docs": 3,
+  "docs": [
+    "MDSR",
+    "MDDR",
+    "XXCS"
+  ],
+  "paths": {
+    "origin": 6,
+    "same_id": 4,
+    "trace": 2,
+    "rule": 4
+  },
+  "trap_paths": {
+    "trace": 4,
+    "rule": 6
+  },
+  "n_impact": 16,
+  "n_traps": 10,
+  "n_neutral": 5,
+  "request_structured": "서버 요구사항 Req. 109 '여행 일정 안내'을(를) 신규 추가한다. 내용: 서버는 사용자가 등록한 여행 일정에 맞춰 수면 안내를 보낼 수 있어야 하며, 시간대가 바뀌어도 기록의 타임스탬프를 같은 기준 시각으로 저장하여야 한다. 또한 제품 사이버보안 속성 '개인식별정보 저장'(stores_pii)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+  "request_nl": "서버에 새 기능을 넣어 주세요. 서버가 사용자의 여행 일정에 맞춰 안내를 보내고 시간대가 바뀌어도 기록의 타임스탬프 기준을 유지하는 기능이 필요합니다. 그리고 수면코치를 환자 이름·연락처 같은 개인식별정보를 서버에 저장하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+  "sheet_type": "T3-추가복합",
+  "sheet_paths": "origin, same_id, trace, rule",
+  "seed": 20261102
+}

@@ -1,0 +1,63 @@
+{
+  "n_cases": 180,
+  "by_type": {
+    "T1": 72,
+    "T2": 36,
+    "T3": 72
+  },
+  "n_docs_by_type": {
+    "T1": {
+      "1": 24,
+      "2": 26,
+      "3": 22
+    },
+    "T2": {
+      "1": 12,
+      "2": 12,
+      "3": 12
+    },
+    "T3": {
+      "1": 24,
+      "2": 24,
+      "3": 24
+    }
+  },
+  "t3_add_subtypes": {
+    "add": 24,
+    "add_with_value_change": 9,
+    "add_with_attr_change": 9
+  },
+  "t1_cases_with_2plus_trace_rows": 36,
+  "same_value_gold_cells": 208,
+  "path_labels_by_type": {
+    "T1": [
+      "origin",
+      "same_id",
+      "same_value",
+      "trace"
+    ],
+    "T2": [
+      "rule"
+    ],
+    "T3": [
+      "origin",
+      "rule",
+      "same_id",
+      "same_value",
+      "trace"
+    ]
+  },
+  "errors": {},
+  "document_ai_imports": [],
+  "gate": {
+    "counts_72_36_72": true,
+    "no_errors": true,
+    "no_document_ai_import": true,
+    "n_docs_balance_within_10pp": true,
+    "t1_trace_cases_ge_half": true,
+    "same_value_cells_ge_105": true,
+    "compound_9_value_9_attr": true,
+    "all_paths_present": true
+  },
+  "passed": true
+}

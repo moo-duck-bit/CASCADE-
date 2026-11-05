@@ -1,0 +1,8 @@
+{
+  "설명": "시스템은 사용자 및 의료진의 모든 접근 및 조작 행위에 대한 감사로그를 생성하고, {{F_AUDIT_LOG_RETENTION}} 동안 보관하여야 하며, 의료진의 접속 기록은 {{F_MEDICAL_STAFF_ACCESS_LOG_RETENTION}} 동안 보관하고 {{F_MEDICAL_STAFF_ACCESS_LOG_AUDIT_INTERVAL}}마다 검토하여야 한다.",
+  "목적": "시스템 내 보안 이벤트와 의료진의 접근 행위를 추적하고 모니터링하여 보안 및 규정 준수를 보장한다.",
+  "기준": [
+    "감사로그와 의료진 접속 기록의 보관 기간이 각각 {{F_AUDIT_LOG_RETENTION}} 및 {{F_MEDICAL_STAFF_ACCESS_LOG_RETENTION}} 이상 유지됨을 확인함",
+    "의료진 접속 기록의 감사 주기가 {{F_MEDICAL_STAFF_ACCESS_LOG_AUDIT_INTERVAL}}마다 수행됨을 확인함"
+  ]
+}

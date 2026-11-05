@@ -1,0 +1,28 @@
+{
+  "case_id": "T3_60",
+  "case_type": "T3",
+  "subtype": "add_with_value_change",
+  "n_docs": 2,
+  "docs": [
+    "MDSR",
+    "MDDR"
+  ],
+  "paths": {
+    "origin": 8,
+    "same_id": 6,
+    "trace": 1,
+    "same_value": 4
+  },
+  "trap_paths": {
+    "trace": 2,
+    "same_value": 3
+  },
+  "n_impact": 19,
+  "n_traps": 5,
+  "n_neutral": 0,
+  "request_structured": "서버 요구사항 Req. 109 '알림 음량 설정'을(를) 신규 추가한다. 내용: 서버는 사용자가 정한 알림 음량 설정을 저장하여 여러 기기에서 같은 설정을 쓰도록 하여야 하며, 저장 전에 설정값의 허용 범위를 검증하여야 한다. 또한 Req. 105 '데이터 백업'의 백업 주기를 24시간에서 12시간으로 변경한다.",
+  "request_nl": "서버에 새 기능을 넣어 주세요. 사용자가 정한 알림 음량을 서버에 저장하고 설정값의 허용 범위를 검사하는 기능이 필요합니다. 그리고 데이터 백업 기능에서 백업 주기를 12시간으로 바꿔 주세요.",
+  "sheet_type": "T3-추가복합",
+  "sheet_paths": "origin, same_id, trace, same_value",
+  "seed": 20261102
+}

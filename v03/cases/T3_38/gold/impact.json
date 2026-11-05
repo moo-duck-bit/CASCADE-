@@ -1,0 +1,99 @@
+{
+  "case_id": "T3_38",
+  "case_type": "T3",
+  "subtype": "add",
+  "change": {
+    "new_req": "Req. 19",
+    "component": "앱",
+    "title": "오프라인 기록 보관",
+    "related_secs": [
+      "SI-01"
+    ],
+    "draft": {
+      "설명": "앱은 네트워크에 연결되지 않은 동안 작성된 기록을 기기에 보관하여야 하며, 연결이 회복되면 기록을 서버로 전송하고 전송 데이터의 무결성을 확인하여야 한다.",
+      "목적": "네트워크 상태와 관계없이 기록이 빠지지 않도록 하고, 늦게 전송된 기록이 변조되지 않았음을 보장하기 위함이다.",
+      "기준": [
+        "네트워크가 없을 때 작성한 기록이 연결 회복 후 서버에 반영됨을 확인함",
+        "전송 중 내용이 바뀐 기록은 무결성 검증에 실패하여 서버에 반영되지 않음을 확인함"
+      ],
+      "설계": [
+        "• 네트워크 연결이 없으면 작성된 기록을 전송 대기 목록에 넣어 기기에 보관하도록 구현한다.",
+        "• 연결이 회복되면 대기 목록의 기록을 순서대로 서버에 전송한다.",
+        "• 전송하는 기록마다 무결성 검증 값을 함께 보내고, 서버가 검증에 실패한 기록은 다시 전송하도록 한다."
+      ]
+    }
+  },
+  "items": [
+    {
+      "site": "[MDSR | Req. 19 | 번호]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "번호",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "Req. 19"
+    },
+    {
+      "site": "[MDSR | Req. 19 | 제목]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "제목",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "오프라인 기록 보관"
+    },
+    {
+      "site": "[MDSR | Req. 19 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "설명",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "앱은 네트워크에 연결되지 않은 동안 작성된 기록을 기기에 보관하여야 하며, 연결이 회복되면 기록을 서버로 전송하고 전송 데이터의 무결성을 확인하여야 한다."
+    },
+    {
+      "site": "[MDSR | Req. 19 | 목적]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "목적",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "네트워크 상태와 관계없이 기록이 빠지지 않도록 하고, 늦게 전송된 기록이 변조되지 않았음을 보장하기 위함이다."
+    },
+    {
+      "site": "[MDSR | Req. 19 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "기준#p1",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "네트워크가 없을 때 작성한 기록이 연결 회복 후 서버에 반영됨을 확인함"
+    },
+    {
+      "site": "[MDSR | Req. 19 | 기준#p2]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "기준#p2",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "전송 중 내용이 바뀐 기록은 무결성 검증에 실패하여 서버에 반영되지 않음을 확인함"
+    },
+    {
+      "site": "[MDSR | SI-01 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "SI-01",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "trace",
+      "op": "modify",
+      "new_value": "Req. 1, Req. 3, Req. 4, Req. 5, Req. 7, Req. 10, Req. 19, Req. 100, Req. 108",
+      "note": "연결 Req 칸에 Req. 19 추가"
+    }
+  ],
+  "neutral": []
+}

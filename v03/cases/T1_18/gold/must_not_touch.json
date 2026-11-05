@@ -1,0 +1,50 @@
+{
+  "case_id": "T1_18",
+  "items": [
+    {
+      "site": "[MDDR | Req. 6 | 설계#p1]",
+      "doc": "MDDR",
+      "item": "Req. 6",
+      "cell": "설계#p1",
+      "path": "same_value",
+      "fact": "F_AUDIT_LOG_RETENTION",
+      "reason": "같은 값(180 일)이지만 다른 사실"
+    },
+    {
+      "site": "[MDDR | Req. 104 | 설계#p1]",
+      "doc": "MDDR",
+      "item": "Req. 104",
+      "cell": "설계#p1",
+      "path": "same_value",
+      "fact": "F_AUDIT_LOG_RETENTION",
+      "reason": "같은 값(6개월)이지만 다른 사실"
+    },
+    {
+      "site": "[XXCS | UC-05 | 시험방법#p1]",
+      "doc": "XXCS",
+      "item": "UC-05",
+      "cell": "시험방법#p1",
+      "path": "same_value",
+      "fact": "F_AUDIT_LOG_RETENTION",
+      "reason": "같은 값(6개월)이지만 다른 사실"
+    },
+    {
+      "site": "[XXCS | UC-05 | 확인결과#p1]",
+      "doc": "XXCS",
+      "item": "UC-05",
+      "cell": "확인결과#p1",
+      "path": "same_value",
+      "fact": "F_AUDIT_LOG_RETENTION",
+      "reason": "같은 값(180일)이지만 다른 사실"
+    },
+    {
+      "site": "[XXCS | TRE-01 | 확인결과#p2]",
+      "doc": "XXCS",
+      "item": "TRE-01",
+      "cell": "확인결과#p2",
+      "path": "same_value",
+      "fact": "F_AUDIT_LOG_RETENTION",
+      "reason": "같은 값(180 일)이지만 다른 사실"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "case_id": "T1_60",
+  "items": [
+    {
+      "site": "[MDSR | 3.4 일반적 제한 | 본문#p7]",
+      "doc": "MDSR",
+      "item": "3.4 일반적 제한",
+      "cell": "본문#p7",
+      "path": "same_value",
+      "fact": "F_BACKUP_INTERVAL",
+      "reason": "같은 값(24 시간)이지만 다른 사실"
+    },
+    {
+      "site": "[MDSR | Req. 7 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 7",
+      "cell": "설명",
+      "path": "same_value",
+      "fact": "F_BACKUP_INTERVAL",
+      "reason": "같은 값(24시간)이지만 다른 사실"
+    },
+    {
+      "site": "[MDSR | Req. 7 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 7",
+      "cell": "기준#p1",
+      "path": "same_value",
+      "fact": "F_BACKUP_INTERVAL",
+      "reason": "같은 값(24 시간)이지만 다른 사실"
+    },
+    {
+      "site": "[MDSR | Req. 105 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 105",
+      "cell": "설명",
+      "path": "same_value",
+      "fact": "F_BACKUP_INTERVAL",
+      "reason": "같은 값(매일)이지만 다른 사실"
+    },
+    {
+      "site": "[MDSR | Req. 105 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 105",
+      "cell": "기준#p1",
+      "path": "same_value",
+      "fact": "F_BACKUP_INTERVAL",
+      "reason": "같은 값(24시간)이지만 다른 사실"
+    }
+  ]
+}

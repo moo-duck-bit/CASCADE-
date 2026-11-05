@@ -1,0 +1,24 @@
+{
+  "case_id": "T3_09",
+  "case_type": "T3",
+  "subtype": "delete",
+  "n_docs": 1,
+  "docs": [
+    "MDSR"
+  ],
+  "paths": {
+    "origin": 5,
+    "trace": 3
+  },
+  "trap_paths": {
+    "same_id": 2
+  },
+  "n_impact": 8,
+  "n_traps": 2,
+  "n_neutral": 0,
+  "request_structured": "Req. 14 'CBT 알림 설정' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.",
+  "request_nl": "CBT 알림 설정 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.",
+  "sheet_type": "T3-삭제",
+  "sheet_paths": "origin, trace",
+  "seed": 20261102
+}

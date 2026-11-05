@@ -1,0 +1,38 @@
+﻿사실,이름,현재 값,보안 사실,쓰는 Req,들어간 칸 수(MDSR/MDDR/XXCS),연결된 보안 항목(놓인 XXCS 행),같은 값 짝,바꿀 후보(보안 약화 아닌 것만),엮이는 문서 수,출발 Req별 trace 행 수,출발 Req별 same_value 칸 수,파생 사실(depends_on),뺀 후보(보안 약화)
+F_LOGIN_FAILURE_LIMIT,로그인 실패 허용 횟수,5회,예,"Req. 1, Req. 2",5/3/5,"IA-06(Req. 2), IA-07(Req. 1/Req. 2)",-,3회(다른 사실 값과 같음) / 4회,3,Req. 1:1 Req. 2:2,Req. 1:7 Req. 2:4,-,-
+F_ACCOUNT_LOCK_DURATION,계정 잠금 시간,15분,예,Req. 2,3/2/3,"IA-02(Req. 2), IA-06(Req. 2)","F_SESSION_TIMEOUT(15분), F_UNLOCK_NOTIFICATION_TIME(15분), F_DEFAULT_CBT_SESSION_REMINDER_INTERVAL(15분), F_MEDICAL_STAFF_SESSION_TIMEOUT(15분)",30분(다른 사실 값과 같음) / 20분 / 45분,3,Req. 2:2,Req. 2:6,-,-
+F_SESSION_TIMEOUT,세션 종료 시간,15분,예,Req. 3,3/1/4,"UC-03(Req. 3), UC-06(Req. 3)","F_ACCOUNT_LOCK_DURATION(15분), F_UNLOCK_NOTIFICATION_TIME(15분), F_DEFAULT_CBT_SESSION_REMINDER_INTERVAL(15분), F_MEDICAL_STAFF_SESSION_TIMEOUT(15분)",10분(다른 사실 값과 같음) / 5분,3,Req. 3:2,Req. 3:1,-,-
+F_PASSWORD_MIN_LENGTH,비밀번호 최소 길이,8자,예,Req. 1,3/1/4,"IA-05(Req. 1), SI-05(Req. 1)",-,10자 / 12자,3,Req. 1:2,Req. 1:1,-,-
+F_PASSWORD_COMPLEXITY,비밀번호 조합 규칙,"대문자, 소문자, 숫자, 특수문자 조합",예,Req. 1,3/1/4,"IA-05(Req. 1), SI-05(Req. 1)",-,"대소문자, 숫자, 특수문자 포함 및 연속 문자 금지(강화인지 사람 확인) / 대소문자, 숫자, 특수문자 포함 및 아이디 포함 금지(강화인지 사람 확인)",3,Req. 1:2,Req. 1:1,-,-
+F_TRANSPORT_ENCRYPTION,전송 구간 암호화 방식,TLS 1.2 이상,예,"Req. 4, Req. 102",6/6/6,"DC-03(Req. 4/Req. 102), SI-01(Req. 4)",-,TLS 1.3(강화인지 사람 확인) / TLS 1.2 이상 및 취약 암호 스위트 차단(강화인지 사람 확인),3,Req. 4:2 Req. 102:1,Req. 4:6 Req. 102:9,-,-
+F_STORAGE_ENCRYPTION,저장 데이터 암호화 방식,AES-256,예,"Req. 5, Req. 103",5/4/4,"DC-01(Req. 5), SI-01(Req. 5)",-,AES-256-GCM(강화인지 사람 확인) / ChaCha20-Poly1305(강화인지 사람 확인),3,Req. 5:2 Req. 103:0,Req. 5:6 Req. 103:8,-,-
+F_AUDIT_LOG_RETENTION,감사로그 보관 기간,180일,예,"Req. 6, Req. 104",4/2/5,"TRE-01(Req. 6), UC-04(Req. 6), UC-05(Req. 6)",F_MEDICAL_STAFF_ACCESS_LOG_RETENTION(180일),365일(다른 사실 값과 같음) / 730일(다른 사실 값과 같음),3,Req. 6:3 Req. 104:0,Req. 6:3 Req. 104:9,-,-
+F_BACKUP_INTERVAL,백업 주기,24시간,예,"Req. 7, Req. 105",5/3/4,"RA-02(Req. 7), SI-01(Req. 7)",F_SLEEP_DIARY_DEADLINE(24시간),12시간 / 6시간,3,Req. 7:2 Req. 105:0,Req. 7:5 Req. 105:8,-,-
+F_SLEEP_DIARY_DEADLINE,수면일기 입력 기한,24시간,아니오,Req. 8,2/1/1,SI-05(Req. 8),F_BACKUP_INTERVAL(24시간),12시간 / 48시간 / 72시간,3,Req. 8:1,Req. 8:0,-,-
+F_NOTIFICATION_TIME,알림 시각,21:00,아니오,Req. 9,1/2/0,-,-,20:30 / 22:00(다른 사실 값과 같음) / 21:30,2,Req. 9:0,Req. 9:0,-,-
+F_TREATMENT_SESSIONS,CBT-I 총 치료 회기 수,6회,아니오,Req. 106,3/3/1,SI-05(Req. 106),-,4회 / 8회 / 10회,3,Req. 106:1,Req. 106:0,-,-
+F_SYNC_INTERVAL,동기화 주기,60분,아니오,"Req. 100, Req. 101",5/5/4,"RA-02(Req. 100), SI-01(Req. 100)",-,30분(다른 사실 값과 같음) / 120분 / 15분(다른 사실 값과 같음),3,Req. 100:2 Req. 101:0,Req. 100:6 Req. 101:8,-,-
+F_UNLOCK_NOTIFICATION_TIME,잠금 해제 안내 시각,15분,예,Req. 3,3/1/4,"IA-06(Req. 3), UC-06(Req. 3)","F_ACCOUNT_LOCK_DURATION(15분), F_SESSION_TIMEOUT(15분), F_DEFAULT_CBT_SESSION_REMINDER_INTERVAL(15분), F_MEDICAL_STAFF_SESSION_TIMEOUT(15분)",20분 / 30분(다른 사실 값과 같음),3,Req. 3:2,Req. 3:1,F_ACCOUNT_LOCK_DURATION,-
+F_DEFAULT_SLEEP_LIMIT,수면 제한 요법 기본 취침 시간,22:00,아니오,"Req. 8, Req. 10",5/4/0,-,-,21:30 / 23:00 / 21:00(다른 사실 값과 같음),2,Req. 8:0 Req. 10:0,Req. 8:6 Req. 10:3,-,-
+F_DEFAULT_WAKE_TIME,수면 제한 요법 기본 기상 시간,7:00,아니오,"Req. 8, Req. 10",5/4/0,-,-,6:30 / 7:30 / 8:00,2,Req. 8:0 Req. 10:0,Req. 8:6 Req. 10:3,-,-
+F_DEFAULT_STIMULUS_CONTROL_DURATION,자극 조절 교육 기본 기간,7일,아니오,Req. 11,2/2/0,-,"F_DEFAULT_SLEEP_HYGIENE_DURATION(7일), F_DEFAULT_CBT_SESSION_INTERVAL(7일), F_SLEEP_EFFICIENCY_REPORT_INTERVAL(7일), F_MEDICAL_MESSAGE_EXPIRATION(7일)",5일 / 10일 / 14일,2,Req. 11:0,Req. 11:0,-,-
+F_DEFAULT_SLEEP_HYGIENE_DURATION,수면 위생 교육 기본 기간,7일,아니오,Req. 12,2/1/0,-,"F_DEFAULT_STIMULUS_CONTROL_DURATION(7일), F_DEFAULT_CBT_SESSION_INTERVAL(7일), F_SLEEP_EFFICIENCY_REPORT_INTERVAL(7일), F_MEDICAL_MESSAGE_EXPIRATION(7일)",5일 / 10일 / 14일,2,Req. 12:0,Req. 12:0,-,-
+F_DEFAULT_CBT_SESSION_DURATION,CBT 회기 기본 지속 시간,30분,아니오,Req. 13,1/2/0,-,-,20분 / 45분 / 60분(다른 사실 값과 같음),2,Req. 13:0,Req. 13:0,-,-
+F_DEFAULT_CBT_SESSION_INTERVAL,CBT 회기 기본 간격,7일,아니오,Req. 13,1/2/0,-,"F_DEFAULT_STIMULUS_CONTROL_DURATION(7일), F_DEFAULT_SLEEP_HYGIENE_DURATION(7일), F_SLEEP_EFFICIENCY_REPORT_INTERVAL(7일), F_MEDICAL_MESSAGE_EXPIRATION(7일)",5일 / 10일 / 14일,2,Req. 13:0,Req. 13:0,-,-
+F_DEFAULT_CBT_SESSION_REMINDER,CBT 회기 알림 시각,18:00,아니오,"Req. 9, Req. 14",3/2/0,-,-,17:00 / 19:00 / 20:00,2,Req. 9:0 Req. 14:0,Req. 9:2 Req. 14:3,-,-
+F_DEFAULT_CBT_SESSION_REMINDER_INTERVAL,CBT 회기 알림 반복 간격,15분,아니오,Req. 14,1/1/0,-,"F_ACCOUNT_LOCK_DURATION(15분), F_SESSION_TIMEOUT(15분), F_UNLOCK_NOTIFICATION_TIME(15분), F_MEDICAL_STAFF_SESSION_TIMEOUT(15분)",10분(다른 사실 값과 같음) / 20분 / 30분(다른 사실 값과 같음),2,Req. 14:0,Req. 14:0,-,-
+F_DEFAULT_CBT_SESSION_REMINDER_COUNT,CBT 회기 알림 최대 반복 횟수,3회,아니오,Req. 15,2/1/0,-,-,2회 / 4회 / 5회(다른 사실 값과 같음),2,Req. 15:0,Req. 15:0,-,-
+F_DEFAULT_CBT_SESSION_REMINDER_SOUND,CBT 회기 알림 소리,벨 소리,아니오,Req. 14,1/1/0,-,-,진동 / 음악 / 무음,2,Req. 14:0,Req. 14:0,-,-
+F_SLEEP_HYGIENE_CONTENT_COUNT,수면 위생 교육 콘텐츠 수,12개,아니오,Req. 12,1/1/0,-,-,10개 / 15개 / 20개,2,Req. 12:0,Req. 12:0,-,-
+F_MEDICAL_STAFF_SESSION_TIMEOUT,의료진 대시보드 세션 종료 시간,15분,예,Req. 3,3/1/4,"UC-03(Req. 3), UC-06(Req. 3)","F_ACCOUNT_LOCK_DURATION(15분), F_SESSION_TIMEOUT(15분), F_UNLOCK_NOTIFICATION_TIME(15분), F_DEFAULT_CBT_SESSION_REMINDER_INTERVAL(15분)",10분(다른 사실 값과 같음) / 5분,3,Req. 3:2,Req. 3:1,-,-
+F_INACTIVE_ACCOUNT_LOCK_DURATION,비활성 계정 자동 잠금 기간,90일,예,Req. 2,3/1/4,"IA-02(Req. 2), UC-04(Req. 2)",F_PASSWORD_CHANGE_INTERVAL(90일),60일 / 30일,3,Req. 2:2,Req. 2:1,-,-
+F_PII_DELETION_DEADLINE,개인정보 파기 기한,365일,예,"Req. 7, Req. 107",5/2/4,"DC-01(Req. 7), UC-05(Req. 7)",F_PRESCRIPTION_CHANGE_LOG_RETENTION(365일),180일(다른 사실 값과 같음) / 90일(다른 사실 값과 같음),3,Req. 7:2 Req. 107:0,Req. 7:4 Req. 107:8,-,-
+F_PASSWORD_CHANGE_INTERVAL,비밀번호 변경 주기,90일,예,Req. 108,3/1/5,"IA-04(Req. 108), IA-05(Req. 108)",F_INACTIVE_ACCOUNT_LOCK_DURATION(90일),60일 / 30일,3,Req. 108:2,Req. 108:1,-,-
+F_RELAXATION_SESSION_DURATION,이완 훈련 세션 지속 시간,10분,아니오,Req. 15,2/2/0,-,-,15분(다른 사실 값과 같음) / 20분,2,Req. 15:0,Req. 15:0,-,-
+F_SLEEP_EFFICIENCY_REPORT_INTERVAL,수면 효율 리포트 생성 주기,7일,아니오,Req. 16,2/1/0,-,"F_DEFAULT_STIMULUS_CONTROL_DURATION(7일), F_DEFAULT_SLEEP_HYGIENE_DURATION(7일), F_DEFAULT_CBT_SESSION_INTERVAL(7일), F_MEDICAL_MESSAGE_EXPIRATION(7일)",14일 / 30일,2,Req. 16:0,Req. 16:0,-,-
+F_MEDICAL_MESSAGE_EXPIRATION,의료진 메시지 유효 기간,7일,아니오,Req. 17,3/1/0,-,"F_DEFAULT_STIMULUS_CONTROL_DURATION(7일), F_DEFAULT_SLEEP_HYGIENE_DURATION(7일), F_DEFAULT_CBT_SESSION_INTERVAL(7일), F_SLEEP_EFFICIENCY_REPORT_INTERVAL(7일)",14일 / 3일,2,Req. 17:0,Req. 17:0,-,-
+F_PRESCRIPTION_CHANGE_LOG_RETENTION,처방 변경 이력 보관 기간,365일,예,Req. 18,3/1/3,"TRE-01(Req. 18), UC-04(Req. 18)",F_PII_DELETION_DEADLINE(365일),730일(다른 사실 값과 같음),3,Req. 18:2,Req. 18:1,-,180일(다른 사실 값과 같음)
+F_DATA_PRESERVATION_DURATION,데이터 보존 기간,730일,아니오,Req. 107,2/1/0,-,-,1095일 / 365일(다른 사실 값과 같음),2,Req. 107:0,Req. 107:0,-,-
+F_MEDICAL_STAFF_ACCESS_LOG_RETENTION,의료진 접속 기록 보관 기간,180일,예,"Req. 6, Req. 104",4/2/3,"TRE-01(Req. 6), UC-04(Req. 6)",F_AUDIT_LOG_RETENTION(180일),365일(다른 사실 값과 같음),3,Req. 6:2 Req. 104:0,Req. 6:3 Req. 104:7,-,90일(다른 사실 값과 같음)
+F_MEDICAL_STAFF_ROLE_ASSIGNMENT,의료진 계정 권한 종류,4가지,아니오,Req. 108,2/1/2,UC-01(Req. 108),-,2가지 / 5가지,3,Req. 108:1,Req. 108:0,-,-
+F_MEDICAL_STAFF_ACCESS_LOG_AUDIT_INTERVAL,의료진 접속 기록 감사 주기,45일,예,"Req. 6, Req. 104",3/2/2,UC-06(Req. 6),-,30일,3,Req. 6:1 Req. 104:0,Req. 6:2 Req. 104:5,-,60일

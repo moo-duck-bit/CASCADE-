@@ -1,0 +1,7 @@
+{
+  "설계": [
+    "CBT 회기의 기본 지속 시간을 {{F_DEFAULT_CBT_SESSION_DURATION}}으로 설정하도록 구현한다.",
+    "사용자에게는 다음 CBT 회기가 {{F_DEFAULT_CBT_SESSION_INTERVAL}} 후에 시작됨을 안내하도록 구현한다.",
+    "CBT 회기의 기본 지속 시간과 간격은 사용자가 직접 수정 가능하도록 설정되며, 기본 값은 각각 {{F_DEFAULT_CBT_SESSION_DURATION}}과 {{F_DEFAULT_CBT_SESSION_INTERVAL}}을 사용한다."
+  ]
+}

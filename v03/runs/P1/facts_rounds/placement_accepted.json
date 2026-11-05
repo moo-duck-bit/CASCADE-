@@ -1,0 +1,283 @@
+{
+  "placements": [
+    {
+      "id": "F_LOGIN_FAILURE_LIMIT",
+      "xxcs": [
+        "IA-07",
+        "IA-06"
+      ],
+      "in_34": true
+    },
+    {
+      "id": "F_ACCOUNT_LOCK_DURATION",
+      "xxcs": [
+        "IA-02",
+        "IA-06"
+      ],
+      "in_34": true
+    },
+    {
+      "id": "F_SESSION_TIMEOUT",
+      "xxcs": [
+        "UC-03",
+        "UC-06"
+      ],
+      "in_34": true
+    },
+    {
+      "id": "F_PASSWORD_MIN_LENGTH",
+      "xxcs": [
+        "IA-05",
+        "SI-05"
+      ],
+      "in_34": true
+    },
+    {
+      "id": "F_PASSWORD_COMPLEXITY",
+      "xxcs": [
+        "IA-05",
+        "SI-05"
+      ],
+      "in_34": true
+    },
+    {
+      "id": "F_TRANSPORT_ENCRYPTION",
+      "xxcs": [
+        "SI-01",
+        "DC-03"
+      ],
+      "in_34": true
+    },
+    {
+      "id": "F_STORAGE_ENCRYPTION",
+      "xxcs": [
+        "DC-01",
+        "SI-01"
+      ],
+      "in_34": true
+    },
+    {
+      "id": "F_AUDIT_LOG_RETENTION",
+      "xxcs": [
+        "UC-04",
+        "TRE-01",
+        "UC-05"
+      ],
+      "in_34": true
+    },
+    {
+      "id": "F_BACKUP_INTERVAL",
+      "xxcs": [
+        "RA-02",
+        "SI-01"
+      ],
+      "in_34": true
+    },
+    {
+      "id": "F_UNLOCK_NOTIFICATION_TIME",
+      "xxcs": [
+        "IA-06",
+        "UC-06"
+      ],
+      "in_34": true
+    },
+    {
+      "id": "F_MEDICAL_STAFF_SESSION_TIMEOUT",
+      "xxcs": [
+        "UC-03",
+        "UC-06"
+      ],
+      "in_34": true
+    },
+    {
+      "id": "F_INACTIVE_ACCOUNT_LOCK_DURATION",
+      "xxcs": [
+        "IA-02",
+        "UC-04"
+      ],
+      "in_34": true
+    },
+    {
+      "id": "F_PII_DELETION_DEADLINE",
+      "xxcs": [
+        "UC-05",
+        "DC-01"
+      ],
+      "in_34": true
+    },
+    {
+      "id": "F_PASSWORD_CHANGE_INTERVAL",
+      "xxcs": [
+        "IA-04",
+        "IA-05"
+      ],
+      "in_34": true
+    },
+    {
+      "id": "F_PRESCRIPTION_CHANGE_LOG_RETENTION",
+      "xxcs": [
+        "UC-04",
+        "TRE-01"
+      ],
+      "in_34": true
+    },
+    {
+      "id": "F_MEDICAL_STAFF_ACCESS_LOG_RETENTION",
+      "xxcs": [
+        "UC-04",
+        "TRE-01"
+      ],
+      "in_34": true
+    },
+    {
+      "id": "F_SLEEP_DIARY_DEADLINE",
+      "xxcs": [
+        "SI-05",
+        "UC-06"
+      ],
+      "in_34": false
+    },
+    {
+      "id": "F_NOTIFICATION_TIME",
+      "xxcs": [
+        "UC-06"
+      ],
+      "in_34": false
+    },
+    {
+      "id": "F_TREATMENT_SESSIONS",
+      "xxcs": [
+        "SI-05"
+      ],
+      "in_34": false
+    },
+    {
+      "id": "F_SYNC_INTERVAL",
+      "xxcs": [
+        "SI-01",
+        "RA-02"
+      ],
+      "in_34": false
+    },
+    {
+      "id": "F_DEFAULT_SLEEP_LIMIT",
+      "xxcs": [
+        "UC-06"
+      ],
+      "in_34": false
+    },
+    {
+      "id": "F_DEFAULT_WAKE_TIME",
+      "xxcs": [
+        "UC-06"
+      ],
+      "in_34": false
+    },
+    {
+      "id": "F_DEFAULT_STIMULUS_CONTROL_DURATION",
+      "xxcs": [
+        "UC-06"
+      ],
+      "in_34": false
+    },
+    {
+      "id": "F_DEFAULT_SLEEP_HYGIENE_DURATION",
+      "xxcs": [
+        "UC-06"
+      ],
+      "in_34": false
+    },
+    {
+      "id": "F_DEFAULT_CBT_SESSION_DURATION",
+      "xxcs": [
+        "UC-06"
+      ],
+      "in_34": false
+    },
+    {
+      "id": "F_DEFAULT_CBT_SESSION_INTERVAL",
+      "xxcs": [
+        "UC-06"
+      ],
+      "in_34": false
+    },
+    {
+      "id": "F_DEFAULT_CBT_SESSION_REMINDER",
+      "xxcs": [
+        "UC-06"
+      ],
+      "in_34": false
+    },
+    {
+      "id": "F_DEFAULT_CBT_SESSION_REMINDER_INTERVAL",
+      "xxcs": [
+        "UC-06"
+      ],
+      "in_34": false
+    },
+    {
+      "id": "F_DEFAULT_CBT_SESSION_REMINDER_COUNT",
+      "xxcs": [
+        "UC-06"
+      ],
+      "in_34": false
+    },
+    {
+      "id": "F_DEFAULT_CBT_SESSION_REMINDER_SOUND",
+      "xxcs": [
+        "UC-06"
+      ],
+      "in_34": false
+    },
+    {
+      "id": "F_SLEEP_HYGIENE_CONTENT_COUNT",
+      "xxcs": [
+        "SI-05"
+      ],
+      "in_34": false
+    },
+    {
+      "id": "F_RELAXATION_SESSION_DURATION",
+      "xxcs": [
+        "UC-06"
+      ],
+      "in_34": false
+    },
+    {
+      "id": "F_SLEEP_EFFICIENCY_REPORT_INTERVAL",
+      "xxcs": [
+        "UC-06"
+      ],
+      "in_34": false
+    },
+    {
+      "id": "F_MEDICAL_MESSAGE_EXPIRATION",
+      "xxcs": [
+        "UC-06"
+      ],
+      "in_34": false
+    },
+    {
+      "id": "F_DATA_PRESERVATION_DURATION",
+      "xxcs": [
+        "UC-04"
+      ],
+      "in_34": false
+    },
+    {
+      "id": "F_MEDICAL_STAFF_ROLE_ASSIGNMENT",
+      "xxcs": [
+        "UC-01"
+      ],
+      "in_34": false
+    },
+    {
+      "id": "F_MEDICAL_STAFF_ACCESS_LOG_AUDIT_INTERVAL",
+      "xxcs": [
+        "UC-04",
+        "UC-06"
+      ],
+      "in_34": false
+    }
+  ]
+}

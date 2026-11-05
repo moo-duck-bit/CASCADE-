@@ -1,0 +1,21 @@
+{
+  "case_id": "T1_62",
+  "case_type": "T1",
+  "subtype": "value_change",
+  "n_docs": 1,
+  "docs": [
+    "MDSR"
+  ],
+  "paths": {
+    "origin": 3
+  },
+  "trap_paths": {},
+  "n_impact": 3,
+  "n_traps": 0,
+  "n_neutral": 0,
+  "request_structured": "Req. 106 '총 치료 회기 수'의 CBT-I 총 치료 회기 수를 6회에서 4회로 변경한다.",
+  "request_nl": "총 치료 회기 수 기능에서 CBT-I 총 치료 회기 수를 4회로 바꿔 주세요.",
+  "sheet_type": "T1",
+  "sheet_paths": "origin",
+  "seed": 20261102
+}

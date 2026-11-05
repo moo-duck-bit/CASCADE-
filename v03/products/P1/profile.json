@@ -1,0 +1,51 @@
+{
+  "id": "P1",
+  "name": "수면코치",
+  "model_name": "SC-I",
+  "maker": "(주)가상헬스케어",
+  "brief": "제품: 수면코치 (가상). 성인 불면증 환자를 위한 불면증 인지행동치료(CBT-I) 디지털 치료기기 소프트웨어. 구성요소: 모바일 애플리케이션(환자용), 서버, 대시보드(의료진용). 아이디·비밀번호 로그인이 있다. 주요 기능 예: 수면일기 기록, 수면 제한 요법의 취침·기상 시각 처방, 자극 조절 교육, 수면 위생 교육, 이완 훈련, 치료 회기 진행, 알림, 수면 효율 리포트, 의료진 메시지, 의료진 대시보드 조회, 처방 변경 이력, 데이터 동기화, 감사로그, 백업, 데이터 보존·파기.",
+  "system_role": "가상의 제품 '수면코치'(성인 불면증 CBT-I 디지털 치료기기, 모바일 앱·서버·대시보드)",
+  "app_reqs": [1, 18],
+  "server_reqs": [100, 108],
+  "mddr_replace": {
+    "범불안장애 인지행동치료법을 모바일 앱으로 구현하여 범불안장애 환자를 대상으로 불안 증상을 개선": "불면증 인지행동치료(CBT-I)를 모바일 앱으로 구현하여 성인 불면증 환자의 수면 문제를 개선",
+    "모바일 애플리케이션을 이용하여 인지행동치료를 수행하는 범불안장애 환자": "모바일 애플리케이션을 이용하여 불면증 인지행동치료를 수행하는 성인 불면증 환자"
+  },
+  "seed_facts_from": "../../../v02/product/facts.json",
+  "cyber": {
+    "password_auth": true, "stores_pii": false, "session_termination": true, "samd": true,
+    "mobile_code": false, "e_signature": false, "remote_update": false
+  },
+  "cyber_ko": {
+    "password_auth": ["아이디·비밀번호 인증 사용", "아이디·비밀번호 로그인을 없애고 다른 인증 방식만 쓰도록", "아이디·비밀번호 로그인을 다시 쓰도록"],
+    "stores_pii": ["개인식별정보 저장", "개인식별정보를 저장하지 않도록", "환자 이름·연락처 같은 개인식별정보를 서버에 저장하도록"],
+    "session_termination": ["세션 종료 기능 제공", "자동 세션 종료 기능을 빼도록", "자동 세션 종료 기능을 넣도록"],
+    "samd": ["독립형 소프트웨어 의료기기(SaMD)", "전용 하드웨어 기기와 함께 공급하는 형태로", "소프트웨어 단독 제품으로"],
+    "mobile_code": ["모바일 코드(외부 스크립트 콘텐츠) 실행", "외부 스크립트 콘텐츠를 실행하지 않도록", "교육 콘텐츠를 웹 기반 스크립트로 내려받아 실행하도록"],
+    "e_signature": ["전자서명 기반 처방 기능", "전자서명 처방 기능을 빼도록", "의료진이 처방 변경에 전자서명을 하도록"],
+    "remote_update": ["제조사 원격 업데이트 기능", "원격 업데이트 기능을 빼도록", "제조사가 서버에서 소프트웨어 업데이트를 원격 배포하도록"]
+  },
+  "weakening_flips": {
+    "password_auth": "true->false",
+    "session_termination": "true->false"
+  },
+  "rules": [
+    {"id": "R01", "if": {"attr": "password_auth", "equals": true}, "then": {"secs": ["IA-05"], "applicability": "적용"}, "source": "첨부3 IA-05 적용 예외: 비밀번호 인증을 사용하지 않는 기기"},
+    {"id": "R02", "if": {"attr": "password_auth", "equals": true}, "then": {"secs": ["IA-06"], "applicability": "적용"}, "source": "첨부3 IA-06 적용 예외: 비밀번호 등 입력형 인증정보를 사용하지 않는 기기"},
+    {"id": "R03", "if": {"attr": "stores_pii", "equals": false}, "then": {"secs": ["DC-02"], "applicability": "N/A"}, "source": "첨부3 DC-02 적용 예외: 보건의료정보를 저장하지 않는 기기"},
+    {"id": "R04", "if": {"attr": "session_termination", "equals": true}, "then": {"secs": ["UC-03"], "applicability": "적용"}, "source": "첨부3 UC-03 적용 예외: 세션 종료 기능이 없는 기기"},
+    {"id": "R05", "if": {"attr": "samd", "equals": true}, "then": {"secs": ["SI-10"], "applicability": "N/A"}, "source": "첨부3 SI-10 적용 예외: 물리적 하드웨어가 없는 소프트웨어 기반 의료기기"},
+    {"id": "R06", "if": {"attr": "samd", "equals": true}, "then": {"secs": ["SI-11"], "applicability": "N/A"}, "source": "첨부3 SI-11 적용 예외: 부트 프로세스를 갖지 않는 소프트웨어 기반 의료기기"},
+    {"id": "R07", "if": {"attr": "mobile_code", "equals": false}, "then": {"secs": ["UC-02"], "applicability": "N/A"}, "source": "첨부3 UC-02 적용 예외: 모바일 코드를 사용하지 않는 기기"},
+    {"id": "R08", "if": {"attr": "e_signature", "equals": false}, "then": {"secs": ["UC-07"], "applicability": "N/A"}, "source": "첨부3 UC-07 적용 예외: 부인 방지가 필요한 전자서명·거래 기능이 없는 기기"},
+    {"id": "R09", "if": {"attr": "remote_update", "equals": false}, "then": {"secs": ["SI-08"], "applicability": "N/A"}, "source": "첨부3 SI-08 적용 예외: 제조사 원격 업데이트 기능이 없는 기기"},
+    {"id": "R10", "if": {"attr": "remote_update", "equals": false}, "then": {"secs": ["SI-09"], "applicability": "N/A"}, "source": "첨부3 SI-09 적용 예외: 업데이트 파일을 배포하지 않는 기기"}
+  ],
+  "required_security": {
+    "로그인 실패 허용 횟수": ["로그인", "실패"], "계정 잠금 시간": ["잠금"], "세션 종료 시간": ["세션"],
+    "비밀번호 최소 길이": ["비밀번호", "길이"], "비밀번호 조합 규칙": ["비밀번호", "조합"], "전송 구간 암호화": ["전송"],
+    "저장 데이터 암호화": ["저장", "암호"], "감사로그 보관 기간": ["감사"], "백업 주기": ["백업"]
+  },
+  "targets": {"facts": [35, 45], "same_value_pairs": 6, "multi_req_facts": 10, "trace2_facts": 12,
+              "nonsec_reqs": 10, "nonsec_linked_reqs": 10, "overlink_rate": 0.5}
+}

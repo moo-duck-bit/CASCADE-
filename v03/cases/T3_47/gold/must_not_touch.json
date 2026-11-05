@@ -1,0 +1,21 @@
+{
+  "case_id": "T3_47",
+  "items": [
+    {
+      "site": "[MDSR | SI-01 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "SI-01",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "trace",
+      "reason": "같은 분류(SI)지만 새 기능과 무관"
+    },
+    {
+      "site": "[MDSR | SI-02 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "SI-02",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "trace",
+      "reason": "같은 분류(SI)지만 새 기능과 무관"
+    }
+  ]
+}

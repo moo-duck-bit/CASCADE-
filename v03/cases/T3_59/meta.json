@@ -1,0 +1,27 @@
+{
+  "case_id": "T3_59",
+  "case_type": "T3",
+  "subtype": "add_with_value_change",
+  "n_docs": 2,
+  "docs": [
+    "MDSR",
+    "MDDR"
+  ],
+  "paths": {
+    "origin": 8,
+    "same_id": 5,
+    "trace": 1,
+    "same_value": 2
+  },
+  "trap_paths": {
+    "trace": 1
+  },
+  "n_impact": 16,
+  "n_traps": 1,
+  "n_neutral": 0,
+  "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '기록 내보내기'을(를) 신규 추가한다. 내용: 사용자는 자신의 수면 기록을 파일로 내보낼 수 있어야 하며, 내보내는 파일은 안전한 암호 방식으로 암호화되어야 한다. 또한 Req. 9 '알림 설정'의 CBT 회기 알림 시각을 18:00에서 20:00으로 변경한다.",
+  "request_nl": "앱에 새 기능을 넣어 주세요. 사용자가 자신의 수면 기록을 파일로 내보내고 내보내는 파일을 암호화하는 기능이 필요합니다. 그리고 알림 설정 기능에서 CBT 회기 알림 시각을 20:00으로 바꿔 주세요.",
+  "sheet_type": "T3-추가복합",
+  "sheet_paths": "origin, same_id, trace, same_value",
+  "seed": 20261102
+}

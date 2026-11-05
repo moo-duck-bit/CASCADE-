@@ -1,0 +1,31 @@
+[
+  {
+    "fact": "F_PRESCRIPTION_CHANGE_LOG_RETENTION",
+    "field": "stronger_when",
+    "before": "lower",
+    "after": "higher",
+    "reason": "보관 기간은 길수록 강함"
+  },
+  {
+    "fact": "F_MEDICAL_STAFF_ACCESS_LOG_RETENTION",
+    "field": "stronger_when",
+    "before": "lower",
+    "after": "higher",
+    "reason": "보관 기간은 길수록 강함"
+  },
+  {
+    "fact": "F_MEDICAL_STAFF_ROLE_ASSIGNMENT",
+    "field": "variants",
+    "before": [
+      "4가지",
+      "4 종류",
+      "4개 권한"
+    ],
+    "after": [
+      "4가지",
+      "4 가지",
+      "네 가지"
+    ],
+    "reason": "표기마다 단위가 달라 문장에 넣으면 어색함"
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "case_id": "T1_20",
+  "case_type": "T1",
+  "subtype": "value_change",
+  "n_docs": 3,
+  "docs": [
+    "MDSR",
+    "MDDR",
+    "XXCS"
+  ],
+  "paths": {
+    "same_value": 8,
+    "origin": 3,
+    "same_id": 3
+  },
+  "trap_paths": {
+    "trace": 4
+  },
+  "n_impact": 14,
+  "n_traps": 4,
+  "n_neutral": 0,
+  "request_structured": "Req. 101 '의료진 대시보드 조회'의 동기화 주기를 60분에서 120분으로 변경한다.",
+  "request_nl": "의료진 대시보드 조회 기능에서 동기화 주기를 120분으로 바꿔 주세요.",
+  "sheet_type": "T1",
+  "sheet_paths": "origin, same_id, same_value",
+  "seed": 20261102
+}

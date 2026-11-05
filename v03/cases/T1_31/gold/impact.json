@@ -1,0 +1,91 @@
+{
+  "case_id": "T1_31",
+  "case_type": "T1",
+  "subtype": "value_change",
+  "change": {
+    "fact": "F_INACTIVE_ACCOUNT_LOCK_DURATION",
+    "origin_req": "Req. 2",
+    "old_value": "90",
+    "new_value": "30"
+  },
+  "items": [
+    {
+      "site": "[MDSR | 3.4 일반적 제한 | 본문#p8]",
+      "doc": "MDSR",
+      "item": "3.4 일반적 제한",
+      "cell": "본문#p8",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_INACTIVE_ACCOUNT_LOCK_DURATION",
+      "old_surface": "3개월",
+      "new_value": "30일"
+    },
+    {
+      "site": "[MDSR | Req. 2 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 2",
+      "cell": "설명",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_INACTIVE_ACCOUNT_LOCK_DURATION",
+      "old_surface": "90일",
+      "new_value": "30일"
+    },
+    {
+      "site": "[MDSR | Req. 2 | 기준#p2]",
+      "doc": "MDSR",
+      "item": "Req. 2",
+      "cell": "기준#p2",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_INACTIVE_ACCOUNT_LOCK_DURATION",
+      "old_surface": "90 일",
+      "new_value": "30일"
+    },
+    {
+      "site": "[XXCS | IA-02 | 시험방법#p2]",
+      "doc": "XXCS",
+      "item": "IA-02",
+      "cell": "시험방법#p2",
+      "path": "trace",
+      "op": "modify",
+      "fact": "F_INACTIVE_ACCOUNT_LOCK_DURATION",
+      "old_surface": "90 일",
+      "new_value": "30일"
+    },
+    {
+      "site": "[XXCS | IA-02 | 확인결과#p2]",
+      "doc": "XXCS",
+      "item": "IA-02",
+      "cell": "확인결과#p2",
+      "path": "trace",
+      "op": "modify",
+      "fact": "F_INACTIVE_ACCOUNT_LOCK_DURATION",
+      "old_surface": "3개월",
+      "new_value": "30일"
+    },
+    {
+      "site": "[XXCS | UC-04 | 시험방법#p3]",
+      "doc": "XXCS",
+      "item": "UC-04",
+      "cell": "시험방법#p3",
+      "path": "trace",
+      "op": "modify",
+      "fact": "F_INACTIVE_ACCOUNT_LOCK_DURATION",
+      "old_surface": "90일",
+      "new_value": "30일"
+    },
+    {
+      "site": "[XXCS | UC-04 | 확인결과#p3]",
+      "doc": "XXCS",
+      "item": "UC-04",
+      "cell": "확인결과#p3",
+      "path": "trace",
+      "op": "modify",
+      "fact": "F_INACTIVE_ACCOUNT_LOCK_DURATION",
+      "old_surface": "90 일",
+      "new_value": "30일"
+    }
+  ],
+  "neutral": []
+}

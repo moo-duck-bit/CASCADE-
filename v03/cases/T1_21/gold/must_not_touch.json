@@ -1,0 +1,29 @@
+{
+  "case_id": "T1_21",
+  "items": [
+    {
+      "site": "[XXCS | SI-01 | 확인결과#p1]",
+      "doc": "XXCS",
+      "item": "SI-01",
+      "cell": "확인결과#p1",
+      "path": "trace",
+      "reason": "Req. 1와 연결됐지만 relevant=false"
+    },
+    {
+      "site": "[XXCS | SI-01 | 확인결과#p2]",
+      "doc": "XXCS",
+      "item": "SI-01",
+      "cell": "확인결과#p2",
+      "path": "trace",
+      "reason": "Req. 1와 연결됐지만 relevant=false"
+    },
+    {
+      "site": "[XXCS | SI-01 | 확인결과#p3]",
+      "doc": "XXCS",
+      "item": "SI-01",
+      "cell": "확인결과#p3",
+      "path": "trace",
+      "reason": "Req. 1와 연결됐지만 relevant=false"
+    }
+  ]
+}

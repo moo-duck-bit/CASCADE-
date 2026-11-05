@@ -1,0 +1,26 @@
+{
+  "case_id": "T1_25",
+  "case_type": "T1",
+  "subtype": "value_change",
+  "n_docs": 2,
+  "docs": [
+    "MDSR",
+    "XXCS"
+  ],
+  "paths": {
+    "same_value": 5,
+    "origin": 2,
+    "trace": 5
+  },
+  "trap_paths": {
+    "same_value": 11
+  },
+  "n_impact": 12,
+  "n_traps": 11,
+  "n_neutral": 0,
+  "request_structured": "Req. 2 '계정 잠금'의 계정 잠금 시간을 15분에서 20분으로 변경한다.",
+  "request_nl": "계정 잠금 기능에서 계정 잠금 시간을 20분으로 바꿔 주세요.",
+  "sheet_type": "T1",
+  "sheet_paths": "origin, trace, same_value",
+  "seed": 20261102
+}

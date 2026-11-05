@@ -1,0 +1,113 @@
+{
+  "case_id": "T1_27",
+  "case_type": "T1",
+  "subtype": "value_change",
+  "change": {
+    "fact": "F_BACKUP_INTERVAL",
+    "origin_req": "Req. 7",
+    "old_value": "24",
+    "new_value": "12"
+  },
+  "items": [
+    {
+      "site": "[MDSR | 3.4 일반적 제한 | 본문#p7]",
+      "doc": "MDSR",
+      "item": "3.4 일반적 제한",
+      "cell": "본문#p7",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_BACKUP_INTERVAL",
+      "old_surface": "24 시간",
+      "new_value": "12시간"
+    },
+    {
+      "site": "[MDSR | Req. 7 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 7",
+      "cell": "설명",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_BACKUP_INTERVAL",
+      "old_surface": "24시간",
+      "new_value": "12시간"
+    },
+    {
+      "site": "[MDSR | Req. 7 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 7",
+      "cell": "기준#p1",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_BACKUP_INTERVAL",
+      "old_surface": "24 시간",
+      "new_value": "12시간"
+    },
+    {
+      "site": "[MDSR | Req. 105 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 105",
+      "cell": "설명",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_BACKUP_INTERVAL",
+      "old_surface": "매일",
+      "new_value": "12시간"
+    },
+    {
+      "site": "[MDSR | Req. 105 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 105",
+      "cell": "기준#p1",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_BACKUP_INTERVAL",
+      "old_surface": "24시간",
+      "new_value": "12시간"
+    },
+    {
+      "site": "[XXCS | SI-01 | 시험방법#p3]",
+      "doc": "XXCS",
+      "item": "SI-01",
+      "cell": "시험방법#p3",
+      "path": "trace",
+      "op": "modify",
+      "fact": "F_BACKUP_INTERVAL",
+      "old_surface": "매일",
+      "new_value": "12시간"
+    },
+    {
+      "site": "[XXCS | SI-01 | 확인결과#p3]",
+      "doc": "XXCS",
+      "item": "SI-01",
+      "cell": "확인결과#p3",
+      "path": "trace",
+      "op": "modify",
+      "fact": "F_BACKUP_INTERVAL",
+      "old_surface": "24시간",
+      "new_value": "12시간"
+    },
+    {
+      "site": "[XXCS | RA-02 | 시험방법#p1]",
+      "doc": "XXCS",
+      "item": "RA-02",
+      "cell": "시험방법#p1",
+      "path": "trace",
+      "op": "modify",
+      "fact": "F_BACKUP_INTERVAL",
+      "old_surface": "24 시간",
+      "new_value": "12시간"
+    },
+    {
+      "site": "[XXCS | RA-02 | 확인결과#p1]",
+      "doc": "XXCS",
+      "item": "RA-02",
+      "cell": "확인결과#p1",
+      "path": "trace",
+      "op": "modify",
+      "fact": "F_BACKUP_INTERVAL",
+      "old_surface": "매일",
+      "new_value": "12시간"
+    }
+  ],
+  "neutral": []
+}

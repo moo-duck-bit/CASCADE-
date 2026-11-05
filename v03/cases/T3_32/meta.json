@@ -1,0 +1,24 @@
+{
+  "case_id": "T3_32",
+  "case_type": "T3",
+  "subtype": "add",
+  "n_docs": 1,
+  "docs": [
+    "MDSR"
+  ],
+  "paths": {
+    "origin": 6,
+    "trace": 1
+  },
+  "trap_paths": {
+    "trace": 1
+  },
+  "n_impact": 7,
+  "n_traps": 1,
+  "n_neutral": 0,
+  "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '카페인 섭취 기록'을(를) 신규 추가한다. 내용: 사용자는 카페인 음료의 섭취 시각과 섭취량을 기록할 수 있어야 하며, 기록은 기기 내부에 암호화된 형태로 저장되어야 한다.",
+  "request_nl": "앱에 새 기능을 넣어 주세요. 사용자가 카페인 섭취 시각과 양을 기록하고 기록을 기기에 암호화하여 저장하는 기능이 필요합니다.",
+  "sheet_type": "T3-추가",
+  "sheet_paths": "origin, trace",
+  "seed": 20261102
+}

@@ -1,0 +1,193 @@
+{
+  "case_id": "T1_07",
+  "case_type": "T1",
+  "subtype": "value_change",
+  "change": {
+    "fact": "F_ACCOUNT_LOCK_DURATION",
+    "origin_req": "Req. 2",
+    "old_value": "15",
+    "new_value": "45"
+  },
+  "items": [
+    {
+      "site": "[MDSR | 3.4 일반적 제한 | 본문#p1]",
+      "doc": "MDSR",
+      "item": "3.4 일반적 제한",
+      "cell": "본문#p1",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_ACCOUNT_LOCK_DURATION",
+      "old_surface": "십오 분",
+      "new_value": "45분"
+    },
+    {
+      "site": "[MDSR | Req. 2 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 2",
+      "cell": "설명",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_ACCOUNT_LOCK_DURATION",
+      "old_surface": "15분",
+      "new_value": "45분"
+    },
+    {
+      "site": "[MDSR | Req. 2 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 2",
+      "cell": "기준#p1",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_ACCOUNT_LOCK_DURATION",
+      "old_surface": "15 분",
+      "new_value": "45분"
+    },
+    {
+      "site": "[MDDR | Req. 2 | 설계#p1]",
+      "doc": "MDDR",
+      "item": "Req. 2",
+      "cell": "설계#p1",
+      "path": "same_id",
+      "op": "modify",
+      "fact": "F_ACCOUNT_LOCK_DURATION",
+      "old_surface": "15분",
+      "new_value": "45분"
+    },
+    {
+      "site": "[MDDR | Req. 2 | 설계#p2]",
+      "doc": "MDDR",
+      "item": "Req. 2",
+      "cell": "설계#p2",
+      "path": "same_id",
+      "op": "modify",
+      "fact": "F_ACCOUNT_LOCK_DURATION",
+      "old_surface": "15 분",
+      "new_value": "45분"
+    },
+    {
+      "site": "[XXCS | IA-02 | 시험방법#p1]",
+      "doc": "XXCS",
+      "item": "IA-02",
+      "cell": "시험방법#p1",
+      "path": "trace",
+      "op": "modify",
+      "fact": "F_ACCOUNT_LOCK_DURATION",
+      "old_surface": "십오 분",
+      "new_value": "45분"
+    },
+    {
+      "site": "[XXCS | IA-02 | 확인결과#p1]",
+      "doc": "XXCS",
+      "item": "IA-02",
+      "cell": "확인결과#p1",
+      "path": "trace",
+      "op": "modify",
+      "fact": "F_ACCOUNT_LOCK_DURATION",
+      "old_surface": "15분",
+      "new_value": "45분"
+    },
+    {
+      "site": "[XXCS | IA-06 | 확인결과#p2]",
+      "doc": "XXCS",
+      "item": "IA-06",
+      "cell": "확인결과#p2",
+      "path": "trace",
+      "op": "modify",
+      "fact": "F_ACCOUNT_LOCK_DURATION",
+      "old_surface": "15 분",
+      "new_value": "45분"
+    },
+    {
+      "site": "[MDSR | Req. 3 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 3",
+      "cell": "설명",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_UNLOCK_NOTIFICATION_TIME",
+      "old_surface": "15분",
+      "new_value": null,
+      "derived_from": "F_ACCOUNT_LOCK_DURATION",
+      "note": "depends_on: 값 재계산 필요"
+    },
+    {
+      "site": "[MDSR | Req. 3 | 기준#p2]",
+      "doc": "MDSR",
+      "item": "Req. 3",
+      "cell": "기준#p2",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_UNLOCK_NOTIFICATION_TIME",
+      "old_surface": "15 분",
+      "new_value": null,
+      "derived_from": "F_ACCOUNT_LOCK_DURATION",
+      "note": "depends_on: 값 재계산 필요"
+    },
+    {
+      "site": "[MDDR | Req. 3 | 설계#p3]",
+      "doc": "MDDR",
+      "item": "Req. 3",
+      "cell": "설계#p3",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_UNLOCK_NOTIFICATION_TIME",
+      "old_surface": "15분",
+      "new_value": null,
+      "derived_from": "F_ACCOUNT_LOCK_DURATION",
+      "note": "depends_on: 값 재계산 필요"
+    },
+    {
+      "site": "[XXCS | IA-06 | 시험방법#p2]",
+      "doc": "XXCS",
+      "item": "IA-06",
+      "cell": "시험방법#p2",
+      "path": "trace",
+      "op": "modify",
+      "fact": "F_UNLOCK_NOTIFICATION_TIME",
+      "old_surface": "15 분",
+      "new_value": null,
+      "derived_from": "F_ACCOUNT_LOCK_DURATION",
+      "note": "depends_on: 값 재계산 필요"
+    },
+    {
+      "site": "[XXCS | IA-06 | 확인결과#p3]",
+      "doc": "XXCS",
+      "item": "IA-06",
+      "cell": "확인결과#p3",
+      "path": "trace",
+      "op": "modify",
+      "fact": "F_UNLOCK_NOTIFICATION_TIME",
+      "old_surface": "십오 분",
+      "new_value": null,
+      "derived_from": "F_ACCOUNT_LOCK_DURATION",
+      "note": "depends_on: 값 재계산 필요"
+    },
+    {
+      "site": "[XXCS | UC-06 | 시험방법#p2]",
+      "doc": "XXCS",
+      "item": "UC-06",
+      "cell": "시험방법#p2",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_UNLOCK_NOTIFICATION_TIME",
+      "old_surface": "15분",
+      "new_value": null,
+      "derived_from": "F_ACCOUNT_LOCK_DURATION",
+      "note": "depends_on: 값 재계산 필요"
+    },
+    {
+      "site": "[XXCS | UC-06 | 확인결과#p2]",
+      "doc": "XXCS",
+      "item": "UC-06",
+      "cell": "확인결과#p2",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_UNLOCK_NOTIFICATION_TIME",
+      "old_surface": "15 분",
+      "new_value": null,
+      "derived_from": "F_ACCOUNT_LOCK_DURATION",
+      "note": "depends_on: 값 재계산 필요"
+    }
+  ],
+  "neutral": []
+}

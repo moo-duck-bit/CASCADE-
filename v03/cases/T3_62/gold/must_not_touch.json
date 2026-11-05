@@ -1,0 +1,45 @@
+{
+  "case_id": "T3_62",
+  "items": [
+    {
+      "site": "[MDSR | DC-03 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "DC-03",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "trace",
+      "reason": "같은 분류(DC)지만 새 기능과 무관"
+    },
+    {
+      "site": "[XXCS | DC-03 | 해당 요구사항]",
+      "doc": "XXCS",
+      "item": "DC-03",
+      "cell": "해당 요구사항",
+      "path": "trace",
+      "reason": "같은 분류(DC)지만 새 기능과 무관"
+    },
+    {
+      "site": "[XXCS | SI-01 | 확인결과#p1]",
+      "doc": "XXCS",
+      "item": "SI-01",
+      "cell": "확인결과#p1",
+      "path": "trace",
+      "reason": "Req. 1와 연결됐지만 relevant=false"
+    },
+    {
+      "site": "[XXCS | SI-01 | 확인결과#p2]",
+      "doc": "XXCS",
+      "item": "SI-01",
+      "cell": "확인결과#p2",
+      "path": "trace",
+      "reason": "Req. 1와 연결됐지만 relevant=false"
+    },
+    {
+      "site": "[XXCS | SI-01 | 확인결과#p3]",
+      "doc": "XXCS",
+      "item": "SI-01",
+      "cell": "확인결과#p3",
+      "path": "trace",
+      "reason": "Req. 1와 연결됐지만 relevant=false"
+    }
+  ]
+}

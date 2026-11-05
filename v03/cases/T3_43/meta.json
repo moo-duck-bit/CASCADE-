@@ -1,0 +1,25 @@
+{
+  "case_id": "T3_43",
+  "case_type": "T3",
+  "subtype": "add",
+  "n_docs": 2,
+  "docs": [
+    "MDSR",
+    "XXCS"
+  ],
+  "paths": {
+    "origin": 6,
+    "trace": 2
+  },
+  "trap_paths": {
+    "trace": 4
+  },
+  "n_impact": 8,
+  "n_traps": 4,
+  "n_neutral": 0,
+  "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '카페인 중단 안내'을(를) 신규 추가한다. 내용: 앱은 사용자의 취침 시각을 기준으로 카페인 섭취를 멈출 시점을 안내하여야 하며, 안내 시점을 계산하지 못하면 내부 정보가 드러나지 않는 오류 메시지를 표시하여야 한다.",
+  "request_nl": "앱에 새 기능을 넣어 주세요. 취침 시각에 맞춰 카페인 섭취를 멈출 시점을 안내하고 안내 시점을 계산하지 못하면 내부 정보가 없는 오류 메시지를 보여 주는 기능이 필요합니다.",
+  "sheet_type": "T3-추가",
+  "sheet_paths": "origin, trace",
+  "seed": 20261102
+}

@@ -1,0 +1,7 @@
+{
+  "설계": [
+    "이완 훈련 세션은 사용자가 설정한 시간 동안 가이드라인을 제공하며, {{F_RELAXATION_SESSION_DURATION}} 동안 세션을 진행하도록 구현한다.",
+    "사용자가 이완 훈련을 시작하면, 세션 종료 {{F_RELAXATION_SESSION_DURATION}} 전에 마무리 안내 메시지를 표시하도록 구현한다.",
+    "이완 훈련 세션 알림이 사용자에게 {{F_DEFAULT_CBT_SESSION_REMINDER_COUNT}} 반복되어 전달되도록 설정한다."
+  ]
+}

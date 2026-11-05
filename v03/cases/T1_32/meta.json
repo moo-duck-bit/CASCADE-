@@ -1,0 +1,27 @@
+{
+  "case_id": "T1_32",
+  "case_type": "T1",
+  "subtype": "value_change",
+  "n_docs": 2,
+  "docs": [
+    "MDSR",
+    "XXCS"
+  ],
+  "paths": {
+    "same_value": 1,
+    "origin": 2,
+    "trace": 4
+  },
+  "trap_paths": {
+    "same_value": 16,
+    "trace": 3
+  },
+  "n_impact": 7,
+  "n_traps": 19,
+  "n_neutral": 0,
+  "request_structured": "Req. 3 '세션 관리'의 의료진 대시보드 세션 종료 시간을 15분에서 5분으로 변경한다.",
+  "request_nl": "세션 관리 기능에서 의료진 대시보드 세션 종료 시간을 5분으로 바꿔 주세요.",
+  "sheet_type": "T1",
+  "sheet_paths": "origin, trace, same_value",
+  "seed": 20261102
+}

@@ -1,0 +1,30 @@
+# 범용 텍스트 문서 형식(markdown·reStructuredText·txt). 도메인 지식이 아니라 문서 형식만 정한다.
+# 문서 = input/ 아래 .md .rst .txt 파일(request*.txt 제외), 항목 = 절 제목, 칸 = 절 안 단위(para, list, table, code)의 번호.
+# 항목 번호 형식·연결 칸·규칙 표·코퍼스는 없다. graph_mode=generic으로 쓴다.
+{
+  "pack_id": "generic_text",
+  "format": "text",
+  "docs": [],
+  "prompt_domain": "소프트웨어 프로젝트 문서 세트(markdown·reStructuredText)",
+  "req": {"pattern": "^(?!x)x(\\d+)$", "ref": "(?!x)x(\\d+)", "token": "[\\w./\\-]+\\.(?:md|rst|txt)", "format": "{n}",
+          "noun": "항목"},
+  "sec": {"pattern": "^(?!x)x", "full": "^(?!x)x$"},
+  "req_doc": "",
+  "req_docs": [],
+  "sec_docs": [],
+  "status_doc": "",
+  "number_cell": "번호",
+  "title_cell": "제목",
+  "desc_cell": "설명",
+  "sec_title_cells": [],
+  "component_split": 0,
+  "link_cells": [],
+  "link_na_text": "",
+  "status_cells": [],
+  "decision_cells": [],
+  "layouts": {},
+  "insert_style": "",
+  "rules_table": "",
+  "units": [],
+  "corpus": null
+}

@@ -1,0 +1,45 @@
+{
+  "leftover_braces": {
+    "MDSR": 0,
+    "MDDR": 0,
+    "XXCS": 0,
+    "site_index": 0
+  },
+  "direct_values": [],
+  "hint_match": {
+    "hints": 153,
+    "matched": 153,
+    "rate": 1.0,
+    "missed": [],
+    "skipped_na_sections": []
+  },
+  "reopen": {
+    "MDSR": {
+      "ok": true,
+      "paragraphs": 196,
+      "tables": 35
+    },
+    "MDDR": {
+      "ok": true,
+      "paragraphs": 179,
+      "tables": 3
+    },
+    "XXCS": {
+      "ok": true,
+      "paragraphs": 81,
+      "tables": 37
+    }
+  },
+  "criteria_two_paras": {
+    "reqs": 27,
+    "bad": {}
+  },
+  "gate": {
+    "criteria_two_paras": true,
+    "no_leftover_braces": true,
+    "no_direct_values": true,
+    "hint_match_ge_90": true,
+    "reopen_ok": true
+  },
+  "passed": true
+}

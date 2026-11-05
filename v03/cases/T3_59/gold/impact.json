@@ -1,0 +1,200 @@
+{
+  "case_id": "T3_59",
+  "case_type": "T3",
+  "subtype": "add_with_value_change",
+  "change": {
+    "new_req": "Req. 19",
+    "component": "앱",
+    "title": "기록 내보내기",
+    "related_secs": [
+      "DC-03"
+    ],
+    "draft": {
+      "설명": "사용자는 자신의 수면 기록을 파일로 내보낼 수 있어야 하며, 내보내는 파일은 안전한 암호 방식으로 암호화되어야 한다.",
+      "목적": "사용자가 다른 의료기관에 기록을 전달할 수 있게 하고, 내보낸 파일이 유출되어도 내용이 노출되지 않도록 하기 위함이다.",
+      "기준": [
+        "내보낸 파일에 선택한 기간의 수면 기록이 담김을 확인함",
+        "내보낸 파일은 암호를 입력해야만 열 수 있음을 확인함"
+      ],
+      "설계": [
+        "• 설정 화면에 수면 기록 내보내기 기능을 추가하도록 구현한다.",
+        "• 내보내는 파일은 사용자가 정한 암호로 암호화하여 생성한다.",
+        "• 파일 생성이 끝나면 저장 위치와 암호 관리 주의 사항을 안내한다."
+      ]
+    },
+    "value_change": {
+      "fact": "F_DEFAULT_CBT_SESSION_REMINDER",
+      "origin_req": "Req. 9",
+      "old_value": "18:00",
+      "new_value": "20:00"
+    }
+  },
+  "items": [
+    {
+      "site": "[MDSR | Req. 19 | 번호]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "번호",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "Req. 19"
+    },
+    {
+      "site": "[MDSR | Req. 19 | 제목]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "제목",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "기록 내보내기"
+    },
+    {
+      "site": "[MDSR | Req. 19 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "설명",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "사용자는 자신의 수면 기록을 파일로 내보낼 수 있어야 하며, 내보내는 파일은 안전한 암호 방식으로 암호화되어야 한다."
+    },
+    {
+      "site": "[MDSR | Req. 19 | 목적]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "목적",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "사용자가 다른 의료기관에 기록을 전달할 수 있게 하고, 내보낸 파일이 유출되어도 내용이 노출되지 않도록 하기 위함이다."
+    },
+    {
+      "site": "[MDSR | Req. 19 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "기준#p1",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "내보낸 파일에 선택한 기간의 수면 기록이 담김을 확인함"
+    },
+    {
+      "site": "[MDSR | Req. 19 | 기준#p2]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "기준#p2",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "내보낸 파일은 암호를 입력해야만 열 수 있음을 확인함"
+    },
+    {
+      "site": "[MDDR | Req. 19 | 번호]",
+      "doc": "MDDR",
+      "item": "Req. 19",
+      "cell": "번호",
+      "path": "same_id",
+      "op": "insert",
+      "anchor": "[MDDR | Req. 18 | 설계#p3]",
+      "new_value": "Req. 19"
+    },
+    {
+      "site": "[MDDR | Req. 19 | 설계#p1]",
+      "doc": "MDDR",
+      "item": "Req. 19",
+      "cell": "설계#p1",
+      "path": "same_id",
+      "op": "insert",
+      "anchor": "[MDDR | Req. 18 | 설계#p3]",
+      "new_value": "• 설정 화면에 수면 기록 내보내기 기능을 추가하도록 구현한다."
+    },
+    {
+      "site": "[MDDR | Req. 19 | 설계#p2]",
+      "doc": "MDDR",
+      "item": "Req. 19",
+      "cell": "설계#p2",
+      "path": "same_id",
+      "op": "insert",
+      "anchor": "[MDDR | Req. 18 | 설계#p3]",
+      "new_value": "• 내보내는 파일은 사용자가 정한 암호로 암호화하여 생성한다."
+    },
+    {
+      "site": "[MDDR | Req. 19 | 설계#p3]",
+      "doc": "MDDR",
+      "item": "Req. 19",
+      "cell": "설계#p3",
+      "path": "same_id",
+      "op": "insert",
+      "anchor": "[MDDR | Req. 18 | 설계#p3]",
+      "new_value": "• 파일 생성이 끝나면 저장 위치와 암호 관리 주의 사항을 안내한다."
+    },
+    {
+      "site": "[MDSR | DC-03 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "DC-03",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "trace",
+      "op": "modify",
+      "new_value": "Req. 4, Req. 10, Req. 19, Req. 102, Req. 103",
+      "note": "연결 Req 칸에 Req. 19 추가"
+    },
+    {
+      "site": "[MDSR | Req. 9 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 9",
+      "cell": "설명",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_DEFAULT_CBT_SESSION_REMINDER",
+      "old_surface": "18:00",
+      "new_value": "20:00"
+    },
+    {
+      "site": "[MDSR | Req. 9 | 기준#p2]",
+      "doc": "MDSR",
+      "item": "Req. 9",
+      "cell": "기준#p2",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_DEFAULT_CBT_SESSION_REMINDER",
+      "old_surface": "오후 6시",
+      "new_value": "20:00"
+    },
+    {
+      "site": "[MDSR | Req. 14 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 14",
+      "cell": "기준#p1",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_DEFAULT_CBT_SESSION_REMINDER",
+      "old_surface": "18시",
+      "new_value": "20:00"
+    },
+    {
+      "site": "[MDDR | Req. 9 | 설계#p2]",
+      "doc": "MDDR",
+      "item": "Req. 9",
+      "cell": "설계#p2",
+      "path": "same_id",
+      "op": "modify",
+      "fact": "F_DEFAULT_CBT_SESSION_REMINDER",
+      "old_surface": "18:00",
+      "new_value": "20:00"
+    },
+    {
+      "site": "[MDDR | Req. 14 | 설계#p1]",
+      "doc": "MDDR",
+      "item": "Req. 14",
+      "cell": "설계#p1",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_DEFAULT_CBT_SESSION_REMINDER",
+      "old_surface": "오후 6시",
+      "new_value": "20:00"
+    }
+  ],
+  "neutral": []
+}

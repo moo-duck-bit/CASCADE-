@@ -1,0 +1,77 @@
+{
+  "case_id": "T1_31",
+  "items": [
+    {
+      "site": "[MDSR | 3.4 일반적 제한 | 본문#p3]",
+      "doc": "MDSR",
+      "item": "3.4 일반적 제한",
+      "cell": "본문#p3",
+      "path": "same_value",
+      "fact": "F_PASSWORD_CHANGE_INTERVAL",
+      "reason": "같은 값(3개월)이지만 다른 사실"
+    },
+    {
+      "site": "[MDSR | Req. 108 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 108",
+      "cell": "설명",
+      "path": "same_value",
+      "fact": "F_PASSWORD_CHANGE_INTERVAL",
+      "reason": "같은 값(90일)이지만 다른 사실"
+    },
+    {
+      "site": "[MDSR | Req. 108 | 기준#p2]",
+      "doc": "MDSR",
+      "item": "Req. 108",
+      "cell": "기준#p2",
+      "path": "same_value",
+      "fact": "F_PASSWORD_CHANGE_INTERVAL",
+      "reason": "같은 값(90 일)이지만 다른 사실"
+    },
+    {
+      "site": "[XXCS | IA-04 | 시험방법#p2]",
+      "doc": "XXCS",
+      "item": "IA-04",
+      "cell": "시험방법#p2",
+      "path": "same_value",
+      "fact": "F_PASSWORD_CHANGE_INTERVAL",
+      "reason": "같은 값(90 일)이지만 다른 사실"
+    },
+    {
+      "site": "[XXCS | IA-04 | 확인결과#p1]",
+      "doc": "XXCS",
+      "item": "IA-04",
+      "cell": "확인결과#p1",
+      "path": "same_value",
+      "fact": "F_PASSWORD_CHANGE_INTERVAL",
+      "reason": "같은 값(3개월)이지만 다른 사실"
+    },
+    {
+      "site": "[XXCS | IA-04 | 확인결과#p2]",
+      "doc": "XXCS",
+      "item": "IA-04",
+      "cell": "확인결과#p2",
+      "path": "same_value",
+      "fact": "F_PASSWORD_CHANGE_INTERVAL",
+      "reason": "같은 값(90일)이지만 다른 사실"
+    },
+    {
+      "site": "[XXCS | IA-05 | 시험방법#p2]",
+      "doc": "XXCS",
+      "item": "IA-05",
+      "cell": "시험방법#p2",
+      "path": "same_value",
+      "fact": "F_PASSWORD_CHANGE_INTERVAL",
+      "reason": "같은 값(90 일)이지만 다른 사실"
+    },
+    {
+      "site": "[XXCS | IA-05 | 확인결과#p2]",
+      "doc": "XXCS",
+      "item": "IA-05",
+      "cell": "확인결과#p2",
+      "path": "same_value",
+      "fact": "F_PASSWORD_CHANGE_INTERVAL",
+      "reason": "같은 값(3개월)이지만 다른 사실"
+    }
+  ]
+}

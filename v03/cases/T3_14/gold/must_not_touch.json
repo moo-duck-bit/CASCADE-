@@ -1,0 +1,37 @@
+{
+  "case_id": "T3_14",
+  "items": [
+    {
+      "site": "[MDSR | Req. 101 | 번호]",
+      "doc": "MDSR",
+      "item": "Req. 101",
+      "cell": "번호",
+      "path": "same_id",
+      "reason": "삭제 후 번호 재정렬 금지"
+    },
+    {
+      "site": "[MDDR | Req. 101 | 번호]",
+      "doc": "MDDR",
+      "item": "Req. 101",
+      "cell": "번호",
+      "path": "same_id",
+      "reason": "삭제 후 번호 재정렬 금지"
+    },
+    {
+      "site": "[MDSR | Req. 102 | 번호]",
+      "doc": "MDSR",
+      "item": "Req. 102",
+      "cell": "번호",
+      "path": "same_id",
+      "reason": "삭제 후 번호 재정렬 금지"
+    },
+    {
+      "site": "[MDDR | Req. 102 | 번호]",
+      "doc": "MDDR",
+      "item": "Req. 102",
+      "cell": "번호",
+      "path": "same_id",
+      "reason": "삭제 후 번호 재정렬 금지"
+    }
+  ]
+}

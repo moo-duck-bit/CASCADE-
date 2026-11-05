@@ -1,0 +1,109 @@
+{
+  "case_id": "T3_42",
+  "case_type": "T3",
+  "subtype": "add",
+  "change": {
+    "new_req": "Req. 19",
+    "component": "앱",
+    "title": "호흡 안내",
+    "related_secs": [
+      "SI-04"
+    ],
+    "draft": {
+      "설명": "앱은 잠들기 전 호흡 안내 콘텐츠를 재생할 수 있어야 하며, 재생 전에 콘텐츠 파일의 무결성을 점검하여야 한다.",
+      "목적": "사용자가 긴장을 풀고 잠들 수 있도록 돕고, 변조된 콘텐츠가 재생되지 않도록 하기 위함이다.",
+      "기준": [
+        "무결성 점검을 통과한 호흡 안내 콘텐츠가 정상적으로 재생됨을 확인함",
+        "무결성 점검에 실패한 콘텐츠는 재생되지 않고 안내 메시지가 표시됨을 확인함"
+      ],
+      "설계": [
+        "• 이완 훈련 메뉴에 호흡 안내 콘텐츠 재생 기능을 추가하도록 구현한다.",
+        "• 콘텐츠 파일은 재생 전에 서버가 제공한 검증 값과 비교하여 무결성을 점검한다.",
+        "• 점검에 실패하면 재생을 중단하고 콘텐츠를 다시 내려받도록 안내한다."
+      ]
+    }
+  },
+  "items": [
+    {
+      "site": "[MDSR | Req. 19 | 번호]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "번호",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "Req. 19"
+    },
+    {
+      "site": "[MDSR | Req. 19 | 제목]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "제목",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "호흡 안내"
+    },
+    {
+      "site": "[MDSR | Req. 19 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "설명",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "앱은 잠들기 전 호흡 안내 콘텐츠를 재생할 수 있어야 하며, 재생 전에 콘텐츠 파일의 무결성을 점검하여야 한다."
+    },
+    {
+      "site": "[MDSR | Req. 19 | 목적]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "목적",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "사용자가 긴장을 풀고 잠들 수 있도록 돕고, 변조된 콘텐츠가 재생되지 않도록 하기 위함이다."
+    },
+    {
+      "site": "[MDSR | Req. 19 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "기준#p1",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "무결성 점검을 통과한 호흡 안내 콘텐츠가 정상적으로 재생됨을 확인함"
+    },
+    {
+      "site": "[MDSR | Req. 19 | 기준#p2]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "기준#p2",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "무결성 점검에 실패한 콘텐츠는 재생되지 않고 안내 메시지가 표시됨을 확인함"
+    },
+    {
+      "site": "[MDSR | SI-04 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "SI-04",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "trace",
+      "op": "modify",
+      "new_value": "Req. 13, Req. 18, Req. 19",
+      "note": "연결 Req 칸에 Req. 19 추가"
+    },
+    {
+      "site": "[XXCS | SI-04 | 해당 요구사항]",
+      "doc": "XXCS",
+      "item": "SI-04",
+      "cell": "해당 요구사항",
+      "path": "trace",
+      "op": "modify",
+      "new_value": "Req. 13, Req. 18, Req. 19",
+      "note": "연결 Req 칸에 Req. 19 추가"
+    }
+  ],
+  "neutral": []
+}

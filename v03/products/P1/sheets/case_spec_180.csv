@@ -1,0 +1,183 @@
+﻿# P1 수면코치 하나에서 고른 180개. 제품 3종 60개 시트(case_spec.csv)와 별개다.,,,,,,
+"# 2026-11-04 수정: 중복 36행 대체, 파생 사실 단독 변경 2행 대체, T2 16행은 속성 2개 동시 변경, T3 추가 연결 항목을 기능 의미로 재배정, 새 Req 번호를 앱 Req. 19·서버 Req. 109로 통일. 원본은 case_spec_180_v0.csv, 수정 코드는 build/revise_case_spec.py",,,,,,
+case_id,유형,무엇을 바꾸나,변경,노리는 경로,엮인 문서 수,메모
+T1_01,T1,"F_ACCOUNT_LOCK_DURATION (계정 잠금 시간), 출발 Req. 2",15분→20분,"origin, same_id, trace, same_value",3 (MDSR+MDDR+XXCS),trace 2. same_value 6. 같은 변경을 문서 수만 달리한 행이 있음
+T1_02,T1,"F_SYNC_INTERVAL (동기화 주기), 출발 Req. 100",60분→120분,"origin, same_id, trace, same_value",3 (MDSR+MDDR+XXCS),trace 2. same_value 6. 같은 변경을 문서 수만 달리한 행이 있음
+T1_03,T1,"F_BACKUP_INTERVAL (백업 주기), 출발 Req. 7",24시간→12시간,"origin, same_id, trace, same_value",3 (MDSR+MDDR+XXCS),trace 2. same_value 5. 같은 변경을 문서 수만 달리한 행이 있음
+T1_04,T1,"F_LOGIN_FAILURE_LIMIT (로그인 실패 허용 횟수), 출발 Req. 2",5회→4회,"origin, same_id, trace, same_value",3 (MDSR+MDDR+XXCS),trace 2. same_value 4. 같은 변경을 문서 수만 달리한 행이 있음
+T1_05,T1,"F_SESSION_TIMEOUT (세션 종료 시간), 출발 Req. 3",15분→5분,"origin, same_id, trace, same_value",3 (MDSR+MDDR+XXCS),trace 2. same_value 1. 같은 변경을 문서 수만 달리한 행이 있음
+T1_06,T1,"F_PASSWORD_MIN_LENGTH (비밀번호 최소 길이), 출발 Req. 1",8자→10자,"origin, same_id, trace, same_value",3 (MDSR+MDDR+XXCS),trace 2. same_value 1. 같은 변경을 문서 수만 달리한 행이 있음
+T1_07,T1,"F_ACCOUNT_LOCK_DURATION (계정 잠금 시간), 출발 Req. 2",15분→45분,"origin, same_id, trace, same_value",3 (MDSR+MDDR+XXCS),trace 2. same_value 6. 같은 변경을 문서 수만 달리한 행이 있음. 파생 사실 F_UNLOCK_NOTIFICATION_TIME 칸도 정답(new_value 없음). [수정] 파생 사실만 바꾸던 행 대체(원래 F_UNLOCK_NOTIFICATION_TIME 15분→20분).
+T1_08,T1,"F_MEDICAL_STAFF_SESSION_TIMEOUT (의료진 대시보드 세션 종료 시간), 출발 Req. 3",15분→5분,"origin, same_id, trace, same_value",3 (MDSR+MDDR+XXCS),trace 2. same_value 1. 같은 변경을 문서 수만 달리한 행이 있음
+T1_09,T1,"F_INACTIVE_ACCOUNT_LOCK_DURATION (비활성 계정 자동 잠금 기간), 출발 Req. 2",90일→60일,"origin, same_id, trace, same_value",3 (MDSR+MDDR+XXCS),trace 2. same_value 1. 같은 변경을 문서 수만 달리한 행이 있음
+T1_10,T1,"F_PASSWORD_CHANGE_INTERVAL (비밀번호 변경 주기), 출발 Req. 108",90일→60일,"origin, same_id, trace, same_value",3 (MDSR+MDDR+XXCS),trace 2. same_value 1. 같은 변경을 문서 수만 달리한 행이 있음
+T1_11,T1,"F_PASSWORD_MIN_LENGTH (비밀번호 최소 길이), 출발 Req. 1",8자→12자,"origin, same_id, trace, same_value",3 (MDSR+MDDR+XXCS),trace 2. same_value 1. 같은 변경을 문서 수만 달리한 행이 있음. [수정] 중복 행 대체(원래 F_ACCOUNT_LOCK_DURATION 15분→20분).
+T1_12,T1,"F_INACTIVE_ACCOUNT_LOCK_DURATION (비활성 계정 자동 잠금 기간), 출발 Req. 2",90일→30일,"origin, same_id, trace, same_value",3 (MDSR+MDDR+XXCS),trace 2. same_value 1. 같은 변경을 문서 수만 달리한 행이 있음. [수정] 중복 행 대체(원래 F_SYNC_INTERVAL 60분→120분).
+T1_13,T1,"F_PASSWORD_CHANGE_INTERVAL (비밀번호 변경 주기), 출발 Req. 108",90일→30일,"origin, same_id, trace, same_value",3 (MDSR+MDDR+XXCS),trace 2. same_value 1. 같은 변경을 문서 수만 달리한 행이 있음. [수정] 중복 행 대체(원래 F_BACKUP_INTERVAL 24시간→12시간).
+T1_14,T1,"F_BACKUP_INTERVAL (백업 주기), 출발 Req. 7",24시간→6시간,"origin, same_id, trace, same_value",3 (MDSR+MDDR+XXCS),trace 2. same_value 5. 같은 변경을 문서 수만 달리한 행이 있음. [수정] 중복 행 대체(원래 F_LOGIN_FAILURE_LIMIT 5회→4회).
+T1_15,T1,"F_AUDIT_LOG_RETENTION (감사로그 보관 기간), 출발 Req. 6",180일→365일,"origin, same_id, trace, same_value",3 (MDSR+MDDR+XXCS),trace 3. same_value 3. 같은 변경을 문서 수만 달리한 행이 있음. 새 값이 다른 사실의 현재 값과 같음(fact_list 표시). [수정] 중복 행 대체(원래 F_SESSION_TIMEOUT 15분→5분).
+T1_16,T1,"F_PII_DELETION_DEADLINE (개인정보 파기 기한), 출발 Req. 7",365일→180일,"origin, same_id, trace, same_value",3 (MDSR+MDDR+XXCS),trace 2. same_value 4. 같은 변경을 문서 수만 달리한 행이 있음. 새 값이 다른 사실의 현재 값과 같음(fact_list 표시). [수정] 중복 행 대체(원래 F_PASSWORD_MIN_LENGTH 8자→10자).
+T1_17,T1,"F_PRESCRIPTION_CHANGE_LOG_RETENTION (처방 변경 이력 보관 기간), 출발 Req. 18",365일→730일,"origin, same_id, trace, same_value",3 (MDSR+MDDR+XXCS),trace 2. same_value 1. 같은 변경을 문서 수만 달리한 행이 있음. 새 값이 다른 사실의 현재 값과 같음(fact_list 표시). [수정] 파생 사실만 바꾸던 행 대체(원래 F_UNLOCK_NOTIFICATION_TIME 15분→20분).
+T1_18,T1,"F_MEDICAL_STAFF_ACCESS_LOG_RETENTION (의료진 접속 기록 보관 기간), 출발 Req. 6",180일→365일,"origin, same_id, trace, same_value",3 (MDSR+MDDR+XXCS),trace 2. same_value 3. 같은 변경을 문서 수만 달리한 행이 있음. 새 값이 다른 사실의 현재 값과 같음(fact_list 표시). [수정] 중복 행 대체(원래 F_MEDICAL_STAFF_SESSION_TIMEOUT 15분→5분).
+T1_19,T1,"F_BACKUP_INTERVAL (백업 주기), 출발 Req. 105",24시간→12시간,"origin, same_id, same_value",3 (MDSR+MDDR+XXCS),trace 0. same_value 8. 같은 변경을 문서 수만 달리한 행이 있음. [수정] 중복 행 대체(원래 F_INACTIVE_ACCOUNT_LOCK_DURATION 90일→60일).
+T1_20,T1,"F_SYNC_INTERVAL (동기화 주기), 출발 Req. 101",60분→120분,"origin, same_id, same_value",3 (MDSR+MDDR+XXCS),trace 0. same_value 8. 같은 변경을 문서 수만 달리한 행이 있음. [수정] 중복 행 대체(원래 F_PASSWORD_CHANGE_INTERVAL 90일→60일).
+T1_21,T1,"F_LOGIN_FAILURE_LIMIT (로그인 실패 허용 횟수), 출발 Req. 1",5회→4회,"origin, same_id, trace, same_value",3 (MDSR+MDDR+XXCS),trace 1. same_value 7. 같은 변경을 문서 수만 달리한 행이 있음. [수정] 중복 행 대체(원래 F_ACCOUNT_LOCK_DURATION 15분→20분).
+T1_22,T1,"F_MEDICAL_STAFF_ACCESS_LOG_AUDIT_INTERVAL (의료진 접속 기록 감사 주기), 출발 Req. 104",45일→30일,"origin, same_id, same_value",3 (MDSR+MDDR+XXCS),trace 0. same_value 5. 같은 변경을 문서 수만 달리한 행이 있음. [수정] 중복 행 대체(원래 F_SYNC_INTERVAL 60분→120분).
+T1_23,T1,"F_ACCOUNT_LOCK_DURATION (계정 잠금 시간), 출발 Req. 2",15분→45분,"origin, trace, same_value",2 (MDSR+XXCS),trace 2. same_value 6. 같은 변경을 문서 수만 달리한 행이 있음. 파생 사실 F_UNLOCK_NOTIFICATION_TIME 칸도 정답(new_value 없음). [수정] 중복 행 대체(원래 F_BACKUP_INTERVAL 24시간→12시간).
+T1_24,T1,"F_PASSWORD_MIN_LENGTH (비밀번호 최소 길이), 출발 Req. 1",8자→12자,"origin, trace, same_value",2 (MDSR+XXCS),trace 2. same_value 1. 같은 변경을 문서 수만 달리한 행이 있음. [수정] 중복 행 대체(원래 F_LOGIN_FAILURE_LIMIT 5회→4회).
+T1_25,T1,"F_ACCOUNT_LOCK_DURATION (계정 잠금 시간), 출발 Req. 2",15분→20분,"origin, trace, same_value",2 (MDSR+XXCS),trace 2. same_value 6. 같은 변경을 문서 수만 달리한 행이 있음
+T1_26,T1,"F_SYNC_INTERVAL (동기화 주기), 출발 Req. 100",60분→120분,"origin, trace, same_value",2 (MDSR+XXCS),trace 2. same_value 6. 같은 변경을 문서 수만 달리한 행이 있음
+T1_27,T1,"F_BACKUP_INTERVAL (백업 주기), 출발 Req. 7",24시간→12시간,"origin, trace, same_value",2 (MDSR+XXCS),trace 2. same_value 5. 같은 변경을 문서 수만 달리한 행이 있음
+T1_28,T1,"F_LOGIN_FAILURE_LIMIT (로그인 실패 허용 횟수), 출발 Req. 2",5회→4회,"origin, trace, same_value",2 (MDSR+XXCS),trace 2. same_value 4. 같은 변경을 문서 수만 달리한 행이 있음
+T1_29,T1,"F_SESSION_TIMEOUT (세션 종료 시간), 출발 Req. 3",15분→5분,"origin, trace, same_value",2 (MDSR+XXCS),trace 2. same_value 1. 같은 변경을 문서 수만 달리한 행이 있음
+T1_30,T1,"F_PASSWORD_MIN_LENGTH (비밀번호 최소 길이), 출발 Req. 1",8자→10자,"origin, trace, same_value",2 (MDSR+XXCS),trace 2. same_value 1. 같은 변경을 문서 수만 달리한 행이 있음
+T1_31,T1,"F_INACTIVE_ACCOUNT_LOCK_DURATION (비활성 계정 자동 잠금 기간), 출발 Req. 2",90일→30일,"origin, trace, same_value",2 (MDSR+XXCS),trace 2. same_value 1. 같은 변경을 문서 수만 달리한 행이 있음. [수정] 파생 사실만 바꾸던 행 대체(원래 F_UNLOCK_NOTIFICATION_TIME 15분→20분).
+T1_32,T1,"F_MEDICAL_STAFF_SESSION_TIMEOUT (의료진 대시보드 세션 종료 시간), 출발 Req. 3",15분→5분,"origin, trace, same_value",2 (MDSR+XXCS),trace 2. same_value 1. 같은 변경을 문서 수만 달리한 행이 있음
+T1_33,T1,"F_INACTIVE_ACCOUNT_LOCK_DURATION (비활성 계정 자동 잠금 기간), 출발 Req. 2",90일→60일,"origin, trace, same_value",2 (MDSR+XXCS),trace 2. same_value 1. 같은 변경을 문서 수만 달리한 행이 있음
+T1_34,T1,"F_PASSWORD_CHANGE_INTERVAL (비밀번호 변경 주기), 출발 Req. 108",90일→60일,"origin, trace, same_value",2 (MDSR+XXCS),trace 2. same_value 1. 같은 변경을 문서 수만 달리한 행이 있음
+T1_35,T1,"F_PASSWORD_CHANGE_INTERVAL (비밀번호 변경 주기), 출발 Req. 108",90일→30일,"origin, trace, same_value",2 (MDSR+XXCS),trace 2. same_value 1. 같은 변경을 문서 수만 달리한 행이 있음. [수정] 중복 행 대체(원래 F_ACCOUNT_LOCK_DURATION 15분→20분).
+T1_36,T1,"F_BACKUP_INTERVAL (백업 주기), 출발 Req. 7",24시간→6시간,"origin, trace, same_value",2 (MDSR+XXCS),trace 2. same_value 5. 같은 변경을 문서 수만 달리한 행이 있음. [수정] 중복 행 대체(원래 F_SYNC_INTERVAL 60분→120분).
+T1_37,T1,"F_AUDIT_LOG_RETENTION (감사로그 보관 기간), 출발 Req. 6",180일→365일,"origin, trace, same_value",2 (MDSR+XXCS),trace 3. same_value 3. 같은 변경을 문서 수만 달리한 행이 있음. 새 값이 다른 사실의 현재 값과 같음(fact_list 표시). [수정] 중복 행 대체(원래 F_BACKUP_INTERVAL 24시간→12시간).
+T1_38,T1,"F_PII_DELETION_DEADLINE (개인정보 파기 기한), 출발 Req. 7",365일→180일,"origin, trace, same_value",2 (MDSR+XXCS),trace 2. same_value 4. 같은 변경을 문서 수만 달리한 행이 있음. 새 값이 다른 사실의 현재 값과 같음(fact_list 표시). [수정] 중복 행 대체(원래 F_LOGIN_FAILURE_LIMIT 5회→4회).
+T1_39,T1,"F_PRESCRIPTION_CHANGE_LOG_RETENTION (처방 변경 이력 보관 기간), 출발 Req. 18",365일→730일,"origin, trace, same_value",2 (MDSR+XXCS),trace 2. same_value 1. 같은 변경을 문서 수만 달리한 행이 있음. 새 값이 다른 사실의 현재 값과 같음(fact_list 표시). [수정] 중복 행 대체(원래 F_SESSION_TIMEOUT 15분→5분).
+T1_40,T1,"F_MEDICAL_STAFF_ACCESS_LOG_RETENTION (의료진 접속 기록 보관 기간), 출발 Req. 6",180일→365일,"origin, trace, same_value",2 (MDSR+XXCS),trace 2. same_value 3. 같은 변경을 문서 수만 달리한 행이 있음. 새 값이 다른 사실의 현재 값과 같음(fact_list 표시). [수정] 중복 행 대체(원래 F_PASSWORD_MIN_LENGTH 8자→10자).
+T1_41,T1,"F_BACKUP_INTERVAL (백업 주기), 출발 Req. 105",24시간→12시간,"origin, same_id, same_value",2 (MDSR+MDDR),trace 0. same_value 8. 같은 변경을 문서 수만 달리한 행이 있음
+T1_42,T1,"F_SYNC_INTERVAL (동기화 주기), 출발 Req. 101",60분→120분,"origin, same_id, same_value",2 (MDSR+MDDR),trace 0. same_value 8. 같은 변경을 문서 수만 달리한 행이 있음
+T1_43,T1,"F_LOGIN_FAILURE_LIMIT (로그인 실패 허용 횟수), 출발 Req. 1",5회→4회,"origin, same_id, same_value",2 (MDSR+MDDR),trace 1. same_value 7. 같은 변경을 문서 수만 달리한 행이 있음
+T1_44,T1,"F_DEFAULT_SLEEP_LIMIT (수면 제한 요법 기본 취침 시간), 출발 Req. 8",22:00→21:30,"origin, same_id, same_value",2 (MDSR+MDDR),trace 0. same_value 6. 같은 변경을 문서 수만 달리한 행이 있음
+T1_45,T1,"F_DEFAULT_WAKE_TIME (수면 제한 요법 기본 기상 시간), 출발 Req. 8",7:00→6:30,"origin, same_id, same_value",2 (MDSR+MDDR),trace 0. same_value 6. 같은 변경을 문서 수만 달리한 행이 있음
+T1_46,T1,"F_MEDICAL_STAFF_ACCESS_LOG_AUDIT_INTERVAL (의료진 접속 기록 감사 주기), 출발 Req. 104",45일→30일,"origin, same_id, same_value",2 (MDSR+MDDR),trace 0. same_value 5. 같은 변경을 문서 수만 달리한 행이 있음
+T1_47,T1,"F_DEFAULT_SLEEP_LIMIT (수면 제한 요법 기본 취침 시간), 출발 Req. 10",22:00→21:30,"origin, same_id, same_value",2 (MDSR+MDDR),trace 0. same_value 3. 같은 변경을 문서 수만 달리한 행이 있음
+T1_48,T1,"F_DEFAULT_WAKE_TIME (수면 제한 요법 기본 기상 시간), 출발 Req. 10",7:00→6:30,"origin, same_id, same_value",2 (MDSR+MDDR),trace 0. same_value 3. 같은 변경을 문서 수만 달리한 행이 있음
+T1_49,T1,"F_BACKUP_INTERVAL (백업 주기), 출발 Req. 105",24시간→12시간,"origin, same_value",1 (MDSR),trace 0. same_value 8. 같은 변경을 문서 수만 달리한 행이 있음
+T1_50,T1,"F_SYNC_INTERVAL (동기화 주기), 출발 Req. 101",60분→120분,"origin, same_value",1 (MDSR),trace 0. same_value 8. 같은 변경을 문서 수만 달리한 행이 있음
+T1_51,T1,"F_LOGIN_FAILURE_LIMIT (로그인 실패 허용 횟수), 출발 Req. 1",5회→4회,"origin, same_value",1 (MDSR),trace 1. same_value 7. 같은 변경을 문서 수만 달리한 행이 있음
+T1_52,T1,"F_DEFAULT_SLEEP_LIMIT (수면 제한 요법 기본 취침 시간), 출발 Req. 8",22:00→21:30,"origin, same_value",1 (MDSR),trace 0. same_value 6. 같은 변경을 문서 수만 달리한 행이 있음
+T1_53,T1,"F_DEFAULT_WAKE_TIME (수면 제한 요법 기본 기상 시간), 출발 Req. 8",7:00→6:30,"origin, same_value",1 (MDSR),trace 0. same_value 6. 같은 변경을 문서 수만 달리한 행이 있음
+T1_54,T1,"F_MEDICAL_STAFF_ACCESS_LOG_AUDIT_INTERVAL (의료진 접속 기록 감사 주기), 출발 Req. 104",45일→30일,"origin, same_value",1 (MDSR),trace 0. same_value 5. 같은 변경을 문서 수만 달리한 행이 있음
+T1_55,T1,"F_DEFAULT_SLEEP_LIMIT (수면 제한 요법 기본 취침 시간), 출발 Req. 10",22:00→21:30,"origin, same_value",1 (MDSR),trace 0. same_value 3. 같은 변경을 문서 수만 달리한 행이 있음
+T1_56,T1,"F_DEFAULT_WAKE_TIME (수면 제한 요법 기본 기상 시간), 출발 Req. 10",7:00→6:30,"origin, same_value",1 (MDSR),trace 0. same_value 3. 같은 변경을 문서 수만 달리한 행이 있음
+T1_57,T1,"F_DEFAULT_CBT_SESSION_REMINDER (CBT 회기 알림 시각), 출발 Req. 14",18:00→17:00,"origin, same_value",1 (MDSR),trace 0. same_value 3. 같은 변경을 문서 수만 달리한 행이 있음
+T1_58,T1,"F_DEFAULT_CBT_SESSION_REMINDER (CBT 회기 알림 시각), 출발 Req. 9",18:00→17:00,"origin, same_value",1 (MDSR),trace 0. same_value 2. 같은 변경을 문서 수만 달리한 행이 있음
+T1_59,T1,"F_MEDICAL_STAFF_ACCESS_LOG_AUDIT_INTERVAL (의료진 접속 기록 감사 주기), 출발 Req. 6",45일→30일,"origin, same_value",1 (MDSR),trace 1. same_value 2. 같은 변경을 문서 수만 달리한 행이 있음
+T1_60,T1,"F_SLEEP_DIARY_DEADLINE (수면일기 입력 기한), 출발 Req. 8",24시간→12시간,origin,1 (MDSR),trace 1. same_value 0. 같은 변경을 문서 수만 달리한 행이 있음
+T1_61,T1,"F_NOTIFICATION_TIME (알림 시각), 출발 Req. 9",21:00→20:30,origin,1 (MDSR),trace 0. same_value 0. 같은 변경을 문서 수만 달리한 행이 있음
+T1_62,T1,"F_TREATMENT_SESSIONS (CBT-I 총 치료 회기 수), 출발 Req. 106",6회→4회,origin,1 (MDSR),trace 1. same_value 0. 같은 변경을 문서 수만 달리한 행이 있음
+T1_63,T1,"F_DEFAULT_STIMULUS_CONTROL_DURATION (자극 조절 교육 기본 기간), 출발 Req. 11",7일→5일,origin,1 (MDSR),trace 0. same_value 0. 같은 변경을 문서 수만 달리한 행이 있음
+T1_64,T1,"F_DEFAULT_SLEEP_HYGIENE_DURATION (수면 위생 교육 기본 기간), 출발 Req. 12",7일→5일,origin,1 (MDSR),trace 0. same_value 0. 같은 변경을 문서 수만 달리한 행이 있음
+T1_65,T1,"F_DEFAULT_CBT_SESSION_DURATION (CBT 회기 기본 지속 시간), 출발 Req. 13",30분→20분,origin,1 (MDSR),trace 0. same_value 0. 같은 변경을 문서 수만 달리한 행이 있음
+T1_66,T1,"F_DEFAULT_CBT_SESSION_INTERVAL (CBT 회기 기본 간격), 출발 Req. 13",7일→5일,origin,1 (MDSR),trace 0. same_value 0. 같은 변경을 문서 수만 달리한 행이 있음
+T1_67,T1,"F_DEFAULT_CBT_SESSION_REMINDER_INTERVAL (CBT 회기 알림 반복 간격), 출발 Req. 14",15분→20분,origin,1 (MDSR),trace 0. same_value 0. 같은 변경을 문서 수만 달리한 행이 있음
+T1_68,T1,"F_DEFAULT_CBT_SESSION_REMINDER_COUNT (CBT 회기 알림 최대 반복 횟수), 출발 Req. 15",3회→2회,origin,1 (MDSR),trace 0. same_value 0. 같은 변경을 문서 수만 달리한 행이 있음
+T1_69,T1,"F_DEFAULT_CBT_SESSION_REMINDER_SOUND (CBT 회기 알림 소리), 출발 Req. 14",벨 소리→진동,origin,1 (MDSR),trace 0. same_value 0. 같은 변경을 문서 수만 달리한 행이 있음
+T1_70,T1,"F_SLEEP_HYGIENE_CONTENT_COUNT (수면 위생 교육 콘텐츠 수), 출발 Req. 12",12개→10개,origin,1 (MDSR),trace 0. same_value 0. 같은 변경을 문서 수만 달리한 행이 있음
+T1_71,T1,"F_RELAXATION_SESSION_DURATION (이완 훈련 세션 지속 시간), 출발 Req. 15",10분→20분,origin,1 (MDSR),trace 0. same_value 0. 같은 변경을 문서 수만 달리한 행이 있음
+T1_72,T1,"F_SLEEP_EFFICIENCY_REPORT_INTERVAL (수면 효율 리포트 생성 주기), 출발 Req. 16",7일→14일,origin,1 (MDSR),trace 0. same_value 0. 같은 변경을 문서 수만 달리한 행이 있음
+T2_01,T2,stores_pii (개인식별정보 저장),false→true,rule,1 (XXCS),약화 아님(보안 항목이 새로 적용됨)
+T2_02,T2,samd (독립형 소프트웨어 의료기기(SaMD)),true→false,rule,1 (XXCS),약화 아님(보안 항목이 새로 적용됨)
+T2_03,T2,mobile_code (모바일 코드(외부 스크립트 콘텐츠) 실행),false→true,rule,1 (XXCS),약화 아님(보안 항목이 새로 적용됨)
+T2_04,T2,e_signature (전자서명 기반 처방 기능),false→true,rule,1 (XXCS),약화 아님(보안 항목이 새로 적용됨)
+T2_05,T2,remote_update (제조사 원격 업데이트 기능),false→true,rule,1 (XXCS),약화 아님(보안 항목이 새로 적용됨)
+T2_06,T2,stores_pii (개인식별정보 저장) + samd (독립형 소프트웨어 의료기기(SaMD)),"false→true, true→false",rule,1 (XXCS),속성 2개 동시 변경. 약화 아님(보안 항목이 새로 적용됨). [수정] 중복 행 대체.
+T2_07,T2,samd (독립형 소프트웨어 의료기기(SaMD)) + mobile_code (모바일 코드(외부 스크립트 콘텐츠) 실행),"true→false, false→true",rule,1 (XXCS),속성 2개 동시 변경. 약화 아님(보안 항목이 새로 적용됨). [수정] 중복 행 대체.
+T2_08,T2,mobile_code (모바일 코드(외부 스크립트 콘텐츠) 실행) + e_signature (전자서명 기반 처방 기능),"false→true, false→true",rule,1 (XXCS),속성 2개 동시 변경. 약화 아님(보안 항목이 새로 적용됨). [수정] 중복 행 대체.
+T2_09,T2,e_signature (전자서명 기반 처방 기능) + remote_update (제조사 원격 업데이트 기능),"false→true, false→true",rule,1 (XXCS),속성 2개 동시 변경. 약화 아님(보안 항목이 새로 적용됨). [수정] 중복 행 대체.
+T2_10,T2,stores_pii (개인식별정보 저장) + e_signature (전자서명 기반 처방 기능),"false→true, false→true",rule,1 (XXCS),속성 2개 동시 변경. 약화 아님(보안 항목이 새로 적용됨). [수정] 중복 행 대체.
+T2_11,T2,samd (독립형 소프트웨어 의료기기(SaMD)) + remote_update (제조사 원격 업데이트 기능),"true→false, false→true",rule,1 (XXCS),속성 2개 동시 변경. 약화 아님(보안 항목이 새로 적용됨). [수정] 중복 행 대체.
+T2_12,T2,mobile_code (모바일 코드(외부 스크립트 콘텐츠) 실행) + remote_update (제조사 원격 업데이트 기능),"false→true, false→true",rule,1 (XXCS),속성 2개 동시 변경. 약화 아님(보안 항목이 새로 적용됨). [수정] 중복 행 대체.
+T2_13,T2,mobile_code (모바일 코드(외부 스크립트 콘텐츠) 실행),false→true,rule,2 (MDSR+XXCS),약화 아님(보안 항목이 새로 적용됨)
+T2_14,T2,e_signature (전자서명 기반 처방 기능),false→true,rule,2 (MDSR+XXCS),약화 아님(보안 항목이 새로 적용됨)
+T2_15,T2,remote_update (제조사 원격 업데이트 기능),false→true,rule,2 (MDSR+XXCS),약화 아님(보안 항목이 새로 적용됨)
+T2_16,T2,stores_pii (개인식별정보 저장),false→true,rule,2 (MDSR+XXCS),약화 아님(보안 항목이 새로 적용됨)
+T2_17,T2,samd (독립형 소프트웨어 의료기기(SaMD)),true→false,rule,2 (MDSR+XXCS),약화 아님(보안 항목이 새로 적용됨)
+T2_18,T2,samd (독립형 소프트웨어 의료기기(SaMD)) + e_signature (전자서명 기반 처방 기능),"true→false, false→true",rule,2 (MDSR+XXCS),속성 2개 동시 변경. 약화 아님(보안 항목이 새로 적용됨). [수정] 중복 행 대체.
+T2_19,T2,e_signature (전자서명 기반 처방 기능),false→true,rule,2 (MDDR+XXCS),약화 아님(보안 항목이 새로 적용됨)
+T2_20,T2,remote_update (제조사 원격 업데이트 기능),false→true,rule,2 (MDDR+XXCS),약화 아님(보안 항목이 새로 적용됨)
+T2_21,T2,stores_pii (개인식별정보 저장),false→true,rule,2 (MDDR+XXCS),약화 아님(보안 항목이 새로 적용됨)
+T2_22,T2,samd (독립형 소프트웨어 의료기기(SaMD)),true→false,rule,2 (MDDR+XXCS),약화 아님(보안 항목이 새로 적용됨)
+T2_23,T2,mobile_code (모바일 코드(외부 스크립트 콘텐츠) 실행),false→true,rule,2 (MDDR+XXCS),약화 아님(보안 항목이 새로 적용됨)
+T2_24,T2,stores_pii (개인식별정보 저장) + remote_update (제조사 원격 업데이트 기능),"false→true, false→true",rule,2 (MDDR+XXCS),속성 2개 동시 변경. 약화 아님(보안 항목이 새로 적용됨). [수정] 중복 행 대체.
+T2_25,T2,remote_update (제조사 원격 업데이트 기능),false→true,rule,3 (MDSR+MDDR+XXCS),약화 아님(보안 항목이 새로 적용됨)
+T2_26,T2,stores_pii (개인식별정보 저장),false→true,rule,3 (MDSR+MDDR+XXCS),약화 아님(보안 항목이 새로 적용됨)
+T2_27,T2,samd (독립형 소프트웨어 의료기기(SaMD)),true→false,rule,3 (MDSR+MDDR+XXCS),약화 아님(보안 항목이 새로 적용됨)
+T2_28,T2,mobile_code (모바일 코드(외부 스크립트 콘텐츠) 실행),false→true,rule,3 (MDSR+MDDR+XXCS),약화 아님(보안 항목이 새로 적용됨)
+T2_29,T2,e_signature (전자서명 기반 처방 기능),false→true,rule,3 (MDSR+MDDR+XXCS),약화 아님(보안 항목이 새로 적용됨)
+T2_30,T2,stores_pii (개인식별정보 저장) + samd (독립형 소프트웨어 의료기기(SaMD)),"false→true, true→false",rule,3 (MDSR+MDDR+XXCS),속성 2개 동시 변경. 약화 아님(보안 항목이 새로 적용됨). [수정] 중복 행 대체.
+T2_31,T2,stores_pii (개인식별정보 저장) + mobile_code (모바일 코드(외부 스크립트 콘텐츠) 실행),"false→true, false→true",rule,3 (MDSR+MDDR+XXCS),속성 2개 동시 변경. 약화 아님(보안 항목이 새로 적용됨). [수정] 중복 행 대체.
+T2_32,T2,stores_pii (개인식별정보 저장) + remote_update (제조사 원격 업데이트 기능),"false→true, false→true",rule,3 (MDSR+MDDR+XXCS),속성 2개 동시 변경. 약화 아님(보안 항목이 새로 적용됨). [수정] 중복 행 대체.
+T2_33,T2,samd (독립형 소프트웨어 의료기기(SaMD)) + e_signature (전자서명 기반 처방 기능),"true→false, false→true",rule,3 (MDSR+MDDR+XXCS),속성 2개 동시 변경. 약화 아님(보안 항목이 새로 적용됨). [수정] 중복 행 대체.
+T2_34,T2,mobile_code (모바일 코드(외부 스크립트 콘텐츠) 실행) + e_signature (전자서명 기반 처방 기능),"false→true, false→true",rule,3 (MDSR+MDDR+XXCS),속성 2개 동시 변경. 약화 아님(보안 항목이 새로 적용됨). [수정] 중복 행 대체.
+T2_35,T2,mobile_code (모바일 코드(외부 스크립트 콘텐츠) 실행) + remote_update (제조사 원격 업데이트 기능),"false→true, false→true",rule,3 (MDSR+MDDR+XXCS),속성 2개 동시 변경. 약화 아님(보안 항목이 새로 적용됨). [수정] 중복 행 대체.
+T2_36,T2,e_signature (전자서명 기반 처방 기능) + remote_update (제조사 원격 업데이트 기능),"false→true, false→true",rule,3 (MDSR+MDDR+XXCS),속성 2개 동시 변경. 약화 아님(보안 항목이 새로 적용됨). [수정] 중복 행 대체.
+T3_01,T3-삭제,Req. 10 (수면 제한 요법 기본 시간),요구사항 삭제. 번호는 유지하고 삭제로 표기,"origin, trace",1 (MDSR),삭제 후보. trace 칸 10. 같은 삭제를 문서 수만 달리할 수 있음
+T3_02,T3-삭제,Req. 100 (서버 데이터 동기화),요구사항 삭제. 번호는 유지하고 삭제로 표기,"origin, trace",1 (MDSR),삭제 후보. trace 칸 10. 같은 삭제를 문서 수만 달리할 수 있음
+T3_03,T3-삭제,Req. 101 (의료진 대시보드 조회),요구사항 삭제. 번호는 유지하고 삭제로 표기,"origin, trace",1 (MDSR),삭제 후보. trace 칸 10. 같은 삭제를 문서 수만 달리할 수 있음
+T3_04,T3-삭제,Req. 106 (총 치료 회기 수),요구사항 삭제. 번호는 유지하고 삭제로 표기,"origin, trace",1 (MDSR),삭제 후보. trace 칸 10. 같은 삭제를 문서 수만 달리할 수 있음
+T3_05,T3-삭제,Req. 8 (수면일기 기록),요구사항 삭제. 번호는 유지하고 삭제로 표기,"origin, trace",1 (MDSR),삭제 후보. trace 칸 8. 같은 삭제를 문서 수만 달리할 수 있음
+T3_06,T3-삭제,Req. 13 (CBT 회기 기본 설정),요구사항 삭제. 번호는 유지하고 삭제로 표기,"origin, trace",1 (MDSR),삭제 후보. trace 칸 8. 같은 삭제를 문서 수만 달리할 수 있음
+T3_07,T3-삭제,Req. 11 (자극 조절 교육),요구사항 삭제. 번호는 유지하고 삭제로 표기,"origin, trace",1 (MDSR),삭제 후보. trace 칸 6. 같은 삭제를 문서 수만 달리할 수 있음
+T3_08,T3-삭제,Req. 12 (수면 위생 교육),요구사항 삭제. 번호는 유지하고 삭제로 표기,"origin, trace",1 (MDSR),삭제 후보. trace 칸 6. 같은 삭제를 문서 수만 달리할 수 있음
+T3_09,T3-삭제,Req. 14 (CBT 알림 설정),요구사항 삭제. 번호는 유지하고 삭제로 표기,"origin, trace",1 (MDSR),삭제 후보. trace 칸 6. 같은 삭제를 문서 수만 달리할 수 있음
+T3_10,T3-삭제,Req. 15 (이완 훈련),요구사항 삭제. 번호는 유지하고 삭제로 표기,"origin, trace",1 (MDSR),삭제 후보. trace 칸 6. 같은 삭제를 문서 수만 달리할 수 있음
+T3_11,T3-삭제,Req. 16 (수면 효율 리포트),요구사항 삭제. 번호는 유지하고 삭제로 표기,"origin, same_id, trace",2 (MDSR+MDDR),삭제 후보. trace 칸 4. 같은 삭제를 문서 수만 달리할 수 있음
+T3_12,T3-삭제,Req. 9 (알림 설정),요구사항 삭제. 번호는 유지하고 삭제로 표기,"origin, same_id, trace",2 (MDSR+MDDR),삭제 후보. trace 칸 2. 같은 삭제를 문서 수만 달리할 수 있음
+T3_13,T3-삭제,Req. 10 (수면 제한 요법 기본 시간),요구사항 삭제. 번호는 유지하고 삭제로 표기,"origin, same_id, trace",2 (MDSR+MDDR),삭제 후보. trace 칸 10. 같은 삭제를 문서 수만 달리할 수 있음
+T3_14,T3-삭제,Req. 100 (서버 데이터 동기화),요구사항 삭제. 번호는 유지하고 삭제로 표기,"origin, same_id, trace",2 (MDSR+MDDR),삭제 후보. trace 칸 10. 같은 삭제를 문서 수만 달리할 수 있음
+T3_15,T3-삭제,Req. 101 (의료진 대시보드 조회),요구사항 삭제. 번호는 유지하고 삭제로 표기,"origin, same_id, trace",2 (MDSR+MDDR),삭제 후보. trace 칸 10. 같은 삭제를 문서 수만 달리할 수 있음
+T3_16,T3-삭제,Req. 106 (총 치료 회기 수),요구사항 삭제. 번호는 유지하고 삭제로 표기,"origin, trace",2 (MDSR+XXCS),삭제 후보. trace 칸 10. 같은 삭제를 문서 수만 달리할 수 있음
+T3_17,T3-삭제,Req. 8 (수면일기 기록),요구사항 삭제. 번호는 유지하고 삭제로 표기,"origin, trace",2 (MDSR+XXCS),삭제 후보. trace 칸 8. 같은 삭제를 문서 수만 달리할 수 있음
+T3_18,T3-삭제,Req. 13 (CBT 회기 기본 설정),요구사항 삭제. 번호는 유지하고 삭제로 표기,"origin, trace",2 (MDSR+XXCS),삭제 후보. trace 칸 8. 같은 삭제를 문서 수만 달리할 수 있음
+T3_19,T3-삭제,Req. 11 (자극 조절 교육),요구사항 삭제. 번호는 유지하고 삭제로 표기,"origin, trace",2 (MDSR+XXCS),삭제 후보. trace 칸 6. 같은 삭제를 문서 수만 달리할 수 있음
+T3_20,T3-삭제,Req. 12 (수면 위생 교육),요구사항 삭제. 번호는 유지하고 삭제로 표기,"origin, trace",2 (MDSR+XXCS),삭제 후보. trace 칸 6. 같은 삭제를 문서 수만 달리할 수 있음
+T3_21,T3-삭제,Req. 14 (CBT 알림 설정),요구사항 삭제. 번호는 유지하고 삭제로 표기,"origin, same_id, trace",3 (MDSR+MDDR+XXCS),삭제 후보. trace 칸 6. 같은 삭제를 문서 수만 달리할 수 있음
+T3_22,T3-삭제,Req. 15 (이완 훈련),요구사항 삭제. 번호는 유지하고 삭제로 표기,"origin, same_id, trace",3 (MDSR+MDDR+XXCS),삭제 후보. trace 칸 6. 같은 삭제를 문서 수만 달리할 수 있음
+T3_23,T3-삭제,Req. 16 (수면 효율 리포트),요구사항 삭제. 번호는 유지하고 삭제로 표기,"origin, same_id, trace",3 (MDSR+MDDR+XXCS),삭제 후보. trace 칸 4. 같은 삭제를 문서 수만 달리할 수 있음
+T3_24,T3-삭제,Req. 9 (알림 설정),요구사항 삭제. 번호는 유지하고 삭제로 표기,"origin, same_id, trace",3 (MDSR+MDDR+XXCS),삭제 후보. trace 칸 2. 같은 삭제를 문서 수만 달리할 수 있음
+T3_25,T3-삭제,Req. 10 (수면 제한 요법 기본 시간),요구사항 삭제. 번호는 유지하고 삭제로 표기,"origin, same_id, trace",3 (MDSR+MDDR+XXCS),삭제 후보. trace 칸 10. 같은 삭제를 문서 수만 달리할 수 있음
+T3_26,T3-삭제,Req. 100 (서버 데이터 동기화),요구사항 삭제. 번호는 유지하고 삭제로 표기,"origin, same_id, trace",3 (MDSR+MDDR+XXCS),삭제 후보. trace 칸 10. 같은 삭제를 문서 수만 달리할 수 있음
+T3_27,T3-삭제,Req. 101 (의료진 대시보드 조회),요구사항 삭제. 번호는 유지하고 삭제로 표기,"origin, same_id, trace",3 (MDSR+MDDR+XXCS),삭제 후보. trace 칸 10. 같은 삭제를 문서 수만 달리할 수 있음
+T3_28,T3-삭제,Req. 106 (총 치료 회기 수),요구사항 삭제. 번호는 유지하고 삭제로 표기,"origin, same_id, trace",3 (MDSR+MDDR+XXCS),삭제 후보. trace 칸 10. 같은 삭제를 문서 수만 달리할 수 있음
+T3_29,T3-삭제,Req. 8 (수면일기 기록),요구사항 삭제. 번호는 유지하고 삭제로 표기,"origin, same_id, trace",3 (MDSR+MDDR+XXCS),삭제 후보. trace 칸 8. 같은 삭제를 문서 수만 달리할 수 있음
+T3_30,T3-삭제,Req. 13 (CBT 회기 기본 설정),요구사항 삭제. 번호는 유지하고 삭제로 표기,"origin, same_id, trace",3 (MDSR+MDDR+XXCS),삭제 후보. trace 칸 8. 같은 삭제를 문서 수만 달리할 수 있음
+T3_31,T3-추가,새 앱 Req. 19,새 Req 수면 목표 설정 추가,"origin, trace",1 (MDSR),연결 SI-05(입력값 검증). 본문에 넣을 보안 요소: 목표 취침·기상 시각 입력값의 허용 범위 검증. 제목은 초안. [수정] 연결 IA-02(계정 관리)는 순번 배정이라 바꿈.
+T3_32,T3-추가,새 앱 Req. 19,새 Req 카페인 섭취 기록 추가,"origin, trace",1 (MDSR),연결 DC-01(정보에 대한 기밀성 보장). 본문에 넣을 보안 요소: 섭취 기록을 기기에 암호화해 저장. 제목은 초안. [수정] 번호 Req. 20→Req. 19; 연결 IA-03(식별정보 관리)는 순번 배정이라 바꿈.
+T3_33,T3-추가,새 앱 Req. 19,새 Req 낮잠 기록 추가,"origin, trace",1 (MDSR),연결 UC-06(타임스탬프). 본문에 넣을 보안 요소: 낮잠 시작·종료 시각을 타임스탬프로 기록. 제목은 초안. [수정] 번호 Req. 21→Req. 19; 연결 IA-04(인증정보 관리)는 순번 배정이라 바꿈.
+T3_34,T3-추가,새 앱 Req. 19,새 Req 주간 리포트 공유 추가,"origin, trace",1 (MDSR),연결 DC-03(안전한 암호화 사용). 본문에 넣을 보안 요소: 리포트 전송 구간을 암호화. 제목은 초안. [수정] 번호 Req. 22→Req. 19; 연결 IA-05(비밀번호 강도 설정)는 순번 배정이라 바꿈.
+T3_35,T3-추가,새 서버 Req. 109,새 Req 취침 루틴 점검 추가,"origin, trace",1 (MDSR),연결 UC-04(감사기록 생성). 본문에 넣을 보안 요소: 의료진이 점검 결과를 수정하면 감사기록 생성. 제목은 초안. [수정] 연결 IA-06(인증정보에 대한 피드백)는 순번 배정이라 바꿈.
+T3_36,T3-추가,새 앱 Req. 19,새 Req 기상 후 빛 노출 추가,"origin, trace",1 (MDSR),연결 SI-06(오류 시 사전 결정된 상태로 출력). 본문에 넣을 보안 요소: 조도 센서 값을 못 읽으면 미리 정한 기본 안내로 전환. 제목은 초안. [수정] 번호 Req. 23→Req. 19; 연결 IA-07(연속적인 로그인 시도 실패 시 로그인 제한)는 순번 배정이라 바꿈.
+T3_37,T3-추가,새 앱 Req. 19,새 Req 주말 기상 안내 추가,"origin, trace",1 (MDSR),연결 SI-05(입력값 검증). 본문에 넣을 보안 요소: 주말 기상 시각 입력값의 허용 범위 검증. 제목은 초안. [수정] 번호 Req. 24→Req. 19; 연결 IA-08(시스템 사용 알림 메시지)는 순번 배정이라 바꿈.
+T3_38,T3-추가,새 앱 Req. 19,새 Req 오프라인 기록 보관 추가,"origin, trace",1 (MDSR),연결 SI-01(통신에 대한 무결성 보장). 본문에 넣을 보안 요소: 연결 회복 후 서버 전송 데이터의 무결성 확인. 제목은 초안. [수정] 번호 Req. 25→Req. 19; 연결 UC-01(권한 부여)는 순번 배정이라 바꿈.
+T3_39,T3-추가,새 앱 Req. 19,새 Req 보호자 열람 동의 추가,"origin, trace",1 (MDSR),연결 UC-01(권한 부여). 본문에 넣을 보안 요소: 동의한 보호자에게만 열람 권한 부여. 제목은 초안. [수정] 번호 Req. 26→Req. 19; 연결 UC-03(세션 잠금)는 순번 배정이라 바꿈.
+T3_40,T3-추가,새 서버 Req. 109,새 Req 웨어러블 연동 추가,"origin, trace",1 (MDSR),연결 SI-05(입력값 검증). 본문에 넣을 보안 요소: 웨어러블에서 받은 데이터의 형식·범위 검증. 제목은 초안. [수정] 번호 Req. 110→Req. 109; 연결 UC-04(감사기록 생성)는 순번 배정이라 바꿈.
+T3_41,T3-추가,새 앱 Req. 19,새 Req 기기 변경 시 기록 이전 추가,"origin, trace",2 (MDSR+XXCS),연결 IA-01(사용자 식별 및 인증). 본문에 넣을 보안 요소: 기록을 옮기기 전 본인 인증. 제목은 초안. [수정] 번호 Req. 27→Req. 19; 연결 UC-05(감사 처리 실패 대응)는 순번 배정이라 바꿈; 제목 '제조사 업데이트 수신'은 remote_update=false와 어긋나(SI-08·SI-09 적용 사유) 바꿈.
+T3_42,T3-추가,새 앱 Req. 19,새 Req 호흡 안내 추가,"origin, trace",2 (MDSR+XXCS),연결 SI-04(소프트웨어 및 정보에 대한 무결성 점검). 본문에 넣을 보안 요소: 재생 전 안내 콘텐츠 파일의 무결성 점검. 제목은 초안. [수정] 번호 Req. 28→Req. 19; 연결 UC-06(타임스탬프)는 순번 배정이라 바꿈.
+T3_43,T3-추가,새 앱 Req. 19,새 Req 카페인 중단 안내 추가,"origin, trace",2 (MDSR+XXCS),연결 SI-07(오류 처리). 본문에 넣을 보안 요소: 안내 시점 계산에 실패하면 내부 정보가 없는 오류 메시지. 제목은 초안. [수정] 번호 Req. 29→Req. 19; 연결 SI-01(통신에 대한 무결성 보장)는 순번 배정이라 바꿈.
+T3_44,T3-추가,새 앱 Req. 19,새 Req 침실 환경 점검 추가,"origin, trace",2 (MDSR+XXCS),연결 SI-05(입력값 검증). 본문에 넣을 보안 요소: 점검 항목 응답 값 검증. 제목은 초안. [수정] 번호 Req. 30→Req. 19; 연결 SI-02(악성코드로부터 보호)는 순번 배정이라 바꿈.
+T3_45,T3-추가,새 서버 Req. 109,새 Req 수면 효율 메모 추가,"origin, same_id, trace",2 (MDSR+MDDR),연결 UC-04(감사기록 생성). 본문에 넣을 보안 요소: 의료진이 메모를 작성·수정하면 감사기록 생성. 제목은 초안. [수정] 번호 Req. 111→Req. 109; 연결 SI-03(보안 기능 검증)는 순번 배정이라 바꿈.
+T3_46,T3-추가,새 앱 Req. 19,새 Req 복용 기록 추가,"origin, same_id, trace",2 (MDSR+MDDR),연결 DC-01(정보에 대한 기밀성 보장). 본문에 넣을 보안 요소: 복용 기록을 기기에 암호화해 저장. 제목은 초안. [수정] 번호 Req. 31→Req. 19; 연결 SI-04(소프트웨어 및 정보에 대한 무결성 점검)는 순번 배정이라 바꿈.
+T3_47,T3-추가,새 앱 Req. 19,새 Req 코골이 메모 추가,"origin, same_id, trace",2 (MDSR+MDDR),연결 SI-05(입력값 검증). 본문에 넣을 보안 요소: 메모 길이와 허용 문자 검증. 제목은 초안. [수정] 번호 Req. 32→Req. 19.
+T3_48,T3-추가,새 앱 Req. 19,새 Req 각성 횟수 기록 추가,"origin, same_id, trace",3 (MDSR+MDDR+XXCS),연결 UC-06(타임스탬프). 본문에 넣을 보안 요소: 깬 시점마다 타임스탬프 기록. 제목은 초안. [수정] 번호 Req. 33→Req. 19; 연결 SI-06(오류 시 사전 결정된 상태로 출력)는 순번 배정이라 바꿈.
+T3_49,T3-추가,새 앱 Req. 19,새 Req 아침 점검 추가,"origin, same_id, trace",3 (MDSR+MDDR+XXCS),연결 SI-06(오류 시 사전 결정된 상태로 출력). 본문에 넣을 보안 요소: 응답 저장에 실패하면 직전 저장 상태 유지. 제목은 초안. [수정] 번호 Req. 34→Req. 19; 연결 SI-07(오류 처리)는 순번 배정이라 바꿈.
+T3_50,T3-추가,새 서버 Req. 109,새 Req 저녁 점검 추가,"origin, same_id, trace",3 (MDSR+MDDR+XXCS),연결 RA-02(의료기기 백업). 본문에 넣을 보안 요소: 점검 기록을 정기 백업 대상에 포함. 제목은 초안. [수정] 번호 Req. 112→Req. 109; 연결 DC-01(정보에 대한 기밀성 보장)는 순번 배정이라 바꿈.
+T3_51,T3-추가,새 앱 Req. 19,새 Req 낮 활동 기록 추가,"origin, same_id, trace",3 (MDSR+MDDR+XXCS),연결 DC-01(정보에 대한 기밀성 보장). 본문에 넣을 보안 요소: 활동 기록을 기기에 암호화해 저장. 제목은 초안. [수정] 번호 Req. 35→Req. 19; 연결 DC-03(안전한 암호화 사용)는 순번 배정이라 바꿈.
+T3_52,T3-추가,새 앱 Req. 19,새 Req 운동 기록 추가,"origin, same_id, trace",3 (MDSR+MDDR+XXCS),연결 SI-05(입력값 검증). 본문에 넣을 보안 요소: 운동 종류·시간 입력값의 허용 범위 검증. 제목은 초안. [수정] 번호 Req. 36→Req. 19; 연결 TRE-01(감사로그에 대한 비인가된 접근 제한)는 순번 배정이라 바꿈.
+T3_53,T3-추가,새 앱 Req. 19,새 Req 식사 시각 기록 추가,"origin, same_id, trace",3 (MDSR+MDDR+XXCS),연결 UC-06(타임스탬프). 본문에 넣을 보안 요소: 식사 시각을 타임스탬프로 기록. 제목은 초안. [수정] 번호 Req. 37→Req. 19; 연결 RA-01(서비스 거부(DoS) 방지)는 순번 배정이라 바꿈.
+T3_54,T3-추가,새 앱 Req. 19,새 Req 화면 사용 기록 추가,"origin, same_id, trace",3 (MDSR+MDDR+XXCS),연결 UC-01(권한 부여). 본문에 넣을 보안 요소: 수집 전에 사용자가 접근 권한을 허용. 제목은 초안. [수정] 번호 Req. 38→Req. 19; 연결 RA-02(의료기기 백업)는 순번 배정이라 바꿈.
+T3_55,T3-추가복합,"새 서버 Req. 109 + F_DEFAULT_WAKE_TIME, 출발 Req. 10","새 Req 이완 전 준비 추가, 7:00→8:00","origin, trace, same_value",1 (MDSR),값 변경 동반. 연결 SI-04(소프트웨어 및 정보에 대한 무결성 점검). 본문에 넣을 보안 요소: 배포 전 준비 안내 콘텐츠의 무결성 점검. 제목은 초안. [수정] 번호 Req. 113→Req. 109; 연결 RA-03(의료기기 복구 및 재구성)는 순번 배정이라 바꿈; 값 변경 F_RELAXATION_SESSION_DURATION 10분→20분는 same_value 칸이 없어(fact_list 0) 바꿈.
+T3_56,T3-추가복합,"새 앱 Req. 19 + F_DEFAULT_CBT_SESSION_REMINDER, 출발 Req. 14","새 Req 회기 전 설문 추가, 18:00→19:00","origin, trace, same_value",1 (MDSR),값 변경 동반. 연결 SI-05(입력값 검증). 본문에 넣을 보안 요소: 설문 응답 값 검증. 제목은 초안. [수정] 번호 Req. 39→Req. 19; 연결 RA-04(네트워크 및 보안 구성 설정)는 순번 배정이라 바꿈; 값 변경 F_SLEEP_EFFICIENCY_REPORT_INTERVAL 7일→14일는 same_value 칸이 없어(fact_list 0) 바꿈.
+T3_57,T3-추가복합,"새 앱 Req. 19 + F_DEFAULT_WAKE_TIME, 출발 Req. 8","새 Req 보호자 메시지 추가, 7:00→7:30","origin, trace, same_value",1 (MDSR),값 변경 동반. 연결 UC-01(권한 부여). 본문에 넣을 보안 요소: 등록·동의한 보호자에게만 발송. 제목은 초안. [수정] 번호 Req. 40→Req. 19; 연결 IA-01(사용자 식별 및 인증)는 순번 배정이라 바꿈; 값 변경 F_MEDICAL_MESSAGE_EXPIRATION 7일→14일는 same_value 칸이 없어(fact_list 0) 바꿈.
+T3_58,T3-추가복합,"새 앱 Req. 19 + F_DEFAULT_SLEEP_LIMIT, 출발 Req. 8","새 Req 의료진 메모 확인 추가, 22:00→23:00","origin, trace, same_value",1 (MDSR),값 변경 동반. 연결 UC-04(감사기록 생성). 본문에 넣을 보안 요소: 메모를 열람하면 감사기록 생성. 제목은 초안. [수정] 번호 Req. 41→Req. 19; 연결 IA-02(계정 관리)는 순번 배정이라 바꿈; 값 변경 F_DATA_PRESERVATION_DURATION 730일→1095일는 same_value 칸이 없어(fact_list 0) 바꿈.
+T3_59,T3-추가복합,"새 앱 Req. 19 + F_DEFAULT_CBT_SESSION_REMINDER, 출발 Req. 9","새 Req 기록 내보내기 추가, 18:00→20:00","origin, same_id, trace, same_value",2 (MDSR+MDDR),값 변경 동반. 연결 DC-03(안전한 암호화 사용). 본문에 넣을 보안 요소: 내보내는 파일을 암호화. 제목은 초안. [수정] 번호 Req. 42→Req. 19; 연결 IA-03(식별정보 관리)는 순번 배정이라 바꿈; 값 변경 F_MEDICAL_STAFF_ROLE_ASSIGNMENT 4가지→2가지는 same_value 칸이 없어(fact_list 0) 바꿈.
+T3_60,T3-추가복합,"새 서버 Req. 109 + F_BACKUP_INTERVAL, 출발 Req. 105","새 Req 알림 음량 설정 추가, 24시간→12시간","origin, same_id, trace, same_value",2 (MDSR+MDDR),값 변경 동반. 연결 SI-05(입력값 검증). 본문에 넣을 보안 요소: 음량 설정값의 허용 범위 검증. 제목은 초안. [수정] 번호 Req. 114→Req. 109; 연결 IA-04(인증정보 관리)는 순번 배정이라 바꿈.
+T3_61,T3-추가복합,"새 앱 Req. 19 + F_SYNC_INTERVAL, 출발 Req. 101","새 Req 어두운 화면 안내 추가, 60분→120분","origin, same_id, trace, same_value",2 (MDSR+MDDR),값 변경 동반. 연결 SI-06(오류 시 사전 결정된 상태로 출력). 본문에 넣을 보안 요소: 화면 설정을 못 읽으면 미리 정한 기본 화면으로 표시. 제목은 초안. [수정] 번호 Req. 43→Req. 19; 연결 IA-05(비밀번호 강도 설정)는 순번 배정이라 바꿈.
+T3_62,T3-추가복합,"새 앱 Req. 19 + F_LOGIN_FAILURE_LIMIT, 출발 Req. 1","새 Req 위젯 표시 추가, 5회→4회","origin, same_id, trace, same_value",3 (MDSR+MDDR+XXCS),값 변경 동반. 연결 DC-01(정보에 대한 기밀성 보장). 본문에 넣을 보안 요소: 잠금 화면에서는 민감한 수면 기록을 가림. 제목은 초안. [수정] 번호 Req. 44→Req. 19; 연결 IA-06(인증정보에 대한 피드백)는 순번 배정이라 바꿈.
+T3_63,T3-추가복합,"새 앱 Req. 19 + F_ACCOUNT_LOCK_DURATION, 출발 Req. 2","새 Req 백업 안내 확인 추가, 15분→20분","origin, same_id, trace, same_value",3 (MDSR+MDDR+XXCS),값 변경 동반. 연결 RA-02(의료기기 백업). 본문에 넣을 보안 요소: 백업이 끝나지 않았으면 안내. 제목은 초안. [수정] 번호 Req. 45→Req. 19; 연결 IA-07(연속적인 로그인 시도 실패 시 로그인 제한)는 순번 배정이라 바꿈.
+T3_64,T3-추가복합,새 앱 Req. 19 + remote_update,"새 Req 동기화 상태 표시 추가, remote_update false→true","origin, trace, rule",2 (MDSR+XXCS),속성 변경 동반. 연결 SI-01(통신에 대한 무결성 보장). 본문에 넣을 보안 요소: 전송 데이터 무결성 확인에 실패하면 알림. 제목은 초안. [수정] 번호 Req. 46→Req. 19; 연결 IA-08(시스템 사용 알림 메시지)는 순번 배정이라 바꿈.
+T3_65,T3-추가복합,새 서버 Req. 109 + stores_pii,"새 Req 오류 신고 추가, stores_pii false→true","origin, trace, rule",2 (MDSR+XXCS),속성 변경 동반. 연결 SI-07(오류 처리). 본문에 넣을 보안 요소: 처리 중 오류가 나도 응답에 내부 정보를 담지 않음. 제목은 초안. [수정] 번호 Req. 115→Req. 109; 연결 UC-01(권한 부여)는 순번 배정이라 바꿈.
+T3_66,T3-추가복합,새 앱 Req. 19 + samd,"새 Req 사용 안내 열람 추가, samd true→false","origin, trace, rule",2 (MDSR+XXCS),속성 변경 동반. 연결 IA-08(시스템 사용 알림 메시지). 본문에 넣을 보안 요소: 로그인 전에 시스템 사용 안내 문구를 보여 주고 확인받음. 제목은 초안. [수정] 번호 Req. 47→Req. 19; 연결 UC-03(세션 잠금)는 순번 배정이라 바꿈.
+T3_67,T3-추가복합,새 앱 Req. 19 + mobile_code,"새 Req 목표 달성 표시 추가, mobile_code false→true","origin, trace, rule",2 (MDSR+XXCS),속성 변경 동반. 연결 UC-06(타임스탬프). 본문에 넣을 보안 요소: 달성 일시를 타임스탬프로 기록. 제목은 초안. [수정] 번호 Req. 48→Req. 19; 연결 UC-04(감사기록 생성)는 순번 배정이라 바꿈.
+T3_68,T3-추가복합,새 앱 Req. 19 + e_signature,"새 Req 연속 기록 표시 추가, e_signature false→true","origin, same_id, trace, rule",3 (MDSR+MDDR+XXCS),속성 변경 동반. 연결 UC-06(타임스탬프). 본문에 넣을 보안 요소: 연속 일수를 기록 타임스탬프로 계산. 제목은 초안. [수정] 번호 Req. 49→Req. 19; 연결 UC-05(감사 처리 실패 대응)는 순번 배정이라 바꿈.
+T3_69,T3-추가복합,새 앱 Req. 19 + remote_update,"새 Req 휴일 일정 안내 추가, remote_update false→true","origin, same_id, trace, rule",3 (MDSR+MDDR+XXCS),속성 변경 동반. 연결 SI-05(입력값 검증). 본문에 넣을 보안 요소: 휴일 일정 입력값 검증. 제목은 초안. [수정] 번호 Req. 50→Req. 19; 연결 UC-06(타임스탬프)는 순번 배정이라 바꿈.
+T3_70,T3-추가복합,새 서버 Req. 109 + stores_pii,"새 Req 여행 일정 안내 추가, stores_pii false→true","origin, same_id, trace, rule",3 (MDSR+MDDR+XXCS),속성 변경 동반. 연결 UC-06(타임스탬프). 본문에 넣을 보안 요소: 시간대가 바뀌어도 기록 타임스탬프 기준 유지. 제목은 초안. [수정] 번호 Req. 116→Req. 109; 연결 SI-01(통신에 대한 무결성 보장)는 순번 배정이라 바꿈.
+T3_71,T3-추가복합,새 앱 Req. 19 + samd,"새 Req 동거인 방해 기록 추가, samd true→false","origin, same_id, trace, rule",3 (MDSR+MDDR+XXCS),속성 변경 동반. 연결 DC-01(정보에 대한 기밀성 보장). 본문에 넣을 보안 요소: 타인 정보가 담길 수 있는 기록을 기기에 암호화해 저장. 제목은 초안. [수정] 번호 Req. 51→Req. 19; 연결 SI-02(악성코드로부터 보호)는 순번 배정이라 바꿈.
+T3_72,T3-추가복합,새 앱 Req. 19 + mobile_code,"새 Req 침구 점검 추가, mobile_code false→true","origin, same_id, trace, rule",3 (MDSR+MDDR+XXCS),속성 변경 동반. 연결 SI-05(입력값 검증). 본문에 넣을 보안 요소: 점검 응답 값 검증. 제목은 초안. [수정] 번호 Req. 52→Req. 19; 연결 SI-03(보안 기능 검증)는 순번 배정이라 바꿈.

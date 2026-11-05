@@ -1,0 +1,25 @@
+{
+  "case_id": "T3_41",
+  "case_type": "T3",
+  "subtype": "add",
+  "n_docs": 2,
+  "docs": [
+    "MDSR",
+    "XXCS"
+  ],
+  "paths": {
+    "origin": 6,
+    "trace": 2
+  },
+  "trap_paths": {
+    "trace": 4
+  },
+  "n_impact": 8,
+  "n_traps": 4,
+  "n_neutral": 0,
+  "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '기기 변경 시 기록 이전'을(를) 신규 추가한다. 내용: 사용자는 새 기기에서 이전 기기의 기록을 옮겨 받을 수 있어야 하며, 기록을 옮기기 전에 본인 인증을 완료하여야 한다.",
+  "request_nl": "앱에 새 기능을 넣어 주세요. 사용자가 새 기기로 바꿀 때 본인 인증을 거친 뒤 이전 기기의 기록을 옮기는 기능이 필요합니다.",
+  "sheet_type": "T3-추가",
+  "sheet_paths": "origin, trace",
+  "seed": 20261102
+}

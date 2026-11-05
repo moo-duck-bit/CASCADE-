@@ -1,0 +1,134 @@
+{
+  "case_id": "T3_15",
+  "case_type": "T3",
+  "subtype": "delete",
+  "change": {
+    "deleted_req": "Req. 101",
+    "title": "의료진 대시보드 조회"
+  },
+  "items": [
+    {
+      "site": "[MDSR | Req. 101 | 제목]",
+      "doc": "MDSR",
+      "item": "Req. 101",
+      "cell": "제목",
+      "path": "origin",
+      "op": "modify",
+      "new_value": "삭제"
+    },
+    {
+      "site": "[MDSR | Req. 101 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 101",
+      "cell": "설명",
+      "path": "origin",
+      "op": "modify",
+      "new_value": "삭제"
+    },
+    {
+      "site": "[MDSR | Req. 101 | 목적]",
+      "doc": "MDSR",
+      "item": "Req. 101",
+      "cell": "목적",
+      "path": "origin",
+      "op": "modify",
+      "new_value": "삭제"
+    },
+    {
+      "site": "[MDSR | Req. 101 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 101",
+      "cell": "기준#p1",
+      "path": "origin",
+      "op": "modify",
+      "new_value": "삭제"
+    },
+    {
+      "site": "[MDSR | Req. 101 | 기준#p2]",
+      "doc": "MDSR",
+      "item": "Req. 101",
+      "cell": "기준#p2",
+      "path": "origin",
+      "op": "modify",
+      "new_value": "삭제"
+    },
+    {
+      "site": "[MDDR | Req. 101 | 설계#p1]",
+      "doc": "MDDR",
+      "item": "Req. 101",
+      "cell": "설계#p1",
+      "path": "same_id",
+      "op": "modify",
+      "new_value": "삭제"
+    },
+    {
+      "site": "[MDDR | Req. 101 | 설계#p2]",
+      "doc": "MDDR",
+      "item": "Req. 101",
+      "cell": "설계#p2",
+      "path": "same_id",
+      "op": "modify",
+      "new_value": "삭제"
+    },
+    {
+      "site": "[MDDR | Req. 101 | 설계#p3]",
+      "doc": "MDDR",
+      "item": "Req. 101",
+      "cell": "설계#p3",
+      "path": "same_id",
+      "op": "modify",
+      "new_value": "삭제"
+    },
+    {
+      "site": "[MDSR | IA-01 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "IA-01",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "trace",
+      "op": "modify",
+      "new_value": "Req. 8",
+      "note": "연결 Req 칸에서 Req. 101 제거"
+    },
+    {
+      "site": "[MDSR | SI-02 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "SI-02",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "trace",
+      "op": "modify",
+      "new_value": "Req. 11",
+      "note": "연결 Req 칸에서 Req. 101 제거"
+    },
+    {
+      "site": "[MDSR | UC-01 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "UC-01",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "trace",
+      "op": "modify",
+      "new_value": "Req. 16, Req. 102, Req. 108",
+      "note": "연결 Req 칸에서 Req. 101 제거"
+    },
+    {
+      "site": "[MDSR | UC-03 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "UC-03",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "trace",
+      "op": "modify",
+      "new_value": "Req. 3, Req. 100, Req. 102",
+      "note": "연결 Req 칸에서 Req. 101 제거"
+    },
+    {
+      "site": "[MDSR | UC-04 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "UC-04",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "trace",
+      "op": "modify",
+      "new_value": "Req. 2, Req. 6, Req. 18, Req. 102, Req. 103",
+      "note": "연결 Req 칸에서 Req. 101 제거"
+    }
+  ],
+  "neutral": []
+}

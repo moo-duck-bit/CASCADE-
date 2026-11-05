@@ -1,0 +1,8 @@
+{
+  "설명": "사용자가 {{F_LOGIN_FAILURE_LIMIT}} 동안 로그인 실패 시 {{F_ACCOUNT_LOCK_DURATION}} 동안 계정이 잠금 상태가 되어야 하며, {{F_INACTIVE_ACCOUNT_LOCK_DURATION}} 동안 활동이 없으면 계정이 자동으로 잠금 상태가 되어야 한다.",
+  "목적": "비인가 사용자의 시도를 방지하고 계정 보안을 강화하기 위함이다.",
+  "기준": [
+    "사용자가 {{F_LOGIN_FAILURE_LIMIT}} 이상 로그인에 실패하면 {{F_ACCOUNT_LOCK_DURATION}} 동안 계정이 자동으로 잠금 상태가 되는 것을 확인함",
+    "사용자가 {{F_INACTIVE_ACCOUNT_LOCK_DURATION}} 동안 활동이 없으면 계정이 자동으로 잠금 상태가 되는 것을 확인함"
+  ]
+}

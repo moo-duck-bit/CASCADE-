@@ -1,0 +1,13 @@
+{
+  "시험방법": [
+    "통신 데이터의 무결성을 보장하기 위해 {{F_TRANSPORT_ENCRYPTION}}을 사용하여 암호화된 통신을 수행한다.",
+    "서버와 클라이언트 간의 데이터 전송 시 {{F_STORAGE_ENCRYPTION}} 방식으로 저장된 데이터를 보호하며, {{F_SYNC_INTERVAL}} 주기로 동기화를 수행한다.",
+    "데이터 백업 시 {{F_BACKUP_INTERVAL}} 간격으로 암호화된 데이터를 백업하여 무결성을 유지한다."
+  ],
+  "확인결과": [
+    "통신 중 데이터 무결성이 {{F_TRANSPORT_ENCRYPTION}}을 통해 보장됨을 확인함.",
+    "암호화 저장 방식 {{F_STORAGE_ENCRYPTION}}이 데이터 무결성 유지에 기여함을 확인함.",
+    "{{F_SYNC_INTERVAL}} 주기의 동기화와 {{F_BACKUP_INTERVAL}} 간격의 백업이 무결성 보장을 지원함을 확인함."
+  ],
+  "비고": ""
+}

@@ -1,0 +1,173 @@
+{
+  "case_id": "T1_29",
+  "items": [
+    {
+      "site": "[MDSR | 3.4 일반적 제한 | 본문#p1]",
+      "doc": "MDSR",
+      "item": "3.4 일반적 제한",
+      "cell": "본문#p1",
+      "path": "same_value",
+      "fact": "F_ACCOUNT_LOCK_DURATION",
+      "reason": "같은 값(십오 분)이지만 다른 사실"
+    },
+    {
+      "site": "[MDSR | Req. 2 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 2",
+      "cell": "설명",
+      "path": "same_value",
+      "fact": "F_ACCOUNT_LOCK_DURATION",
+      "reason": "같은 값(15분)이지만 다른 사실"
+    },
+    {
+      "site": "[MDSR | Req. 2 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 2",
+      "cell": "기준#p1",
+      "path": "same_value",
+      "fact": "F_ACCOUNT_LOCK_DURATION",
+      "reason": "같은 값(15 분)이지만 다른 사실"
+    },
+    {
+      "site": "[XXCS | IA-02 | 시험방법#p1]",
+      "doc": "XXCS",
+      "item": "IA-02",
+      "cell": "시험방법#p1",
+      "path": "same_value",
+      "fact": "F_ACCOUNT_LOCK_DURATION",
+      "reason": "같은 값(십오 분)이지만 다른 사실"
+    },
+    {
+      "site": "[XXCS | IA-02 | 확인결과#p1]",
+      "doc": "XXCS",
+      "item": "IA-02",
+      "cell": "확인결과#p1",
+      "path": "same_value",
+      "fact": "F_ACCOUNT_LOCK_DURATION",
+      "reason": "같은 값(15분)이지만 다른 사실"
+    },
+    {
+      "site": "[XXCS | IA-06 | 확인결과#p2]",
+      "doc": "XXCS",
+      "item": "IA-06",
+      "cell": "확인결과#p2",
+      "path": "same_value",
+      "fact": "F_ACCOUNT_LOCK_DURATION",
+      "reason": "같은 값(15 분)이지만 다른 사실"
+    },
+    {
+      "site": "[MDSR | Req. 3 | 기준#p2]",
+      "doc": "MDSR",
+      "item": "Req. 3",
+      "cell": "기준#p2",
+      "path": "same_value",
+      "fact": "F_UNLOCK_NOTIFICATION_TIME",
+      "reason": "같은 값(15 분)이지만 다른 사실"
+    },
+    {
+      "site": "[XXCS | IA-06 | 시험방법#p2]",
+      "doc": "XXCS",
+      "item": "IA-06",
+      "cell": "시험방법#p2",
+      "path": "same_value",
+      "fact": "F_UNLOCK_NOTIFICATION_TIME",
+      "reason": "같은 값(15 분)이지만 다른 사실"
+    },
+    {
+      "site": "[XXCS | IA-06 | 확인결과#p3]",
+      "doc": "XXCS",
+      "item": "IA-06",
+      "cell": "확인결과#p3",
+      "path": "same_value",
+      "fact": "F_UNLOCK_NOTIFICATION_TIME",
+      "reason": "같은 값(십오 분)이지만 다른 사실"
+    },
+    {
+      "site": "[XXCS | UC-06 | 시험방법#p2]",
+      "doc": "XXCS",
+      "item": "UC-06",
+      "cell": "시험방법#p2",
+      "path": "same_value",
+      "fact": "F_UNLOCK_NOTIFICATION_TIME",
+      "reason": "같은 값(15분)이지만 다른 사실"
+    },
+    {
+      "site": "[XXCS | UC-06 | 확인결과#p2]",
+      "doc": "XXCS",
+      "item": "UC-06",
+      "cell": "확인결과#p2",
+      "path": "same_value",
+      "fact": "F_UNLOCK_NOTIFICATION_TIME",
+      "reason": "같은 값(15 분)이지만 다른 사실"
+    },
+    {
+      "site": "[MDSR | Req. 14 | 기준#p2]",
+      "doc": "MDSR",
+      "item": "Req. 14",
+      "cell": "기준#p2",
+      "path": "same_value",
+      "fact": "F_DEFAULT_CBT_SESSION_REMINDER_INTERVAL",
+      "reason": "같은 값(15분)이지만 다른 사실"
+    },
+    {
+      "site": "[XXCS | UC-03 | 시험방법#p2]",
+      "doc": "XXCS",
+      "item": "UC-03",
+      "cell": "시험방법#p2",
+      "path": "same_value",
+      "fact": "F_MEDICAL_STAFF_SESSION_TIMEOUT",
+      "reason": "같은 값(15 분)이지만 다른 사실"
+    },
+    {
+      "site": "[XXCS | UC-03 | 확인결과#p2]",
+      "doc": "XXCS",
+      "item": "UC-03",
+      "cell": "확인결과#p2",
+      "path": "same_value",
+      "fact": "F_MEDICAL_STAFF_SESSION_TIMEOUT",
+      "reason": "같은 값(십오 분)이지만 다른 사실"
+    },
+    {
+      "site": "[XXCS | UC-06 | 시험방법#p3]",
+      "doc": "XXCS",
+      "item": "UC-06",
+      "cell": "시험방법#p3",
+      "path": "same_value",
+      "fact": "F_MEDICAL_STAFF_SESSION_TIMEOUT",
+      "reason": "같은 값(15분)이지만 다른 사실"
+    },
+    {
+      "site": "[XXCS | UC-06 | 확인결과#p3]",
+      "doc": "XXCS",
+      "item": "UC-06",
+      "cell": "확인결과#p3",
+      "path": "same_value",
+      "fact": "F_MEDICAL_STAFF_SESSION_TIMEOUT",
+      "reason": "같은 값(15 분)이지만 다른 사실"
+    },
+    {
+      "site": "[XXCS | SI-01 | 확인결과#p1]",
+      "doc": "XXCS",
+      "item": "SI-01",
+      "cell": "확인결과#p1",
+      "path": "trace",
+      "reason": "Req. 3와 연결됐지만 relevant=false"
+    },
+    {
+      "site": "[XXCS | SI-01 | 확인결과#p2]",
+      "doc": "XXCS",
+      "item": "SI-01",
+      "cell": "확인결과#p2",
+      "path": "trace",
+      "reason": "Req. 3와 연결됐지만 relevant=false"
+    },
+    {
+      "site": "[XXCS | SI-01 | 확인결과#p3]",
+      "doc": "XXCS",
+      "item": "SI-01",
+      "cell": "확인결과#p3",
+      "path": "trace",
+      "reason": "Req. 3와 연결됐지만 relevant=false"
+    }
+  ]
+}

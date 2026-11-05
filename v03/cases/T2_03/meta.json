@@ -1,0 +1,23 @@
+{
+  "case_id": "T2_03",
+  "case_type": "T2",
+  "subtype": "rule_flip",
+  "n_docs": 1,
+  "docs": [
+    "XXCS"
+  ],
+  "paths": {
+    "rule": 4
+  },
+  "trap_paths": {
+    "rule": 6
+  },
+  "n_impact": 4,
+  "n_traps": 6,
+  "n_neutral": 4,
+  "request_structured": "제품 사이버보안 속성 '모바일 코드(외부 스크립트 콘텐츠) 실행'(mobile_code)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+  "request_nl": "수면코치를 교육 콘텐츠를 웹 기반 스크립트로 내려받아 실행하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+  "sheet_type": "T2",
+  "sheet_paths": "rule",
+  "seed": 20261102
+}

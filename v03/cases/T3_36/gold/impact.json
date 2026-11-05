@@ -1,0 +1,99 @@
+{
+  "case_id": "T3_36",
+  "case_type": "T3",
+  "subtype": "add",
+  "change": {
+    "new_req": "Req. 19",
+    "component": "앱",
+    "title": "기상 후 빛 노출",
+    "related_secs": [
+      "SI-06"
+    ],
+    "draft": {
+      "설명": "앱은 기상 직후 빛 노출을 권장하는 안내를 제공하여야 하며, 기기의 조도 센서 값을 읽지 못하면 미리 정한 기본 안내 상태로 전환하여야 한다.",
+      "목적": "아침 빛 노출로 생체리듬을 맞추도록 돕고, 센서 오류가 있어도 안내가 예측 가능한 상태로 유지되도록 하기 위함이다.",
+      "기준": [
+        "조도 센서 값이 정상일 때 현재 밝기에 맞는 빛 노출 안내가 표시됨을 확인함",
+        "조도 센서 값을 읽지 못할 때 기본 안내 문구가 표시되고 앱이 중단되지 않음을 확인함"
+      ],
+      "설계": [
+        "• 기상 기록 직후 빛 노출 안내 화면을 표시하도록 구현한다.",
+        "• 조도 센서 값을 받아 현재 밝기에 맞는 안내 문구를 고르도록 한다.",
+        "• 센서 값을 읽지 못하거나 값이 비정상이면 미리 정한 기본 안내 문구로 전환하도록 한다."
+      ]
+    }
+  },
+  "items": [
+    {
+      "site": "[MDSR | Req. 19 | 번호]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "번호",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "Req. 19"
+    },
+    {
+      "site": "[MDSR | Req. 19 | 제목]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "제목",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "기상 후 빛 노출"
+    },
+    {
+      "site": "[MDSR | Req. 19 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "설명",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "앱은 기상 직후 빛 노출을 권장하는 안내를 제공하여야 하며, 기기의 조도 센서 값을 읽지 못하면 미리 정한 기본 안내 상태로 전환하여야 한다."
+    },
+    {
+      "site": "[MDSR | Req. 19 | 목적]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "목적",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "아침 빛 노출로 생체리듬을 맞추도록 돕고, 센서 오류가 있어도 안내가 예측 가능한 상태로 유지되도록 하기 위함이다."
+    },
+    {
+      "site": "[MDSR | Req. 19 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "기준#p1",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "조도 센서 값이 정상일 때 현재 밝기에 맞는 빛 노출 안내가 표시됨을 확인함"
+    },
+    {
+      "site": "[MDSR | Req. 19 | 기준#p2]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "기준#p2",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "조도 센서 값을 읽지 못할 때 기본 안내 문구가 표시되고 앱이 중단되지 않음을 확인함"
+    },
+    {
+      "site": "[MDSR | SI-06 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "SI-06",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "trace",
+      "op": "modify",
+      "new_value": "Req. 15, Req. 19, Req. 108",
+      "note": "연결 Req 칸에 Req. 19 추가"
+    }
+  ],
+  "neutral": []
+}

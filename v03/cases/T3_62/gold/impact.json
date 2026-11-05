@@ -1,0 +1,298 @@
+{
+  "case_id": "T3_62",
+  "case_type": "T3",
+  "subtype": "add_with_value_change",
+  "change": {
+    "new_req": "Req. 19",
+    "component": "앱",
+    "title": "위젯 표시",
+    "related_secs": [
+      "DC-01"
+    ],
+    "draft": {
+      "설명": "앱은 홈 화면 위젯으로 오늘의 수면 목표를 보여 줄 수 있어야 하며, 기기가 잠긴 상태에서는 위젯에 민감한 수면 기록을 표시하지 않아야 한다.",
+      "목적": "사용자가 앱을 열지 않고도 목표를 확인하게 하고, 잠금 화면을 통해 수면 정보가 노출되지 않도록 하기 위함이다.",
+      "기준": [
+        "기기 잠금이 풀린 상태에서 위젯에 오늘의 수면 목표가 표시됨을 확인함",
+        "기기가 잠긴 상태에서는 위젯에 수면 기록이 표시되지 않음을 확인함"
+      ],
+      "설계": [
+        "• 홈 화면 위젯에 오늘의 수면 목표를 표시하도록 구현한다.",
+        "• 기기 잠금 상태를 확인하여 잠긴 상태에서는 수면 기록 대신 일반 안내 문구를 표시한다.",
+        "• 위젯을 누르면 앱의 수면 목표 화면으로 이동하도록 한다."
+      ]
+    },
+    "value_change": {
+      "fact": "F_LOGIN_FAILURE_LIMIT",
+      "origin_req": "Req. 1",
+      "old_value": "5",
+      "new_value": "4"
+    }
+  },
+  "items": [
+    {
+      "site": "[MDSR | Req. 19 | 번호]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "번호",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "Req. 19"
+    },
+    {
+      "site": "[MDSR | Req. 19 | 제목]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "제목",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "위젯 표시"
+    },
+    {
+      "site": "[MDSR | Req. 19 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "설명",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "앱은 홈 화면 위젯으로 오늘의 수면 목표를 보여 줄 수 있어야 하며, 기기가 잠긴 상태에서는 위젯에 민감한 수면 기록을 표시하지 않아야 한다."
+    },
+    {
+      "site": "[MDSR | Req. 19 | 목적]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "목적",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "사용자가 앱을 열지 않고도 목표를 확인하게 하고, 잠금 화면을 통해 수면 정보가 노출되지 않도록 하기 위함이다."
+    },
+    {
+      "site": "[MDSR | Req. 19 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "기준#p1",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "기기 잠금이 풀린 상태에서 위젯에 오늘의 수면 목표가 표시됨을 확인함"
+    },
+    {
+      "site": "[MDSR | Req. 19 | 기준#p2]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "기준#p2",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "기기가 잠긴 상태에서는 위젯에 수면 기록이 표시되지 않음을 확인함"
+    },
+    {
+      "site": "[MDDR | Req. 19 | 번호]",
+      "doc": "MDDR",
+      "item": "Req. 19",
+      "cell": "번호",
+      "path": "same_id",
+      "op": "insert",
+      "anchor": "[MDDR | Req. 18 | 설계#p3]",
+      "new_value": "Req. 19"
+    },
+    {
+      "site": "[MDDR | Req. 19 | 설계#p1]",
+      "doc": "MDDR",
+      "item": "Req. 19",
+      "cell": "설계#p1",
+      "path": "same_id",
+      "op": "insert",
+      "anchor": "[MDDR | Req. 18 | 설계#p3]",
+      "new_value": "• 홈 화면 위젯에 오늘의 수면 목표를 표시하도록 구현한다."
+    },
+    {
+      "site": "[MDDR | Req. 19 | 설계#p2]",
+      "doc": "MDDR",
+      "item": "Req. 19",
+      "cell": "설계#p2",
+      "path": "same_id",
+      "op": "insert",
+      "anchor": "[MDDR | Req. 18 | 설계#p3]",
+      "new_value": "• 기기 잠금 상태를 확인하여 잠긴 상태에서는 수면 기록 대신 일반 안내 문구를 표시한다."
+    },
+    {
+      "site": "[MDDR | Req. 19 | 설계#p3]",
+      "doc": "MDDR",
+      "item": "Req. 19",
+      "cell": "설계#p3",
+      "path": "same_id",
+      "op": "insert",
+      "anchor": "[MDDR | Req. 18 | 설계#p3]",
+      "new_value": "• 위젯을 누르면 앱의 수면 목표 화면으로 이동하도록 한다."
+    },
+    {
+      "site": "[MDSR | DC-01 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "DC-01",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "trace",
+      "op": "modify",
+      "new_value": "Req. 5, Req. 7, Req. 8, Req. 19, Req. 106",
+      "note": "연결 Req 칸에 Req. 19 추가"
+    },
+    {
+      "site": "[XXCS | DC-01 | 해당 요구사항]",
+      "doc": "XXCS",
+      "item": "DC-01",
+      "cell": "해당 요구사항",
+      "path": "trace",
+      "op": "modify",
+      "new_value": "Req. 5, Req. 7, Req. 8, Req. 19, Req. 106",
+      "note": "연결 Req 칸에 Req. 19 추가"
+    },
+    {
+      "site": "[MDSR | 3.4 일반적 제한 | 본문#p1]",
+      "doc": "MDSR",
+      "item": "3.4 일반적 제한",
+      "cell": "본문#p1",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_LOGIN_FAILURE_LIMIT",
+      "old_surface": "5 회",
+      "new_value": "4회"
+    },
+    {
+      "site": "[MDSR | Req. 1 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 1",
+      "cell": "설명",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_LOGIN_FAILURE_LIMIT",
+      "old_surface": "5회",
+      "new_value": "4회"
+    },
+    {
+      "site": "[MDSR | Req. 1 | 기준#p2]",
+      "doc": "MDSR",
+      "item": "Req. 1",
+      "cell": "기준#p2",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_LOGIN_FAILURE_LIMIT",
+      "old_surface": "5 회",
+      "new_value": "4회"
+    },
+    {
+      "site": "[MDSR | Req. 2 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 2",
+      "cell": "설명",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_LOGIN_FAILURE_LIMIT",
+      "old_surface": "5번",
+      "new_value": "4회"
+    },
+    {
+      "site": "[MDSR | Req. 2 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 2",
+      "cell": "기준#p1",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_LOGIN_FAILURE_LIMIT",
+      "old_surface": "5회",
+      "new_value": "4회"
+    },
+    {
+      "site": "[MDDR | Req. 1 | 설계#p2]",
+      "doc": "MDDR",
+      "item": "Req. 1",
+      "cell": "설계#p2",
+      "path": "same_id",
+      "op": "modify",
+      "fact": "F_LOGIN_FAILURE_LIMIT",
+      "old_surface": "5번",
+      "new_value": "4회"
+    },
+    {
+      "site": "[MDDR | Req. 2 | 설계#p1]",
+      "doc": "MDDR",
+      "item": "Req. 2",
+      "cell": "설계#p1",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_LOGIN_FAILURE_LIMIT",
+      "old_surface": "5회",
+      "new_value": "4회"
+    },
+    {
+      "site": "[MDDR | Req. 2 | 설계#p2]",
+      "doc": "MDDR",
+      "item": "Req. 2",
+      "cell": "설계#p2",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_LOGIN_FAILURE_LIMIT",
+      "old_surface": "5 회",
+      "new_value": "4회"
+    },
+    {
+      "site": "[XXCS | IA-06 | 시험방법#p1]",
+      "doc": "XXCS",
+      "item": "IA-06",
+      "cell": "시험방법#p1",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_LOGIN_FAILURE_LIMIT",
+      "old_surface": "5번",
+      "new_value": "4회"
+    },
+    {
+      "site": "[XXCS | IA-06 | 확인결과#p1]",
+      "doc": "XXCS",
+      "item": "IA-06",
+      "cell": "확인결과#p1",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_LOGIN_FAILURE_LIMIT",
+      "old_surface": "5회",
+      "new_value": "4회"
+    },
+    {
+      "site": "[XXCS | IA-07 | 시험방법#p1]",
+      "doc": "XXCS",
+      "item": "IA-07",
+      "cell": "시험방법#p1",
+      "path": "trace",
+      "op": "modify",
+      "fact": "F_LOGIN_FAILURE_LIMIT",
+      "old_surface": "5 회",
+      "new_value": "4회"
+    },
+    {
+      "site": "[XXCS | IA-07 | 시험방법#p2]",
+      "doc": "XXCS",
+      "item": "IA-07",
+      "cell": "시험방법#p2",
+      "path": "trace",
+      "op": "modify",
+      "fact": "F_LOGIN_FAILURE_LIMIT",
+      "old_surface": "5번",
+      "new_value": "4회"
+    },
+    {
+      "site": "[XXCS | IA-07 | 확인결과#p1]",
+      "doc": "XXCS",
+      "item": "IA-07",
+      "cell": "확인결과#p1",
+      "path": "trace",
+      "op": "modify",
+      "fact": "F_LOGIN_FAILURE_LIMIT",
+      "old_surface": "5회",
+      "new_value": "4회"
+    }
+  ],
+  "neutral": []
+}

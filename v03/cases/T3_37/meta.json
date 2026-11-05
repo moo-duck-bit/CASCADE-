@@ -1,0 +1,24 @@
+{
+  "case_id": "T3_37",
+  "case_type": "T3",
+  "subtype": "add",
+  "n_docs": 1,
+  "docs": [
+    "MDSR"
+  ],
+  "paths": {
+    "origin": 6,
+    "trace": 1
+  },
+  "trap_paths": {
+    "trace": 2
+  },
+  "n_impact": 7,
+  "n_traps": 2,
+  "n_neutral": 0,
+  "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '주말 기상 안내'을(를) 신규 추가한다. 내용: 사용자는 주말 기상 시각을 따로 설정할 수 있어야 하며, 앱은 입력값의 허용 범위를 검증하고 평일 기상 시각과의 차이를 안내하여야 한다.",
+  "request_nl": "앱에 새 기능을 넣어 주세요. 사용자가 주말 기상 시각을 정하면 평일 기상 시각과의 차이를 안내하고 입력값의 허용 범위를 검사하는 기능이 필요합니다.",
+  "sheet_type": "T3-추가",
+  "sheet_paths": "origin, trace",
+  "seed": 20261102
+}

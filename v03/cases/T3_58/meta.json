@@ -1,0 +1,25 @@
+{
+  "case_id": "T3_58",
+  "case_type": "T3",
+  "subtype": "add_with_value_change",
+  "n_docs": 1,
+  "docs": [
+    "MDSR"
+  ],
+  "paths": {
+    "origin": 8,
+    "trace": 1,
+    "same_value": 3
+  },
+  "trap_paths": {
+    "trace": 2
+  },
+  "n_impact": 12,
+  "n_traps": 2,
+  "n_neutral": 0,
+  "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '의료진 메모 확인'을(를) 신규 추가한다. 내용: 사용자는 의료진이 남긴 메모를 앱에서 확인할 수 있어야 하며, 메모를 열람할 때마다 열람자와 열람 시각을 감사기록으로 생성하여야 한다. 또한 Req. 8 '수면일기 기록'의 수면 제한 요법 기본 취침 시간을 22:00에서 23:00으로 변경한다.",
+  "request_nl": "앱에 새 기능을 넣어 주세요. 사용자가 의료진이 남긴 메모를 확인하고 메모를 열람할 때 감사기록을 남기는 기능이 필요합니다. 그리고 수면일기 기록 기능에서 수면 제한 요법 기본 취침 시간을 23:00으로 바꿔 주세요.",
+  "sheet_type": "T3-추가복합",
+  "sheet_paths": "origin, trace, same_value",
+  "seed": 20261102
+}

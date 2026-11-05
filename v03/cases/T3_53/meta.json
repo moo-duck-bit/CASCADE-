@@ -1,0 +1,27 @@
+{
+  "case_id": "T3_53",
+  "case_type": "T3",
+  "subtype": "add",
+  "n_docs": 3,
+  "docs": [
+    "MDSR",
+    "MDDR",
+    "XXCS"
+  ],
+  "paths": {
+    "origin": 6,
+    "same_id": 4,
+    "trace": 2
+  },
+  "trap_paths": {
+    "trace": 4
+  },
+  "n_impact": 12,
+  "n_traps": 4,
+  "n_neutral": 0,
+  "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '식사 시각 기록'을(를) 신규 추가한다. 내용: 사용자는 저녁 식사 시각을 기록할 수 있어야 하며, 앱은 기록마다 기기 시각 기준의 타임스탬프를 저장하여야 한다.",
+  "request_nl": "앱에 새 기능을 넣어 주세요. 사용자가 저녁 식사 시각을 기록하고 기록 시점을 타임스탬프로 남기는 기능이 필요합니다.",
+  "sheet_type": "T3-추가",
+  "sheet_paths": "origin, same_id, trace",
+  "seed": 20261102
+}

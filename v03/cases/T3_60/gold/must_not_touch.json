@@ -1,0 +1,48 @@
+{
+  "case_id": "T3_60",
+  "items": [
+    {
+      "site": "[MDSR | SI-01 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "SI-01",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "trace",
+      "reason": "같은 분류(SI)지만 새 기능과 무관"
+    },
+    {
+      "site": "[MDSR | SI-02 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "SI-02",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "trace",
+      "reason": "같은 분류(SI)지만 새 기능과 무관"
+    },
+    {
+      "site": "[MDSR | Req. 8 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 8",
+      "cell": "설명",
+      "path": "same_value",
+      "fact": "F_SLEEP_DIARY_DEADLINE",
+      "reason": "같은 값(24시간)이지만 다른 사실"
+    },
+    {
+      "site": "[MDSR | Req. 8 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 8",
+      "cell": "기준#p1",
+      "path": "same_value",
+      "fact": "F_SLEEP_DIARY_DEADLINE",
+      "reason": "같은 값(24 시간)이지만 다른 사실"
+    },
+    {
+      "site": "[MDDR | Req. 8 | 설계#p1]",
+      "doc": "MDDR",
+      "item": "Req. 8",
+      "cell": "설계#p1",
+      "path": "same_value",
+      "fact": "F_SLEEP_DIARY_DEADLINE",
+      "reason": "같은 값(하루)이지만 다른 사실"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "case_id": "T2_08",
+  "items": [
+    {
+      "site": "[XXCS | IA-05 | 적용 여부]",
+      "doc": "XXCS",
+      "item": "IA-05",
+      "cell": "적용 여부",
+      "path": "rule",
+      "reason": "다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관"
+    },
+    {
+      "site": "[XXCS | IA-05 | 체크리스트 적용 여부]",
+      "doc": "XXCS",
+      "item": "IA-05",
+      "cell": "체크리스트 적용 여부",
+      "path": "rule",
+      "reason": "다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관"
+    },
+    {
+      "site": "[XXCS | IA-06 | 적용 여부]",
+      "doc": "XXCS",
+      "item": "IA-06",
+      "cell": "적용 여부",
+      "path": "rule",
+      "reason": "다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관"
+    },
+    {
+      "site": "[XXCS | IA-06 | 체크리스트 적용 여부]",
+      "doc": "XXCS",
+      "item": "IA-06",
+      "cell": "체크리스트 적용 여부",
+      "path": "rule",
+      "reason": "다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관"
+    },
+    {
+      "site": "[XXCS | DC-02 | 적용 여부]",
+      "doc": "XXCS",
+      "item": "DC-02",
+      "cell": "적용 여부",
+      "path": "rule",
+      "reason": "다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관"
+    },
+    {
+      "site": "[XXCS | DC-02 | 체크리스트 적용 여부]",
+      "doc": "XXCS",
+      "item": "DC-02",
+      "cell": "체크리스트 적용 여부",
+      "path": "rule",
+      "reason": "다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관"
+    }
+  ]
+}

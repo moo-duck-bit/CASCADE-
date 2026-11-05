@@ -1,0 +1,25 @@
+{
+  "case_id": "T1_66",
+  "case_type": "T1",
+  "subtype": "value_change",
+  "change": {
+    "fact": "F_DEFAULT_CBT_SESSION_INTERVAL",
+    "origin_req": "Req. 13",
+    "old_value": "7",
+    "new_value": "5"
+  },
+  "items": [
+    {
+      "site": "[MDSR | Req. 13 | 기준#p2]",
+      "doc": "MDSR",
+      "item": "Req. 13",
+      "cell": "기준#p2",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_DEFAULT_CBT_SESSION_INTERVAL",
+      "old_surface": "7일",
+      "new_value": "5일"
+    }
+  ],
+  "neutral": []
+}

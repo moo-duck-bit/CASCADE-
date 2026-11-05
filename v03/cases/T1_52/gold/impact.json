@@ -1,0 +1,69 @@
+{
+  "case_id": "T1_52",
+  "case_type": "T1",
+  "subtype": "value_change",
+  "change": {
+    "fact": "F_DEFAULT_SLEEP_LIMIT",
+    "origin_req": "Req. 8",
+    "old_value": "22:00",
+    "new_value": "21:30"
+  },
+  "items": [
+    {
+      "site": "[MDSR | Req. 8 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 8",
+      "cell": "설명",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_DEFAULT_SLEEP_LIMIT",
+      "old_surface": "22:00",
+      "new_value": "21:30"
+    },
+    {
+      "site": "[MDSR | Req. 8 | 기준#p2]",
+      "doc": "MDSR",
+      "item": "Req. 8",
+      "cell": "기준#p2",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_DEFAULT_SLEEP_LIMIT",
+      "old_surface": "밤 10시",
+      "new_value": "21:30"
+    },
+    {
+      "site": "[MDSR | Req. 10 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 10",
+      "cell": "설명",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_DEFAULT_SLEEP_LIMIT",
+      "old_surface": "22시",
+      "new_value": "21:30"
+    },
+    {
+      "site": "[MDSR | Req. 10 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 10",
+      "cell": "기준#p1",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_DEFAULT_SLEEP_LIMIT",
+      "old_surface": "22:00",
+      "new_value": "21:30"
+    },
+    {
+      "site": "[MDSR | Req. 10 | 기준#p2]",
+      "doc": "MDSR",
+      "item": "Req. 10",
+      "cell": "기준#p2",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_DEFAULT_SLEEP_LIMIT",
+      "old_surface": "밤 10시",
+      "new_value": "21:30"
+    }
+  ],
+  "neutral": []
+}

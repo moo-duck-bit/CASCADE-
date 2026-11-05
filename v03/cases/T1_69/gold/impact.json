@@ -1,0 +1,25 @@
+{
+  "case_id": "T1_69",
+  "case_type": "T1",
+  "subtype": "value_change",
+  "change": {
+    "fact": "F_DEFAULT_CBT_SESSION_REMINDER_SOUND",
+    "origin_req": "Req. 14",
+    "old_value": "벨 소리",
+    "new_value": "진동"
+  },
+  "items": [
+    {
+      "site": "[MDSR | Req. 14 | 기준#p2]",
+      "doc": "MDSR",
+      "item": "Req. 14",
+      "cell": "기준#p2",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_DEFAULT_CBT_SESSION_REMINDER_SOUND",
+      "old_surface": "벨 소리",
+      "new_value": "진동"
+    }
+  ],
+  "neutral": []
+}

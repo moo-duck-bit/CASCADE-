@@ -1,0 +1,106 @@
+{
+  "case_id": "T2_29",
+  "case_type": "T2",
+  "subtype": "rule_flip",
+  "change": {
+    "attr": "e_signature",
+    "old": false,
+    "new": true,
+    "direction": "false->true",
+    "rules": [
+      "R08"
+    ]
+  },
+  "items": [
+    {
+      "site": "[XXCS | UC-07 | 체크리스트 적용 여부]",
+      "doc": "XXCS",
+      "item": "UC-07",
+      "cell": "체크리스트 적용 여부",
+      "path": "rule",
+      "op": "modify",
+      "rule_source": "R08: 첨부3 UC-07 적용 예외: 부인 방지가 필요한 전자서명·거래 기능이 없는 기기",
+      "applicability_before": "N/A",
+      "applicability_after": "적용",
+      "new_value": "적용"
+    },
+    {
+      "site": "[XXCS | UC-07 | 체크리스트 입증 방법]",
+      "doc": "XXCS",
+      "item": "UC-07",
+      "cell": "체크리스트 입증 방법",
+      "path": "rule",
+      "op": "modify",
+      "rule_source": "R08: 첨부3 UC-07 적용 예외: 부인 방지가 필요한 전자서명·거래 기능이 없는 기기",
+      "applicability_before": "N/A",
+      "applicability_after": "적용",
+      "new_value": null
+    },
+    {
+      "site": "[XXCS | UC-07 | 적용 여부]",
+      "doc": "XXCS",
+      "item": "UC-07",
+      "cell": "적용 여부",
+      "path": "rule",
+      "op": "modify",
+      "rule_source": "R08: 첨부3 UC-07 적용 예외: 부인 방지가 필요한 전자서명·거래 기능이 없는 기기",
+      "applicability_before": "N/A",
+      "applicability_after": "적용",
+      "new_value": "적용"
+    },
+    {
+      "site": "[XXCS | UC-07 | 판정]",
+      "doc": "XXCS",
+      "item": "UC-07",
+      "cell": "판정",
+      "path": "rule",
+      "op": "modify",
+      "rule_source": "R08: 첨부3 UC-07 적용 예외: 부인 방지가 필요한 전자서명·거래 기능이 없는 기기",
+      "applicability_before": "N/A",
+      "applicability_after": "적용",
+      "new_value": null
+    }
+  ],
+  "neutral": [
+    {
+      "site": "[XXCS | UC-07 | 비고]",
+      "doc": "XXCS",
+      "item": "UC-07",
+      "cell": "비고",
+      "path": "rule",
+      "reason": "같은 행의 부수 칸(채점 제외)"
+    },
+    {
+      "site": "[XXCS | UC-07 | 해당 요구사항]",
+      "doc": "XXCS",
+      "item": "UC-07",
+      "cell": "해당 요구사항",
+      "path": "rule",
+      "reason": "같은 행의 부수 칸(채점 제외)"
+    },
+    {
+      "site": "[XXCS | UC-07 | 시험방법]",
+      "doc": "XXCS",
+      "item": "UC-07",
+      "cell": "시험방법",
+      "path": "rule",
+      "reason": "같은 행의 부수 칸(채점 제외)"
+    },
+    {
+      "site": "[XXCS | UC-07 | 확인결과]",
+      "doc": "XXCS",
+      "item": "UC-07",
+      "cell": "확인결과",
+      "path": "rule",
+      "reason": "같은 행의 부수 칸(채점 제외)"
+    },
+    {
+      "site": "[MDSR | UC-07 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "UC-07",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "rule",
+      "reason": "6절 연결 칸(채점 제외)"
+    }
+  ]
+}

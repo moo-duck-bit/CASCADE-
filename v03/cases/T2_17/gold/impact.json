@@ -1,0 +1,195 @@
+{
+  "case_id": "T2_17",
+  "case_type": "T2",
+  "subtype": "rule_flip",
+  "change": {
+    "attr": "samd",
+    "old": true,
+    "new": false,
+    "direction": "true->false",
+    "rules": [
+      "R05",
+      "R06"
+    ]
+  },
+  "items": [
+    {
+      "site": "[XXCS | SI-10 | 체크리스트 적용 여부]",
+      "doc": "XXCS",
+      "item": "SI-10",
+      "cell": "체크리스트 적용 여부",
+      "path": "rule",
+      "op": "modify",
+      "rule_source": "R05: 첨부3 SI-10 적용 예외: 물리적 하드웨어가 없는 소프트웨어 기반 의료기기",
+      "applicability_before": "N/A",
+      "applicability_after": "적용",
+      "new_value": "적용"
+    },
+    {
+      "site": "[XXCS | SI-10 | 체크리스트 입증 방법]",
+      "doc": "XXCS",
+      "item": "SI-10",
+      "cell": "체크리스트 입증 방법",
+      "path": "rule",
+      "op": "modify",
+      "rule_source": "R05: 첨부3 SI-10 적용 예외: 물리적 하드웨어가 없는 소프트웨어 기반 의료기기",
+      "applicability_before": "N/A",
+      "applicability_after": "적용",
+      "new_value": null
+    },
+    {
+      "site": "[XXCS | SI-10 | 적용 여부]",
+      "doc": "XXCS",
+      "item": "SI-10",
+      "cell": "적용 여부",
+      "path": "rule",
+      "op": "modify",
+      "rule_source": "R05: 첨부3 SI-10 적용 예외: 물리적 하드웨어가 없는 소프트웨어 기반 의료기기",
+      "applicability_before": "N/A",
+      "applicability_after": "적용",
+      "new_value": "적용"
+    },
+    {
+      "site": "[XXCS | SI-10 | 판정]",
+      "doc": "XXCS",
+      "item": "SI-10",
+      "cell": "판정",
+      "path": "rule",
+      "op": "modify",
+      "rule_source": "R05: 첨부3 SI-10 적용 예외: 물리적 하드웨어가 없는 소프트웨어 기반 의료기기",
+      "applicability_before": "N/A",
+      "applicability_after": "적용",
+      "new_value": null
+    },
+    {
+      "site": "[XXCS | SI-11 | 체크리스트 적용 여부]",
+      "doc": "XXCS",
+      "item": "SI-11",
+      "cell": "체크리스트 적용 여부",
+      "path": "rule",
+      "op": "modify",
+      "rule_source": "R06: 첨부3 SI-11 적용 예외: 부트 프로세스를 갖지 않는 소프트웨어 기반 의료기기",
+      "applicability_before": "N/A",
+      "applicability_after": "적용",
+      "new_value": "적용"
+    },
+    {
+      "site": "[XXCS | SI-11 | 체크리스트 입증 방법]",
+      "doc": "XXCS",
+      "item": "SI-11",
+      "cell": "체크리스트 입증 방법",
+      "path": "rule",
+      "op": "modify",
+      "rule_source": "R06: 첨부3 SI-11 적용 예외: 부트 프로세스를 갖지 않는 소프트웨어 기반 의료기기",
+      "applicability_before": "N/A",
+      "applicability_after": "적용",
+      "new_value": null
+    },
+    {
+      "site": "[XXCS | SI-11 | 적용 여부]",
+      "doc": "XXCS",
+      "item": "SI-11",
+      "cell": "적용 여부",
+      "path": "rule",
+      "op": "modify",
+      "rule_source": "R06: 첨부3 SI-11 적용 예외: 부트 프로세스를 갖지 않는 소프트웨어 기반 의료기기",
+      "applicability_before": "N/A",
+      "applicability_after": "적용",
+      "new_value": "적용"
+    },
+    {
+      "site": "[XXCS | SI-11 | 판정]",
+      "doc": "XXCS",
+      "item": "SI-11",
+      "cell": "판정",
+      "path": "rule",
+      "op": "modify",
+      "rule_source": "R06: 첨부3 SI-11 적용 예외: 부트 프로세스를 갖지 않는 소프트웨어 기반 의료기기",
+      "applicability_before": "N/A",
+      "applicability_after": "적용",
+      "new_value": null
+    }
+  ],
+  "neutral": [
+    {
+      "site": "[XXCS | SI-10 | 비고]",
+      "doc": "XXCS",
+      "item": "SI-10",
+      "cell": "비고",
+      "path": "rule",
+      "reason": "같은 행의 부수 칸(채점 제외)"
+    },
+    {
+      "site": "[XXCS | SI-10 | 해당 요구사항]",
+      "doc": "XXCS",
+      "item": "SI-10",
+      "cell": "해당 요구사항",
+      "path": "rule",
+      "reason": "같은 행의 부수 칸(채점 제외)"
+    },
+    {
+      "site": "[XXCS | SI-10 | 시험방법]",
+      "doc": "XXCS",
+      "item": "SI-10",
+      "cell": "시험방법",
+      "path": "rule",
+      "reason": "같은 행의 부수 칸(채점 제외)"
+    },
+    {
+      "site": "[XXCS | SI-10 | 확인결과]",
+      "doc": "XXCS",
+      "item": "SI-10",
+      "cell": "확인결과",
+      "path": "rule",
+      "reason": "같은 행의 부수 칸(채점 제외)"
+    },
+    {
+      "site": "[MDSR | SI-10 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "SI-10",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "rule",
+      "reason": "6절 연결 칸(채점 제외)"
+    },
+    {
+      "site": "[XXCS | SI-11 | 비고]",
+      "doc": "XXCS",
+      "item": "SI-11",
+      "cell": "비고",
+      "path": "rule",
+      "reason": "같은 행의 부수 칸(채점 제외)"
+    },
+    {
+      "site": "[XXCS | SI-11 | 해당 요구사항]",
+      "doc": "XXCS",
+      "item": "SI-11",
+      "cell": "해당 요구사항",
+      "path": "rule",
+      "reason": "같은 행의 부수 칸(채점 제외)"
+    },
+    {
+      "site": "[XXCS | SI-11 | 시험방법]",
+      "doc": "XXCS",
+      "item": "SI-11",
+      "cell": "시험방법",
+      "path": "rule",
+      "reason": "같은 행의 부수 칸(채점 제외)"
+    },
+    {
+      "site": "[XXCS | SI-11 | 확인결과]",
+      "doc": "XXCS",
+      "item": "SI-11",
+      "cell": "확인결과",
+      "path": "rule",
+      "reason": "같은 행의 부수 칸(채점 제외)"
+    },
+    {
+      "site": "[MDSR | SI-11 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "SI-11",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "rule",
+      "reason": "6절 연결 칸(채점 제외)"
+    }
+  ]
+}

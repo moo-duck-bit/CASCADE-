@@ -1,0 +1,86 @@
+{
+  "case_id": "T1_39",
+  "items": [
+    {
+      "site": "[MDSR | 3.4 일반적 제한 | 본문#p7]",
+      "doc": "MDSR",
+      "item": "3.4 일반적 제한",
+      "cell": "본문#p7",
+      "path": "same_value",
+      "fact": "F_PII_DELETION_DEADLINE",
+      "reason": "같은 값(365 일)이지만 다른 사실"
+    },
+    {
+      "site": "[MDSR | Req. 7 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 7",
+      "cell": "설명",
+      "path": "same_value",
+      "fact": "F_PII_DELETION_DEADLINE",
+      "reason": "같은 값(365일)이지만 다른 사실"
+    },
+    {
+      "site": "[MDSR | Req. 7 | 기준#p2]",
+      "doc": "MDSR",
+      "item": "Req. 7",
+      "cell": "기준#p2",
+      "path": "same_value",
+      "fact": "F_PII_DELETION_DEADLINE",
+      "reason": "같은 값(365 일)이지만 다른 사실"
+    },
+    {
+      "site": "[MDSR | Req. 107 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 107",
+      "cell": "설명",
+      "path": "same_value",
+      "fact": "F_PII_DELETION_DEADLINE",
+      "reason": "같은 값(1년)이지만 다른 사실"
+    },
+    {
+      "site": "[MDSR | Req. 107 | 기준#p2]",
+      "doc": "MDSR",
+      "item": "Req. 107",
+      "cell": "기준#p2",
+      "path": "same_value",
+      "fact": "F_PII_DELETION_DEADLINE",
+      "reason": "같은 값(365일)이지만 다른 사실"
+    },
+    {
+      "site": "[XXCS | UC-05 | 시험방법#p2]",
+      "doc": "XXCS",
+      "item": "UC-05",
+      "cell": "시험방법#p2",
+      "path": "same_value",
+      "fact": "F_PII_DELETION_DEADLINE",
+      "reason": "같은 값(365 일)이지만 다른 사실"
+    },
+    {
+      "site": "[XXCS | UC-05 | 확인결과#p2]",
+      "doc": "XXCS",
+      "item": "UC-05",
+      "cell": "확인결과#p2",
+      "path": "same_value",
+      "fact": "F_PII_DELETION_DEADLINE",
+      "reason": "같은 값(1년)이지만 다른 사실"
+    },
+    {
+      "site": "[XXCS | DC-01 | 시험방법#p2]",
+      "doc": "XXCS",
+      "item": "DC-01",
+      "cell": "시험방법#p2",
+      "path": "same_value",
+      "fact": "F_PII_DELETION_DEADLINE",
+      "reason": "같은 값(365일)이지만 다른 사실"
+    },
+    {
+      "site": "[XXCS | DC-01 | 확인결과#p2]",
+      "doc": "XXCS",
+      "item": "DC-01",
+      "cell": "확인결과#p2",
+      "path": "same_value",
+      "fact": "F_PII_DELETION_DEADLINE",
+      "reason": "같은 값(365 일)이지만 다른 사실"
+    }
+  ]
+}

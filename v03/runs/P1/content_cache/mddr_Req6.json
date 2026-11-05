@@ -1,0 +1,7 @@
+{
+  "설계": [
+    "감사로그는 {{F_AUDIT_LOG_RETENTION}} 동안 보관되도록 구현한다.",
+    "의료진 접속 기록은 {{F_MEDICAL_STAFF_ACCESS_LOG_RETENTION}} 동안 보관하며, {{F_MEDICAL_STAFF_ACCESS_LOG_AUDIT_INTERVAL}}마다 감사 수행을 통해 무결성을 확인한다.",
+    "모바일 애플리케이션 내에서 의료진의 접근 이력은 별도의 감사 이벤트로 기록되며, 해당 기록은 암호화하여 저장한다."
+  ]
+}

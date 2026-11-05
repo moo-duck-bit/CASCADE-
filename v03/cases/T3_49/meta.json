@@ -1,0 +1,27 @@
+{
+  "case_id": "T3_49",
+  "case_type": "T3",
+  "subtype": "add",
+  "n_docs": 3,
+  "docs": [
+    "MDSR",
+    "MDDR",
+    "XXCS"
+  ],
+  "paths": {
+    "origin": 6,
+    "same_id": 4,
+    "trace": 2
+  },
+  "trap_paths": {
+    "trace": 4
+  },
+  "n_impact": 12,
+  "n_traps": 4,
+  "n_neutral": 0,
+  "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '아침 점검'을(를) 신규 추가한다. 내용: 앱은 기상 후 수면 만족도 점검 문항에 응답하도록 하여야 하며, 응답 저장에 실패하면 직전에 저장된 상태를 유지하여야 한다.",
+  "request_nl": "앱에 새 기능을 넣어 주세요. 기상 후 수면 만족도 점검 문항에 답하게 하고 응답 저장에 실패하면 직전에 저장된 상태를 유지하는 기능이 필요합니다.",
+  "sheet_type": "T3-추가",
+  "sheet_paths": "origin, same_id, trace",
+  "seed": 20261102
+}

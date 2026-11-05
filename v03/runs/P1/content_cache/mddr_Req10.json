@@ -1,0 +1,7 @@
+{
+  "설계": [
+    "사용자에게 수면 제한 요법 기본 시간을 설정하도록 하며, 기본 취침 시간은 {{F_DEFAULT_SLEEP_LIMIT}}을, 기상 시간은 {{F_DEFAULT_WAKE_TIME}}을 각각 적용한다.",
+    "수면 제한 요법 기본 시간은 사용자 개입 없이 애플리케이션 내에서 {{F_DEFAULT_SLEEP_LIMIT}}과 {{F_DEFAULT_WAKE_TIME}}을 초기값으로 설정하도록 구현한다.",
+    "사용자가 수면 제한 요법 시간을 변경하지 않은 경우, 시스템은 {{F_DEFAULT_SLEEP_LIMIT}}에서 {{F_DEFAULT_WAKE_TIME}}까지의 시간 범위를 수면 시간으로 자동 계산한다."
+  ]
+}

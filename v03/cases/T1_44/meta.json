@@ -1,0 +1,24 @@
+{
+  "case_id": "T1_44",
+  "case_type": "T1",
+  "subtype": "value_change",
+  "n_docs": 2,
+  "docs": [
+    "MDSR",
+    "MDDR"
+  ],
+  "paths": {
+    "origin": 2,
+    "same_value": 6,
+    "same_id": 1
+  },
+  "trap_paths": {},
+  "n_impact": 9,
+  "n_traps": 0,
+  "n_neutral": 0,
+  "request_structured": "Req. 8 '수면일기 기록'의 수면 제한 요법 기본 취침 시간을 22:00에서 21:30으로 변경한다.",
+  "request_nl": "수면일기 기록 기능에서 수면 제한 요법 기본 취침 시간을 21:30으로 바꿔 주세요.",
+  "sheet_type": "T1",
+  "sheet_paths": "origin, same_id, same_value",
+  "seed": 20261102
+}

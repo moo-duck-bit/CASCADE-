@@ -1,0 +1,8 @@
+{
+  "설명": "사용자 및 의료진의 세션은 {{F_SESSION_TIMEOUT}} 경과 시 자동으로 종료되도록 하여 보안성을 유지하여야 한다. 의료진 대시보드의 세션 종료 시간은 {{F_MEDICAL_STAFF_SESSION_TIMEOUT}}으로 설정하여야 하며, 세션 종료 {{F_UNLOCK_NOTIFICATION_TIME}} 전에 사용자에게 잠금 해제 안내를 제공하여야 한다.",
+  "목적": "사용자 및 의료진의 세션 관리를 통해 보안 위험을 최소화하고, 세션 종료 시 사용자에게 적절한 안내를 제공하여 편의성을 유지한다.",
+  "기준": [
+    "사용자 세션은 {{F_SESSION_TIMEOUT}} 경과 후 자동 종료되며, 의료진 대시보드 세션은 {{F_MEDICAL_STAFF_SESSION_TIMEOUT}} 경과 후 자동 종료됨을 확인함.",
+    "세션 종료 {{F_UNLOCK_NOTIFICATION_TIME}} 전에 사용자에게 잠금 해제 안내가 표시됨을 확인함."
+  ]
+}

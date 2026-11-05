@@ -1,0 +1,47 @@
+{
+  "case_id": "T1_57",
+  "case_type": "T1",
+  "subtype": "value_change",
+  "change": {
+    "fact": "F_DEFAULT_CBT_SESSION_REMINDER",
+    "origin_req": "Req. 14",
+    "old_value": "18:00",
+    "new_value": "17:00"
+  },
+  "items": [
+    {
+      "site": "[MDSR | Req. 9 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 9",
+      "cell": "설명",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_DEFAULT_CBT_SESSION_REMINDER",
+      "old_surface": "18:00",
+      "new_value": "17:00"
+    },
+    {
+      "site": "[MDSR | Req. 9 | 기준#p2]",
+      "doc": "MDSR",
+      "item": "Req. 9",
+      "cell": "기준#p2",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_DEFAULT_CBT_SESSION_REMINDER",
+      "old_surface": "오후 6시",
+      "new_value": "17:00"
+    },
+    {
+      "site": "[MDSR | Req. 14 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 14",
+      "cell": "기준#p1",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_DEFAULT_CBT_SESSION_REMINDER",
+      "old_surface": "18시",
+      "new_value": "17:00"
+    }
+  ],
+  "neutral": []
+}

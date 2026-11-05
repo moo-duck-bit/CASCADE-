@@ -1,0 +1,27 @@
+{
+  "case_id": "T3_51",
+  "case_type": "T3",
+  "subtype": "add",
+  "n_docs": 3,
+  "docs": [
+    "MDSR",
+    "MDDR",
+    "XXCS"
+  ],
+  "paths": {
+    "origin": 6,
+    "same_id": 4,
+    "trace": 2
+  },
+  "trap_paths": {
+    "trace": 2
+  },
+  "n_impact": 12,
+  "n_traps": 2,
+  "n_neutral": 0,
+  "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '낮 활동 기록'을(를) 신규 추가한다. 내용: 앱은 사용자의 낮 활동량을 기록할 수 있어야 하며, 활동 기록은 기기 내부에 암호화된 형태로 저장되어야 한다.",
+  "request_nl": "앱에 새 기능을 넣어 주세요. 사용자의 낮 활동량을 기록하고 기록을 기기에 암호화하여 저장하는 기능이 필요합니다.",
+  "sheet_type": "T3-추가",
+  "sheet_paths": "origin, same_id, trace",
+  "seed": 20261102
+}

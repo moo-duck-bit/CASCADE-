@@ -1,0 +1,36 @@
+{
+  "case_id": "T1_72",
+  "case_type": "T1",
+  "subtype": "value_change",
+  "change": {
+    "fact": "F_SLEEP_EFFICIENCY_REPORT_INTERVAL",
+    "origin_req": "Req. 16",
+    "old_value": "7",
+    "new_value": "14"
+  },
+  "items": [
+    {
+      "site": "[MDSR | Req. 16 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 16",
+      "cell": "설명",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_SLEEP_EFFICIENCY_REPORT_INTERVAL",
+      "old_surface": "7일",
+      "new_value": "14일"
+    },
+    {
+      "site": "[MDSR | Req. 16 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 16",
+      "cell": "기준#p1",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_SLEEP_EFFICIENCY_REPORT_INTERVAL",
+      "old_surface": "7 일",
+      "new_value": "14일"
+    }
+  ],
+  "neutral": []
+}

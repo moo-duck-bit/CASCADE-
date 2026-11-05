@@ -1,0 +1,47 @@
+{
+ "frozen_on": "v0.2 dev 36 cases",
+ "note": "v0.2 dev 조정 2회 후 고정(locator_v2, editor_v1, rules_table_v1, verifier_spec v1, insert_paras=2). v0.3 평가 전 --check 필수",
+ "config": {
+  "relevance": true,
+  "value_index": true,
+  "rules": true,
+  "verifier": true,
+  "verifier_checks": {
+   "V1": true,
+   "V2": true,
+   "V3": true,
+   "V4": true,
+   "V5": true,
+   "V6": true
+  },
+  "loop_k": 2,
+  "mode": "full",
+  "model": "qwen3-32b",
+  "base_url": "http://127.0.0.1:8100/v1",
+  "temperature": 0.0,
+  "seed": 20261103,
+  "max_tokens": 4096,
+  "token_budget": 60000,
+  "ngram_threshold": 0.7,
+  "context_chars": 400,
+  "insert_paras": 2,
+  "auto_approve": true
+ },
+ "config_hash": "b806efd935a421a5",
+ "presets": {
+  "full": "b806efd935a421a5",
+  "no_verifier": "6e3843afc8af41c9",
+  "no_relevance": "18d3b9d3b109e1c9",
+  "no_value_index": "76ef6c6e80625111",
+  "no_rules": "f72cd1526ae7a67a",
+  "fake_feedback": "7e62dc05a6c00ccf",
+  "ledger_like": "101ffa32b1357846"
+ },
+ "files": {
+  "rules_table.yaml": "419b8b17b47e3bdcb3a2d8ec5d160dbc87e8dc78ad60be2c255e49c058212ce5",
+  "verifier_spec.md": "8cd868b9321122d107c6e70e698f35c0d66a43b04e5536b24925646df3ecdeb9",
+  "prompts/editor_v1.txt": "7a45ffefe9fa2327fec8bb3375fef17823eca26078468da8de1d7c75d305cbc3",
+  "prompts/locator_v1.txt": "2d24419bde1240e69d4fd597dac8588f1bc3c1a2bde0d00881be929cf02ce93e",
+  "prompts/locator_v2.txt": "586b7e16878f426277d33546637cc39321c94d0e06ba762f83abb70ee6cb9993"
+ }
+}

@@ -1,0 +1,26 @@
+{
+  "case_id": "T3_45",
+  "case_type": "T3",
+  "subtype": "add",
+  "n_docs": 2,
+  "docs": [
+    "MDSR",
+    "MDDR"
+  ],
+  "paths": {
+    "origin": 6,
+    "same_id": 4,
+    "trace": 1
+  },
+  "trap_paths": {
+    "trace": 2
+  },
+  "n_impact": 11,
+  "n_traps": 2,
+  "n_neutral": 0,
+  "request_structured": "서버 요구사항 Req. 109 '수면 효율 메모'을(를) 신규 추가한다. 내용: 서버는 의료진이 사용자의 수면 효율 결과에 메모를 작성할 수 있도록 하여야 하며, 메모를 작성하거나 수정할 때마다 감사기록을 생성하여야 한다.",
+  "request_nl": "서버에 새 기능을 넣어 주세요. 의료진이 사용자의 수면 효율 결과에 메모를 남기고 메모를 작성하거나 고칠 때 감사기록을 남기는 기능이 필요합니다.",
+  "sheet_type": "T3-추가",
+  "sheet_paths": "origin, same_id, trace",
+  "seed": 20261102
+}

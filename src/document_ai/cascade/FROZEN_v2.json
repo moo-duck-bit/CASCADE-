@@ -1,0 +1,83 @@
+{
+ "version": "frozen_v2",
+ "frozen_on": "v0.2 dev 36 cases (dev2)",
+ "note": "dev2 개발셋(v0.2 36케이스·저장소 문서 24케이스) 평가 후 고정. 개발셋 점수를 보고 프롬프트·임계값을 고치지 않음.",
+ "config": {
+  "relevance": true,
+  "value_index": true,
+  "rules": true,
+  "verifier": true,
+  "retrieval": true,
+  "retriever": "hybrid",
+  "retrieval_k": 10,
+  "embed_url": "http://127.0.0.1:8101/embed",
+  "verifier_checks": {
+   "V1": true,
+   "V2": true,
+   "V3": true,
+   "V4": true,
+   "V5": true,
+   "V6": true,
+   "V2b": true,
+   "V3b": true,
+   "V6b": true
+  },
+  "loop_k": 2,
+  "mode": "full",
+  "edit_mode": "ops",
+  "request_mode": "structured",
+  "rules_source": "curated",
+  "graph_mode": "pack",
+  "link_threshold": 0.6,
+  "sim_threshold": 0.7,
+  "domain_pack": "ec_sw",
+  "backend": "vllm",
+  "thinking": false,
+  "model": "qwen3-32b",
+  "base_url": "http://127.0.0.1:8100/v1",
+  "temperature": 0.0,
+  "seed": 20261103,
+  "max_tokens": 4096,
+  "token_budget": 60000,
+  "ngram_threshold": 0.7,
+  "context_chars": 400,
+  "auto_approve": true
+ },
+ "config_hash": "31fb367887edac80",
+ "presets": {
+  "full": "31fb367887edac80",
+  "no_verifier": "0ccef2918e058b11",
+  "no_relevance": "abf318b886e67d24",
+  "no_value_index": "c26d09e512a725a5",
+  "no_rules": "2fbe12d8443141b4",
+  "fake_feedback": "688ef724d84812a0",
+  "ledger_like": "798c439b3802d1d6",
+  "no_retrieval": "394996563311bbf9"
+ },
+ "files": {
+  "domain_packs/ec_sw/pack.yaml": "566f5acbf0bd29c78722f77507193c619bb58440338c1b3c481e6c57334e3829",
+  "domain_packs/ec_sw/rules_table.yaml": "bda2e20dbd08f19dd03e61b767c3c3a23659e9802f6ba9c2f0093128626076a0",
+  "domain_packs/ec_sw/rules_table_extracted.yaml": "149c6cd8b58f27d5de1e30406ca58e8feef5445f9ee9eeb77eb0d428f7c85cd1",
+  "domain_packs/generic_text/pack.yaml": "e049a1e762cc80ab4ef6b8a89567f50ab5af208d217dfac7fed9b6095f6e218c",
+  "verifier_spec.md": "b8f10c5103f43982ada54099395ad6c74f93dee387a7b5d6700ed4c477323a4f",
+  "prices.yaml": "2eeada39c00c523f058c44f0fa105e03b36026037dc769b57d6435343ef242e7",
+  "prompts/editor_ops_v1.txt": "d43101f398681fd8ddd18f70b0a4d620b2312a5fd806aa025849363d3593145c",
+  "prompts/editor_v1.txt": "6089c90dd067d42591c9b86704b6f843a3c44a64db4130e18044868877b341f0",
+  "prompts/intent_v1.txt": "480d98510e2e435790e3beea54cf44c392586baa91fb98aa8074d8e8aae07c93",
+  "prompts/locator_v1.txt": "d6d25d9fa77ca4aa8321c34d5d82381e4a5fa7a026b45c8803a567bbc088257a",
+  "prompts/locator_v2.txt": "d170e80d94b6e8d07aab35a806c5a0323ba89047b9797b0236632b4a43d2496e",
+  "prompts/rule_extract_v1.txt": "0f4e950616bb93c439d2f8271b6087b569430c095291e26b20c73184a5424e92"
+ },
+ "ops_schema_sha256": "25ce81a768ac12d7cdd3c4a2fa3fd33ae64bb2d2fb2dc1547b52d5b3bb472067",
+ "retrieval": {
+  "retriever": "hybrid",
+  "k": 10,
+  "embed_model": "BAAI/bge-m3",
+  "embed_revision": "5617a9f61b028005a4858fdac845db406aefb181"
+ },
+ "corpus": {
+  "dir": "/home/jkpark/workspace/pilot_data/corpus",
+  "sha256": "b591b760d35ee0a7f7c1a114218ee1214319859da993652555e4752513889c94",
+  "fixed": "b591b760d35ee0a7f7c1a114218ee1214319859da993652555e4752513889c94"
+ }
+}

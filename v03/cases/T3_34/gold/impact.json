@@ -1,0 +1,99 @@
+{
+  "case_id": "T3_34",
+  "case_type": "T3",
+  "subtype": "add",
+  "change": {
+    "new_req": "Req. 19",
+    "component": "앱",
+    "title": "주간 리포트 공유",
+    "related_secs": [
+      "DC-03"
+    ],
+    "draft": {
+      "설명": "사용자는 주간 수면 리포트를 담당 의료진에게 보낼 수 있어야 하며, 리포트는 암호화된 전송 구간을 통해서만 전송되어야 한다.",
+      "목적": "사용자가 진료 전에 수면 변화를 의료진과 공유할 수 있게 하고, 전송 중인 건강 정보가 노출되지 않도록 하기 위함이다.",
+      "기준": [
+        "주간 리포트가 담당 의료진의 대시보드에 전달됨을 확인함",
+        "리포트 전송 시 암호화되지 않은 연결은 사용되지 않음을 확인함"
+      ],
+      "설계": [
+        "• 주간 리포트 화면에 의료진에게 보내기 기능을 추가하도록 구현한다.",
+        "• 리포트는 서버와의 암호화된 연결을 통해서만 전송하고, 암호화 연결을 맺지 못하면 전송을 중단한다.",
+        "• 전송 결과는 사용자에게 성공 또는 실패로 안내하도록 한다."
+      ]
+    }
+  },
+  "items": [
+    {
+      "site": "[MDSR | Req. 19 | 번호]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "번호",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "Req. 19"
+    },
+    {
+      "site": "[MDSR | Req. 19 | 제목]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "제목",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "주간 리포트 공유"
+    },
+    {
+      "site": "[MDSR | Req. 19 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "설명",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "사용자는 주간 수면 리포트를 담당 의료진에게 보낼 수 있어야 하며, 리포트는 암호화된 전송 구간을 통해서만 전송되어야 한다."
+    },
+    {
+      "site": "[MDSR | Req. 19 | 목적]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "목적",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "사용자가 진료 전에 수면 변화를 의료진과 공유할 수 있게 하고, 전송 중인 건강 정보가 노출되지 않도록 하기 위함이다."
+    },
+    {
+      "site": "[MDSR | Req. 19 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "기준#p1",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "주간 리포트가 담당 의료진의 대시보드에 전달됨을 확인함"
+    },
+    {
+      "site": "[MDSR | Req. 19 | 기준#p2]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "기준#p2",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "리포트 전송 시 암호화되지 않은 연결은 사용되지 않음을 확인함"
+    },
+    {
+      "site": "[MDSR | DC-03 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "DC-03",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "trace",
+      "op": "modify",
+      "new_value": "Req. 4, Req. 10, Req. 19, Req. 102, Req. 103",
+      "note": "연결 Req 칸에 Req. 19 추가"
+    }
+  ],
+  "neutral": []
+}

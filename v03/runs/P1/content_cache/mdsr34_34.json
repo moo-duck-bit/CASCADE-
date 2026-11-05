@@ -1,0 +1,12 @@
+{
+  "문단": [
+    "시스템은 {{F_LOGIN_FAILURE_LIMIT}} 이상의 로그인 실패 시 사용자 계정을 잠급니다. 잠긴 계정은 {{F_ACCOUNT_LOCK_DURATION}} 동안 자동으로 잠금 해제되며, 잠금 해제 시 {{F_UNLOCK_NOTIFICATION_TIME}} 전에 사용자에게 안내 메시지를 전달합니다.",
+    "사용자 세션은 {{F_SESSION_TIMEOUT}} 동안 활동이 없을 경우 자동으로 종료됩니다. 의료진이 사용하는 대시보드의 경우 {{F_MEDICAL_STAFF_SESSION_TIMEOUT}} 동안 비활동 시 세션이 종료되며, 보다 엄격한 보안이 적용됩니다.",
+    "비밀번호는 {{F_PASSWORD_MIN_LENGTH}} 이상의 길이를 가지며, {{F_PASSWORD_COMPLEXITY}}를 만족하여야 생성됩니다. 또한, 사용자는 {{F_PASSWORD_CHANGE_INTERVAL}}마다 비밀번호를 변경하여야 하며, 이는 보안 위험을 최소화하기 위한 조치입니다.",
+    "모든 전송 데이터는 {{F_TRANSPORT_ENCRYPTION}} 방식을 사용하여 암호화됩니다. 저장 데이터는 {{F_STORAGE_ENCRYPTION}} 방식으로 암호화되어, 데이터 유출을 방지합니다.",
+    "시스템은 사용자 활동 및 시스템 변경 내역을 기록하여 감사로그를 생성합니다. 감사로그는 {{F_AUDIT_LOG_RETENTION}} 동안 보관되며, 의료진의 접속 기록은 별도로 {{F_MEDICAL_STAFF_ACCESS_LOG_RETENTION}} 동안 보관됩니다.",
+    "처방 변경 이력은 {{F_PRESCRIPTION_CHANGE_LOG_RETENTION}} 동안 보관되며, 변경 내역은 추후 감사 및 이력 추적에 사용됩니다.",
+    "시스템 데이터는 {{F_BACKUP_INTERVAL}}마다 자동 백업되며, 백업 데이터는 별도의 보안 저장소에 보관됩니다. 개인정보는 사용자 탈퇴 시 {{F_PII_DELETION_DEADLINE}} 이내에 파기되며, 이는 개인정보 보호 규정을 준수하기 위한 조치입니다.",
+    "일정 기간 동안 활동이 없는 계정은 {{F_INACTIVE_ACCOUNT_LOCK_DURATION}} 후 자동으로 잠금 처리되며, 이는 비인가 접근을 방지하기 위한 조치입니다."
+  ]
+}

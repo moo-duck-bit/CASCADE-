@@ -1,0 +1,7 @@
+{
+  "설계": [
+    "사용자가 {{F_LOGIN_FAILURE_LIMIT}} 이상 로그인을 실패할 경우, 해당 계정은 {{F_ACCOUNT_LOCK_DURATION}} 동안 잠금되도록 구현한다.",
+    "잠금 해제 후에도 동일 사용자가 {{F_LOGIN_FAILURE_LIMIT}} 이상 다시 로그인을 실패하면, 잠금 시간은 {{F_ACCOUNT_LOCK_DURATION}}으로 동일하게 적용한다.",
+    "사용자가 {{F_INACTIVE_ACCOUNT_LOCK_DURATION}} 동안 로그인 활동이 없을 경우, 계정은 자동으로 잠금 상태로 전환되도록 한다."
+  ]
+}

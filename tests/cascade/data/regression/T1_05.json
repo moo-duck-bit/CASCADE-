@@ -1,0 +1,255 @@
+{
+ "case_id": "T1_05",
+ "source": "cascade_dev_v1 results/cascade/cascade_full",
+ "calls": [
+  "locator",
+  "editor"
+ ],
+ "config_hash": "b806efd935a421a5",
+ "responses": [
+  {
+   "judgments": [
+    {
+     "id": 0,
+     "relevant": true,
+     "reason": "TLS1.2 이상이라는 값이 전송 암호화 방식으로 명시되어 있어 변경 대상임."
+    },
+    {
+     "id": 1,
+     "relevant": true,
+     "reason": "TLS 1.2 이상이라는 값이 전송 암호화 방식으로 명시되어 있어 변경 대상임."
+    },
+    {
+     "id": 2,
+     "relevant": true,
+     "reason": "TLS1.2 이상이라는 값이 전송 암호화 방식으로 명시되어 있어 변경 대상임."
+    },
+    {
+     "id": 3,
+     "relevant": true,
+     "reason": "TLS v1.2 이상이라는 값이 전송 암호화 방식으로 명시되어 있어 변경 대상임."
+    },
+    {
+     "id": 4,
+     "relevant": true,
+     "reason": "TLS 1.2 이상이라는 값이 전송 암호화 방식으로 명시되어 있어 변경 대상임."
+    },
+    {
+     "id": 5,
+     "relevant": true,
+     "reason": "TLS v1.2 이상이라는 값이 전송 암호화 방식으로 명시되어 있어 변경 대상임."
+    },
+    {
+     "id": 6,
+     "relevant": true,
+     "reason": "TLS 1.2 이상이라는 값이 전송 암호화 방식으로 명시되어 있어 변경 대상임."
+    },
+    {
+     "id": 7,
+     "relevant": true,
+     "reason": "TLS1.2 이상이라는 값이 전송 암호화 방식으로 명시되어 있어 변경 대상임."
+    },
+    {
+     "id": 8,
+     "relevant": true,
+     "reason": "TLS v1.2 이상이라는 값이 전송 암호화 방식으로 명시되어 있어 변경 대상임."
+    },
+    {
+     "id": 9,
+     "relevant": true,
+     "reason": "TLS 1.2 이상이라는 값이 전송 암호화 방식으로 명시되어 있어 변경 대상임."
+    },
+    {
+     "id": 10,
+     "relevant": true,
+     "reason": "TLS1.2 이상이라는 값이 전송 암호화 방식으로 명시되어 있어 변경 대상임."
+    },
+    {
+     "id": 11,
+     "relevant": true,
+     "reason": "TLS v1.2 이상이라는 값이 시험 조건으로 명시되어 있어 변경 대상임."
+    },
+    {
+     "id": 12,
+     "relevant": true,
+     "reason": "TLS 1.2 이상이라는 값이 확인 결과로 명시되어 있어 변경 대상임."
+    }
+   ]
+  },
+  {
+   "edits": [
+    {
+     "site": "[MDSR | 3.4 일반적 제한 | 본문#p4]",
+     "new_text": "모든 전송 데이터는 TLS1.3 방식으로 암호화되어 전달되며, 저장 데이터는 AES 256 방식으로 암호화되어 보관된다. 이는 데이터의 무단 접근 및 유출을 방지하기 위한 조치이다."
+    },
+    {
+     "site": "[MDSR | Req. 4 | 설명]",
+     "new_text": "소프트웨어는 사용자 데이터가 네트워크를 통해 전송되는 동안 TLS 1.3 알고리즘을 사용하여 암호화되어야 한다. 암호화된 데이터는 해독되지 않은 상태로 전송되어야 한다."
+    },
+    {
+     "site": "[MDSR | Req. 4 | 기준#p1]",
+     "new_text": "네트워크 전송 중인 데이터가 TLS1.3 방식으로 암호화되어 전송됨을 확인함."
+    },
+    {
+     "site": "[MDSR | Req. 102 | 설명]",
+     "new_text": "소프트웨어는 TLS v1.3을 사용하여 사용자 데이터를 전송 구간에서 암호화하여 보호하여야 한다. 모든 클라이언트-서버 간의 통신은 암호화된 채널을 통해 이루어져야 한다."
+    },
+    {
+     "site": "[MDSR | Req. 102 | 기준#p1]",
+     "new_text": "모든 클라이언트-서버 간의 데이터 전송은 TLS 1.3을 사용하여 암호화되어야 한다."
+    },
+    {
+     "site": "[MDDR | Req. 4 | 설계#p1]",
+     "new_text": "• 모바일 애플리케이션과 서버 간의 데이터 전송은 TLS v1.3 암호화 방식을 사용하도록 구현한다."
+    },
+    {
+     "site": "[MDDR | Req. 4 | 설계#p2]",
+     "new_text": "• 모바일 애플리케이션은 TLS 1.3을 기반으로 클라이언트-서버 간의 통신을 암호화하여 보안성을 확보한다."
+    },
+    {
+     "site": "[MDDR | Req. 4 | 설계#p3]",
+     "new_text": "• 모든 HTTP 요청은 TLS1.3을 통해 전송 암호화를 적용하도록 구현한다."
+    },
+    {
+     "site": "[MDDR | Req. 102 | 설계#p1]",
+     "new_text": "• 서버와 클라이언트 간의 데이터 전송은 TLS v1.3 암호화 방식을 사용하도록 구현한다."
+    },
+    {
+     "site": "[MDDR | Req. 102 | 설계#p2]",
+     "new_text": "• 모든 HTTP 요청은 HTTPS 프로토콜을 통해 TLS 1.3 암호화를 적용하여 전송한다."
+    },
+    {
+     "site": "[MDDR | Req. 102 | 설계#p3]",
+     "new_text": "• 서버 내부 API 호출 시에도 TLS1.3을 사용하여 데이터 전송 보안을 유지하도록 한다."
+    },
+    {
+     "site": "[XXCS | SI-01 | 시험방법#p1]",
+     "new_text": "TLS v1.3 방식을 사용하여 클라이언트와 서버 간의 데이터 전송 무결성을 검증한다."
+    },
+    {
+     "site": "[XXCS | SI-01 | 확인결과#p1]",
+     "new_text": "클라이언트와 서버 간의 데이터 전송 과정에서 TLS 1.3 방식이 적용됨을 확인함."
+    }
+   ]
+  }
+ ],
+ "expected_edits": [
+  {
+   "site": "[MDSR | 3.4 일반적 제한 | 본문#p4]",
+   "doc": "MDSR",
+   "item": "3.4 일반적 제한",
+   "field": "본문#p4",
+   "new_text": "모든 전송 데이터는 TLS1.3 방식으로 암호화되어 전달되며, 저장 데이터는 AES 256 방식으로 암호화되어 보관된다. 이는 데이터의 무단 접근 및 유출을 방지하기 위한 조치이다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 4 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 4",
+   "field": "설명",
+   "new_text": "소프트웨어는 사용자 데이터가 네트워크를 통해 전송되는 동안 TLS 1.3 알고리즘을 사용하여 암호화되어야 한다. 암호화된 데이터는 해독되지 않은 상태로 전송되어야 한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 4 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 4",
+   "field": "기준#p1",
+   "new_text": "네트워크 전송 중인 데이터가 TLS1.3 방식으로 암호화되어 전송됨을 확인함.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 102 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 102",
+   "field": "설명",
+   "new_text": "소프트웨어는 TLS v1.3을 사용하여 사용자 데이터를 전송 구간에서 암호화하여 보호하여야 한다. 모든 클라이언트-서버 간의 통신은 암호화된 채널을 통해 이루어져야 한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 102 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 102",
+   "field": "기준#p1",
+   "new_text": "모든 클라이언트-서버 간의 데이터 전송은 TLS 1.3을 사용하여 암호화되어야 한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 4 | 설계#p1]",
+   "doc": "MDDR",
+   "item": "Req. 4",
+   "field": "설계#p1",
+   "new_text": "• 모바일 애플리케이션과 서버 간의 데이터 전송은 TLS v1.3 암호화 방식을 사용하도록 구현한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 4 | 설계#p2]",
+   "doc": "MDDR",
+   "item": "Req. 4",
+   "field": "설계#p2",
+   "new_text": "• 모바일 애플리케이션은 TLS 1.3을 기반으로 클라이언트-서버 간의 통신을 암호화하여 보안성을 확보한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 4 | 설계#p3]",
+   "doc": "MDDR",
+   "item": "Req. 4",
+   "field": "설계#p3",
+   "new_text": "• 모든 HTTP 요청은 TLS1.3을 통해 전송 암호화를 적용하도록 구현한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 102 | 설계#p1]",
+   "doc": "MDDR",
+   "item": "Req. 102",
+   "field": "설계#p1",
+   "new_text": "• 서버와 클라이언트 간의 데이터 전송은 TLS v1.3 암호화 방식을 사용하도록 구현한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 102 | 설계#p2]",
+   "doc": "MDDR",
+   "item": "Req. 102",
+   "field": "설계#p2",
+   "new_text": "• 모든 HTTP 요청은 HTTPS 프로토콜을 통해 TLS 1.3 암호화를 적용하여 전송한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 102 | 설계#p3]",
+   "doc": "MDDR",
+   "item": "Req. 102",
+   "field": "설계#p3",
+   "new_text": "• 서버 내부 API 호출 시에도 TLS1.3을 사용하여 데이터 전송 보안을 유지하도록 한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | SI-01 | 시험방법#p1]",
+   "doc": "XXCS",
+   "item": "SI-01",
+   "field": "시험방법#p1",
+   "new_text": "TLS v1.3 방식을 사용하여 클라이언트와 서버 간의 데이터 전송 무결성을 검증한다.",
+   "op": "modify",
+   "source": "llm"
+  },
+  {
+   "site": "[XXCS | SI-01 | 확인결과#p1]",
+   "doc": "XXCS",
+   "item": "SI-01",
+   "field": "확인결과#p1",
+   "new_text": "클라이언트와 서버 간의 데이터 전송 과정에서 TLS 1.3 방식이 적용됨을 확인함.",
+   "op": "modify",
+   "source": "llm"
+  }
+ ]
+}

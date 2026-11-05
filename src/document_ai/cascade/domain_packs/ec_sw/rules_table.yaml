@@ -1,0 +1,55 @@
+# 첨부3 적용 예외 규칙 표 v2.
+# 근거: 첨부3(의료기기 사이버보안 가이드라인) 보안 항목별 '적용 예외사항' 원문만(pilot_data/corpus/regs.jsonl의 첨부3-*-예외 청크).
+# 첨부4 안전성 등급, 첨부5 보완사례집은 검색 코퍼스에만 있고 규칙 근거로 쓰지 않는다. 데이터셋 쪽 규칙 파일은 읽지 않았다.
+# 형식: 속성 attr 이 equals 와 같으면 secs 의 적용 여부가 result, 다르면 반대(적용 <-> N/A).
+# aliases: 요청의 속성 이름(attr_ko)이 규칙 표의 키와 다를 때 맞출 낱말. 앞 규칙부터 본다(비밀번호가 인증보다 앞).
+# notes: 적용 여부를 바꾸지 않는 예외 문구(만족 간주). 이런 속성은 규칙 없이 LLM 판단 경로로 가고 문구를 근거로 준다.
+# v1과 다른 점: password_auth는 원문상 IA-05만 정한다(v1은 IA-05·IA-06). session_termination은 UC-03 적용 여부를 바꾸지 않는다(notes).
+{
+  "version": "rules_table_v2",
+  "rules": [
+    {"id": "R01", "attr": "user_interface", "attr_ko": "사용자 접근 인터페이스 제공", "equals": false,
+     "aliases": ["사용자 인터페이스", "사용자가 접근 가능한 인터페이스", "사용자(사람) 인터페이스"],
+     "secs": ["IA-01", "UC-07"], "result": "N/A", "clause_ids": ["첨부3-IA-01-예외", "첨부3-UC-07-예외"],
+     "source": "IA-01: 의료기기에 사용자가 접근 가능한 인터페이스가 없는 경우 적용하지 않는다. UC-07: 사용자(사람) 인터페이스가 없는 경우 적용하지 않는다."},
+    {"id": "R02", "attr": "multi_account", "attr_ko": "계정 추가 가능(고정 관리자 계정 하나만이 아님)", "equals": false,
+     "aliases": ["계정 추가", "다중 계정", "고정된 관리자 계정", "계정 관리"],
+     "secs": ["IA-02", "UC-01"], "result": "N/A", "clause_ids": ["첨부3-IA-02-예외", "첨부3-UC-01-예외"],
+     "source": "IA-02, UC-01: 고정된 관리자 계정이 하나만 구현되어 다른 계정을 추가할 수 없는 경우 적용하지 않는다."},
+    {"id": "R03", "attr": "password_auth", "attr_ko": "아이디·비밀번호 인증 사용", "equals": false,
+     "aliases": ["비밀번호"],
+     "secs": ["IA-05"], "result": "N/A", "clause_ids": ["첨부3-IA-05-예외"],
+     "source": "IA-05: 비밀번호 기반 인증 기능이 없는 의료기기의 경우 적용하지 않는다."},
+    {"id": "R04", "attr": "authentication", "attr_ko": "인증 기능 제공", "equals": false,
+     "aliases": ["인증 기능", "사용자 인증", "인증"],
+     "secs": ["IA-06", "IA-07"], "result": "N/A", "clause_ids": ["첨부3-IA-06-예외", "첨부3-IA-07-예외"],
+     "source": "IA-06, IA-07: 의료기기의 인증 기능이 없는 경우 적용하지 않는다."},
+    {"id": "R05", "attr": "remote_access", "attr_ko": "로컬·네트워크를 통한 시스템 접속 기능", "equals": false,
+     "aliases": ["접속 기능", "네트워크 접속", "원격 접속", "시스템 접근", "접근 기능"],
+     "secs": ["IA-08", "UC-03"], "result": "N/A", "clause_ids": ["첨부3-IA-08-예외", "첨부3-UC-03-예외"],
+     "source": "IA-08: 시스템에 대한 접근 기능이 없는 의료기기는 적용하지 않는다. UC-03: 로컬 또는 네트워크를 통해 의료기기에 대한 접속 기능을 제공하지 않는 경우 적용하지 않는다."},
+    {"id": "R06", "attr": "mobile_code", "attr_ko": "모바일 코드 실행 허용", "equals": false,
+     "aliases": ["모바일 코드"],
+     "secs": ["UC-02"], "result": "N/A", "clause_ids": ["첨부3-UC-02-예외"],
+     "source": "UC-02: 의료기기가 모바일 코드 실행을 허용하지 않는 경우 적용하지 않는다."},
+    {"id": "R07", "attr": "automation_link", "attr_ko": "자동화 프로세스 연결", "equals": false,
+     "aliases": ["자동화"],
+     "secs": ["SI-06"], "result": "N/A", "clause_ids": ["첨부3-SI-06-예외"],
+     "source": "SI-06: 의료기기가 자동화 프로세스와 연결되지 않는 경우 적용하지 않는다."},
+    {"id": "R08", "attr": "samd", "attr_ko": "독립형 소프트웨어 의료기기(SaMD)", "equals": true,
+     "aliases": ["SaMD", "독립형 소프트웨어", "소프트웨어 의료기기"],
+     "secs": ["SI-10", "SI-11"], "result": "N/A", "clause_ids": ["첨부3-SI-10-예외", "첨부3-SI-11-예외"],
+     "source": "SI-10, SI-11: 소프트웨어 의료기기(SaMD)에는 적용하지 않는다."},
+    {"id": "R09", "attr": "stores_pii", "attr_ko": "개인식별정보 저장", "equals": false,
+     "aliases": ["개인식별정보", "개인정보", "보건의료정보 저장"],
+     "secs": ["DC-02"], "result": "N/A", "clause_ids": ["첨부3-DC-02-예외"],
+     "source": "DC-02: 의료기기가 개인식별정보를 저장하지 않는 경우 적용하지 않는다."}
+  ],
+  "notes": [
+    {"attr": "session_termination", "aliases": ["세션 종료"], "secs": ["UC-03"], "clause_ids": ["첨부3-UC-03-예외"],
+     "text": "UC-03: 세션 종료 기능이 있는 경우 세션 잠금 기능을 만족하는 것으로 한다(적용 여부는 바꾸지 않음)."}
+  ],
+  "decision_cells": ["체크리스트 적용 여부", "체크리스트 입증 방법", "적용 여부", "판정"],
+  "na_texts": {"체크리스트 적용 여부": "N/A", "적용 여부": "N/A", "체크리스트 입증 방법": "해당 없음", "판정": "해당 없음"},
+  "applied_texts": {"체크리스트 적용 여부": "적용", "적용 여부": "적용"}
+}

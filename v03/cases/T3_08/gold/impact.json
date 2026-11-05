@@ -1,0 +1,87 @@
+{
+  "case_id": "T3_08",
+  "case_type": "T3",
+  "subtype": "delete",
+  "change": {
+    "deleted_req": "Req. 12",
+    "title": "수면 위생 교육"
+  },
+  "items": [
+    {
+      "site": "[MDSR | Req. 12 | 제목]",
+      "doc": "MDSR",
+      "item": "Req. 12",
+      "cell": "제목",
+      "path": "origin",
+      "op": "modify",
+      "new_value": "삭제"
+    },
+    {
+      "site": "[MDSR | Req. 12 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 12",
+      "cell": "설명",
+      "path": "origin",
+      "op": "modify",
+      "new_value": "삭제"
+    },
+    {
+      "site": "[MDSR | Req. 12 | 목적]",
+      "doc": "MDSR",
+      "item": "Req. 12",
+      "cell": "목적",
+      "path": "origin",
+      "op": "modify",
+      "new_value": "삭제"
+    },
+    {
+      "site": "[MDSR | Req. 12 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 12",
+      "cell": "기준#p1",
+      "path": "origin",
+      "op": "modify",
+      "new_value": "삭제"
+    },
+    {
+      "site": "[MDSR | Req. 12 | 기준#p2]",
+      "doc": "MDSR",
+      "item": "Req. 12",
+      "cell": "기준#p2",
+      "path": "origin",
+      "op": "modify",
+      "new_value": "삭제"
+    },
+    {
+      "site": "[MDSR | IA-05 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "IA-05",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "trace",
+      "op": "modify",
+      "new_value": "Req. 1, Req. 102, Req. 108",
+      "note": "연결 Req 칸에서 Req. 12 제거"
+    },
+    {
+      "site": "[MDSR | RA-01 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "RA-01",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "trace",
+      "op": "modify",
+      "new_value": "Req. 100",
+      "note": "연결 Req 칸에서 Req. 12 제거"
+    },
+    {
+      "site": "[MDSR | SI-03 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "SI-03",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "trace",
+      "op": "modify",
+      "new_value": "Req. 18",
+      "note": "연결 Req 칸에서 Req. 12 제거"
+    }
+  ],
+  "neutral": []
+}

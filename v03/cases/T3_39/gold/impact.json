@@ -1,0 +1,99 @@
+{
+  "case_id": "T3_39",
+  "case_type": "T3",
+  "subtype": "add",
+  "change": {
+    "new_req": "Req. 19",
+    "component": "앱",
+    "title": "보호자 열람 동의",
+    "related_secs": [
+      "UC-01"
+    ],
+    "draft": {
+      "설명": "사용자는 보호자의 치료 진행 요약 열람에 동의하거나 동의를 철회할 수 있어야 하며, 앱은 동의한 보호자에게만 열람 권한을 부여하여야 한다.",
+      "목적": "보호자가 사용자의 치료 참여를 도울 수 있게 하되, 사용자가 허락한 범위에서만 정보가 공개되도록 하기 위함이다.",
+      "기준": [
+        "사용자가 동의한 보호자만 치료 진행 요약을 열람할 수 있음을 확인함",
+        "사용자가 동의를 철회하면 보호자의 열람 권한이 즉시 해제됨을 확인함"
+      ],
+      "설계": [
+        "• 설정 화면에 보호자 열람 동의와 철회 기능을 추가하도록 구현한다.",
+        "• 서버는 동의 상태를 기준으로 보호자 계정에 치료 진행 요약 열람 권한을 부여하거나 해제한다.",
+        "• 동의하지 않은 보호자가 요약을 요청하면 접근을 거부하도록 한다."
+      ]
+    }
+  },
+  "items": [
+    {
+      "site": "[MDSR | Req. 19 | 번호]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "번호",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "Req. 19"
+    },
+    {
+      "site": "[MDSR | Req. 19 | 제목]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "제목",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "보호자 열람 동의"
+    },
+    {
+      "site": "[MDSR | Req. 19 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "설명",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "사용자는 보호자의 치료 진행 요약 열람에 동의하거나 동의를 철회할 수 있어야 하며, 앱은 동의한 보호자에게만 열람 권한을 부여하여야 한다."
+    },
+    {
+      "site": "[MDSR | Req. 19 | 목적]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "목적",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "보호자가 사용자의 치료 참여를 도울 수 있게 하되, 사용자가 허락한 범위에서만 정보가 공개되도록 하기 위함이다."
+    },
+    {
+      "site": "[MDSR | Req. 19 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "기준#p1",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "사용자가 동의한 보호자만 치료 진행 요약을 열람할 수 있음을 확인함"
+    },
+    {
+      "site": "[MDSR | Req. 19 | 기준#p2]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "기준#p2",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "사용자가 동의를 철회하면 보호자의 열람 권한이 즉시 해제됨을 확인함"
+    },
+    {
+      "site": "[MDSR | UC-01 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "UC-01",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "trace",
+      "op": "modify",
+      "new_value": "Req. 16, Req. 19, Req. 101, Req. 102, Req. 108",
+      "note": "연결 Req 칸에 Req. 19 추가"
+    }
+  ],
+  "neutral": []
+}

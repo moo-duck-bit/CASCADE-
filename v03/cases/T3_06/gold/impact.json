@@ -1,0 +1,97 @@
+{
+  "case_id": "T3_06",
+  "case_type": "T3",
+  "subtype": "delete",
+  "change": {
+    "deleted_req": "Req. 13",
+    "title": "CBT 회기 기본 설정"
+  },
+  "items": [
+    {
+      "site": "[MDSR | Req. 13 | 제목]",
+      "doc": "MDSR",
+      "item": "Req. 13",
+      "cell": "제목",
+      "path": "origin",
+      "op": "modify",
+      "new_value": "삭제"
+    },
+    {
+      "site": "[MDSR | Req. 13 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 13",
+      "cell": "설명",
+      "path": "origin",
+      "op": "modify",
+      "new_value": "삭제"
+    },
+    {
+      "site": "[MDSR | Req. 13 | 목적]",
+      "doc": "MDSR",
+      "item": "Req. 13",
+      "cell": "목적",
+      "path": "origin",
+      "op": "modify",
+      "new_value": "삭제"
+    },
+    {
+      "site": "[MDSR | Req. 13 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 13",
+      "cell": "기준#p1",
+      "path": "origin",
+      "op": "modify",
+      "new_value": "삭제"
+    },
+    {
+      "site": "[MDSR | Req. 13 | 기준#p2]",
+      "doc": "MDSR",
+      "item": "Req. 13",
+      "cell": "기준#p2",
+      "path": "origin",
+      "op": "modify",
+      "new_value": "삭제"
+    },
+    {
+      "site": "[MDSR | IA-06 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "IA-06",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "trace",
+      "op": "modify",
+      "new_value": "Req. 2, Req. 3, Req. 106",
+      "note": "연결 Req 칸에서 Req. 13 제거"
+    },
+    {
+      "site": "[MDSR | RA-02 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "RA-02",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "trace",
+      "op": "modify",
+      "new_value": "Req. 7, Req. 100, Req. 102",
+      "note": "연결 Req 칸에서 Req. 13 제거"
+    },
+    {
+      "site": "[MDSR | SI-04 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "SI-04",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "trace",
+      "op": "modify",
+      "new_value": "Req. 18",
+      "note": "연결 Req 칸에서 Req. 13 제거"
+    },
+    {
+      "site": "[MDSR | SI-05 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "SI-05",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "trace",
+      "op": "modify",
+      "new_value": "Req. 1, Req. 8, Req. 10, Req. 14, Req. 106",
+      "note": "연결 Req 칸에서 Req. 13 제거"
+    }
+  ],
+  "neutral": []
+}

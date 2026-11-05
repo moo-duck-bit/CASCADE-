@@ -1,0 +1,36 @@
+{
+  "case_id": "T1_63",
+  "case_type": "T1",
+  "subtype": "value_change",
+  "change": {
+    "fact": "F_DEFAULT_STIMULUS_CONTROL_DURATION",
+    "origin_req": "Req. 11",
+    "old_value": "7",
+    "new_value": "5"
+  },
+  "items": [
+    {
+      "site": "[MDSR | Req. 11 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 11",
+      "cell": "설명",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_DEFAULT_STIMULUS_CONTROL_DURATION",
+      "old_surface": "7일",
+      "new_value": "5일"
+    },
+    {
+      "site": "[MDSR | Req. 11 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 11",
+      "cell": "기준#p1",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_DEFAULT_STIMULUS_CONTROL_DURATION",
+      "old_surface": "7 일",
+      "new_value": "5일"
+    }
+  ],
+  "neutral": []
+}

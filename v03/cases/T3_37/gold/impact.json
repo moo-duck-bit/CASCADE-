@@ -1,0 +1,99 @@
+{
+  "case_id": "T3_37",
+  "case_type": "T3",
+  "subtype": "add",
+  "change": {
+    "new_req": "Req. 19",
+    "component": "앱",
+    "title": "주말 기상 안내",
+    "related_secs": [
+      "SI-05"
+    ],
+    "draft": {
+      "설명": "사용자는 주말 기상 시각을 따로 설정할 수 있어야 하며, 앱은 입력값의 허용 범위를 검증하고 평일 기상 시각과의 차이를 안내하여야 한다.",
+      "목적": "주말에 기상 시각이 크게 달라져 수면 리듬이 흐트러지는 것을 줄이기 위함이다.",
+      "기준": [
+        "허용 범위 안의 주말 기상 시각이 저장되고 평일과의 차이가 안내됨을 확인함",
+        "허용 범위를 벗어난 주말 기상 시각은 저장되지 않음을 확인함"
+      ],
+      "설계": [
+        "• 알림 설정 화면에 주말 기상 시각 입력 항목을 추가하도록 구현한다.",
+        "• 입력값은 저장 전에 형식과 허용 범위를 검사하고, 범위를 벗어나면 저장을 거부한다.",
+        "• 주말 기상 시각이 평일 기상 시각과 크게 다르면 차이를 줄이도록 안내 메시지를 표시한다."
+      ]
+    }
+  },
+  "items": [
+    {
+      "site": "[MDSR | Req. 19 | 번호]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "번호",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "Req. 19"
+    },
+    {
+      "site": "[MDSR | Req. 19 | 제목]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "제목",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "주말 기상 안내"
+    },
+    {
+      "site": "[MDSR | Req. 19 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "설명",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "사용자는 주말 기상 시각을 따로 설정할 수 있어야 하며, 앱은 입력값의 허용 범위를 검증하고 평일 기상 시각과의 차이를 안내하여야 한다."
+    },
+    {
+      "site": "[MDSR | Req. 19 | 목적]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "목적",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "주말에 기상 시각이 크게 달라져 수면 리듬이 흐트러지는 것을 줄이기 위함이다."
+    },
+    {
+      "site": "[MDSR | Req. 19 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "기준#p1",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "허용 범위 안의 주말 기상 시각이 저장되고 평일과의 차이가 안내됨을 확인함"
+    },
+    {
+      "site": "[MDSR | Req. 19 | 기준#p2]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "기준#p2",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "허용 범위를 벗어난 주말 기상 시각은 저장되지 않음을 확인함"
+    },
+    {
+      "site": "[MDSR | SI-05 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "SI-05",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "trace",
+      "op": "modify",
+      "new_value": "Req. 1, Req. 8, Req. 10, Req. 13, Req. 14, Req. 19, Req. 106",
+      "note": "연결 Req 칸에 Req. 19 추가"
+    }
+  ],
+  "neutral": []
+}

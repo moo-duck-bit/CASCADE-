@@ -1,0 +1,21 @@
+{
+  "case_id": "T1_61",
+  "case_type": "T1",
+  "subtype": "value_change",
+  "n_docs": 1,
+  "docs": [
+    "MDSR"
+  ],
+  "paths": {
+    "origin": 1
+  },
+  "trap_paths": {},
+  "n_impact": 1,
+  "n_traps": 0,
+  "n_neutral": 0,
+  "request_structured": "Req. 9 '알림 설정'의 알림 시각을 21:00에서 20:30으로 변경한다.",
+  "request_nl": "알림 설정 기능에서 알림 시각을 20:30으로 바꿔 주세요.",
+  "sheet_type": "T1",
+  "sheet_paths": "origin",
+  "seed": 20261102
+}

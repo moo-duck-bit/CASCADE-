@@ -1,0 +1,380 @@
+{
+ "case_id": "T3_05",
+ "source": "cascade_dev_v1 results/cascade/cascade_full",
+ "calls": [
+  "locator",
+  "editor"
+ ],
+ "config_hash": "b806efd935a421a5",
+ "responses": [
+  {
+   "judgments": [
+    {
+     "id": 0,
+     "relevant": false,
+     "reason": "새로운 요구사항은 사용자 식별 및 인증과 직접 관련되지 않음"
+    },
+    {
+     "id": 1,
+     "relevant": false,
+     "reason": "새로운 요구사항은 계정 관리와 직접 관련되지 않음"
+    },
+    {
+     "id": 2,
+     "relevant": false,
+     "reason": "새로운 요구사항은 식별정보 관리와 직접 관련되지 않음"
+    },
+    {
+     "id": 3,
+     "relevant": false,
+     "reason": "새로운 요구사항은 인증정보 관리와 직접 관련되지 않음"
+    },
+    {
+     "id": 4,
+     "relevant": false,
+     "reason": "새로운 요구사항은 비밀번호 강도 설정과 직접 관련되지 않음"
+    },
+    {
+     "id": 5,
+     "relevant": false,
+     "reason": "새로운 요구사항은 인증정보에 대한 피드백과 직접 관련되지 않음"
+    },
+    {
+     "id": 6,
+     "relevant": false,
+     "reason": "새로운 요구사항은 연속적인 로그인 시도 실패 시 로그인 제한과 직접 관련되지 않음"
+    },
+    {
+     "id": 7,
+     "relevant": false,
+     "reason": "새로운 요구사항은 시스템 사용 알림 메시지와 직접 관련되지 않음"
+    },
+    {
+     "id": 8,
+     "relevant": false,
+     "reason": "새로운 요구사항은 권한 부여와 직접 관련되지 않음"
+    },
+    {
+     "id": 9,
+     "relevant": true,
+     "reason": "새로운 요구사항은 모바일 코드 사용 통제와 관련된 데이터 동기화 기능을 포함"
+    },
+    {
+     "id": 10,
+     "relevant": false,
+     "reason": "새로운 요구사항은 세션 잠금과 직접 관련되지 않음"
+    },
+    {
+     "id": 11,
+     "relevant": false,
+     "reason": "새로운 요구사항은 감사기록 생성과 직접 관련되지 않음"
+    },
+    {
+     "id": 12,
+     "relevant": false,
+     "reason": "새로운 요구사항은 감사 처리 실패 대응과 직접 관련되지 않음"
+    },
+    {
+     "id": 13,
+     "relevant": false,
+     "reason": "새로운 요구사항은 타임스탬프와 직접 관련되지 않음"
+    },
+    {
+     "id": 14,
+     "relevant": false,
+     "reason": "새로운 요구사항은 부인 방지와 직접 관련되지 않음"
+    },
+    {
+     "id": 15,
+     "relevant": true,
+     "reason": "새로운 요구사항은 데이터 동기화를 포함하므로 통신 무결성 보장과 관련됨"
+    },
+    {
+     "id": 16,
+     "relevant": false,
+     "reason": "새로운 요구사항은 악성코드로부터 보호와 직접 관련되지 않음"
+    },
+    {
+     "id": 17,
+     "relevant": true,
+     "reason": "새로운 요구사항은 서버와의 데이터 동기화를 포함하므로 보안 기능 검증과 관련됨"
+    },
+    {
+     "id": 18,
+     "relevant": true,
+     "reason": "새로운 요구사항은 서버와의 데이터 동기화를 포함하므로 무결성 점검과 관련됨"
+    },
+    {
+     "id": 19,
+     "relevant": false,
+     "reason": "새로운 요구사항은 입력값 검증과 직접 관련되지 않음"
+    },
+    {
+     "id": 20,
+     "relevant": false,
+     "reason": "새로운 요구사항은 오류 시 사전 결정된 상태로 출력과 직접 관련되지 않음"
+    },
+    {
+     "id": 21,
+     "relevant": false,
+     "reason": "새로운 요구사항은 오류 처리와 직접 관련되지 않음"
+    },
+    {
+     "id": 22,
+     "relevant": false,
+     "reason": "새로운 요구사항은 업데이트와 직접 관련되지 않음"
+    },
+    {
+     "id": 23,
+     "relevant": false,
+     "reason": "새로운 요구사항은 업데이트 진본성 및 무결성 검증과 직접 관련되지 않음"
+    },
+    {
+     "id": 24,
+     "relevant": false,
+     "reason": "새로운 요구사항은 정보 기밀성 보장과 직접 관련되지 않음"
+    },
+    {
+     "id": 25,
+     "relevant": false,
+     "reason": "새로운 요구사항은 안전한 암호화 사용과 직접 관련되지 않음"
+    },
+    {
+     "id": 26,
+     "relevant": false,
+     "reason": "새로운 요구사항은 감사로그 접근 제한과 직접 관련되지 않음"
+    },
+    {
+     "id": 27,
+     "relevant": false,
+     "reason": "새로운 요구사항은 서비스 거부 방지와 직접 관련되지 않음"
+    },
+    {
+     "id": 28,
+     "relevant": true,
+     "reason": "새로운 요구사항은 데이터 백업 및 동기화와 관련된 백업 기능을 포함"
+    },
+    {
+     "id": 29,
+     "relevant": false,
+     "reason": "새로운 요구사항은 복구 및 재구성과 직접 관련되지 않음"
+    },
+    {
+     "id": 30,
+     "relevant": true,
+     "reason": "새로운 요구사항은 네트워크 상태에 따라 동기화를 수행하므로 네트워크 구성 설정과 관련됨"
+    }
+   ]
+  },
+  {
+   "edits": [
+    {
+     "site": "[MDSR | Req. 15 | 설명]",
+     "new_text": "네트워크가 불안정하거나 오프라인 상태일 때 사용자의 수면 기록 및 활동 데이터를 기기에 보관하고, 네트워크가 복구되면 서버와 자동으로 동기화하여야 한다."
+    },
+    {
+     "site": "[MDSR | Req. 15 | 목적]",
+     "new_text": "네트워크 상태와 관계없이 사용자의 수면 및 활동 데이터가 손실되지 않고 안정적으로 저장 및 전송되도록 하여 데이터의 신뢰성을 높이기 위함이다."
+    },
+    {
+     "site": "[MDSR | Req. 15 | 기준#p1]",
+     "new_text": "오프라인 상태에서 사용자의 수면 기록 및 활동 데이터가 기기에 정확하게 저장됨을 확인함"
+    },
+    {
+     "site": "[MDSR | Req. 15 | 기준#p2]",
+     "new_text": "네트워크가 복구되면 저장된 데이터가 서버와 자동으로 동기화됨을 확인함"
+    },
+    {
+     "site": "[MDDR | Req. 15 | 설계#p1]",
+     "new_text": "• 사용자의 수면 및 활동 데이터는 로컬 데이터베이스에 저장되며, 네트워크 상태가 불안정하거나 오프라인일 경우 동기화가 일시 중지된다."
+    },
+    {
+     "site": "[MDDR | Req. 15 | 설계#p2]",
+     "new_text": "• 네트워크가 복구되면 저장된 데이터는 우선순위에 따라 서버로 전송되며, 동기화 완료 후 로컬 데이터는 삭제된다."
+    }
+   ]
+  }
+ ],
+ "expected_edits": [
+  {
+   "site": "[MDSR | Req. 15 | 번호]",
+   "doc": "MDSR",
+   "item": "Req. 15",
+   "field": "번호",
+   "new_text": "Req. 15",
+   "op": "insert",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 15 | 제목]",
+   "doc": "MDSR",
+   "item": "Req. 15",
+   "field": "제목",
+   "new_text": "오프라인 기록 동기화",
+   "op": "insert",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | UC-02 | 소프트웨어 기능 요구사항 번호]",
+   "doc": "MDSR",
+   "item": "UC-02",
+   "field": "소프트웨어 기능 요구사항 번호",
+   "new_text": "Req. 15, Req. 100, Req. 103",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[XXCS | UC-02 | 해당 요구사항]",
+   "doc": "XXCS",
+   "item": "UC-02",
+   "field": "해당 요구사항",
+   "new_text": "Req. 15, Req. 100, Req. 103",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | SI-01 | 소프트웨어 기능 요구사항 번호]",
+   "doc": "MDSR",
+   "item": "SI-01",
+   "field": "소프트웨어 기능 요구사항 번호",
+   "new_text": "Req. 5, Req. 15, Req. 102, Req. 103",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[XXCS | SI-01 | 해당 요구사항]",
+   "doc": "XXCS",
+   "item": "SI-01",
+   "field": "해당 요구사항",
+   "new_text": "Req. 5, Req. 15, Req. 102, Req. 103",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | SI-03 | 소프트웨어 기능 요구사항 번호]",
+   "doc": "MDSR",
+   "item": "SI-03",
+   "field": "소프트웨어 기능 요구사항 번호",
+   "new_text": "Req. 15, Req. 100, Req. 102, Req. 106",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[XXCS | SI-03 | 해당 요구사항]",
+   "doc": "XXCS",
+   "item": "SI-03",
+   "field": "해당 요구사항",
+   "new_text": "Req. 15, Req. 100, Req. 102, Req. 106",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | SI-04 | 소프트웨어 기능 요구사항 번호]",
+   "doc": "MDSR",
+   "item": "SI-04",
+   "field": "소프트웨어 기능 요구사항 번호",
+   "new_text": "Req. 15, Req. 100, Req. 106",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[XXCS | SI-04 | 해당 요구사항]",
+   "doc": "XXCS",
+   "item": "SI-04",
+   "field": "해당 요구사항",
+   "new_text": "Req. 15, Req. 100, Req. 106",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | RA-02 | 소프트웨어 기능 요구사항 번호]",
+   "doc": "MDSR",
+   "item": "RA-02",
+   "field": "소프트웨어 기능 요구사항 번호",
+   "new_text": "Req. 15, Req. 100, Req. 104, Req. 105",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[XXCS | RA-02 | 해당 요구사항]",
+   "doc": "XXCS",
+   "item": "RA-02",
+   "field": "해당 요구사항",
+   "new_text": "Req. 15, Req. 100, Req. 104, Req. 105",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | RA-04 | 소프트웨어 기능 요구사항 번호]",
+   "doc": "MDSR",
+   "item": "RA-04",
+   "field": "소프트웨어 기능 요구사항 번호",
+   "new_text": "Req. 15, Req. 100, Req. 106",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[XXCS | RA-04 | 해당 요구사항]",
+   "doc": "XXCS",
+   "item": "RA-04",
+   "field": "해당 요구사항",
+   "new_text": "Req. 15, Req. 100, Req. 106",
+   "op": "modify",
+   "source": "rule"
+  },
+  {
+   "site": "[MDSR | Req. 15 | 설명]",
+   "doc": "MDSR",
+   "item": "Req. 15",
+   "field": "설명",
+   "new_text": "네트워크가 불안정하거나 오프라인 상태일 때 사용자의 수면 기록 및 활동 데이터를 기기에 보관하고, 네트워크가 복구되면 서버와 자동으로 동기화하여야 한다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 15 | 목적]",
+   "doc": "MDSR",
+   "item": "Req. 15",
+   "field": "목적",
+   "new_text": "네트워크 상태와 관계없이 사용자의 수면 및 활동 데이터가 손실되지 않고 안정적으로 저장 및 전송되도록 하여 데이터의 신뢰성을 높이기 위함이다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 15 | 기준#p1]",
+   "doc": "MDSR",
+   "item": "Req. 15",
+   "field": "기준#p1",
+   "new_text": "오프라인 상태에서 사용자의 수면 기록 및 활동 데이터가 기기에 정확하게 저장됨을 확인함",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDSR | Req. 15 | 기준#p2]",
+   "doc": "MDSR",
+   "item": "Req. 15",
+   "field": "기준#p2",
+   "new_text": "네트워크가 복구되면 저장된 데이터가 서버와 자동으로 동기화됨을 확인함",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 15 | 설계#p1]",
+   "doc": "MDDR",
+   "item": "Req. 15",
+   "field": "설계#p1",
+   "new_text": "• 사용자의 수면 및 활동 데이터는 로컬 데이터베이스에 저장되며, 네트워크 상태가 불안정하거나 오프라인일 경우 동기화가 일시 중지된다.",
+   "op": "insert",
+   "source": "llm"
+  },
+  {
+   "site": "[MDDR | Req. 15 | 설계#p2]",
+   "doc": "MDDR",
+   "item": "Req. 15",
+   "field": "설계#p2",
+   "new_text": "• 네트워크가 복구되면 저장된 데이터는 우선순위에 따라 서버로 전송되며, 동기화 완료 후 로컬 데이터는 삭제된다.",
+   "op": "insert",
+   "source": "llm"
+  }
+ ]
+}

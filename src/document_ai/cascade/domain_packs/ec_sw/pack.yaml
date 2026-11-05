@@ -1,0 +1,64 @@
+# EC-SW 도메인 팩: 의료기기 소프트웨어 문서 세트(MDSR 요구사항 명세서, MDDR 설계 명세서, XXCS 보안 검증 보고서).
+# 칸 주소 규칙은 케이스 input/site_index.md의 규칙과 같다. 형식은 JSON과 호환되는 YAML이고 '#' 줄은 주석이다.
+# 기존 document_ai/domain_packs/ec_sw(MDTM 색인용 DocumentDescriptor 인터페이스)와 팩 이름만 같고 내용은 별개다.
+{
+  "pack_id": "ec_sw",
+  "docs": ["MDSR", "MDDR", "XXCS"],
+  "prompt_domain": "의료기기 소프트웨어 문서 세트(MDSR 요구사항 명세서, MDDR 설계 명세서, XXCS 소프트웨어 보안 검증 보고서)",
+
+  # 항목 번호: req = 기능 요구사항(Req. N), sec = 연결 항목(사이버보안 요구사항 번호)
+  "req": {"pattern": "^Req\\.\\s*(\\d+)$", "ref": "Req\\.\\s*(\\d+)", "token": "Req\\.\\s*\\d+", "format": "Req. {n}",
+          "noun": "요구사항"},
+  "sec": {"pattern": "^((?:IA|UC|SI|DC|TRE|RA)-\\d{2})\\b", "full": "^(?:IA|UC|SI|DC|TRE|RA)-\\d{2}$"},
+  # 출발 Req와 제목·설명 칸이 있는 문서
+  "req_doc": "MDSR",
+  # Req 항목이 있는 문서(추가·삭제 대상)
+  "req_docs": ["MDSR", "MDDR"],
+  # 연결 항목이 있는 문서
+  "sec_docs": ["MDSR", "XXCS"],
+  # 적용 여부·판단 칸이 있는 문서
+  "status_doc": "XXCS",
+  "number_cell": "번호",
+  "title_cell": "제목",
+  "desc_cell": "설명",
+  "sec_title_cells": [["MDSR", "요구사항"], ["XXCS", "제목"]],
+  # 이 번호 이상은 다른 구성요소(서버). 0이면 나누지 않음
+  "component_split": 100,
+
+  # 연결 표 위치: MDSR 6절 표의 Req 번호 열, XXCS 시험결과 표의 '해당 요구사항'
+  "link_cells": [["MDSR", "소프트웨어 기능 요구사항 번호"], ["XXCS", "해당 요구사항"]],
+  "link_na_text": "해당 없음",
+  "status_cells": ["적용 여부", "체크리스트 적용 여부"],
+  "decision_cells": ["체크리스트 적용 여부", "체크리스트 입증 방법", "적용 여부", "판정"],
+
+  # 문서별 칸 주소 규칙
+  "layouts": {
+    "MDSR": {"item_table": true,
+             "id_tables": [{"marker": "사이버보안 요구사항 번호", "id_col": 0, "min_cols": 4,
+                            "cols": {"1": "항목", "2": "요구사항", "3": "소프트웨어 기능 요구사항 번호"}}]},
+    "MDDR": {"item_paragraph": {"body": "설계"}},
+    "XXCS": {"sec_heading": "제목", "angle_heading": "제목",
+             "id_tables": [{"marker": "해당기기 적용여부", "id_col": 2, "min_cols": 6,
+                            "cols": {"4": "체크리스트 적용 여부", "5": "체크리스트 입증 방법"}}],
+             "result_table": {"first": "시험결과", "status": "적용 여부", "note": "비고",
+                              "labels": ["해당 요구사항", "시험방법", "확인결과", "판정"]}}
+  },
+
+  "insert_style": "설명, 목적, 기준 문단 수, 설계 문단은 '• '로 시작",
+  "rules_table": "rules_table.yaml",
+  "units": [
+    ["minutes", "min"], ["minute", "min"], ["mins", "min"], ["min", "min"], ["분", "min"],
+    ["seconds", "sec"], ["sec", "sec"], ["초", "sec"],
+    ["hours", "hour"], ["hour", "hour"], ["시간", "hour"],
+    ["days", "day"], ["day", "day"], ["일", "day"],
+    ["weeks", "week"], ["주일", "week"], ["주", "week"],
+    ["months", "month"], ["개월", "month"], ["달", "month"],
+    ["years", "year"], ["년", "year"],
+    ["times", "count"], ["회", "count"], ["번", "count"],
+    ["characters", "char"], ["chars", "char"], ["글자", "char"], ["문자", "char"], ["자리", "char"], ["자", "char"],
+    ["가지", "kind"], ["개", "item"], ["명", "person"], ["건", "case"],
+    ["퍼센트", "pct"], ["%", "pct"],
+    ["GB", "gb"], ["MB", "mb"], ["KB", "kb"]
+  ],
+  "corpus": {"dir": "pilot_data/corpus", "regs": "regs.jsonl", "hash": "regs.sha256"}
+}

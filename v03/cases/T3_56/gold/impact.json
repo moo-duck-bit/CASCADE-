@@ -1,0 +1,138 @@
+{
+  "case_id": "T3_56",
+  "case_type": "T3",
+  "subtype": "add_with_value_change",
+  "change": {
+    "new_req": "Req. 19",
+    "component": "앱",
+    "title": "회기 전 설문",
+    "related_secs": [
+      "SI-05"
+    ],
+    "draft": {
+      "설명": "앱은 CBT 회기 시작 전에 짧은 설문에 응답하도록 하여야 하며, 응답 값이 정해진 선택지와 형식에 맞는지 검증하여야 한다.",
+      "목적": "회기 전 사용자의 상태를 파악하여 회기 내용을 조정하고, 잘못된 응답이 저장되지 않도록 하기 위함이다.",
+      "기준": [
+        "회기 시작 전에 설문이 표시되고 응답이 저장됨을 확인함",
+        "선택지에 없거나 형식이 틀린 응답은 저장되지 않음을 확인함"
+      ],
+      "설계": [
+        "• CBT 회기 시작 화면 앞에 회기 전 설문을 표시하도록 구현한다.",
+        "• 응답 값은 저장 전에 선택지 목록과 형식을 기준으로 검사한다.",
+        "• 설문 결과는 회기 기록과 함께 저장하여 의료진이 조회할 수 있도록 한다."
+      ]
+    },
+    "value_change": {
+      "fact": "F_DEFAULT_CBT_SESSION_REMINDER",
+      "origin_req": "Req. 14",
+      "old_value": "18:00",
+      "new_value": "19:00"
+    }
+  },
+  "items": [
+    {
+      "site": "[MDSR | Req. 19 | 번호]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "번호",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "Req. 19"
+    },
+    {
+      "site": "[MDSR | Req. 19 | 제목]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "제목",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "회기 전 설문"
+    },
+    {
+      "site": "[MDSR | Req. 19 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "설명",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "앱은 CBT 회기 시작 전에 짧은 설문에 응답하도록 하여야 하며, 응답 값이 정해진 선택지와 형식에 맞는지 검증하여야 한다."
+    },
+    {
+      "site": "[MDSR | Req. 19 | 목적]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "목적",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "회기 전 사용자의 상태를 파악하여 회기 내용을 조정하고, 잘못된 응답이 저장되지 않도록 하기 위함이다."
+    },
+    {
+      "site": "[MDSR | Req. 19 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "기준#p1",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "회기 시작 전에 설문이 표시되고 응답이 저장됨을 확인함"
+    },
+    {
+      "site": "[MDSR | Req. 19 | 기준#p2]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "기준#p2",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "선택지에 없거나 형식이 틀린 응답은 저장되지 않음을 확인함"
+    },
+    {
+      "site": "[MDSR | SI-05 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "SI-05",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "trace",
+      "op": "modify",
+      "new_value": "Req. 1, Req. 8, Req. 10, Req. 13, Req. 14, Req. 19, Req. 106",
+      "note": "연결 Req 칸에 Req. 19 추가"
+    },
+    {
+      "site": "[MDSR | Req. 9 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 9",
+      "cell": "설명",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_DEFAULT_CBT_SESSION_REMINDER",
+      "old_surface": "18:00",
+      "new_value": "19:00"
+    },
+    {
+      "site": "[MDSR | Req. 9 | 기준#p2]",
+      "doc": "MDSR",
+      "item": "Req. 9",
+      "cell": "기준#p2",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_DEFAULT_CBT_SESSION_REMINDER",
+      "old_surface": "오후 6시",
+      "new_value": "19:00"
+    },
+    {
+      "site": "[MDSR | Req. 14 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 14",
+      "cell": "기준#p1",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_DEFAULT_CBT_SESSION_REMINDER",
+      "old_surface": "18시",
+      "new_value": "19:00"
+    }
+  ],
+  "neutral": []
+}

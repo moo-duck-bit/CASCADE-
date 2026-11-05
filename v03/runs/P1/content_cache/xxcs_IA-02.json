@@ -1,0 +1,12 @@
+{
+  "시험방법": [
+    "계정 잠금 기능이 {{F_ACCOUNT_LOCK_DURATION}} 동안 유지되는지 확인한다.",
+    "일정 기간 동안 활동이 없는 계정이 {{F_INACTIVE_ACCOUNT_LOCK_DURATION}} 후 자동으로 잠금되는지 확인한다."
+  ],
+  "확인결과": [
+    "계정 잠금 기능이 {{F_ACCOUNT_LOCK_DURATION}} 동안 유지됨을 확인함.",
+    "비활성 계정이 {{F_INACTIVE_ACCOUNT_LOCK_DURATION}} 후 자동으로 잠금됨을 확인함.",
+    "계정 잠금 및 자동 잠금 기능이 정의된 요구사항에 따라 정상 동작함을 확인함."
+  ],
+  "비고": ""
+}

@@ -1,0 +1,131 @@
+{
+  "case_id": "T1_07",
+  "items": [
+    {
+      "site": "[MDSR | 3.4 일반적 제한 | 본문#p2]",
+      "doc": "MDSR",
+      "item": "3.4 일반적 제한",
+      "cell": "본문#p2",
+      "path": "same_value",
+      "fact": "F_SESSION_TIMEOUT",
+      "reason": "같은 값(십오 분)이지만 다른 사실"
+    },
+    {
+      "site": "[MDSR | Req. 3 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 3",
+      "cell": "기준#p1",
+      "path": "same_value",
+      "fact": "F_SESSION_TIMEOUT",
+      "reason": "같은 값(15 분)이지만 다른 사실"
+    },
+    {
+      "site": "[MDDR | Req. 3 | 설계#p1]",
+      "doc": "MDDR",
+      "item": "Req. 3",
+      "cell": "설계#p1",
+      "path": "same_value",
+      "fact": "F_SESSION_TIMEOUT",
+      "reason": "같은 값(15분)이지만 다른 사실"
+    },
+    {
+      "site": "[XXCS | UC-03 | 시험방법#p1]",
+      "doc": "XXCS",
+      "item": "UC-03",
+      "cell": "시험방법#p1",
+      "path": "same_value",
+      "fact": "F_SESSION_TIMEOUT",
+      "reason": "같은 값(15 분)이지만 다른 사실"
+    },
+    {
+      "site": "[XXCS | UC-03 | 확인결과#p1]",
+      "doc": "XXCS",
+      "item": "UC-03",
+      "cell": "확인결과#p1",
+      "path": "same_value",
+      "fact": "F_SESSION_TIMEOUT",
+      "reason": "같은 값(십오 분)이지만 다른 사실"
+    },
+    {
+      "site": "[XXCS | UC-06 | 시험방법#p1]",
+      "doc": "XXCS",
+      "item": "UC-06",
+      "cell": "시험방법#p1",
+      "path": "same_value",
+      "fact": "F_SESSION_TIMEOUT",
+      "reason": "같은 값(15분)이지만 다른 사실"
+    },
+    {
+      "site": "[XXCS | UC-06 | 확인결과#p1]",
+      "doc": "XXCS",
+      "item": "UC-06",
+      "cell": "확인결과#p1",
+      "path": "same_value",
+      "fact": "F_SESSION_TIMEOUT",
+      "reason": "같은 값(15 분)이지만 다른 사실"
+    },
+    {
+      "site": "[MDSR | Req. 14 | 기준#p2]",
+      "doc": "MDSR",
+      "item": "Req. 14",
+      "cell": "기준#p2",
+      "path": "same_value",
+      "fact": "F_DEFAULT_CBT_SESSION_REMINDER_INTERVAL",
+      "reason": "같은 값(15분)이지만 다른 사실"
+    },
+    {
+      "site": "[MDDR | Req. 14 | 설계#p2]",
+      "doc": "MDDR",
+      "item": "Req. 14",
+      "cell": "설계#p2",
+      "path": "same_value",
+      "fact": "F_DEFAULT_CBT_SESSION_REMINDER_INTERVAL",
+      "reason": "같은 값(15 분)이지만 다른 사실"
+    },
+    {
+      "site": "[MDDR | Req. 3 | 설계#p2]",
+      "doc": "MDDR",
+      "item": "Req. 3",
+      "cell": "설계#p2",
+      "path": "same_value",
+      "fact": "F_MEDICAL_STAFF_SESSION_TIMEOUT",
+      "reason": "같은 값(15분)이지만 다른 사실"
+    },
+    {
+      "site": "[XXCS | UC-03 | 시험방법#p2]",
+      "doc": "XXCS",
+      "item": "UC-03",
+      "cell": "시험방법#p2",
+      "path": "same_value",
+      "fact": "F_MEDICAL_STAFF_SESSION_TIMEOUT",
+      "reason": "같은 값(15 분)이지만 다른 사실"
+    },
+    {
+      "site": "[XXCS | UC-03 | 확인결과#p2]",
+      "doc": "XXCS",
+      "item": "UC-03",
+      "cell": "확인결과#p2",
+      "path": "same_value",
+      "fact": "F_MEDICAL_STAFF_SESSION_TIMEOUT",
+      "reason": "같은 값(십오 분)이지만 다른 사실"
+    },
+    {
+      "site": "[XXCS | UC-06 | 시험방법#p3]",
+      "doc": "XXCS",
+      "item": "UC-06",
+      "cell": "시험방법#p3",
+      "path": "same_value",
+      "fact": "F_MEDICAL_STAFF_SESSION_TIMEOUT",
+      "reason": "같은 값(15분)이지만 다른 사실"
+    },
+    {
+      "site": "[XXCS | UC-06 | 확인결과#p3]",
+      "doc": "XXCS",
+      "item": "UC-06",
+      "cell": "확인결과#p3",
+      "path": "same_value",
+      "fact": "F_MEDICAL_STAFF_SESSION_TIMEOUT",
+      "reason": "같은 값(15 분)이지만 다른 사실"
+    }
+  ]
+}

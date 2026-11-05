@@ -1,0 +1,28 @@
+{
+  "case_id": "T1_02",
+  "case_type": "T1",
+  "subtype": "value_change",
+  "n_docs": 3,
+  "docs": [
+    "MDSR",
+    "MDDR",
+    "XXCS"
+  ],
+  "paths": {
+    "origin": 2,
+    "same_value": 6,
+    "same_id": 2,
+    "trace": 4
+  },
+  "trap_paths": {
+    "trace": 6
+  },
+  "n_impact": 14,
+  "n_traps": 6,
+  "n_neutral": 0,
+  "request_structured": "Req. 100 '서버 데이터 동기화'의 동기화 주기를 60분에서 120분으로 변경한다.",
+  "request_nl": "서버 데이터 동기화 기능에서 동기화 주기를 120분으로 바꿔 주세요.",
+  "sheet_type": "T1",
+  "sheet_paths": "origin, same_id, trace, same_value",
+  "seed": 20261102
+}

@@ -1,0 +1,69 @@
+{
+  "case_id": "T1_51",
+  "case_type": "T1",
+  "subtype": "value_change",
+  "change": {
+    "fact": "F_LOGIN_FAILURE_LIMIT",
+    "origin_req": "Req. 1",
+    "old_value": "5",
+    "new_value": "4"
+  },
+  "items": [
+    {
+      "site": "[MDSR | 3.4 일반적 제한 | 본문#p1]",
+      "doc": "MDSR",
+      "item": "3.4 일반적 제한",
+      "cell": "본문#p1",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_LOGIN_FAILURE_LIMIT",
+      "old_surface": "5 회",
+      "new_value": "4회"
+    },
+    {
+      "site": "[MDSR | Req. 1 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 1",
+      "cell": "설명",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_LOGIN_FAILURE_LIMIT",
+      "old_surface": "5회",
+      "new_value": "4회"
+    },
+    {
+      "site": "[MDSR | Req. 1 | 기준#p2]",
+      "doc": "MDSR",
+      "item": "Req. 1",
+      "cell": "기준#p2",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_LOGIN_FAILURE_LIMIT",
+      "old_surface": "5 회",
+      "new_value": "4회"
+    },
+    {
+      "site": "[MDSR | Req. 2 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 2",
+      "cell": "설명",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_LOGIN_FAILURE_LIMIT",
+      "old_surface": "5번",
+      "new_value": "4회"
+    },
+    {
+      "site": "[MDSR | Req. 2 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 2",
+      "cell": "기준#p1",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_LOGIN_FAILURE_LIMIT",
+      "old_surface": "5회",
+      "new_value": "4회"
+    }
+  ],
+  "neutral": []
+}

@@ -1,0 +1,15 @@
+{
+  "시험방법": [
+    "시스템이 감사기록을 생성하는 동작이 정상적으로 수행되는지 확인한다.",
+    "감사로그, 의료진 접속 기록, 처방 변경 이력의 보관 기간이 각각 {{F_AUDIT_LOG_RETENTION}}, {{F_MEDICAL_STAFF_ACCESS_LOG_RETENTION}}, {{F_PRESCRIPTION_CHANGE_LOG_RETENTION}} 동안 유지되는지 확인한다.",
+    "비활성 계정이 {{F_INACTIVE_ACCOUNT_LOCK_DURATION}} 경과 후 자동으로 잠금되는지 확인한다.",
+    "감사기록이 생성될 때 시스템이 정의된 형식과 범위에 따라 데이터를 기록하는지 확인한다."
+  ],
+  "확인결과": [
+    "감사기록 생성 동작이 정상적으로 수행됨을 확인함.",
+    "감사로그, 의료진 접속 기록, 처방 변경 이력의 보관 기간이 각각 {{F_AUDIT_LOG_RETENTION}}, {{F_MEDICAL_STAFF_ACCESS_LOG_RETENTION}}, {{F_PRESCRIPTION_CHANGE_LOG_RETENTION}} 동안 유지됨을 확인함.",
+    "비활성 계정이 {{F_INACTIVE_ACCOUNT_LOCK_DURATION}} 경과 후 자동으로 잠금됨을 확인함.",
+    "감사기록이 정의된 형식과 범위에 따라 생성됨을 확인함."
+  ],
+  "비고": ""
+}

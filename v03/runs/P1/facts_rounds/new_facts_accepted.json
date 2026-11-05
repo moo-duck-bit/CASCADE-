@@ -1,0 +1,232 @@
+{
+  "facts": [
+    {
+      "id": "F_MEDICAL_STAFF_SESSION_TIMEOUT",
+      "name": "의료진 대시보드 세션 종료 시간",
+      "value": "15",
+      "variants": [
+        "15분",
+        "15 분",
+        "십오 분"
+      ],
+      "type": "time",
+      "change_candidates": [
+        "10",
+        "5"
+      ],
+      "same_value_group": "G_15MIN",
+      "depends_on": [],
+      "security": true,
+      "stronger_when": "lower"
+    },
+    {
+      "id": "F_INACTIVE_ACCOUNT_LOCK_DURATION",
+      "name": "비활성 계정 자동 잠금 기간",
+      "value": "90",
+      "variants": [
+        "90일",
+        "90 일",
+        "3개월"
+      ],
+      "type": "time",
+      "change_candidates": [
+        "60",
+        "30"
+      ],
+      "same_value_group": "",
+      "depends_on": [],
+      "security": true,
+      "stronger_when": "lower"
+    },
+    {
+      "id": "F_PII_DELETION_DEADLINE",
+      "name": "개인정보 파기 기한",
+      "value": "365",
+      "variants": [
+        "365일",
+        "365 일",
+        "1년"
+      ],
+      "type": "time",
+      "change_candidates": [
+        "180",
+        "90"
+      ],
+      "same_value_group": "",
+      "depends_on": [],
+      "security": true,
+      "stronger_when": "lower"
+    },
+    {
+      "id": "F_PASSWORD_CHANGE_INTERVAL",
+      "name": "비밀번호 변경 주기",
+      "value": "90",
+      "variants": [
+        "90일",
+        "90 일",
+        "3개월"
+      ],
+      "type": "time",
+      "change_candidates": [
+        "60",
+        "30"
+      ],
+      "same_value_group": "",
+      "depends_on": [],
+      "security": true,
+      "stronger_when": "lower"
+    },
+    {
+      "id": "F_RELAXATION_SESSION_DURATION",
+      "name": "이완 훈련 세션 지속 시간",
+      "value": "10",
+      "variants": [
+        "10분",
+        "10 분",
+        "십 분"
+      ],
+      "type": "time",
+      "change_candidates": [
+        "15",
+        "20"
+      ],
+      "same_value_group": "",
+      "depends_on": [],
+      "security": false,
+      "stronger_when": "none"
+    },
+    {
+      "id": "F_SLEEP_EFFICIENCY_REPORT_INTERVAL",
+      "name": "수면 효율 리포트 생성 주기",
+      "value": "7",
+      "variants": [
+        "7일",
+        "7 일",
+        "1주일"
+      ],
+      "type": "time",
+      "change_candidates": [
+        "14",
+        "30"
+      ],
+      "same_value_group": "G_7DAY",
+      "depends_on": [],
+      "security": false,
+      "stronger_when": "none"
+    },
+    {
+      "id": "F_MEDICAL_MESSAGE_EXPIRATION",
+      "name": "의료진 메시지 유효 기간",
+      "value": "7",
+      "variants": [
+        "7일",
+        "7 일",
+        "1주일"
+      ],
+      "type": "time",
+      "change_candidates": [
+        "14",
+        "3"
+      ],
+      "same_value_group": "G_7DAY",
+      "depends_on": [],
+      "security": false,
+      "stronger_when": "none"
+    },
+    {
+      "id": "F_PRESCRIPTION_CHANGE_LOG_RETENTION",
+      "name": "처방 변경 이력 보관 기간",
+      "value": "365",
+      "variants": [
+        "365일",
+        "365 일",
+        "1년"
+      ],
+      "type": "time",
+      "change_candidates": [
+        "730",
+        "180"
+      ],
+      "same_value_group": "",
+      "depends_on": [],
+      "security": true,
+      "stronger_when": "lower"
+    },
+    {
+      "id": "F_DATA_PRESERVATION_DURATION",
+      "name": "데이터 보존 기간",
+      "value": "730",
+      "variants": [
+        "730일",
+        "730 일",
+        "2년"
+      ],
+      "type": "time",
+      "change_candidates": [
+        "1095",
+        "365"
+      ],
+      "same_value_group": "",
+      "depends_on": [],
+      "security": false,
+      "stronger_when": "none"
+    },
+    {
+      "id": "F_MEDICAL_STAFF_ACCESS_LOG_RETENTION",
+      "name": "의료진 접속 기록 보관 기간",
+      "value": "180",
+      "variants": [
+        "180일",
+        "180 일",
+        "6개월"
+      ],
+      "type": "time",
+      "change_candidates": [
+        "365",
+        "90"
+      ],
+      "same_value_group": "",
+      "depends_on": [],
+      "security": true,
+      "stronger_when": "lower"
+    },
+    {
+      "id": "F_MEDICAL_STAFF_ROLE_ASSIGNMENT",
+      "name": "의료진 계정 권한 종류",
+      "value": "4",
+      "variants": [
+        "4가지",
+        "4 종류",
+        "4개 권한"
+      ],
+      "type": "count",
+      "change_candidates": [
+        "2",
+        "5"
+      ],
+      "same_value_group": "",
+      "depends_on": [],
+      "security": false,
+      "stronger_when": "none"
+    },
+    {
+      "id": "F_MEDICAL_STAFF_ACCESS_LOG_AUDIT_INTERVAL",
+      "name": "의료진 접속 기록 감사 주기",
+      "value": "45",
+      "variants": [
+        "45일",
+        "45 일",
+        "1개월 반"
+      ],
+      "type": "time",
+      "change_candidates": [
+        "30",
+        "60"
+      ],
+      "same_value_group": "",
+      "depends_on": [],
+      "security": true,
+      "stronger_when": "lower"
+    }
+  ]
+}

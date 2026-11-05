@@ -1,0 +1,28 @@
+{
+  "case_id": "T3_62",
+  "case_type": "T3",
+  "subtype": "add_with_value_change",
+  "n_docs": 3,
+  "docs": [
+    "MDSR",
+    "MDDR",
+    "XXCS"
+  ],
+  "paths": {
+    "origin": 8,
+    "same_id": 5,
+    "trace": 5,
+    "same_value": 7
+  },
+  "trap_paths": {
+    "trace": 5
+  },
+  "n_impact": 25,
+  "n_traps": 5,
+  "n_neutral": 0,
+  "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '위젯 표시'을(를) 신규 추가한다. 내용: 앱은 홈 화면 위젯으로 오늘의 수면 목표를 보여 줄 수 있어야 하며, 기기가 잠긴 상태에서는 위젯에 민감한 수면 기록을 표시하지 않아야 한다. 또한 Req. 1 '사용자 로그인'의 로그인 실패 허용 횟수를 5회에서 4회로 변경한다.",
+  "request_nl": "앱에 새 기능을 넣어 주세요. 홈 화면 위젯으로 오늘의 수면 목표를 보여 주되 기기가 잠긴 상태에서는 민감한 수면 기록을 가리는 기능이 필요합니다. 그리고 사용자 로그인 기능에서 로그인 실패 허용 횟수를 4회로 바꿔 주세요.",
+  "sheet_type": "T3-추가복합",
+  "sheet_paths": "origin, same_id, trace, same_value",
+  "seed": 20261102
+}

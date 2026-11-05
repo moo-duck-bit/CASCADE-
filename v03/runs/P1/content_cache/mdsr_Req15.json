@@ -1,0 +1,8 @@
+{
+  "설명": "이완 훈련 세션을 사용자에게 제공하여야 하며, 세션 지속 시간은 {{F_RELAXATION_SESSION_DURATION}}을 유지하여야 한다. 사용자에게 세션 시작 알림이 {{F_DEFAULT_CBT_SESSION_REMINDER_COUNT}}까지 반복되어 전달되어야 한다.",
+  "목적": "사용자의 긴장을 완화하고 수면 유도를 지원하기 위함이다.",
+  "기준": [
+    "이완 훈련 세션이 {{F_RELAXATION_SESSION_DURATION}} 동안 정상적으로 실행됨을 확인함",
+    "세션 시작 알림이 {{F_DEFAULT_CBT_SESSION_REMINDER_COUNT}}까지 반복되어 전달됨을 확인함"
+  ]
+}

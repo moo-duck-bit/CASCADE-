@@ -1,0 +1,102 @@
+{
+  "case_id": "T1_11",
+  "case_type": "T1",
+  "subtype": "value_change",
+  "change": {
+    "fact": "F_PASSWORD_MIN_LENGTH",
+    "origin_req": "Req. 1",
+    "old_value": "8",
+    "new_value": "12"
+  },
+  "items": [
+    {
+      "site": "[MDSR | 3.4 일반적 제한 | 본문#p3]",
+      "doc": "MDSR",
+      "item": "3.4 일반적 제한",
+      "cell": "본문#p3",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_PASSWORD_MIN_LENGTH",
+      "old_surface": "8글자",
+      "new_value": "12자"
+    },
+    {
+      "site": "[MDSR | Req. 1 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 1",
+      "cell": "설명",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_PASSWORD_MIN_LENGTH",
+      "old_surface": "8자",
+      "new_value": "12자"
+    },
+    {
+      "site": "[MDSR | Req. 1 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 1",
+      "cell": "기준#p1",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_PASSWORD_MIN_LENGTH",
+      "old_surface": "8 자",
+      "new_value": "12자"
+    },
+    {
+      "site": "[MDDR | Req. 1 | 설계#p1]",
+      "doc": "MDDR",
+      "item": "Req. 1",
+      "cell": "설계#p1",
+      "path": "same_id",
+      "op": "modify",
+      "fact": "F_PASSWORD_MIN_LENGTH",
+      "old_surface": "8자",
+      "new_value": "12자"
+    },
+    {
+      "site": "[XXCS | IA-05 | 시험방법#p1]",
+      "doc": "XXCS",
+      "item": "IA-05",
+      "cell": "시험방법#p1",
+      "path": "trace",
+      "op": "modify",
+      "fact": "F_PASSWORD_MIN_LENGTH",
+      "old_surface": "8 자",
+      "new_value": "12자"
+    },
+    {
+      "site": "[XXCS | IA-05 | 확인결과#p1]",
+      "doc": "XXCS",
+      "item": "IA-05",
+      "cell": "확인결과#p1",
+      "path": "trace",
+      "op": "modify",
+      "fact": "F_PASSWORD_MIN_LENGTH",
+      "old_surface": "8글자",
+      "new_value": "12자"
+    },
+    {
+      "site": "[XXCS | IA-05 | 확인결과#p3]",
+      "doc": "XXCS",
+      "item": "IA-05",
+      "cell": "확인결과#p3",
+      "path": "trace",
+      "op": "modify",
+      "fact": "F_PASSWORD_MIN_LENGTH",
+      "old_surface": "8자",
+      "new_value": "12자"
+    },
+    {
+      "site": "[XXCS | SI-05 | 확인결과#p1]",
+      "doc": "XXCS",
+      "item": "SI-05",
+      "cell": "확인결과#p1",
+      "path": "trace",
+      "op": "modify",
+      "fact": "F_PASSWORD_MIN_LENGTH",
+      "old_surface": "8 자",
+      "new_value": "12자"
+    }
+  ],
+  "neutral": []
+}

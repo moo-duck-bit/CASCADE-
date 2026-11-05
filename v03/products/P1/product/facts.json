@@ -1,0 +1,1271 @@
+{
+  "facts": {
+    "F_LOGIN_FAILURE_LIMIT": {
+      "name": "로그인 실패 허용 횟수",
+      "value": "5",
+      "variants": [
+        "5회",
+        "5 회",
+        "5번"
+      ],
+      "type": "count",
+      "change_candidates": [
+        "3",
+        "4"
+      ],
+      "same_value_group": "",
+      "depends_on": [],
+      "security": true,
+      "stronger_when": "lower",
+      "xxcs": [
+        "IA-07",
+        "IA-06"
+      ],
+      "in_34": true,
+      "sites_hint": [
+        "MDSR|Req. 1",
+        "MDDR|Req. 1",
+        "MDSR|Req. 2",
+        "MDDR|Req. 2",
+        "MDSR|3.4",
+        "XXCS|IA-07",
+        "XXCS|IA-06"
+      ]
+    },
+    "F_ACCOUNT_LOCK_DURATION": {
+      "name": "계정 잠금 시간",
+      "value": "15",
+      "variants": [
+        "15분",
+        "15 분",
+        "십오 분"
+      ],
+      "type": "time",
+      "change_candidates": [
+        "30",
+        "20",
+        "45"
+      ],
+      "same_value_group": "G_15MIN",
+      "depends_on": [],
+      "security": true,
+      "stronger_when": "higher",
+      "xxcs": [
+        "IA-02",
+        "IA-06"
+      ],
+      "in_34": true,
+      "sites_hint": [
+        "MDSR|Req. 2",
+        "MDDR|Req. 2",
+        "MDSR|3.4",
+        "XXCS|IA-02",
+        "XXCS|IA-06"
+      ]
+    },
+    "F_SESSION_TIMEOUT": {
+      "name": "세션 종료 시간",
+      "value": "15",
+      "variants": [
+        "15분",
+        "15 분",
+        "십오 분"
+      ],
+      "type": "time",
+      "change_candidates": [
+        "10",
+        "5"
+      ],
+      "same_value_group": "G_15MIN",
+      "depends_on": [],
+      "security": true,
+      "stronger_when": "lower",
+      "xxcs": [
+        "UC-03",
+        "UC-06"
+      ],
+      "in_34": true,
+      "sites_hint": [
+        "MDSR|Req. 3",
+        "MDDR|Req. 3",
+        "MDSR|3.4",
+        "XXCS|UC-03",
+        "XXCS|UC-06"
+      ]
+    },
+    "F_PASSWORD_MIN_LENGTH": {
+      "name": "비밀번호 최소 길이",
+      "value": "8",
+      "variants": [
+        "8자",
+        "8 자",
+        "8글자"
+      ],
+      "type": "length",
+      "change_candidates": [
+        "10",
+        "12"
+      ],
+      "same_value_group": "",
+      "depends_on": [],
+      "security": true,
+      "stronger_when": "higher",
+      "xxcs": [
+        "IA-05",
+        "SI-05"
+      ],
+      "in_34": true,
+      "sites_hint": [
+        "MDSR|Req. 1",
+        "MDDR|Req. 1",
+        "MDSR|3.4",
+        "XXCS|IA-05",
+        "XXCS|SI-05"
+      ]
+    },
+    "F_PASSWORD_COMPLEXITY": {
+      "name": "비밀번호 조합 규칙",
+      "value": "대소문자, 숫자, 특수문자 포함",
+      "variants": [
+        "대문자, 소문자, 숫자, 특수문자 조합",
+        "대/소문자, 숫자, 특수기호 포함",
+        "대소문자+숫자+특수문자"
+      ],
+      "type": "policy",
+      "change_candidates": [
+        "대소문자, 숫자, 특수문자 포함 및 연속 문자 금지",
+        "대소문자, 숫자, 특수문자 포함 및 아이디 포함 금지"
+      ],
+      "same_value_group": "",
+      "depends_on": [],
+      "security": true,
+      "stronger_when": "text",
+      "xxcs": [
+        "IA-05",
+        "SI-05"
+      ],
+      "in_34": true,
+      "sites_hint": [
+        "MDSR|Req. 1",
+        "MDDR|Req. 1",
+        "MDSR|3.4",
+        "XXCS|IA-05",
+        "XXCS|SI-05"
+      ]
+    },
+    "F_TRANSPORT_ENCRYPTION": {
+      "name": "전송 구간 암호화 방식",
+      "value": "TLS 1.2 이상",
+      "variants": [
+        "TLS 1.2 이상",
+        "TLS1.2 이상",
+        "TLS v1.2 이상"
+      ],
+      "type": "algorithm",
+      "change_candidates": [
+        "TLS 1.3",
+        "TLS 1.2 이상 및 취약 암호 스위트 차단"
+      ],
+      "same_value_group": "",
+      "depends_on": [],
+      "security": true,
+      "stronger_when": "text",
+      "xxcs": [
+        "SI-01",
+        "DC-03"
+      ],
+      "in_34": true,
+      "sites_hint": [
+        "MDSR|Req. 4",
+        "MDDR|Req. 4",
+        "MDSR|Req. 102",
+        "MDDR|Req. 102",
+        "MDSR|3.4",
+        "XXCS|SI-01",
+        "XXCS|DC-03"
+      ]
+    },
+    "F_STORAGE_ENCRYPTION": {
+      "name": "저장 데이터 암호화 방식",
+      "value": "AES-256",
+      "variants": [
+        "AES-256",
+        "AES 256",
+        "AES256"
+      ],
+      "type": "algorithm",
+      "change_candidates": [
+        "AES-256-GCM",
+        "ChaCha20-Poly1305"
+      ],
+      "same_value_group": "",
+      "depends_on": [],
+      "security": true,
+      "stronger_when": "text",
+      "xxcs": [
+        "DC-01",
+        "SI-01"
+      ],
+      "in_34": true,
+      "sites_hint": [
+        "MDSR|Req. 5",
+        "MDDR|Req. 5",
+        "MDSR|Req. 103",
+        "MDDR|Req. 103",
+        "MDSR|3.4",
+        "XXCS|DC-01",
+        "XXCS|SI-01"
+      ]
+    },
+    "F_AUDIT_LOG_RETENTION": {
+      "name": "감사로그 보관 기간",
+      "value": "180",
+      "variants": [
+        "180일",
+        "180 일",
+        "6개월"
+      ],
+      "type": "duration",
+      "change_candidates": [
+        "365",
+        "730"
+      ],
+      "same_value_group": "G_180DAY",
+      "depends_on": [],
+      "security": true,
+      "stronger_when": "higher",
+      "xxcs": [
+        "UC-04",
+        "TRE-01",
+        "UC-05"
+      ],
+      "in_34": true,
+      "sites_hint": [
+        "MDSR|Req. 6",
+        "MDDR|Req. 6",
+        "MDSR|Req. 104",
+        "MDDR|Req. 104",
+        "MDSR|3.4",
+        "XXCS|UC-04",
+        "XXCS|TRE-01",
+        "XXCS|UC-05"
+      ]
+    },
+    "F_BACKUP_INTERVAL": {
+      "name": "백업 주기",
+      "value": "24",
+      "variants": [
+        "24시간",
+        "24 시간",
+        "매일"
+      ],
+      "type": "time",
+      "change_candidates": [
+        "12",
+        "6"
+      ],
+      "same_value_group": "G_24HOUR",
+      "depends_on": [],
+      "security": true,
+      "stronger_when": "lower",
+      "xxcs": [
+        "RA-02",
+        "SI-01"
+      ],
+      "in_34": true,
+      "sites_hint": [
+        "MDSR|Req. 7",
+        "MDDR|Req. 7",
+        "MDSR|Req. 105",
+        "MDDR|Req. 105",
+        "MDSR|3.4",
+        "XXCS|RA-02",
+        "XXCS|SI-01"
+      ]
+    },
+    "F_SLEEP_DIARY_DEADLINE": {
+      "name": "수면일기 입력 기한",
+      "value": "24",
+      "variants": [
+        "24시간",
+        "24 시간",
+        "하루"
+      ],
+      "type": "time",
+      "change_candidates": [
+        "12",
+        "48",
+        "72"
+      ],
+      "same_value_group": "G_24HOUR",
+      "depends_on": [],
+      "security": false,
+      "stronger_when": "none",
+      "xxcs": [
+        "SI-05"
+      ],
+      "in_34": false,
+      "sites_hint": [
+        "MDSR|Req. 8",
+        "MDDR|Req. 8",
+        "XXCS|SI-05"
+      ]
+    },
+    "F_NOTIFICATION_TIME": {
+      "name": "알림 시각",
+      "value": "21:00",
+      "variants": [
+        "21:00",
+        "밤 9시",
+        "21시"
+      ],
+      "type": "time",
+      "change_candidates": [
+        "20:30",
+        "22:00",
+        "21:30"
+      ],
+      "same_value_group": "",
+      "depends_on": [],
+      "security": false,
+      "stronger_when": "none",
+      "xxcs": [],
+      "in_34": false,
+      "sites_hint": [
+        "MDSR|Req. 9",
+        "MDDR|Req. 9"
+      ]
+    },
+    "F_TREATMENT_SESSIONS": {
+      "name": "CBT-I 총 치료 회기 수",
+      "value": "6",
+      "variants": [
+        "6회",
+        "6 회",
+        "6번"
+      ],
+      "type": "count",
+      "change_candidates": [
+        "4",
+        "8",
+        "10"
+      ],
+      "same_value_group": "",
+      "depends_on": [],
+      "security": false,
+      "stronger_when": "none",
+      "xxcs": [
+        "SI-05"
+      ],
+      "in_34": false,
+      "sites_hint": [
+        "MDSR|Req. 106",
+        "MDDR|Req. 106",
+        "XXCS|SI-05"
+      ]
+    },
+    "F_SYNC_INTERVAL": {
+      "name": "동기화 주기",
+      "value": "60",
+      "variants": [
+        "60분",
+        "60 분",
+        "1시간"
+      ],
+      "type": "time",
+      "change_candidates": [
+        "30",
+        "120",
+        "15"
+      ],
+      "same_value_group": "",
+      "depends_on": [],
+      "security": false,
+      "stronger_when": "none",
+      "xxcs": [
+        "SI-01",
+        "RA-02"
+      ],
+      "in_34": false,
+      "sites_hint": [
+        "MDSR|Req. 100",
+        "MDDR|Req. 100",
+        "MDSR|Req. 101",
+        "MDDR|Req. 101",
+        "XXCS|SI-01",
+        "XXCS|RA-02"
+      ]
+    },
+    "F_UNLOCK_NOTIFICATION_TIME": {
+      "name": "잠금 해제 안내 시각",
+      "value": "15",
+      "variants": [
+        "15분",
+        "15 분",
+        "십오 분"
+      ],
+      "type": "time",
+      "change_candidates": [
+        "20",
+        "30"
+      ],
+      "same_value_group": "G_15MIN",
+      "depends_on": [
+        "F_ACCOUNT_LOCK_DURATION"
+      ],
+      "security": true,
+      "stronger_when": "higher",
+      "xxcs": [
+        "IA-06",
+        "UC-06"
+      ],
+      "in_34": true,
+      "sites_hint": [
+        "MDSR|Req. 3",
+        "MDDR|Req. 3",
+        "MDSR|3.4",
+        "XXCS|IA-06",
+        "XXCS|UC-06"
+      ]
+    },
+    "F_DEFAULT_SLEEP_LIMIT": {
+      "name": "수면 제한 요법 기본 취침 시간",
+      "value": "22:00",
+      "variants": [
+        "22:00",
+        "밤 10시",
+        "22시"
+      ],
+      "type": "time",
+      "change_candidates": [
+        "21:30",
+        "23:00",
+        "21:00"
+      ],
+      "same_value_group": "",
+      "depends_on": [],
+      "security": false,
+      "stronger_when": "none",
+      "xxcs": [],
+      "in_34": false,
+      "sites_hint": [
+        "MDSR|Req. 8",
+        "MDDR|Req. 8",
+        "MDSR|Req. 10",
+        "MDDR|Req. 10"
+      ]
+    },
+    "F_DEFAULT_WAKE_TIME": {
+      "name": "수면 제한 요법 기본 기상 시간",
+      "value": "7:00",
+      "variants": [
+        "7:00",
+        "아침 7시",
+        "7시"
+      ],
+      "type": "time",
+      "change_candidates": [
+        "6:30",
+        "7:30",
+        "8:00"
+      ],
+      "same_value_group": "",
+      "depends_on": [],
+      "security": false,
+      "stronger_when": "none",
+      "xxcs": [],
+      "in_34": false,
+      "sites_hint": [
+        "MDSR|Req. 8",
+        "MDDR|Req. 8",
+        "MDSR|Req. 10",
+        "MDDR|Req. 10"
+      ]
+    },
+    "F_DEFAULT_STIMULUS_CONTROL_DURATION": {
+      "name": "자극 조절 교육 기본 기간",
+      "value": "7",
+      "variants": [
+        "7일",
+        "7 일",
+        "1주일"
+      ],
+      "type": "duration",
+      "change_candidates": [
+        "5",
+        "10",
+        "14"
+      ],
+      "same_value_group": "G_7DAY",
+      "depends_on": [],
+      "security": false,
+      "stronger_when": "none",
+      "xxcs": [],
+      "in_34": false,
+      "sites_hint": [
+        "MDSR|Req. 11",
+        "MDDR|Req. 11"
+      ]
+    },
+    "F_DEFAULT_SLEEP_HYGIENE_DURATION": {
+      "name": "수면 위생 교육 기본 기간",
+      "value": "7",
+      "variants": [
+        "7일",
+        "7 일",
+        "1주일"
+      ],
+      "type": "duration",
+      "change_candidates": [
+        "5",
+        "10",
+        "14"
+      ],
+      "same_value_group": "G_7DAY",
+      "depends_on": [],
+      "security": false,
+      "stronger_when": "none",
+      "xxcs": [],
+      "in_34": false,
+      "sites_hint": [
+        "MDSR|Req. 12",
+        "MDDR|Req. 12"
+      ]
+    },
+    "F_DEFAULT_CBT_SESSION_DURATION": {
+      "name": "CBT 회기 기본 지속 시간",
+      "value": "30",
+      "variants": [
+        "30분",
+        "30 분",
+        "삼십 분"
+      ],
+      "type": "time",
+      "change_candidates": [
+        "20",
+        "45",
+        "60"
+      ],
+      "same_value_group": "",
+      "depends_on": [],
+      "security": false,
+      "stronger_when": "none",
+      "xxcs": [],
+      "in_34": false,
+      "sites_hint": [
+        "MDSR|Req. 13",
+        "MDDR|Req. 13"
+      ]
+    },
+    "F_DEFAULT_CBT_SESSION_INTERVAL": {
+      "name": "CBT 회기 기본 간격",
+      "value": "7",
+      "variants": [
+        "7일",
+        "7 일",
+        "1주일"
+      ],
+      "type": "duration",
+      "change_candidates": [
+        "5",
+        "10",
+        "14"
+      ],
+      "same_value_group": "G_7DAY",
+      "depends_on": [],
+      "security": false,
+      "stronger_when": "none",
+      "xxcs": [],
+      "in_34": false,
+      "sites_hint": [
+        "MDSR|Req. 13",
+        "MDDR|Req. 13"
+      ]
+    },
+    "F_DEFAULT_CBT_SESSION_REMINDER": {
+      "name": "CBT 회기 알림 시각",
+      "value": "18:00",
+      "variants": [
+        "18:00",
+        "오후 6시",
+        "18시"
+      ],
+      "type": "time",
+      "change_candidates": [
+        "17:00",
+        "19:00",
+        "20:00"
+      ],
+      "same_value_group": "",
+      "depends_on": [],
+      "security": false,
+      "stronger_when": "none",
+      "xxcs": [],
+      "in_34": false,
+      "sites_hint": [
+        "MDSR|Req. 9",
+        "MDDR|Req. 9",
+        "MDSR|Req. 14",
+        "MDDR|Req. 14"
+      ]
+    },
+    "F_DEFAULT_CBT_SESSION_REMINDER_INTERVAL": {
+      "name": "CBT 회기 알림 반복 간격",
+      "value": "15",
+      "variants": [
+        "15분",
+        "15 분",
+        "십오 분"
+      ],
+      "type": "time",
+      "change_candidates": [
+        "10",
+        "20",
+        "30"
+      ],
+      "same_value_group": "G_15MIN",
+      "depends_on": [],
+      "security": false,
+      "stronger_when": "none",
+      "xxcs": [],
+      "in_34": false,
+      "sites_hint": [
+        "MDSR|Req. 14",
+        "MDDR|Req. 14"
+      ]
+    },
+    "F_DEFAULT_CBT_SESSION_REMINDER_COUNT": {
+      "name": "CBT 회기 알림 최대 반복 횟수",
+      "value": "3",
+      "variants": [
+        "3회",
+        "3 회",
+        "3번"
+      ],
+      "type": "count",
+      "change_candidates": [
+        "2",
+        "4",
+        "5"
+      ],
+      "same_value_group": "",
+      "depends_on": [],
+      "security": false,
+      "stronger_when": "none",
+      "xxcs": [],
+      "in_34": false,
+      "sites_hint": [
+        "MDSR|Req. 15",
+        "MDDR|Req. 15"
+      ]
+    },
+    "F_DEFAULT_CBT_SESSION_REMINDER_SOUND": {
+      "name": "CBT 회기 알림 소리",
+      "value": "벨 소리",
+      "variants": [
+        "벨 소리",
+        "벨",
+        "벨음"
+      ],
+      "type": "policy",
+      "change_candidates": [
+        "진동",
+        "음악",
+        "무음"
+      ],
+      "same_value_group": "",
+      "depends_on": [],
+      "security": false,
+      "stronger_when": "none",
+      "xxcs": [],
+      "in_34": false,
+      "sites_hint": [
+        "MDSR|Req. 14",
+        "MDDR|Req. 14"
+      ]
+    },
+    "F_SLEEP_HYGIENE_CONTENT_COUNT": {
+      "name": "수면 위생 교육 콘텐츠 수",
+      "value": "12",
+      "variants": [
+        "12개",
+        "12 개",
+        "열두 개"
+      ],
+      "type": "count",
+      "change_candidates": [
+        "10",
+        "15",
+        "20"
+      ],
+      "same_value_group": "",
+      "depends_on": [],
+      "security": false,
+      "stronger_when": "none",
+      "xxcs": [],
+      "in_34": false,
+      "sites_hint": [
+        "MDSR|Req. 12",
+        "MDDR|Req. 12"
+      ]
+    },
+    "F_MEDICAL_STAFF_SESSION_TIMEOUT": {
+      "name": "의료진 대시보드 세션 종료 시간",
+      "value": "15",
+      "variants": [
+        "15분",
+        "15 분",
+        "십오 분"
+      ],
+      "type": "time",
+      "change_candidates": [
+        "10",
+        "5"
+      ],
+      "same_value_group": "G_15MIN",
+      "depends_on": [],
+      "security": true,
+      "stronger_when": "lower",
+      "xxcs": [
+        "UC-03",
+        "UC-06"
+      ],
+      "in_34": true,
+      "sites_hint": [
+        "MDSR|Req. 3",
+        "MDDR|Req. 3",
+        "MDSR|3.4",
+        "XXCS|UC-03",
+        "XXCS|UC-06"
+      ]
+    },
+    "F_INACTIVE_ACCOUNT_LOCK_DURATION": {
+      "name": "비활성 계정 자동 잠금 기간",
+      "value": "90",
+      "variants": [
+        "90일",
+        "90 일",
+        "3개월"
+      ],
+      "type": "time",
+      "change_candidates": [
+        "60",
+        "30"
+      ],
+      "same_value_group": "G_90DAY",
+      "depends_on": [],
+      "security": true,
+      "stronger_when": "lower",
+      "xxcs": [
+        "IA-02",
+        "UC-04"
+      ],
+      "in_34": true,
+      "sites_hint": [
+        "MDSR|Req. 2",
+        "MDDR|Req. 2",
+        "MDSR|3.4",
+        "XXCS|IA-02",
+        "XXCS|UC-04"
+      ]
+    },
+    "F_PII_DELETION_DEADLINE": {
+      "name": "개인정보 파기 기한",
+      "value": "365",
+      "variants": [
+        "365일",
+        "365 일",
+        "1년"
+      ],
+      "type": "time",
+      "change_candidates": [
+        "180",
+        "90"
+      ],
+      "same_value_group": "G_365DAY",
+      "depends_on": [],
+      "security": true,
+      "stronger_when": "lower",
+      "xxcs": [
+        "UC-05",
+        "DC-01"
+      ],
+      "in_34": true,
+      "sites_hint": [
+        "MDSR|Req. 7",
+        "MDDR|Req. 7",
+        "MDSR|Req. 107",
+        "MDDR|Req. 107",
+        "MDSR|3.4",
+        "XXCS|UC-05",
+        "XXCS|DC-01"
+      ]
+    },
+    "F_PASSWORD_CHANGE_INTERVAL": {
+      "name": "비밀번호 변경 주기",
+      "value": "90",
+      "variants": [
+        "90일",
+        "90 일",
+        "3개월"
+      ],
+      "type": "time",
+      "change_candidates": [
+        "60",
+        "30"
+      ],
+      "same_value_group": "G_90DAY",
+      "depends_on": [],
+      "security": true,
+      "stronger_when": "lower",
+      "xxcs": [
+        "IA-04",
+        "IA-05"
+      ],
+      "in_34": true,
+      "sites_hint": [
+        "MDSR|Req. 108",
+        "MDDR|Req. 108",
+        "MDSR|3.4",
+        "XXCS|IA-04",
+        "XXCS|IA-05"
+      ]
+    },
+    "F_RELAXATION_SESSION_DURATION": {
+      "name": "이완 훈련 세션 지속 시간",
+      "value": "10",
+      "variants": [
+        "10분",
+        "10 분",
+        "십 분"
+      ],
+      "type": "time",
+      "change_candidates": [
+        "15",
+        "20"
+      ],
+      "same_value_group": "",
+      "depends_on": [],
+      "security": false,
+      "stronger_when": "none",
+      "xxcs": [],
+      "in_34": false,
+      "sites_hint": [
+        "MDSR|Req. 15",
+        "MDDR|Req. 15"
+      ]
+    },
+    "F_SLEEP_EFFICIENCY_REPORT_INTERVAL": {
+      "name": "수면 효율 리포트 생성 주기",
+      "value": "7",
+      "variants": [
+        "7일",
+        "7 일",
+        "1주일"
+      ],
+      "type": "time",
+      "change_candidates": [
+        "14",
+        "30"
+      ],
+      "same_value_group": "G_7DAY",
+      "depends_on": [],
+      "security": false,
+      "stronger_when": "none",
+      "xxcs": [],
+      "in_34": false,
+      "sites_hint": [
+        "MDSR|Req. 16",
+        "MDDR|Req. 16"
+      ]
+    },
+    "F_MEDICAL_MESSAGE_EXPIRATION": {
+      "name": "의료진 메시지 유효 기간",
+      "value": "7",
+      "variants": [
+        "7일",
+        "7 일",
+        "1주일"
+      ],
+      "type": "time",
+      "change_candidates": [
+        "14",
+        "3"
+      ],
+      "same_value_group": "G_7DAY",
+      "depends_on": [],
+      "security": false,
+      "stronger_when": "none",
+      "xxcs": [],
+      "in_34": false,
+      "sites_hint": [
+        "MDSR|Req. 17",
+        "MDDR|Req. 17"
+      ]
+    },
+    "F_PRESCRIPTION_CHANGE_LOG_RETENTION": {
+      "name": "처방 변경 이력 보관 기간",
+      "value": "365",
+      "variants": [
+        "365일",
+        "365 일",
+        "1년"
+      ],
+      "type": "time",
+      "change_candidates": [
+        "730",
+        "180"
+      ],
+      "same_value_group": "G_365DAY",
+      "depends_on": [],
+      "security": true,
+      "stronger_when": "higher",
+      "xxcs": [
+        "UC-04",
+        "TRE-01"
+      ],
+      "in_34": true,
+      "sites_hint": [
+        "MDSR|Req. 18",
+        "MDDR|Req. 18",
+        "MDSR|3.4",
+        "XXCS|UC-04",
+        "XXCS|TRE-01"
+      ]
+    },
+    "F_DATA_PRESERVATION_DURATION": {
+      "name": "데이터 보존 기간",
+      "value": "730",
+      "variants": [
+        "730일",
+        "730 일",
+        "2년"
+      ],
+      "type": "time",
+      "change_candidates": [
+        "1095",
+        "365"
+      ],
+      "same_value_group": "",
+      "depends_on": [],
+      "security": false,
+      "stronger_when": "none",
+      "xxcs": [],
+      "in_34": false,
+      "sites_hint": [
+        "MDSR|Req. 107",
+        "MDDR|Req. 107"
+      ]
+    },
+    "F_MEDICAL_STAFF_ACCESS_LOG_RETENTION": {
+      "name": "의료진 접속 기록 보관 기간",
+      "value": "180",
+      "variants": [
+        "180일",
+        "180 일",
+        "6개월"
+      ],
+      "type": "time",
+      "change_candidates": [
+        "365",
+        "90"
+      ],
+      "same_value_group": "G_180DAY",
+      "depends_on": [],
+      "security": true,
+      "stronger_when": "higher",
+      "xxcs": [
+        "UC-04",
+        "TRE-01"
+      ],
+      "in_34": true,
+      "sites_hint": [
+        "MDSR|Req. 6",
+        "MDDR|Req. 6",
+        "MDSR|Req. 104",
+        "MDDR|Req. 104",
+        "MDSR|3.4",
+        "XXCS|UC-04",
+        "XXCS|TRE-01"
+      ]
+    },
+    "F_MEDICAL_STAFF_ROLE_ASSIGNMENT": {
+      "name": "의료진 계정 권한 종류",
+      "value": "4",
+      "variants": [
+        "4가지",
+        "4 가지",
+        "네 가지"
+      ],
+      "type": "count",
+      "change_candidates": [
+        "2",
+        "5"
+      ],
+      "same_value_group": "",
+      "depends_on": [],
+      "security": false,
+      "stronger_when": "none",
+      "xxcs": [
+        "UC-01"
+      ],
+      "in_34": false,
+      "sites_hint": [
+        "MDSR|Req. 108",
+        "MDDR|Req. 108",
+        "XXCS|UC-01"
+      ]
+    },
+    "F_MEDICAL_STAFF_ACCESS_LOG_AUDIT_INTERVAL": {
+      "name": "의료진 접속 기록 감사 주기",
+      "value": "45",
+      "variants": [
+        "45일",
+        "45 일",
+        "1개월 반"
+      ],
+      "type": "time",
+      "change_candidates": [
+        "30",
+        "60"
+      ],
+      "same_value_group": "",
+      "depends_on": [],
+      "security": true,
+      "stronger_when": "lower",
+      "xxcs": [
+        "UC-06"
+      ],
+      "in_34": false,
+      "sites_hint": [
+        "MDSR|Req. 6",
+        "MDDR|Req. 6",
+        "MDSR|Req. 104",
+        "MDDR|Req. 104",
+        "XXCS|UC-06"
+      ]
+    }
+  },
+  "reqs": {
+    "Req. 1": {
+      "title": "사용자 로그인",
+      "security": true,
+      "uses": [
+        "F_LOGIN_FAILURE_LIMIT",
+        "F_PASSWORD_MIN_LENGTH",
+        "F_PASSWORD_COMPLEXITY"
+      ]
+    },
+    "Req. 2": {
+      "title": "계정 잠금",
+      "security": true,
+      "uses": [
+        "F_LOGIN_FAILURE_LIMIT",
+        "F_ACCOUNT_LOCK_DURATION",
+        "F_INACTIVE_ACCOUNT_LOCK_DURATION"
+      ]
+    },
+    "Req. 3": {
+      "title": "세션 관리",
+      "security": true,
+      "uses": [
+        "F_SESSION_TIMEOUT",
+        "F_MEDICAL_STAFF_SESSION_TIMEOUT",
+        "F_UNLOCK_NOTIFICATION_TIME"
+      ]
+    },
+    "Req. 4": {
+      "title": "전송 암호화",
+      "security": true,
+      "uses": [
+        "F_TRANSPORT_ENCRYPTION"
+      ]
+    },
+    "Req. 5": {
+      "title": "데이터 저장 암호화",
+      "security": true,
+      "uses": [
+        "F_STORAGE_ENCRYPTION"
+      ]
+    },
+    "Req. 6": {
+      "title": "감사로그 관리",
+      "security": true,
+      "uses": [
+        "F_AUDIT_LOG_RETENTION",
+        "F_MEDICAL_STAFF_ACCESS_LOG_RETENTION",
+        "F_MEDICAL_STAFF_ACCESS_LOG_AUDIT_INTERVAL"
+      ]
+    },
+    "Req. 7": {
+      "title": "데이터 백업",
+      "security": true,
+      "uses": [
+        "F_BACKUP_INTERVAL",
+        "F_PII_DELETION_DEADLINE"
+      ]
+    },
+    "Req. 8": {
+      "title": "수면일기 기록",
+      "security": false,
+      "uses": [
+        "F_SLEEP_DIARY_DEADLINE",
+        "F_DEFAULT_SLEEP_LIMIT",
+        "F_DEFAULT_WAKE_TIME"
+      ]
+    },
+    "Req. 9": {
+      "title": "알림 설정",
+      "security": false,
+      "uses": [
+        "F_NOTIFICATION_TIME",
+        "F_DEFAULT_CBT_SESSION_REMINDER"
+      ]
+    },
+    "Req. 10": {
+      "title": "수면 제한 요법 기본 시간",
+      "security": false,
+      "uses": [
+        "F_DEFAULT_SLEEP_LIMIT",
+        "F_DEFAULT_WAKE_TIME"
+      ]
+    },
+    "Req. 11": {
+      "title": "자극 조절 교육",
+      "security": false,
+      "uses": [
+        "F_DEFAULT_STIMULUS_CONTROL_DURATION"
+      ]
+    },
+    "Req. 12": {
+      "title": "수면 위생 교육",
+      "security": false,
+      "uses": [
+        "F_DEFAULT_SLEEP_HYGIENE_DURATION",
+        "F_SLEEP_HYGIENE_CONTENT_COUNT"
+      ]
+    },
+    "Req. 13": {
+      "title": "CBT 회기 기본 설정",
+      "security": false,
+      "uses": [
+        "F_DEFAULT_CBT_SESSION_DURATION",
+        "F_DEFAULT_CBT_SESSION_INTERVAL"
+      ]
+    },
+    "Req. 14": {
+      "title": "CBT 알림 설정",
+      "security": false,
+      "uses": [
+        "F_DEFAULT_CBT_SESSION_REMINDER",
+        "F_DEFAULT_CBT_SESSION_REMINDER_INTERVAL",
+        "F_DEFAULT_CBT_SESSION_REMINDER_SOUND"
+      ]
+    },
+    "Req. 15": {
+      "title": "이완 훈련",
+      "security": false,
+      "uses": [
+        "F_RELAXATION_SESSION_DURATION",
+        "F_DEFAULT_CBT_SESSION_REMINDER_COUNT"
+      ]
+    },
+    "Req. 16": {
+      "title": "수면 효율 리포트",
+      "security": false,
+      "uses": [
+        "F_SLEEP_EFFICIENCY_REPORT_INTERVAL"
+      ]
+    },
+    "Req. 17": {
+      "title": "의료진 메시지",
+      "security": false,
+      "uses": [
+        "F_MEDICAL_MESSAGE_EXPIRATION"
+      ]
+    },
+    "Req. 18": {
+      "title": "처방 변경 이력",
+      "security": true,
+      "uses": [
+        "F_PRESCRIPTION_CHANGE_LOG_RETENTION"
+      ]
+    },
+    "Req. 100": {
+      "title": "서버 데이터 동기화",
+      "security": false,
+      "uses": [
+        "F_SYNC_INTERVAL"
+      ]
+    },
+    "Req. 101": {
+      "title": "의료진 대시보드 조회",
+      "security": false,
+      "uses": [
+        "F_SYNC_INTERVAL"
+      ]
+    },
+    "Req. 102": {
+      "title": "전송 암호화",
+      "security": true,
+      "uses": [
+        "F_TRANSPORT_ENCRYPTION"
+      ]
+    },
+    "Req. 103": {
+      "title": "저장 암호화",
+      "security": true,
+      "uses": [
+        "F_STORAGE_ENCRYPTION"
+      ]
+    },
+    "Req. 104": {
+      "title": "감사로그 보관",
+      "security": true,
+      "uses": [
+        "F_AUDIT_LOG_RETENTION",
+        "F_MEDICAL_STAFF_ACCESS_LOG_RETENTION",
+        "F_MEDICAL_STAFF_ACCESS_LOG_AUDIT_INTERVAL"
+      ]
+    },
+    "Req. 105": {
+      "title": "데이터 백업",
+      "security": true,
+      "uses": [
+        "F_BACKUP_INTERVAL"
+      ]
+    },
+    "Req. 106": {
+      "title": "총 치료 회기 수",
+      "security": false,
+      "uses": [
+        "F_TREATMENT_SESSIONS"
+      ]
+    },
+    "Req. 107": {
+      "title": "데이터 보존·파기",
+      "security": true,
+      "uses": [
+        "F_DATA_PRESERVATION_DURATION",
+        "F_PII_DELETION_DEADLINE"
+      ]
+    },
+    "Req. 108": {
+      "title": "의료진 계정·권한 관리",
+      "security": true,
+      "uses": [
+        "F_MEDICAL_STAFF_ROLE_ASSIGNMENT",
+        "F_PASSWORD_CHANGE_INTERVAL"
+      ]
+    }
+  },
+  "cyber": {
+    "password_auth": true,
+    "stores_pii": false,
+    "session_termination": true,
+    "samd": true,
+    "mobile_code": false,
+    "e_signature": false,
+    "remote_update": false
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "case_id": "T1_67",
+  "items": [
+    {
+      "site": "[MDSR | 3.4 일반적 제한 | 본문#p1]",
+      "doc": "MDSR",
+      "item": "3.4 일반적 제한",
+      "cell": "본문#p1",
+      "path": "same_value",
+      "fact": "F_ACCOUNT_LOCK_DURATION",
+      "reason": "같은 값(십오 분)이지만 다른 사실"
+    },
+    {
+      "site": "[MDSR | Req. 2 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 2",
+      "cell": "설명",
+      "path": "same_value",
+      "fact": "F_ACCOUNT_LOCK_DURATION",
+      "reason": "같은 값(15분)이지만 다른 사실"
+    },
+    {
+      "site": "[MDSR | Req. 2 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 2",
+      "cell": "기준#p1",
+      "path": "same_value",
+      "fact": "F_ACCOUNT_LOCK_DURATION",
+      "reason": "같은 값(15 분)이지만 다른 사실"
+    },
+    {
+      "site": "[MDSR | 3.4 일반적 제한 | 본문#p2]",
+      "doc": "MDSR",
+      "item": "3.4 일반적 제한",
+      "cell": "본문#p2",
+      "path": "same_value",
+      "fact": "F_SESSION_TIMEOUT",
+      "reason": "같은 값(십오 분)이지만 다른 사실"
+    },
+    {
+      "site": "[MDSR | Req. 3 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 3",
+      "cell": "설명",
+      "path": "same_value",
+      "fact": "F_SESSION_TIMEOUT",
+      "reason": "같은 값(15분)이지만 다른 사실"
+    },
+    {
+      "site": "[MDSR | Req. 3 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 3",
+      "cell": "기준#p1",
+      "path": "same_value",
+      "fact": "F_SESSION_TIMEOUT",
+      "reason": "같은 값(15 분)이지만 다른 사실"
+    },
+    {
+      "site": "[MDSR | Req. 3 | 기준#p2]",
+      "doc": "MDSR",
+      "item": "Req. 3",
+      "cell": "기준#p2",
+      "path": "same_value",
+      "fact": "F_UNLOCK_NOTIFICATION_TIME",
+      "reason": "같은 값(15 분)이지만 다른 사실"
+    }
+  ]
+}

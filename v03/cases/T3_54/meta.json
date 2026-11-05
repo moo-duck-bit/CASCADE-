@@ -1,0 +1,27 @@
+{
+  "case_id": "T3_54",
+  "case_type": "T3",
+  "subtype": "add",
+  "n_docs": 3,
+  "docs": [
+    "MDSR",
+    "MDDR",
+    "XXCS"
+  ],
+  "paths": {
+    "origin": 6,
+    "same_id": 4,
+    "trace": 2
+  },
+  "trap_paths": {
+    "trace": 4
+  },
+  "n_impact": 12,
+  "n_traps": 4,
+  "n_neutral": 0,
+  "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '화면 사용 기록'을(를) 신규 추가한다. 내용: 앱은 잠들기 전 화면 사용 시간을 수집하여 보여 줄 수 있어야 하며, 수집 전에 사용자가 사용 기록 접근 권한을 허용하도록 하여야 한다.",
+  "request_nl": "앱에 새 기능을 넣어 주세요. 잠들기 전 화면 사용 시간을 수집해 보여 주며 수집 전에 사용자가 접근 권한을 허용하게 하는 기능이 필요합니다.",
+  "sheet_type": "T3-추가",
+  "sheet_paths": "origin, same_id, trace",
+  "seed": 20261102
+}

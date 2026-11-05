@@ -1,0 +1,12 @@
+{
+  "시험방법": [
+    "사용자가 {{F_PASSWORD_MIN_LENGTH}} 이상의 길이를 가지며, {{F_PASSWORD_COMPLEXITY}}를 만족하는 비밀번호를 설정할 수 있도록 강제하는 기능을 확인한다.",
+    "비밀번호 변경 시 {{F_PASSWORD_CHANGE_INTERVAL}} 이내로 동일한 비밀번호를 재사용하지 못하도록 설정된 정책이 적용되는지 확인한다."
+  ],
+  "확인결과": [
+    "사용자가 {{F_PASSWORD_MIN_LENGTH}} 이상의 길이를 가지며, {{F_PASSWORD_COMPLEXITY}}를 만족하는 비밀번호를 입력하지 않으면 등록이 거부되는 것을 확인함.",
+    "비밀번호 변경 시 {{F_PASSWORD_CHANGE_INTERVAL}} 이내로 이전 비밀번호를 재사용할 수 없도록 제한된 기능이 정상 동작함을 확인함.",
+    "의료진 계정의 비밀번호 정책도 일반 사용자와 동일한 {{F_PASSWORD_COMPLEXITY}} 및 {{F_PASSWORD_MIN_LENGTH}} 기준이 적용됨을 확인함."
+  ],
+  "비고": ""
+}

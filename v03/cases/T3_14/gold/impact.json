@@ -1,0 +1,134 @@
+{
+  "case_id": "T3_14",
+  "case_type": "T3",
+  "subtype": "delete",
+  "change": {
+    "deleted_req": "Req. 100",
+    "title": "서버 데이터 동기화"
+  },
+  "items": [
+    {
+      "site": "[MDSR | Req. 100 | 제목]",
+      "doc": "MDSR",
+      "item": "Req. 100",
+      "cell": "제목",
+      "path": "origin",
+      "op": "modify",
+      "new_value": "삭제"
+    },
+    {
+      "site": "[MDSR | Req. 100 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 100",
+      "cell": "설명",
+      "path": "origin",
+      "op": "modify",
+      "new_value": "삭제"
+    },
+    {
+      "site": "[MDSR | Req. 100 | 목적]",
+      "doc": "MDSR",
+      "item": "Req. 100",
+      "cell": "목적",
+      "path": "origin",
+      "op": "modify",
+      "new_value": "삭제"
+    },
+    {
+      "site": "[MDSR | Req. 100 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 100",
+      "cell": "기준#p1",
+      "path": "origin",
+      "op": "modify",
+      "new_value": "삭제"
+    },
+    {
+      "site": "[MDSR | Req. 100 | 기준#p2]",
+      "doc": "MDSR",
+      "item": "Req. 100",
+      "cell": "기준#p2",
+      "path": "origin",
+      "op": "modify",
+      "new_value": "삭제"
+    },
+    {
+      "site": "[MDDR | Req. 100 | 설계#p1]",
+      "doc": "MDDR",
+      "item": "Req. 100",
+      "cell": "설계#p1",
+      "path": "same_id",
+      "op": "modify",
+      "new_value": "삭제"
+    },
+    {
+      "site": "[MDDR | Req. 100 | 설계#p2]",
+      "doc": "MDDR",
+      "item": "Req. 100",
+      "cell": "설계#p2",
+      "path": "same_id",
+      "op": "modify",
+      "new_value": "삭제"
+    },
+    {
+      "site": "[MDDR | Req. 100 | 설계#p3]",
+      "doc": "MDDR",
+      "item": "Req. 100",
+      "cell": "설계#p3",
+      "path": "same_id",
+      "op": "modify",
+      "new_value": "삭제"
+    },
+    {
+      "site": "[MDSR | IA-02 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "IA-02",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "trace",
+      "op": "modify",
+      "new_value": "Req. 2, Req. 9, Req. 108",
+      "note": "연결 Req 칸에서 Req. 100 제거"
+    },
+    {
+      "site": "[MDSR | RA-01 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "RA-01",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "trace",
+      "op": "modify",
+      "new_value": "Req. 12",
+      "note": "연결 Req 칸에서 Req. 100 제거"
+    },
+    {
+      "site": "[MDSR | RA-02 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "RA-02",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "trace",
+      "op": "modify",
+      "new_value": "Req. 7, Req. 13, Req. 102",
+      "note": "연결 Req 칸에서 Req. 100 제거"
+    },
+    {
+      "site": "[MDSR | SI-01 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "SI-01",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "trace",
+      "op": "modify",
+      "new_value": "Req. 1, Req. 3, Req. 4, Req. 5, Req. 7, Req. 10, Req. 108",
+      "note": "연결 Req 칸에서 Req. 100 제거"
+    },
+    {
+      "site": "[MDSR | UC-03 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "UC-03",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "trace",
+      "op": "modify",
+      "new_value": "Req. 3, Req. 101, Req. 102",
+      "note": "연결 Req 칸에서 Req. 100 제거"
+    }
+  ],
+  "neutral": []
+}

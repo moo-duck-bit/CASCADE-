@@ -1,0 +1,92 @@
+[
+  {
+    "sec": "UC-04",
+    "fact": "F_MEDICAL_STAFF_ACCESS_LOG_AUDIT_INTERVAL",
+    "reason": "UC-04에 사실 6개, 4개만 남김"
+  },
+  {
+    "sec": "UC-04",
+    "fact": "F_DATA_PRESERVATION_DURATION",
+    "reason": "UC-04에 사실 6개, 4개만 남김"
+  },
+  {
+    "sec": "UC-06",
+    "fact": "F_SLEEP_DIARY_DEADLINE",
+    "reason": "UC-06에 사실 19개, 4개만 남김"
+  },
+  {
+    "sec": "UC-06",
+    "fact": "F_NOTIFICATION_TIME",
+    "reason": "UC-06에 사실 19개, 4개만 남김"
+  },
+  {
+    "sec": "UC-06",
+    "fact": "F_DEFAULT_SLEEP_LIMIT",
+    "reason": "UC-06에 사실 19개, 4개만 남김"
+  },
+  {
+    "sec": "UC-06",
+    "fact": "F_DEFAULT_WAKE_TIME",
+    "reason": "UC-06에 사실 19개, 4개만 남김"
+  },
+  {
+    "sec": "UC-06",
+    "fact": "F_DEFAULT_STIMULUS_CONTROL_DURATION",
+    "reason": "UC-06에 사실 19개, 4개만 남김"
+  },
+  {
+    "sec": "UC-06",
+    "fact": "F_DEFAULT_SLEEP_HYGIENE_DURATION",
+    "reason": "UC-06에 사실 19개, 4개만 남김"
+  },
+  {
+    "sec": "UC-06",
+    "fact": "F_DEFAULT_CBT_SESSION_DURATION",
+    "reason": "UC-06에 사실 19개, 4개만 남김"
+  },
+  {
+    "sec": "UC-06",
+    "fact": "F_DEFAULT_CBT_SESSION_INTERVAL",
+    "reason": "UC-06에 사실 19개, 4개만 남김"
+  },
+  {
+    "sec": "UC-06",
+    "fact": "F_DEFAULT_CBT_SESSION_REMINDER",
+    "reason": "UC-06에 사실 19개, 4개만 남김"
+  },
+  {
+    "sec": "UC-06",
+    "fact": "F_DEFAULT_CBT_SESSION_REMINDER_INTERVAL",
+    "reason": "UC-06에 사실 19개, 4개만 남김"
+  },
+  {
+    "sec": "UC-06",
+    "fact": "F_DEFAULT_CBT_SESSION_REMINDER_COUNT",
+    "reason": "UC-06에 사실 19개, 4개만 남김"
+  },
+  {
+    "sec": "UC-06",
+    "fact": "F_DEFAULT_CBT_SESSION_REMINDER_SOUND",
+    "reason": "UC-06에 사실 19개, 4개만 남김"
+  },
+  {
+    "sec": "UC-06",
+    "fact": "F_RELAXATION_SESSION_DURATION",
+    "reason": "UC-06에 사실 19개, 4개만 남김"
+  },
+  {
+    "sec": "UC-06",
+    "fact": "F_SLEEP_EFFICIENCY_REPORT_INTERVAL",
+    "reason": "UC-06에 사실 19개, 4개만 남김"
+  },
+  {
+    "sec": "UC-06",
+    "fact": "F_MEDICAL_MESSAGE_EXPIRATION",
+    "reason": "UC-06에 사실 19개, 4개만 남김"
+  },
+  {
+    "sec": "SI-05",
+    "fact": "F_SLEEP_HYGIENE_CONTENT_COUNT",
+    "reason": "SI-05에 사실 5개, 4개만 남김"
+  }
+]

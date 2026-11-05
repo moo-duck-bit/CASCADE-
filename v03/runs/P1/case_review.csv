@@ -1,0 +1,2416 @@
+﻿case_id,유형,세부,n_docs,문서,요청(구조화),요청(자연어),정답 위치(경로),함정(경로) - 이유,시트 메모,검수 메모
+T1_01,T1,value_change,3,"MDSR,MDDR,XXCS",Req. 2 '계정 잠금'의 계정 잠금 시간을 15분에서 20분으로 변경한다.,계정 잠금 기능에서 계정 잠금 시간을 20분으로 바꿔 주세요.,"[MDSR | 3.4 일반적 제한 | 본문#p1] (same_value)
+[MDSR | Req. 2 | 설명] (origin)
+[MDSR | Req. 2 | 기준#p1] (origin)
+[MDDR | Req. 2 | 설계#p1] (same_id)
+[MDDR | Req. 2 | 설계#p2] (same_id)
+[XXCS | IA-02 | 시험방법#p1] (trace)
+[XXCS | IA-02 | 확인결과#p1] (trace)
+[XXCS | IA-06 | 확인결과#p2] (trace)
+[MDSR | Req. 3 | 설명] (same_value)
+[MDSR | Req. 3 | 기준#p2] (same_value)
+[MDDR | Req. 3 | 설계#p3] (same_value)
+[XXCS | IA-06 | 시험방법#p2] (trace)
+[XXCS | IA-06 | 확인결과#p3] (trace)
+[XXCS | UC-06 | 시험방법#p2] (same_value)
+[XXCS | UC-06 | 확인결과#p2] (same_value)","[MDSR | 3.4 일반적 제한 | 본문#p2] (same_value) - 같은 값(십오 분)이지만 다른 사실
+[MDSR | Req. 3 | 기준#p1] (same_value) - 같은 값(15 분)이지만 다른 사실
+[MDDR | Req. 3 | 설계#p1] (same_value) - 같은 값(15분)이지만 다른 사실
+[XXCS | UC-03 | 시험방법#p1] (same_value) - 같은 값(15 분)이지만 다른 사실
+[XXCS | UC-03 | 확인결과#p1] (same_value) - 같은 값(십오 분)이지만 다른 사실
+[XXCS | UC-06 | 시험방법#p1] (same_value) - 같은 값(15분)이지만 다른 사실
+[XXCS | UC-06 | 확인결과#p1] (same_value) - 같은 값(15 분)이지만 다른 사실
+[MDSR | Req. 14 | 기준#p2] (same_value) - 같은 값(15분)이지만 다른 사실
+[MDDR | Req. 14 | 설계#p2] (same_value) - 같은 값(15 분)이지만 다른 사실
+[MDDR | Req. 3 | 설계#p2] (same_value) - 같은 값(15분)이지만 다른 사실
+[XXCS | UC-03 | 시험방법#p2] (same_value) - 같은 값(15 분)이지만 다른 사실
+[XXCS | UC-03 | 확인결과#p2] (same_value) - 같은 값(십오 분)이지만 다른 사실
+[XXCS | UC-06 | 시험방법#p3] (same_value) - 같은 값(15분)이지만 다른 사실
+[XXCS | UC-06 | 확인결과#p3] (same_value) - 같은 값(15 분)이지만 다른 사실",trace 2. same_value 6. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_02,T1,value_change,3,"MDSR,MDDR,XXCS",Req. 100 '서버 데이터 동기화'의 동기화 주기를 60분에서 120분으로 변경한다.,서버 데이터 동기화 기능에서 동기화 주기를 120분으로 바꿔 주세요.,"[MDSR | Req. 100 | 설명] (origin)
+[MDSR | Req. 100 | 기준#p1] (origin)
+[MDSR | Req. 101 | 설명] (same_value)
+[MDSR | Req. 101 | 기준#p1] (same_value)
+[MDSR | Req. 101 | 기준#p2] (same_value)
+[MDDR | Req. 100 | 설계#p1] (same_id)
+[MDDR | Req. 100 | 설계#p3] (same_id)
+[MDDR | Req. 101 | 설계#p1] (same_value)
+[MDDR | Req. 101 | 설계#p2] (same_value)
+[MDDR | Req. 101 | 설계#p3] (same_value)
+[XXCS | SI-01 | 시험방법#p2] (trace)
+[XXCS | SI-01 | 확인결과#p3] (trace)
+[XXCS | RA-02 | 시험방법#p2] (trace)
+[XXCS | RA-02 | 확인결과#p2] (trace)","[XXCS | IA-02 | 확인결과#p1] (trace) - Req. 100와 연결됐지만 relevant=false
+[XXCS | IA-02 | 확인결과#p2] (trace) - Req. 100와 연결됐지만 relevant=false
+[XXCS | IA-02 | 확인결과#p3] (trace) - Req. 100와 연결됐지만 relevant=false
+[XXCS | UC-03 | 확인결과#p1] (trace) - Req. 100와 연결됐지만 relevant=false
+[XXCS | UC-03 | 확인결과#p2] (trace) - Req. 100와 연결됐지만 relevant=false
+[XXCS | UC-03 | 확인결과#p3] (trace) - Req. 100와 연결됐지만 relevant=false",trace 2. same_value 6. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_03,T1,value_change,3,"MDSR,MDDR,XXCS",Req. 7 '데이터 백업'의 백업 주기를 24시간에서 12시간으로 변경한다.,데이터 백업 기능에서 백업 주기를 12시간으로 바꿔 주세요.,"[MDSR | 3.4 일반적 제한 | 본문#p7] (same_value)
+[MDSR | Req. 7 | 설명] (origin)
+[MDSR | Req. 7 | 기준#p1] (origin)
+[MDSR | Req. 105 | 설명] (same_value)
+[MDSR | Req. 105 | 기준#p1] (same_value)
+[MDDR | Req. 7 | 설계#p1] (same_id)
+[MDDR | Req. 105 | 설계#p1] (same_value)
+[MDDR | Req. 105 | 설계#p2] (same_value)
+[XXCS | SI-01 | 시험방법#p3] (trace)
+[XXCS | SI-01 | 확인결과#p3] (trace)
+[XXCS | RA-02 | 시험방법#p1] (trace)
+[XXCS | RA-02 | 확인결과#p1] (trace)","[MDSR | Req. 8 | 설명] (same_value) - 같은 값(24시간)이지만 다른 사실
+[MDSR | Req. 8 | 기준#p1] (same_value) - 같은 값(24 시간)이지만 다른 사실
+[MDDR | Req. 8 | 설계#p1] (same_value) - 같은 값(하루)이지만 다른 사실
+[XXCS | SI-05 | 확인결과#p2] (same_value) - 같은 값(24시간)이지만 다른 사실",trace 2. same_value 5. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_04,T1,value_change,3,"MDSR,MDDR,XXCS",Req. 2 '계정 잠금'의 로그인 실패 허용 횟수를 5회에서 4회로 변경한다.,계정 잠금 기능에서 로그인 실패 허용 횟수를 4회로 바꿔 주세요.,"[MDSR | 3.4 일반적 제한 | 본문#p1] (same_value)
+[MDSR | Req. 1 | 설명] (same_value)
+[MDSR | Req. 1 | 기준#p2] (same_value)
+[MDSR | Req. 2 | 설명] (origin)
+[MDSR | Req. 2 | 기준#p1] (origin)
+[MDDR | Req. 1 | 설계#p2] (same_value)
+[MDDR | Req. 2 | 설계#p1] (same_id)
+[MDDR | Req. 2 | 설계#p2] (same_id)
+[XXCS | IA-06 | 시험방법#p1] (trace)
+[XXCS | IA-06 | 확인결과#p1] (trace)
+[XXCS | IA-07 | 시험방법#p1] (trace)
+[XXCS | IA-07 | 시험방법#p2] (trace)
+[XXCS | IA-07 | 확인결과#p1] (trace)",,trace 2. same_value 4. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_05,T1,value_change,3,"MDSR,MDDR,XXCS",Req. 3 '세션 관리'의 세션 종료 시간을 15분에서 5분으로 변경한다.,세션 관리 기능에서 세션 종료 시간을 5분으로 바꿔 주세요.,"[MDSR | 3.4 일반적 제한 | 본문#p2] (same_value)
+[MDSR | Req. 3 | 설명] (origin)
+[MDSR | Req. 3 | 기준#p1] (origin)
+[MDDR | Req. 3 | 설계#p1] (same_id)
+[XXCS | UC-03 | 시험방법#p1] (trace)
+[XXCS | UC-03 | 확인결과#p1] (trace)
+[XXCS | UC-06 | 시험방법#p1] (trace)
+[XXCS | UC-06 | 확인결과#p1] (trace)","[MDSR | 3.4 일반적 제한 | 본문#p1] (same_value) - 같은 값(십오 분)이지만 다른 사실
+[MDSR | Req. 2 | 설명] (same_value) - 같은 값(15분)이지만 다른 사실
+[MDSR | Req. 2 | 기준#p1] (same_value) - 같은 값(15 분)이지만 다른 사실
+[MDDR | Req. 2 | 설계#p1] (same_value) - 같은 값(15분)이지만 다른 사실
+[MDDR | Req. 2 | 설계#p2] (same_value) - 같은 값(15 분)이지만 다른 사실
+[XXCS | IA-02 | 시험방법#p1] (same_value) - 같은 값(십오 분)이지만 다른 사실
+[XXCS | IA-02 | 확인결과#p1] (same_value) - 같은 값(15분)이지만 다른 사실
+[XXCS | IA-06 | 확인결과#p2] (same_value) - 같은 값(15 분)이지만 다른 사실
+[MDSR | Req. 3 | 기준#p2] (same_value) - 같은 값(15 분)이지만 다른 사실
+[MDDR | Req. 3 | 설계#p3] (same_value) - 같은 값(15분)이지만 다른 사실
+[XXCS | IA-06 | 시험방법#p2] (same_value) - 같은 값(15 분)이지만 다른 사실
+[XXCS | IA-06 | 확인결과#p3] (same_value) - 같은 값(십오 분)이지만 다른 사실
+[XXCS | UC-06 | 시험방법#p2] (same_value) - 같은 값(15분)이지만 다른 사실
+[XXCS | UC-06 | 확인결과#p2] (same_value) - 같은 값(15 분)이지만 다른 사실
+[MDSR | Req. 14 | 기준#p2] (same_value) - 같은 값(15분)이지만 다른 사실
+[MDDR | Req. 14 | 설계#p2] (same_value) - 같은 값(15 분)이지만 다른 사실
+[MDDR | Req. 3 | 설계#p2] (same_value) - 같은 값(15분)이지만 다른 사실
+[XXCS | UC-03 | 시험방법#p2] (same_value) - 같은 값(15 분)이지만 다른 사실
+[XXCS | UC-03 | 확인결과#p2] (same_value) - 같은 값(십오 분)이지만 다른 사실
+[XXCS | UC-06 | 시험방법#p3] (same_value) - 같은 값(15분)이지만 다른 사실
+[XXCS | UC-06 | 확인결과#p3] (same_value) - 같은 값(15 분)이지만 다른 사실
+[XXCS | SI-01 | 확인결과#p1] (trace) - Req. 3와 연결됐지만 relevant=false
+[XXCS | SI-01 | 확인결과#p2] (trace) - Req. 3와 연결됐지만 relevant=false
+[XXCS | SI-01 | 확인결과#p3] (trace) - Req. 3와 연결됐지만 relevant=false",trace 2. same_value 1. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_06,T1,value_change,3,"MDSR,MDDR,XXCS",Req. 1 '사용자 로그인'의 비밀번호 최소 길이를 8자에서 10자로 변경한다.,사용자 로그인 기능에서 비밀번호 최소 길이를 10자로 바꿔 주세요.,"[MDSR | 3.4 일반적 제한 | 본문#p3] (same_value)
+[MDSR | Req. 1 | 설명] (origin)
+[MDSR | Req. 1 | 기준#p1] (origin)
+[MDDR | Req. 1 | 설계#p1] (same_id)
+[XXCS | IA-05 | 시험방법#p1] (trace)
+[XXCS | IA-05 | 확인결과#p1] (trace)
+[XXCS | IA-05 | 확인결과#p3] (trace)
+[XXCS | SI-05 | 확인결과#p1] (trace)","[XXCS | SI-01 | 확인결과#p1] (trace) - Req. 1와 연결됐지만 relevant=false
+[XXCS | SI-01 | 확인결과#p2] (trace) - Req. 1와 연결됐지만 relevant=false
+[XXCS | SI-01 | 확인결과#p3] (trace) - Req. 1와 연결됐지만 relevant=false",trace 2. same_value 1. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_07,T1,value_change,3,"MDSR,MDDR,XXCS",Req. 2 '계정 잠금'의 계정 잠금 시간을 15분에서 45분으로 변경한다.,계정 잠금 기능에서 계정 잠금 시간을 45분으로 바꿔 주세요.,"[MDSR | 3.4 일반적 제한 | 본문#p1] (same_value)
+[MDSR | Req. 2 | 설명] (origin)
+[MDSR | Req. 2 | 기준#p1] (origin)
+[MDDR | Req. 2 | 설계#p1] (same_id)
+[MDDR | Req. 2 | 설계#p2] (same_id)
+[XXCS | IA-02 | 시험방법#p1] (trace)
+[XXCS | IA-02 | 확인결과#p1] (trace)
+[XXCS | IA-06 | 확인결과#p2] (trace)
+[MDSR | Req. 3 | 설명] (same_value)
+[MDSR | Req. 3 | 기준#p2] (same_value)
+[MDDR | Req. 3 | 설계#p3] (same_value)
+[XXCS | IA-06 | 시험방법#p2] (trace)
+[XXCS | IA-06 | 확인결과#p3] (trace)
+[XXCS | UC-06 | 시험방법#p2] (same_value)
+[XXCS | UC-06 | 확인결과#p2] (same_value)","[MDSR | 3.4 일반적 제한 | 본문#p2] (same_value) - 같은 값(십오 분)이지만 다른 사실
+[MDSR | Req. 3 | 기준#p1] (same_value) - 같은 값(15 분)이지만 다른 사실
+[MDDR | Req. 3 | 설계#p1] (same_value) - 같은 값(15분)이지만 다른 사실
+[XXCS | UC-03 | 시험방법#p1] (same_value) - 같은 값(15 분)이지만 다른 사실
+[XXCS | UC-03 | 확인결과#p1] (same_value) - 같은 값(십오 분)이지만 다른 사실
+[XXCS | UC-06 | 시험방법#p1] (same_value) - 같은 값(15분)이지만 다른 사실
+[XXCS | UC-06 | 확인결과#p1] (same_value) - 같은 값(15 분)이지만 다른 사실
+[MDSR | Req. 14 | 기준#p2] (same_value) - 같은 값(15분)이지만 다른 사실
+[MDDR | Req. 14 | 설계#p2] (same_value) - 같은 값(15 분)이지만 다른 사실
+[MDDR | Req. 3 | 설계#p2] (same_value) - 같은 값(15분)이지만 다른 사실
+[XXCS | UC-03 | 시험방법#p2] (same_value) - 같은 값(15 분)이지만 다른 사실
+[XXCS | UC-03 | 확인결과#p2] (same_value) - 같은 값(십오 분)이지만 다른 사실
+[XXCS | UC-06 | 시험방법#p3] (same_value) - 같은 값(15분)이지만 다른 사실
+[XXCS | UC-06 | 확인결과#p3] (same_value) - 같은 값(15 분)이지만 다른 사실",trace 2. same_value 6. 같은 변경을 문서 수만 달리한 행이 있음. 파생 사실 F_UNLOCK_NOTIFICATION_TIME 칸도 정답(new_value 없음). [수정] 파생 사실만 바꾸던 행 대체(원래 F_UNLOCK_NOTIFICATION_TIME 15분→20분).,
+T1_08,T1,value_change,3,"MDSR,MDDR,XXCS",Req. 3 '세션 관리'의 의료진 대시보드 세션 종료 시간을 15분에서 5분으로 변경한다.,세션 관리 기능에서 의료진 대시보드 세션 종료 시간을 5분으로 바꿔 주세요.,"[MDSR | 3.4 일반적 제한 | 본문#p2] (same_value)
+[MDSR | Req. 3 | 설명] (origin)
+[MDSR | Req. 3 | 기준#p1] (origin)
+[MDDR | Req. 3 | 설계#p2] (same_id)
+[XXCS | UC-03 | 시험방법#p2] (trace)
+[XXCS | UC-03 | 확인결과#p2] (trace)
+[XXCS | UC-06 | 시험방법#p3] (trace)
+[XXCS | UC-06 | 확인결과#p3] (trace)","[MDSR | 3.4 일반적 제한 | 본문#p1] (same_value) - 같은 값(십오 분)이지만 다른 사실
+[MDSR | Req. 2 | 설명] (same_value) - 같은 값(15분)이지만 다른 사실
+[MDSR | Req. 2 | 기준#p1] (same_value) - 같은 값(15 분)이지만 다른 사실
+[MDDR | Req. 2 | 설계#p1] (same_value) - 같은 값(15분)이지만 다른 사실
+[MDDR | Req. 2 | 설계#p2] (same_value) - 같은 값(15 분)이지만 다른 사실
+[XXCS | IA-02 | 시험방법#p1] (same_value) - 같은 값(십오 분)이지만 다른 사실
+[XXCS | IA-02 | 확인결과#p1] (same_value) - 같은 값(15분)이지만 다른 사실
+[XXCS | IA-06 | 확인결과#p2] (same_value) - 같은 값(15 분)이지만 다른 사실
+[MDDR | Req. 3 | 설계#p1] (same_value) - 같은 값(15분)이지만 다른 사실
+[XXCS | UC-03 | 시험방법#p1] (same_value) - 같은 값(15 분)이지만 다른 사실
+[XXCS | UC-03 | 확인결과#p1] (same_value) - 같은 값(십오 분)이지만 다른 사실
+[XXCS | UC-06 | 시험방법#p1] (same_value) - 같은 값(15분)이지만 다른 사실
+[XXCS | UC-06 | 확인결과#p1] (same_value) - 같은 값(15 분)이지만 다른 사실
+[MDSR | Req. 3 | 기준#p2] (same_value) - 같은 값(15 분)이지만 다른 사실
+[MDDR | Req. 3 | 설계#p3] (same_value) - 같은 값(15분)이지만 다른 사실
+[XXCS | IA-06 | 시험방법#p2] (same_value) - 같은 값(15 분)이지만 다른 사실
+[XXCS | IA-06 | 확인결과#p3] (same_value) - 같은 값(십오 분)이지만 다른 사실
+[XXCS | UC-06 | 시험방법#p2] (same_value) - 같은 값(15분)이지만 다른 사실
+[XXCS | UC-06 | 확인결과#p2] (same_value) - 같은 값(15 분)이지만 다른 사실
+[MDSR | Req. 14 | 기준#p2] (same_value) - 같은 값(15분)이지만 다른 사실
+[MDDR | Req. 14 | 설계#p2] (same_value) - 같은 값(15 분)이지만 다른 사실
+[XXCS | SI-01 | 확인결과#p1] (trace) - Req. 3와 연결됐지만 relevant=false
+[XXCS | SI-01 | 확인결과#p2] (trace) - Req. 3와 연결됐지만 relevant=false
+[XXCS | SI-01 | 확인결과#p3] (trace) - Req. 3와 연결됐지만 relevant=false",trace 2. same_value 1. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_09,T1,value_change,3,"MDSR,MDDR,XXCS",Req. 2 '계정 잠금'의 비활성 계정 자동 잠금 기간을 90일에서 60일로 변경한다.,계정 잠금 기능에서 비활성 계정 자동 잠금 기간을 60일로 바꿔 주세요.,"[MDSR | 3.4 일반적 제한 | 본문#p8] (same_value)
+[MDSR | Req. 2 | 설명] (origin)
+[MDSR | Req. 2 | 기준#p2] (origin)
+[MDDR | Req. 2 | 설계#p3] (same_id)
+[XXCS | IA-02 | 시험방법#p2] (trace)
+[XXCS | IA-02 | 확인결과#p2] (trace)
+[XXCS | UC-04 | 시험방법#p3] (trace)
+[XXCS | UC-04 | 확인결과#p3] (trace)","[MDSR | 3.4 일반적 제한 | 본문#p3] (same_value) - 같은 값(3개월)이지만 다른 사실
+[MDSR | Req. 108 | 설명] (same_value) - 같은 값(90일)이지만 다른 사실
+[MDSR | Req. 108 | 기준#p2] (same_value) - 같은 값(90 일)이지만 다른 사실
+[MDDR | Req. 108 | 설계#p2] (same_value) - 같은 값(90일)이지만 다른 사실
+[XXCS | IA-04 | 시험방법#p2] (same_value) - 같은 값(90 일)이지만 다른 사실
+[XXCS | IA-04 | 확인결과#p1] (same_value) - 같은 값(3개월)이지만 다른 사실
+[XXCS | IA-04 | 확인결과#p2] (same_value) - 같은 값(90일)이지만 다른 사실
+[XXCS | IA-05 | 시험방법#p2] (same_value) - 같은 값(90 일)이지만 다른 사실
+[XXCS | IA-05 | 확인결과#p2] (same_value) - 같은 값(3개월)이지만 다른 사실",trace 2. same_value 1. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_10,T1,value_change,3,"MDSR,MDDR,XXCS",Req. 108 '의료진 계정·권한 관리'의 비밀번호 변경 주기를 90일에서 60일로 변경한다.,의료진 계정·권한 관리 기능에서 비밀번호 변경 주기를 60일로 바꿔 주세요.,"[MDSR | 3.4 일반적 제한 | 본문#p3] (same_value)
+[MDSR | Req. 108 | 설명] (origin)
+[MDSR | Req. 108 | 기준#p2] (origin)
+[MDDR | Req. 108 | 설계#p2] (same_id)
+[XXCS | IA-04 | 시험방법#p2] (trace)
+[XXCS | IA-04 | 확인결과#p1] (trace)
+[XXCS | IA-04 | 확인결과#p2] (trace)
+[XXCS | IA-05 | 시험방법#p2] (trace)
+[XXCS | IA-05 | 확인결과#p2] (trace)","[MDSR | 3.4 일반적 제한 | 본문#p8] (same_value) - 같은 값(3개월)이지만 다른 사실
+[MDSR | Req. 2 | 설명] (same_value) - 같은 값(90일)이지만 다른 사실
+[MDSR | Req. 2 | 기준#p2] (same_value) - 같은 값(90 일)이지만 다른 사실
+[MDDR | Req. 2 | 설계#p3] (same_value) - 같은 값(90일)이지만 다른 사실
+[XXCS | IA-02 | 시험방법#p2] (same_value) - 같은 값(90 일)이지만 다른 사실
+[XXCS | IA-02 | 확인결과#p2] (same_value) - 같은 값(3개월)이지만 다른 사실
+[XXCS | UC-04 | 시험방법#p3] (same_value) - 같은 값(90일)이지만 다른 사실
+[XXCS | UC-04 | 확인결과#p3] (same_value) - 같은 값(90 일)이지만 다른 사실
+[XXCS | IA-07 | 확인결과#p1] (trace) - Req. 108와 연결됐지만 relevant=false
+[XXCS | IA-07 | 확인결과#p2] (trace) - Req. 108와 연결됐지만 relevant=false
+[XXCS | IA-07 | 확인결과#p3] (trace) - Req. 108와 연결됐지만 relevant=false
+[XXCS | UC-05 | 확인결과#p1] (trace) - Req. 108와 연결됐지만 relevant=false
+[XXCS | UC-05 | 확인결과#p2] (trace) - Req. 108와 연결됐지만 relevant=false
+[XXCS | UC-05 | 확인결과#p3] (trace) - Req. 108와 연결됐지만 relevant=false
+[XXCS | SI-01 | 확인결과#p1] (trace) - Req. 108와 연결됐지만 relevant=false
+[XXCS | SI-01 | 확인결과#p2] (trace) - Req. 108와 연결됐지만 relevant=false
+[XXCS | SI-01 | 확인결과#p3] (trace) - Req. 108와 연결됐지만 relevant=false",trace 2. same_value 1. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_11,T1,value_change,3,"MDSR,MDDR,XXCS",Req. 1 '사용자 로그인'의 비밀번호 최소 길이를 8자에서 12자로 변경한다.,사용자 로그인 기능에서 비밀번호 최소 길이를 12자로 바꿔 주세요.,"[MDSR | 3.4 일반적 제한 | 본문#p3] (same_value)
+[MDSR | Req. 1 | 설명] (origin)
+[MDSR | Req. 1 | 기준#p1] (origin)
+[MDDR | Req. 1 | 설계#p1] (same_id)
+[XXCS | IA-05 | 시험방법#p1] (trace)
+[XXCS | IA-05 | 확인결과#p1] (trace)
+[XXCS | IA-05 | 확인결과#p3] (trace)
+[XXCS | SI-05 | 확인결과#p1] (trace)","[XXCS | SI-01 | 확인결과#p1] (trace) - Req. 1와 연결됐지만 relevant=false
+[XXCS | SI-01 | 확인결과#p2] (trace) - Req. 1와 연결됐지만 relevant=false
+[XXCS | SI-01 | 확인결과#p3] (trace) - Req. 1와 연결됐지만 relevant=false",trace 2. same_value 1. 같은 변경을 문서 수만 달리한 행이 있음. [수정] 중복 행 대체(원래 F_ACCOUNT_LOCK_DURATION 15분→20분).,
+T1_12,T1,value_change,3,"MDSR,MDDR,XXCS",Req. 2 '계정 잠금'의 비활성 계정 자동 잠금 기간을 90일에서 30일로 변경한다.,계정 잠금 기능에서 비활성 계정 자동 잠금 기간을 30일로 바꿔 주세요.,"[MDSR | 3.4 일반적 제한 | 본문#p8] (same_value)
+[MDSR | Req. 2 | 설명] (origin)
+[MDSR | Req. 2 | 기준#p2] (origin)
+[MDDR | Req. 2 | 설계#p3] (same_id)
+[XXCS | IA-02 | 시험방법#p2] (trace)
+[XXCS | IA-02 | 확인결과#p2] (trace)
+[XXCS | UC-04 | 시험방법#p3] (trace)
+[XXCS | UC-04 | 확인결과#p3] (trace)","[MDSR | 3.4 일반적 제한 | 본문#p3] (same_value) - 같은 값(3개월)이지만 다른 사실
+[MDSR | Req. 108 | 설명] (same_value) - 같은 값(90일)이지만 다른 사실
+[MDSR | Req. 108 | 기준#p2] (same_value) - 같은 값(90 일)이지만 다른 사실
+[MDDR | Req. 108 | 설계#p2] (same_value) - 같은 값(90일)이지만 다른 사실
+[XXCS | IA-04 | 시험방법#p2] (same_value) - 같은 값(90 일)이지만 다른 사실
+[XXCS | IA-04 | 확인결과#p1] (same_value) - 같은 값(3개월)이지만 다른 사실
+[XXCS | IA-04 | 확인결과#p2] (same_value) - 같은 값(90일)이지만 다른 사실
+[XXCS | IA-05 | 시험방법#p2] (same_value) - 같은 값(90 일)이지만 다른 사실
+[XXCS | IA-05 | 확인결과#p2] (same_value) - 같은 값(3개월)이지만 다른 사실",trace 2. same_value 1. 같은 변경을 문서 수만 달리한 행이 있음. [수정] 중복 행 대체(원래 F_SYNC_INTERVAL 60분→120분).,
+T1_13,T1,value_change,3,"MDSR,MDDR,XXCS",Req. 108 '의료진 계정·권한 관리'의 비밀번호 변경 주기를 90일에서 30일로 변경한다.,의료진 계정·권한 관리 기능에서 비밀번호 변경 주기를 30일로 바꿔 주세요.,"[MDSR | 3.4 일반적 제한 | 본문#p3] (same_value)
+[MDSR | Req. 108 | 설명] (origin)
+[MDSR | Req. 108 | 기준#p2] (origin)
+[MDDR | Req. 108 | 설계#p2] (same_id)
+[XXCS | IA-04 | 시험방법#p2] (trace)
+[XXCS | IA-04 | 확인결과#p1] (trace)
+[XXCS | IA-04 | 확인결과#p2] (trace)
+[XXCS | IA-05 | 시험방법#p2] (trace)
+[XXCS | IA-05 | 확인결과#p2] (trace)","[MDSR | 3.4 일반적 제한 | 본문#p8] (same_value) - 같은 값(3개월)이지만 다른 사실
+[MDSR | Req. 2 | 설명] (same_value) - 같은 값(90일)이지만 다른 사실
+[MDSR | Req. 2 | 기준#p2] (same_value) - 같은 값(90 일)이지만 다른 사실
+[MDDR | Req. 2 | 설계#p3] (same_value) - 같은 값(90일)이지만 다른 사실
+[XXCS | IA-02 | 시험방법#p2] (same_value) - 같은 값(90 일)이지만 다른 사실
+[XXCS | IA-02 | 확인결과#p2] (same_value) - 같은 값(3개월)이지만 다른 사실
+[XXCS | UC-04 | 시험방법#p3] (same_value) - 같은 값(90일)이지만 다른 사실
+[XXCS | UC-04 | 확인결과#p3] (same_value) - 같은 값(90 일)이지만 다른 사실
+[XXCS | IA-07 | 확인결과#p1] (trace) - Req. 108와 연결됐지만 relevant=false
+[XXCS | IA-07 | 확인결과#p2] (trace) - Req. 108와 연결됐지만 relevant=false
+[XXCS | IA-07 | 확인결과#p3] (trace) - Req. 108와 연결됐지만 relevant=false
+[XXCS | UC-05 | 확인결과#p1] (trace) - Req. 108와 연결됐지만 relevant=false
+[XXCS | UC-05 | 확인결과#p2] (trace) - Req. 108와 연결됐지만 relevant=false
+[XXCS | UC-05 | 확인결과#p3] (trace) - Req. 108와 연결됐지만 relevant=false
+[XXCS | SI-01 | 확인결과#p1] (trace) - Req. 108와 연결됐지만 relevant=false
+[XXCS | SI-01 | 확인결과#p2] (trace) - Req. 108와 연결됐지만 relevant=false
+[XXCS | SI-01 | 확인결과#p3] (trace) - Req. 108와 연결됐지만 relevant=false",trace 2. same_value 1. 같은 변경을 문서 수만 달리한 행이 있음. [수정] 중복 행 대체(원래 F_BACKUP_INTERVAL 24시간→12시간).,
+T1_14,T1,value_change,3,"MDSR,MDDR,XXCS",Req. 7 '데이터 백업'의 백업 주기를 24시간에서 6시간으로 변경한다.,데이터 백업 기능에서 백업 주기를 6시간으로 바꿔 주세요.,"[MDSR | 3.4 일반적 제한 | 본문#p7] (same_value)
+[MDSR | Req. 7 | 설명] (origin)
+[MDSR | Req. 7 | 기준#p1] (origin)
+[MDSR | Req. 105 | 설명] (same_value)
+[MDSR | Req. 105 | 기준#p1] (same_value)
+[MDDR | Req. 7 | 설계#p1] (same_id)
+[MDDR | Req. 105 | 설계#p1] (same_value)
+[MDDR | Req. 105 | 설계#p2] (same_value)
+[XXCS | SI-01 | 시험방법#p3] (trace)
+[XXCS | SI-01 | 확인결과#p3] (trace)
+[XXCS | RA-02 | 시험방법#p1] (trace)
+[XXCS | RA-02 | 확인결과#p1] (trace)","[MDSR | Req. 8 | 설명] (same_value) - 같은 값(24시간)이지만 다른 사실
+[MDSR | Req. 8 | 기준#p1] (same_value) - 같은 값(24 시간)이지만 다른 사실
+[MDDR | Req. 8 | 설계#p1] (same_value) - 같은 값(하루)이지만 다른 사실
+[XXCS | SI-05 | 확인결과#p2] (same_value) - 같은 값(24시간)이지만 다른 사실",trace 2. same_value 5. 같은 변경을 문서 수만 달리한 행이 있음. [수정] 중복 행 대체(원래 F_LOGIN_FAILURE_LIMIT 5회→4회).,
+T1_15,T1,value_change,3,"MDSR,MDDR,XXCS",Req. 6 '감사로그 관리'의 감사로그 보관 기간을 180일에서 365일로 변경한다.,감사로그 관리 기능에서 감사로그 보관 기간을 365일로 바꿔 주세요.,"[MDSR | 3.4 일반적 제한 | 본문#p5] (same_value)
+[MDSR | Req. 6 | 설명] (origin)
+[MDSR | Req. 6 | 기준#p1] (origin)
+[MDSR | Req. 104 | 설명] (same_value)
+[MDDR | Req. 6 | 설계#p1] (same_id)
+[MDDR | Req. 104 | 설계#p1] (same_value)
+[XXCS | UC-04 | 시험방법#p2] (trace)
+[XXCS | UC-04 | 확인결과#p2] (trace)
+[XXCS | UC-05 | 시험방법#p1] (trace)
+[XXCS | UC-05 | 확인결과#p1] (trace)
+[XXCS | TRE-01 | 확인결과#p2] (trace)","[MDDR | Req. 6 | 설계#p2] (same_value) - 같은 값(180 일)이지만 다른 사실
+[MDDR | Req. 104 | 설계#p2] (same_value) - 같은 값(6개월)이지만 다른 사실
+[XXCS | TRE-01 | 확인결과#p3] (same_value) - 같은 값(6개월)이지만 다른 사실",trace 3. same_value 3. 같은 변경을 문서 수만 달리한 행이 있음. 새 값이 다른 사실의 현재 값과 같음(fact_list 표시). [수정] 중복 행 대체(원래 F_SESSION_TIMEOUT 15분→5분).,
+T1_16,T1,value_change,3,"MDSR,MDDR,XXCS",Req. 7 '데이터 백업'의 개인정보 파기 기한을 365일에서 180일로 변경한다.,데이터 백업 기능에서 개인정보 파기 기한을 180일로 바꿔 주세요.,"[MDSR | 3.4 일반적 제한 | 본문#p7] (same_value)
+[MDSR | Req. 7 | 설명] (origin)
+[MDSR | Req. 7 | 기준#p2] (origin)
+[MDSR | Req. 107 | 설명] (same_value)
+[MDSR | Req. 107 | 기준#p2] (same_value)
+[MDDR | Req. 7 | 설계#p2] (same_id)
+[MDDR | Req. 107 | 설계#p2] (same_value)
+[XXCS | UC-05 | 시험방법#p2] (trace)
+[XXCS | UC-05 | 확인결과#p2] (trace)
+[XXCS | DC-01 | 시험방법#p2] (trace)
+[XXCS | DC-01 | 확인결과#p2] (trace)","[MDSR | 3.4 일반적 제한 | 본문#p6] (same_value) - 같은 값(1년)이지만 다른 사실
+[MDSR | Req. 18 | 설명] (same_value) - 같은 값(365일)이지만 다른 사실
+[MDSR | Req. 18 | 기준#p1] (same_value) - 같은 값(365 일)이지만 다른 사실
+[MDDR | Req. 18 | 설계#p1] (same_value) - 같은 값(365일)이지만 다른 사실
+[XXCS | UC-04 | 시험방법#p2] (same_value) - 같은 값(365 일)이지만 다른 사실
+[XXCS | UC-04 | 확인결과#p2] (same_value) - 같은 값(1년)이지만 다른 사실
+[XXCS | TRE-01 | 확인결과#p3] (same_value) - 같은 값(365일)이지만 다른 사실",trace 2. same_value 4. 같은 변경을 문서 수만 달리한 행이 있음. 새 값이 다른 사실의 현재 값과 같음(fact_list 표시). [수정] 중복 행 대체(원래 F_PASSWORD_MIN_LENGTH 8자→10자).,
+T1_17,T1,value_change,3,"MDSR,MDDR,XXCS",Req. 18 '처방 변경 이력'의 처방 변경 이력 보관 기간을 365일에서 730일로 변경한다.,처방 변경 이력 기능에서 처방 변경 이력 보관 기간을 730일로 바꿔 주세요.,"[MDSR | 3.4 일반적 제한 | 본문#p6] (same_value)
+[MDSR | Req. 18 | 설명] (origin)
+[MDSR | Req. 18 | 기준#p1] (origin)
+[MDDR | Req. 18 | 설계#p1] (same_id)
+[XXCS | UC-04 | 시험방법#p2] (trace)
+[XXCS | UC-04 | 확인결과#p2] (trace)
+[XXCS | TRE-01 | 확인결과#p3] (trace)","[MDSR | 3.4 일반적 제한 | 본문#p7] (same_value) - 같은 값(365 일)이지만 다른 사실
+[MDSR | Req. 7 | 설명] (same_value) - 같은 값(365일)이지만 다른 사실
+[MDSR | Req. 7 | 기준#p2] (same_value) - 같은 값(365 일)이지만 다른 사실
+[MDSR | Req. 107 | 설명] (same_value) - 같은 값(1년)이지만 다른 사실
+[MDSR | Req. 107 | 기준#p2] (same_value) - 같은 값(365일)이지만 다른 사실
+[MDDR | Req. 7 | 설계#p2] (same_value) - 같은 값(1년)이지만 다른 사실
+[MDDR | Req. 107 | 설계#p2] (same_value) - 같은 값(365일)이지만 다른 사실
+[XXCS | UC-05 | 시험방법#p2] (same_value) - 같은 값(365 일)이지만 다른 사실
+[XXCS | UC-05 | 확인결과#p2] (same_value) - 같은 값(1년)이지만 다른 사실
+[XXCS | DC-01 | 시험방법#p2] (same_value) - 같은 값(365일)이지만 다른 사실
+[XXCS | DC-01 | 확인결과#p2] (same_value) - 같은 값(365 일)이지만 다른 사실",trace 2. same_value 1. 같은 변경을 문서 수만 달리한 행이 있음. 새 값이 다른 사실의 현재 값과 같음(fact_list 표시). [수정] 파생 사실만 바꾸던 행 대체(원래 F_UNLOCK_NOTIFICATION_TIME 15분→20분).,
+T1_18,T1,value_change,3,"MDSR,MDDR,XXCS",Req. 6 '감사로그 관리'의 의료진 접속 기록 보관 기간을 180일에서 365일로 변경한다.,감사로그 관리 기능에서 의료진 접속 기록 보관 기간을 365일로 바꿔 주세요.,"[MDSR | 3.4 일반적 제한 | 본문#p5] (same_value)
+[MDSR | Req. 6 | 설명] (origin)
+[MDSR | Req. 6 | 기준#p1] (origin)
+[MDSR | Req. 104 | 설명] (same_value)
+[MDDR | Req. 6 | 설계#p2] (same_id)
+[MDDR | Req. 104 | 설계#p2] (same_value)
+[XXCS | UC-04 | 시험방법#p2] (trace)
+[XXCS | UC-04 | 확인결과#p2] (trace)
+[XXCS | TRE-01 | 확인결과#p3] (trace)","[MDDR | Req. 6 | 설계#p1] (same_value) - 같은 값(180 일)이지만 다른 사실
+[MDDR | Req. 104 | 설계#p1] (same_value) - 같은 값(6개월)이지만 다른 사실
+[XXCS | UC-05 | 시험방법#p1] (same_value) - 같은 값(6개월)이지만 다른 사실
+[XXCS | UC-05 | 확인결과#p1] (same_value) - 같은 값(180일)이지만 다른 사실
+[XXCS | TRE-01 | 확인결과#p2] (same_value) - 같은 값(180 일)이지만 다른 사실",trace 2. same_value 3. 같은 변경을 문서 수만 달리한 행이 있음. 새 값이 다른 사실의 현재 값과 같음(fact_list 표시). [수정] 중복 행 대체(원래 F_MEDICAL_STAFF_SESSION_TIMEOUT 15분→5분).,
+T1_19,T1,value_change,3,"MDSR,MDDR,XXCS",Req. 105 '데이터 백업'의 백업 주기를 24시간에서 12시간으로 변경한다.,데이터 백업 기능에서 백업 주기를 12시간으로 바꿔 주세요.,"[MDSR | 3.4 일반적 제한 | 본문#p7] (same_value)
+[MDSR | Req. 7 | 설명] (same_value)
+[MDSR | Req. 7 | 기준#p1] (same_value)
+[MDSR | Req. 105 | 설명] (origin)
+[MDSR | Req. 105 | 기준#p1] (origin)
+[MDDR | Req. 7 | 설계#p1] (same_value)
+[MDDR | Req. 105 | 설계#p1] (same_id)
+[MDDR | Req. 105 | 설계#p2] (same_id)
+[XXCS | SI-01 | 시험방법#p3] (same_value)
+[XXCS | SI-01 | 확인결과#p3] (same_value)
+[XXCS | RA-02 | 시험방법#p1] (same_value)
+[XXCS | RA-02 | 확인결과#p1] (same_value)","[MDSR | Req. 8 | 설명] (same_value) - 같은 값(24시간)이지만 다른 사실
+[MDSR | Req. 8 | 기준#p1] (same_value) - 같은 값(24 시간)이지만 다른 사실
+[MDDR | Req. 8 | 설계#p1] (same_value) - 같은 값(하루)이지만 다른 사실
+[XXCS | SI-05 | 확인결과#p2] (same_value) - 같은 값(24시간)이지만 다른 사실",trace 0. same_value 8. 같은 변경을 문서 수만 달리한 행이 있음. [수정] 중복 행 대체(원래 F_INACTIVE_ACCOUNT_LOCK_DURATION 90일→60일).,
+T1_20,T1,value_change,3,"MDSR,MDDR,XXCS",Req. 101 '의료진 대시보드 조회'의 동기화 주기를 60분에서 120분으로 변경한다.,의료진 대시보드 조회 기능에서 동기화 주기를 120분으로 바꿔 주세요.,"[MDSR | Req. 100 | 설명] (same_value)
+[MDSR | Req. 100 | 기준#p1] (same_value)
+[MDSR | Req. 101 | 설명] (origin)
+[MDSR | Req. 101 | 기준#p1] (origin)
+[MDSR | Req. 101 | 기준#p2] (origin)
+[MDDR | Req. 100 | 설계#p1] (same_value)
+[MDDR | Req. 100 | 설계#p3] (same_value)
+[MDDR | Req. 101 | 설계#p1] (same_id)
+[MDDR | Req. 101 | 설계#p2] (same_id)
+[MDDR | Req. 101 | 설계#p3] (same_id)
+[XXCS | SI-01 | 시험방법#p2] (same_value)
+[XXCS | SI-01 | 확인결과#p3] (same_value)
+[XXCS | RA-02 | 시험방법#p2] (same_value)
+[XXCS | RA-02 | 확인결과#p2] (same_value)","[XXCS | UC-04 | 확인결과#p1] (trace) - Req. 101와 연결됐지만 relevant=false
+[XXCS | UC-04 | 확인결과#p2] (trace) - Req. 101와 연결됐지만 relevant=false
+[XXCS | UC-04 | 확인결과#p3] (trace) - Req. 101와 연결됐지만 relevant=false
+[XXCS | UC-04 | 확인결과#p4] (trace) - Req. 101와 연결됐지만 relevant=false",trace 0. same_value 8. 같은 변경을 문서 수만 달리한 행이 있음. [수정] 중복 행 대체(원래 F_PASSWORD_CHANGE_INTERVAL 90일→60일).,
+T1_21,T1,value_change,3,"MDSR,MDDR,XXCS",Req. 1 '사용자 로그인'의 로그인 실패 허용 횟수를 5회에서 4회로 변경한다.,사용자 로그인 기능에서 로그인 실패 허용 횟수를 4회로 바꿔 주세요.,"[MDSR | 3.4 일반적 제한 | 본문#p1] (same_value)
+[MDSR | Req. 1 | 설명] (origin)
+[MDSR | Req. 1 | 기준#p2] (origin)
+[MDSR | Req. 2 | 설명] (same_value)
+[MDSR | Req. 2 | 기준#p1] (same_value)
+[MDDR | Req. 1 | 설계#p2] (same_id)
+[MDDR | Req. 2 | 설계#p1] (same_value)
+[MDDR | Req. 2 | 설계#p2] (same_value)
+[XXCS | IA-06 | 시험방법#p1] (same_value)
+[XXCS | IA-06 | 확인결과#p1] (same_value)
+[XXCS | IA-07 | 시험방법#p1] (trace)
+[XXCS | IA-07 | 시험방법#p2] (trace)
+[XXCS | IA-07 | 확인결과#p1] (trace)","[XXCS | SI-01 | 확인결과#p1] (trace) - Req. 1와 연결됐지만 relevant=false
+[XXCS | SI-01 | 확인결과#p2] (trace) - Req. 1와 연결됐지만 relevant=false
+[XXCS | SI-01 | 확인결과#p3] (trace) - Req. 1와 연결됐지만 relevant=false",trace 1. same_value 7. 같은 변경을 문서 수만 달리한 행이 있음. [수정] 중복 행 대체(원래 F_ACCOUNT_LOCK_DURATION 15분→20분).,
+T1_22,T1,value_change,3,"MDSR,MDDR,XXCS",Req. 104 '감사로그 보관'의 의료진 접속 기록 감사 주기를 45일에서 30일로 변경한다.,감사로그 보관 기능에서 의료진 접속 기록 감사 주기를 30일로 바꿔 주세요.,"[MDSR | Req. 6 | 설명] (same_value)
+[MDSR | Req. 6 | 기준#p2] (same_value)
+[MDSR | Req. 104 | 설명] (origin)
+[MDDR | Req. 6 | 설계#p2] (same_value)
+[MDDR | Req. 104 | 설계#p2] (same_id)
+[XXCS | UC-06 | 시험방법#p4] (same_value)
+[XXCS | UC-06 | 확인결과#p4] (same_value)",,trace 0. same_value 5. 같은 변경을 문서 수만 달리한 행이 있음. [수정] 중복 행 대체(원래 F_SYNC_INTERVAL 60분→120분).,
+T1_23,T1,value_change,2,"MDSR,XXCS",Req. 2 '계정 잠금'의 계정 잠금 시간을 15분에서 45분으로 변경한다.,계정 잠금 기능에서 계정 잠금 시간을 45분으로 바꿔 주세요.,"[MDSR | 3.4 일반적 제한 | 본문#p1] (same_value)
+[MDSR | Req. 2 | 설명] (origin)
+[MDSR | Req. 2 | 기준#p1] (origin)
+[XXCS | IA-02 | 시험방법#p1] (trace)
+[XXCS | IA-02 | 확인결과#p1] (trace)
+[XXCS | IA-06 | 확인결과#p2] (trace)
+[MDSR | Req. 3 | 설명] (same_value)
+[MDSR | Req. 3 | 기준#p2] (same_value)
+[XXCS | IA-06 | 시험방법#p2] (trace)
+[XXCS | IA-06 | 확인결과#p3] (trace)
+[XXCS | UC-06 | 시험방법#p2] (same_value)
+[XXCS | UC-06 | 확인결과#p2] (same_value)","[MDSR | 3.4 일반적 제한 | 본문#p2] (same_value) - 같은 값(십오 분)이지만 다른 사실
+[MDSR | Req. 3 | 기준#p1] (same_value) - 같은 값(15 분)이지만 다른 사실
+[XXCS | UC-03 | 시험방법#p1] (same_value) - 같은 값(15 분)이지만 다른 사실
+[XXCS | UC-03 | 확인결과#p1] (same_value) - 같은 값(십오 분)이지만 다른 사실
+[XXCS | UC-06 | 시험방법#p1] (same_value) - 같은 값(15분)이지만 다른 사실
+[XXCS | UC-06 | 확인결과#p1] (same_value) - 같은 값(15 분)이지만 다른 사실
+[MDSR | Req. 14 | 기준#p2] (same_value) - 같은 값(15분)이지만 다른 사실
+[XXCS | UC-03 | 시험방법#p2] (same_value) - 같은 값(15 분)이지만 다른 사실
+[XXCS | UC-03 | 확인결과#p2] (same_value) - 같은 값(십오 분)이지만 다른 사실
+[XXCS | UC-06 | 시험방법#p3] (same_value) - 같은 값(15분)이지만 다른 사실
+[XXCS | UC-06 | 확인결과#p3] (same_value) - 같은 값(15 분)이지만 다른 사실",trace 2. same_value 6. 같은 변경을 문서 수만 달리한 행이 있음. 파생 사실 F_UNLOCK_NOTIFICATION_TIME 칸도 정답(new_value 없음). [수정] 중복 행 대체(원래 F_BACKUP_INTERVAL 24시간→12시간).,
+T1_24,T1,value_change,2,"MDSR,XXCS",Req. 1 '사용자 로그인'의 비밀번호 최소 길이를 8자에서 12자로 변경한다.,사용자 로그인 기능에서 비밀번호 최소 길이를 12자로 바꿔 주세요.,"[MDSR | 3.4 일반적 제한 | 본문#p3] (same_value)
+[MDSR | Req. 1 | 설명] (origin)
+[MDSR | Req. 1 | 기준#p1] (origin)
+[XXCS | IA-05 | 시험방법#p1] (trace)
+[XXCS | IA-05 | 확인결과#p1] (trace)
+[XXCS | IA-05 | 확인결과#p3] (trace)
+[XXCS | SI-05 | 확인결과#p1] (trace)","[XXCS | SI-01 | 확인결과#p1] (trace) - Req. 1와 연결됐지만 relevant=false
+[XXCS | SI-01 | 확인결과#p2] (trace) - Req. 1와 연결됐지만 relevant=false
+[XXCS | SI-01 | 확인결과#p3] (trace) - Req. 1와 연결됐지만 relevant=false",trace 2. same_value 1. 같은 변경을 문서 수만 달리한 행이 있음. [수정] 중복 행 대체(원래 F_LOGIN_FAILURE_LIMIT 5회→4회).,
+T1_25,T1,value_change,2,"MDSR,XXCS",Req. 2 '계정 잠금'의 계정 잠금 시간을 15분에서 20분으로 변경한다.,계정 잠금 기능에서 계정 잠금 시간을 20분으로 바꿔 주세요.,"[MDSR | 3.4 일반적 제한 | 본문#p1] (same_value)
+[MDSR | Req. 2 | 설명] (origin)
+[MDSR | Req. 2 | 기준#p1] (origin)
+[XXCS | IA-02 | 시험방법#p1] (trace)
+[XXCS | IA-02 | 확인결과#p1] (trace)
+[XXCS | IA-06 | 확인결과#p2] (trace)
+[MDSR | Req. 3 | 설명] (same_value)
+[MDSR | Req. 3 | 기준#p2] (same_value)
+[XXCS | IA-06 | 시험방법#p2] (trace)
+[XXCS | IA-06 | 확인결과#p3] (trace)
+[XXCS | UC-06 | 시험방법#p2] (same_value)
+[XXCS | UC-06 | 확인결과#p2] (same_value)","[MDSR | 3.4 일반적 제한 | 본문#p2] (same_value) - 같은 값(십오 분)이지만 다른 사실
+[MDSR | Req. 3 | 기준#p1] (same_value) - 같은 값(15 분)이지만 다른 사실
+[XXCS | UC-03 | 시험방법#p1] (same_value) - 같은 값(15 분)이지만 다른 사실
+[XXCS | UC-03 | 확인결과#p1] (same_value) - 같은 값(십오 분)이지만 다른 사실
+[XXCS | UC-06 | 시험방법#p1] (same_value) - 같은 값(15분)이지만 다른 사실
+[XXCS | UC-06 | 확인결과#p1] (same_value) - 같은 값(15 분)이지만 다른 사실
+[MDSR | Req. 14 | 기준#p2] (same_value) - 같은 값(15분)이지만 다른 사실
+[XXCS | UC-03 | 시험방법#p2] (same_value) - 같은 값(15 분)이지만 다른 사실
+[XXCS | UC-03 | 확인결과#p2] (same_value) - 같은 값(십오 분)이지만 다른 사실
+[XXCS | UC-06 | 시험방법#p3] (same_value) - 같은 값(15분)이지만 다른 사실
+[XXCS | UC-06 | 확인결과#p3] (same_value) - 같은 값(15 분)이지만 다른 사실",trace 2. same_value 6. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_26,T1,value_change,2,"MDSR,XXCS",Req. 100 '서버 데이터 동기화'의 동기화 주기를 60분에서 120분으로 변경한다.,서버 데이터 동기화 기능에서 동기화 주기를 120분으로 바꿔 주세요.,"[MDSR | Req. 100 | 설명] (origin)
+[MDSR | Req. 100 | 기준#p1] (origin)
+[MDSR | Req. 101 | 설명] (same_value)
+[MDSR | Req. 101 | 기준#p1] (same_value)
+[MDSR | Req. 101 | 기준#p2] (same_value)
+[XXCS | SI-01 | 시험방법#p2] (trace)
+[XXCS | SI-01 | 확인결과#p3] (trace)
+[XXCS | RA-02 | 시험방법#p2] (trace)
+[XXCS | RA-02 | 확인결과#p2] (trace)","[XXCS | IA-02 | 확인결과#p1] (trace) - Req. 100와 연결됐지만 relevant=false
+[XXCS | IA-02 | 확인결과#p2] (trace) - Req. 100와 연결됐지만 relevant=false
+[XXCS | IA-02 | 확인결과#p3] (trace) - Req. 100와 연결됐지만 relevant=false
+[XXCS | UC-03 | 확인결과#p1] (trace) - Req. 100와 연결됐지만 relevant=false
+[XXCS | UC-03 | 확인결과#p2] (trace) - Req. 100와 연결됐지만 relevant=false
+[XXCS | UC-03 | 확인결과#p3] (trace) - Req. 100와 연결됐지만 relevant=false",trace 2. same_value 6. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_27,T1,value_change,2,"MDSR,XXCS",Req. 7 '데이터 백업'의 백업 주기를 24시간에서 12시간으로 변경한다.,데이터 백업 기능에서 백업 주기를 12시간으로 바꿔 주세요.,"[MDSR | 3.4 일반적 제한 | 본문#p7] (same_value)
+[MDSR | Req. 7 | 설명] (origin)
+[MDSR | Req. 7 | 기준#p1] (origin)
+[MDSR | Req. 105 | 설명] (same_value)
+[MDSR | Req. 105 | 기준#p1] (same_value)
+[XXCS | SI-01 | 시험방법#p3] (trace)
+[XXCS | SI-01 | 확인결과#p3] (trace)
+[XXCS | RA-02 | 시험방법#p1] (trace)
+[XXCS | RA-02 | 확인결과#p1] (trace)","[MDSR | Req. 8 | 설명] (same_value) - 같은 값(24시간)이지만 다른 사실
+[MDSR | Req. 8 | 기준#p1] (same_value) - 같은 값(24 시간)이지만 다른 사실
+[XXCS | SI-05 | 확인결과#p2] (same_value) - 같은 값(24시간)이지만 다른 사실",trace 2. same_value 5. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_28,T1,value_change,2,"MDSR,XXCS",Req. 2 '계정 잠금'의 로그인 실패 허용 횟수를 5회에서 4회로 변경한다.,계정 잠금 기능에서 로그인 실패 허용 횟수를 4회로 바꿔 주세요.,"[MDSR | 3.4 일반적 제한 | 본문#p1] (same_value)
+[MDSR | Req. 1 | 설명] (same_value)
+[MDSR | Req. 1 | 기준#p2] (same_value)
+[MDSR | Req. 2 | 설명] (origin)
+[MDSR | Req. 2 | 기준#p1] (origin)
+[XXCS | IA-06 | 시험방법#p1] (trace)
+[XXCS | IA-06 | 확인결과#p1] (trace)
+[XXCS | IA-07 | 시험방법#p1] (trace)
+[XXCS | IA-07 | 시험방법#p2] (trace)
+[XXCS | IA-07 | 확인결과#p1] (trace)",,trace 2. same_value 4. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_29,T1,value_change,2,"MDSR,XXCS",Req. 3 '세션 관리'의 세션 종료 시간을 15분에서 5분으로 변경한다.,세션 관리 기능에서 세션 종료 시간을 5분으로 바꿔 주세요.,"[MDSR | 3.4 일반적 제한 | 본문#p2] (same_value)
+[MDSR | Req. 3 | 설명] (origin)
+[MDSR | Req. 3 | 기준#p1] (origin)
+[XXCS | UC-03 | 시험방법#p1] (trace)
+[XXCS | UC-03 | 확인결과#p1] (trace)
+[XXCS | UC-06 | 시험방법#p1] (trace)
+[XXCS | UC-06 | 확인결과#p1] (trace)","[MDSR | 3.4 일반적 제한 | 본문#p1] (same_value) - 같은 값(십오 분)이지만 다른 사실
+[MDSR | Req. 2 | 설명] (same_value) - 같은 값(15분)이지만 다른 사실
+[MDSR | Req. 2 | 기준#p1] (same_value) - 같은 값(15 분)이지만 다른 사실
+[XXCS | IA-02 | 시험방법#p1] (same_value) - 같은 값(십오 분)이지만 다른 사실
+[XXCS | IA-02 | 확인결과#p1] (same_value) - 같은 값(15분)이지만 다른 사실
+[XXCS | IA-06 | 확인결과#p2] (same_value) - 같은 값(15 분)이지만 다른 사실
+[MDSR | Req. 3 | 기준#p2] (same_value) - 같은 값(15 분)이지만 다른 사실
+[XXCS | IA-06 | 시험방법#p2] (same_value) - 같은 값(15 분)이지만 다른 사실
+[XXCS | IA-06 | 확인결과#p3] (same_value) - 같은 값(십오 분)이지만 다른 사실
+[XXCS | UC-06 | 시험방법#p2] (same_value) - 같은 값(15분)이지만 다른 사실
+[XXCS | UC-06 | 확인결과#p2] (same_value) - 같은 값(15 분)이지만 다른 사실
+[MDSR | Req. 14 | 기준#p2] (same_value) - 같은 값(15분)이지만 다른 사실
+[XXCS | UC-03 | 시험방법#p2] (same_value) - 같은 값(15 분)이지만 다른 사실
+[XXCS | UC-03 | 확인결과#p2] (same_value) - 같은 값(십오 분)이지만 다른 사실
+[XXCS | UC-06 | 시험방법#p3] (same_value) - 같은 값(15분)이지만 다른 사실
+[XXCS | UC-06 | 확인결과#p3] (same_value) - 같은 값(15 분)이지만 다른 사실
+[XXCS | SI-01 | 확인결과#p1] (trace) - Req. 3와 연결됐지만 relevant=false
+[XXCS | SI-01 | 확인결과#p2] (trace) - Req. 3와 연결됐지만 relevant=false
+[XXCS | SI-01 | 확인결과#p3] (trace) - Req. 3와 연결됐지만 relevant=false",trace 2. same_value 1. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_30,T1,value_change,2,"MDSR,XXCS",Req. 1 '사용자 로그인'의 비밀번호 최소 길이를 8자에서 10자로 변경한다.,사용자 로그인 기능에서 비밀번호 최소 길이를 10자로 바꿔 주세요.,"[MDSR | 3.4 일반적 제한 | 본문#p3] (same_value)
+[MDSR | Req. 1 | 설명] (origin)
+[MDSR | Req. 1 | 기준#p1] (origin)
+[XXCS | IA-05 | 시험방법#p1] (trace)
+[XXCS | IA-05 | 확인결과#p1] (trace)
+[XXCS | IA-05 | 확인결과#p3] (trace)
+[XXCS | SI-05 | 확인결과#p1] (trace)","[XXCS | SI-01 | 확인결과#p1] (trace) - Req. 1와 연결됐지만 relevant=false
+[XXCS | SI-01 | 확인결과#p2] (trace) - Req. 1와 연결됐지만 relevant=false
+[XXCS | SI-01 | 확인결과#p3] (trace) - Req. 1와 연결됐지만 relevant=false",trace 2. same_value 1. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_31,T1,value_change,2,"MDSR,XXCS",Req. 2 '계정 잠금'의 비활성 계정 자동 잠금 기간을 90일에서 30일로 변경한다.,계정 잠금 기능에서 비활성 계정 자동 잠금 기간을 30일로 바꿔 주세요.,"[MDSR | 3.4 일반적 제한 | 본문#p8] (same_value)
+[MDSR | Req. 2 | 설명] (origin)
+[MDSR | Req. 2 | 기준#p2] (origin)
+[XXCS | IA-02 | 시험방법#p2] (trace)
+[XXCS | IA-02 | 확인결과#p2] (trace)
+[XXCS | UC-04 | 시험방법#p3] (trace)
+[XXCS | UC-04 | 확인결과#p3] (trace)","[MDSR | 3.4 일반적 제한 | 본문#p3] (same_value) - 같은 값(3개월)이지만 다른 사실
+[MDSR | Req. 108 | 설명] (same_value) - 같은 값(90일)이지만 다른 사실
+[MDSR | Req. 108 | 기준#p2] (same_value) - 같은 값(90 일)이지만 다른 사실
+[XXCS | IA-04 | 시험방법#p2] (same_value) - 같은 값(90 일)이지만 다른 사실
+[XXCS | IA-04 | 확인결과#p1] (same_value) - 같은 값(3개월)이지만 다른 사실
+[XXCS | IA-04 | 확인결과#p2] (same_value) - 같은 값(90일)이지만 다른 사실
+[XXCS | IA-05 | 시험방법#p2] (same_value) - 같은 값(90 일)이지만 다른 사실
+[XXCS | IA-05 | 확인결과#p2] (same_value) - 같은 값(3개월)이지만 다른 사실",trace 2. same_value 1. 같은 변경을 문서 수만 달리한 행이 있음. [수정] 파생 사실만 바꾸던 행 대체(원래 F_UNLOCK_NOTIFICATION_TIME 15분→20분).,
+T1_32,T1,value_change,2,"MDSR,XXCS",Req. 3 '세션 관리'의 의료진 대시보드 세션 종료 시간을 15분에서 5분으로 변경한다.,세션 관리 기능에서 의료진 대시보드 세션 종료 시간을 5분으로 바꿔 주세요.,"[MDSR | 3.4 일반적 제한 | 본문#p2] (same_value)
+[MDSR | Req. 3 | 설명] (origin)
+[MDSR | Req. 3 | 기준#p1] (origin)
+[XXCS | UC-03 | 시험방법#p2] (trace)
+[XXCS | UC-03 | 확인결과#p2] (trace)
+[XXCS | UC-06 | 시험방법#p3] (trace)
+[XXCS | UC-06 | 확인결과#p3] (trace)","[MDSR | 3.4 일반적 제한 | 본문#p1] (same_value) - 같은 값(십오 분)이지만 다른 사실
+[MDSR | Req. 2 | 설명] (same_value) - 같은 값(15분)이지만 다른 사실
+[MDSR | Req. 2 | 기준#p1] (same_value) - 같은 값(15 분)이지만 다른 사실
+[XXCS | IA-02 | 시험방법#p1] (same_value) - 같은 값(십오 분)이지만 다른 사실
+[XXCS | IA-02 | 확인결과#p1] (same_value) - 같은 값(15분)이지만 다른 사실
+[XXCS | IA-06 | 확인결과#p2] (same_value) - 같은 값(15 분)이지만 다른 사실
+[XXCS | UC-03 | 시험방법#p1] (same_value) - 같은 값(15 분)이지만 다른 사실
+[XXCS | UC-03 | 확인결과#p1] (same_value) - 같은 값(십오 분)이지만 다른 사실
+[XXCS | UC-06 | 시험방법#p1] (same_value) - 같은 값(15분)이지만 다른 사실
+[XXCS | UC-06 | 확인결과#p1] (same_value) - 같은 값(15 분)이지만 다른 사실
+[MDSR | Req. 3 | 기준#p2] (same_value) - 같은 값(15 분)이지만 다른 사실
+[XXCS | IA-06 | 시험방법#p2] (same_value) - 같은 값(15 분)이지만 다른 사실
+[XXCS | IA-06 | 확인결과#p3] (same_value) - 같은 값(십오 분)이지만 다른 사실
+[XXCS | UC-06 | 시험방법#p2] (same_value) - 같은 값(15분)이지만 다른 사실
+[XXCS | UC-06 | 확인결과#p2] (same_value) - 같은 값(15 분)이지만 다른 사실
+[MDSR | Req. 14 | 기준#p2] (same_value) - 같은 값(15분)이지만 다른 사실
+[XXCS | SI-01 | 확인결과#p1] (trace) - Req. 3와 연결됐지만 relevant=false
+[XXCS | SI-01 | 확인결과#p2] (trace) - Req. 3와 연결됐지만 relevant=false
+[XXCS | SI-01 | 확인결과#p3] (trace) - Req. 3와 연결됐지만 relevant=false",trace 2. same_value 1. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_33,T1,value_change,2,"MDSR,XXCS",Req. 2 '계정 잠금'의 비활성 계정 자동 잠금 기간을 90일에서 60일로 변경한다.,계정 잠금 기능에서 비활성 계정 자동 잠금 기간을 60일로 바꿔 주세요.,"[MDSR | 3.4 일반적 제한 | 본문#p8] (same_value)
+[MDSR | Req. 2 | 설명] (origin)
+[MDSR | Req. 2 | 기준#p2] (origin)
+[XXCS | IA-02 | 시험방법#p2] (trace)
+[XXCS | IA-02 | 확인결과#p2] (trace)
+[XXCS | UC-04 | 시험방법#p3] (trace)
+[XXCS | UC-04 | 확인결과#p3] (trace)","[MDSR | 3.4 일반적 제한 | 본문#p3] (same_value) - 같은 값(3개월)이지만 다른 사실
+[MDSR | Req. 108 | 설명] (same_value) - 같은 값(90일)이지만 다른 사실
+[MDSR | Req. 108 | 기준#p2] (same_value) - 같은 값(90 일)이지만 다른 사실
+[XXCS | IA-04 | 시험방법#p2] (same_value) - 같은 값(90 일)이지만 다른 사실
+[XXCS | IA-04 | 확인결과#p1] (same_value) - 같은 값(3개월)이지만 다른 사실
+[XXCS | IA-04 | 확인결과#p2] (same_value) - 같은 값(90일)이지만 다른 사실
+[XXCS | IA-05 | 시험방법#p2] (same_value) - 같은 값(90 일)이지만 다른 사실
+[XXCS | IA-05 | 확인결과#p2] (same_value) - 같은 값(3개월)이지만 다른 사실",trace 2. same_value 1. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_34,T1,value_change,2,"MDSR,XXCS",Req. 108 '의료진 계정·권한 관리'의 비밀번호 변경 주기를 90일에서 60일로 변경한다.,의료진 계정·권한 관리 기능에서 비밀번호 변경 주기를 60일로 바꿔 주세요.,"[MDSR | 3.4 일반적 제한 | 본문#p3] (same_value)
+[MDSR | Req. 108 | 설명] (origin)
+[MDSR | Req. 108 | 기준#p2] (origin)
+[XXCS | IA-04 | 시험방법#p2] (trace)
+[XXCS | IA-04 | 확인결과#p1] (trace)
+[XXCS | IA-04 | 확인결과#p2] (trace)
+[XXCS | IA-05 | 시험방법#p2] (trace)
+[XXCS | IA-05 | 확인결과#p2] (trace)","[MDSR | 3.4 일반적 제한 | 본문#p8] (same_value) - 같은 값(3개월)이지만 다른 사실
+[MDSR | Req. 2 | 설명] (same_value) - 같은 값(90일)이지만 다른 사실
+[MDSR | Req. 2 | 기준#p2] (same_value) - 같은 값(90 일)이지만 다른 사실
+[XXCS | IA-02 | 시험방법#p2] (same_value) - 같은 값(90 일)이지만 다른 사실
+[XXCS | IA-02 | 확인결과#p2] (same_value) - 같은 값(3개월)이지만 다른 사실
+[XXCS | UC-04 | 시험방법#p3] (same_value) - 같은 값(90일)이지만 다른 사실
+[XXCS | UC-04 | 확인결과#p3] (same_value) - 같은 값(90 일)이지만 다른 사실
+[XXCS | IA-07 | 확인결과#p1] (trace) - Req. 108와 연결됐지만 relevant=false
+[XXCS | IA-07 | 확인결과#p2] (trace) - Req. 108와 연결됐지만 relevant=false
+[XXCS | IA-07 | 확인결과#p3] (trace) - Req. 108와 연결됐지만 relevant=false
+[XXCS | UC-05 | 확인결과#p1] (trace) - Req. 108와 연결됐지만 relevant=false
+[XXCS | UC-05 | 확인결과#p2] (trace) - Req. 108와 연결됐지만 relevant=false
+[XXCS | UC-05 | 확인결과#p3] (trace) - Req. 108와 연결됐지만 relevant=false
+[XXCS | SI-01 | 확인결과#p1] (trace) - Req. 108와 연결됐지만 relevant=false
+[XXCS | SI-01 | 확인결과#p2] (trace) - Req. 108와 연결됐지만 relevant=false
+[XXCS | SI-01 | 확인결과#p3] (trace) - Req. 108와 연결됐지만 relevant=false",trace 2. same_value 1. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_35,T1,value_change,2,"MDSR,XXCS",Req. 108 '의료진 계정·권한 관리'의 비밀번호 변경 주기를 90일에서 30일로 변경한다.,의료진 계정·권한 관리 기능에서 비밀번호 변경 주기를 30일로 바꿔 주세요.,"[MDSR | 3.4 일반적 제한 | 본문#p3] (same_value)
+[MDSR | Req. 108 | 설명] (origin)
+[MDSR | Req. 108 | 기준#p2] (origin)
+[XXCS | IA-04 | 시험방법#p2] (trace)
+[XXCS | IA-04 | 확인결과#p1] (trace)
+[XXCS | IA-04 | 확인결과#p2] (trace)
+[XXCS | IA-05 | 시험방법#p2] (trace)
+[XXCS | IA-05 | 확인결과#p2] (trace)","[MDSR | 3.4 일반적 제한 | 본문#p8] (same_value) - 같은 값(3개월)이지만 다른 사실
+[MDSR | Req. 2 | 설명] (same_value) - 같은 값(90일)이지만 다른 사실
+[MDSR | Req. 2 | 기준#p2] (same_value) - 같은 값(90 일)이지만 다른 사실
+[XXCS | IA-02 | 시험방법#p2] (same_value) - 같은 값(90 일)이지만 다른 사실
+[XXCS | IA-02 | 확인결과#p2] (same_value) - 같은 값(3개월)이지만 다른 사실
+[XXCS | UC-04 | 시험방법#p3] (same_value) - 같은 값(90일)이지만 다른 사실
+[XXCS | UC-04 | 확인결과#p3] (same_value) - 같은 값(90 일)이지만 다른 사실
+[XXCS | IA-07 | 확인결과#p1] (trace) - Req. 108와 연결됐지만 relevant=false
+[XXCS | IA-07 | 확인결과#p2] (trace) - Req. 108와 연결됐지만 relevant=false
+[XXCS | IA-07 | 확인결과#p3] (trace) - Req. 108와 연결됐지만 relevant=false
+[XXCS | UC-05 | 확인결과#p1] (trace) - Req. 108와 연결됐지만 relevant=false
+[XXCS | UC-05 | 확인결과#p2] (trace) - Req. 108와 연결됐지만 relevant=false
+[XXCS | UC-05 | 확인결과#p3] (trace) - Req. 108와 연결됐지만 relevant=false
+[XXCS | SI-01 | 확인결과#p1] (trace) - Req. 108와 연결됐지만 relevant=false
+[XXCS | SI-01 | 확인결과#p2] (trace) - Req. 108와 연결됐지만 relevant=false
+[XXCS | SI-01 | 확인결과#p3] (trace) - Req. 108와 연결됐지만 relevant=false",trace 2. same_value 1. 같은 변경을 문서 수만 달리한 행이 있음. [수정] 중복 행 대체(원래 F_ACCOUNT_LOCK_DURATION 15분→20분).,
+T1_36,T1,value_change,2,"MDSR,XXCS",Req. 7 '데이터 백업'의 백업 주기를 24시간에서 6시간으로 변경한다.,데이터 백업 기능에서 백업 주기를 6시간으로 바꿔 주세요.,"[MDSR | 3.4 일반적 제한 | 본문#p7] (same_value)
+[MDSR | Req. 7 | 설명] (origin)
+[MDSR | Req. 7 | 기준#p1] (origin)
+[MDSR | Req. 105 | 설명] (same_value)
+[MDSR | Req. 105 | 기준#p1] (same_value)
+[XXCS | SI-01 | 시험방법#p3] (trace)
+[XXCS | SI-01 | 확인결과#p3] (trace)
+[XXCS | RA-02 | 시험방법#p1] (trace)
+[XXCS | RA-02 | 확인결과#p1] (trace)","[MDSR | Req. 8 | 설명] (same_value) - 같은 값(24시간)이지만 다른 사실
+[MDSR | Req. 8 | 기준#p1] (same_value) - 같은 값(24 시간)이지만 다른 사실
+[XXCS | SI-05 | 확인결과#p2] (same_value) - 같은 값(24시간)이지만 다른 사실",trace 2. same_value 5. 같은 변경을 문서 수만 달리한 행이 있음. [수정] 중복 행 대체(원래 F_SYNC_INTERVAL 60분→120분).,
+T1_37,T1,value_change,2,"MDSR,XXCS",Req. 6 '감사로그 관리'의 감사로그 보관 기간을 180일에서 365일로 변경한다.,감사로그 관리 기능에서 감사로그 보관 기간을 365일로 바꿔 주세요.,"[MDSR | 3.4 일반적 제한 | 본문#p5] (same_value)
+[MDSR | Req. 6 | 설명] (origin)
+[MDSR | Req. 6 | 기준#p1] (origin)
+[MDSR | Req. 104 | 설명] (same_value)
+[XXCS | UC-04 | 시험방법#p2] (trace)
+[XXCS | UC-04 | 확인결과#p2] (trace)
+[XXCS | UC-05 | 시험방법#p1] (trace)
+[XXCS | UC-05 | 확인결과#p1] (trace)
+[XXCS | TRE-01 | 확인결과#p2] (trace)",[XXCS | TRE-01 | 확인결과#p3] (same_value) - 같은 값(6개월)이지만 다른 사실,trace 3. same_value 3. 같은 변경을 문서 수만 달리한 행이 있음. 새 값이 다른 사실의 현재 값과 같음(fact_list 표시). [수정] 중복 행 대체(원래 F_BACKUP_INTERVAL 24시간→12시간).,
+T1_38,T1,value_change,2,"MDSR,XXCS",Req. 7 '데이터 백업'의 개인정보 파기 기한을 365일에서 180일로 변경한다.,데이터 백업 기능에서 개인정보 파기 기한을 180일로 바꿔 주세요.,"[MDSR | 3.4 일반적 제한 | 본문#p7] (same_value)
+[MDSR | Req. 7 | 설명] (origin)
+[MDSR | Req. 7 | 기준#p2] (origin)
+[MDSR | Req. 107 | 설명] (same_value)
+[MDSR | Req. 107 | 기준#p2] (same_value)
+[XXCS | UC-05 | 시험방법#p2] (trace)
+[XXCS | UC-05 | 확인결과#p2] (trace)
+[XXCS | DC-01 | 시험방법#p2] (trace)
+[XXCS | DC-01 | 확인결과#p2] (trace)","[MDSR | 3.4 일반적 제한 | 본문#p6] (same_value) - 같은 값(1년)이지만 다른 사실
+[MDSR | Req. 18 | 설명] (same_value) - 같은 값(365일)이지만 다른 사실
+[MDSR | Req. 18 | 기준#p1] (same_value) - 같은 값(365 일)이지만 다른 사실
+[XXCS | UC-04 | 시험방법#p2] (same_value) - 같은 값(365 일)이지만 다른 사실
+[XXCS | UC-04 | 확인결과#p2] (same_value) - 같은 값(1년)이지만 다른 사실
+[XXCS | TRE-01 | 확인결과#p3] (same_value) - 같은 값(365일)이지만 다른 사실",trace 2. same_value 4. 같은 변경을 문서 수만 달리한 행이 있음. 새 값이 다른 사실의 현재 값과 같음(fact_list 표시). [수정] 중복 행 대체(원래 F_LOGIN_FAILURE_LIMIT 5회→4회).,
+T1_39,T1,value_change,2,"MDSR,XXCS",Req. 18 '처방 변경 이력'의 처방 변경 이력 보관 기간을 365일에서 730일로 변경한다.,처방 변경 이력 기능에서 처방 변경 이력 보관 기간을 730일로 바꿔 주세요.,"[MDSR | 3.4 일반적 제한 | 본문#p6] (same_value)
+[MDSR | Req. 18 | 설명] (origin)
+[MDSR | Req. 18 | 기준#p1] (origin)
+[XXCS | UC-04 | 시험방법#p2] (trace)
+[XXCS | UC-04 | 확인결과#p2] (trace)
+[XXCS | TRE-01 | 확인결과#p3] (trace)","[MDSR | 3.4 일반적 제한 | 본문#p7] (same_value) - 같은 값(365 일)이지만 다른 사실
+[MDSR | Req. 7 | 설명] (same_value) - 같은 값(365일)이지만 다른 사실
+[MDSR | Req. 7 | 기준#p2] (same_value) - 같은 값(365 일)이지만 다른 사실
+[MDSR | Req. 107 | 설명] (same_value) - 같은 값(1년)이지만 다른 사실
+[MDSR | Req. 107 | 기준#p2] (same_value) - 같은 값(365일)이지만 다른 사실
+[XXCS | UC-05 | 시험방법#p2] (same_value) - 같은 값(365 일)이지만 다른 사실
+[XXCS | UC-05 | 확인결과#p2] (same_value) - 같은 값(1년)이지만 다른 사실
+[XXCS | DC-01 | 시험방법#p2] (same_value) - 같은 값(365일)이지만 다른 사실
+[XXCS | DC-01 | 확인결과#p2] (same_value) - 같은 값(365 일)이지만 다른 사실",trace 2. same_value 1. 같은 변경을 문서 수만 달리한 행이 있음. 새 값이 다른 사실의 현재 값과 같음(fact_list 표시). [수정] 중복 행 대체(원래 F_SESSION_TIMEOUT 15분→5분).,
+T1_40,T1,value_change,2,"MDSR,XXCS",Req. 6 '감사로그 관리'의 의료진 접속 기록 보관 기간을 180일에서 365일로 변경한다.,감사로그 관리 기능에서 의료진 접속 기록 보관 기간을 365일로 바꿔 주세요.,"[MDSR | 3.4 일반적 제한 | 본문#p5] (same_value)
+[MDSR | Req. 6 | 설명] (origin)
+[MDSR | Req. 6 | 기준#p1] (origin)
+[MDSR | Req. 104 | 설명] (same_value)
+[XXCS | UC-04 | 시험방법#p2] (trace)
+[XXCS | UC-04 | 확인결과#p2] (trace)
+[XXCS | TRE-01 | 확인결과#p3] (trace)","[XXCS | UC-05 | 시험방법#p1] (same_value) - 같은 값(6개월)이지만 다른 사실
+[XXCS | UC-05 | 확인결과#p1] (same_value) - 같은 값(180일)이지만 다른 사실
+[XXCS | TRE-01 | 확인결과#p2] (same_value) - 같은 값(180 일)이지만 다른 사실",trace 2. same_value 3. 같은 변경을 문서 수만 달리한 행이 있음. 새 값이 다른 사실의 현재 값과 같음(fact_list 표시). [수정] 중복 행 대체(원래 F_PASSWORD_MIN_LENGTH 8자→10자).,
+T1_41,T1,value_change,2,"MDSR,MDDR",Req. 105 '데이터 백업'의 백업 주기를 24시간에서 12시간으로 변경한다.,데이터 백업 기능에서 백업 주기를 12시간으로 바꿔 주세요.,"[MDSR | 3.4 일반적 제한 | 본문#p7] (same_value)
+[MDSR | Req. 7 | 설명] (same_value)
+[MDSR | Req. 7 | 기준#p1] (same_value)
+[MDSR | Req. 105 | 설명] (origin)
+[MDSR | Req. 105 | 기준#p1] (origin)
+[MDDR | Req. 7 | 설계#p1] (same_value)
+[MDDR | Req. 105 | 설계#p1] (same_id)
+[MDDR | Req. 105 | 설계#p2] (same_id)","[MDSR | Req. 8 | 설명] (same_value) - 같은 값(24시간)이지만 다른 사실
+[MDSR | Req. 8 | 기준#p1] (same_value) - 같은 값(24 시간)이지만 다른 사실
+[MDDR | Req. 8 | 설계#p1] (same_value) - 같은 값(하루)이지만 다른 사실",trace 0. same_value 8. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_42,T1,value_change,2,"MDSR,MDDR",Req. 101 '의료진 대시보드 조회'의 동기화 주기를 60분에서 120분으로 변경한다.,의료진 대시보드 조회 기능에서 동기화 주기를 120분으로 바꿔 주세요.,"[MDSR | Req. 100 | 설명] (same_value)
+[MDSR | Req. 100 | 기준#p1] (same_value)
+[MDSR | Req. 101 | 설명] (origin)
+[MDSR | Req. 101 | 기준#p1] (origin)
+[MDSR | Req. 101 | 기준#p2] (origin)
+[MDDR | Req. 100 | 설계#p1] (same_value)
+[MDDR | Req. 100 | 설계#p3] (same_value)
+[MDDR | Req. 101 | 설계#p1] (same_id)
+[MDDR | Req. 101 | 설계#p2] (same_id)
+[MDDR | Req. 101 | 설계#p3] (same_id)",,trace 0. same_value 8. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_43,T1,value_change,2,"MDSR,MDDR",Req. 1 '사용자 로그인'의 로그인 실패 허용 횟수를 5회에서 4회로 변경한다.,사용자 로그인 기능에서 로그인 실패 허용 횟수를 4회로 바꿔 주세요.,"[MDSR | 3.4 일반적 제한 | 본문#p1] (same_value)
+[MDSR | Req. 1 | 설명] (origin)
+[MDSR | Req. 1 | 기준#p2] (origin)
+[MDSR | Req. 2 | 설명] (same_value)
+[MDSR | Req. 2 | 기준#p1] (same_value)
+[MDDR | Req. 1 | 설계#p2] (same_id)
+[MDDR | Req. 2 | 설계#p1] (same_value)
+[MDDR | Req. 2 | 설계#p2] (same_value)",,trace 1. same_value 7. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_44,T1,value_change,2,"MDSR,MDDR",Req. 8 '수면일기 기록'의 수면 제한 요법 기본 취침 시간을 22:00에서 21:30으로 변경한다.,수면일기 기록 기능에서 수면 제한 요법 기본 취침 시간을 21:30으로 바꿔 주세요.,"[MDSR | Req. 8 | 설명] (origin)
+[MDSR | Req. 8 | 기준#p2] (origin)
+[MDSR | Req. 10 | 설명] (same_value)
+[MDSR | Req. 10 | 기준#p1] (same_value)
+[MDSR | Req. 10 | 기준#p2] (same_value)
+[MDDR | Req. 8 | 설계#p2] (same_id)
+[MDDR | Req. 10 | 설계#p1] (same_value)
+[MDDR | Req. 10 | 설계#p2] (same_value)
+[MDDR | Req. 10 | 설계#p3] (same_value)",,trace 0. same_value 6. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_45,T1,value_change,2,"MDSR,MDDR",Req. 8 '수면일기 기록'의 수면 제한 요법 기본 기상 시간을 7:00에서 6:30으로 변경한다.,수면일기 기록 기능에서 수면 제한 요법 기본 기상 시간을 6:30으로 바꿔 주세요.,"[MDSR | Req. 8 | 설명] (origin)
+[MDSR | Req. 8 | 기준#p2] (origin)
+[MDSR | Req. 10 | 설명] (same_value)
+[MDSR | Req. 10 | 기준#p1] (same_value)
+[MDSR | Req. 10 | 기준#p2] (same_value)
+[MDDR | Req. 8 | 설계#p3] (same_id)
+[MDDR | Req. 10 | 설계#p1] (same_value)
+[MDDR | Req. 10 | 설계#p2] (same_value)
+[MDDR | Req. 10 | 설계#p3] (same_value)",,trace 0. same_value 6. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_46,T1,value_change,2,"MDSR,MDDR",Req. 104 '감사로그 보관'의 의료진 접속 기록 감사 주기를 45일에서 30일로 변경한다.,감사로그 보관 기능에서 의료진 접속 기록 감사 주기를 30일로 바꿔 주세요.,"[MDSR | Req. 6 | 설명] (same_value)
+[MDSR | Req. 6 | 기준#p2] (same_value)
+[MDSR | Req. 104 | 설명] (origin)
+[MDDR | Req. 6 | 설계#p2] (same_value)
+[MDDR | Req. 104 | 설계#p2] (same_id)",,trace 0. same_value 5. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_47,T1,value_change,2,"MDSR,MDDR",Req. 10 '수면 제한 요법 기본 시간'의 수면 제한 요법 기본 취침 시간을 22:00에서 21:30으로 변경한다.,수면 제한 요법 기본 시간 기능에서 수면 제한 요법 기본 취침 시간을 21:30으로 바꿔 주세요.,"[MDSR | Req. 8 | 설명] (same_value)
+[MDSR | Req. 8 | 기준#p2] (same_value)
+[MDSR | Req. 10 | 설명] (origin)
+[MDSR | Req. 10 | 기준#p1] (origin)
+[MDSR | Req. 10 | 기준#p2] (origin)
+[MDDR | Req. 8 | 설계#p2] (same_value)
+[MDDR | Req. 10 | 설계#p1] (same_id)
+[MDDR | Req. 10 | 설계#p2] (same_id)
+[MDDR | Req. 10 | 설계#p3] (same_id)",,trace 0. same_value 3. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_48,T1,value_change,2,"MDSR,MDDR",Req. 10 '수면 제한 요법 기본 시간'의 수면 제한 요법 기본 기상 시간을 7:00에서 6:30으로 변경한다.,수면 제한 요법 기본 시간 기능에서 수면 제한 요법 기본 기상 시간을 6:30으로 바꿔 주세요.,"[MDSR | Req. 8 | 설명] (same_value)
+[MDSR | Req. 8 | 기준#p2] (same_value)
+[MDSR | Req. 10 | 설명] (origin)
+[MDSR | Req. 10 | 기준#p1] (origin)
+[MDSR | Req. 10 | 기준#p2] (origin)
+[MDDR | Req. 8 | 설계#p3] (same_value)
+[MDDR | Req. 10 | 설계#p1] (same_id)
+[MDDR | Req. 10 | 설계#p2] (same_id)
+[MDDR | Req. 10 | 설계#p3] (same_id)",,trace 0. same_value 3. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_49,T1,value_change,1,MDSR,Req. 105 '데이터 백업'의 백업 주기를 24시간에서 12시간으로 변경한다.,데이터 백업 기능에서 백업 주기를 12시간으로 바꿔 주세요.,"[MDSR | 3.4 일반적 제한 | 본문#p7] (same_value)
+[MDSR | Req. 7 | 설명] (same_value)
+[MDSR | Req. 7 | 기준#p1] (same_value)
+[MDSR | Req. 105 | 설명] (origin)
+[MDSR | Req. 105 | 기준#p1] (origin)","[MDSR | Req. 8 | 설명] (same_value) - 같은 값(24시간)이지만 다른 사실
+[MDSR | Req. 8 | 기준#p1] (same_value) - 같은 값(24 시간)이지만 다른 사실",trace 0. same_value 8. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_50,T1,value_change,1,MDSR,Req. 101 '의료진 대시보드 조회'의 동기화 주기를 60분에서 120분으로 변경한다.,의료진 대시보드 조회 기능에서 동기화 주기를 120분으로 바꿔 주세요.,"[MDSR | Req. 100 | 설명] (same_value)
+[MDSR | Req. 100 | 기준#p1] (same_value)
+[MDSR | Req. 101 | 설명] (origin)
+[MDSR | Req. 101 | 기준#p1] (origin)
+[MDSR | Req. 101 | 기준#p2] (origin)",,trace 0. same_value 8. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_51,T1,value_change,1,MDSR,Req. 1 '사용자 로그인'의 로그인 실패 허용 횟수를 5회에서 4회로 변경한다.,사용자 로그인 기능에서 로그인 실패 허용 횟수를 4회로 바꿔 주세요.,"[MDSR | 3.4 일반적 제한 | 본문#p1] (same_value)
+[MDSR | Req. 1 | 설명] (origin)
+[MDSR | Req. 1 | 기준#p2] (origin)
+[MDSR | Req. 2 | 설명] (same_value)
+[MDSR | Req. 2 | 기준#p1] (same_value)",,trace 1. same_value 7. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_52,T1,value_change,1,MDSR,Req. 8 '수면일기 기록'의 수면 제한 요법 기본 취침 시간을 22:00에서 21:30으로 변경한다.,수면일기 기록 기능에서 수면 제한 요법 기본 취침 시간을 21:30으로 바꿔 주세요.,"[MDSR | Req. 8 | 설명] (origin)
+[MDSR | Req. 8 | 기준#p2] (origin)
+[MDSR | Req. 10 | 설명] (same_value)
+[MDSR | Req. 10 | 기준#p1] (same_value)
+[MDSR | Req. 10 | 기준#p2] (same_value)",,trace 0. same_value 6. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_53,T1,value_change,1,MDSR,Req. 8 '수면일기 기록'의 수면 제한 요법 기본 기상 시간을 7:00에서 6:30으로 변경한다.,수면일기 기록 기능에서 수면 제한 요법 기본 기상 시간을 6:30으로 바꿔 주세요.,"[MDSR | Req. 8 | 설명] (origin)
+[MDSR | Req. 8 | 기준#p2] (origin)
+[MDSR | Req. 10 | 설명] (same_value)
+[MDSR | Req. 10 | 기준#p1] (same_value)
+[MDSR | Req. 10 | 기준#p2] (same_value)",,trace 0. same_value 6. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_54,T1,value_change,1,MDSR,Req. 104 '감사로그 보관'의 의료진 접속 기록 감사 주기를 45일에서 30일로 변경한다.,감사로그 보관 기능에서 의료진 접속 기록 감사 주기를 30일로 바꿔 주세요.,"[MDSR | Req. 6 | 설명] (same_value)
+[MDSR | Req. 6 | 기준#p2] (same_value)
+[MDSR | Req. 104 | 설명] (origin)",,trace 0. same_value 5. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_55,T1,value_change,1,MDSR,Req. 10 '수면 제한 요법 기본 시간'의 수면 제한 요법 기본 취침 시간을 22:00에서 21:30으로 변경한다.,수면 제한 요법 기본 시간 기능에서 수면 제한 요법 기본 취침 시간을 21:30으로 바꿔 주세요.,"[MDSR | Req. 8 | 설명] (same_value)
+[MDSR | Req. 8 | 기준#p2] (same_value)
+[MDSR | Req. 10 | 설명] (origin)
+[MDSR | Req. 10 | 기준#p1] (origin)
+[MDSR | Req. 10 | 기준#p2] (origin)",,trace 0. same_value 3. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_56,T1,value_change,1,MDSR,Req. 10 '수면 제한 요법 기본 시간'의 수면 제한 요법 기본 기상 시간을 7:00에서 6:30으로 변경한다.,수면 제한 요법 기본 시간 기능에서 수면 제한 요법 기본 기상 시간을 6:30으로 바꿔 주세요.,"[MDSR | Req. 8 | 설명] (same_value)
+[MDSR | Req. 8 | 기준#p2] (same_value)
+[MDSR | Req. 10 | 설명] (origin)
+[MDSR | Req. 10 | 기준#p1] (origin)
+[MDSR | Req. 10 | 기준#p2] (origin)",,trace 0. same_value 3. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_57,T1,value_change,1,MDSR,Req. 14 'CBT 알림 설정'의 CBT 회기 알림 시각을 18:00에서 17:00으로 변경한다.,CBT 알림 설정 기능에서 CBT 회기 알림 시각을 17:00으로 바꿔 주세요.,"[MDSR | Req. 9 | 설명] (same_value)
+[MDSR | Req. 9 | 기준#p2] (same_value)
+[MDSR | Req. 14 | 기준#p1] (origin)",,trace 0. same_value 3. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_58,T1,value_change,1,MDSR,Req. 9 '알림 설정'의 CBT 회기 알림 시각을 18:00에서 17:00으로 변경한다.,알림 설정 기능에서 CBT 회기 알림 시각을 17:00으로 바꿔 주세요.,"[MDSR | Req. 9 | 설명] (origin)
+[MDSR | Req. 9 | 기준#p2] (origin)
+[MDSR | Req. 14 | 기준#p1] (same_value)",,trace 0. same_value 2. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_59,T1,value_change,1,MDSR,Req. 6 '감사로그 관리'의 의료진 접속 기록 감사 주기를 45일에서 30일로 변경한다.,감사로그 관리 기능에서 의료진 접속 기록 감사 주기를 30일로 바꿔 주세요.,"[MDSR | Req. 6 | 설명] (origin)
+[MDSR | Req. 6 | 기준#p2] (origin)
+[MDSR | Req. 104 | 설명] (same_value)",,trace 1. same_value 2. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_60,T1,value_change,1,MDSR,Req. 8 '수면일기 기록'의 수면일기 입력 기한을 24시간에서 12시간으로 변경한다.,수면일기 기록 기능에서 수면일기 입력 기한을 12시간으로 바꿔 주세요.,"[MDSR | Req. 8 | 설명] (origin)
+[MDSR | Req. 8 | 기준#p1] (origin)","[MDSR | 3.4 일반적 제한 | 본문#p7] (same_value) - 같은 값(24 시간)이지만 다른 사실
+[MDSR | Req. 7 | 설명] (same_value) - 같은 값(24시간)이지만 다른 사실
+[MDSR | Req. 7 | 기준#p1] (same_value) - 같은 값(24 시간)이지만 다른 사실
+[MDSR | Req. 105 | 설명] (same_value) - 같은 값(매일)이지만 다른 사실
+[MDSR | Req. 105 | 기준#p1] (same_value) - 같은 값(24시간)이지만 다른 사실",trace 1. same_value 0. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_61,T1,value_change,1,MDSR,Req. 9 '알림 설정'의 알림 시각을 21:00에서 20:30으로 변경한다.,알림 설정 기능에서 알림 시각을 20:30으로 바꿔 주세요.,[MDSR | Req. 9 | 기준#p1] (origin),,trace 0. same_value 0. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_62,T1,value_change,1,MDSR,Req. 106 '총 치료 회기 수'의 CBT-I 총 치료 회기 수를 6회에서 4회로 변경한다.,총 치료 회기 수 기능에서 CBT-I 총 치료 회기 수를 4회로 바꿔 주세요.,"[MDSR | Req. 106 | 설명] (origin)
+[MDSR | Req. 106 | 기준#p1] (origin)
+[MDSR | Req. 106 | 기준#p2] (origin)",,trace 1. same_value 0. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_63,T1,value_change,1,MDSR,Req. 11 '자극 조절 교육'의 자극 조절 교육 기본 기간을 7일에서 5일로 변경한다.,자극 조절 교육 기능에서 자극 조절 교육 기본 기간을 5일로 바꿔 주세요.,"[MDSR | Req. 11 | 설명] (origin)
+[MDSR | Req. 11 | 기준#p1] (origin)","[MDSR | Req. 12 | 설명] (same_value) - 같은 값(7일)이지만 다른 사실
+[MDSR | Req. 12 | 기준#p2] (same_value) - 같은 값(7 일)이지만 다른 사실
+[MDSR | Req. 13 | 기준#p2] (same_value) - 같은 값(7일)이지만 다른 사실
+[MDSR | Req. 16 | 설명] (same_value) - 같은 값(7일)이지만 다른 사실
+[MDSR | Req. 16 | 기준#p1] (same_value) - 같은 값(7 일)이지만 다른 사실
+[MDSR | Req. 17 | 설명] (same_value) - 같은 값(7일)이지만 다른 사실
+[MDSR | Req. 17 | 기준#p1] (same_value) - 같은 값(7 일)이지만 다른 사실
+[MDSR | Req. 17 | 기준#p2] (same_value) - 같은 값(1주일)이지만 다른 사실",trace 0. same_value 0. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_64,T1,value_change,1,MDSR,Req. 12 '수면 위생 교육'의 수면 위생 교육 기본 기간을 7일에서 5일로 변경한다.,수면 위생 교육 기능에서 수면 위생 교육 기본 기간을 5일로 바꿔 주세요.,"[MDSR | Req. 12 | 설명] (origin)
+[MDSR | Req. 12 | 기준#p2] (origin)","[MDSR | Req. 11 | 설명] (same_value) - 같은 값(7일)이지만 다른 사실
+[MDSR | Req. 11 | 기준#p1] (same_value) - 같은 값(7 일)이지만 다른 사실
+[MDSR | Req. 13 | 기준#p2] (same_value) - 같은 값(7일)이지만 다른 사실
+[MDSR | Req. 16 | 설명] (same_value) - 같은 값(7일)이지만 다른 사실
+[MDSR | Req. 16 | 기준#p1] (same_value) - 같은 값(7 일)이지만 다른 사실
+[MDSR | Req. 17 | 설명] (same_value) - 같은 값(7일)이지만 다른 사실
+[MDSR | Req. 17 | 기준#p1] (same_value) - 같은 값(7 일)이지만 다른 사실
+[MDSR | Req. 17 | 기준#p2] (same_value) - 같은 값(1주일)이지만 다른 사실",trace 0. same_value 0. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_65,T1,value_change,1,MDSR,Req. 13 'CBT 회기 기본 설정'의 CBT 회기 기본 지속 시간을 30분에서 20분으로 변경한다.,CBT 회기 기본 설정 기능에서 CBT 회기 기본 지속 시간을 20분으로 바꿔 주세요.,[MDSR | Req. 13 | 기준#p1] (origin),,trace 0. same_value 0. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_66,T1,value_change,1,MDSR,Req. 13 'CBT 회기 기본 설정'의 CBT 회기 기본 간격을 7일에서 5일로 변경한다.,CBT 회기 기본 설정 기능에서 CBT 회기 기본 간격을 5일로 바꿔 주세요.,[MDSR | Req. 13 | 기준#p2] (origin),"[MDSR | Req. 11 | 설명] (same_value) - 같은 값(7일)이지만 다른 사실
+[MDSR | Req. 11 | 기준#p1] (same_value) - 같은 값(7 일)이지만 다른 사실
+[MDSR | Req. 12 | 설명] (same_value) - 같은 값(7일)이지만 다른 사실
+[MDSR | Req. 12 | 기준#p2] (same_value) - 같은 값(7 일)이지만 다른 사실
+[MDSR | Req. 16 | 설명] (same_value) - 같은 값(7일)이지만 다른 사실
+[MDSR | Req. 16 | 기준#p1] (same_value) - 같은 값(7 일)이지만 다른 사실
+[MDSR | Req. 17 | 설명] (same_value) - 같은 값(7일)이지만 다른 사실
+[MDSR | Req. 17 | 기준#p1] (same_value) - 같은 값(7 일)이지만 다른 사실
+[MDSR | Req. 17 | 기준#p2] (same_value) - 같은 값(1주일)이지만 다른 사실",trace 0. same_value 0. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_67,T1,value_change,1,MDSR,Req. 14 'CBT 알림 설정'의 CBT 회기 알림 반복 간격을 15분에서 20분으로 변경한다.,CBT 알림 설정 기능에서 CBT 회기 알림 반복 간격을 20분으로 바꿔 주세요.,[MDSR | Req. 14 | 기준#p2] (origin),"[MDSR | 3.4 일반적 제한 | 본문#p1] (same_value) - 같은 값(십오 분)이지만 다른 사실
+[MDSR | Req. 2 | 설명] (same_value) - 같은 값(15분)이지만 다른 사실
+[MDSR | Req. 2 | 기준#p1] (same_value) - 같은 값(15 분)이지만 다른 사실
+[MDSR | 3.4 일반적 제한 | 본문#p2] (same_value) - 같은 값(십오 분)이지만 다른 사실
+[MDSR | Req. 3 | 설명] (same_value) - 같은 값(15분)이지만 다른 사실
+[MDSR | Req. 3 | 기준#p1] (same_value) - 같은 값(15 분)이지만 다른 사실
+[MDSR | Req. 3 | 기준#p2] (same_value) - 같은 값(15 분)이지만 다른 사실",trace 0. same_value 0. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_68,T1,value_change,1,MDSR,Req. 15 '이완 훈련'의 CBT 회기 알림 최대 반복 횟수를 3회에서 2회로 변경한다.,이완 훈련 기능에서 CBT 회기 알림 최대 반복 횟수를 2회로 바꿔 주세요.,"[MDSR | Req. 15 | 설명] (origin)
+[MDSR | Req. 15 | 기준#p2] (origin)",,trace 0. same_value 0. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_69,T1,value_change,1,MDSR,Req. 14 'CBT 알림 설정'의 CBT 회기 알림 소리를 벨 소리에서 진동으로 변경한다.,CBT 알림 설정 기능에서 CBT 회기 알림 소리를 진동으로 바꿔 주세요.,[MDSR | Req. 14 | 기준#p2] (origin),,trace 0. same_value 0. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_70,T1,value_change,1,MDSR,Req. 12 '수면 위생 교육'의 수면 위생 교육 콘텐츠 수를 12개에서 10개로 변경한다.,수면 위생 교육 기능에서 수면 위생 교육 콘텐츠 수를 10개로 바꿔 주세요.,[MDSR | Req. 12 | 기준#p1] (origin),,trace 0. same_value 0. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_71,T1,value_change,1,MDSR,Req. 15 '이완 훈련'의 이완 훈련 세션 지속 시간을 10분에서 20분으로 변경한다.,이완 훈련 기능에서 이완 훈련 세션 지속 시간을 20분으로 바꿔 주세요.,"[MDSR | Req. 15 | 설명] (origin)
+[MDSR | Req. 15 | 기준#p1] (origin)",,trace 0. same_value 0. 같은 변경을 문서 수만 달리한 행이 있음,
+T1_72,T1,value_change,1,MDSR,Req. 16 '수면 효율 리포트'의 수면 효율 리포트 생성 주기를 7일에서 14일로 변경한다.,수면 효율 리포트 기능에서 수면 효율 리포트 생성 주기를 14일로 바꿔 주세요.,"[MDSR | Req. 16 | 설명] (origin)
+[MDSR | Req. 16 | 기준#p1] (origin)","[MDSR | Req. 11 | 설명] (same_value) - 같은 값(7일)이지만 다른 사실
+[MDSR | Req. 11 | 기준#p1] (same_value) - 같은 값(7 일)이지만 다른 사실
+[MDSR | Req. 12 | 설명] (same_value) - 같은 값(7일)이지만 다른 사실
+[MDSR | Req. 12 | 기준#p2] (same_value) - 같은 값(7 일)이지만 다른 사실
+[MDSR | Req. 13 | 기준#p2] (same_value) - 같은 값(7일)이지만 다른 사실
+[MDSR | Req. 17 | 설명] (same_value) - 같은 값(7일)이지만 다른 사실
+[MDSR | Req. 17 | 기준#p1] (same_value) - 같은 값(7 일)이지만 다른 사실
+[MDSR | Req. 17 | 기준#p2] (same_value) - 같은 값(1주일)이지만 다른 사실",trace 0. same_value 0. 같은 변경을 문서 수만 달리한 행이 있음,
+T2_01,T2,rule_flip,1,XXCS,제품 사이버보안 속성 '개인식별정보 저장'(stores_pii)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.,수면코치를 환자 이름·연락처 같은 개인식별정보를 서버에 저장하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.,"[XXCS | DC-02 | 체크리스트 적용 여부] (rule)
+[XXCS | DC-02 | 체크리스트 입증 방법] (rule)
+[XXCS | DC-02 | 적용 여부] (rule)
+[XXCS | DC-02 | 판정] (rule)","[XXCS | IA-05 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-05 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-06 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | IA-06 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | UC-03 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(UC-03), 이번 변경과 무관
+[XXCS | UC-03 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(UC-03), 이번 변경과 무관",약화 아님(보안 항목이 새로 적용됨),
+T2_02,T2,rule_flip,1,XXCS,제품 사이버보안 속성 '독립형 소프트웨어 의료기기(SaMD)'(samd)을 true에서 false로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.,수면코치를 전용 하드웨어 기기와 함께 공급하는 형태로 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.,"[XXCS | SI-10 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-10 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-10 | 적용 여부] (rule)
+[XXCS | SI-10 | 판정] (rule)
+[XXCS | SI-11 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-11 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-11 | 적용 여부] (rule)
+[XXCS | SI-11 | 판정] (rule)","[XXCS | IA-05 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-05 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-06 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | IA-06 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | DC-02 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관
+[XXCS | DC-02 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관",약화 아님(보안 항목이 새로 적용됨),
+T2_03,T2,rule_flip,1,XXCS,제품 사이버보안 속성 '모바일 코드(외부 스크립트 콘텐츠) 실행'(mobile_code)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.,수면코치를 교육 콘텐츠를 웹 기반 스크립트로 내려받아 실행하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.,"[XXCS | UC-02 | 체크리스트 적용 여부] (rule)
+[XXCS | UC-02 | 체크리스트 입증 방법] (rule)
+[XXCS | UC-02 | 적용 여부] (rule)
+[XXCS | UC-02 | 판정] (rule)","[XXCS | IA-05 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-05 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-06 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | IA-06 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | DC-02 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관
+[XXCS | DC-02 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관",약화 아님(보안 항목이 새로 적용됨),
+T2_04,T2,rule_flip,1,XXCS,제품 사이버보안 속성 '전자서명 기반 처방 기능'(e_signature)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.,수면코치를 의료진이 처방 변경에 전자서명을 하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.,"[XXCS | UC-07 | 체크리스트 적용 여부] (rule)
+[XXCS | UC-07 | 체크리스트 입증 방법] (rule)
+[XXCS | UC-07 | 적용 여부] (rule)
+[XXCS | UC-07 | 판정] (rule)","[XXCS | IA-05 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-05 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-06 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | IA-06 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | DC-02 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관
+[XXCS | DC-02 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관",약화 아님(보안 항목이 새로 적용됨),
+T2_05,T2,rule_flip,1,XXCS,제품 사이버보안 속성 '제조사 원격 업데이트 기능'(remote_update)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.,수면코치를 제조사가 서버에서 소프트웨어 업데이트를 원격 배포하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.,"[XXCS | SI-08 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-08 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-08 | 적용 여부] (rule)
+[XXCS | SI-08 | 판정] (rule)
+[XXCS | SI-09 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-09 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-09 | 적용 여부] (rule)
+[XXCS | SI-09 | 판정] (rule)","[XXCS | IA-05 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-05 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-06 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | IA-06 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | DC-02 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관
+[XXCS | DC-02 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관",약화 아님(보안 항목이 새로 적용됨),
+T2_06,T2,rule_flip,1,XXCS,"제품 사이버보안 속성 '개인식별정보 저장'(stores_pii)을 false에서 true로, '독립형 소프트웨어 의료기기(SaMD)'(samd)을 true에서 false로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.","수면코치를 환자 이름·연락처 같은 개인식별정보를 서버에 저장하도록 바꾸고, 전용 하드웨어 기기와 함께 공급하는 형태로 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.","[XXCS | DC-02 | 체크리스트 적용 여부] (rule)
+[XXCS | DC-02 | 체크리스트 입증 방법] (rule)
+[XXCS | DC-02 | 적용 여부] (rule)
+[XXCS | DC-02 | 판정] (rule)
+[XXCS | SI-10 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-10 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-10 | 적용 여부] (rule)
+[XXCS | SI-10 | 판정] (rule)
+[XXCS | SI-11 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-11 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-11 | 적용 여부] (rule)
+[XXCS | SI-11 | 판정] (rule)","[XXCS | IA-05 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-05 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-06 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | IA-06 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | UC-03 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(UC-03), 이번 변경과 무관
+[XXCS | UC-03 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(UC-03), 이번 변경과 무관",속성 2개 동시 변경. 약화 아님(보안 항목이 새로 적용됨). [수정] 중복 행 대체.,
+T2_07,T2,rule_flip,1,XXCS,"제품 사이버보안 속성 '독립형 소프트웨어 의료기기(SaMD)'(samd)을 true에서 false로, '모바일 코드(외부 스크립트 콘텐츠) 실행'(mobile_code)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.","수면코치를 전용 하드웨어 기기와 함께 공급하는 형태로 바꾸고, 교육 콘텐츠를 웹 기반 스크립트로 내려받아 실행하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.","[XXCS | SI-10 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-10 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-10 | 적용 여부] (rule)
+[XXCS | SI-10 | 판정] (rule)
+[XXCS | SI-11 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-11 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-11 | 적용 여부] (rule)
+[XXCS | SI-11 | 판정] (rule)
+[XXCS | UC-02 | 체크리스트 적용 여부] (rule)
+[XXCS | UC-02 | 체크리스트 입증 방법] (rule)
+[XXCS | UC-02 | 적용 여부] (rule)
+[XXCS | UC-02 | 판정] (rule)","[XXCS | IA-05 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-05 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-06 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | IA-06 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | DC-02 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관
+[XXCS | DC-02 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관",속성 2개 동시 변경. 약화 아님(보안 항목이 새로 적용됨). [수정] 중복 행 대체.,
+T2_08,T2,rule_flip,1,XXCS,"제품 사이버보안 속성 '모바일 코드(외부 스크립트 콘텐츠) 실행'(mobile_code)을 false에서 true로, '전자서명 기반 처방 기능'(e_signature)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.","수면코치를 교육 콘텐츠를 웹 기반 스크립트로 내려받아 실행하도록 바꾸고, 의료진이 처방 변경에 전자서명을 하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.","[XXCS | UC-02 | 체크리스트 적용 여부] (rule)
+[XXCS | UC-02 | 체크리스트 입증 방법] (rule)
+[XXCS | UC-02 | 적용 여부] (rule)
+[XXCS | UC-02 | 판정] (rule)
+[XXCS | UC-07 | 체크리스트 적용 여부] (rule)
+[XXCS | UC-07 | 체크리스트 입증 방법] (rule)
+[XXCS | UC-07 | 적용 여부] (rule)
+[XXCS | UC-07 | 판정] (rule)","[XXCS | IA-05 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-05 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-06 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | IA-06 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | DC-02 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관
+[XXCS | DC-02 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관",속성 2개 동시 변경. 약화 아님(보안 항목이 새로 적용됨). [수정] 중복 행 대체.,
+T2_09,T2,rule_flip,1,XXCS,"제품 사이버보안 속성 '전자서명 기반 처방 기능'(e_signature)을 false에서 true로, '제조사 원격 업데이트 기능'(remote_update)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.","수면코치를 의료진이 처방 변경에 전자서명을 하도록 바꾸고, 제조사가 서버에서 소프트웨어 업데이트를 원격 배포하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.","[XXCS | UC-07 | 체크리스트 적용 여부] (rule)
+[XXCS | UC-07 | 체크리스트 입증 방법] (rule)
+[XXCS | UC-07 | 적용 여부] (rule)
+[XXCS | UC-07 | 판정] (rule)
+[XXCS | SI-08 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-08 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-08 | 적용 여부] (rule)
+[XXCS | SI-08 | 판정] (rule)
+[XXCS | SI-09 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-09 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-09 | 적용 여부] (rule)
+[XXCS | SI-09 | 판정] (rule)","[XXCS | IA-05 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-05 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-06 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | IA-06 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | DC-02 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관
+[XXCS | DC-02 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관",속성 2개 동시 변경. 약화 아님(보안 항목이 새로 적용됨). [수정] 중복 행 대체.,
+T2_10,T2,rule_flip,1,XXCS,"제품 사이버보안 속성 '개인식별정보 저장'(stores_pii)을 false에서 true로, '전자서명 기반 처방 기능'(e_signature)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.","수면코치를 환자 이름·연락처 같은 개인식별정보를 서버에 저장하도록 바꾸고, 의료진이 처방 변경에 전자서명을 하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.","[XXCS | DC-02 | 체크리스트 적용 여부] (rule)
+[XXCS | DC-02 | 체크리스트 입증 방법] (rule)
+[XXCS | DC-02 | 적용 여부] (rule)
+[XXCS | DC-02 | 판정] (rule)
+[XXCS | UC-07 | 체크리스트 적용 여부] (rule)
+[XXCS | UC-07 | 체크리스트 입증 방법] (rule)
+[XXCS | UC-07 | 적용 여부] (rule)
+[XXCS | UC-07 | 판정] (rule)","[XXCS | IA-05 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-05 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-06 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | IA-06 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | UC-03 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(UC-03), 이번 변경과 무관
+[XXCS | UC-03 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(UC-03), 이번 변경과 무관",속성 2개 동시 변경. 약화 아님(보안 항목이 새로 적용됨). [수정] 중복 행 대체.,
+T2_11,T2,rule_flip,1,XXCS,"제품 사이버보안 속성 '독립형 소프트웨어 의료기기(SaMD)'(samd)을 true에서 false로, '제조사 원격 업데이트 기능'(remote_update)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.","수면코치를 전용 하드웨어 기기와 함께 공급하는 형태로 바꾸고, 제조사가 서버에서 소프트웨어 업데이트를 원격 배포하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.","[XXCS | SI-10 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-10 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-10 | 적용 여부] (rule)
+[XXCS | SI-10 | 판정] (rule)
+[XXCS | SI-11 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-11 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-11 | 적용 여부] (rule)
+[XXCS | SI-11 | 판정] (rule)
+[XXCS | SI-08 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-08 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-08 | 적용 여부] (rule)
+[XXCS | SI-08 | 판정] (rule)
+[XXCS | SI-09 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-09 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-09 | 적용 여부] (rule)
+[XXCS | SI-09 | 판정] (rule)","[XXCS | IA-05 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-05 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-06 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | IA-06 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | DC-02 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관
+[XXCS | DC-02 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관",속성 2개 동시 변경. 약화 아님(보안 항목이 새로 적용됨). [수정] 중복 행 대체.,
+T2_12,T2,rule_flip,1,XXCS,"제품 사이버보안 속성 '모바일 코드(외부 스크립트 콘텐츠) 실행'(mobile_code)을 false에서 true로, '제조사 원격 업데이트 기능'(remote_update)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.","수면코치를 교육 콘텐츠를 웹 기반 스크립트로 내려받아 실행하도록 바꾸고, 제조사가 서버에서 소프트웨어 업데이트를 원격 배포하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.","[XXCS | UC-02 | 체크리스트 적용 여부] (rule)
+[XXCS | UC-02 | 체크리스트 입증 방법] (rule)
+[XXCS | UC-02 | 적용 여부] (rule)
+[XXCS | UC-02 | 판정] (rule)
+[XXCS | SI-08 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-08 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-08 | 적용 여부] (rule)
+[XXCS | SI-08 | 판정] (rule)
+[XXCS | SI-09 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-09 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-09 | 적용 여부] (rule)
+[XXCS | SI-09 | 판정] (rule)","[XXCS | IA-05 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-05 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-06 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | IA-06 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | DC-02 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관
+[XXCS | DC-02 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관",속성 2개 동시 변경. 약화 아님(보안 항목이 새로 적용됨). [수정] 중복 행 대체.,
+T2_13,T2,rule_flip,2,"MDSR,XXCS",제품 사이버보안 속성 '모바일 코드(외부 스크립트 콘텐츠) 실행'(mobile_code)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.,수면코치를 교육 콘텐츠를 웹 기반 스크립트로 내려받아 실행하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.,"[XXCS | UC-02 | 체크리스트 적용 여부] (rule)
+[XXCS | UC-02 | 체크리스트 입증 방법] (rule)
+[XXCS | UC-02 | 적용 여부] (rule)
+[XXCS | UC-02 | 판정] (rule)","[XXCS | IA-05 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-05 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-06 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | IA-06 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | DC-02 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관
+[XXCS | DC-02 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관",약화 아님(보안 항목이 새로 적용됨),
+T2_14,T2,rule_flip,2,"MDSR,XXCS",제품 사이버보안 속성 '전자서명 기반 처방 기능'(e_signature)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.,수면코치를 의료진이 처방 변경에 전자서명을 하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.,"[XXCS | UC-07 | 체크리스트 적용 여부] (rule)
+[XXCS | UC-07 | 체크리스트 입증 방법] (rule)
+[XXCS | UC-07 | 적용 여부] (rule)
+[XXCS | UC-07 | 판정] (rule)","[XXCS | IA-05 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-05 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-06 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | IA-06 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | DC-02 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관
+[XXCS | DC-02 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관",약화 아님(보안 항목이 새로 적용됨),
+T2_15,T2,rule_flip,2,"MDSR,XXCS",제품 사이버보안 속성 '제조사 원격 업데이트 기능'(remote_update)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.,수면코치를 제조사가 서버에서 소프트웨어 업데이트를 원격 배포하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.,"[XXCS | SI-08 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-08 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-08 | 적용 여부] (rule)
+[XXCS | SI-08 | 판정] (rule)
+[XXCS | SI-09 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-09 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-09 | 적용 여부] (rule)
+[XXCS | SI-09 | 판정] (rule)","[XXCS | IA-05 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-05 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-06 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | IA-06 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | DC-02 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관
+[XXCS | DC-02 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관",약화 아님(보안 항목이 새로 적용됨),
+T2_16,T2,rule_flip,2,"MDSR,XXCS",제품 사이버보안 속성 '개인식별정보 저장'(stores_pii)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.,수면코치를 환자 이름·연락처 같은 개인식별정보를 서버에 저장하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.,"[XXCS | DC-02 | 체크리스트 적용 여부] (rule)
+[XXCS | DC-02 | 체크리스트 입증 방법] (rule)
+[XXCS | DC-02 | 적용 여부] (rule)
+[XXCS | DC-02 | 판정] (rule)","[XXCS | IA-05 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-05 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-06 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | IA-06 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | UC-03 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(UC-03), 이번 변경과 무관
+[XXCS | UC-03 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(UC-03), 이번 변경과 무관",약화 아님(보안 항목이 새로 적용됨),
+T2_17,T2,rule_flip,2,"MDSR,XXCS",제품 사이버보안 속성 '독립형 소프트웨어 의료기기(SaMD)'(samd)을 true에서 false로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.,수면코치를 전용 하드웨어 기기와 함께 공급하는 형태로 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.,"[XXCS | SI-10 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-10 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-10 | 적용 여부] (rule)
+[XXCS | SI-10 | 판정] (rule)
+[XXCS | SI-11 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-11 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-11 | 적용 여부] (rule)
+[XXCS | SI-11 | 판정] (rule)","[XXCS | IA-05 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-05 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-06 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | IA-06 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | DC-02 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관
+[XXCS | DC-02 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관",약화 아님(보안 항목이 새로 적용됨),
+T2_18,T2,rule_flip,2,"MDSR,XXCS","제품 사이버보안 속성 '독립형 소프트웨어 의료기기(SaMD)'(samd)을 true에서 false로, '전자서명 기반 처방 기능'(e_signature)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.","수면코치를 전용 하드웨어 기기와 함께 공급하는 형태로 바꾸고, 의료진이 처방 변경에 전자서명을 하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.","[XXCS | SI-10 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-10 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-10 | 적용 여부] (rule)
+[XXCS | SI-10 | 판정] (rule)
+[XXCS | SI-11 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-11 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-11 | 적용 여부] (rule)
+[XXCS | SI-11 | 판정] (rule)
+[XXCS | UC-07 | 체크리스트 적용 여부] (rule)
+[XXCS | UC-07 | 체크리스트 입증 방법] (rule)
+[XXCS | UC-07 | 적용 여부] (rule)
+[XXCS | UC-07 | 판정] (rule)","[XXCS | IA-05 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-05 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-06 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | IA-06 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | DC-02 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관
+[XXCS | DC-02 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관",속성 2개 동시 변경. 약화 아님(보안 항목이 새로 적용됨). [수정] 중복 행 대체.,
+T2_19,T2,rule_flip,2,"MDDR,XXCS",제품 사이버보안 속성 '전자서명 기반 처방 기능'(e_signature)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.,수면코치를 의료진이 처방 변경에 전자서명을 하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.,"[XXCS | UC-07 | 체크리스트 적용 여부] (rule)
+[XXCS | UC-07 | 체크리스트 입증 방법] (rule)
+[XXCS | UC-07 | 적용 여부] (rule)
+[XXCS | UC-07 | 판정] (rule)","[XXCS | IA-05 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-05 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-06 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | IA-06 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | DC-02 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관
+[XXCS | DC-02 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관",약화 아님(보안 항목이 새로 적용됨),
+T2_20,T2,rule_flip,2,"MDDR,XXCS",제품 사이버보안 속성 '제조사 원격 업데이트 기능'(remote_update)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.,수면코치를 제조사가 서버에서 소프트웨어 업데이트를 원격 배포하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.,"[XXCS | SI-08 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-08 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-08 | 적용 여부] (rule)
+[XXCS | SI-08 | 판정] (rule)
+[XXCS | SI-09 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-09 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-09 | 적용 여부] (rule)
+[XXCS | SI-09 | 판정] (rule)","[XXCS | IA-05 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-05 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-06 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | IA-06 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | DC-02 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관
+[XXCS | DC-02 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관",약화 아님(보안 항목이 새로 적용됨),
+T2_21,T2,rule_flip,2,"MDDR,XXCS",제품 사이버보안 속성 '개인식별정보 저장'(stores_pii)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.,수면코치를 환자 이름·연락처 같은 개인식별정보를 서버에 저장하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.,"[XXCS | DC-02 | 체크리스트 적용 여부] (rule)
+[XXCS | DC-02 | 체크리스트 입증 방법] (rule)
+[XXCS | DC-02 | 적용 여부] (rule)
+[XXCS | DC-02 | 판정] (rule)","[XXCS | IA-05 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-05 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-06 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | IA-06 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | UC-03 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(UC-03), 이번 변경과 무관
+[XXCS | UC-03 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(UC-03), 이번 변경과 무관",약화 아님(보안 항목이 새로 적용됨),
+T2_22,T2,rule_flip,2,"MDDR,XXCS",제품 사이버보안 속성 '독립형 소프트웨어 의료기기(SaMD)'(samd)을 true에서 false로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.,수면코치를 전용 하드웨어 기기와 함께 공급하는 형태로 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.,"[XXCS | SI-10 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-10 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-10 | 적용 여부] (rule)
+[XXCS | SI-10 | 판정] (rule)
+[XXCS | SI-11 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-11 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-11 | 적용 여부] (rule)
+[XXCS | SI-11 | 판정] (rule)","[XXCS | IA-05 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-05 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-06 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | IA-06 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | DC-02 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관
+[XXCS | DC-02 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관",약화 아님(보안 항목이 새로 적용됨),
+T2_23,T2,rule_flip,2,"MDDR,XXCS",제품 사이버보안 속성 '모바일 코드(외부 스크립트 콘텐츠) 실행'(mobile_code)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.,수면코치를 교육 콘텐츠를 웹 기반 스크립트로 내려받아 실행하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.,"[XXCS | UC-02 | 체크리스트 적용 여부] (rule)
+[XXCS | UC-02 | 체크리스트 입증 방법] (rule)
+[XXCS | UC-02 | 적용 여부] (rule)
+[XXCS | UC-02 | 판정] (rule)","[XXCS | IA-05 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-05 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-06 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | IA-06 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | DC-02 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관
+[XXCS | DC-02 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관",약화 아님(보안 항목이 새로 적용됨),
+T2_24,T2,rule_flip,2,"MDDR,XXCS","제품 사이버보안 속성 '개인식별정보 저장'(stores_pii)을 false에서 true로, '제조사 원격 업데이트 기능'(remote_update)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.","수면코치를 환자 이름·연락처 같은 개인식별정보를 서버에 저장하도록 바꾸고, 제조사가 서버에서 소프트웨어 업데이트를 원격 배포하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.","[XXCS | DC-02 | 체크리스트 적용 여부] (rule)
+[XXCS | DC-02 | 체크리스트 입증 방법] (rule)
+[XXCS | DC-02 | 적용 여부] (rule)
+[XXCS | DC-02 | 판정] (rule)
+[XXCS | SI-08 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-08 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-08 | 적용 여부] (rule)
+[XXCS | SI-08 | 판정] (rule)
+[XXCS | SI-09 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-09 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-09 | 적용 여부] (rule)
+[XXCS | SI-09 | 판정] (rule)","[XXCS | IA-05 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-05 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-06 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | IA-06 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | UC-03 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(UC-03), 이번 변경과 무관
+[XXCS | UC-03 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(UC-03), 이번 변경과 무관",속성 2개 동시 변경. 약화 아님(보안 항목이 새로 적용됨). [수정] 중복 행 대체.,
+T2_25,T2,rule_flip,3,"MDSR,MDDR,XXCS",제품 사이버보안 속성 '제조사 원격 업데이트 기능'(remote_update)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.,수면코치를 제조사가 서버에서 소프트웨어 업데이트를 원격 배포하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.,"[XXCS | SI-08 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-08 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-08 | 적용 여부] (rule)
+[XXCS | SI-08 | 판정] (rule)
+[XXCS | SI-09 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-09 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-09 | 적용 여부] (rule)
+[XXCS | SI-09 | 판정] (rule)","[XXCS | IA-05 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-05 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-06 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | IA-06 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | DC-02 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관
+[XXCS | DC-02 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관",약화 아님(보안 항목이 새로 적용됨),
+T2_26,T2,rule_flip,3,"MDSR,MDDR,XXCS",제품 사이버보안 속성 '개인식별정보 저장'(stores_pii)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.,수면코치를 환자 이름·연락처 같은 개인식별정보를 서버에 저장하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.,"[XXCS | DC-02 | 체크리스트 적용 여부] (rule)
+[XXCS | DC-02 | 체크리스트 입증 방법] (rule)
+[XXCS | DC-02 | 적용 여부] (rule)
+[XXCS | DC-02 | 판정] (rule)","[XXCS | IA-05 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-05 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-06 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | IA-06 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | UC-03 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(UC-03), 이번 변경과 무관
+[XXCS | UC-03 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(UC-03), 이번 변경과 무관",약화 아님(보안 항목이 새로 적용됨),
+T2_27,T2,rule_flip,3,"MDSR,MDDR,XXCS",제품 사이버보안 속성 '독립형 소프트웨어 의료기기(SaMD)'(samd)을 true에서 false로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.,수면코치를 전용 하드웨어 기기와 함께 공급하는 형태로 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.,"[XXCS | SI-10 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-10 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-10 | 적용 여부] (rule)
+[XXCS | SI-10 | 판정] (rule)
+[XXCS | SI-11 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-11 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-11 | 적용 여부] (rule)
+[XXCS | SI-11 | 판정] (rule)","[XXCS | IA-05 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-05 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-06 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | IA-06 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | DC-02 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관
+[XXCS | DC-02 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관",약화 아님(보안 항목이 새로 적용됨),
+T2_28,T2,rule_flip,3,"MDSR,MDDR,XXCS",제품 사이버보안 속성 '모바일 코드(외부 스크립트 콘텐츠) 실행'(mobile_code)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.,수면코치를 교육 콘텐츠를 웹 기반 스크립트로 내려받아 실행하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.,"[XXCS | UC-02 | 체크리스트 적용 여부] (rule)
+[XXCS | UC-02 | 체크리스트 입증 방법] (rule)
+[XXCS | UC-02 | 적용 여부] (rule)
+[XXCS | UC-02 | 판정] (rule)","[XXCS | IA-05 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-05 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-06 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | IA-06 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | DC-02 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관
+[XXCS | DC-02 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관",약화 아님(보안 항목이 새로 적용됨),
+T2_29,T2,rule_flip,3,"MDSR,MDDR,XXCS",제품 사이버보안 속성 '전자서명 기반 처방 기능'(e_signature)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.,수면코치를 의료진이 처방 변경에 전자서명을 하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.,"[XXCS | UC-07 | 체크리스트 적용 여부] (rule)
+[XXCS | UC-07 | 체크리스트 입증 방법] (rule)
+[XXCS | UC-07 | 적용 여부] (rule)
+[XXCS | UC-07 | 판정] (rule)","[XXCS | IA-05 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-05 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-06 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | IA-06 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | DC-02 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관
+[XXCS | DC-02 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관",약화 아님(보안 항목이 새로 적용됨),
+T2_30,T2,rule_flip,3,"MDSR,MDDR,XXCS","제품 사이버보안 속성 '개인식별정보 저장'(stores_pii)을 false에서 true로, '독립형 소프트웨어 의료기기(SaMD)'(samd)을 true에서 false로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.","수면코치를 환자 이름·연락처 같은 개인식별정보를 서버에 저장하도록 바꾸고, 전용 하드웨어 기기와 함께 공급하는 형태로 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.","[XXCS | DC-02 | 체크리스트 적용 여부] (rule)
+[XXCS | DC-02 | 체크리스트 입증 방법] (rule)
+[XXCS | DC-02 | 적용 여부] (rule)
+[XXCS | DC-02 | 판정] (rule)
+[XXCS | SI-10 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-10 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-10 | 적용 여부] (rule)
+[XXCS | SI-10 | 판정] (rule)
+[XXCS | SI-11 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-11 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-11 | 적용 여부] (rule)
+[XXCS | SI-11 | 판정] (rule)","[XXCS | IA-05 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-05 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-06 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | IA-06 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | UC-03 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(UC-03), 이번 변경과 무관
+[XXCS | UC-03 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(UC-03), 이번 변경과 무관",속성 2개 동시 변경. 약화 아님(보안 항목이 새로 적용됨). [수정] 중복 행 대체.,
+T2_31,T2,rule_flip,3,"MDSR,MDDR,XXCS","제품 사이버보안 속성 '개인식별정보 저장'(stores_pii)을 false에서 true로, '모바일 코드(외부 스크립트 콘텐츠) 실행'(mobile_code)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.","수면코치를 환자 이름·연락처 같은 개인식별정보를 서버에 저장하도록 바꾸고, 교육 콘텐츠를 웹 기반 스크립트로 내려받아 실행하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.","[XXCS | DC-02 | 체크리스트 적용 여부] (rule)
+[XXCS | DC-02 | 체크리스트 입증 방법] (rule)
+[XXCS | DC-02 | 적용 여부] (rule)
+[XXCS | DC-02 | 판정] (rule)
+[XXCS | UC-02 | 체크리스트 적용 여부] (rule)
+[XXCS | UC-02 | 체크리스트 입증 방법] (rule)
+[XXCS | UC-02 | 적용 여부] (rule)
+[XXCS | UC-02 | 판정] (rule)","[XXCS | IA-05 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-05 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-06 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | IA-06 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | UC-03 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(UC-03), 이번 변경과 무관
+[XXCS | UC-03 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(UC-03), 이번 변경과 무관",속성 2개 동시 변경. 약화 아님(보안 항목이 새로 적용됨). [수정] 중복 행 대체.,
+T2_32,T2,rule_flip,3,"MDSR,MDDR,XXCS","제품 사이버보안 속성 '개인식별정보 저장'(stores_pii)을 false에서 true로, '제조사 원격 업데이트 기능'(remote_update)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.","수면코치를 환자 이름·연락처 같은 개인식별정보를 서버에 저장하도록 바꾸고, 제조사가 서버에서 소프트웨어 업데이트를 원격 배포하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.","[XXCS | DC-02 | 체크리스트 적용 여부] (rule)
+[XXCS | DC-02 | 체크리스트 입증 방법] (rule)
+[XXCS | DC-02 | 적용 여부] (rule)
+[XXCS | DC-02 | 판정] (rule)
+[XXCS | SI-08 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-08 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-08 | 적용 여부] (rule)
+[XXCS | SI-08 | 판정] (rule)
+[XXCS | SI-09 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-09 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-09 | 적용 여부] (rule)
+[XXCS | SI-09 | 판정] (rule)","[XXCS | IA-05 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-05 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-06 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | IA-06 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | UC-03 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(UC-03), 이번 변경과 무관
+[XXCS | UC-03 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(UC-03), 이번 변경과 무관",속성 2개 동시 변경. 약화 아님(보안 항목이 새로 적용됨). [수정] 중복 행 대체.,
+T2_33,T2,rule_flip,3,"MDSR,MDDR,XXCS","제품 사이버보안 속성 '독립형 소프트웨어 의료기기(SaMD)'(samd)을 true에서 false로, '전자서명 기반 처방 기능'(e_signature)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.","수면코치를 전용 하드웨어 기기와 함께 공급하는 형태로 바꾸고, 의료진이 처방 변경에 전자서명을 하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.","[XXCS | SI-10 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-10 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-10 | 적용 여부] (rule)
+[XXCS | SI-10 | 판정] (rule)
+[XXCS | SI-11 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-11 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-11 | 적용 여부] (rule)
+[XXCS | SI-11 | 판정] (rule)
+[XXCS | UC-07 | 체크리스트 적용 여부] (rule)
+[XXCS | UC-07 | 체크리스트 입증 방법] (rule)
+[XXCS | UC-07 | 적용 여부] (rule)
+[XXCS | UC-07 | 판정] (rule)","[XXCS | IA-05 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-05 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-06 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | IA-06 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | DC-02 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관
+[XXCS | DC-02 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관",속성 2개 동시 변경. 약화 아님(보안 항목이 새로 적용됨). [수정] 중복 행 대체.,
+T2_34,T2,rule_flip,3,"MDSR,MDDR,XXCS","제품 사이버보안 속성 '모바일 코드(외부 스크립트 콘텐츠) 실행'(mobile_code)을 false에서 true로, '전자서명 기반 처방 기능'(e_signature)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.","수면코치를 교육 콘텐츠를 웹 기반 스크립트로 내려받아 실행하도록 바꾸고, 의료진이 처방 변경에 전자서명을 하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.","[XXCS | UC-02 | 체크리스트 적용 여부] (rule)
+[XXCS | UC-02 | 체크리스트 입증 방법] (rule)
+[XXCS | UC-02 | 적용 여부] (rule)
+[XXCS | UC-02 | 판정] (rule)
+[XXCS | UC-07 | 체크리스트 적용 여부] (rule)
+[XXCS | UC-07 | 체크리스트 입증 방법] (rule)
+[XXCS | UC-07 | 적용 여부] (rule)
+[XXCS | UC-07 | 판정] (rule)","[XXCS | IA-05 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-05 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-06 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | IA-06 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | DC-02 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관
+[XXCS | DC-02 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관",속성 2개 동시 변경. 약화 아님(보안 항목이 새로 적용됨). [수정] 중복 행 대체.,
+T2_35,T2,rule_flip,3,"MDSR,MDDR,XXCS","제품 사이버보안 속성 '모바일 코드(외부 스크립트 콘텐츠) 실행'(mobile_code)을 false에서 true로, '제조사 원격 업데이트 기능'(remote_update)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.","수면코치를 교육 콘텐츠를 웹 기반 스크립트로 내려받아 실행하도록 바꾸고, 제조사가 서버에서 소프트웨어 업데이트를 원격 배포하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.","[XXCS | UC-02 | 체크리스트 적용 여부] (rule)
+[XXCS | UC-02 | 체크리스트 입증 방법] (rule)
+[XXCS | UC-02 | 적용 여부] (rule)
+[XXCS | UC-02 | 판정] (rule)
+[XXCS | SI-08 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-08 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-08 | 적용 여부] (rule)
+[XXCS | SI-08 | 판정] (rule)
+[XXCS | SI-09 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-09 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-09 | 적용 여부] (rule)
+[XXCS | SI-09 | 판정] (rule)","[XXCS | IA-05 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-05 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-06 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | IA-06 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | DC-02 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관
+[XXCS | DC-02 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관",속성 2개 동시 변경. 약화 아님(보안 항목이 새로 적용됨). [수정] 중복 행 대체.,
+T2_36,T2,rule_flip,3,"MDSR,MDDR,XXCS","제품 사이버보안 속성 '전자서명 기반 처방 기능'(e_signature)을 false에서 true로, '제조사 원격 업데이트 기능'(remote_update)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.","수면코치를 의료진이 처방 변경에 전자서명을 하도록 바꾸고, 제조사가 서버에서 소프트웨어 업데이트를 원격 배포하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.","[XXCS | UC-07 | 체크리스트 적용 여부] (rule)
+[XXCS | UC-07 | 체크리스트 입증 방법] (rule)
+[XXCS | UC-07 | 적용 여부] (rule)
+[XXCS | UC-07 | 판정] (rule)
+[XXCS | SI-08 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-08 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-08 | 적용 여부] (rule)
+[XXCS | SI-08 | 판정] (rule)
+[XXCS | SI-09 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-09 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-09 | 적용 여부] (rule)
+[XXCS | SI-09 | 판정] (rule)","[XXCS | IA-05 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-05 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-06 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | IA-06 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | DC-02 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관
+[XXCS | DC-02 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관",속성 2개 동시 변경. 약화 아님(보안 항목이 새로 적용됨). [수정] 중복 행 대체.,
+T3_01,T3,delete,1,MDSR,Req. 10 '수면 제한 요법 기본 시간' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.,수면 제한 요법 기본 시간 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.,"[MDSR | Req. 10 | 제목] (origin)
+[MDSR | Req. 10 | 설명] (origin)
+[MDSR | Req. 10 | 목적] (origin)
+[MDSR | Req. 10 | 기준#p1] (origin)
+[MDSR | Req. 10 | 기준#p2] (origin)
+[MDSR | DC-03 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | IA-03 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | IA-04 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | SI-01 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | SI-05 | 소프트웨어 기능 요구사항 번호] (trace)","[MDSR | Req. 11 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDSR | Req. 12 | 번호] (same_id) - 삭제 후 번호 재정렬 금지",삭제 후보. trace 칸 10. 같은 삭제를 문서 수만 달리할 수 있음,
+T3_02,T3,delete,1,MDSR,Req. 100 '서버 데이터 동기화' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.,서버 데이터 동기화 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.,"[MDSR | Req. 100 | 제목] (origin)
+[MDSR | Req. 100 | 설명] (origin)
+[MDSR | Req. 100 | 목적] (origin)
+[MDSR | Req. 100 | 기준#p1] (origin)
+[MDSR | Req. 100 | 기준#p2] (origin)
+[MDSR | IA-02 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | RA-01 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | RA-02 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | SI-01 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | UC-03 | 소프트웨어 기능 요구사항 번호] (trace)","[MDSR | Req. 101 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDSR | Req. 102 | 번호] (same_id) - 삭제 후 번호 재정렬 금지",삭제 후보. trace 칸 10. 같은 삭제를 문서 수만 달리할 수 있음,
+T3_03,T3,delete,1,MDSR,Req. 101 '의료진 대시보드 조회' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.,의료진 대시보드 조회 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.,"[MDSR | Req. 101 | 제목] (origin)
+[MDSR | Req. 101 | 설명] (origin)
+[MDSR | Req. 101 | 목적] (origin)
+[MDSR | Req. 101 | 기준#p1] (origin)
+[MDSR | Req. 101 | 기준#p2] (origin)
+[MDSR | IA-01 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | SI-02 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | UC-01 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | UC-03 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | UC-04 | 소프트웨어 기능 요구사항 번호] (trace)","[MDSR | Req. 102 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDSR | Req. 103 | 번호] (same_id) - 삭제 후 번호 재정렬 금지",삭제 후보. trace 칸 10. 같은 삭제를 문서 수만 달리할 수 있음,
+T3_04,T3,delete,1,MDSR,Req. 106 '총 치료 회기 수' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.,총 치료 회기 수 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.,"[MDSR | Req. 106 | 제목] (origin)
+[MDSR | Req. 106 | 설명] (origin)
+[MDSR | Req. 106 | 목적] (origin)
+[MDSR | Req. 106 | 기준#p1] (origin)
+[MDSR | Req. 106 | 기준#p2] (origin)
+[MDSR | DC-01 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | IA-06 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | SI-05 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | UC-05 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | UC-06 | 소프트웨어 기능 요구사항 번호] (trace)","[MDSR | Req. 107 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDSR | Req. 108 | 번호] (same_id) - 삭제 후 번호 재정렬 금지",삭제 후보. trace 칸 10. 같은 삭제를 문서 수만 달리할 수 있음,
+T3_05,T3,delete,1,MDSR,Req. 8 '수면일기 기록' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.,수면일기 기록 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.,"[MDSR | Req. 8 | 제목] (origin)
+[MDSR | Req. 8 | 설명] (origin)
+[MDSR | Req. 8 | 목적] (origin)
+[MDSR | Req. 8 | 기준#p1] (origin)
+[MDSR | Req. 8 | 기준#p2] (origin)
+[MDSR | DC-01 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | IA-01 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | SI-05 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | UC-06 | 소프트웨어 기능 요구사항 번호] (trace)","[MDSR | Req. 9 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDSR | Req. 10 | 번호] (same_id) - 삭제 후 번호 재정렬 금지",삭제 후보. trace 칸 8. 같은 삭제를 문서 수만 달리할 수 있음,
+T3_06,T3,delete,1,MDSR,Req. 13 'CBT 회기 기본 설정' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.,CBT 회기 기본 설정 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.,"[MDSR | Req. 13 | 제목] (origin)
+[MDSR | Req. 13 | 설명] (origin)
+[MDSR | Req. 13 | 목적] (origin)
+[MDSR | Req. 13 | 기준#p1] (origin)
+[MDSR | Req. 13 | 기준#p2] (origin)
+[MDSR | IA-06 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | RA-02 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | SI-04 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | SI-05 | 소프트웨어 기능 요구사항 번호] (trace)","[MDSR | Req. 14 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDSR | Req. 15 | 번호] (same_id) - 삭제 후 번호 재정렬 금지",삭제 후보. trace 칸 8. 같은 삭제를 문서 수만 달리할 수 있음,
+T3_07,T3,delete,1,MDSR,Req. 11 '자극 조절 교육' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.,자극 조절 교육 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.,"[MDSR | Req. 11 | 제목] (origin)
+[MDSR | Req. 11 | 설명] (origin)
+[MDSR | Req. 11 | 목적] (origin)
+[MDSR | Req. 11 | 기준#p1] (origin)
+[MDSR | Req. 11 | 기준#p2] (origin)
+[MDSR | IA-04 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | SI-02 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | TRE-01 | 소프트웨어 기능 요구사항 번호] (trace)","[MDSR | Req. 12 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDSR | Req. 13 | 번호] (same_id) - 삭제 후 번호 재정렬 금지",삭제 후보. trace 칸 6. 같은 삭제를 문서 수만 달리할 수 있음,
+T3_08,T3,delete,1,MDSR,Req. 12 '수면 위생 교육' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.,수면 위생 교육 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.,"[MDSR | Req. 12 | 제목] (origin)
+[MDSR | Req. 12 | 설명] (origin)
+[MDSR | Req. 12 | 목적] (origin)
+[MDSR | Req. 12 | 기준#p1] (origin)
+[MDSR | Req. 12 | 기준#p2] (origin)
+[MDSR | IA-05 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | RA-01 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | SI-03 | 소프트웨어 기능 요구사항 번호] (trace)","[MDSR | Req. 13 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDSR | Req. 14 | 번호] (same_id) - 삭제 후 번호 재정렬 금지",삭제 후보. trace 칸 6. 같은 삭제를 문서 수만 달리할 수 있음,
+T3_09,T3,delete,1,MDSR,Req. 14 'CBT 알림 설정' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.,CBT 알림 설정 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.,"[MDSR | Req. 14 | 제목] (origin)
+[MDSR | Req. 14 | 설명] (origin)
+[MDSR | Req. 14 | 목적] (origin)
+[MDSR | Req. 14 | 기준#p1] (origin)
+[MDSR | Req. 14 | 기준#p2] (origin)
+[MDSR | IA-07 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | RA-03 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | SI-05 | 소프트웨어 기능 요구사항 번호] (trace)","[MDSR | Req. 15 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDSR | Req. 16 | 번호] (same_id) - 삭제 후 번호 재정렬 금지",삭제 후보. trace 칸 6. 같은 삭제를 문서 수만 달리할 수 있음,
+T3_10,T3,delete,1,MDSR,Req. 15 '이완 훈련' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.,이완 훈련 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.,"[MDSR | Req. 15 | 제목] (origin)
+[MDSR | Req. 15 | 설명] (origin)
+[MDSR | Req. 15 | 목적] (origin)
+[MDSR | Req. 15 | 기준#p1] (origin)
+[MDSR | Req. 15 | 기준#p2] (origin)
+[MDSR | IA-08 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | RA-04 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | SI-06 | 소프트웨어 기능 요구사항 번호] (trace)","[MDSR | Req. 16 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDSR | Req. 17 | 번호] (same_id) - 삭제 후 번호 재정렬 금지",삭제 후보. trace 칸 6. 같은 삭제를 문서 수만 달리할 수 있음,
+T3_11,T3,delete,2,"MDSR,MDDR",Req. 16 '수면 효율 리포트' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.,수면 효율 리포트 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.,"[MDSR | Req. 16 | 제목] (origin)
+[MDSR | Req. 16 | 설명] (origin)
+[MDSR | Req. 16 | 목적] (origin)
+[MDSR | Req. 16 | 기준#p1] (origin)
+[MDSR | Req. 16 | 기준#p2] (origin)
+[MDDR | Req. 16 | 설계#p1] (same_id)
+[MDDR | Req. 16 | 설계#p2] (same_id)
+[MDDR | Req. 16 | 설계#p3] (same_id)
+[MDSR | SI-07 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | UC-01 | 소프트웨어 기능 요구사항 번호] (trace)","[MDSR | Req. 17 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDDR | Req. 17 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDSR | Req. 18 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDDR | Req. 18 | 번호] (same_id) - 삭제 후 번호 재정렬 금지",삭제 후보. trace 칸 4. 같은 삭제를 문서 수만 달리할 수 있음,
+T3_12,T3,delete,2,"MDSR,MDDR",Req. 9 '알림 설정' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.,알림 설정 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.,"[MDSR | Req. 9 | 제목] (origin)
+[MDSR | Req. 9 | 설명] (origin)
+[MDSR | Req. 9 | 목적] (origin)
+[MDSR | Req. 9 | 기준#p1] (origin)
+[MDSR | Req. 9 | 기준#p2] (origin)
+[MDDR | Req. 9 | 설계#p1] (same_id)
+[MDDR | Req. 9 | 설계#p2] (same_id)
+[MDDR | Req. 9 | 설계#p3] (same_id)
+[MDSR | IA-02 | 소프트웨어 기능 요구사항 번호] (trace)","[MDSR | Req. 10 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDDR | Req. 10 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDSR | Req. 11 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDDR | Req. 11 | 번호] (same_id) - 삭제 후 번호 재정렬 금지",삭제 후보. trace 칸 2. 같은 삭제를 문서 수만 달리할 수 있음,
+T3_13,T3,delete,2,"MDSR,MDDR",Req. 10 '수면 제한 요법 기본 시간' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.,수면 제한 요법 기본 시간 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.,"[MDSR | Req. 10 | 제목] (origin)
+[MDSR | Req. 10 | 설명] (origin)
+[MDSR | Req. 10 | 목적] (origin)
+[MDSR | Req. 10 | 기준#p1] (origin)
+[MDSR | Req. 10 | 기준#p2] (origin)
+[MDDR | Req. 10 | 설계#p1] (same_id)
+[MDDR | Req. 10 | 설계#p2] (same_id)
+[MDDR | Req. 10 | 설계#p3] (same_id)
+[MDSR | DC-03 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | IA-03 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | IA-04 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | SI-01 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | SI-05 | 소프트웨어 기능 요구사항 번호] (trace)","[MDSR | Req. 11 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDDR | Req. 11 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDSR | Req. 12 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDDR | Req. 12 | 번호] (same_id) - 삭제 후 번호 재정렬 금지",삭제 후보. trace 칸 10. 같은 삭제를 문서 수만 달리할 수 있음,
+T3_14,T3,delete,2,"MDSR,MDDR",Req. 100 '서버 데이터 동기화' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.,서버 데이터 동기화 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.,"[MDSR | Req. 100 | 제목] (origin)
+[MDSR | Req. 100 | 설명] (origin)
+[MDSR | Req. 100 | 목적] (origin)
+[MDSR | Req. 100 | 기준#p1] (origin)
+[MDSR | Req. 100 | 기준#p2] (origin)
+[MDDR | Req. 100 | 설계#p1] (same_id)
+[MDDR | Req. 100 | 설계#p2] (same_id)
+[MDDR | Req. 100 | 설계#p3] (same_id)
+[MDSR | IA-02 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | RA-01 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | RA-02 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | SI-01 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | UC-03 | 소프트웨어 기능 요구사항 번호] (trace)","[MDSR | Req. 101 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDDR | Req. 101 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDSR | Req. 102 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDDR | Req. 102 | 번호] (same_id) - 삭제 후 번호 재정렬 금지",삭제 후보. trace 칸 10. 같은 삭제를 문서 수만 달리할 수 있음,
+T3_15,T3,delete,2,"MDSR,MDDR",Req. 101 '의료진 대시보드 조회' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.,의료진 대시보드 조회 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.,"[MDSR | Req. 101 | 제목] (origin)
+[MDSR | Req. 101 | 설명] (origin)
+[MDSR | Req. 101 | 목적] (origin)
+[MDSR | Req. 101 | 기준#p1] (origin)
+[MDSR | Req. 101 | 기준#p2] (origin)
+[MDDR | Req. 101 | 설계#p1] (same_id)
+[MDDR | Req. 101 | 설계#p2] (same_id)
+[MDDR | Req. 101 | 설계#p3] (same_id)
+[MDSR | IA-01 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | SI-02 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | UC-01 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | UC-03 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | UC-04 | 소프트웨어 기능 요구사항 번호] (trace)","[MDSR | Req. 102 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDDR | Req. 102 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDSR | Req. 103 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDDR | Req. 103 | 번호] (same_id) - 삭제 후 번호 재정렬 금지",삭제 후보. trace 칸 10. 같은 삭제를 문서 수만 달리할 수 있음,
+T3_16,T3,delete,2,"MDSR,XXCS",Req. 106 '총 치료 회기 수' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.,총 치료 회기 수 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.,"[MDSR | Req. 106 | 제목] (origin)
+[MDSR | Req. 106 | 설명] (origin)
+[MDSR | Req. 106 | 목적] (origin)
+[MDSR | Req. 106 | 기준#p1] (origin)
+[MDSR | Req. 106 | 기준#p2] (origin)
+[MDSR | DC-01 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | DC-01 | 해당 요구사항] (trace)
+[MDSR | IA-06 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | IA-06 | 해당 요구사항] (trace)
+[MDSR | SI-05 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | SI-05 | 해당 요구사항] (trace)
+[MDSR | UC-05 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | UC-05 | 해당 요구사항] (trace)
+[MDSR | UC-06 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | UC-06 | 해당 요구사항] (trace)","[MDSR | Req. 107 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDSR | Req. 108 | 번호] (same_id) - 삭제 후 번호 재정렬 금지",삭제 후보. trace 칸 10. 같은 삭제를 문서 수만 달리할 수 있음,
+T3_17,T3,delete,2,"MDSR,XXCS",Req. 8 '수면일기 기록' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.,수면일기 기록 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.,"[MDSR | Req. 8 | 제목] (origin)
+[MDSR | Req. 8 | 설명] (origin)
+[MDSR | Req. 8 | 목적] (origin)
+[MDSR | Req. 8 | 기준#p1] (origin)
+[MDSR | Req. 8 | 기준#p2] (origin)
+[MDSR | DC-01 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | DC-01 | 해당 요구사항] (trace)
+[MDSR | IA-01 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | IA-01 | 해당 요구사항] (trace)
+[MDSR | SI-05 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | SI-05 | 해당 요구사항] (trace)
+[MDSR | UC-06 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | UC-06 | 해당 요구사항] (trace)","[MDSR | Req. 9 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDSR | Req. 10 | 번호] (same_id) - 삭제 후 번호 재정렬 금지",삭제 후보. trace 칸 8. 같은 삭제를 문서 수만 달리할 수 있음,
+T3_18,T3,delete,2,"MDSR,XXCS",Req. 13 'CBT 회기 기본 설정' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.,CBT 회기 기본 설정 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.,"[MDSR | Req. 13 | 제목] (origin)
+[MDSR | Req. 13 | 설명] (origin)
+[MDSR | Req. 13 | 목적] (origin)
+[MDSR | Req. 13 | 기준#p1] (origin)
+[MDSR | Req. 13 | 기준#p2] (origin)
+[MDSR | IA-06 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | IA-06 | 해당 요구사항] (trace)
+[MDSR | RA-02 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | RA-02 | 해당 요구사항] (trace)
+[MDSR | SI-04 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | SI-04 | 해당 요구사항] (trace)
+[MDSR | SI-05 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | SI-05 | 해당 요구사항] (trace)","[MDSR | Req. 14 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDSR | Req. 15 | 번호] (same_id) - 삭제 후 번호 재정렬 금지",삭제 후보. trace 칸 8. 같은 삭제를 문서 수만 달리할 수 있음,
+T3_19,T3,delete,2,"MDSR,XXCS",Req. 11 '자극 조절 교육' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.,자극 조절 교육 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.,"[MDSR | Req. 11 | 제목] (origin)
+[MDSR | Req. 11 | 설명] (origin)
+[MDSR | Req. 11 | 목적] (origin)
+[MDSR | Req. 11 | 기준#p1] (origin)
+[MDSR | Req. 11 | 기준#p2] (origin)
+[MDSR | IA-04 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | IA-04 | 해당 요구사항] (trace)
+[MDSR | SI-02 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | SI-02 | 해당 요구사항] (trace)
+[MDSR | TRE-01 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | TRE-01 | 해당 요구사항] (trace)","[MDSR | Req. 12 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDSR | Req. 13 | 번호] (same_id) - 삭제 후 번호 재정렬 금지",삭제 후보. trace 칸 6. 같은 삭제를 문서 수만 달리할 수 있음,
+T3_20,T3,delete,2,"MDSR,XXCS",Req. 12 '수면 위생 교육' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.,수면 위생 교육 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.,"[MDSR | Req. 12 | 제목] (origin)
+[MDSR | Req. 12 | 설명] (origin)
+[MDSR | Req. 12 | 목적] (origin)
+[MDSR | Req. 12 | 기준#p1] (origin)
+[MDSR | Req. 12 | 기준#p2] (origin)
+[MDSR | IA-05 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | IA-05 | 해당 요구사항] (trace)
+[MDSR | RA-01 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | RA-01 | 해당 요구사항] (trace)
+[MDSR | SI-03 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | SI-03 | 해당 요구사항] (trace)","[MDSR | Req. 13 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDSR | Req. 14 | 번호] (same_id) - 삭제 후 번호 재정렬 금지",삭제 후보. trace 칸 6. 같은 삭제를 문서 수만 달리할 수 있음,
+T3_21,T3,delete,3,"MDSR,MDDR,XXCS",Req. 14 'CBT 알림 설정' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.,CBT 알림 설정 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.,"[MDSR | Req. 14 | 제목] (origin)
+[MDSR | Req. 14 | 설명] (origin)
+[MDSR | Req. 14 | 목적] (origin)
+[MDSR | Req. 14 | 기준#p1] (origin)
+[MDSR | Req. 14 | 기준#p2] (origin)
+[MDDR | Req. 14 | 설계#p1] (same_id)
+[MDDR | Req. 14 | 설계#p2] (same_id)
+[MDDR | Req. 14 | 설계#p3] (same_id)
+[MDSR | IA-07 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | IA-07 | 해당 요구사항] (trace)
+[MDSR | RA-03 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | RA-03 | 해당 요구사항] (trace)
+[MDSR | SI-05 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | SI-05 | 해당 요구사항] (trace)","[MDSR | Req. 15 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDDR | Req. 15 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDSR | Req. 16 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDDR | Req. 16 | 번호] (same_id) - 삭제 후 번호 재정렬 금지",삭제 후보. trace 칸 6. 같은 삭제를 문서 수만 달리할 수 있음,
+T3_22,T3,delete,3,"MDSR,MDDR,XXCS",Req. 15 '이완 훈련' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.,이완 훈련 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.,"[MDSR | Req. 15 | 제목] (origin)
+[MDSR | Req. 15 | 설명] (origin)
+[MDSR | Req. 15 | 목적] (origin)
+[MDSR | Req. 15 | 기준#p1] (origin)
+[MDSR | Req. 15 | 기준#p2] (origin)
+[MDDR | Req. 15 | 설계#p1] (same_id)
+[MDDR | Req. 15 | 설계#p2] (same_id)
+[MDDR | Req. 15 | 설계#p3] (same_id)
+[MDSR | IA-08 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | IA-08 | 해당 요구사항] (trace)
+[MDSR | RA-04 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | RA-04 | 해당 요구사항] (trace)
+[MDSR | SI-06 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | SI-06 | 해당 요구사항] (trace)","[MDSR | Req. 16 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDDR | Req. 16 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDSR | Req. 17 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDDR | Req. 17 | 번호] (same_id) - 삭제 후 번호 재정렬 금지",삭제 후보. trace 칸 6. 같은 삭제를 문서 수만 달리할 수 있음,
+T3_23,T3,delete,3,"MDSR,MDDR,XXCS",Req. 16 '수면 효율 리포트' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.,수면 효율 리포트 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.,"[MDSR | Req. 16 | 제목] (origin)
+[MDSR | Req. 16 | 설명] (origin)
+[MDSR | Req. 16 | 목적] (origin)
+[MDSR | Req. 16 | 기준#p1] (origin)
+[MDSR | Req. 16 | 기준#p2] (origin)
+[MDDR | Req. 16 | 설계#p1] (same_id)
+[MDDR | Req. 16 | 설계#p2] (same_id)
+[MDDR | Req. 16 | 설계#p3] (same_id)
+[MDSR | SI-07 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | SI-07 | 해당 요구사항] (trace)
+[MDSR | UC-01 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | UC-01 | 해당 요구사항] (trace)","[MDSR | Req. 17 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDDR | Req. 17 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDSR | Req. 18 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDDR | Req. 18 | 번호] (same_id) - 삭제 후 번호 재정렬 금지",삭제 후보. trace 칸 4. 같은 삭제를 문서 수만 달리할 수 있음,
+T3_24,T3,delete,3,"MDSR,MDDR,XXCS",Req. 9 '알림 설정' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.,알림 설정 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.,"[MDSR | Req. 9 | 제목] (origin)
+[MDSR | Req. 9 | 설명] (origin)
+[MDSR | Req. 9 | 목적] (origin)
+[MDSR | Req. 9 | 기준#p1] (origin)
+[MDSR | Req. 9 | 기준#p2] (origin)
+[MDDR | Req. 9 | 설계#p1] (same_id)
+[MDDR | Req. 9 | 설계#p2] (same_id)
+[MDDR | Req. 9 | 설계#p3] (same_id)
+[MDSR | IA-02 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | IA-02 | 해당 요구사항] (trace)","[MDSR | Req. 10 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDDR | Req. 10 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDSR | Req. 11 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDDR | Req. 11 | 번호] (same_id) - 삭제 후 번호 재정렬 금지",삭제 후보. trace 칸 2. 같은 삭제를 문서 수만 달리할 수 있음,
+T3_25,T3,delete,3,"MDSR,MDDR,XXCS",Req. 10 '수면 제한 요법 기본 시간' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.,수면 제한 요법 기본 시간 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.,"[MDSR | Req. 10 | 제목] (origin)
+[MDSR | Req. 10 | 설명] (origin)
+[MDSR | Req. 10 | 목적] (origin)
+[MDSR | Req. 10 | 기준#p1] (origin)
+[MDSR | Req. 10 | 기준#p2] (origin)
+[MDDR | Req. 10 | 설계#p1] (same_id)
+[MDDR | Req. 10 | 설계#p2] (same_id)
+[MDDR | Req. 10 | 설계#p3] (same_id)
+[MDSR | DC-03 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | DC-03 | 해당 요구사항] (trace)
+[MDSR | IA-03 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | IA-03 | 해당 요구사항] (trace)
+[MDSR | IA-04 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | IA-04 | 해당 요구사항] (trace)
+[MDSR | SI-01 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | SI-01 | 해당 요구사항] (trace)
+[MDSR | SI-05 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | SI-05 | 해당 요구사항] (trace)","[MDSR | Req. 11 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDDR | Req. 11 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDSR | Req. 12 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDDR | Req. 12 | 번호] (same_id) - 삭제 후 번호 재정렬 금지",삭제 후보. trace 칸 10. 같은 삭제를 문서 수만 달리할 수 있음,
+T3_26,T3,delete,3,"MDSR,MDDR,XXCS",Req. 100 '서버 데이터 동기화' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.,서버 데이터 동기화 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.,"[MDSR | Req. 100 | 제목] (origin)
+[MDSR | Req. 100 | 설명] (origin)
+[MDSR | Req. 100 | 목적] (origin)
+[MDSR | Req. 100 | 기준#p1] (origin)
+[MDSR | Req. 100 | 기준#p2] (origin)
+[MDDR | Req. 100 | 설계#p1] (same_id)
+[MDDR | Req. 100 | 설계#p2] (same_id)
+[MDDR | Req. 100 | 설계#p3] (same_id)
+[MDSR | IA-02 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | IA-02 | 해당 요구사항] (trace)
+[MDSR | RA-01 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | RA-01 | 해당 요구사항] (trace)
+[MDSR | RA-02 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | RA-02 | 해당 요구사항] (trace)
+[MDSR | SI-01 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | SI-01 | 해당 요구사항] (trace)
+[MDSR | UC-03 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | UC-03 | 해당 요구사항] (trace)","[MDSR | Req. 101 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDDR | Req. 101 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDSR | Req. 102 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDDR | Req. 102 | 번호] (same_id) - 삭제 후 번호 재정렬 금지",삭제 후보. trace 칸 10. 같은 삭제를 문서 수만 달리할 수 있음,
+T3_27,T3,delete,3,"MDSR,MDDR,XXCS",Req. 101 '의료진 대시보드 조회' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.,의료진 대시보드 조회 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.,"[MDSR | Req. 101 | 제목] (origin)
+[MDSR | Req. 101 | 설명] (origin)
+[MDSR | Req. 101 | 목적] (origin)
+[MDSR | Req. 101 | 기준#p1] (origin)
+[MDSR | Req. 101 | 기준#p2] (origin)
+[MDDR | Req. 101 | 설계#p1] (same_id)
+[MDDR | Req. 101 | 설계#p2] (same_id)
+[MDDR | Req. 101 | 설계#p3] (same_id)
+[MDSR | IA-01 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | IA-01 | 해당 요구사항] (trace)
+[MDSR | SI-02 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | SI-02 | 해당 요구사항] (trace)
+[MDSR | UC-01 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | UC-01 | 해당 요구사항] (trace)
+[MDSR | UC-03 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | UC-03 | 해당 요구사항] (trace)
+[MDSR | UC-04 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | UC-04 | 해당 요구사항] (trace)","[MDSR | Req. 102 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDDR | Req. 102 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDSR | Req. 103 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDDR | Req. 103 | 번호] (same_id) - 삭제 후 번호 재정렬 금지",삭제 후보. trace 칸 10. 같은 삭제를 문서 수만 달리할 수 있음,
+T3_28,T3,delete,3,"MDSR,MDDR,XXCS",Req. 106 '총 치료 회기 수' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.,총 치료 회기 수 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.,"[MDSR | Req. 106 | 제목] (origin)
+[MDSR | Req. 106 | 설명] (origin)
+[MDSR | Req. 106 | 목적] (origin)
+[MDSR | Req. 106 | 기준#p1] (origin)
+[MDSR | Req. 106 | 기준#p2] (origin)
+[MDDR | Req. 106 | 설계#p1] (same_id)
+[MDDR | Req. 106 | 설계#p2] (same_id)
+[MDDR | Req. 106 | 설계#p3] (same_id)
+[MDSR | DC-01 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | DC-01 | 해당 요구사항] (trace)
+[MDSR | IA-06 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | IA-06 | 해당 요구사항] (trace)
+[MDSR | SI-05 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | SI-05 | 해당 요구사항] (trace)
+[MDSR | UC-05 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | UC-05 | 해당 요구사항] (trace)
+[MDSR | UC-06 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | UC-06 | 해당 요구사항] (trace)","[MDSR | Req. 107 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDDR | Req. 107 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDSR | Req. 108 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDDR | Req. 108 | 번호] (same_id) - 삭제 후 번호 재정렬 금지",삭제 후보. trace 칸 10. 같은 삭제를 문서 수만 달리할 수 있음,
+T3_29,T3,delete,3,"MDSR,MDDR,XXCS",Req. 8 '수면일기 기록' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.,수면일기 기록 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.,"[MDSR | Req. 8 | 제목] (origin)
+[MDSR | Req. 8 | 설명] (origin)
+[MDSR | Req. 8 | 목적] (origin)
+[MDSR | Req. 8 | 기준#p1] (origin)
+[MDSR | Req. 8 | 기준#p2] (origin)
+[MDDR | Req. 8 | 설계#p1] (same_id)
+[MDDR | Req. 8 | 설계#p2] (same_id)
+[MDDR | Req. 8 | 설계#p3] (same_id)
+[MDSR | DC-01 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | DC-01 | 해당 요구사항] (trace)
+[MDSR | IA-01 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | IA-01 | 해당 요구사항] (trace)
+[MDSR | SI-05 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | SI-05 | 해당 요구사항] (trace)
+[MDSR | UC-06 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | UC-06 | 해당 요구사항] (trace)","[MDSR | Req. 9 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDDR | Req. 9 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDSR | Req. 10 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDDR | Req. 10 | 번호] (same_id) - 삭제 후 번호 재정렬 금지",삭제 후보. trace 칸 8. 같은 삭제를 문서 수만 달리할 수 있음,
+T3_30,T3,delete,3,"MDSR,MDDR,XXCS",Req. 13 'CBT 회기 기본 설정' 요구사항을 삭제한다. 요구사항 번호는 유지하고 '삭제'로 표기한다.,CBT 회기 기본 설정 기능을 제품에서 빼 주세요. 다른 요구사항 번호는 그대로 두세요.,"[MDSR | Req. 13 | 제목] (origin)
+[MDSR | Req. 13 | 설명] (origin)
+[MDSR | Req. 13 | 목적] (origin)
+[MDSR | Req. 13 | 기준#p1] (origin)
+[MDSR | Req. 13 | 기준#p2] (origin)
+[MDDR | Req. 13 | 설계#p1] (same_id)
+[MDDR | Req. 13 | 설계#p2] (same_id)
+[MDDR | Req. 13 | 설계#p3] (same_id)
+[MDSR | IA-06 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | IA-06 | 해당 요구사항] (trace)
+[MDSR | RA-02 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | RA-02 | 해당 요구사항] (trace)
+[MDSR | SI-04 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | SI-04 | 해당 요구사항] (trace)
+[MDSR | SI-05 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | SI-05 | 해당 요구사항] (trace)","[MDSR | Req. 14 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDDR | Req. 14 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDSR | Req. 15 | 번호] (same_id) - 삭제 후 번호 재정렬 금지
+[MDDR | Req. 15 | 번호] (same_id) - 삭제 후 번호 재정렬 금지",삭제 후보. trace 칸 8. 같은 삭제를 문서 수만 달리할 수 있음,
+T3_31,T3,add,1,MDSR,"모바일 애플리케이션 요구사항 Req. 19 '수면 목표 설정'을(를) 신규 추가한다. 내용: 사용자는 목표 취침 시각과 목표 기상 시각을 설정할 수 있어야 하며, 앱은 입력된 시각이 허용 범위 안에 있는지 검증한 뒤 저장하여야 한다.",앱에 새 기능을 넣어 주세요. 사용자가 목표 취침 시각과 기상 시각을 정하고 앱이 입력값의 허용 범위를 검사하는 기능이 필요합니다.,"[MDSR | Req. 19 | 번호] (origin)
+[MDSR | Req. 19 | 제목] (origin)
+[MDSR | Req. 19 | 설명] (origin)
+[MDSR | Req. 19 | 목적] (origin)
+[MDSR | Req. 19 | 기준#p1] (origin)
+[MDSR | Req. 19 | 기준#p2] (origin)
+[MDSR | SI-05 | 소프트웨어 기능 요구사항 번호] (trace)","[MDSR | SI-01 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(SI)지만 새 기능과 무관
+[MDSR | SI-02 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(SI)지만 새 기능과 무관",연결 SI-05(입력값 검증). 본문에 넣을 보안 요소: 목표 취침·기상 시각 입력값의 허용 범위 검증. 제목은 초안. [수정] 연결 IA-02(계정 관리)는 순번 배정이라 바꿈.,
+T3_32,T3,add,1,MDSR,"모바일 애플리케이션 요구사항 Req. 19 '카페인 섭취 기록'을(를) 신규 추가한다. 내용: 사용자는 카페인 음료의 섭취 시각과 섭취량을 기록할 수 있어야 하며, 기록은 기기 내부에 암호화된 형태로 저장되어야 한다.",앱에 새 기능을 넣어 주세요. 사용자가 카페인 섭취 시각과 양을 기록하고 기록을 기기에 암호화하여 저장하는 기능이 필요합니다.,"[MDSR | Req. 19 | 번호] (origin)
+[MDSR | Req. 19 | 제목] (origin)
+[MDSR | Req. 19 | 설명] (origin)
+[MDSR | Req. 19 | 목적] (origin)
+[MDSR | Req. 19 | 기준#p1] (origin)
+[MDSR | Req. 19 | 기준#p2] (origin)
+[MDSR | DC-01 | 소프트웨어 기능 요구사항 번호] (trace)",[MDSR | DC-03 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(DC)지만 새 기능과 무관,연결 DC-01(정보에 대한 기밀성 보장). 본문에 넣을 보안 요소: 섭취 기록을 기기에 암호화해 저장. 제목은 초안. [수정] 번호 Req. 20→Req. 19; 연결 IA-03(식별정보 관리)는 순번 배정이라 바꿈.,
+T3_33,T3,add,1,MDSR,"모바일 애플리케이션 요구사항 Req. 19 '낮잠 기록'을(를) 신규 추가한다. 내용: 사용자는 낮잠의 시작과 종료를 기록할 수 있어야 하며, 앱은 각 시점을 기기 시각 기준의 타임스탬프로 저장하여야 한다.",앱에 새 기능을 넣어 주세요. 사용자가 낮잠 시작과 종료를 기록하면 각 시점을 타임스탬프로 남기는 기능이 필요합니다.,"[MDSR | Req. 19 | 번호] (origin)
+[MDSR | Req. 19 | 제목] (origin)
+[MDSR | Req. 19 | 설명] (origin)
+[MDSR | Req. 19 | 목적] (origin)
+[MDSR | Req. 19 | 기준#p1] (origin)
+[MDSR | Req. 19 | 기준#p2] (origin)
+[MDSR | UC-06 | 소프트웨어 기능 요구사항 번호] (trace)","[MDSR | UC-01 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(UC)지만 새 기능과 무관
+[MDSR | UC-03 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(UC)지만 새 기능과 무관",연결 UC-06(타임스탬프). 본문에 넣을 보안 요소: 낮잠 시작·종료 시각을 타임스탬프로 기록. 제목은 초안. [수정] 번호 Req. 21→Req. 19; 연결 IA-04(인증정보 관리)는 순번 배정이라 바꿈.,
+T3_34,T3,add,1,MDSR,"모바일 애플리케이션 요구사항 Req. 19 '주간 리포트 공유'을(를) 신규 추가한다. 내용: 사용자는 주간 수면 리포트를 담당 의료진에게 보낼 수 있어야 하며, 리포트는 암호화된 전송 구간을 통해서만 전송되어야 한다.",앱에 새 기능을 넣어 주세요. 사용자가 주간 수면 리포트를 의료진에게 보내며 전송 구간을 암호화하는 기능이 필요합니다.,"[MDSR | Req. 19 | 번호] (origin)
+[MDSR | Req. 19 | 제목] (origin)
+[MDSR | Req. 19 | 설명] (origin)
+[MDSR | Req. 19 | 목적] (origin)
+[MDSR | Req. 19 | 기준#p1] (origin)
+[MDSR | Req. 19 | 기준#p2] (origin)
+[MDSR | DC-03 | 소프트웨어 기능 요구사항 번호] (trace)",[MDSR | DC-01 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(DC)지만 새 기능과 무관,연결 DC-03(안전한 암호화 사용). 본문에 넣을 보안 요소: 리포트 전송 구간을 암호화. 제목은 초안. [수정] 번호 Req. 22→Req. 19; 연결 IA-05(비밀번호 강도 설정)는 순번 배정이라 바꿈.,
+T3_35,T3,add,1,MDSR,"서버 요구사항 Req. 109 '취침 루틴 점검'을(를) 신규 추가한다. 내용: 서버는 사용자가 제출한 취침 루틴 점검 결과를 보관하여야 하며, 의료진이 점검 결과를 수정하면 수정자와 수정 내용을 감사기록으로 생성하여야 한다.",서버에 새 기능을 넣어 주세요. 서버가 사용자의 취침 루틴 점검 결과를 보관하고 의료진이 결과를 수정하면 감사기록을 남기는 기능이 필요합니다.,"[MDSR | Req. 109 | 번호] (origin)
+[MDSR | Req. 109 | 제목] (origin)
+[MDSR | Req. 109 | 설명] (origin)
+[MDSR | Req. 109 | 목적] (origin)
+[MDSR | Req. 109 | 기준#p1] (origin)
+[MDSR | Req. 109 | 기준#p2] (origin)
+[MDSR | UC-04 | 소프트웨어 기능 요구사항 번호] (trace)","[MDSR | UC-01 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(UC)지만 새 기능과 무관
+[MDSR | UC-03 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(UC)지만 새 기능과 무관",연결 UC-04(감사기록 생성). 본문에 넣을 보안 요소: 의료진이 점검 결과를 수정하면 감사기록 생성. 제목은 초안. [수정] 연결 IA-06(인증정보에 대한 피드백)는 순번 배정이라 바꿈.,
+T3_36,T3,add,1,MDSR,"모바일 애플리케이션 요구사항 Req. 19 '기상 후 빛 노출'을(를) 신규 추가한다. 내용: 앱은 기상 직후 빛 노출을 권장하는 안내를 제공하여야 하며, 기기의 조도 센서 값을 읽지 못하면 미리 정한 기본 안내 상태로 전환하여야 한다.",앱에 새 기능을 넣어 주세요. 기상 직후 빛 노출을 안내하고 조도 센서 값을 읽지 못하면 미리 정한 기본 안내로 전환하는 기능이 필요합니다.,"[MDSR | Req. 19 | 번호] (origin)
+[MDSR | Req. 19 | 제목] (origin)
+[MDSR | Req. 19 | 설명] (origin)
+[MDSR | Req. 19 | 목적] (origin)
+[MDSR | Req. 19 | 기준#p1] (origin)
+[MDSR | Req. 19 | 기준#p2] (origin)
+[MDSR | SI-06 | 소프트웨어 기능 요구사항 번호] (trace)","[MDSR | SI-01 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(SI)지만 새 기능과 무관
+[MDSR | SI-02 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(SI)지만 새 기능과 무관",연결 SI-06(오류 시 사전 결정된 상태로 출력). 본문에 넣을 보안 요소: 조도 센서 값을 못 읽으면 미리 정한 기본 안내로 전환. 제목은 초안. [수정] 번호 Req. 23→Req. 19; 연결 IA-07(연속적인 로그인 시도 실패 시 로그인 제한)는 순번 배정이라 바꿈.,
+T3_37,T3,add,1,MDSR,"모바일 애플리케이션 요구사항 Req. 19 '주말 기상 안내'을(를) 신규 추가한다. 내용: 사용자는 주말 기상 시각을 따로 설정할 수 있어야 하며, 앱은 입력값의 허용 범위를 검증하고 평일 기상 시각과의 차이를 안내하여야 한다.",앱에 새 기능을 넣어 주세요. 사용자가 주말 기상 시각을 정하면 평일 기상 시각과의 차이를 안내하고 입력값의 허용 범위를 검사하는 기능이 필요합니다.,"[MDSR | Req. 19 | 번호] (origin)
+[MDSR | Req. 19 | 제목] (origin)
+[MDSR | Req. 19 | 설명] (origin)
+[MDSR | Req. 19 | 목적] (origin)
+[MDSR | Req. 19 | 기준#p1] (origin)
+[MDSR | Req. 19 | 기준#p2] (origin)
+[MDSR | SI-05 | 소프트웨어 기능 요구사항 번호] (trace)","[MDSR | SI-01 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(SI)지만 새 기능과 무관
+[MDSR | SI-02 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(SI)지만 새 기능과 무관",연결 SI-05(입력값 검증). 본문에 넣을 보안 요소: 주말 기상 시각 입력값의 허용 범위 검증. 제목은 초안. [수정] 번호 Req. 24→Req. 19; 연결 IA-08(시스템 사용 알림 메시지)는 순번 배정이라 바꿈.,
+T3_38,T3,add,1,MDSR,"모바일 애플리케이션 요구사항 Req. 19 '오프라인 기록 보관'을(를) 신규 추가한다. 내용: 앱은 네트워크에 연결되지 않은 동안 작성된 기록을 기기에 보관하여야 하며, 연결이 회복되면 기록을 서버로 전송하고 전송 데이터의 무결성을 확인하여야 한다.",앱에 새 기능을 넣어 주세요. 네트워크가 없을 때 기록을 기기에 보관했다가 연결되면 서버로 보내고 전송 데이터의 무결성을 확인하는 기능이 필요합니다.,"[MDSR | Req. 19 | 번호] (origin)
+[MDSR | Req. 19 | 제목] (origin)
+[MDSR | Req. 19 | 설명] (origin)
+[MDSR | Req. 19 | 목적] (origin)
+[MDSR | Req. 19 | 기준#p1] (origin)
+[MDSR | Req. 19 | 기준#p2] (origin)
+[MDSR | SI-01 | 소프트웨어 기능 요구사항 번호] (trace)","[MDSR | SI-02 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(SI)지만 새 기능과 무관
+[MDSR | SI-03 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(SI)지만 새 기능과 무관",연결 SI-01(통신에 대한 무결성 보장). 본문에 넣을 보안 요소: 연결 회복 후 서버 전송 데이터의 무결성 확인. 제목은 초안. [수정] 번호 Req. 25→Req. 19; 연결 UC-01(권한 부여)는 순번 배정이라 바꿈.,
+T3_39,T3,add,1,MDSR,"모바일 애플리케이션 요구사항 Req. 19 '보호자 열람 동의'을(를) 신규 추가한다. 내용: 사용자는 보호자의 치료 진행 요약 열람에 동의하거나 동의를 철회할 수 있어야 하며, 앱은 동의한 보호자에게만 열람 권한을 부여하여야 한다.",앱에 새 기능을 넣어 주세요. 사용자가 동의한 보호자에게만 치료 진행 요약을 열람할 권한을 주는 기능이 필요합니다.,"[MDSR | Req. 19 | 번호] (origin)
+[MDSR | Req. 19 | 제목] (origin)
+[MDSR | Req. 19 | 설명] (origin)
+[MDSR | Req. 19 | 목적] (origin)
+[MDSR | Req. 19 | 기준#p1] (origin)
+[MDSR | Req. 19 | 기준#p2] (origin)
+[MDSR | UC-01 | 소프트웨어 기능 요구사항 번호] (trace)","[MDSR | UC-03 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(UC)지만 새 기능과 무관
+[MDSR | UC-04 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(UC)지만 새 기능과 무관",연결 UC-01(권한 부여). 본문에 넣을 보안 요소: 동의한 보호자에게만 열람 권한 부여. 제목은 초안. [수정] 번호 Req. 26→Req. 19; 연결 UC-03(세션 잠금)는 순번 배정이라 바꿈.,
+T3_40,T3,add,1,MDSR,"서버 요구사항 Req. 109 '웨어러블 연동'을(를) 신규 추가한다. 내용: 서버는 사용자가 연동한 웨어러블 기기의 수면 측정값을 받아 저장할 수 있어야 하며, 저장 전에 받은 데이터의 형식과 값의 범위를 검증하여야 한다.",서버에 새 기능을 넣어 주세요. 서버가 웨어러블 기기의 수면 측정값을 받아 저장하고 받은 데이터의 형식과 범위를 검사하는 기능이 필요합니다.,"[MDSR | Req. 109 | 번호] (origin)
+[MDSR | Req. 109 | 제목] (origin)
+[MDSR | Req. 109 | 설명] (origin)
+[MDSR | Req. 109 | 목적] (origin)
+[MDSR | Req. 109 | 기준#p1] (origin)
+[MDSR | Req. 109 | 기준#p2] (origin)
+[MDSR | SI-05 | 소프트웨어 기능 요구사항 번호] (trace)","[MDSR | SI-01 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(SI)지만 새 기능과 무관
+[MDSR | SI-02 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(SI)지만 새 기능과 무관",연결 SI-05(입력값 검증). 본문에 넣을 보안 요소: 웨어러블에서 받은 데이터의 형식·범위 검증. 제목은 초안. [수정] 번호 Req. 110→Req. 109; 연결 UC-04(감사기록 생성)는 순번 배정이라 바꿈.,
+T3_41,T3,add,2,"MDSR,XXCS","모바일 애플리케이션 요구사항 Req. 19 '기기 변경 시 기록 이전'을(를) 신규 추가한다. 내용: 사용자는 새 기기에서 이전 기기의 기록을 옮겨 받을 수 있어야 하며, 기록을 옮기기 전에 본인 인증을 완료하여야 한다.",앱에 새 기능을 넣어 주세요. 사용자가 새 기기로 바꿀 때 본인 인증을 거친 뒤 이전 기기의 기록을 옮기는 기능이 필요합니다.,"[MDSR | Req. 19 | 번호] (origin)
+[MDSR | Req. 19 | 제목] (origin)
+[MDSR | Req. 19 | 설명] (origin)
+[MDSR | Req. 19 | 목적] (origin)
+[MDSR | Req. 19 | 기준#p1] (origin)
+[MDSR | Req. 19 | 기준#p2] (origin)
+[MDSR | IA-01 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | IA-01 | 해당 요구사항] (trace)","[MDSR | IA-02 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(IA)지만 새 기능과 무관
+[XXCS | IA-02 | 해당 요구사항] (trace) - 같은 분류(IA)지만 새 기능과 무관
+[MDSR | IA-03 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(IA)지만 새 기능과 무관
+[XXCS | IA-03 | 해당 요구사항] (trace) - 같은 분류(IA)지만 새 기능과 무관",연결 IA-01(사용자 식별 및 인증). 본문에 넣을 보안 요소: 기록을 옮기기 전 본인 인증. 제목은 초안. [수정] 번호 Req. 27→Req. 19; 연결 UC-05(감사 처리 실패 대응)는 순번 배정이라 바꿈; 제목 '제조사 업데이트 수신'은 remote_update=false와 어긋나(SI-08·SI-09 적용 사유) 바꿈.,
+T3_42,T3,add,2,"MDSR,XXCS","모바일 애플리케이션 요구사항 Req. 19 '호흡 안내'을(를) 신규 추가한다. 내용: 앱은 잠들기 전 호흡 안내 콘텐츠를 재생할 수 있어야 하며, 재생 전에 콘텐츠 파일의 무결성을 점검하여야 한다.",앱에 새 기능을 넣어 주세요. 잠들기 전 호흡 안내 콘텐츠를 재생하고 재생 전에 콘텐츠 파일의 무결성을 점검하는 기능이 필요합니다.,"[MDSR | Req. 19 | 번호] (origin)
+[MDSR | Req. 19 | 제목] (origin)
+[MDSR | Req. 19 | 설명] (origin)
+[MDSR | Req. 19 | 목적] (origin)
+[MDSR | Req. 19 | 기준#p1] (origin)
+[MDSR | Req. 19 | 기준#p2] (origin)
+[MDSR | SI-04 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | SI-04 | 해당 요구사항] (trace)","[MDSR | SI-01 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(SI)지만 새 기능과 무관
+[XXCS | SI-01 | 해당 요구사항] (trace) - 같은 분류(SI)지만 새 기능과 무관
+[MDSR | SI-02 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(SI)지만 새 기능과 무관
+[XXCS | SI-02 | 해당 요구사항] (trace) - 같은 분류(SI)지만 새 기능과 무관",연결 SI-04(소프트웨어 및 정보에 대한 무결성 점검). 본문에 넣을 보안 요소: 재생 전 안내 콘텐츠 파일의 무결성 점검. 제목은 초안. [수정] 번호 Req. 28→Req. 19; 연결 UC-06(타임스탬프)는 순번 배정이라 바꿈.,
+T3_43,T3,add,2,"MDSR,XXCS","모바일 애플리케이션 요구사항 Req. 19 '카페인 중단 안내'을(를) 신규 추가한다. 내용: 앱은 사용자의 취침 시각을 기준으로 카페인 섭취를 멈출 시점을 안내하여야 하며, 안내 시점을 계산하지 못하면 내부 정보가 드러나지 않는 오류 메시지를 표시하여야 한다.",앱에 새 기능을 넣어 주세요. 취침 시각에 맞춰 카페인 섭취를 멈출 시점을 안내하고 안내 시점을 계산하지 못하면 내부 정보가 없는 오류 메시지를 보여 주는 기능이 필요합니다.,"[MDSR | Req. 19 | 번호] (origin)
+[MDSR | Req. 19 | 제목] (origin)
+[MDSR | Req. 19 | 설명] (origin)
+[MDSR | Req. 19 | 목적] (origin)
+[MDSR | Req. 19 | 기준#p1] (origin)
+[MDSR | Req. 19 | 기준#p2] (origin)
+[MDSR | SI-07 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | SI-07 | 해당 요구사항] (trace)","[MDSR | SI-01 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(SI)지만 새 기능과 무관
+[XXCS | SI-01 | 해당 요구사항] (trace) - 같은 분류(SI)지만 새 기능과 무관
+[MDSR | SI-02 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(SI)지만 새 기능과 무관
+[XXCS | SI-02 | 해당 요구사항] (trace) - 같은 분류(SI)지만 새 기능과 무관",연결 SI-07(오류 처리). 본문에 넣을 보안 요소: 안내 시점 계산에 실패하면 내부 정보가 없는 오류 메시지. 제목은 초안. [수정] 번호 Req. 29→Req. 19; 연결 SI-01(통신에 대한 무결성 보장)는 순번 배정이라 바꿈.,
+T3_44,T3,add,2,"MDSR,XXCS","모바일 애플리케이션 요구사항 Req. 19 '침실 환경 점검'을(를) 신규 추가한다. 내용: 사용자는 침실의 빛, 소음, 온도에 관한 점검 항목에 응답할 수 있어야 하며, 앱은 응답 값이 정해진 선택지와 형식에 맞는지 검증하여야 한다.","앱에 새 기능을 넣어 주세요. 사용자가 침실의 빛과 소음, 온도 점검 항목에 답하고 앱이 응답 값을 검사하는 기능이 필요합니다.","[MDSR | Req. 19 | 번호] (origin)
+[MDSR | Req. 19 | 제목] (origin)
+[MDSR | Req. 19 | 설명] (origin)
+[MDSR | Req. 19 | 목적] (origin)
+[MDSR | Req. 19 | 기준#p1] (origin)
+[MDSR | Req. 19 | 기준#p2] (origin)
+[MDSR | SI-05 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | SI-05 | 해당 요구사항] (trace)","[MDSR | SI-01 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(SI)지만 새 기능과 무관
+[XXCS | SI-01 | 해당 요구사항] (trace) - 같은 분류(SI)지만 새 기능과 무관
+[MDSR | SI-02 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(SI)지만 새 기능과 무관
+[XXCS | SI-02 | 해당 요구사항] (trace) - 같은 분류(SI)지만 새 기능과 무관",연결 SI-05(입력값 검증). 본문에 넣을 보안 요소: 점검 항목 응답 값 검증. 제목은 초안. [수정] 번호 Req. 30→Req. 19; 연결 SI-02(악성코드로부터 보호)는 순번 배정이라 바꿈.,
+T3_45,T3,add,2,"MDSR,MDDR","서버 요구사항 Req. 109 '수면 효율 메모'을(를) 신규 추가한다. 내용: 서버는 의료진이 사용자의 수면 효율 결과에 메모를 작성할 수 있도록 하여야 하며, 메모를 작성하거나 수정할 때마다 감사기록을 생성하여야 한다.",서버에 새 기능을 넣어 주세요. 의료진이 사용자의 수면 효율 결과에 메모를 남기고 메모를 작성하거나 고칠 때 감사기록을 남기는 기능이 필요합니다.,"[MDSR | Req. 109 | 번호] (origin)
+[MDSR | Req. 109 | 제목] (origin)
+[MDSR | Req. 109 | 설명] (origin)
+[MDSR | Req. 109 | 목적] (origin)
+[MDSR | Req. 109 | 기준#p1] (origin)
+[MDSR | Req. 109 | 기준#p2] (origin)
+[MDDR | Req. 109 | 번호] (same_id)
+[MDDR | Req. 109 | 설계#p1] (same_id)
+[MDDR | Req. 109 | 설계#p2] (same_id)
+[MDDR | Req. 109 | 설계#p3] (same_id)
+[MDSR | UC-04 | 소프트웨어 기능 요구사항 번호] (trace)","[MDSR | UC-01 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(UC)지만 새 기능과 무관
+[MDSR | UC-03 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(UC)지만 새 기능과 무관",연결 UC-04(감사기록 생성). 본문에 넣을 보안 요소: 의료진이 메모를 작성·수정하면 감사기록 생성. 제목은 초안. [수정] 번호 Req. 111→Req. 109; 연결 SI-03(보안 기능 검증)는 순번 배정이라 바꿈.,
+T3_46,T3,add,2,"MDSR,MDDR","모바일 애플리케이션 요구사항 Req. 19 '복용 기록'을(를) 신규 추가한다. 내용: 사용자는 복용한 수면 관련 약과 복용 시각을 기록할 수 있어야 하며, 복용 기록은 기기 내부에 암호화된 형태로 저장되어야 한다.",앱에 새 기능을 넣어 주세요. 사용자가 복용한 약과 복용 시각을 기록하고 기록을 기기에 암호화하여 저장하는 기능이 필요합니다.,"[MDSR | Req. 19 | 번호] (origin)
+[MDSR | Req. 19 | 제목] (origin)
+[MDSR | Req. 19 | 설명] (origin)
+[MDSR | Req. 19 | 목적] (origin)
+[MDSR | Req. 19 | 기준#p1] (origin)
+[MDSR | Req. 19 | 기준#p2] (origin)
+[MDDR | Req. 19 | 번호] (same_id)
+[MDDR | Req. 19 | 설계#p1] (same_id)
+[MDDR | Req. 19 | 설계#p2] (same_id)
+[MDDR | Req. 19 | 설계#p3] (same_id)
+[MDSR | DC-01 | 소프트웨어 기능 요구사항 번호] (trace)",[MDSR | DC-03 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(DC)지만 새 기능과 무관,연결 DC-01(정보에 대한 기밀성 보장). 본문에 넣을 보안 요소: 복용 기록을 기기에 암호화해 저장. 제목은 초안. [수정] 번호 Req. 31→Req. 19; 연결 SI-04(소프트웨어 및 정보에 대한 무결성 점검)는 순번 배정이라 바꿈.,
+T3_47,T3,add,2,"MDSR,MDDR","모바일 애플리케이션 요구사항 Req. 19 '코골이 메모'을(를) 신규 추가한다. 내용: 사용자는 코골이에 관한 메모를 수면일기에 남길 수 있어야 하며, 앱은 메모의 길이와 허용 문자를 검증한 뒤 저장하여야 한다.",앱에 새 기능을 넣어 주세요. 사용자가 코골이에 관한 메모를 남기고 앱이 메모의 길이와 허용 문자를 검사하는 기능이 필요합니다.,"[MDSR | Req. 19 | 번호] (origin)
+[MDSR | Req. 19 | 제목] (origin)
+[MDSR | Req. 19 | 설명] (origin)
+[MDSR | Req. 19 | 목적] (origin)
+[MDSR | Req. 19 | 기준#p1] (origin)
+[MDSR | Req. 19 | 기준#p2] (origin)
+[MDDR | Req. 19 | 번호] (same_id)
+[MDDR | Req. 19 | 설계#p1] (same_id)
+[MDDR | Req. 19 | 설계#p2] (same_id)
+[MDDR | Req. 19 | 설계#p3] (same_id)
+[MDSR | SI-05 | 소프트웨어 기능 요구사항 번호] (trace)","[MDSR | SI-01 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(SI)지만 새 기능과 무관
+[MDSR | SI-02 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(SI)지만 새 기능과 무관",연결 SI-05(입력값 검증). 본문에 넣을 보안 요소: 메모 길이와 허용 문자 검증. 제목은 초안. [수정] 번호 Req. 32→Req. 19.,
+T3_48,T3,add,3,"MDSR,MDDR,XXCS","모바일 애플리케이션 요구사항 Req. 19 '각성 횟수 기록'을(를) 신규 추가한다. 내용: 사용자는 밤중에 깬 횟수를 기록할 수 있어야 하며, 앱은 깬 시점마다 기기 시각 기준의 타임스탬프를 저장하여야 한다.",앱에 새 기능을 넣어 주세요. 사용자가 밤중에 깬 횟수를 기록하고 깬 시점마다 타임스탬프를 남기는 기능이 필요합니다.,"[MDSR | Req. 19 | 번호] (origin)
+[MDSR | Req. 19 | 제목] (origin)
+[MDSR | Req. 19 | 설명] (origin)
+[MDSR | Req. 19 | 목적] (origin)
+[MDSR | Req. 19 | 기준#p1] (origin)
+[MDSR | Req. 19 | 기준#p2] (origin)
+[MDDR | Req. 19 | 번호] (same_id)
+[MDDR | Req. 19 | 설계#p1] (same_id)
+[MDDR | Req. 19 | 설계#p2] (same_id)
+[MDDR | Req. 19 | 설계#p3] (same_id)
+[MDSR | UC-06 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | UC-06 | 해당 요구사항] (trace)","[MDSR | UC-01 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(UC)지만 새 기능과 무관
+[XXCS | UC-01 | 해당 요구사항] (trace) - 같은 분류(UC)지만 새 기능과 무관
+[MDSR | UC-03 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(UC)지만 새 기능과 무관
+[XXCS | UC-03 | 해당 요구사항] (trace) - 같은 분류(UC)지만 새 기능과 무관",연결 UC-06(타임스탬프). 본문에 넣을 보안 요소: 깬 시점마다 타임스탬프 기록. 제목은 초안. [수정] 번호 Req. 33→Req. 19; 연결 SI-06(오류 시 사전 결정된 상태로 출력)는 순번 배정이라 바꿈.,
+T3_49,T3,add,3,"MDSR,MDDR,XXCS","모바일 애플리케이션 요구사항 Req. 19 '아침 점검'을(를) 신규 추가한다. 내용: 앱은 기상 후 수면 만족도 점검 문항에 응답하도록 하여야 하며, 응답 저장에 실패하면 직전에 저장된 상태를 유지하여야 한다.",앱에 새 기능을 넣어 주세요. 기상 후 수면 만족도 점검 문항에 답하게 하고 응답 저장에 실패하면 직전에 저장된 상태를 유지하는 기능이 필요합니다.,"[MDSR | Req. 19 | 번호] (origin)
+[MDSR | Req. 19 | 제목] (origin)
+[MDSR | Req. 19 | 설명] (origin)
+[MDSR | Req. 19 | 목적] (origin)
+[MDSR | Req. 19 | 기준#p1] (origin)
+[MDSR | Req. 19 | 기준#p2] (origin)
+[MDDR | Req. 19 | 번호] (same_id)
+[MDDR | Req. 19 | 설계#p1] (same_id)
+[MDDR | Req. 19 | 설계#p2] (same_id)
+[MDDR | Req. 19 | 설계#p3] (same_id)
+[MDSR | SI-06 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | SI-06 | 해당 요구사항] (trace)","[MDSR | SI-01 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(SI)지만 새 기능과 무관
+[XXCS | SI-01 | 해당 요구사항] (trace) - 같은 분류(SI)지만 새 기능과 무관
+[MDSR | SI-02 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(SI)지만 새 기능과 무관
+[XXCS | SI-02 | 해당 요구사항] (trace) - 같은 분류(SI)지만 새 기능과 무관",연결 SI-06(오류 시 사전 결정된 상태로 출력). 본문에 넣을 보안 요소: 응답 저장에 실패하면 직전 저장 상태 유지. 제목은 초안. [수정] 번호 Req. 34→Req. 19; 연결 SI-07(오류 처리)는 순번 배정이라 바꿈.,
+T3_50,T3,add,3,"MDSR,MDDR,XXCS","서버 요구사항 Req. 109 '저녁 점검'을(를) 신규 추가한다. 내용: 서버는 사용자가 제출한 저녁 점검 응답을 보관하여야 하며, 저녁 점검 기록을 정기 백업 대상에 포함하여야 한다.",서버에 새 기능을 넣어 주세요. 서버가 사용자의 저녁 점검 응답을 보관하고 이 기록을 정기 백업 대상에 포함하는 기능이 필요합니다.,"[MDSR | Req. 109 | 번호] (origin)
+[MDSR | Req. 109 | 제목] (origin)
+[MDSR | Req. 109 | 설명] (origin)
+[MDSR | Req. 109 | 목적] (origin)
+[MDSR | Req. 109 | 기준#p1] (origin)
+[MDSR | Req. 109 | 기준#p2] (origin)
+[MDDR | Req. 109 | 번호] (same_id)
+[MDDR | Req. 109 | 설계#p1] (same_id)
+[MDDR | Req. 109 | 설계#p2] (same_id)
+[MDDR | Req. 109 | 설계#p3] (same_id)
+[MDSR | RA-02 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | RA-02 | 해당 요구사항] (trace)","[MDSR | RA-01 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(RA)지만 새 기능과 무관
+[XXCS | RA-01 | 해당 요구사항] (trace) - 같은 분류(RA)지만 새 기능과 무관
+[MDSR | RA-03 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(RA)지만 새 기능과 무관
+[XXCS | RA-03 | 해당 요구사항] (trace) - 같은 분류(RA)지만 새 기능과 무관",연결 RA-02(의료기기 백업). 본문에 넣을 보안 요소: 점검 기록을 정기 백업 대상에 포함. 제목은 초안. [수정] 번호 Req. 112→Req. 109; 연결 DC-01(정보에 대한 기밀성 보장)는 순번 배정이라 바꿈.,
+T3_51,T3,add,3,"MDSR,MDDR,XXCS","모바일 애플리케이션 요구사항 Req. 19 '낮 활동 기록'을(를) 신규 추가한다. 내용: 앱은 사용자의 낮 활동량을 기록할 수 있어야 하며, 활동 기록은 기기 내부에 암호화된 형태로 저장되어야 한다.",앱에 새 기능을 넣어 주세요. 사용자의 낮 활동량을 기록하고 기록을 기기에 암호화하여 저장하는 기능이 필요합니다.,"[MDSR | Req. 19 | 번호] (origin)
+[MDSR | Req. 19 | 제목] (origin)
+[MDSR | Req. 19 | 설명] (origin)
+[MDSR | Req. 19 | 목적] (origin)
+[MDSR | Req. 19 | 기준#p1] (origin)
+[MDSR | Req. 19 | 기준#p2] (origin)
+[MDDR | Req. 19 | 번호] (same_id)
+[MDDR | Req. 19 | 설계#p1] (same_id)
+[MDDR | Req. 19 | 설계#p2] (same_id)
+[MDDR | Req. 19 | 설계#p3] (same_id)
+[MDSR | DC-01 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | DC-01 | 해당 요구사항] (trace)","[MDSR | DC-03 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(DC)지만 새 기능과 무관
+[XXCS | DC-03 | 해당 요구사항] (trace) - 같은 분류(DC)지만 새 기능과 무관",연결 DC-01(정보에 대한 기밀성 보장). 본문에 넣을 보안 요소: 활동 기록을 기기에 암호화해 저장. 제목은 초안. [수정] 번호 Req. 35→Req. 19; 연결 DC-03(안전한 암호화 사용)는 순번 배정이라 바꿈.,
+T3_52,T3,add,3,"MDSR,MDDR,XXCS","모바일 애플리케이션 요구사항 Req. 19 '운동 기록'을(를) 신규 추가한다. 내용: 사용자는 운동 종류와 운동 시간을 기록할 수 있어야 하며, 앱은 입력값이 허용 범위와 형식에 맞는지 검증한 뒤 저장하여야 한다.",앱에 새 기능을 넣어 주세요. 사용자가 운동 종류와 시간을 기록하고 앱이 입력값의 허용 범위를 검사하는 기능이 필요합니다.,"[MDSR | Req. 19 | 번호] (origin)
+[MDSR | Req. 19 | 제목] (origin)
+[MDSR | Req. 19 | 설명] (origin)
+[MDSR | Req. 19 | 목적] (origin)
+[MDSR | Req. 19 | 기준#p1] (origin)
+[MDSR | Req. 19 | 기준#p2] (origin)
+[MDDR | Req. 19 | 번호] (same_id)
+[MDDR | Req. 19 | 설계#p1] (same_id)
+[MDDR | Req. 19 | 설계#p2] (same_id)
+[MDDR | Req. 19 | 설계#p3] (same_id)
+[MDSR | SI-05 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | SI-05 | 해당 요구사항] (trace)","[MDSR | SI-01 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(SI)지만 새 기능과 무관
+[XXCS | SI-01 | 해당 요구사항] (trace) - 같은 분류(SI)지만 새 기능과 무관
+[MDSR | SI-02 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(SI)지만 새 기능과 무관
+[XXCS | SI-02 | 해당 요구사항] (trace) - 같은 분류(SI)지만 새 기능과 무관",연결 SI-05(입력값 검증). 본문에 넣을 보안 요소: 운동 종류·시간 입력값의 허용 범위 검증. 제목은 초안. [수정] 번호 Req. 36→Req. 19; 연결 TRE-01(감사로그에 대한 비인가된 접근 제한)는 순번 배정이라 바꿈.,
+T3_53,T3,add,3,"MDSR,MDDR,XXCS","모바일 애플리케이션 요구사항 Req. 19 '식사 시각 기록'을(를) 신규 추가한다. 내용: 사용자는 저녁 식사 시각을 기록할 수 있어야 하며, 앱은 기록마다 기기 시각 기준의 타임스탬프를 저장하여야 한다.",앱에 새 기능을 넣어 주세요. 사용자가 저녁 식사 시각을 기록하고 기록 시점을 타임스탬프로 남기는 기능이 필요합니다.,"[MDSR | Req. 19 | 번호] (origin)
+[MDSR | Req. 19 | 제목] (origin)
+[MDSR | Req. 19 | 설명] (origin)
+[MDSR | Req. 19 | 목적] (origin)
+[MDSR | Req. 19 | 기준#p1] (origin)
+[MDSR | Req. 19 | 기준#p2] (origin)
+[MDDR | Req. 19 | 번호] (same_id)
+[MDDR | Req. 19 | 설계#p1] (same_id)
+[MDDR | Req. 19 | 설계#p2] (same_id)
+[MDDR | Req. 19 | 설계#p3] (same_id)
+[MDSR | UC-06 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | UC-06 | 해당 요구사항] (trace)","[MDSR | UC-01 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(UC)지만 새 기능과 무관
+[XXCS | UC-01 | 해당 요구사항] (trace) - 같은 분류(UC)지만 새 기능과 무관
+[MDSR | UC-03 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(UC)지만 새 기능과 무관
+[XXCS | UC-03 | 해당 요구사항] (trace) - 같은 분류(UC)지만 새 기능과 무관",연결 UC-06(타임스탬프). 본문에 넣을 보안 요소: 식사 시각을 타임스탬프로 기록. 제목은 초안. [수정] 번호 Req. 37→Req. 19; 연결 RA-01(서비스 거부(DoS) 방지)는 순번 배정이라 바꿈.,
+T3_54,T3,add,3,"MDSR,MDDR,XXCS","모바일 애플리케이션 요구사항 Req. 19 '화면 사용 기록'을(를) 신규 추가한다. 내용: 앱은 잠들기 전 화면 사용 시간을 수집하여 보여 줄 수 있어야 하며, 수집 전에 사용자가 사용 기록 접근 권한을 허용하도록 하여야 한다.",앱에 새 기능을 넣어 주세요. 잠들기 전 화면 사용 시간을 수집해 보여 주며 수집 전에 사용자가 접근 권한을 허용하게 하는 기능이 필요합니다.,"[MDSR | Req. 19 | 번호] (origin)
+[MDSR | Req. 19 | 제목] (origin)
+[MDSR | Req. 19 | 설명] (origin)
+[MDSR | Req. 19 | 목적] (origin)
+[MDSR | Req. 19 | 기준#p1] (origin)
+[MDSR | Req. 19 | 기준#p2] (origin)
+[MDDR | Req. 19 | 번호] (same_id)
+[MDDR | Req. 19 | 설계#p1] (same_id)
+[MDDR | Req. 19 | 설계#p2] (same_id)
+[MDDR | Req. 19 | 설계#p3] (same_id)
+[MDSR | UC-01 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | UC-01 | 해당 요구사항] (trace)","[MDSR | UC-03 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(UC)지만 새 기능과 무관
+[XXCS | UC-03 | 해당 요구사항] (trace) - 같은 분류(UC)지만 새 기능과 무관
+[MDSR | UC-04 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(UC)지만 새 기능과 무관
+[XXCS | UC-04 | 해당 요구사항] (trace) - 같은 분류(UC)지만 새 기능과 무관",연결 UC-01(권한 부여). 본문에 넣을 보안 요소: 수집 전에 사용자가 접근 권한을 허용. 제목은 초안. [수정] 번호 Req. 38→Req. 19; 연결 RA-02(의료기기 백업)는 순번 배정이라 바꿈.,
+T3_55,T3,add_with_value_change,1,MDSR,"서버 요구사항 Req. 109 '이완 전 준비'을(를) 신규 추가한다. 내용: 서버는 이완 훈련 전에 볼 준비 안내 콘텐츠를 앱에 배포할 수 있어야 하며, 배포 전에 콘텐츠의 무결성을 점검하여야 한다. 또한 Req. 10 '수면 제한 요법 기본 시간'의 수면 제한 요법 기본 기상 시간을 7:00에서 8:00으로 변경한다.",서버에 새 기능을 넣어 주세요. 서버가 이완 훈련 전에 볼 준비 안내 콘텐츠를 배포하고 배포 전에 콘텐츠의 무결성을 점검하는 기능이 필요합니다. 그리고 수면 제한 요법 기본 시간 기능에서 수면 제한 요법 기본 기상 시간을 8:00으로 바꿔 주세요.,"[MDSR | Req. 109 | 번호] (origin)
+[MDSR | Req. 109 | 제목] (origin)
+[MDSR | Req. 109 | 설명] (origin)
+[MDSR | Req. 109 | 목적] (origin)
+[MDSR | Req. 109 | 기준#p1] (origin)
+[MDSR | Req. 109 | 기준#p2] (origin)
+[MDSR | SI-04 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | Req. 8 | 설명] (same_value)
+[MDSR | Req. 8 | 기준#p2] (same_value)
+[MDSR | Req. 10 | 설명] (origin)
+[MDSR | Req. 10 | 기준#p1] (origin)
+[MDSR | Req. 10 | 기준#p2] (origin)","[MDSR | SI-01 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(SI)지만 새 기능과 무관
+[MDSR | SI-02 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(SI)지만 새 기능과 무관",값 변경 동반. 연결 SI-04(소프트웨어 및 정보에 대한 무결성 점검). 본문에 넣을 보안 요소: 배포 전 준비 안내 콘텐츠의 무결성 점검. 제목은 초안. [수정] 번호 Req. 113→Req. 109; 연결 RA-03(의료기기 복구 및 재구성)는 순번 배정이라 바꿈; 값 변경 F_RELAXATION_SESSION_DURATION 10분→20분는 same_value 칸이 없어(fact_list 0) 바꿈.,
+T3_56,T3,add_with_value_change,1,MDSR,"모바일 애플리케이션 요구사항 Req. 19 '회기 전 설문'을(를) 신규 추가한다. 내용: 앱은 CBT 회기 시작 전에 짧은 설문에 응답하도록 하여야 하며, 응답 값이 정해진 선택지와 형식에 맞는지 검증하여야 한다. 또한 Req. 14 'CBT 알림 설정'의 CBT 회기 알림 시각을 18:00에서 19:00으로 변경한다.",앱에 새 기능을 넣어 주세요. CBT 회기 시작 전 짧은 설문에 답하게 하고 응답 값을 검사하는 기능이 필요합니다. 그리고 CBT 알림 설정 기능에서 CBT 회기 알림 시각을 19:00으로 바꿔 주세요.,"[MDSR | Req. 19 | 번호] (origin)
+[MDSR | Req. 19 | 제목] (origin)
+[MDSR | Req. 19 | 설명] (origin)
+[MDSR | Req. 19 | 목적] (origin)
+[MDSR | Req. 19 | 기준#p1] (origin)
+[MDSR | Req. 19 | 기준#p2] (origin)
+[MDSR | SI-05 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | Req. 9 | 설명] (same_value)
+[MDSR | Req. 9 | 기준#p2] (same_value)
+[MDSR | Req. 14 | 기준#p1] (origin)","[MDSR | SI-01 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(SI)지만 새 기능과 무관
+[MDSR | SI-02 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(SI)지만 새 기능과 무관",값 변경 동반. 연결 SI-05(입력값 검증). 본문에 넣을 보안 요소: 설문 응답 값 검증. 제목은 초안. [수정] 번호 Req. 39→Req. 19; 연결 RA-04(네트워크 및 보안 구성 설정)는 순번 배정이라 바꿈; 값 변경 F_SLEEP_EFFICIENCY_REPORT_INTERVAL 7일→14일는 same_value 칸이 없어(fact_list 0) 바꿈.,
+T3_57,T3,add_with_value_change,1,MDSR,모바일 애플리케이션 요구사항 Req. 19 '보호자 메시지'을(를) 신규 추가한다. 내용: 앱은 사용자가 등록하고 수신에 동의한 보호자에게만 치료 관련 메시지를 받을 권한을 부여하여야 한다. 또한 Req. 8 '수면일기 기록'의 수면 제한 요법 기본 기상 시간을 7:00에서 7:30으로 변경한다.,앱에 새 기능을 넣어 주세요. 사용자가 등록하고 동의한 보호자에게만 치료 관련 메시지를 보내는 기능이 필요합니다. 그리고 수면일기 기록 기능에서 수면 제한 요법 기본 기상 시간을 7:30으로 바꿔 주세요.,"[MDSR | Req. 19 | 번호] (origin)
+[MDSR | Req. 19 | 제목] (origin)
+[MDSR | Req. 19 | 설명] (origin)
+[MDSR | Req. 19 | 목적] (origin)
+[MDSR | Req. 19 | 기준#p1] (origin)
+[MDSR | Req. 19 | 기준#p2] (origin)
+[MDSR | UC-01 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | Req. 8 | 설명] (origin)
+[MDSR | Req. 8 | 기준#p2] (origin)
+[MDSR | Req. 10 | 설명] (same_value)
+[MDSR | Req. 10 | 기준#p1] (same_value)
+[MDSR | Req. 10 | 기준#p2] (same_value)","[MDSR | UC-03 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(UC)지만 새 기능과 무관
+[MDSR | UC-04 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(UC)지만 새 기능과 무관",값 변경 동반. 연결 UC-01(권한 부여). 본문에 넣을 보안 요소: 등록·동의한 보호자에게만 발송. 제목은 초안. [수정] 번호 Req. 40→Req. 19; 연결 IA-01(사용자 식별 및 인증)는 순번 배정이라 바꿈; 값 변경 F_MEDICAL_MESSAGE_EXPIRATION 7일→14일는 same_value 칸이 없어(fact_list 0) 바꿈.,
+T3_58,T3,add_with_value_change,1,MDSR,"모바일 애플리케이션 요구사항 Req. 19 '의료진 메모 확인'을(를) 신규 추가한다. 내용: 사용자는 의료진이 남긴 메모를 앱에서 확인할 수 있어야 하며, 메모를 열람할 때마다 열람자와 열람 시각을 감사기록으로 생성하여야 한다. 또한 Req. 8 '수면일기 기록'의 수면 제한 요법 기본 취침 시간을 22:00에서 23:00으로 변경한다.",앱에 새 기능을 넣어 주세요. 사용자가 의료진이 남긴 메모를 확인하고 메모를 열람할 때 감사기록을 남기는 기능이 필요합니다. 그리고 수면일기 기록 기능에서 수면 제한 요법 기본 취침 시간을 23:00으로 바꿔 주세요.,"[MDSR | Req. 19 | 번호] (origin)
+[MDSR | Req. 19 | 제목] (origin)
+[MDSR | Req. 19 | 설명] (origin)
+[MDSR | Req. 19 | 목적] (origin)
+[MDSR | Req. 19 | 기준#p1] (origin)
+[MDSR | Req. 19 | 기준#p2] (origin)
+[MDSR | UC-04 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | Req. 8 | 설명] (origin)
+[MDSR | Req. 8 | 기준#p2] (origin)
+[MDSR | Req. 10 | 설명] (same_value)
+[MDSR | Req. 10 | 기준#p1] (same_value)
+[MDSR | Req. 10 | 기준#p2] (same_value)","[MDSR | UC-01 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(UC)지만 새 기능과 무관
+[MDSR | UC-03 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(UC)지만 새 기능과 무관",값 변경 동반. 연결 UC-04(감사기록 생성). 본문에 넣을 보안 요소: 메모를 열람하면 감사기록 생성. 제목은 초안. [수정] 번호 Req. 41→Req. 19; 연결 IA-02(계정 관리)는 순번 배정이라 바꿈; 값 변경 F_DATA_PRESERVATION_DURATION 730일→1095일는 same_value 칸이 없어(fact_list 0) 바꿈.,
+T3_59,T3,add_with_value_change,2,"MDSR,MDDR","모바일 애플리케이션 요구사항 Req. 19 '기록 내보내기'을(를) 신규 추가한다. 내용: 사용자는 자신의 수면 기록을 파일로 내보낼 수 있어야 하며, 내보내는 파일은 안전한 암호 방식으로 암호화되어야 한다. 또한 Req. 9 '알림 설정'의 CBT 회기 알림 시각을 18:00에서 20:00으로 변경한다.",앱에 새 기능을 넣어 주세요. 사용자가 자신의 수면 기록을 파일로 내보내고 내보내는 파일을 암호화하는 기능이 필요합니다. 그리고 알림 설정 기능에서 CBT 회기 알림 시각을 20:00으로 바꿔 주세요.,"[MDSR | Req. 19 | 번호] (origin)
+[MDSR | Req. 19 | 제목] (origin)
+[MDSR | Req. 19 | 설명] (origin)
+[MDSR | Req. 19 | 목적] (origin)
+[MDSR | Req. 19 | 기준#p1] (origin)
+[MDSR | Req. 19 | 기준#p2] (origin)
+[MDDR | Req. 19 | 번호] (same_id)
+[MDDR | Req. 19 | 설계#p1] (same_id)
+[MDDR | Req. 19 | 설계#p2] (same_id)
+[MDDR | Req. 19 | 설계#p3] (same_id)
+[MDSR | DC-03 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | Req. 9 | 설명] (origin)
+[MDSR | Req. 9 | 기준#p2] (origin)
+[MDSR | Req. 14 | 기준#p1] (same_value)
+[MDDR | Req. 9 | 설계#p2] (same_id)
+[MDDR | Req. 14 | 설계#p1] (same_value)",[MDSR | DC-01 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(DC)지만 새 기능과 무관,값 변경 동반. 연결 DC-03(안전한 암호화 사용). 본문에 넣을 보안 요소: 내보내는 파일을 암호화. 제목은 초안. [수정] 번호 Req. 42→Req. 19; 연결 IA-03(식별정보 관리)는 순번 배정이라 바꿈; 값 변경 F_MEDICAL_STAFF_ROLE_ASSIGNMENT 4가지→2가지는 same_value 칸이 없어(fact_list 0) 바꿈.,
+T3_60,T3,add_with_value_change,2,"MDSR,MDDR","서버 요구사항 Req. 109 '알림 음량 설정'을(를) 신규 추가한다. 내용: 서버는 사용자가 정한 알림 음량 설정을 저장하여 여러 기기에서 같은 설정을 쓰도록 하여야 하며, 저장 전에 설정값의 허용 범위를 검증하여야 한다. 또한 Req. 105 '데이터 백업'의 백업 주기를 24시간에서 12시간으로 변경한다.",서버에 새 기능을 넣어 주세요. 사용자가 정한 알림 음량을 서버에 저장하고 설정값의 허용 범위를 검사하는 기능이 필요합니다. 그리고 데이터 백업 기능에서 백업 주기를 12시간으로 바꿔 주세요.,"[MDSR | Req. 109 | 번호] (origin)
+[MDSR | Req. 109 | 제목] (origin)
+[MDSR | Req. 109 | 설명] (origin)
+[MDSR | Req. 109 | 목적] (origin)
+[MDSR | Req. 109 | 기준#p1] (origin)
+[MDSR | Req. 109 | 기준#p2] (origin)
+[MDDR | Req. 109 | 번호] (same_id)
+[MDDR | Req. 109 | 설계#p1] (same_id)
+[MDDR | Req. 109 | 설계#p2] (same_id)
+[MDDR | Req. 109 | 설계#p3] (same_id)
+[MDSR | SI-05 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | 3.4 일반적 제한 | 본문#p7] (same_value)
+[MDSR | Req. 7 | 설명] (same_value)
+[MDSR | Req. 7 | 기준#p1] (same_value)
+[MDSR | Req. 105 | 설명] (origin)
+[MDSR | Req. 105 | 기준#p1] (origin)
+[MDDR | Req. 7 | 설계#p1] (same_value)
+[MDDR | Req. 105 | 설계#p1] (same_id)
+[MDDR | Req. 105 | 설계#p2] (same_id)","[MDSR | SI-01 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(SI)지만 새 기능과 무관
+[MDSR | SI-02 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(SI)지만 새 기능과 무관
+[MDSR | Req. 8 | 설명] (same_value) - 같은 값(24시간)이지만 다른 사실
+[MDSR | Req. 8 | 기준#p1] (same_value) - 같은 값(24 시간)이지만 다른 사실
+[MDDR | Req. 8 | 설계#p1] (same_value) - 같은 값(하루)이지만 다른 사실",값 변경 동반. 연결 SI-05(입력값 검증). 본문에 넣을 보안 요소: 음량 설정값의 허용 범위 검증. 제목은 초안. [수정] 번호 Req. 114→Req. 109; 연결 IA-04(인증정보 관리)는 순번 배정이라 바꿈.,
+T3_61,T3,add_with_value_change,2,"MDSR,MDDR","모바일 애플리케이션 요구사항 Req. 19 '어두운 화면 안내'을(를) 신규 추가한다. 내용: 앱은 취침 전 시간대에 어두운 화면 모드를 안내하여야 하며, 기기의 화면 설정을 읽지 못하면 미리 정한 기본 화면 상태로 표시하여야 한다. 또한 Req. 101 '의료진 대시보드 조회'의 동기화 주기를 60분에서 120분으로 변경한다.",앱에 새 기능을 넣어 주세요. 잠들기 전 어두운 화면 모드를 안내하고 화면 설정을 읽지 못하면 미리 정한 기본 화면으로 표시하는 기능이 필요합니다. 그리고 의료진 대시보드 조회 기능에서 동기화 주기를 120분으로 바꿔 주세요.,"[MDSR | Req. 19 | 번호] (origin)
+[MDSR | Req. 19 | 제목] (origin)
+[MDSR | Req. 19 | 설명] (origin)
+[MDSR | Req. 19 | 목적] (origin)
+[MDSR | Req. 19 | 기준#p1] (origin)
+[MDSR | Req. 19 | 기준#p2] (origin)
+[MDDR | Req. 19 | 번호] (same_id)
+[MDDR | Req. 19 | 설계#p1] (same_id)
+[MDDR | Req. 19 | 설계#p2] (same_id)
+[MDDR | Req. 19 | 설계#p3] (same_id)
+[MDSR | SI-06 | 소프트웨어 기능 요구사항 번호] (trace)
+[MDSR | Req. 100 | 설명] (same_value)
+[MDSR | Req. 100 | 기준#p1] (same_value)
+[MDSR | Req. 101 | 설명] (origin)
+[MDSR | Req. 101 | 기준#p1] (origin)
+[MDSR | Req. 101 | 기준#p2] (origin)
+[MDDR | Req. 100 | 설계#p1] (same_value)
+[MDDR | Req. 100 | 설계#p3] (same_value)
+[MDDR | Req. 101 | 설계#p1] (same_id)
+[MDDR | Req. 101 | 설계#p2] (same_id)
+[MDDR | Req. 101 | 설계#p3] (same_id)","[MDSR | SI-01 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(SI)지만 새 기능과 무관
+[MDSR | SI-02 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(SI)지만 새 기능과 무관",값 변경 동반. 연결 SI-06(오류 시 사전 결정된 상태로 출력). 본문에 넣을 보안 요소: 화면 설정을 못 읽으면 미리 정한 기본 화면으로 표시. 제목은 초안. [수정] 번호 Req. 43→Req. 19; 연결 IA-05(비밀번호 강도 설정)는 순번 배정이라 바꿈.,
+T3_62,T3,add_with_value_change,3,"MDSR,MDDR,XXCS","모바일 애플리케이션 요구사항 Req. 19 '위젯 표시'을(를) 신규 추가한다. 내용: 앱은 홈 화면 위젯으로 오늘의 수면 목표를 보여 줄 수 있어야 하며, 기기가 잠긴 상태에서는 위젯에 민감한 수면 기록을 표시하지 않아야 한다. 또한 Req. 1 '사용자 로그인'의 로그인 실패 허용 횟수를 5회에서 4회로 변경한다.",앱에 새 기능을 넣어 주세요. 홈 화면 위젯으로 오늘의 수면 목표를 보여 주되 기기가 잠긴 상태에서는 민감한 수면 기록을 가리는 기능이 필요합니다. 그리고 사용자 로그인 기능에서 로그인 실패 허용 횟수를 4회로 바꿔 주세요.,"[MDSR | Req. 19 | 번호] (origin)
+[MDSR | Req. 19 | 제목] (origin)
+[MDSR | Req. 19 | 설명] (origin)
+[MDSR | Req. 19 | 목적] (origin)
+[MDSR | Req. 19 | 기준#p1] (origin)
+[MDSR | Req. 19 | 기준#p2] (origin)
+[MDDR | Req. 19 | 번호] (same_id)
+[MDDR | Req. 19 | 설계#p1] (same_id)
+[MDDR | Req. 19 | 설계#p2] (same_id)
+[MDDR | Req. 19 | 설계#p3] (same_id)
+[MDSR | DC-01 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | DC-01 | 해당 요구사항] (trace)
+[MDSR | 3.4 일반적 제한 | 본문#p1] (same_value)
+[MDSR | Req. 1 | 설명] (origin)
+[MDSR | Req. 1 | 기준#p2] (origin)
+[MDSR | Req. 2 | 설명] (same_value)
+[MDSR | Req. 2 | 기준#p1] (same_value)
+[MDDR | Req. 1 | 설계#p2] (same_id)
+[MDDR | Req. 2 | 설계#p1] (same_value)
+[MDDR | Req. 2 | 설계#p2] (same_value)
+[XXCS | IA-06 | 시험방법#p1] (same_value)
+[XXCS | IA-06 | 확인결과#p1] (same_value)
+[XXCS | IA-07 | 시험방법#p1] (trace)
+[XXCS | IA-07 | 시험방법#p2] (trace)
+[XXCS | IA-07 | 확인결과#p1] (trace)","[MDSR | DC-03 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(DC)지만 새 기능과 무관
+[XXCS | DC-03 | 해당 요구사항] (trace) - 같은 분류(DC)지만 새 기능과 무관
+[XXCS | SI-01 | 확인결과#p1] (trace) - Req. 1와 연결됐지만 relevant=false
+[XXCS | SI-01 | 확인결과#p2] (trace) - Req. 1와 연결됐지만 relevant=false
+[XXCS | SI-01 | 확인결과#p3] (trace) - Req. 1와 연결됐지만 relevant=false",값 변경 동반. 연결 DC-01(정보에 대한 기밀성 보장). 본문에 넣을 보안 요소: 잠금 화면에서는 민감한 수면 기록을 가림. 제목은 초안. [수정] 번호 Req. 44→Req. 19; 연결 IA-06(인증정보에 대한 피드백)는 순번 배정이라 바꿈.,
+T3_63,T3,add_with_value_change,3,"MDSR,MDDR,XXCS","모바일 애플리케이션 요구사항 Req. 19 '백업 안내 확인'을(를) 신규 추가한다. 내용: 사용자는 자신의 기록이 마지막으로 백업된 상태를 앱에서 확인할 수 있어야 하며, 백업이 완료되지 않았으면 앱이 이를 안내하여야 한다. 또한 Req. 2 '계정 잠금'의 계정 잠금 시간을 15분에서 20분으로 변경한다.",앱에 새 기능을 넣어 주세요. 사용자가 마지막 기록 백업 상태를 확인하고 백업이 끝나지 않았으면 안내하는 기능이 필요합니다. 그리고 계정 잠금 기능에서 계정 잠금 시간을 20분으로 바꿔 주세요.,"[MDSR | Req. 19 | 번호] (origin)
+[MDSR | Req. 19 | 제목] (origin)
+[MDSR | Req. 19 | 설명] (origin)
+[MDSR | Req. 19 | 목적] (origin)
+[MDSR | Req. 19 | 기준#p1] (origin)
+[MDSR | Req. 19 | 기준#p2] (origin)
+[MDDR | Req. 19 | 번호] (same_id)
+[MDDR | Req. 19 | 설계#p1] (same_id)
+[MDDR | Req. 19 | 설계#p2] (same_id)
+[MDDR | Req. 19 | 설계#p3] (same_id)
+[MDSR | RA-02 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | RA-02 | 해당 요구사항] (trace)
+[MDSR | 3.4 일반적 제한 | 본문#p1] (same_value)
+[MDSR | Req. 2 | 설명] (origin)
+[MDSR | Req. 2 | 기준#p1] (origin)
+[MDDR | Req. 2 | 설계#p1] (same_id)
+[MDDR | Req. 2 | 설계#p2] (same_id)
+[XXCS | IA-02 | 시험방법#p1] (trace)
+[XXCS | IA-02 | 확인결과#p1] (trace)
+[XXCS | IA-06 | 확인결과#p2] (trace)
+[MDSR | Req. 3 | 설명] (same_value)
+[MDSR | Req. 3 | 기준#p2] (same_value)
+[MDDR | Req. 3 | 설계#p3] (same_value)
+[XXCS | IA-06 | 시험방법#p2] (trace)
+[XXCS | IA-06 | 확인결과#p3] (trace)
+[XXCS | UC-06 | 시험방법#p2] (same_value)
+[XXCS | UC-06 | 확인결과#p2] (same_value)","[MDSR | RA-01 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(RA)지만 새 기능과 무관
+[XXCS | RA-01 | 해당 요구사항] (trace) - 같은 분류(RA)지만 새 기능과 무관
+[MDSR | RA-03 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(RA)지만 새 기능과 무관
+[XXCS | RA-03 | 해당 요구사항] (trace) - 같은 분류(RA)지만 새 기능과 무관
+[MDSR | 3.4 일반적 제한 | 본문#p2] (same_value) - 같은 값(십오 분)이지만 다른 사실
+[MDSR | Req. 3 | 기준#p1] (same_value) - 같은 값(15 분)이지만 다른 사실
+[MDDR | Req. 3 | 설계#p1] (same_value) - 같은 값(15분)이지만 다른 사실
+[XXCS | UC-03 | 시험방법#p1] (same_value) - 같은 값(15 분)이지만 다른 사실
+[XXCS | UC-03 | 확인결과#p1] (same_value) - 같은 값(십오 분)이지만 다른 사실
+[XXCS | UC-06 | 시험방법#p1] (same_value) - 같은 값(15분)이지만 다른 사실
+[XXCS | UC-06 | 확인결과#p1] (same_value) - 같은 값(15 분)이지만 다른 사실
+[MDSR | Req. 14 | 기준#p2] (same_value) - 같은 값(15분)이지만 다른 사실
+[MDDR | Req. 14 | 설계#p2] (same_value) - 같은 값(15 분)이지만 다른 사실
+[MDDR | Req. 3 | 설계#p2] (same_value) - 같은 값(15분)이지만 다른 사실
+[XXCS | UC-03 | 시험방법#p2] (same_value) - 같은 값(15 분)이지만 다른 사실
+[XXCS | UC-03 | 확인결과#p2] (same_value) - 같은 값(십오 분)이지만 다른 사실
+[XXCS | UC-06 | 시험방법#p3] (same_value) - 같은 값(15분)이지만 다른 사실
+[XXCS | UC-06 | 확인결과#p3] (same_value) - 같은 값(15 분)이지만 다른 사실",값 변경 동반. 연결 RA-02(의료기기 백업). 본문에 넣을 보안 요소: 백업이 끝나지 않았으면 안내. 제목은 초안. [수정] 번호 Req. 45→Req. 19; 연결 IA-07(연속적인 로그인 시도 실패 시 로그인 제한)는 순번 배정이라 바꿈.,
+T3_64,T3,add_with_attr_change,2,"MDSR,XXCS","모바일 애플리케이션 요구사항 Req. 19 '동기화 상태 표시'을(를) 신규 추가한다. 내용: 앱은 서버와의 동기화 상태를 화면에 표시하여야 하며, 전송 데이터의 무결성 확인에 실패하면 사용자에게 이를 알려야 한다. 또한 제품 사이버보안 속성 '제조사 원격 업데이트 기능'(remote_update)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",앱에 새 기능을 넣어 주세요. 서버와의 동기화 상태를 보여 주고 전송 데이터의 무결성 확인에 실패하면 이를 알리는 기능이 필요합니다. 그리고 수면코치를 제조사가 서버에서 소프트웨어 업데이트를 원격 배포하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.,"[MDSR | Req. 19 | 번호] (origin)
+[MDSR | Req. 19 | 제목] (origin)
+[MDSR | Req. 19 | 설명] (origin)
+[MDSR | Req. 19 | 목적] (origin)
+[MDSR | Req. 19 | 기준#p1] (origin)
+[MDSR | Req. 19 | 기준#p2] (origin)
+[MDSR | SI-01 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | SI-01 | 해당 요구사항] (trace)
+[XXCS | SI-08 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-08 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-08 | 적용 여부] (rule)
+[XXCS | SI-08 | 판정] (rule)
+[XXCS | SI-09 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-09 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-09 | 적용 여부] (rule)
+[XXCS | SI-09 | 판정] (rule)","[MDSR | SI-02 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(SI)지만 새 기능과 무관
+[XXCS | SI-02 | 해당 요구사항] (trace) - 같은 분류(SI)지만 새 기능과 무관
+[MDSR | SI-03 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(SI)지만 새 기능과 무관
+[XXCS | SI-03 | 해당 요구사항] (trace) - 같은 분류(SI)지만 새 기능과 무관
+[XXCS | IA-05 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-05 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-06 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | IA-06 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | DC-02 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관
+[XXCS | DC-02 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관",속성 변경 동반. 연결 SI-01(통신에 대한 무결성 보장). 본문에 넣을 보안 요소: 전송 데이터 무결성 확인에 실패하면 알림. 제목은 초안. [수정] 번호 Req. 46→Req. 19; 연결 IA-08(시스템 사용 알림 메시지)는 순번 배정이라 바꿈.,
+T3_65,T3,add_with_attr_change,2,"MDSR,XXCS","서버 요구사항 Req. 109 '오류 신고'을(를) 신규 추가한다. 내용: 서버는 사용자가 보낸 앱 오류 신고를 접수하여 보관하여야 하며, 신고 처리 중 오류가 나도 응답에 내부 시스템 정보를 포함하지 않아야 한다. 또한 제품 사이버보안 속성 '개인식별정보 저장'(stores_pii)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",서버에 새 기능을 넣어 주세요. 사용자가 앱 오류를 신고하면 서버가 접수하고 처리 중 오류가 나도 응답에 내부 정보를 담지 않는 기능이 필요합니다. 그리고 수면코치를 환자 이름·연락처 같은 개인식별정보를 서버에 저장하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.,"[MDSR | Req. 109 | 번호] (origin)
+[MDSR | Req. 109 | 제목] (origin)
+[MDSR | Req. 109 | 설명] (origin)
+[MDSR | Req. 109 | 목적] (origin)
+[MDSR | Req. 109 | 기준#p1] (origin)
+[MDSR | Req. 109 | 기준#p2] (origin)
+[MDSR | SI-07 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | SI-07 | 해당 요구사항] (trace)
+[XXCS | DC-02 | 체크리스트 적용 여부] (rule)
+[XXCS | DC-02 | 체크리스트 입증 방법] (rule)
+[XXCS | DC-02 | 적용 여부] (rule)
+[XXCS | DC-02 | 판정] (rule)","[MDSR | SI-01 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(SI)지만 새 기능과 무관
+[XXCS | SI-01 | 해당 요구사항] (trace) - 같은 분류(SI)지만 새 기능과 무관
+[MDSR | SI-02 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(SI)지만 새 기능과 무관
+[XXCS | SI-02 | 해당 요구사항] (trace) - 같은 분류(SI)지만 새 기능과 무관
+[XXCS | IA-05 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-05 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-06 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | IA-06 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | UC-03 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(UC-03), 이번 변경과 무관
+[XXCS | UC-03 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(UC-03), 이번 변경과 무관",속성 변경 동반. 연결 SI-07(오류 처리). 본문에 넣을 보안 요소: 처리 중 오류가 나도 응답에 내부 정보를 담지 않음. 제목은 초안. [수정] 번호 Req. 115→Req. 109; 연결 UC-01(권한 부여)는 순번 배정이라 바꿈.,
+T3_66,T3,add_with_attr_change,2,"MDSR,XXCS","모바일 애플리케이션 요구사항 Req. 19 '사용 안내 열람'을(를) 신규 추가한다. 내용: 앱은 로그인하기 전에 시스템 사용 안내 문구를 표시하여야 하며, 사용자가 안내를 확인한 뒤에 로그인할 수 있도록 하여야 한다. 또한 제품 사이버보안 속성 '독립형 소프트웨어 의료기기(SaMD)'(samd)을 true에서 false로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",앱에 새 기능을 넣어 주세요. 로그인하기 전에 시스템 사용 안내 문구를 보여 주고 사용자가 확인하게 하는 기능이 필요합니다. 그리고 수면코치를 전용 하드웨어 기기와 함께 공급하는 형태로 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.,"[MDSR | Req. 19 | 번호] (origin)
+[MDSR | Req. 19 | 제목] (origin)
+[MDSR | Req. 19 | 설명] (origin)
+[MDSR | Req. 19 | 목적] (origin)
+[MDSR | Req. 19 | 기준#p1] (origin)
+[MDSR | Req. 19 | 기준#p2] (origin)
+[MDSR | IA-08 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | IA-08 | 해당 요구사항] (trace)
+[XXCS | SI-10 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-10 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-10 | 적용 여부] (rule)
+[XXCS | SI-10 | 판정] (rule)
+[XXCS | SI-11 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-11 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-11 | 적용 여부] (rule)
+[XXCS | SI-11 | 판정] (rule)","[MDSR | IA-01 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(IA)지만 새 기능과 무관
+[XXCS | IA-01 | 해당 요구사항] (trace) - 같은 분류(IA)지만 새 기능과 무관
+[MDSR | IA-02 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(IA)지만 새 기능과 무관
+[XXCS | IA-02 | 해당 요구사항] (trace) - 같은 분류(IA)지만 새 기능과 무관
+[XXCS | IA-05 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-05 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-06 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | IA-06 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | DC-02 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관
+[XXCS | DC-02 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관",속성 변경 동반. 연결 IA-08(시스템 사용 알림 메시지). 본문에 넣을 보안 요소: 로그인 전에 시스템 사용 안내 문구를 보여 주고 확인받음. 제목은 초안. [수정] 번호 Req. 47→Req. 19; 연결 UC-03(세션 잠금)는 순번 배정이라 바꿈.,
+T3_67,T3,add_with_attr_change,2,"MDSR,XXCS","모바일 애플리케이션 요구사항 Req. 19 '목표 달성 표시'을(를) 신규 추가한다. 내용: 앱은 사용자가 수면 목표를 달성한 날을 표시하여야 하며, 달성 일시를 기기 시각 기준의 타임스탬프로 저장하여야 한다. 또한 제품 사이버보안 속성 '모바일 코드(외부 스크립트 콘텐츠) 실행'(mobile_code)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",앱에 새 기능을 넣어 주세요. 수면 목표를 달성한 날을 표시하고 달성 일시를 타임스탬프로 남기는 기능이 필요합니다. 그리고 수면코치를 교육 콘텐츠를 웹 기반 스크립트로 내려받아 실행하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.,"[MDSR | Req. 19 | 번호] (origin)
+[MDSR | Req. 19 | 제목] (origin)
+[MDSR | Req. 19 | 설명] (origin)
+[MDSR | Req. 19 | 목적] (origin)
+[MDSR | Req. 19 | 기준#p1] (origin)
+[MDSR | Req. 19 | 기준#p2] (origin)
+[MDSR | UC-06 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | UC-06 | 해당 요구사항] (trace)
+[XXCS | UC-02 | 체크리스트 적용 여부] (rule)
+[XXCS | UC-02 | 체크리스트 입증 방법] (rule)
+[XXCS | UC-02 | 적용 여부] (rule)
+[XXCS | UC-02 | 판정] (rule)","[MDSR | UC-01 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(UC)지만 새 기능과 무관
+[XXCS | UC-01 | 해당 요구사항] (trace) - 같은 분류(UC)지만 새 기능과 무관
+[MDSR | UC-03 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(UC)지만 새 기능과 무관
+[XXCS | UC-03 | 해당 요구사항] (trace) - 같은 분류(UC)지만 새 기능과 무관
+[XXCS | IA-05 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-05 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-06 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | IA-06 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | DC-02 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관
+[XXCS | DC-02 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관",속성 변경 동반. 연결 UC-06(타임스탬프). 본문에 넣을 보안 요소: 달성 일시를 타임스탬프로 기록. 제목은 초안. [수정] 번호 Req. 48→Req. 19; 연결 UC-04(감사기록 생성)는 순번 배정이라 바꿈.,
+T3_68,T3,add_with_attr_change,3,"MDSR,MDDR,XXCS","모바일 애플리케이션 요구사항 Req. 19 '연속 기록 표시'을(를) 신규 추가한다. 내용: 앱은 사용자가 수면일기를 연속으로 기록한 일수를 표시하여야 하며, 연속 일수는 각 기록에 저장된 타임스탬프를 기준으로 계산하여야 한다. 또한 제품 사이버보안 속성 '전자서명 기반 처방 기능'(e_signature)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",앱에 새 기능을 넣어 주세요. 수면일기를 연속으로 기록한 일수를 보여 주며 연속 일수는 각 기록의 타임스탬프로 계산하는 기능이 필요합니다. 그리고 수면코치를 의료진이 처방 변경에 전자서명을 하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.,"[MDSR | Req. 19 | 번호] (origin)
+[MDSR | Req. 19 | 제목] (origin)
+[MDSR | Req. 19 | 설명] (origin)
+[MDSR | Req. 19 | 목적] (origin)
+[MDSR | Req. 19 | 기준#p1] (origin)
+[MDSR | Req. 19 | 기준#p2] (origin)
+[MDDR | Req. 19 | 번호] (same_id)
+[MDDR | Req. 19 | 설계#p1] (same_id)
+[MDDR | Req. 19 | 설계#p2] (same_id)
+[MDDR | Req. 19 | 설계#p3] (same_id)
+[MDSR | UC-06 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | UC-06 | 해당 요구사항] (trace)
+[XXCS | UC-07 | 체크리스트 적용 여부] (rule)
+[XXCS | UC-07 | 체크리스트 입증 방법] (rule)
+[XXCS | UC-07 | 적용 여부] (rule)
+[XXCS | UC-07 | 판정] (rule)","[MDSR | UC-01 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(UC)지만 새 기능과 무관
+[XXCS | UC-01 | 해당 요구사항] (trace) - 같은 분류(UC)지만 새 기능과 무관
+[MDSR | UC-03 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(UC)지만 새 기능과 무관
+[XXCS | UC-03 | 해당 요구사항] (trace) - 같은 분류(UC)지만 새 기능과 무관
+[XXCS | IA-05 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-05 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-06 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | IA-06 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | DC-02 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관
+[XXCS | DC-02 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관",속성 변경 동반. 연결 UC-06(타임스탬프). 본문에 넣을 보안 요소: 연속 일수를 기록 타임스탬프로 계산. 제목은 초안. [수정] 번호 Req. 49→Req. 19; 연결 UC-05(감사 처리 실패 대응)는 순번 배정이라 바꿈.,
+T3_69,T3,add_with_attr_change,3,"MDSR,MDDR,XXCS","모바일 애플리케이션 요구사항 Req. 19 '휴일 일정 안내'을(를) 신규 추가한다. 내용: 사용자는 휴일 일정을 입력할 수 있어야 하며, 앱은 입력값의 형식과 범위를 검증한 뒤 해당 날짜의 취침·기상 안내를 조정하여야 한다. 또한 제품 사이버보안 속성 '제조사 원격 업데이트 기능'(remote_update)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",앱에 새 기능을 넣어 주세요. 사용자가 휴일 일정을 입력하면 그날의 취침·기상 안내를 조정하고 입력값을 검사하는 기능이 필요합니다. 그리고 수면코치를 제조사가 서버에서 소프트웨어 업데이트를 원격 배포하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.,"[MDSR | Req. 19 | 번호] (origin)
+[MDSR | Req. 19 | 제목] (origin)
+[MDSR | Req. 19 | 설명] (origin)
+[MDSR | Req. 19 | 목적] (origin)
+[MDSR | Req. 19 | 기준#p1] (origin)
+[MDSR | Req. 19 | 기준#p2] (origin)
+[MDDR | Req. 19 | 번호] (same_id)
+[MDDR | Req. 19 | 설계#p1] (same_id)
+[MDDR | Req. 19 | 설계#p2] (same_id)
+[MDDR | Req. 19 | 설계#p3] (same_id)
+[MDSR | SI-05 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | SI-05 | 해당 요구사항] (trace)
+[XXCS | SI-08 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-08 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-08 | 적용 여부] (rule)
+[XXCS | SI-08 | 판정] (rule)
+[XXCS | SI-09 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-09 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-09 | 적용 여부] (rule)
+[XXCS | SI-09 | 판정] (rule)","[MDSR | SI-01 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(SI)지만 새 기능과 무관
+[XXCS | SI-01 | 해당 요구사항] (trace) - 같은 분류(SI)지만 새 기능과 무관
+[MDSR | SI-02 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(SI)지만 새 기능과 무관
+[XXCS | SI-02 | 해당 요구사항] (trace) - 같은 분류(SI)지만 새 기능과 무관
+[XXCS | IA-05 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-05 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-06 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | IA-06 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | DC-02 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관
+[XXCS | DC-02 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관",속성 변경 동반. 연결 SI-05(입력값 검증). 본문에 넣을 보안 요소: 휴일 일정 입력값 검증. 제목은 초안. [수정] 번호 Req. 50→Req. 19; 연결 UC-06(타임스탬프)는 순번 배정이라 바꿈.,
+T3_70,T3,add_with_attr_change,3,"MDSR,MDDR,XXCS","서버 요구사항 Req. 109 '여행 일정 안내'을(를) 신규 추가한다. 내용: 서버는 사용자가 등록한 여행 일정에 맞춰 수면 안내를 보낼 수 있어야 하며, 시간대가 바뀌어도 기록의 타임스탬프를 같은 기준 시각으로 저장하여야 한다. 또한 제품 사이버보안 속성 '개인식별정보 저장'(stores_pii)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",서버에 새 기능을 넣어 주세요. 서버가 사용자의 여행 일정에 맞춰 안내를 보내고 시간대가 바뀌어도 기록의 타임스탬프 기준을 유지하는 기능이 필요합니다. 그리고 수면코치를 환자 이름·연락처 같은 개인식별정보를 서버에 저장하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.,"[MDSR | Req. 109 | 번호] (origin)
+[MDSR | Req. 109 | 제목] (origin)
+[MDSR | Req. 109 | 설명] (origin)
+[MDSR | Req. 109 | 목적] (origin)
+[MDSR | Req. 109 | 기준#p1] (origin)
+[MDSR | Req. 109 | 기준#p2] (origin)
+[MDDR | Req. 109 | 번호] (same_id)
+[MDDR | Req. 109 | 설계#p1] (same_id)
+[MDDR | Req. 109 | 설계#p2] (same_id)
+[MDDR | Req. 109 | 설계#p3] (same_id)
+[MDSR | UC-06 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | UC-06 | 해당 요구사항] (trace)
+[XXCS | DC-02 | 체크리스트 적용 여부] (rule)
+[XXCS | DC-02 | 체크리스트 입증 방법] (rule)
+[XXCS | DC-02 | 적용 여부] (rule)
+[XXCS | DC-02 | 판정] (rule)","[MDSR | UC-01 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(UC)지만 새 기능과 무관
+[XXCS | UC-01 | 해당 요구사항] (trace) - 같은 분류(UC)지만 새 기능과 무관
+[MDSR | UC-03 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(UC)지만 새 기능과 무관
+[XXCS | UC-03 | 해당 요구사항] (trace) - 같은 분류(UC)지만 새 기능과 무관
+[XXCS | IA-05 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-05 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-06 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | IA-06 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | UC-03 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(UC-03), 이번 변경과 무관
+[XXCS | UC-03 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(UC-03), 이번 변경과 무관",속성 변경 동반. 연결 UC-06(타임스탬프). 본문에 넣을 보안 요소: 시간대가 바뀌어도 기록 타임스탬프 기준 유지. 제목은 초안. [수정] 번호 Req. 116→Req. 109; 연결 SI-01(통신에 대한 무결성 보장)는 순번 배정이라 바꿈.,
+T3_71,T3,add_with_attr_change,3,"MDSR,MDDR,XXCS","모바일 애플리케이션 요구사항 Req. 19 '동거인 방해 기록'을(를) 신규 추가한다. 내용: 사용자는 동거인 때문에 잠을 깬 경우를 기록할 수 있어야 하며, 타인 정보가 담길 수 있는 이 기록은 기기 내부에 암호화된 형태로 저장되어야 한다. 또한 제품 사이버보안 속성 '독립형 소프트웨어 의료기기(SaMD)'(samd)을 true에서 false로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",앱에 새 기능을 넣어 주세요. 동거인 때문에 잠을 깬 경우를 기록하고 타인 정보가 담길 수 있는 기록을 기기에 암호화하여 저장하는 기능이 필요합니다. 그리고 수면코치를 전용 하드웨어 기기와 함께 공급하는 형태로 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.,"[MDSR | Req. 19 | 번호] (origin)
+[MDSR | Req. 19 | 제목] (origin)
+[MDSR | Req. 19 | 설명] (origin)
+[MDSR | Req. 19 | 목적] (origin)
+[MDSR | Req. 19 | 기준#p1] (origin)
+[MDSR | Req. 19 | 기준#p2] (origin)
+[MDDR | Req. 19 | 번호] (same_id)
+[MDDR | Req. 19 | 설계#p1] (same_id)
+[MDDR | Req. 19 | 설계#p2] (same_id)
+[MDDR | Req. 19 | 설계#p3] (same_id)
+[MDSR | DC-01 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | DC-01 | 해당 요구사항] (trace)
+[XXCS | SI-10 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-10 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-10 | 적용 여부] (rule)
+[XXCS | SI-10 | 판정] (rule)
+[XXCS | SI-11 | 체크리스트 적용 여부] (rule)
+[XXCS | SI-11 | 체크리스트 입증 방법] (rule)
+[XXCS | SI-11 | 적용 여부] (rule)
+[XXCS | SI-11 | 판정] (rule)","[MDSR | DC-03 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(DC)지만 새 기능과 무관
+[XXCS | DC-03 | 해당 요구사항] (trace) - 같은 분류(DC)지만 새 기능과 무관
+[XXCS | IA-05 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-05 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-06 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | IA-06 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | DC-02 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관
+[XXCS | DC-02 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관",속성 변경 동반. 연결 DC-01(정보에 대한 기밀성 보장). 본문에 넣을 보안 요소: 타인 정보가 담길 수 있는 기록을 기기에 암호화해 저장. 제목은 초안. [수정] 번호 Req. 51→Req. 19; 연결 SI-02(악성코드로부터 보호)는 순번 배정이라 바꿈.,
+T3_72,T3,add_with_attr_change,3,"MDSR,MDDR,XXCS","모바일 애플리케이션 요구사항 Req. 19 '침구 점검'을(를) 신규 추가한다. 내용: 앱은 베개와 매트리스 등 침구 상태에 관한 점검 문항에 응답하도록 하여야 하며, 응답 값이 정해진 선택지와 형식에 맞는지 검증하여야 한다. 또한 제품 사이버보안 속성 '모바일 코드(외부 스크립트 콘텐츠) 실행'(mobile_code)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",앱에 새 기능을 넣어 주세요. 베개와 매트리스 등 침구 점검 문항에 답하게 하고 응답 값을 검사하는 기능이 필요합니다. 그리고 수면코치를 교육 콘텐츠를 웹 기반 스크립트로 내려받아 실행하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.,"[MDSR | Req. 19 | 번호] (origin)
+[MDSR | Req. 19 | 제목] (origin)
+[MDSR | Req. 19 | 설명] (origin)
+[MDSR | Req. 19 | 목적] (origin)
+[MDSR | Req. 19 | 기준#p1] (origin)
+[MDSR | Req. 19 | 기준#p2] (origin)
+[MDDR | Req. 19 | 번호] (same_id)
+[MDDR | Req. 19 | 설계#p1] (same_id)
+[MDDR | Req. 19 | 설계#p2] (same_id)
+[MDDR | Req. 19 | 설계#p3] (same_id)
+[MDSR | SI-05 | 소프트웨어 기능 요구사항 번호] (trace)
+[XXCS | SI-05 | 해당 요구사항] (trace)
+[XXCS | UC-02 | 체크리스트 적용 여부] (rule)
+[XXCS | UC-02 | 체크리스트 입증 방법] (rule)
+[XXCS | UC-02 | 적용 여부] (rule)
+[XXCS | UC-02 | 판정] (rule)","[MDSR | SI-01 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(SI)지만 새 기능과 무관
+[XXCS | SI-01 | 해당 요구사항] (trace) - 같은 분류(SI)지만 새 기능과 무관
+[MDSR | SI-02 | 소프트웨어 기능 요구사항 번호] (trace) - 같은 분류(SI)지만 새 기능과 무관
+[XXCS | SI-02 | 해당 요구사항] (trace) - 같은 분류(SI)지만 새 기능과 무관
+[XXCS | IA-05 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-05 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-05), 이번 변경과 무관
+[XXCS | IA-06 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | IA-06 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(IA-06), 이번 변경과 무관
+[XXCS | DC-02 | 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관
+[XXCS | DC-02 | 체크리스트 적용 여부] (rule) - 다른 속성 규칙이 정하는 항목(DC-02), 이번 변경과 무관",속성 변경 동반. 연결 SI-05(입력값 검증). 본문에 넣을 보안 요소: 점검 응답 값 검증. 제목은 초안. [수정] 번호 Req. 52→Req. 19; 연결 SI-03(보안 기능 검증)는 순번 배정이라 바꿈.,

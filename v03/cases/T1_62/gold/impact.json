@@ -1,0 +1,47 @@
+{
+  "case_id": "T1_62",
+  "case_type": "T1",
+  "subtype": "value_change",
+  "change": {
+    "fact": "F_TREATMENT_SESSIONS",
+    "origin_req": "Req. 106",
+    "old_value": "6",
+    "new_value": "4"
+  },
+  "items": [
+    {
+      "site": "[MDSR | Req. 106 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 106",
+      "cell": "설명",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_TREATMENT_SESSIONS",
+      "old_surface": "6회",
+      "new_value": "4회"
+    },
+    {
+      "site": "[MDSR | Req. 106 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 106",
+      "cell": "기준#p1",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_TREATMENT_SESSIONS",
+      "old_surface": "6 회",
+      "new_value": "4회"
+    },
+    {
+      "site": "[MDSR | Req. 106 | 기준#p2]",
+      "doc": "MDSR",
+      "item": "Req. 106",
+      "cell": "기준#p2",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_TREATMENT_SESSIONS",
+      "old_surface": "6번",
+      "new_value": "4회"
+    }
+  ],
+  "neutral": []
+}

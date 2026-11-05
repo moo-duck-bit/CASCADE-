@@ -1,0 +1,27 @@
+{
+  "case_id": "T3_61",
+  "case_type": "T3",
+  "subtype": "add_with_value_change",
+  "n_docs": 2,
+  "docs": [
+    "MDSR",
+    "MDDR"
+  ],
+  "paths": {
+    "origin": 9,
+    "same_id": 7,
+    "trace": 1,
+    "same_value": 4
+  },
+  "trap_paths": {
+    "trace": 2
+  },
+  "n_impact": 21,
+  "n_traps": 2,
+  "n_neutral": 0,
+  "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '어두운 화면 안내'을(를) 신규 추가한다. 내용: 앱은 취침 전 시간대에 어두운 화면 모드를 안내하여야 하며, 기기의 화면 설정을 읽지 못하면 미리 정한 기본 화면 상태로 표시하여야 한다. 또한 Req. 101 '의료진 대시보드 조회'의 동기화 주기를 60분에서 120분으로 변경한다.",
+  "request_nl": "앱에 새 기능을 넣어 주세요. 잠들기 전 어두운 화면 모드를 안내하고 화면 설정을 읽지 못하면 미리 정한 기본 화면으로 표시하는 기능이 필요합니다. 그리고 의료진 대시보드 조회 기능에서 동기화 주기를 120분으로 바꿔 주세요.",
+  "sheet_type": "T3-추가복합",
+  "sheet_paths": "origin, same_id, trace, same_value",
+  "seed": 20261102
+}

@@ -1,0 +1,14 @@
+{
+  "case_id": "T1_37",
+  "items": [
+    {
+      "site": "[XXCS | TRE-01 | 확인결과#p3]",
+      "doc": "XXCS",
+      "item": "TRE-01",
+      "cell": "확인결과#p3",
+      "path": "same_value",
+      "fact": "F_MEDICAL_STAFF_ACCESS_LOG_RETENTION",
+      "reason": "같은 값(6개월)이지만 다른 사실"
+    }
+  ]
+}

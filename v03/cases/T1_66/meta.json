@@ -1,0 +1,23 @@
+{
+  "case_id": "T1_66",
+  "case_type": "T1",
+  "subtype": "value_change",
+  "n_docs": 1,
+  "docs": [
+    "MDSR"
+  ],
+  "paths": {
+    "origin": 1
+  },
+  "trap_paths": {
+    "same_value": 9
+  },
+  "n_impact": 1,
+  "n_traps": 9,
+  "n_neutral": 0,
+  "request_structured": "Req. 13 'CBT 회기 기본 설정'의 CBT 회기 기본 간격을 7일에서 5일로 변경한다.",
+  "request_nl": "CBT 회기 기본 설정 기능에서 CBT 회기 기본 간격을 5일로 바꿔 주세요.",
+  "sheet_type": "T1",
+  "sheet_paths": "origin",
+  "seed": 20261102
+}

@@ -1,0 +1,542 @@
+[
+  {
+    "req": "Req. 101",
+    "sec": "IA-01",
+    "relevant": true
+  },
+  {
+    "req": "Req. 8",
+    "sec": "IA-01",
+    "relevant": false
+  },
+  {
+    "req": "Req. 2",
+    "sec": "IA-02",
+    "relevant": true
+  },
+  {
+    "req": "Req. 108",
+    "sec": "IA-02",
+    "relevant": true
+  },
+  {
+    "req": "Req. 9",
+    "sec": "IA-02",
+    "relevant": false
+  },
+  {
+    "req": "Req. 100",
+    "sec": "IA-02",
+    "relevant": false
+  },
+  {
+    "req": "Req. 18",
+    "sec": "IA-03",
+    "relevant": true
+  },
+  {
+    "req": "Req. 10",
+    "sec": "IA-03",
+    "relevant": false
+  },
+  {
+    "req": "Req. 108",
+    "sec": "IA-04",
+    "relevant": true
+  },
+  {
+    "req": "Req. 2",
+    "sec": "IA-04",
+    "relevant": true
+  },
+  {
+    "req": "Req. 11",
+    "sec": "IA-04",
+    "relevant": false
+  },
+  {
+    "req": "Req. 10",
+    "sec": "IA-04",
+    "relevant": false
+  },
+  {
+    "req": "Req. 1",
+    "sec": "IA-05",
+    "relevant": true
+  },
+  {
+    "req": "Req. 108",
+    "sec": "IA-05",
+    "relevant": true
+  },
+  {
+    "req": "Req. 12",
+    "sec": "IA-05",
+    "relevant": false
+  },
+  {
+    "req": "Req. 102",
+    "sec": "IA-05",
+    "relevant": false
+  },
+  {
+    "req": "Req. 2",
+    "sec": "IA-06",
+    "relevant": true
+  },
+  {
+    "req": "Req. 3",
+    "sec": "IA-06",
+    "relevant": true
+  },
+  {
+    "req": "Req. 13",
+    "sec": "IA-06",
+    "relevant": false
+  },
+  {
+    "req": "Req. 106",
+    "sec": "IA-06",
+    "relevant": false
+  },
+  {
+    "req": "Req. 1",
+    "sec": "IA-07",
+    "relevant": true
+  },
+  {
+    "req": "Req. 2",
+    "sec": "IA-07",
+    "relevant": true
+  },
+  {
+    "req": "Req. 14",
+    "sec": "IA-07",
+    "relevant": false
+  },
+  {
+    "req": "Req. 108",
+    "sec": "IA-07",
+    "relevant": false
+  },
+  {
+    "req": "Req. 18",
+    "sec": "IA-08",
+    "relevant": true
+  },
+  {
+    "req": "Req. 15",
+    "sec": "IA-08",
+    "relevant": false
+  },
+  {
+    "req": "Req. 108",
+    "sec": "UC-01",
+    "relevant": true
+  },
+  {
+    "req": "Req. 101",
+    "sec": "UC-01",
+    "relevant": true
+  },
+  {
+    "req": "Req. 16",
+    "sec": "UC-01",
+    "relevant": false
+  },
+  {
+    "req": "Req. 102",
+    "sec": "UC-01",
+    "relevant": false
+  },
+  {
+    "req": "Req. 100",
+    "sec": "UC-02",
+    "relevant": true
+  },
+  {
+    "req": "Req. 17",
+    "sec": "UC-02",
+    "relevant": false
+  },
+  {
+    "req": "Req. 3",
+    "sec": "UC-03",
+    "relevant": true
+  },
+  {
+    "req": "Req. 101",
+    "sec": "UC-03",
+    "relevant": true
+  },
+  {
+    "req": "Req. 100",
+    "sec": "UC-03",
+    "relevant": false
+  },
+  {
+    "req": "Req. 102",
+    "sec": "UC-03",
+    "relevant": false
+  },
+  {
+    "req": "Req. 6",
+    "sec": "UC-04",
+    "relevant": true
+  },
+  {
+    "req": "Req. 2",
+    "sec": "UC-04",
+    "relevant": true
+  },
+  {
+    "req": "Req. 18",
+    "sec": "UC-04",
+    "relevant": true
+  },
+  {
+    "req": "Req. 101",
+    "sec": "UC-04",
+    "relevant": false
+  },
+  {
+    "req": "Req. 102",
+    "sec": "UC-04",
+    "relevant": false
+  },
+  {
+    "req": "Req. 103",
+    "sec": "UC-04",
+    "relevant": false
+  },
+  {
+    "req": "Req. 6",
+    "sec": "UC-05",
+    "relevant": true
+  },
+  {
+    "req": "Req. 7",
+    "sec": "UC-05",
+    "relevant": true
+  },
+  {
+    "req": "Req. 106",
+    "sec": "UC-05",
+    "relevant": false
+  },
+  {
+    "req": "Req. 108",
+    "sec": "UC-05",
+    "relevant": false
+  },
+  {
+    "req": "Req. 3",
+    "sec": "UC-06",
+    "relevant": true
+  },
+  {
+    "req": "Req. 6",
+    "sec": "UC-06",
+    "relevant": true
+  },
+  {
+    "req": "Req. 8",
+    "sec": "UC-06",
+    "relevant": false
+  },
+  {
+    "req": "Req. 106",
+    "sec": "UC-06",
+    "relevant": false
+  },
+  {
+    "req": "Req. 18",
+    "sec": "UC-07",
+    "relevant": true
+  },
+  {
+    "req": "Req. 9",
+    "sec": "UC-07",
+    "relevant": false
+  },
+  {
+    "req": "Req. 4",
+    "sec": "SI-01",
+    "relevant": true
+  },
+  {
+    "req": "Req. 5",
+    "sec": "SI-01",
+    "relevant": true
+  },
+  {
+    "req": "Req. 7",
+    "sec": "SI-01",
+    "relevant": true
+  },
+  {
+    "req": "Req. 100",
+    "sec": "SI-01",
+    "relevant": true
+  },
+  {
+    "req": "Req. 10",
+    "sec": "SI-01",
+    "relevant": false
+  },
+  {
+    "req": "Req. 1",
+    "sec": "SI-01",
+    "relevant": false
+  },
+  {
+    "req": "Req. 3",
+    "sec": "SI-01",
+    "relevant": false
+  },
+  {
+    "req": "Req. 108",
+    "sec": "SI-01",
+    "relevant": false
+  },
+  {
+    "req": "Req. 101",
+    "sec": "SI-02",
+    "relevant": true
+  },
+  {
+    "req": "Req. 11",
+    "sec": "SI-02",
+    "relevant": false
+  },
+  {
+    "req": "Req. 18",
+    "sec": "SI-03",
+    "relevant": true
+  },
+  {
+    "req": "Req. 12",
+    "sec": "SI-03",
+    "relevant": false
+  },
+  {
+    "req": "Req. 18",
+    "sec": "SI-04",
+    "relevant": true
+  },
+  {
+    "req": "Req. 13",
+    "sec": "SI-04",
+    "relevant": false
+  },
+  {
+    "req": "Req. 1",
+    "sec": "SI-05",
+    "relevant": true
+  },
+  {
+    "req": "Req. 8",
+    "sec": "SI-05",
+    "relevant": true
+  },
+  {
+    "req": "Req. 106",
+    "sec": "SI-05",
+    "relevant": true
+  },
+  {
+    "req": "Req. 14",
+    "sec": "SI-05",
+    "relevant": false
+  },
+  {
+    "req": "Req. 10",
+    "sec": "SI-05",
+    "relevant": false
+  },
+  {
+    "req": "Req. 13",
+    "sec": "SI-05",
+    "relevant": false
+  },
+  {
+    "req": "Req. 108",
+    "sec": "SI-06",
+    "relevant": true
+  },
+  {
+    "req": "Req. 15",
+    "sec": "SI-06",
+    "relevant": false
+  },
+  {
+    "req": "Req. 18",
+    "sec": "SI-07",
+    "relevant": true
+  },
+  {
+    "req": "Req. 16",
+    "sec": "SI-07",
+    "relevant": false
+  },
+  {
+    "req": "Req. 100",
+    "sec": "SI-08",
+    "relevant": true
+  },
+  {
+    "req": "Req. 17",
+    "sec": "SI-08",
+    "relevant": false
+  },
+  {
+    "req": "Req. 107",
+    "sec": "SI-09",
+    "relevant": true
+  },
+  {
+    "req": "Req. 100",
+    "sec": "SI-09",
+    "relevant": false
+  },
+  {
+    "req": "Req. 107",
+    "sec": "SI-10",
+    "relevant": true
+  },
+  {
+    "req": "Req. 101",
+    "sec": "SI-10",
+    "relevant": false
+  },
+  {
+    "req": "Req. 100",
+    "sec": "SI-11",
+    "relevant": true
+  },
+  {
+    "req": "Req. 106",
+    "sec": "SI-11",
+    "relevant": false
+  },
+  {
+    "req": "Req. 5",
+    "sec": "DC-01",
+    "relevant": true
+  },
+  {
+    "req": "Req. 7",
+    "sec": "DC-01",
+    "relevant": true
+  },
+  {
+    "req": "Req. 8",
+    "sec": "DC-01",
+    "relevant": false
+  },
+  {
+    "req": "Req. 106",
+    "sec": "DC-01",
+    "relevant": false
+  },
+  {
+    "req": "Req. 107",
+    "sec": "DC-02",
+    "relevant": true
+  },
+  {
+    "req": "Req. 9",
+    "sec": "DC-02",
+    "relevant": false
+  },
+  {
+    "req": "Req. 4",
+    "sec": "DC-03",
+    "relevant": true
+  },
+  {
+    "req": "Req. 102",
+    "sec": "DC-03",
+    "relevant": true
+  },
+  {
+    "req": "Req. 10",
+    "sec": "DC-03",
+    "relevant": false
+  },
+  {
+    "req": "Req. 103",
+    "sec": "DC-03",
+    "relevant": false
+  },
+  {
+    "req": "Req. 6",
+    "sec": "TRE-01",
+    "relevant": true
+  },
+  {
+    "req": "Req. 18",
+    "sec": "TRE-01",
+    "relevant": true
+  },
+  {
+    "req": "Req. 11",
+    "sec": "TRE-01",
+    "relevant": false
+  },
+  {
+    "req": "Req. 102",
+    "sec": "TRE-01",
+    "relevant": false
+  },
+  {
+    "req": "Req. 100",
+    "sec": "RA-01",
+    "relevant": true
+  },
+  {
+    "req": "Req. 12",
+    "sec": "RA-01",
+    "relevant": false
+  },
+  {
+    "req": "Req. 7",
+    "sec": "RA-02",
+    "relevant": true
+  },
+  {
+    "req": "Req. 100",
+    "sec": "RA-02",
+    "relevant": true
+  },
+  {
+    "req": "Req. 13",
+    "sec": "RA-02",
+    "relevant": false
+  },
+  {
+    "req": "Req. 102",
+    "sec": "RA-02",
+    "relevant": false
+  },
+  {
+    "req": "Req. 107",
+    "sec": "RA-03",
+    "relevant": true
+  },
+  {
+    "req": "Req. 14",
+    "sec": "RA-03",
+    "relevant": false
+  },
+  {
+    "req": "Req. 108",
+    "sec": "RA-04",
+    "relevant": true
+  },
+  {
+    "req": "Req. 15",
+    "sec": "RA-04",
+    "relevant": false
+  }
+]

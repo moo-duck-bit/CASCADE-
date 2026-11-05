@@ -1,0 +1,36 @@
+{
+  "case_id": "T1_60",
+  "case_type": "T1",
+  "subtype": "value_change",
+  "change": {
+    "fact": "F_SLEEP_DIARY_DEADLINE",
+    "origin_req": "Req. 8",
+    "old_value": "24",
+    "new_value": "12"
+  },
+  "items": [
+    {
+      "site": "[MDSR | Req. 8 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 8",
+      "cell": "설명",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_SLEEP_DIARY_DEADLINE",
+      "old_surface": "24시간",
+      "new_value": "12시간"
+    },
+    {
+      "site": "[MDSR | Req. 8 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 8",
+      "cell": "기준#p1",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_SLEEP_DIARY_DEADLINE",
+      "old_surface": "24 시간",
+      "new_value": "12시간"
+    }
+  ],
+  "neutral": []
+}

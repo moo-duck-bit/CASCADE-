@@ -1,0 +1,168 @@
+{
+  "case_id": "T1_20",
+  "case_type": "T1",
+  "subtype": "value_change",
+  "change": {
+    "fact": "F_SYNC_INTERVAL",
+    "origin_req": "Req. 101",
+    "old_value": "60",
+    "new_value": "120"
+  },
+  "items": [
+    {
+      "site": "[MDSR | Req. 100 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 100",
+      "cell": "설명",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_SYNC_INTERVAL",
+      "old_surface": "60분",
+      "new_value": "120분"
+    },
+    {
+      "site": "[MDSR | Req. 100 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 100",
+      "cell": "기준#p1",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_SYNC_INTERVAL",
+      "old_surface": "60 분",
+      "new_value": "120분"
+    },
+    {
+      "site": "[MDSR | Req. 101 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 101",
+      "cell": "설명",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_SYNC_INTERVAL",
+      "old_surface": "1시간",
+      "new_value": "120분"
+    },
+    {
+      "site": "[MDSR | Req. 101 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 101",
+      "cell": "기준#p1",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_SYNC_INTERVAL",
+      "old_surface": "60분",
+      "new_value": "120분"
+    },
+    {
+      "site": "[MDSR | Req. 101 | 기준#p2]",
+      "doc": "MDSR",
+      "item": "Req. 101",
+      "cell": "기준#p2",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_SYNC_INTERVAL",
+      "old_surface": "60 분",
+      "new_value": "120분"
+    },
+    {
+      "site": "[MDDR | Req. 100 | 설계#p1]",
+      "doc": "MDDR",
+      "item": "Req. 100",
+      "cell": "설계#p1",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_SYNC_INTERVAL",
+      "old_surface": "1시간",
+      "new_value": "120분"
+    },
+    {
+      "site": "[MDDR | Req. 100 | 설계#p3]",
+      "doc": "MDDR",
+      "item": "Req. 100",
+      "cell": "설계#p3",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_SYNC_INTERVAL",
+      "old_surface": "60분",
+      "new_value": "120분"
+    },
+    {
+      "site": "[MDDR | Req. 101 | 설계#p1]",
+      "doc": "MDDR",
+      "item": "Req. 101",
+      "cell": "설계#p1",
+      "path": "same_id",
+      "op": "modify",
+      "fact": "F_SYNC_INTERVAL",
+      "old_surface": "60 분",
+      "new_value": "120분"
+    },
+    {
+      "site": "[MDDR | Req. 101 | 설계#p2]",
+      "doc": "MDDR",
+      "item": "Req. 101",
+      "cell": "설계#p2",
+      "path": "same_id",
+      "op": "modify",
+      "fact": "F_SYNC_INTERVAL",
+      "old_surface": "1시간",
+      "new_value": "120분"
+    },
+    {
+      "site": "[MDDR | Req. 101 | 설계#p3]",
+      "doc": "MDDR",
+      "item": "Req. 101",
+      "cell": "설계#p3",
+      "path": "same_id",
+      "op": "modify",
+      "fact": "F_SYNC_INTERVAL",
+      "old_surface": "60분",
+      "new_value": "120분"
+    },
+    {
+      "site": "[XXCS | SI-01 | 시험방법#p2]",
+      "doc": "XXCS",
+      "item": "SI-01",
+      "cell": "시험방법#p2",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_SYNC_INTERVAL",
+      "old_surface": "60 분",
+      "new_value": "120분"
+    },
+    {
+      "site": "[XXCS | SI-01 | 확인결과#p3]",
+      "doc": "XXCS",
+      "item": "SI-01",
+      "cell": "확인결과#p3",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_SYNC_INTERVAL",
+      "old_surface": "1시간",
+      "new_value": "120분"
+    },
+    {
+      "site": "[XXCS | RA-02 | 시험방법#p2]",
+      "doc": "XXCS",
+      "item": "RA-02",
+      "cell": "시험방법#p2",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_SYNC_INTERVAL",
+      "old_surface": "60분",
+      "new_value": "120분"
+    },
+    {
+      "site": "[XXCS | RA-02 | 확인결과#p2]",
+      "doc": "XXCS",
+      "item": "RA-02",
+      "cell": "확인결과#p2",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_SYNC_INTERVAL",
+      "old_surface": "60 분",
+      "new_value": "120분"
+    }
+  ],
+  "neutral": []
+}

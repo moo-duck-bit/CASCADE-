@@ -1,0 +1,233 @@
+{
+  "case_id": "T3_60",
+  "case_type": "T3",
+  "subtype": "add_with_value_change",
+  "change": {
+    "new_req": "Req. 109",
+    "component": "서버",
+    "title": "알림 음량 설정",
+    "related_secs": [
+      "SI-05"
+    ],
+    "draft": {
+      "설명": "서버는 사용자가 정한 알림 음량 설정을 저장하여 여러 기기에서 같은 설정을 쓰도록 하여야 하며, 저장 전에 설정값의 허용 범위를 검증하여야 한다.",
+      "목적": "기기를 바꿔도 알림 설정이 유지되도록 하고, 비정상 설정값이 저장되지 않도록 하기 위함이다.",
+      "기준": [
+        "허용 범위 안의 알림 음량 설정이 서버에 저장되고 다른 기기에 반영됨을 확인함",
+        "허용 범위를 벗어난 설정값은 저장되지 않음을 확인함"
+      ],
+      "설계": [
+        "• 서버는 사용자별 알림 음량 설정을 저장하는 항목을 두도록 구현한다.",
+        "• 설정값은 저장 전에 형식과 허용 범위를 검사하고, 범위를 벗어나면 저장을 거부한다.",
+        "• 저장된 설정은 동기화 시 사용자의 다른 기기에 내려보내도록 한다."
+      ]
+    },
+    "value_change": {
+      "fact": "F_BACKUP_INTERVAL",
+      "origin_req": "Req. 105",
+      "old_value": "24",
+      "new_value": "12"
+    }
+  },
+  "items": [
+    {
+      "site": "[MDSR | Req. 109 | 번호]",
+      "doc": "MDSR",
+      "item": "Req. 109",
+      "cell": "번호",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 108 | 기준#p2]",
+      "new_value": "Req. 109"
+    },
+    {
+      "site": "[MDSR | Req. 109 | 제목]",
+      "doc": "MDSR",
+      "item": "Req. 109",
+      "cell": "제목",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 108 | 기준#p2]",
+      "new_value": "알림 음량 설정"
+    },
+    {
+      "site": "[MDSR | Req. 109 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 109",
+      "cell": "설명",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 108 | 기준#p2]",
+      "new_value": "서버는 사용자가 정한 알림 음량 설정을 저장하여 여러 기기에서 같은 설정을 쓰도록 하여야 하며, 저장 전에 설정값의 허용 범위를 검증하여야 한다."
+    },
+    {
+      "site": "[MDSR | Req. 109 | 목적]",
+      "doc": "MDSR",
+      "item": "Req. 109",
+      "cell": "목적",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 108 | 기준#p2]",
+      "new_value": "기기를 바꿔도 알림 설정이 유지되도록 하고, 비정상 설정값이 저장되지 않도록 하기 위함이다."
+    },
+    {
+      "site": "[MDSR | Req. 109 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 109",
+      "cell": "기준#p1",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 108 | 기준#p2]",
+      "new_value": "허용 범위 안의 알림 음량 설정이 서버에 저장되고 다른 기기에 반영됨을 확인함"
+    },
+    {
+      "site": "[MDSR | Req. 109 | 기준#p2]",
+      "doc": "MDSR",
+      "item": "Req. 109",
+      "cell": "기준#p2",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 108 | 기준#p2]",
+      "new_value": "허용 범위를 벗어난 설정값은 저장되지 않음을 확인함"
+    },
+    {
+      "site": "[MDDR | Req. 109 | 번호]",
+      "doc": "MDDR",
+      "item": "Req. 109",
+      "cell": "번호",
+      "path": "same_id",
+      "op": "insert",
+      "anchor": "[MDDR | Req. 108 | 설계#p3]",
+      "new_value": "Req. 109"
+    },
+    {
+      "site": "[MDDR | Req. 109 | 설계#p1]",
+      "doc": "MDDR",
+      "item": "Req. 109",
+      "cell": "설계#p1",
+      "path": "same_id",
+      "op": "insert",
+      "anchor": "[MDDR | Req. 108 | 설계#p3]",
+      "new_value": "• 서버는 사용자별 알림 음량 설정을 저장하는 항목을 두도록 구현한다."
+    },
+    {
+      "site": "[MDDR | Req. 109 | 설계#p2]",
+      "doc": "MDDR",
+      "item": "Req. 109",
+      "cell": "설계#p2",
+      "path": "same_id",
+      "op": "insert",
+      "anchor": "[MDDR | Req. 108 | 설계#p3]",
+      "new_value": "• 설정값은 저장 전에 형식과 허용 범위를 검사하고, 범위를 벗어나면 저장을 거부한다."
+    },
+    {
+      "site": "[MDDR | Req. 109 | 설계#p3]",
+      "doc": "MDDR",
+      "item": "Req. 109",
+      "cell": "설계#p3",
+      "path": "same_id",
+      "op": "insert",
+      "anchor": "[MDDR | Req. 108 | 설계#p3]",
+      "new_value": "• 저장된 설정은 동기화 시 사용자의 다른 기기에 내려보내도록 한다."
+    },
+    {
+      "site": "[MDSR | SI-05 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "SI-05",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "trace",
+      "op": "modify",
+      "new_value": "Req. 1, Req. 8, Req. 10, Req. 13, Req. 14, Req. 106, Req. 109",
+      "note": "연결 Req 칸에 Req. 109 추가"
+    },
+    {
+      "site": "[MDSR | 3.4 일반적 제한 | 본문#p7]",
+      "doc": "MDSR",
+      "item": "3.4 일반적 제한",
+      "cell": "본문#p7",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_BACKUP_INTERVAL",
+      "old_surface": "24 시간",
+      "new_value": "12시간"
+    },
+    {
+      "site": "[MDSR | Req. 7 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 7",
+      "cell": "설명",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_BACKUP_INTERVAL",
+      "old_surface": "24시간",
+      "new_value": "12시간"
+    },
+    {
+      "site": "[MDSR | Req. 7 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 7",
+      "cell": "기준#p1",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_BACKUP_INTERVAL",
+      "old_surface": "24 시간",
+      "new_value": "12시간"
+    },
+    {
+      "site": "[MDSR | Req. 105 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 105",
+      "cell": "설명",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_BACKUP_INTERVAL",
+      "old_surface": "매일",
+      "new_value": "12시간"
+    },
+    {
+      "site": "[MDSR | Req. 105 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 105",
+      "cell": "기준#p1",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_BACKUP_INTERVAL",
+      "old_surface": "24시간",
+      "new_value": "12시간"
+    },
+    {
+      "site": "[MDDR | Req. 7 | 설계#p1]",
+      "doc": "MDDR",
+      "item": "Req. 7",
+      "cell": "설계#p1",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_BACKUP_INTERVAL",
+      "old_surface": "매일",
+      "new_value": "12시간"
+    },
+    {
+      "site": "[MDDR | Req. 105 | 설계#p1]",
+      "doc": "MDDR",
+      "item": "Req. 105",
+      "cell": "설계#p1",
+      "path": "same_id",
+      "op": "modify",
+      "fact": "F_BACKUP_INTERVAL",
+      "old_surface": "24시간",
+      "new_value": "12시간"
+    },
+    {
+      "site": "[MDDR | Req. 105 | 설계#p2]",
+      "doc": "MDDR",
+      "item": "Req. 105",
+      "cell": "설계#p2",
+      "path": "same_id",
+      "op": "modify",
+      "fact": "F_BACKUP_INTERVAL",
+      "old_surface": "24 시간",
+      "new_value": "12시간"
+    }
+  ],
+  "neutral": []
+}

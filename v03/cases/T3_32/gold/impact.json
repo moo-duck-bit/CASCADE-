@@ -1,0 +1,99 @@
+{
+  "case_id": "T3_32",
+  "case_type": "T3",
+  "subtype": "add",
+  "change": {
+    "new_req": "Req. 19",
+    "component": "앱",
+    "title": "카페인 섭취 기록",
+    "related_secs": [
+      "DC-01"
+    ],
+    "draft": {
+      "설명": "사용자는 카페인 음료의 섭취 시각과 섭취량을 기록할 수 있어야 하며, 기록은 기기 내부에 암호화된 형태로 저장되어야 한다.",
+      "목적": "카페인 섭취가 수면에 주는 영향을 사용자와 의료진이 확인할 수 있게 하고, 기록 정보의 기밀성을 보장하기 위함이다.",
+      "기준": [
+        "카페인 섭취 시각과 섭취량이 수면일기와 함께 조회됨을 확인함",
+        "기기에 저장된 섭취 기록이 암호화되어 있어 앱 밖에서 내용을 읽을 수 없음을 확인함"
+      ],
+      "설계": [
+        "• 수면일기 화면에 카페인 섭취 시각과 섭취량을 입력하는 항목을 추가하도록 구현한다.",
+        "• 섭취 기록은 기기 내부 저장소에 암호화하여 저장한다.",
+        "• 저장된 섭취 기록은 수면일기 조회 화면에서 날짜별로 표시하도록 한다."
+      ]
+    }
+  },
+  "items": [
+    {
+      "site": "[MDSR | Req. 19 | 번호]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "번호",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "Req. 19"
+    },
+    {
+      "site": "[MDSR | Req. 19 | 제목]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "제목",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "카페인 섭취 기록"
+    },
+    {
+      "site": "[MDSR | Req. 19 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "설명",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "사용자는 카페인 음료의 섭취 시각과 섭취량을 기록할 수 있어야 하며, 기록은 기기 내부에 암호화된 형태로 저장되어야 한다."
+    },
+    {
+      "site": "[MDSR | Req. 19 | 목적]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "목적",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "카페인 섭취가 수면에 주는 영향을 사용자와 의료진이 확인할 수 있게 하고, 기록 정보의 기밀성을 보장하기 위함이다."
+    },
+    {
+      "site": "[MDSR | Req. 19 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "기준#p1",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "카페인 섭취 시각과 섭취량이 수면일기와 함께 조회됨을 확인함"
+    },
+    {
+      "site": "[MDSR | Req. 19 | 기준#p2]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "기준#p2",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "기기에 저장된 섭취 기록이 암호화되어 있어 앱 밖에서 내용을 읽을 수 없음을 확인함"
+    },
+    {
+      "site": "[MDSR | DC-01 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "DC-01",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "trace",
+      "op": "modify",
+      "new_value": "Req. 5, Req. 7, Req. 8, Req. 19, Req. 106",
+      "note": "연결 Req 칸에 Req. 19 추가"
+    }
+  ],
+  "neutral": []
+}

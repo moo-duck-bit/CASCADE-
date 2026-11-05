@@ -1,0 +1,22 @@
+{
+  "case_id": "T1_55",
+  "case_type": "T1",
+  "subtype": "value_change",
+  "n_docs": 1,
+  "docs": [
+    "MDSR"
+  ],
+  "paths": {
+    "same_value": 2,
+    "origin": 3
+  },
+  "trap_paths": {},
+  "n_impact": 5,
+  "n_traps": 0,
+  "n_neutral": 0,
+  "request_structured": "Req. 10 '수면 제한 요법 기본 시간'의 수면 제한 요법 기본 취침 시간을 22:00에서 21:30으로 변경한다.",
+  "request_nl": "수면 제한 요법 기본 시간 기능에서 수면 제한 요법 기본 취침 시간을 21:30으로 바꿔 주세요.",
+  "sheet_type": "T1",
+  "sheet_paths": "origin, same_value",
+  "seed": 20261102
+}

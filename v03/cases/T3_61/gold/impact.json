@@ -1,0 +1,255 @@
+{
+  "case_id": "T3_61",
+  "case_type": "T3",
+  "subtype": "add_with_value_change",
+  "change": {
+    "new_req": "Req. 19",
+    "component": "앱",
+    "title": "어두운 화면 안내",
+    "related_secs": [
+      "SI-06"
+    ],
+    "draft": {
+      "설명": "앱은 취침 전 시간대에 어두운 화면 모드를 안내하여야 하며, 기기의 화면 설정을 읽지 못하면 미리 정한 기본 화면 상태로 표시하여야 한다.",
+      "목적": "취침 전 밝은 화면 노출을 줄이도록 돕고, 설정 오류가 있어도 화면이 예측 가능한 상태로 표시되도록 하기 위함이다.",
+      "기준": [
+        "취침 전 시간대에 어두운 화면 모드 안내가 표시됨을 확인함",
+        "화면 설정을 읽지 못하면 기본 화면 상태로 표시되고 앱이 중단되지 않음을 확인함"
+      ],
+      "설계": [
+        "• 취침 시각이 가까워지면 어두운 화면 모드 안내를 표시하도록 구현한다.",
+        "• 기기의 화면 설정 값을 읽어 현재 모드를 확인한다.",
+        "• 설정 값을 읽지 못하면 미리 정한 기본 화면 상태로 표시하도록 한다."
+      ]
+    },
+    "value_change": {
+      "fact": "F_SYNC_INTERVAL",
+      "origin_req": "Req. 101",
+      "old_value": "60",
+      "new_value": "120"
+    }
+  },
+  "items": [
+    {
+      "site": "[MDSR | Req. 19 | 번호]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "번호",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "Req. 19"
+    },
+    {
+      "site": "[MDSR | Req. 19 | 제목]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "제목",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "어두운 화면 안내"
+    },
+    {
+      "site": "[MDSR | Req. 19 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "설명",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "앱은 취침 전 시간대에 어두운 화면 모드를 안내하여야 하며, 기기의 화면 설정을 읽지 못하면 미리 정한 기본 화면 상태로 표시하여야 한다."
+    },
+    {
+      "site": "[MDSR | Req. 19 | 목적]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "목적",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "취침 전 밝은 화면 노출을 줄이도록 돕고, 설정 오류가 있어도 화면이 예측 가능한 상태로 표시되도록 하기 위함이다."
+    },
+    {
+      "site": "[MDSR | Req. 19 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "기준#p1",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "취침 전 시간대에 어두운 화면 모드 안내가 표시됨을 확인함"
+    },
+    {
+      "site": "[MDSR | Req. 19 | 기준#p2]",
+      "doc": "MDSR",
+      "item": "Req. 19",
+      "cell": "기준#p2",
+      "path": "origin",
+      "op": "insert",
+      "anchor": "[MDSR | Req. 18 | 기준#p2]",
+      "new_value": "화면 설정을 읽지 못하면 기본 화면 상태로 표시되고 앱이 중단되지 않음을 확인함"
+    },
+    {
+      "site": "[MDDR | Req. 19 | 번호]",
+      "doc": "MDDR",
+      "item": "Req. 19",
+      "cell": "번호",
+      "path": "same_id",
+      "op": "insert",
+      "anchor": "[MDDR | Req. 18 | 설계#p3]",
+      "new_value": "Req. 19"
+    },
+    {
+      "site": "[MDDR | Req. 19 | 설계#p1]",
+      "doc": "MDDR",
+      "item": "Req. 19",
+      "cell": "설계#p1",
+      "path": "same_id",
+      "op": "insert",
+      "anchor": "[MDDR | Req. 18 | 설계#p3]",
+      "new_value": "• 취침 시각이 가까워지면 어두운 화면 모드 안내를 표시하도록 구현한다."
+    },
+    {
+      "site": "[MDDR | Req. 19 | 설계#p2]",
+      "doc": "MDDR",
+      "item": "Req. 19",
+      "cell": "설계#p2",
+      "path": "same_id",
+      "op": "insert",
+      "anchor": "[MDDR | Req. 18 | 설계#p3]",
+      "new_value": "• 기기의 화면 설정 값을 읽어 현재 모드를 확인한다."
+    },
+    {
+      "site": "[MDDR | Req. 19 | 설계#p3]",
+      "doc": "MDDR",
+      "item": "Req. 19",
+      "cell": "설계#p3",
+      "path": "same_id",
+      "op": "insert",
+      "anchor": "[MDDR | Req. 18 | 설계#p3]",
+      "new_value": "• 설정 값을 읽지 못하면 미리 정한 기본 화면 상태로 표시하도록 한다."
+    },
+    {
+      "site": "[MDSR | SI-06 | 소프트웨어 기능 요구사항 번호]",
+      "doc": "MDSR",
+      "item": "SI-06",
+      "cell": "소프트웨어 기능 요구사항 번호",
+      "path": "trace",
+      "op": "modify",
+      "new_value": "Req. 15, Req. 19, Req. 108",
+      "note": "연결 Req 칸에 Req. 19 추가"
+    },
+    {
+      "site": "[MDSR | Req. 100 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 100",
+      "cell": "설명",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_SYNC_INTERVAL",
+      "old_surface": "60분",
+      "new_value": "120분"
+    },
+    {
+      "site": "[MDSR | Req. 100 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 100",
+      "cell": "기준#p1",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_SYNC_INTERVAL",
+      "old_surface": "60 분",
+      "new_value": "120분"
+    },
+    {
+      "site": "[MDSR | Req. 101 | 설명]",
+      "doc": "MDSR",
+      "item": "Req. 101",
+      "cell": "설명",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_SYNC_INTERVAL",
+      "old_surface": "1시간",
+      "new_value": "120분"
+    },
+    {
+      "site": "[MDSR | Req. 101 | 기준#p1]",
+      "doc": "MDSR",
+      "item": "Req. 101",
+      "cell": "기준#p1",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_SYNC_INTERVAL",
+      "old_surface": "60분",
+      "new_value": "120분"
+    },
+    {
+      "site": "[MDSR | Req. 101 | 기준#p2]",
+      "doc": "MDSR",
+      "item": "Req. 101",
+      "cell": "기준#p2",
+      "path": "origin",
+      "op": "modify",
+      "fact": "F_SYNC_INTERVAL",
+      "old_surface": "60 분",
+      "new_value": "120분"
+    },
+    {
+      "site": "[MDDR | Req. 100 | 설계#p1]",
+      "doc": "MDDR",
+      "item": "Req. 100",
+      "cell": "설계#p1",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_SYNC_INTERVAL",
+      "old_surface": "1시간",
+      "new_value": "120분"
+    },
+    {
+      "site": "[MDDR | Req. 100 | 설계#p3]",
+      "doc": "MDDR",
+      "item": "Req. 100",
+      "cell": "설계#p3",
+      "path": "same_value",
+      "op": "modify",
+      "fact": "F_SYNC_INTERVAL",
+      "old_surface": "60분",
+      "new_value": "120분"
+    },
+    {
+      "site": "[MDDR | Req. 101 | 설계#p1]",
+      "doc": "MDDR",
+      "item": "Req. 101",
+      "cell": "설계#p1",
+      "path": "same_id",
+      "op": "modify",
+      "fact": "F_SYNC_INTERVAL",
+      "old_surface": "60 분",
+      "new_value": "120분"
+    },
+    {
+      "site": "[MDDR | Req. 101 | 설계#p2]",
+      "doc": "MDDR",
+      "item": "Req. 101",
+      "cell": "설계#p2",
+      "path": "same_id",
+      "op": "modify",
+      "fact": "F_SYNC_INTERVAL",
+      "old_surface": "1시간",
+      "new_value": "120분"
+    },
+    {
+      "site": "[MDDR | Req. 101 | 설계#p3]",
+      "doc": "MDDR",
+      "item": "Req. 101",
+      "cell": "설계#p3",
+      "path": "same_id",
+      "op": "modify",
+      "fact": "F_SYNC_INTERVAL",
+      "old_surface": "60분",
+      "new_value": "120분"
+    }
+  ],
+  "neutral": []
+}

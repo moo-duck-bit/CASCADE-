@@ -1,0 +1,27 @@
+{
+  "case_id": "T3_64",
+  "case_type": "T3",
+  "subtype": "add_with_attr_change",
+  "n_docs": 2,
+  "docs": [
+    "MDSR",
+    "XXCS"
+  ],
+  "paths": {
+    "origin": 6,
+    "trace": 2,
+    "rule": 8
+  },
+  "trap_paths": {
+    "trace": 4,
+    "rule": 6
+  },
+  "n_impact": 16,
+  "n_traps": 10,
+  "n_neutral": 10,
+  "request_structured": "모바일 애플리케이션 요구사항 Req. 19 '동기화 상태 표시'을(를) 신규 추가한다. 내용: 앱은 서버와의 동기화 상태를 화면에 표시하여야 하며, 전송 데이터의 무결성 확인에 실패하면 사용자에게 이를 알려야 한다. 또한 제품 사이버보안 속성 '제조사 원격 업데이트 기능'(remote_update)을 false에서 true로 변경한다. 첨부3 적용 예외에 따라 문서를 갱신한다.",
+  "request_nl": "앱에 새 기능을 넣어 주세요. 서버와의 동기화 상태를 보여 주고 전송 데이터의 무결성 확인에 실패하면 이를 알리는 기능이 필요합니다. 그리고 수면코치를 제조사가 서버에서 소프트웨어 업데이트를 원격 배포하도록 바꾸려고 합니다. 보안 문서에서 달라져야 할 부분을 고쳐 주세요.",
+  "sheet_type": "T3-추가복합",
+  "sheet_paths": "origin, trace, rule",
+  "seed": 20261102
+}
